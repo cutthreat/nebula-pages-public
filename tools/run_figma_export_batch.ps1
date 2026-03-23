@@ -27,9 +27,13 @@ foreach ($node in @($plan.nodes)) {
   $index++
   $jobId = ("{0:000}-{1}" -f $index, (($node.node_name -replace '[^a-zA-Z0-9]+', '-').Trim('-').ToLower()))
   $jobPath = Join-Path $jobsDir ($jobId + ".json")
-  $job = [ordered]@{
-    job_id = $jobId
+    $job = [ordered]@{
+  job_id = $jobId
+    node_id = [string]$node.node_id
     node_name = $node.node_name
+    kind = [string]$node.kind
+    version_hash = [string]$node.version_hash
+    user_facing_version = [string]$node.user_facing_version
     export_mode = $node.export_mode
     status = "pending"
     source_plan = $PlanPath

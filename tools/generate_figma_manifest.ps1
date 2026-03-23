@@ -116,6 +116,27 @@ if ($browserLayerIndexPath) {
   }
 }
 
+$publishablesPath = Join-Path $OutputDir "figma-publishables.local.json"
+$publishables = [ordered]@{
+  symbols = @()
+  state_groups = @()
+  source = $null
+}
+if (Test-Path -LiteralPath $publishablesPath) {
+  try {
+    $publishablesData = Get-Content -LiteralPath $publishablesPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $publishables.symbols = @($publishablesData.publishable_symbols)
+    $publishables.state_groups = @($publishablesData.publishable_state_groups)
+    $publishables.source = $publishablesPath
+  } catch {
+    $publishables = [ordered]@{
+      symbols = @()
+      state_groups = @()
+      source = $publishablesPath
+    }
+  }
+}
+
 $manifest = [ordered]@{
   generated_at = (Get-Date).ToString("s")
   workspace_root = $WorkspaceRoot
@@ -130,6 +151,7 @@ $manifest = [ordered]@{
   browser_layer_index_source = if ($browserLayerIndexPath) { $browserLayerIndexPath.FullName } else { $null }
   browser_layer_index = $browserLayerIndex
   browser_export_package = if ($latestBrowserExportPackage) { $latestBrowserExportPackage.FullName } else { $null }
+  publishable_index = $publishables
 }
 
 $manifestPath = Join-Path $OutputDir "figma-manifest.local.json"

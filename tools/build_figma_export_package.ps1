@@ -97,6 +97,41 @@ $copied += [pscustomobject]@{
   copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-manifest.local.json") -Destination (Join-Path $packageData "figma-manifest.local.json")
 }
 $copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-publishables.local.json"
+  target = Join-Path $packageData "figma-publishables.local.json"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-publishables.local.json") -Destination (Join-Path $packageData "figma-publishables.local.json")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-publishables.local.csv"
+  target = Join-Path $packageData "figma-publishables.local.csv"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-publishables.local.csv") -Destination (Join-Path $packageData "figma-publishables.local.csv")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-components-map.json"
+  target = Join-Path $packageData "figma-components-map.json"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-components-map.json") -Destination (Join-Path $packageData "figma-components-map.json")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-components-map.csv"
+  target = Join-Path $packageData "figma-components-map.csv"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-components-map.csv") -Destination (Join-Path $packageData "figma-components-map.csv")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-verstka-readiness.json"
+  target = Join-Path $packageData "figma-verstka-readiness.json"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-verstka-readiness.json") -Destination (Join-Path $packageData "figma-verstka-readiness.json")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-publishable-map.json"
+  target = Join-Path $packageData "figma-publishable-map.json"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-publishable-map.json") -Destination (Join-Path $packageData "figma-publishable-map.json")
+}
+$copied += [pscustomobject]@{
+  source = Join-Path $manifestDir "figma-publishable-map.csv"
+  target = Join-Path $packageData "figma-publishable-map.csv"
+  copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-publishable-map.csv") -Destination (Join-Path $packageData "figma-publishable-map.csv")
+}
+$copied += [pscustomobject]@{
   source = Join-Path $manifestDir "figma-links.local.csv"
   target = Join-Path $packageData "figma-links.local.csv"
   copied = Copy-IfExists -Source (Join-Path $manifestDir "figma-links.local.csv") -Destination (Join-Path $packageData "figma-links.local.csv")
