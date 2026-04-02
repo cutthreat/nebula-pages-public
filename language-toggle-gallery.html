@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Language Toggle Gallery — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
+    .wrap{max-width:980px;margin:0 auto;padding:44px 20px 60px}
+    h1{margin:0 0 10px;font-size:44px;line-height:1;letter-spacing:-.04em}
+    p{margin:0 0 24px;max-width:820px;font-size:18px;line-height:1.65;color:#5b5267}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{background:#fff;border:1px solid rgba(115,79,240,.12);border-radius:22px;box-shadow:0 14px 30px rgba(86,57,175,.08);padding:18px}
+    .card h2{margin:0 0 14px;font-size:20px;line-height:1.15}
+    .toggle{display:inline-flex;align-items:center;gap:6px;padding:4px;border-radius:999px;background:#efe8ff;border:1px solid rgba(115,79,240,.16)}
+    .toggle__item{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:28px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:700;color:#734ff0;text-decoration:none}
+    .toggle__item--active{background:#734ff0;color:#fff;box-shadow:0 10px 18px rgba(115,79,240,.24)}
+    .toggle--compact .toggle__item{min-width:28px;height:24px;padding:0 8px;font-size:11px}
+    .toggle--ghost{background:transparent;border-color:#d8cdf8}
+    .toggle--stack{flex-direction:column;align-items:flex-start;padding:8px;border-radius:18px;gap:8px}
+    .note{margin-top:12px;font-size:13px;line-height:1.5;color:#5b5267}
+    @media (max-width:767.98px){.grid{grid-template-columns:1fr}h1{font-size:36px}p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Language toggle gallery</h1>
+    <p>Standalone coverage for the language switch that appears in header and utility states.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>Header toggle</h2>
+        <div class="toggle"><a class="toggle__item toggle__item--active" href="#">Eng</a><a class="toggle__item" href="#">Ukr</a></div>
+        <div class="note">Default small top-right variant.</div>
+      </section>
+      <section class="card">
+        <h2>Compact toggle</h2>
+        <div class="toggle toggle--compact"><a class="toggle__item toggle__item--active" href="#">En</a><a class="toggle__item" href="#">Ru</a></div>
+        <div class="note">Used in dense auth and footer contexts.</div>
+      </section>
+      <section class="card">
+        <h2>Ghost toggle</h2>
+        <div class="toggle toggle--ghost"><a class="toggle__item toggle__item--active" href="#">Eng</a><a class="toggle__item" href="#">Esp</a></div>
+        <div class="note">Alternative outline version for dark or overlay surfaces.</div>
+      </section>
+      <section class="card">
+        <h2>Stacked utility mode</h2>
+        <div class="toggle toggle--stack"><a class="toggle__item toggle__item--active" href="#">Eng</a><a class="toggle__item" href="#">Pol</a></div>
+        <div class="note">Used when the control sits with other utility actions.</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utility Controls Gallery — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
+    .wrap{max-width:1080px;margin:0 auto;padding:44px 20px 60px}
+    h1{margin:0 0 10px;font-size:44px;line-height:1;letter-spacing:-.04em}
+    p{margin:0 0 24px;max-width:820px;font-size:18px;line-height:1.65;color:#5b5267}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{background:#fff;border:1px solid rgba(115,79,240,.12);border-radius:22px;box-shadow:0 14px 30px rgba(86,57,175,.08);padding:18px}
+    .card h2{margin:0 0 12px;font-size:20px;line-height:1.15}
+    .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .pill{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 12px;border-radius:999px;border:1px solid rgba(115,79,240,.18);color:#734ff0;background:#fff;font-size:12px;font-weight:700}
+    .link{display:inline-flex;align-items:center;justify-content:center;height:28px;padding:0 0;border:0;background:transparent;color:#734ff0;font-size:14px;font-weight:700;text-decoration:underline}
+    .btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 14px;border-radius:12px;background:#734ff0;color:#fff;text-decoration:none;font-size:14px;font-weight:700;box-shadow:0 12px 24px rgba(115,79,240,.22)}
+    .btn--light{background:#fff;color:#734ff0;border:1px solid rgba(115,79,240,.22);box-shadow:none}
+    .btn--warm{background:#ffbf73;color:#6a3300}
+    .switch{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid rgba(115,79,240,.18);background:#fff;color:#734ff0;font-size:12px;font-weight:700}
+    .switch::after{content:"";width:18px;height:10px;border-radius:999px;background:linear-gradient(90deg,#734ff0 50%,#ece6f8 50%);display:inline-block}
+    .dot{width:28px;height:28px;border-radius:50%;background:#734ff0;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700}
+    .gray{background:#d8d8d8;color:#fff}
+    .group{display:grid;gap:10px}
+    @media (max-width:767.98px){.grid{grid-template-columns:1fr}p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Utility controls gallery</h1>
+    <p>This sheet collects the small controls that keep appearing in the screens: language switch, next, cancel/previous, sign in, CTA micro-links, and similar navigation atoms.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>Language / auth actions</h2>
+        <div class="row"><span class="switch">Eng ▾</span><span class="pill">Sign up</span><span class="pill">Log in</span><span class="pill">Sign in</span></div>
+      </section>
+      <section class="card">
+        <h2>Next / previous</h2>
+        <div class="row"><a class="btn" href="#">Next</a><a class="btn btn--light" href="#">Previous step</a><a class="btn btn--light" href="#">Cancel</a></div>
+      </section>
+      <section class="card">
+        <h2>Micro CTA links</h2>
+        <div class="group"><a class="link" href="#">Read more</a><a class="link" href="#">Find your Psychic reader</a><a class="link" href="#">Browse more psychic readers</a></div>
+      </section>
+      <section class="card">
+        <h2>Compact action badges</h2>
+        <div class="row"><span class="pill">Try now</span><span class="pill">Accept</span><span class="pill">Settings</span><span class="pill">Get started</span></div>
+      </section>
+      <section class="card">
+        <h2>Step navigation</h2>
+        <div class="row"><a class="btn btn--warm" href="#">GET STARTED</a><a class="btn btn--light" href="#">Previous step</a></div>
+      </section>
+      <section class="card">
+        <h2>Dot / icon controls</h2>
+        <div class="row"><span class="dot">1</span><span class="dot">›</span><span class="dot gray">●</span></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

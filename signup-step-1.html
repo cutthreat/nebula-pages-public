@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create an account — Step 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="figma-auth.css" />
+</head>
+<body class="na-auth-page">
+  <main class="na-auth-stage" aria-label="Create account step 1">
+    <div class="na-auth-page__shell">
+      <a class="na-auth-page__brand" href="home.html"><span class="na-auth-page__brand-dot"></span><span>NEURO</span></a>
+      <div class="na-auth-page__links"><a href="signup-step-1.html">Eng ▾</a><a href="login.html">Log in →</a></div>
+
+      <aside class="na-auth-page__side"></aside>
+      <section class="na-auth-page__panel">
+        <form class="na-auth-form" action="signup-step-2.html" method="get">
+          <h1 class="na-auth-form__title">Create an<br>account</h1>
+          <p class="na-auth-form__subtitle">Lets us know a little about yourself!</p>
+
+          <div class="na-auth-field-wrap">
+            <input class="na-auth-field" type="text" placeholder="Enter your name">
+          </div>
+
+          <div class="na-auth-pills">
+            <label class="na-auth-pill is-active"><input type="radio" checked name="gender"><span class="na-auth-pill__dot"></span>Woman</label>
+            <label class="na-auth-pill"><input type="radio" name="gender"><span class="na-auth-pill__dot"></span>Man</label>
+          </div>
+
+          <div class="na-auth-row na-auth-row--triple">
+            <div class="na-auth-select-wrap"><select class="na-auth-select"><option>1</option></select></div>
+            <div class="na-auth-select-wrap"><select class="na-auth-select"><option>Jan</option></select></div>
+            <div class="na-auth-select-wrap"><select class="na-auth-select"><option>1990</option></select></div>
+          </div>
+
+          <button class="na-auth-btn" type="submit">Next step →</button>
+
+          <div class="na-auth-divider">or sign up with</div>
+          <div class="na-auth-social">
+            <a class="na-auth-social-btn na-auth-social-btn--google" href="signup-step-1.html" aria-label="Sign up with Google">
+              <img src="img/login-google-figma.png" alt="" aria-hidden="true">
+            </a>
+            <a class="na-auth-social-btn na-auth-social-btn--facebook" href="signup-step-1.html" aria-label="Sign up with Facebook">
+              <img src="img/login-facebook-figma.png" alt="" aria-hidden="true">
+            </a>
+          </div>
+        </form>
+      </section>
+      <aside class="na-auth-page__side na-auth-page__side--right"></aside>
+    </div>
+  </main>
+</body>
+</html>

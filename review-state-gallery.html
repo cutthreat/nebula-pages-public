@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Review State Gallery — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
+    .wrap{max-width:1120px;margin:0 auto;padding:44px 20px 60px}
+    h1{margin:0 0 10px;font-size:44px;line-height:1;letter-spacing:-.04em}
+    p{margin:0 0 24px;max-width:840px;font-size:18px;line-height:1.65;color:#5b5267}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .card{background:#fff;border:1px solid rgba(115,79,240,.12);border-radius:22px;box-shadow:0 14px 30px rgba(86,57,175,.08);padding:18px}
+    .card h2{margin:0 0 14px;font-size:20px;line-height:1.15}
+    .review{border-radius:18px;background:#7a53ea;color:#fff;padding:16px 14px;box-shadow:0 14px 28px rgba(122,83,234,.2)}
+    .head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;font-size:12px}
+    .name{font-weight:700}
+    .stars{letter-spacing:1px}
+    .body{font-size:13px;line-height:1.55}
+    .review--narrow{max-width:200px}
+    .review--wide{max-width:340px}
+    .review--compact{padding:12px 12px 13px}
+    .review--compact .body{font-size:12px;line-height:1.45}
+    @media (max-width:991.98px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:38px}}
+    @media (max-width:767.98px){.grid{grid-template-columns:1fr}p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Review state gallery</h1>
+    <p>Standalone coverage for the review card widths that show up in the export as 1200, compact, and card variants.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>1 review 1200</h2>
+        <div class="review review--wide"><div class="head"><span class="name">Kate</span><span class="stars">★★★★★</span></div><div class="body">The psychic reading on Neuro was exactly what I needed. It helped me start from scratch with more trust.</div></div>
+      </section>
+      <section class="card">
+        <h2>1 review</h2>
+        <div class="review review--narrow review--compact"><div class="head"><span class="name">Vika</span><span class="stars">★★★★★</span></div><div class="body">This result felt spot-on and useful.</div></div>
+      </section>
+      <section class="card">
+        <h2>Card 1 / review mix</h2>
+        <div class="review"><div class="head"><span class="name">Anna</span><span class="stars">★★★★★</span></div><div class="body">A reusable compact review card for slider and grid contexts.</div></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Action Button Gallery — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
+    .wrap{max-width:1120px;margin:0 auto;padding:44px 20px 60px}
+    h1{margin:0 0 10px;font-size:44px;line-height:1;letter-spacing:-.04em}
+    p{margin:0 0 24px;max-width:860px;font-size:18px;line-height:1.65;color:#5b5267}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{background:#fff;border:1px solid rgba(115,79,240,.12);border-radius:22px;box-shadow:0 14px 30px rgba(86,57,175,.08);padding:18px}
+    .card h2{margin:0 0 14px;font-size:20px;line-height:1.15}
+    .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 16px;border-radius:12px;background:#fff;color:#734ff0;text-decoration:none;font-size:14px;font-weight:700;border:1px solid rgba(115,79,240,.22)}
+    .btn--solid{background:#734ff0;color:#fff;box-shadow:0 12px 24px rgba(115,79,240,.22)}
+    .btn--ghost{background:transparent}
+    .btn--link{border:0;padding:0;min-height:auto;background:transparent;text-decoration:underline}
+    .btn--small{min-height:30px;padding:0 12px;font-size:12px;border-radius:9px}
+    .btn--pill{border-radius:999px}
+    .btn--arrow::after{content:" →";font-size:12px}
+    .btn--gray{background:#d8d8d8;color:#fff;border-color:#d8d8d8}
+    .btn--warm{background:#ffbf73;color:#6a3300;border-color:#ffbf73}
+    @media (max-width:991.98px){.grid{grid-template-columns:1fr}h1{font-size:38px}}
+    @media (max-width:767.98px){p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Action button gallery</h1>
+    <p>Standalone coverage for the remaining action variants that appear in auth, product, and utility screens.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>Button - Sign In</h2>
+        <div class="row"><a class="btn btn--solid" href="#">Sign in</a><a class="btn btn--small btn--ghost" href="#">Log in</a></div>
+      </section>
+      <section class="card">
+        <h2>Button Sign up/Log in</h2>
+        <div class="row"><a class="btn btn--ghost" href="#">Sign up</a><a class="btn btn--ghost" href="#">Log in</a></div>
+      </section>
+      <section class="card">
+        <h2>Button See more</h2>
+        <div class="row"><a class="btn btn--link" href="#">See more psychics</a><a class="btn btn--link btn--arrow" href="#">Read more</a></div>
+      </section>
+      <section class="card">
+        <h2>FIND PSYCHIC - 1 BUTTON</h2>
+        <div class="row"><a class="btn btn--solid" href="#">Find your Psychic reader</a><a class="btn btn--solid btn--small" href="#">Find your Psychic reader</a></div>
+      </section>
+      <section class="card">
+        <h2>Warm CTA / GET STARTED</h2>
+        <div class="row"><a class="btn btn--warm" href="#">GET STARTED</a><a class="btn btn--warm btn--small btn--pill" href="#">Try now</a></div>
+      </section>
+      <section class="card">
+        <h2>Disabled / previous</h2>
+        <div class="row"><a class="btn btn--gray" href="#">Previous step</a><a class="btn btn--gray btn--small" href="#">Cancel</a></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

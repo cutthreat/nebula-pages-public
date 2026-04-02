@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="home.css" />
+  <style>
+    .page-article{padding:140px 0 88px;background:linear-gradient(180deg,#f7f5fb 0%,#f2eff8 100%)}
+    .page-article__head{max-width:880px;margin:0 auto 34px}
+    .page-article__kicker{display:inline-flex;padding:10px 16px;border-radius:999px;background:#fff;color:#6d45ea;border:1px solid rgba(109,69,234,.12);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 24px rgba(109,69,234,.06)}
+    .page-article__title{margin:18px 0 12px;font-size:68px;line-height:.96;letter-spacing:-.04em;color:#171717}
+    .page-article__lead{max-width:860px;font-size:20px;line-height:1.7;color:#3c3845}
+    .blog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:980px;margin:0 auto}
+    .blog-card{background:#fff;border-radius:24px;overflow:hidden;border:1px solid rgba(109,69,234,.08);box-shadow:0 16px 40px rgba(86,57,175,.08)}
+    .blog-card__image{height:220px;background:linear-gradient(135deg,#cab8ff 0%,#8f6aff 100%)}
+    .blog-card__body{padding:22px}
+    .blog-card__meta{display:flex;justify-content:space-between;gap:12px;margin-bottom:10px;color:#7a67d8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+    .blog-card__title{margin:0 0 10px;font-size:24px;line-height:1.12;color:#171717}
+    .blog-card__text{margin:0;color:#433b4f;font-size:16px;line-height:1.65}
+    @media (max-width: 991.98px){.page-article{padding:120px 0 64px}.page-article__title{font-size:54px}.page-article__lead{font-size:18px}.blog-grid{grid-template-columns:1fr}.blog-card__image{height:200px}}
+    @media (max-width: 767.98px){.page-article{padding:104px 0 52px}.page-article__head{margin-bottom:24px}.page-article__title{font-size:38px;line-height:1}.page-article__lead{font-size:16px;line-height:1.68}.blog-card__body{padding:18px}.blog-card__title{font-size:20px}.blog-card__text{font-size:15px}}
+    @media (max-width: 390px){.page-article{padding:96px 0 44px}.page-article__kicker{font-size:12px;padding:8px 12px}.page-article__title{font-size:32px}.page-article__lead{font-size:15px}.blog-card__image{height:180px}.blog-card__body{padding:16px}}
+  </style>
+</head>
+<body class="home">
+  <header class="site-header fixed-top">
+    <div class="container">
+      <div class="site-header__inner d-flex align-items-center justify-content-between">
+        <a class="site-header__logo" href="home.html"><img src="img/logo.png" alt="logo neuro" width="142" height="30" /></a>
+        <div class="site-header__actions"><a class="c-btn c-btn--ghost site-header__btn" href="login.html"><span>Log in</span><span class="c-btn__icon c-btn__icon--arrow"></span></a></div>
+      </div>
+    </div>
+  </header>
+  <main class="page-article">
+    <div class="container">
+      <div class="page-article__head">
+        <div class="page-article__kicker">BLOG 1200+</div>
+        <h1 class="page-article__title">Blog</h1>
+        <p class="page-article__lead">A clean content hub shell that keeps the brand style but leaves enough room for article cards, lead text, and future feed content.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span>Psychic Reading</span><span>5 min read</span></div>
+            <h2 class="blog-card__title">How to choose the right psychic reader</h2>
+            <p class="blog-card__text">A structured intro card that can hold a featured article or a category teaser.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__image" style="background:linear-gradient(135deg,#9e84ff 0%,#6d45ea 100%)"></div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta"><span>Charts</span><span>4 min read</span></div>
+            <h2 class="blog-card__title">What your reading says about timing</h2>
+            <p class="blog-card__text">The second card keeps the same card language with a different visual energy.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

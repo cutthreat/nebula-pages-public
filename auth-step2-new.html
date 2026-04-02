@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auth Step 2 — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="figma-auth.css" />
+</head>
+<body class="na-auth-page">
+  <main class="na-auth-stage" aria-label="Second onboarding step">
+    <div class="na-auth-page__shell">
+      <a class="na-auth-page__brand" href="home.html"><span class="na-auth-page__brand-dot"></span><span>NEURO</span></a>
+      <div class="na-auth-page__links"><a href="signup-step-1.html">Eng ▾</a><a href="login.html">Log in →</a></div>
+
+      <aside class="na-auth-page__side"></aside>
+      <section class="na-auth-page__panel">
+        <form class="na-auth-form" action="login.html" method="get">
+          <h1 class="na-auth-form__title">Create an account</h1>
+          <p class="na-auth-form__subtitle">Continue the onboarding and finish the setup.</p>
+
+          <div class="na-auth-field-wrap">
+            <input class="na-auth-field" type="text" placeholder="Your city">
+          </div>
+          <div class="na-auth-field-wrap">
+            <input class="na-auth-field" type="text" placeholder="Your country">
+          </div>
+          <div class="na-auth-field-wrap">
+            <input class="na-auth-field" type="text" placeholder="Your birth date">
+          </div>
+          <div class="na-auth-field-wrap">
+            <input class="na-auth-field" type="text" placeholder="Your time zone">
+          </div>
+
+          <button class="na-auth-btn" type="submit">Get started</button>
+          <a class="na-auth-btn na-auth-btn--ghost" href="auth-create-new.html">Previous step</a>
+        </form>
+      </section>
+      <aside class="na-auth-page__side na-auth-page__side--right"></aside>
+    </div>
+  </main>
+</body>
+</html>

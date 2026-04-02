@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create an account — Step 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="figma-auth.css" />
+</head>
+<body class="na-auth-page">
+  <main class="na-auth-stage" aria-label="Create account step 2">
+    <div class="na-auth-page__shell">
+      <a class="na-auth-page__brand" href="home.html"><span class="na-auth-page__brand-dot"></span><span>NEURO</span></a>
+      <div class="na-auth-page__links"><a href="signup-step-1.html">Eng ▾</a><a href="login.html">Log in →</a></div>
+
+      <aside class="na-auth-page__side"></aside>
+      <section class="na-auth-page__panel">
+        <form class="na-auth-form" action="#" method="post">
+          <h1 class="na-auth-form__title">Create an<br>account</h1>
+          <p class="na-auth-form__subtitle">Lets us know a little about yourself!</p>
+
+          <div class="na-auth-field-wrap na-auth-field-wrap--arrow"><input class="na-auth-field" type="email" placeholder="example@email.com"></div>
+          <div class="na-auth-field-wrap na-auth-field-wrap--arrow"><input class="na-auth-field" type="password" placeholder="Enter your password"></div>
+          <div class="na-auth-field-wrap na-auth-field-wrap--arrow"><input class="na-auth-field" type="password" placeholder="Re-enter password"></div>
+
+          <div class="na-auth-checks">
+            <label class="na-auth-check"><input type="checkbox" checked><span>By signing up you agree to our <a href="signup-step-1.html">Terms of service</a> and <a href="signup-step-1.html">Privacy Policy</a>.</span></label>
+            <label class="na-auth-check"><input type="checkbox"><span>Allow us to offer special offers and product updates.</span></label>
+          </div>
+
+          <button class="na-auth-btn" type="submit">Get started</button>
+          <a class="na-auth-btn na-auth-btn--ghost" href="signup-step-1.html">← Previous step</a>
+        </form>
+      </section>
+      <aside class="na-auth-page__side na-auth-page__side--right"></aside>
+    </div>
+  </main>
+</body>
+</html>
