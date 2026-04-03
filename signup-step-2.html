@@ -7,13 +7,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="figma-auth.css" />
+  <link rel="stylesheet" href="figma-auth.css?v=20260403-auth-mobile-3" />
 </head>
 <body class="na-auth-page">
   <main class="na-auth-stage" aria-label="Create account step 2">
     <div class="na-auth-page__shell">
-      <a class="na-auth-page__brand" href="home.html"><span class="na-auth-page__brand-dot"></span><span>NEURO</span></a>
+      <button class="na-auth-burger" type="button" tabindex="-1" aria-hidden="true"></button>
+      <a class="na-auth-page__brand" href="home.html" aria-label="Home">
+        <img src="img/login-brand-figma.png" alt="NEURO" />
+      </a>
       <div class="na-auth-page__links"><a href="signup-step-1.html">Eng ▾</a><a href="login.html">Log in →</a></div>
+      <button class="na-auth-mobile-toggle" type="button" tabindex="-1" aria-hidden="true">
+        <img src="img/login-toggle-icon.svg" alt="" />
+      </button>
 
       <aside class="na-auth-page__side"></aside>
       <section class="na-auth-page__panel">
