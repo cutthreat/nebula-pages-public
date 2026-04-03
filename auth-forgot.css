@@ -61,6 +61,18 @@ body{
   gap:20px;
 }
 
+.forgot-burger{
+  display:none;
+  width:28px;
+  height:22px;
+  padding:0;
+  border:0;
+  background:
+    linear-gradient(#8d6df0,#8d6df0) center 4px/100% 2px no-repeat,
+    linear-gradient(#8d6df0,#8d6df0) center/100% 2px no-repeat,
+    linear-gradient(#8d6df0,#8d6df0) center calc(100% - 4px)/100% 2px no-repeat;
+}
+
 .forgot-brand{
   display:flex;
   align-items:center;
@@ -90,6 +102,46 @@ body{
 
 .forgot-menu-right .forgot-lang{
   color:#7555de;
+}
+
+.forgot-toggle{
+  display:none;
+  align-items:center;
+  justify-content:flex-end;
+  width:40px;
+  height:20px;
+  padding:0;
+  border:0;
+  border-radius:15px;
+  background:var(--forgot-purple);
+  box-shadow:0 2px 5.6px rgba(103,62,218,.35);
+}
+
+.forgot-toggle img{
+  display:block;
+  width:20px;
+  height:20px;
+  object-fit:cover;
+}
+
+.forgot-mobile-toggle{
+  display:none;
+  align-items:center;
+  justify-content:flex-end;
+  width:40px;
+  height:20px;
+  padding:0;
+  border:0;
+  border-radius:15px;
+  background:var(--forgot-purple);
+  box-shadow:0 2px 5.6px rgba(103,62,218,.35);
+}
+
+.forgot-mobile-toggle img{
+  display:block;
+  width:20px;
+  height:20px;
+  object-fit:cover;
 }
 
 .forgot-hero{
@@ -288,17 +340,42 @@ body{
     left:16px;
     right:16px;
     top:16px;
+    display:block;
+    height:40px;
   }
-  .forgot-menu-right{
-    gap:12px;
-    font-size:10px;
+  .forgot-burger{
+    display:inline-flex;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .forgot-brand{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
   }
   .forgot-brand img{
     width:120px;
     height:auto;
   }
+  .forgot-menu-right{
+    display:none;
+  }
   .forgot-hero{
     display:none;
+  }
+  .forgot-toggle{
+    display:none;
+  }
+  .forgot-mobile-toggle{
+    display:inline-flex;
+    position:absolute;
+    right:80px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:6;
   }
   .forgot-card-wrap{
     position:relative;
@@ -315,12 +392,13 @@ body{
     min-height:468px;
     border-radius:40px;
   }
-  .forgot-panel{
-    width:min(295px,calc(100vw - 72px));
+  .forgot-card-wrap .forgot-panel{
     position:relative;
     left:auto;
     top:auto;
     transform:none;
+    width:min(295px,calc(100vw - 72px));
+    margin:0 auto;
     margin-top:64px;
     padding-bottom:56px;
   }
