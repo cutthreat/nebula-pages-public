@@ -1499,6 +1499,11 @@ button {
     padding-top: 64px;
   }
 
+  .prn-hero-section__media img {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+
   .prn-hero-section__title {
     font-size: 32px;
   }
@@ -1513,6 +1518,10 @@ button {
   }
 
   .prn-review-card {
+    min-height: 0;
+  }
+
+  .prn-experts-section .experts-section__card {
     min-height: 0;
   }
 
@@ -1533,6 +1542,27 @@ button {
 
   .prn-tailored__panel {
     border-radius: 20px;
+  }
+
+  .prn-transform__row {
+    min-height: 0;
+  }
+
+  .prn-transform__art {
+    justify-content: center;
+  }
+
+  .prn-transform__art img {
+    width: min(100%, 320px);
+  }
+
+  .prn-tailored__art {
+    min-height: 0;
+    padding: 18px 12px 0;
+  }
+
+  .prn-tailored__art img {
+    width: min(100%, 280px);
   }
 
   .prn-tailored__card {

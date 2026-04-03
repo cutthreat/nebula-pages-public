@@ -3094,6 +3094,19 @@ a:hover {
 }
 
 @media (max-width: 575px) {
+    .clients-section__grid {
+        gap: 16px;
+    }
+
+    .clients-section__grid-swiper {
+        width: 100%;
+    }
+
+    .clients-section__grid-swiper .clients-section__review.swiper-slide {
+        width: 100%;
+        min-height: 0;
+    }
+
     .what-neuro-section {
         padding: 54px 0 60px;
     }
@@ -3137,5 +3150,26 @@ a:hover {
         right: 14px;
         bottom: -8px;
         font-size: 70px;
+    }
+
+    .best-reading-section__image {
+        position: static;
+        right: auto;
+        left: auto;
+        width: min(100%, 360px);
+        margin: 0 auto;
+    }
+
+    .best-reading-section__media {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best-reading-section>.container {
+        min-height: 0;
+    }
+
+    .best-reading-section__content-wrapper {
+        padding-bottom: 0;
     }
 }

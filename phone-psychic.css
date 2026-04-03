@@ -612,6 +612,11 @@ button { font: inherit; }
   .pp-review-card,
   .pp-reason-card,
   .pp-affordable__card { padding: 18px 14px; border-radius: 18px; }
+  .pp-scenarios__art img,
+  .pp-affordable__art img {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
   .pp-review-card p,
   .pp-reason-card p,
   .pp-scenarios__copy li,

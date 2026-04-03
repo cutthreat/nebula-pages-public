@@ -213,6 +213,16 @@ function initClientsSlider() {
   var swiper = new Swiper(container, {
     slidesPerView: "auto",
     spaceBetween: 10,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 14,
+      },
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      },
+    },
     navigation: {
       prevEl: prevBtn,
       nextEl: nextBtn,

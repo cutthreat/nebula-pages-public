@@ -915,6 +915,12 @@ button {
     width: 250px;
   }
 
+  .cheap-need__art img,
+  .cheap-click__art img {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+
   .cheap-experts,
   .cheap-reviews,
   .cheap-trust,

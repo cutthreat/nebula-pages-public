@@ -950,6 +950,12 @@ button {
     width: 250px;
   }
 
+  .tarot-need__art img,
+  .tarot-click__art img {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+
   .tarot-experts,
   .tarot-reviews,
   .tarot-trust,
