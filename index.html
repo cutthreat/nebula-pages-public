@@ -1,121 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nebula Index</title>
+  <title>Nebula Status Index</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
-    .wrap{max-width:1180px;margin:0 auto;padding:48px 20px 64px}
+    :root{
+      --bg:#f6f3fb;
+      --bg-2:#ece6f8;
+      --surface:#fff;
+      --text:#171717;
+      --muted:#5b5267;
+      --border:rgba(115,79,240,.12);
+      --shadow:0 14px 30px rgba(86,57,175,.08);
+      --green:#21a465;
+      --green-bg:#e8f8f0;
+      --yellow:#d59a00;
+      --yellow-bg:#fff6da;
+      --red:#d1495b;
+      --red-bg:#ffe9ec;
+      --tool:#6c5ce7;
+      --tool-bg:#f0ecff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);color:var(--text)}
+    .wrap{max-width:1280px;margin:0 auto;padding:48px 20px 64px}
     h1{margin:0 0 12px;font-size:48px;line-height:1;letter-spacing:-.04em}
-    p{margin:0 0 28px;font-size:18px;line-height:1.65;color:#5b5267;max-width:860px}
+    .lead{margin:0 0 20px;font-size:18px;line-height:1.65;color:var(--muted);max-width:940px}
+    .rule{margin:0 0 32px;padding:18px 20px;border-radius:20px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);color:var(--muted);font-size:15px;line-height:1.65}
+    .legend{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 32px}
+    .legend-item{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-size:14px;font-weight:700}
+    .dot{width:12px;height:12px;border-radius:50%}
+    .dot--green{background:var(--green)}
+    .dot--yellow{background:var(--yellow)}
+    .dot--red{background:var(--red)}
+    .dot--tool{background:var(--tool)}
+    .section{margin-top:28px}
+    .section h2{margin:0 0 10px;font-size:28px;line-height:1.1;letter-spacing:-.03em}
+    .section p{margin:0 0 18px;color:var(--muted);font-size:15px;line-height:1.6}
     .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .card{display:block;padding:18px 18px 16px;border-radius:20px;background:#fff;border:1px solid rgba(115,79,240,.12);box-shadow:0 14px 30px rgba(86,57,175,.08);text-decoration:none;color:inherit}
+    .card{display:block;padding:18px 18px 16px;border-radius:20px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);text-decoration:none;color:inherit}
     .card:hover{transform:translateY(-1px);box-shadow:0 18px 36px rgba(86,57,175,.12)}
-    .card__title{margin:0 0 8px;font-size:18px;font-weight:700}
-    .card__text{margin:0;color:#5b5267;font-size:14px;line-height:1.55}
+    .card__top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .card__title{margin:0;font-size:18px;font-weight:800;line-height:1.2}
+    .card__text{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+    .badge{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:800;white-space:nowrap}
+    .badge--green{color:var(--green);background:var(--green-bg)}
+    .badge--yellow{color:var(--yellow);background:var(--yellow-bg)}
+    .badge--red{color:var(--red);background:var(--red-bg)}
+    .badge--tool{color:var(--tool);background:var(--tool-bg)}
+    .card--green{border-color:rgba(33,164,101,.28)}
+    .card--yellow{border-color:rgba(213,154,0,.28)}
+    .card--red{border-color:rgba(209,73,91,.28)}
+    .card--tool{border-color:rgba(108,92,231,.22)}
+    .empty{padding:18px 20px;border-radius:20px;background:var(--surface);border:1px dashed var(--border);color:var(--muted);font-size:15px;line-height:1.6}
     @media (max-width: 991.98px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:40px}}
-    @media (max-width: 767.98px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+    @media (max-width: 767.98px){.grid{grid-template-columns:1fr}h1{font-size:32px}.wrap{padding:32px 16px 52px}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Nebula index</h1>
-    <p>Use this as a fast entry point for all currently built pages and state screens. It is meant for manual visual review and iteration.</p>
-    <div class="grid">
-      <a class="card" href="astrology-reading-new.html"><div class="card__title">Astrology Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="numerology-reading-new.html"><div class="card__title">Numerology Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="email-psychic-reading-new.html"><div class="card__title">Email Psychic Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="free-psychic-reading-new.html"><div class="card__title">Free Psychic Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="ask-psychic-new.html"><div class="card__title">Ask Psychic</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="psychic-chat-new.html"><div class="card__title">Psychic Chat</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="psychic-near-me-new.html"><div class="card__title">Psychic Near Me</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="fortune-reading-new.html"><div class="card__title">Fortune Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="past-life-reading-new.html"><div class="card__title">Past Life Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="career-reading-new.html"><div class="card__title">Career Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="lost-objects-reading-new.html"><div class="card__title">Lost Objects Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="fertility-reading-new.html"><div class="card__title">Fertility Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="soulmate-reading-new.html"><div class="card__title">Soulmate Reading</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="daily-horoscope-new.html"><div class="card__title">Daily Horoscope</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="life-path-calculator-new.html"><div class="card__title">Life Path Calculator</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="birth-chart-new.html"><div class="card__title">Birth Chart</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="palm-reading-scanner-new.html"><div class="card__title">Palm Reading Scanner</div><div class="card__text">Topic template page.</div></a>
-      <a class="card" href="tarot-cards-meaning-new.html"><div class="card__title">Tarot Cards Meaning</div><div class="card__text">Article template page.</div></a>
-      <a class="card" href="spiritual-meanings-new.html"><div class="card__title">Spiritual Meanings</div><div class="card__text">Article template page.</div></a>
-      <a class="card" href="crystal-and-stone-meanings-new.html"><div class="card__title">Crystal and Stone Meanings</div><div class="card__text">Article template page.</div></a>
-      <a class="card" href="angel-numbers-meaning-new.html"><div class="card__title">Angel Numbers Meaning</div><div class="card__text">Article template page.</div></a>
-      <a class="card" href="zodiac-sign-traits-new.html"><div class="card__title">Zodiac Sign Traits</div><div class="card__text">Zodiac template page.</div></a>
-      <a class="card" href="woman-zodiac-sign-traits-new.html"><div class="card__title">Woman Zodiac Sign Traits</div><div class="card__text">Zodiac template page.</div></a>
-      <a class="card" href="man-zodiac-sign-traits-new.html"><div class="card__title">Man Zodiac Sign Traits</div><div class="card__text">Zodiac template page.</div></a>
-      <a class="card" href="404-new.html"><div class="card__title">404</div><div class="card__text">System template page.</div></a>
-      <a class="card" href="captcha-new.html"><div class="card__title">Captcha</div><div class="card__text">System template page.</div></a>
-      <a class="card" href="email-confirmation-new.html"><div class="card__title">Email Confirmation</div><div class="card__text">System template page.</div></a>
-      <a class="card" href="phone-confirmation-new.html"><div class="card__title">Phone Confirmation</div><div class="card__text">System template page.</div></a>
-      <a class="card" href="payment-modal-new.html"><div class="card__title">Payment Modal</div><div class="card__text">System template page.</div></a>
-      <a class="card" href="newsletter-capture-new.html"><div class="card__title">Newsletter Capture</div><div class="card__text">Promo template page.</div></a>
-      <a class="card" href="referral-program-new.html"><div class="card__title">Referral Program</div><div class="card__text">Promo template page.</div></a>
-      <a class="card" href="terms-conditions-new.html"><div class="card__title">Terms & Conditions</div><div class="card__text">Legal article page.</div></a>
-      <a class="card" href="cookie-policy-new.html"><div class="card__title">Cookie Policy</div><div class="card__text">Cookie usage page.</div></a>
-      <a class="card" href="refund-policy-new.html"><div class="card__title">Refund Policy</div><div class="card__text">Refund rules page.</div></a>
-      <a class="card" href="payment-terms-new.html"><div class="card__title">Payment Terms</div><div class="card__text">Payment legal page.</div></a>
-      <a class="card" href="live-chat-rules-new.html"><div class="card__title">Live Chat Rules</div><div class="card__text">Chat rule page.</div></a>
-      <a class="card" href="about-us-new.html"><div class="card__title">About Us</div><div class="card__text">Company story and mission.</div></a>
-      <a class="card" href="contact-us-new.html"><div class="card__title">Contact Us</div><div class="card__text">Support and contact entry.</div></a>
-      <a class="card" href="careers-join-new.html"><div class="card__title">Careers</div><div class="card__text">Join as a psychic.</div></a>
-      <a class="card" href="aura-reading-new.html"><div class="card__title">Aura Reading</div><div class="card__text">Aura service page.</div></a>
-      <a class="card" href="aura-colors-meaning-new.html"><div class="card__title">Aura Colors Meaning</div><div class="card__text">Aura topic explanation.</div></a>
-      <a class="card" href="lk-concept-new.html"><div class="card__title">LK Concept</div><div class="card__text">Stage 4 dashboard concept.</div></a>
-      <a class="card" href="profile-user-new.html"><div class="card__title">Profile User</div><div class="card__text">Stage 4 profile screen.</div></a>
-      <a class="card" href="settings-personal-new.html"><div class="card__title">Settings Personal</div><div class="card__text">Stage 4 preferences screen.</div></a>
-      <a class="card" href="horoscope-detail-new.html"><div class="card__title">Horoscope Detail</div><div class="card__text">Stage 4 detailed horoscope.</div></a>
-      <a class="card" href="expert-page-new.html"><div class="card__title">Expert Page</div><div class="card__text">Stage 4 expert profile.</div></a>
-      <a class="card" href="home.html"><div class="card__title">Home</div><div class="card__text">Main landing baseline.</div></a>
-      <a class="card" href="home-popup-open.html"><div class="card__title">Home popup</div><div class="card__text">Landing with popup/open state.</div></a>
-      <a class="card" href="psychic-reading-new.html"><div class="card__title">Psychic Reading</div><div class="card__text">Core product page.</div></a>
-      <a class="card" href="tarot-reading-new.html"><div class="card__title">Tarot Reading</div><div class="card__text">Tarot product page.</div></a>
-      <a class="card" href="palm-reading-new.html"><div class="card__title">Palm Reading</div><div class="card__text">Palm product page.</div></a>
-      <a class="card" href="phone-psychic-new.html"><div class="card__title">Phone Psychic</div><div class="card__text">Phone reading page.</div></a>
-      <a class="card" href="cheap-psychic-new.html"><div class="card__title">Cheap Psychic</div><div class="card__text">Value-focused reading page.</div></a>
-      <a class="card" href="love-reading-new.html"><div class="card__title">Love Reading</div><div class="card__text">Relationship-focused page.</div></a>
-      <a class="card" href="all-psychic-new.html"><div class="card__title">All Psychic</div><div class="card__text">Catalog page.</div></a>
-      <a class="card" href="zodiac-compatibility-new.html"><div class="card__title">Zodiac Compatibility</div><div class="card__text">Compatibility landing page.</div></a>
-      <a class="card" href="taurus-compatibility-new.html"><div class="card__title">Taurus Compatibility</div><div class="card__text">Sign-specific compatibility page.</div></a>
-      <a class="card" href="faq-new.html"><div class="card__title">FAQ</div><div class="card__text">Article/accordion shell.</div></a>
-      <a class="card" href="privacy-policy-new.html"><div class="card__title">Privacy Policy</div><div class="card__text">Legal/article shell.</div></a>
-      <a class="card" href="blog-new.html"><div class="card__title">Blog</div><div class="card__text">Blog index shell.</div></a>
-      <a class="card" href="blog-input-new.html"><div class="card__title">Blog Input</div><div class="card__text">Blog editor state.</div></a>
-      <a class="card" href="login.html"><div class="card__title">Login</div><div class="card__text">Auth shell.</div></a>
-      <a class="card" href="signup-step-1.html"><div class="card__title">Signup step 1</div><div class="card__text">Auth creation state.</div></a>
-      <a class="card" href="signup-step-2.html"><div class="card__title">Signup step 2</div><div class="card__text">Auth completion state.</div></a>
-      <a class="card" href="auth-login-state-new.html"><div class="card__title">Auth Login State</div><div class="card__text">Login shell state.</div></a>
-      <a class="card" href="auth-forgot-new.html"><div class="card__title">Auth Forgot Password</div><div class="card__text">Password reset shell.</div></a>
-      <a class="card" href="auth-create-new.html"><div class="card__title">Auth Create</div><div class="card__text">Account creation shell.</div></a>
-      <a class="card" href="auth-step2-new.html"><div class="card__title">Auth Step 2</div><div class="card__text">Second onboarding shell.</div></a>
-      <a class="card" href="ui-states-lab.html"><div class="card__title">UI States Lab</div><div class="card__text">Menu, modal, cookies, review, steps, buttons.</div></a>
-      <a class="card" href="menu-new.html"><div class="card__title">Menu</div><div class="card__text">Desktop menu state.</div></a>
-      <a class="card" href="menu-open-new.html"><div class="card__title">Menu Open</div><div class="card__text">Expanded menu state.</div></a>
-      <a class="card" href="cookies-new.html"><div class="card__title">Cookies</div><div class="card__text">Consent bar state.</div></a>
-      <a class="card" href="bunner-offer-new.html"><div class="card__title">Banner Offer</div><div class="card__text">Offer modal + top bar.</div></a>
-      <a class="card" href="button-reg-new.html"><div class="card__title">Button Reg</div><div class="card__text">CTA button state.</div></a>
-      <a class="card" href="button-get-started-new.html"><div class="card__title">Button Get Started</div><div class="card__text">Accent CTA state.</div></a>
-      <a class="card" href="tabs-new.html"><div class="card__title">Tabs</div><div class="card__text">Tab component state.</div></a>
-      <a class="card" href="play-button-new.html"><div class="card__title">Play Button</div><div class="card__text">Play control state.</div></a>
-      <a class="card" href="review-card-new.html"><div class="card__title">Review Card</div><div class="card__text">Review state.</div></a>
-      <a class="card" href="card-1-new.html"><div class="card__title">Card 1</div><div class="card__text">Content card state.</div></a>
-      <a class="card" href="micro-components-lab.html"><div class="card__title">Micro Components</div><div class="card__text">Smaller recurring UI parts.</div></a>
-      <a class="card" href="component-gallery.html"><div class="card__title">Component Gallery</div><div class="card__text">Compact visual overview of reusable states.</div></a>
-      <a class="card" href="responsive-state-gallery.html"><div class="card__title">Responsive Gallery</div><div class="card__text">Breakpoint comparison sheet.</div></a>
-      <a class="card" href="asked-6-new.html"><div class="card__title">Asked 6</div><div class="card__text">Follow-up question state.</div></a>
-      <a class="card" href="button-state-gallery.html"><div class="card__title">Button Gallery</div><div class="card__text">Button variants and states.</div></a>
-      <a class="card" href="utility-controls-gallery.html"><div class="card__title">Utility Controls</div><div class="card__text">Language, next, cancel, micro actions.</div></a>
-      <a class="card" href="card-state-gallery.html"><div class="card__title">Card State Gallery</div><div class="card__text">Additional card and review state coverage.</div></a>
-      <a class="card" href="action-button-gallery.html"><div class="card__title">Action Button Gallery</div><div class="card__text">Remaining sign in, see more, and find psychic actions.</div></a>
-      <a class="card" href="language-toggle-gallery.html"><div class="card__title">Language Toggle Gallery</div><div class="card__text">Header and utility language switch coverage.</div></a>
-      <a class="card" href="review-state-gallery.html"><div class="card__title">Review State Gallery</div><div class="card__text">Review width and density variants.</div></a>
+    <h1>Nebula status index</h1>
+    <p class="lead">Показываю верстку только через единый светофорный статус. Это теперь рабочее правило для приемки.</p>
+    <div class="rule">
+      <strong>Правило.</strong> Зеленый статус ставится только после твоего явного подтверждения в чате. Желтый означает: я считаю экран готовым к твоей проверке. Красный означает: экран не готов к приемке. Внутренние review-board, debug и gallery поверхности не считаются пользовательской версткой и идут отдельно как инструменты.
     </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="dot dot--green"></span><span>Зеленый: принято тобой</span></div>
+      <div class="legend-item"><span class="dot dot--yellow"></span><span>Желтый: готово к твоей проверке</span></div>
+      <div class="legend-item"><span class="dot dot--red"></span><span>Красный: не готово</span></div>
+      <div class="legend-item"><span class="dot dot--tool"></span><span>Фиолетовый: внутренний инструмент</span></div>
+    </div>
+
+    <section class="section">
+      <h2>Принято</h2>
+      <p>Здесь должны быть только страницы, которые ты уже подтвердил как готовые.</p>
+      <div class="empty">Пока нет страниц с зеленым статусом. Я не ставлю его сам себе.</div>
+    </section>
+
+    <section class="section">
+      <h2>Готово к проверке</h2>
+      <p>Это страницы, которые я считаю достаточно собранными, чтобы ты смотрел их глазами и принимал или возвращал в доработку.</p>
+      <div class="grid">
+        <a class="card card--yellow" href="home.html">
+          <div class="card__top"><div class="card__title">Home</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Главная страница. Базовый ориентир для всей линейки.</div>
+        </a>
+        <a class="card card--yellow" href="home-popup-open.html">
+          <div class="card__top"><div class="card__title">Home Popup</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Главная с открытым popup-состоянием.</div>
+        </a>
+        <a class="card card--yellow" href="login.html">
+          <div class="card__top"><div class="card__title">Login</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Экран авторизации.</div>
+        </a>
+        <a class="card card--yellow" href="signup-step-1.html">
+          <div class="card__top"><div class="card__title">Signup Step 1</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Первый шаг регистрации.</div>
+        </a>
+        <a class="card card--yellow" href="signup-step-2.html">
+          <div class="card__top"><div class="card__title">Signup Step 2</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Второй шаг регистрации.</div>
+        </a>
+        <a class="card card--yellow" href="auth-forgot-new.html">
+          <div class="card__top"><div class="card__title">Forgot Password</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Экран восстановления пароля.</div>
+        </a>
+        <a class="card card--yellow" href="psychic-reading-new.html">
+          <div class="card__top"><div class="card__title">Psychic Reading</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Ключевая продуктовая страница.</div>
+        </a>
+        <a class="card card--yellow" href="tarot-reading-new.html">
+          <div class="card__top"><div class="card__title">Tarot Reading</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Продуктовая страница Tarot.</div>
+        </a>
+        <a class="card card--yellow" href="palm-reading-new.html">
+          <div class="card__top"><div class="card__title">Palm Reading</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Продуктовая страница Palm Reading.</div>
+        </a>
+        <a class="card card--yellow" href="phone-psychic-new.html">
+          <div class="card__top"><div class="card__title">Phone Psychic</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Продуктовая страница с phone-сценарием.</div>
+        </a>
+        <a class="card card--yellow" href="cheap-psychic-new.html">
+          <div class="card__top"><div class="card__title">Cheap Psychic</div><span class="badge badge--yellow">YELLOW</span></div>
+          <div class="card__text">Value-oriented продуктовая страница.</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Не готово</h2>
+      <p>Это страницы и шаблоны, которые есть в публикации, но пока не должны восприниматься как принятый результат.</p>
+      <div class="grid">
+        <a class="card card--red" href="all-psychic-new.html"><div class="card__top"><div class="card__title">All Psychic</div><span class="badge badge--red">RED</span></div><div class="card__text">Каталоговая страница без финальной приемки.</div></a>
+        <a class="card card--red" href="love-reading-new.html"><div class="card__top"><div class="card__title">Love Reading</div><span class="badge badge--red">RED</span></div><div class="card__text">Требует финальной доводки и проверки.</div></a>
+        <a class="card card--red" href="zodiac-compatibility-new.html"><div class="card__top"><div class="card__title">Zodiac Compatibility</div><span class="badge badge--red">RED</span></div><div class="card__text">Не закрыт до приемочного уровня.</div></a>
+        <a class="card card--red" href="taurus-compatibility-new.html"><div class="card__top"><div class="card__title">Taurus Compatibility</div><span class="badge badge--red">RED</span></div><div class="card__text">Частный знак, пока без приемки.</div></a>
+        <a class="card card--red" href="faq-new.html"><div class="card__top"><div class="card__title">FAQ</div><span class="badge badge--red">RED</span></div><div class="card__text">Есть в коде, но не переведен в принятый статус.</div></a>
+        <a class="card card--red" href="privacy-policy-new.html"><div class="card__top"><div class="card__title">Privacy Policy</div><span class="badge badge--red">RED</span></div><div class="card__text">Legal page без финальной приемки.</div></a>
+        <a class="card card--red" href="blog-new.html"><div class="card__top"><div class="card__title">Blog</div><span class="badge badge--red">RED</span></div><div class="card__text">Нужна отдельная проверка against Figma.</div></a>
+        <a class="card card--red" href="blog-input-new.html"><div class="card__top"><div class="card__title">Blog Input</div><span class="badge badge--red">RED</span></div><div class="card__text">Состояние есть, приемки нет.</div></a>
+        <a class="card card--red" href="auth-login-state-new.html"><div class="card__top"><div class="card__title">Auth Login State</div><span class="badge badge--red">RED</span></div><div class="card__text">Внутреннее auth-состояние, не закрыто как итоговый экран.</div></a>
+        <a class="card card--red" href="auth-create-new.html"><div class="card__top"><div class="card__title">Auth Create</div><span class="badge badge--red">RED</span></div><div class="card__text">Черновой auth-flow без финального статуса.</div></a>
+        <a class="card card--red" href="auth-step2-new.html"><div class="card__top"><div class="card__title">Auth Step 2</div><span class="badge badge--red">RED</span></div><div class="card__text">Вспомогательный onboarding-screen.</div></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Внутренние инструменты</h2>
+      <p>Эти страницы нужны для визуальной сверки и отладки. Они не должны попадать в приемку как пользовательская верстка.</p>
+      <div class="grid">
+        <a class="card card--tool" href="login-review-board.html"><div class="card__top"><div class="card__title">Login Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Сравнение reference и live.</div></a>
+        <a class="card card--tool" href="forgot-review-board.html"><div class="card__top"><div class="card__title">Forgot Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Сравнение forgot password.</div></a>
+        <a class="card card--tool" href="psychic-review-board.html"><div class="card__top"><div class="card__title">Psychic Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Psychic.</div></a>
+        <a class="card card--tool" href="tarot-review-board.html"><div class="card__top"><div class="card__title">Tarot Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Tarot.</div></a>
+        <a class="card card--tool" href="palm-review-board.html"><div class="card__top"><div class="card__title">Palm Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Palm.</div></a>
+        <a class="card card--tool" href="phone-review-board.html"><div class="card__top"><div class="card__title">Phone Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Phone.</div></a>
+        <a class="card card--tool" href="cheap-review-board.html"><div class="card__top"><div class="card__title">Cheap Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Cheap.</div></a>
+        <a class="card card--tool" href="responsive-state-gallery.html"><div class="card__top"><div class="card__title">Responsive Gallery</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Галерея breakpoint-состояний.</div></a>
+        <a class="card card--tool" href="ui-states-lab.html"><div class="card__top"><div class="card__title">UI States Lab</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Лаборатория вспомогательных состояний.</div></a>
+      </div>
+    </section>
   </div>
 </body>
 </html>
