@@ -3,167 +3,182 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nebula Status Index</title>
+  <title>Nebula Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#f6f3fb;
-      --bg-2:#ece6f8;
+      --bg:#f4effb;
+      --bg-2:#ebe4fb;
       --surface:#fff;
-      --text:#171717;
-      --muted:#5b5267;
-      --border:rgba(115,79,240,.12);
-      --shadow:0 14px 30px rgba(86,57,175,.08);
+      --text:#17131d;
+      --muted:#5e566c;
+      --border:rgba(111,73,239,.12);
+      --shadow:0 18px 42px rgba(79,53,164,.10);
       --green:#21a465;
-      --green-bg:#e8f8f0;
       --yellow:#d59a00;
-      --yellow-bg:#fff6da;
       --red:#d1495b;
-      --red-bg:#ffe9ec;
-      --tool:#6c5ce7;
-      --tool-bg:#f0ecff;
+      --purple:#6f49ef;
+      --purple-2:#9d7cff;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);color:var(--text)}
-    .wrap{max-width:1280px;margin:0 auto;padding:48px 20px 64px}
-    h1{margin:0 0 12px;font-size:48px;line-height:1;letter-spacing:-.04em}
-    .lead{margin:0 0 20px;font-size:18px;line-height:1.65;color:var(--muted);max-width:940px}
-    .rule{margin:0 0 32px;padding:18px 20px;border-radius:20px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);color:var(--muted);font-size:15px;line-height:1.65}
-    .legend{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 32px}
-    .legend-item{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-size:14px;font-weight:700}
+    body{
+      margin:0;
+      font-family:"Manrope",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(157,124,255,.22),transparent 28%),
+        radial-gradient(circle at top right,rgba(111,73,239,.18),transparent 26%),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);
+    }
+    .wrap{max-width:1220px;margin:0 auto;padding:48px 20px 64px}
+    .hero{
+      padding:30px;
+      border-radius:32px;
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(14px);
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:32px;
+      padding:0 12px;
+      border-radius:999px;
+      background:rgba(111,73,239,.08);
+      color:var(--purple);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    h1{margin:16px 0 12px;font-size:56px;line-height:.96;letter-spacing:-.05em}
+    .lead{margin:0;max-width:920px;color:var(--muted);font-size:18px;line-height:1.65}
+    .rule{
+      margin-top:22px;
+      padding:16px 18px;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid var(--border);
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.6;
+    }
+    .legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .legend-item{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      min-height:44px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--border);
+      font-size:14px;
+      font-weight:700;
+    }
     .dot{width:12px;height:12px;border-radius:50%}
-    .dot--green{background:var(--green)}
-    .dot--yellow{background:var(--yellow)}
-    .dot--red{background:var(--red)}
-    .dot--tool{background:var(--tool)}
-    .section{margin-top:28px}
-    .section h2{margin:0 0 10px;font-size:28px;line-height:1.1;letter-spacing:-.03em}
-    .section p{margin:0 0 18px;color:var(--muted);font-size:15px;line-height:1.6}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .card{display:block;padding:18px 18px 16px;border-radius:20px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);text-decoration:none;color:inherit}
-    .card:hover{transform:translateY(-1px);box-shadow:0 18px 36px rgba(86,57,175,.12)}
-    .card__top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
-    .card__title{margin:0;font-size:18px;font-weight:800;line-height:1.2}
-    .card__text{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
-    .badge{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:800;white-space:nowrap}
-    .badge--green{color:var(--green);background:var(--green-bg)}
-    .badge--yellow{color:var(--yellow);background:var(--yellow-bg)}
-    .badge--red{color:var(--red);background:var(--red-bg)}
-    .badge--tool{color:var(--tool);background:var(--tool-bg)}
-    .card--green{border-color:rgba(33,164,101,.28)}
-    .card--yellow{border-color:rgba(213,154,0,.28)}
-    .card--red{border-color:rgba(209,73,91,.28)}
-    .card--tool{border-color:rgba(108,92,231,.22)}
-    .empty{padding:18px 20px;border-radius:20px;background:var(--surface);border:1px dashed var(--border);color:var(--muted);font-size:15px;line-height:1.6}
-    @media (max-width: 991.98px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:40px}}
-    @media (max-width: 767.98px){.grid{grid-template-columns:1fr}h1{font-size:32px}.wrap{padding:32px 16px 52px}}
+    .dot.green{background:var(--green)}
+    .dot.yellow{background:var(--yellow)}
+    .dot.red{background:var(--red)}
+    .actions{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+      margin-top:28px;
+    }
+    .portal-card{
+      display:block;
+      padding:24px;
+      border-radius:28px;
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      transition:.2s ease;
+    }
+    .portal-card:hover{transform:translateY(-2px);box-shadow:0 24px 48px rgba(79,53,164,.14)}
+    .portal-card__kicker{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .portal-card__kicker.site{background:rgba(33,164,101,.10);color:var(--green)}
+    .portal-card__kicker.details{background:rgba(209,73,91,.10);color:var(--red)}
+    .portal-card h2{margin:16px 0 10px;font-size:32px;line-height:1.02;letter-spacing:-.04em}
+    .portal-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.65}
+    .portal-card ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px;color:var(--text);font-size:14px;font-weight:700}
+    .portal-card li{display:flex;align-items:center;gap:10px}
+    .portal-card li::before{
+      content:"";
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--purple) 0%,var(--purple-2) 100%);
+      flex:0 0 auto;
+    }
+    @media (max-width: 991.98px){
+      h1{font-size:44px}
+      .actions{grid-template-columns:1fr}
+    }
+    @media (max-width: 767.98px){
+      .wrap{padding:32px 16px 48px}
+      .hero{padding:22px}
+      h1{font-size:34px}
+      .lead{font-size:16px}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Nebula status index</h1>
-    <p class="lead">Показываю верстку только через единый светофорный статус. Это теперь рабочее правило для приемки.</p>
-    <div class="rule">
-      <strong>Правило.</strong> Зеленый статус ставится только после твоего явного подтверждения в чате. Желтый означает: я считаю экран готовым к твоей проверке. Красный означает: экран не готов к приемке. Внутренние review-board, debug и gallery поверхности не считаются пользовательской версткой и идут отдельно как инструменты.
-    </div>
+    <section class="hero">
+      <div class="eyebrow">Nebula Portal</div>
+      <h1>Два входа вместо хаоса.</h1>
+      <p class="lead">Корень сайта теперь разделен на две отдельные поверхности. Первая показывает целостную верстку сайта как пользовательский маршрут. Вторая собирает детали, техничку, review-поверхности и черновые состояния, чтобы они не мешали приемке.</p>
 
-    <div class="legend">
-      <div class="legend-item"><span class="dot dot--green"></span><span>Зеленый: принято тобой</span></div>
-      <div class="legend-item"><span class="dot dot--yellow"></span><span>Желтый: готово к твоей проверке</span></div>
-      <div class="legend-item"><span class="dot dot--red"></span><span>Красный: не готово</span></div>
-      <div class="legend-item"><span class="dot dot--tool"></span><span>Фиолетовый: внутренний инструмент</span></div>
-    </div>
-
-    <section class="section">
-      <h2>Принято</h2>
-      <p>Здесь должны быть только страницы, которые ты уже подтвердил как готовые.</p>
-      <div class="empty">Пока нет страниц с зеленым статусом. Я не ставлю его сам себе.</div>
-    </section>
-
-    <section class="section">
-      <h2>Готово к проверке</h2>
-      <p>Это страницы, которые я считаю достаточно собранными, чтобы ты смотрел их глазами и принимал или возвращал в доработку.</p>
-      <div class="grid">
-        <a class="card card--yellow" href="home.html">
-          <div class="card__top"><div class="card__title">Home</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Главная страница. Базовый ориентир для всей линейки.</div>
-        </a>
-        <a class="card card--yellow" href="home-popup-open.html">
-          <div class="card__top"><div class="card__title">Home Popup</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Главная с открытым popup-состоянием.</div>
-        </a>
-        <a class="card card--yellow" href="login.html">
-          <div class="card__top"><div class="card__title">Login</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Экран авторизации.</div>
-        </a>
-        <a class="card card--yellow" href="signup-step-1.html">
-          <div class="card__top"><div class="card__title">Signup Step 1</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Первый шаг регистрации.</div>
-        </a>
-        <a class="card card--yellow" href="signup-step-2.html">
-          <div class="card__top"><div class="card__title">Signup Step 2</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Второй шаг регистрации.</div>
-        </a>
-        <a class="card card--yellow" href="auth-forgot-new.html">
-          <div class="card__top"><div class="card__title">Forgot Password</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Экран восстановления пароля.</div>
-        </a>
-        <a class="card card--yellow" href="psychic-reading-new.html">
-          <div class="card__top"><div class="card__title">Psychic Reading</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Ключевая продуктовая страница.</div>
-        </a>
-        <a class="card card--yellow" href="tarot-reading-new.html">
-          <div class="card__top"><div class="card__title">Tarot Reading</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Продуктовая страница Tarot.</div>
-        </a>
-        <a class="card card--yellow" href="palm-reading-new.html">
-          <div class="card__top"><div class="card__title">Palm Reading</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Продуктовая страница Palm Reading.</div>
-        </a>
-        <a class="card card--yellow" href="phone-psychic-new.html">
-          <div class="card__top"><div class="card__title">Phone Psychic</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Продуктовая страница с phone-сценарием.</div>
-        </a>
-        <a class="card card--yellow" href="cheap-psychic-new.html">
-          <div class="card__top"><div class="card__title">Cheap Psychic</div><span class="badge badge--yellow">YELLOW</span></div>
-          <div class="card__text">Value-oriented продуктовая страница.</div>
-        </a>
+      <div class="rule">
+        <strong>Правило приемки.</strong> Зеленый статус ставится только после твоего явного подтверждения. Желтый означает, что я считаю страницу готовой к твоей проверке. Красный означает, что страница не готова.
       </div>
-    </section>
 
-    <section class="section">
-      <h2>Не готово</h2>
-      <p>Это страницы и шаблоны, которые есть в публикации, но пока не должны восприниматься как принятый результат.</p>
-      <div class="grid">
-        <a class="card card--red" href="all-psychic-new.html"><div class="card__top"><div class="card__title">All Psychic</div><span class="badge badge--red">RED</span></div><div class="card__text">Каталоговая страница без финальной приемки.</div></a>
-        <a class="card card--red" href="love-reading-new.html"><div class="card__top"><div class="card__title">Love Reading</div><span class="badge badge--red">RED</span></div><div class="card__text">Требует финальной доводки и проверки.</div></a>
-        <a class="card card--red" href="zodiac-compatibility-new.html"><div class="card__top"><div class="card__title">Zodiac Compatibility</div><span class="badge badge--red">RED</span></div><div class="card__text">Не закрыт до приемочного уровня.</div></a>
-        <a class="card card--red" href="taurus-compatibility-new.html"><div class="card__top"><div class="card__title">Taurus Compatibility</div><span class="badge badge--red">RED</span></div><div class="card__text">Частный знак, пока без приемки.</div></a>
-        <a class="card card--red" href="faq-new.html"><div class="card__top"><div class="card__title">FAQ</div><span class="badge badge--red">RED</span></div><div class="card__text">Есть в коде, но не переведен в принятый статус.</div></a>
-        <a class="card card--red" href="privacy-policy-new.html"><div class="card__top"><div class="card__title">Privacy Policy</div><span class="badge badge--red">RED</span></div><div class="card__text">Legal page без финальной приемки.</div></a>
-        <a class="card card--red" href="blog-new.html"><div class="card__top"><div class="card__title">Blog</div><span class="badge badge--red">RED</span></div><div class="card__text">Нужна отдельная проверка against Figma.</div></a>
-        <a class="card card--red" href="blog-input-new.html"><div class="card__top"><div class="card__title">Blog Input</div><span class="badge badge--red">RED</span></div><div class="card__text">Состояние есть, приемки нет.</div></a>
-        <a class="card card--red" href="auth-login-state-new.html"><div class="card__top"><div class="card__title">Auth Login State</div><span class="badge badge--red">RED</span></div><div class="card__text">Внутреннее auth-состояние, не закрыто как итоговый экран.</div></a>
-        <a class="card card--red" href="auth-create-new.html"><div class="card__top"><div class="card__title">Auth Create</div><span class="badge badge--red">RED</span></div><div class="card__text">Черновой auth-flow без финального статуса.</div></a>
-        <a class="card card--red" href="auth-step2-new.html"><div class="card__top"><div class="card__title">Auth Step 2</div><span class="badge badge--red">RED</span></div><div class="card__text">Вспомогательный onboarding-screen.</div></a>
+      <div class="legend">
+        <div class="legend-item"><span class="dot green"></span><span>Зеленый: принято</span></div>
+        <div class="legend-item"><span class="dot yellow"></span><span>Желтый: готово к проверке</span></div>
+        <div class="legend-item"><span class="dot red"></span><span>Красный: не готово</span></div>
       </div>
-    </section>
 
-    <section class="section">
-      <h2>Внутренние инструменты</h2>
-      <p>Эти страницы нужны для визуальной сверки и отладки. Они не должны попадать в приемку как пользовательская верстка.</p>
-      <div class="grid">
-        <a class="card card--tool" href="login-review-board.html"><div class="card__top"><div class="card__title">Login Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Сравнение reference и live.</div></a>
-        <a class="card card--tool" href="forgot-review-board.html"><div class="card__top"><div class="card__title">Forgot Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Сравнение forgot password.</div></a>
-        <a class="card card--tool" href="psychic-review-board.html"><div class="card__top"><div class="card__title">Psychic Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Psychic.</div></a>
-        <a class="card card--tool" href="tarot-review-board.html"><div class="card__top"><div class="card__title">Tarot Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Tarot.</div></a>
-        <a class="card card--tool" href="palm-review-board.html"><div class="card__top"><div class="card__title">Palm Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Palm.</div></a>
-        <a class="card card--tool" href="phone-review-board.html"><div class="card__top"><div class="card__title">Phone Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Phone.</div></a>
-        <a class="card card--tool" href="cheap-review-board.html"><div class="card__top"><div class="card__title">Cheap Review Board</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Контур visual QA для Cheap.</div></a>
-        <a class="card card--tool" href="responsive-state-gallery.html"><div class="card__top"><div class="card__title">Responsive Gallery</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Галерея breakpoint-состояний.</div></a>
-        <a class="card card--tool" href="ui-states-lab.html"><div class="card__top"><div class="card__title">UI States Lab</div><span class="badge badge--tool">TOOL</span></div><div class="card__text">Лаборатория вспомогательных состояний.</div></a>
+      <div class="actions">
+        <a class="portal-card" href="site-map.html">
+          <div class="portal-card__kicker site">Сайт</div>
+          <h2>Целостная верстка сайта</h2>
+          <p>Только пользовательские страницы и маршрут по сайту. Здесь можно спокойно прокликивать результат и смотреть, что реально относится к продукту.</p>
+          <ul>
+            <li>главная и popup-сценарий</li>
+            <li>авторизация и регистрация</li>
+            <li>ключевые product-страницы</li>
+            <li>светофорный статус по приемке</li>
+          </ul>
+        </a>
+
+        <a class="portal-card" href="details-map.html">
+          <div class="portal-card__kicker details">Детали</div>
+          <h2>Техничка, состояния и лаборатории</h2>
+          <p>Отдельный слой для review-board, debug, state-screen, галерей компонентов и разрозненных макетных шаблонов. Это больше не мешает просмотру сайта.</p>
+          <ul>
+            <li>review и debug поверхности</li>
+            <li>вспомогательные состояния</li>
+            <li>черновые шаблоны и заготовки</li>
+            <li>технические экраны и галереи</li>
+          </ul>
+        </a>
       </div>
     </section>
   </div>
