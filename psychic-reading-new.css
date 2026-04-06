@@ -1288,7 +1288,7 @@ button {
 }
 
 .prn-trust {
-  padding: 0 0 110px;
+  padding: 0;
 }
 
 .prn-trust .row {
@@ -1297,7 +1297,7 @@ button {
   gap: 30px;
   width: 1110px;
   max-width: 100%;
-  margin: 139px auto 0;
+  margin: 63px auto 0;
 }
 
 .prn-trust .row > div {
@@ -1355,7 +1355,7 @@ button {
 .prn-transform {
   position: relative;
   overflow: hidden;
-  padding: 84px 0 88px;
+  padding: 84px 0 0;
   background:
     linear-gradient(155.58969451418264deg, rgba(103, 62, 218, 0.168) 1.2%, rgba(103, 62, 218, 0) 25.55%),
     linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 100%);
@@ -1483,7 +1483,7 @@ button {
 .prn-tailored {
   position: relative;
   overflow: hidden;
-  padding: 81px 0 0;
+  padding: 81px 0 82px;
   background: #f1f1f1;
 }
 
@@ -1600,7 +1600,7 @@ button {
 }
 
 .prn-page .site-footer {
-  margin-top: 80px;
+  margin-top: 0;
   background: #f1f1f1;
   min-height: 420px;
 }
