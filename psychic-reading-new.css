@@ -1317,22 +1317,29 @@ button {
 }
 
 .prn-trust-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
   height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 120px;
+  max-height: 120px;
   border-radius: 50%;
   border: 2px solid #c5b0ff;
   opacity: 0.85;
   position: relative;
+  flex: 0 0 120px;
+  box-sizing: border-box;
 }
 
-.prn-trust-card__icon::before {
-  content: "★";
-  position: absolute;
-  left: 20px;
-  top: 36px;
+.prn-trust-card__icon-star {
   color: #b89cff;
   font-size: 42px;
   line-height: 1;
+  transform: translate(-10px, 12px);
+  display: block;
 }
 
 .prn-trust-card h3 {
