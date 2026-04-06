@@ -46,6 +46,53 @@ jobs:
             echo "Reason: \`OPENAI_API_KEY\` is not configured in repository secrets."
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Prepare usage telemetry
+        id: usage_prep
+        shell: bash
+        env:
+          REVIEW_MODEL: gpt-5.4-mini
+          REVIEW_EFFORT: low
+        run: |
+          set -euo pipefail
+          mkdir -p .github/tmp
+          ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          pr_number=""
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            pr_number="${{ github.event.pull_request.number }}"
+          fi
+          cat > .github/tmp/ai-review-usage.json <<JSON
+          {
+            "event_class": "billing_usage",
+            "usage_contract_version": 2,
+            "source": "github_actions",
+            "workflow": "AI PR Review",
+            "repo": "${{ github.repository }}",
+            "run_id": "${{ github.run_id }}",
+            "run_attempt": "${{ github.run_attempt }}",
+            "run_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "ts_utc": "${ts}",
+            "event_name": "${{ github.event_name }}",
+            "pr_number": "${pr_number}",
+            "head_branch": "${{ github.head_ref || github.ref_name }}",
+            "billing_pool": "premium",
+            "provider": "openai",
+            "account": "github-openai-api",
+            "account_hint": "${{ github.repository }}",
+            "lane": "github-ai-review",
+            "task_class": "review",
+            "model": "${REVIEW_MODEL}",
+            "effort": "${REVIEW_EFFORT}",
+            "secret_present": false,
+            "review_executed": false,
+            "evidence_status": "inactive_missing_secret",
+            "estimated_input_tokens": 0,
+            "estimated_output_tokens": 0,
+            "estimated_total_tokens": 0,
+            "estimated_token_basis": "inactive_no_secret"
+          }
+          JSON
+          echo "usage_path=.github/tmp/ai-review-usage.json" >> "$GITHUB_OUTPUT"
+
       - name: Pre-fetch PR refs
         if: steps.keycheck.outputs.skip == 'false' && github.event_name == 'pull_request'
         env:
@@ -97,6 +144,55 @@ jobs:
           effort: low
           sandbox: read-only
           safety-strategy: drop-sudo
+
+      - name: Update usage telemetry for executed review
+        if: always() && steps.keycheck.outputs.skip == 'false' && steps.run_codex.outcome == 'success'
+        shell: bash
+        env:
+          REVIEW_MODEL: gpt-5.4-mini
+          REVIEW_EFFORT: low
+          CODEX_FINAL_MESSAGE: ${{ steps.run_codex.outputs.final-message }}
+        run: |
+          set -euo pipefail
+          prompt_chars="$(wc -c < codex-prompt.txt | tr -d ' ')"
+          output_chars="$(printf '%s' "${CODEX_FINAL_MESSAGE:-}" | wc -c | tr -d ' ')"
+          input_tokens=$(( (prompt_chars + 3) / 4 ))
+          output_tokens=$(( (output_chars + 3) / 4 ))
+          if [ "${output_tokens}" -lt 120 ]; then
+            output_tokens=120
+          fi
+          total_tokens=$(( input_tokens + output_tokens ))
+          ts="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          INPUT_TOKENS="${input_tokens}" OUTPUT_TOKENS="${output_tokens}" TOTAL_TOKENS="${total_tokens}" PROMPT_CHARS="${prompt_chars}" OUTPUT_CHARS="${output_chars}" TS="${ts}" python - <<'PY'
+          import json, os
+          path = ".github/tmp/ai-review-usage.json"
+          with open(path, "r", encoding="utf-8") as fh:
+              data = json.load(fh)
+          data.update({
+              "ts_utc": os.environ["TS"],
+              "secret_present": True,
+              "review_executed": True,
+              "evidence_status": "executed_estimated",
+              "estimated_input_tokens": int(os.environ["INPUT_TOKENS"]),
+              "estimated_output_tokens": int(os.environ["OUTPUT_TOKENS"]),
+              "estimated_total_tokens": int(os.environ["TOTAL_TOKENS"]),
+              "estimated_token_basis": "prompt_and_summary_char_estimate",
+              "prompt_chars": int(os.environ["PROMPT_CHARS"]),
+              "output_chars": int(os.environ["OUTPUT_CHARS"]),
+              "model": os.environ["REVIEW_MODEL"],
+              "effort": os.environ["REVIEW_EFFORT"],
+          })
+          with open(path, "w", encoding="utf-8") as fh:
+              json.dump(data, fh, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Upload usage telemetry
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-review-usage
+          path: ${{ steps.usage_prep.outputs.usage_path }}
+          if-no-files-found: error
 
   post-feedback:
     runs-on: ubuntu-latest
