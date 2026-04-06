@@ -1,0 +1,35 @@
+name: PR Quality Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  merge_group:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Repository-specific quality gate
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          LINT_COMMAND='pwsh -NoProfile -ExecutionPolicy Bypass -File .github/scripts/quality-gate.ps1 -Phase syntax'
+          TEST_COMMAND='pwsh -NoProfile -ExecutionPolicy Bypass -File .github/scripts/quality-gate.ps1 -Phase structure'
+          BUILD_COMMAND='pwsh -NoProfile -ExecutionPolicy Bypass -File .github/scripts/quality-gate.ps1 -Phase publish'
+
+          echo "Running lint"
+          eval "$LINT_COMMAND"
+
+          echo "Running test"
+          eval "$TEST_COMMAND"
+
+          echo "Running build"
+          eval "$BUILD_COMMAND"

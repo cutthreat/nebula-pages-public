@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheap Psychic Debug Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    :root{--viewport-w:1200px;--viewport-h:8632px;--fit:.05;--line:rgba(255,255,255,.08);--shadow:0 24px 70px rgba(6,5,17,.36)}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:"Manrope",system-ui,sans-serif;color:#fff;background:radial-gradient(circle at 20% 16%, rgba(141,110,255,.18), transparent 18%),radial-gradient(circle at 80% 12%, rgba(255,255,255,.07), transparent 10%),linear-gradient(180deg,#110c28 0%,#090610 100%)}
+    .app{min-height:100%;padding:18px;display:flex;flex-direction:column;gap:14px}
+    .hero,.panel,.footer{border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.04);box-shadow:var(--shadow)}
+    .hero{padding:14px 16px;background:linear-gradient(145deg, rgba(30,22,63,.92), rgba(12,9,28,.88))}
+    .hero h1{margin:0 0 6px;font-size:20px;line-height:1.05;letter-spacing:-.04em}
+    .hero p{margin:0;max-width:980px;line-height:1.45;color:rgba(255,255,255,.72);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .panel{display:flex;flex-direction:column;overflow:hidden}
+    .head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .head h2{margin:0 0 3px;font-size:15px;line-height:1.15}
+    .head p{margin:0;color:rgba(255,255,255,.62);font-size:11px;line-height:1.35}
+    .tag{padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.16);color:#fff;font-size:11px;line-height:1;background:rgba(255,255,255,.05)}
+    .stage{position:relative;min-height:560px;overflow:hidden;background:linear-gradient(180deg,#120d28 0%,#0e0a22 100%)}
+    .viewport{position:absolute;left:50%;top:12px;width:var(--viewport-w);height:var(--viewport-h);transform:translateX(-50%) scale(var(--fit));transform-origin:top center;overflow:hidden;border-radius:18px;background:#140f2d;box-shadow:0 30px 80px rgba(0,0,0,.34);isolation:isolate}
+    .viewport::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;mix-blend-mode:screen;opacity:.3;background-image:linear-gradient(rgba(141,110,255,.14) 1px, transparent 1px),linear-gradient(90deg, rgba(141,110,255,.14) 1px, transparent 1px);background-size:100% 200px,120px 100%}
+    .viewport img,.viewport iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:transparent}
+    .viewport img{object-fit:contain;pointer-events:none;user-select:none}
+    .lens-note{position:absolute;left:12px;bottom:12px;z-index:3;padding:6px 8px;border-radius:999px;background:rgba(15,12,35,.72);border:1px solid rgba(255,255,255,.12);color:#fff;font-size:11px;line-height:1}
+    .footer{padding:12px 14px;color:rgba(255,255,255,.82);font-size:12px;line-height:1.45}
+    @media (max-width:1100px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <section class="hero"><h1>Cheap Psychic Debug Board</h1><p>Техническая доска для Cheap Psychic: hero, card grid, lower lifestyle section и faq/footer используются только для поиска дрейфа вне clean board.</p></section>
+    <section class="grid">
+      <article class="panel"><div class="head"><div><h2>Browser sanity</h2><p>Independent browser capture for drift detection.</p></div><div class="tag">Sanity</div></div><div class="stage"><div class="viewport"><span class="lens-note">same viewport</span><iframe src="cheap-psychic-new.html?v=20260401-cheap-final-pass-2" title="Browser sanity"></iframe></div></div></article>
+      <article class="panel"><div class="head"><div><h2>Hero lens</h2><p>Header rhythm, long title lockup, and crystal-ball artwork.</p></div><div class="tag">Lens</div></div><div class="stage"><div class="viewport"><span class="lens-note">hero / nav</span><img src="img/cheap-psychic-figma-reference.png?v=20260401-cheap-final-pass-2" alt="Hero lens"></div></div></article>
+      <article class="panel"><div class="head"><div><h2>Experts lens</h2><p>Card density, avatars, CTA rhythm, and browse-more button.</p></div><div class="tag">Lens</div></div><div class="stage"><div class="viewport"><span class="lens-note">experts / cards</span><img src="img/cheap-psychic-figma-reference.png?v=20260401-cheap-final-pass-2" alt="Experts lens"></div></div></article>
+      <article class="panel"><div class="head"><div><h2>Lower page lens</h2><p>Reviews, trust, lifestyle section, click-away panel, faq, seo and footer stack.</p></div><div class="tag">Lens</div></div><div class="stage"><div class="viewport"><span class="lens-note">middle / footer</span><img src="img/cheap-psychic-figma-reference.png?v=20260401-cheap-final-pass-2" alt="Lower page lens"></div></div></article>
+    </section>
+    <section class="footer">Keep this page closed unless the clean board shows mismatch. This page exists only to diagnose scale, clipping, and browser/export drift.</section>
+  </div>
+</body>
+</html>
