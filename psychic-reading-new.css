@@ -1405,8 +1405,32 @@ button {
 
 .prn-transform__list li {
   position: relative;
+  width: 760px;
   max-width: 760px;
   padding-left: 78px;
+}
+
+.prn-transform__list li:nth-child(1) {
+  width: 700px;
+  max-width: 700px;
+}
+
+.prn-transform__list li:nth-child(1) h3,
+.prn-transform__list li:nth-child(1) p {
+  max-width: 622px;
+}
+
+.prn-transform__list li:nth-child(2),
+.prn-transform__list li:nth-child(3) {
+  width: 523px;
+  max-width: 523px;
+}
+
+.prn-transform__list li:nth-child(2) h3,
+.prn-transform__list li:nth-child(2) p,
+.prn-transform__list li:nth-child(3) h3,
+.prn-transform__list li:nth-child(3) p {
+  max-width: 445px;
 }
 
 .prn-transform__list li::before {
@@ -1443,7 +1467,7 @@ button {
   align-items: flex-start;
   width: 445px;
   height: 677px;
-  margin: 28px 0 0;
+  margin: 70px 0 0;
   overflow: visible;
 }
 
@@ -1522,7 +1546,7 @@ button {
 .prn-tailored__card {
   position: absolute;
   right: 0;
-  top: 44px;
+  top: 0;
   z-index: 2;
   width: 540px;
   max-width: none;
@@ -1545,6 +1569,7 @@ button {
 .prn-tailored__card li {
   position: relative;
   padding-left: 65px;
+  width: 450px;
   color: #2f2c35;
   font-size: 17px;
   line-height: 30px;
