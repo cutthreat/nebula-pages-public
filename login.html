@@ -4,20 +4,66 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Log in - Neuro</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23673EDA' d='M8 0l1.9 4.3L14 6.2l-4.1 1.2L8 11.6 6.1 7.4 2 6.2l4.1-1.9L8 0z'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="auth-login.css?v=20260407-login-final" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth-login.css?v=20260403-auth-mobile-2" />
 </head>
-<body class="login-render-body">
-  <main class="login-render" aria-label="Log in page">
-    <img
-      class="login-render__image"
-      src="img/login-figma-reference.png"
-      alt="Log in page"
-      width="1280"
-      height="855"
-      loading="eager"
-      decoding="async"
-    />
+<body>
+  <main class="login-stage" aria-label="Log in">
+    <div class="login-frame">
+      <div class="login-menu" aria-label="Top navigation">
+        <button class="login-burger" type="button" tabindex="-1" aria-hidden="true"></button>
+        <a class="login-brand" href="home.html" aria-label="Home">
+          <img src="img/login-brand-figma.png" alt="NEURO" />
+        </a>
+        <div class="login-menu-right">
+          <a class="login-lang" href="signup-step-1.html">Eng ▾</a>
+          <a class="login-signup" href="signup-step-1.html">Sign up →</a>
+          <button class="login-toggle" type="button" tabindex="-1" aria-hidden="true">
+            <img src="img/login-toggle-icon.svg" alt="" />
+          </button>
+        </div>
+        <button class="login-mobile-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <img src="img/login-toggle-icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="login-hero" aria-hidden="true">
+        <img src="img/login-left-figma.png" alt="" />
+      </div>
+
+      <section class="login-card-wrap" aria-label="Log in form">
+        <div class="login-card">
+          <form class="login-panel" action="home.html" method="get">
+            <h1 class="login-title">Log In</h1>
+            <p class="login-social-title">Log in with</p>
+
+            <div class="login-social-row" aria-label="Social sign in">
+              <button class="login-social" type="button" aria-label="Log in with Google">
+                <img src="img/login-google-figma.png" alt="" />
+              </button>
+              <button class="login-social" type="button" aria-label="Log in with Facebook">
+                <img src="img/login-facebook-figma.png" alt="" />
+              </button>
+            </div>
+
+            <div class="login-divider" aria-hidden="true"></div>
+
+            <div class="login-fields">
+              <input class="login-field" type="email" placeholder="Your email" aria-label="Your email" />
+              <input class="login-field" type="password" placeholder="Your password" aria-label="Your password" />
+              <a class="login-forgot" href="auth-forgot-new.html">Forgot password?</a>
+              <button class="login-submit" type="submit">Log in</button>
+              <p class="login-legal">
+                By logging in, you agree to our <a href="https://asknebula.com/app/terms" target="_blank" rel="noopener">Terms of service</a><br />
+                and <a href="https://asknebula.com/app/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
 </html>
