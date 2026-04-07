@@ -84,6 +84,60 @@ function Resolve-LocalReference {
     return Join-Path (Split-Path -Parent $HtmlPath) $normalized
 }
 
+function Invoke-ReviewSurfacePhase {
+    $boards = Get-ChildItem -Path $repoRoot -File -Filter "*-review-board.html" -ErrorAction SilentlyContinue
+    if ($null -eq $boards -or $boards.Count -eq 0) {
+        Write-Host "Review surface phase skipped: no review boards found."
+        return
+    }
+
+    $checked = 0
+    foreach ($board in $boards) {
+        $html = Get-Content -LiteralPath $board.FullName -Raw
+        if ($html -notmatch 'manifestUrl') {
+            continue
+        }
+
+        $manifestBase = $board.Name -replace '-review-board\.html$', '-review-manifest.json'
+        $manifestPath = Join-Path $repoRoot $manifestBase
+        Assert (Test-Path -LiteralPath $manifestPath) "Missing review manifest for $($board.Name): $manifestBase"
+
+        $manifestRaw = Get-Content -LiteralPath $manifestPath -Raw
+        try {
+            $manifest = $manifestRaw | ConvertFrom-Json -Depth 100
+        }
+        catch {
+            throw "Invalid review manifest JSON: $manifestPath"
+        }
+
+        foreach ($prop in @('reference', 'prototype', 'live')) {
+            $entry = $manifest.PSObject.Properties[$prop]
+            if ($null -ne $entry -and $null -ne $entry.Value -and $entry.Value.src) {
+                $assetPath = Resolve-LocalReference -HtmlPath $manifestPath -Reference $entry.Value.src
+                Assert (Test-Path -LiteralPath $assetPath) "Missing review asset in ${manifestBase}: $($entry.Value.src)"
+            }
+        }
+
+        if ($null -ne $manifest.columns) {
+            foreach ($column in $manifest.columns) {
+                $layersProp = $column.PSObject.Properties['layers']
+                if ($null -ne $layersProp -and $null -ne $layersProp.Value) {
+                    foreach ($layer in $layersProp.Value) {
+                        if ($null -ne $layer -and $layer.src) {
+                            $assetPath = Resolve-LocalReference -HtmlPath $manifestPath -Reference $layer.src
+                            Assert (Test-Path -LiteralPath $assetPath) "Missing review layer asset in ${manifestBase}: $($layer.src)"
+                        }
+                    }
+                }
+            }
+        }
+
+        $checked += 1
+    }
+
+    Write-Host "Review surface phase passed for $checked manifest-driven boards."
+}
+
 function Invoke-SyntaxPhase {
     Test-JavaScriptSyntax
 
@@ -124,6 +178,8 @@ function Invoke-PublishPhase {
     foreach ($file in $pngFiles) {
         Assert ((Get-Item $file.FullName).Length -gt 0) "PNG artifact is empty: $($file.FullName)"
     }
+
+    Invoke-ReviewSurfacePhase
 
     Write-Host "Publish phase passed."
 }
