@@ -1,0 +1,26 @@
+{
+  "nodeId": "912:12837",
+  "name": "Phone Psychic 576",
+  "viewport": {
+    "width": 576,
+    "height": 8946
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 912:12837.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/breakpoints/phone-psychic-576-reference.png?v=20260401-bp-proof-1"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Phone Psychic page under the same breakpoint viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "phone-psychic-new.html?v=20260401-phone-final-pass-2"
+    }
+  ]
+}

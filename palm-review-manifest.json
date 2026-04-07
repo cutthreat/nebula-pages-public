@@ -1,0 +1,26 @@
+{
+  "nodeId": "910:20010",
+  "name": "Palm Reading",
+  "viewport": {
+    "width": 1200,
+    "height": 4392
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 910:20010.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/palm-figma-reference.png?v=20260401-palm-final-pass-3"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Palm Reading page under the same desktop viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "palm-reading-new.html?v=20260401-palm-final-pass-3"
+    }
+  ]
+}

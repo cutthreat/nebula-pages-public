@@ -1,0 +1,27 @@
+{
+  "nodeId": "893:12319",
+  "name": "Tarot Reading",
+  "viewport": {
+    "width": 1200,
+    "height": 8542
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 893:12319.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/tarot-reading-figma-reference.png?v=20260401-tarot-final-pass-3"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Tarot Reading page under the same desktop viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "tarot-reading-new.html?v=20260401-tarot-final-pass-3"
+    }
+  ]
+}
+
