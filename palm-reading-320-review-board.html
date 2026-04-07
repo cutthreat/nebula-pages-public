@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palm Reading 320 Review Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    :root{--line:rgba(255,255,255,.08);--shadow:0 24px 70px rgba(6,5,17,.36);--viewport-w:320px;--viewport-h:5886px;--fit:0.28;--grid-opacity:.2;--column-count:2}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:"Manrope",system-ui,sans-serif;color:#fff;background:radial-gradient(circle at 20% 16%, rgba(141,110,255,.16), transparent 18%),radial-gradient(circle at 80% 12%, rgba(255,255,255,.06), transparent 10%),linear-gradient(180deg,#110c28 0%,#090610 100%)}
+    .app{min-height:100%;padding:18px;display:flex;flex-direction:column;gap:14px}
+    .hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:14px 16px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg, rgba(30,22,63,.92), rgba(12,9,28,.88));box-shadow:var(--shadow)}
+    .hero h1{margin:0;font-size:20px;line-height:1.05;letter-spacing:-.04em}
+    .meta{display:flex;gap:8px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;min-height:30px;padding:0 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;font-size:12px;line-height:1}
+    .board{flex:1;min-height:0;display:grid;grid-template-columns:repeat(var(--column-count),minmax(0,1fr));gap:12px}
+    .pane{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(255,255,255,.09);border-radius:22px;background:rgba(255,255,255,.04);box-shadow:var(--shadow)}
+    .pane-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .pane-head h2{margin:0;font-size:15px;line-height:1.15}
+    .tag{padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.16);color:#fff;font-size:11px;line-height:1;background:rgba(255,255,255,.05)}
+    .stage{position:relative;flex:1;min-height:820px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(180deg,#120d28 0%,#0e0a22 100%)}
+    .viewport{position:absolute;left:50%;top:20px;width:var(--viewport-w);height:var(--viewport-h);transform:translateX(-50%) scale(var(--fit));transform-origin:top center;overflow:hidden;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.34);background:#140f2d;isolation:isolate}
+    .viewport::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;mix-blend-mode:screen;opacity:var(--grid-opacity);background-image:linear-gradient(rgba(141,110,255,.14) 1px, transparent 1px),linear-gradient(90deg, rgba(141,110,255,.14) 1px, transparent 1px);background-size:100% 200px,120px 100%}
+    .viewport-frame,.viewport-image{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:transparent}
+    .viewport-image{object-fit:contain;pointer-events:none;user-select:none}
+    @media (max-width:1400px){.board{grid-template-columns:1fr}.hero{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <section class="hero">
+      <div><h1>Palm Reading 320</h1><div class="meta"><span class="pill">320 × 5886</span><span class="pill">clean mode</span><span class="pill">manifest-driven</span><span class="pill">reference-first</span></div></div>
+      <div class="pill">node 910:20635</div>
+    </section>
+    <section class="board" id="board" aria-label="Palm Reading 320 comparison board"></section>
+  </div>
+  <script>
+    const manifestUrl = 'palm-reading-320-review-manifest.json?v=20260401-bp-proof-1';
+    function paneHtml(item){const media=item.kind==='iframe'?`<iframe class="viewport-frame" src="${item.src}" title="${item.title}"></iframe>`:`<img class="viewport-image" src="${item.src}" alt="${item.title}">`;return `<article class="pane"><div class="pane-head"><div><h2>${item.title}</h2></div><div class="tag">${item.tag}</div></div><div class="stage"><div class="viewport">${media}</div></div></article>`}
+    fetch(manifestUrl).then((r)=>r.json()).then((data)=>{document.documentElement.style.setProperty('--column-count', String(data.columns.length || 2));document.querySelector('#board').innerHTML=data.columns.map(paneHtml).join('')}).catch((error)=>{document.querySelector('#board').innerHTML=`<div class="pill">Failed to load manifest: ${error.message}</div>`})
+  </script>
+</body>
+</html>

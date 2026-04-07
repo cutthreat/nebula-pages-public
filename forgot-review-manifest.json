@@ -1,0 +1,42 @@
+{
+  "nodeId": "375:1160",
+  "name": "Forgot password",
+  "viewport": {
+    "width": 1280,
+    "height": 855
+  },
+  "columns": [
+    {
+      "title": "Figma proto",
+      "subtitle": "Prototype preview capture for the selected node.",
+      "tag": "Proto",
+      "note": "prototype",
+      "kind": "image",
+      "src": "img/forgot-proto-frame.png?v=20260331-forgot-pass-4"
+    },
+    {
+      "title": "Export PNG",
+      "subtitle": "Raster export of the same frame boundary.",
+      "tag": "PNG",
+      "note": "raster export",
+      "kind": "image",
+      "src": "img/forgot-export-raster.png?v=20260331-forgot-pass-4"
+    },
+    {
+      "title": "Export SVG",
+      "subtitle": "Vector export from the same Figma frame.",
+      "tag": "SVG",
+      "note": "vector export",
+      "kind": "image",
+      "src": "img/forgot-export-source.svg?v=20260331-forgot-pass-4"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live auth-forgot page under the same viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "auth-forgot-new.html?v=20260331-forgot-pass-4"
+    }
+  ]
+}

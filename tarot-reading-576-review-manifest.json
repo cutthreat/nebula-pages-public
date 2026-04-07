@@ -1,0 +1,26 @@
+{
+  "nodeId": "893:12903",
+  "name": "Tarot Reading 576",
+  "viewport": {
+    "width": 576,
+    "height": 8740
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 893:12903.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/breakpoints/tarot-reading-576-reference.png?v=20260401-bp-proof-1"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Tarot Reading page under the same breakpoint viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "tarot-reading-new.html?v=20260401-tarot-final-pass-2"
+    }
+  ]
+}

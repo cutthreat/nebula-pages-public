@@ -1,0 +1,26 @@
+{
+  "nodeId": "874:8758",
+  "name": "Psychic Reading 992",
+  "viewport": {
+    "width": 992,
+    "height": 7479
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 874:8758.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/breakpoints/psychic-reading-992-reference.png?v=20260401-bp-proof-1"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Psychic Reading page under the same breakpoint viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "psychic-reading-new.html?v=20260401-psychic-final-pass-2"
+    }
+  ]
+}
