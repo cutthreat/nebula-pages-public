@@ -292,8 +292,7 @@ a:hover {
     color: var(--primary-color);
 }
 
-.hero-section__paragraph,
-.hero-section__pargraph {
+.hero-section__paragraph {
     font-size: 17px;
     line-height: 1.9;
     margin: 33px 0;
@@ -3000,9 +2999,8 @@ a:hover {
     .steps-section__card--step4 .steps-section__card-title,
     .steps-section__card--step4 .steps-section__card-text,
     .steps-section__cta {
-        width: 100%;
-        text-align: center;
         width: fit-content;
+        text-align: center;
         margin: 0 auto;
     }
 
@@ -3015,8 +3013,6 @@ a:hover {
     .situation-section__item {
         font-size: 14px;
     }
-
-    .site-footer__col-right {}
 
     .site-footer__col-menu,
     .site-footer__col-menu:last-child {
