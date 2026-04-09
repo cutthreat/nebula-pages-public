@@ -12,7 +12,7 @@
       "tag": "Ref",
       "note": "reference-first",
       "kind": "image",
-      "src": "img/psychic-reading-figma-reference.png?v=20260401-psychic-final-pass-3"
+      "src": "img/psychic-reading-figma-reference.png?v=20260409-prn-transform-pass2"
     },
     {
       "title": "Current implementation",
@@ -20,7 +20,7 @@
       "tag": "Live",
       "note": "same viewport",
       "kind": "iframe",
-      "src": "psychic-reading-new.html?v=20260401-psychic-final-pass-3"
+      "src": "psychic-reading-new.html?v=20260409-prn-transform-pass2"
     }
   ]
 }
