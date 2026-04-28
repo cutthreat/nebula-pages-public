@@ -75,128 +75,130 @@ function initInlineVideoEmbed() {
   });
 }
 document.addEventListener("DOMContentLoaded", function () {
-  var root = document.querySelector('[data-accordion="single"]');
-  if (!root) return;
+  var roots = document.querySelectorAll('[data-accordion="single"]');
+  if (!roots.length) return;
 
-  function setIcon(btn, isOpen) {
-    var icon = btn ? btn.querySelector(".faq-section__icon") : null;
-    if (!icon) return;
-    icon.innerHTML = isOpen
-      ? '<span class="faq-section__icon-x"></span>'
-      : '<span class="faq-section__icon-chevron"></span>';
-  }
-
-  function measurePreviewHeight(item) {
-    var panel = item.querySelector(".faq-section__panel");
-    var body = item.querySelector(".faq-section__body");
-    if (!panel || !body) return 0;
-
-    var wasOpen = item.classList.contains("is-open");
-    item.classList.remove("is-open");
-
-    var prevHeight = panel.scrollHeight;
-
-    if (wasOpen) item.classList.add("is-open");
-    return prevHeight;
-  }
-
-  function setToPreview(item) {
-    var btn = item.querySelector(".faq-section__toggle");
-    var panelId = btn && btn.getAttribute("aria-controls");
-    var panel = panelId ? document.getElementById(panelId) : null;
-    if (!btn || !panel) return;
-
-    item.classList.remove("is-open");
-    btn.setAttribute("aria-expanded", "false");
-    setIcon(btn, false);
-
-    var h = measurePreviewHeight(item);
-    panel.style.height = h + "px";
-  }
-
-  function openItem(item) {
-    var btn = item.querySelector(".faq-section__toggle");
-    var panelId = btn && btn.getAttribute("aria-controls");
-    var panel = panelId ? document.getElementById(panelId) : null;
-    if (!btn || !panel) return;
-
-    var from = panel.scrollHeight;
-
-    item.classList.add("is-open");
-    btn.setAttribute("aria-expanded", "true");
-    setIcon(btn, true);
-
-    var to = panel.scrollHeight;
-
-    panel.style.height = from + "px";
-    requestAnimationFrame(function () {
-      panel.style.height = to + "px";
-    });
-
-    panel.addEventListener(
-      "transitionend",
-      function (e) {
-        if (e.propertyName !== "height") return;
-        if (!item.classList.contains("is-open")) return;
-        panel.style.height = "auto";
-      },
-      { once: true },
-    );
-  }
-
-  function closeItem(item) {
-    var btn = item.querySelector(".faq-section__toggle");
-    var panelId = btn && btn.getAttribute("aria-controls");
-    var panel = panelId ? document.getElementById(panelId) : null;
-    if (!btn || !panel) return;
-
-    var from = panel.scrollHeight;
-
-    item.classList.remove("is-open");
-    btn.setAttribute("aria-expanded", "false");
-    setIcon(btn, false);
-
-    var to = panel.scrollHeight;
-
-    panel.style.height = from + "px";
-    requestAnimationFrame(function () {
-      panel.style.height = to + "px";
-    });
-  }
-
-  function closeAll(except) {
-    root.querySelectorAll(".faq-section__item").forEach(function (item) {
-      if (except && item === except) return;
-      setToPreview(item);
-    });
-  }
-
-  root.addEventListener("click", function (e) {
-    var btn = e.target.closest(".faq-section__toggle");
-    if (!btn || !root.contains(btn)) return;
-
-    var item = btn.closest(".faq-section__item");
-    if (!item) return;
-
-    var isOpen = btn.getAttribute("aria-expanded") === "true";
-    if (isOpen) {
-      closeItem(item);
-      return;
+  roots.forEach(function (root) {
+    function setIcon(btn, isOpen) {
+      var icon = btn ? btn.querySelector(".faq-section__icon") : null;
+      if (!icon) return;
+      icon.innerHTML = isOpen
+        ? '<span class="faq-section__icon-x"></span>'
+        : '<span class="faq-section__icon-chevron"></span>';
     }
 
-    closeAll(item);
-    openItem(item);
-  });
+    function measurePreviewHeight(item) {
+      var panel = item.querySelector(".faq-section__panel");
+      var body = item.querySelector(".faq-section__body");
+      if (!panel || !body) return 0;
 
-  var items = root.querySelectorAll(".faq-section__item");
-  items.forEach(function (item) {
-    setToPreview(item);
-  });
+      var wasOpen = item.classList.contains("is-open");
+      item.classList.remove("is-open");
 
-  var first = root.querySelector(".faq-section__item");
-  if (first) {
-    openItem(first);
-  }
+      var prevHeight = panel.scrollHeight;
+
+      if (wasOpen) item.classList.add("is-open");
+      return prevHeight;
+    }
+
+    function setToPreview(item) {
+      var btn = item.querySelector(".faq-section__toggle");
+      var panelId = btn && btn.getAttribute("aria-controls");
+      var panel = panelId ? document.getElementById(panelId) : null;
+      if (!btn || !panel) return;
+
+      item.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      setIcon(btn, false);
+
+      var h = measurePreviewHeight(item);
+      panel.style.height = h + "px";
+    }
+
+    function openItem(item) {
+      var btn = item.querySelector(".faq-section__toggle");
+      var panelId = btn && btn.getAttribute("aria-controls");
+      var panel = panelId ? document.getElementById(panelId) : null;
+      if (!btn || !panel) return;
+
+      var from = panel.scrollHeight;
+
+      item.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+      setIcon(btn, true);
+
+      var to = panel.scrollHeight;
+
+      panel.style.height = from + "px";
+      requestAnimationFrame(function () {
+        panel.style.height = to + "px";
+      });
+
+      panel.addEventListener(
+        "transitionend",
+        function (e) {
+          if (e.propertyName !== "height") return;
+          if (!item.classList.contains("is-open")) return;
+          panel.style.height = "auto";
+        },
+        { once: true },
+      );
+    }
+
+    function closeItem(item) {
+      var btn = item.querySelector(".faq-section__toggle");
+      var panelId = btn && btn.getAttribute("aria-controls");
+      var panel = panelId ? document.getElementById(panelId) : null;
+      if (!btn || !panel) return;
+
+      var from = panel.scrollHeight;
+
+      item.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      setIcon(btn, false);
+
+      var to = panel.scrollHeight;
+
+      panel.style.height = from + "px";
+      requestAnimationFrame(function () {
+        panel.style.height = to + "px";
+      });
+    }
+
+    function closeAll(except) {
+      root.querySelectorAll(".faq-section__item").forEach(function (item) {
+        if (except && item === except) return;
+        setToPreview(item);
+      });
+    }
+
+    root.addEventListener("click", function (e) {
+      var btn = e.target.closest(".faq-section__toggle");
+      if (!btn || !root.contains(btn)) return;
+
+      var item = btn.closest(".faq-section__item");
+      if (!item) return;
+
+      var isOpen = btn.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        closeItem(item);
+        return;
+      }
+
+      closeAll(item);
+      openItem(item);
+    });
+
+    var items = root.querySelectorAll(".faq-section__item");
+    items.forEach(function (item) {
+      setToPreview(item);
+    });
+
+    var first = root.querySelector(".faq-section__item");
+    if (first) {
+      openItem(first);
+    }
+  });
 });
 
 function initClientsSlider() {
