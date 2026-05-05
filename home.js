@@ -190,13 +190,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var items = root.querySelectorAll(".faq-section__item");
+    var initiallyOpen = root.querySelector(".faq-section__item.is-open") || root.querySelector(".faq-section__item");
     items.forEach(function (item) {
+      if (item === initiallyOpen) return;
       setToPreview(item);
     });
 
-    var first = root.querySelector(".faq-section__item");
-    if (first) {
-      openItem(first);
+    if (initiallyOpen) {
+      var initialBtn = initiallyOpen.querySelector(".faq-section__toggle");
+      var initialPanelId = initialBtn && initialBtn.getAttribute("aria-controls");
+      var initialPanel = initialPanelId ? document.getElementById(initialPanelId) : null;
+      initiallyOpen.classList.add("is-open");
+      if (initialBtn) {
+        initialBtn.setAttribute("aria-expanded", "true");
+        setIcon(initialBtn, true);
+      }
+      if (initialPanel) initialPanel.style.height = "auto";
     }
   });
 });

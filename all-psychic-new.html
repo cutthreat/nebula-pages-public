@@ -44,6 +44,32 @@
       --apn-neuro-stats-col-3:131px;
       --apn-neuro-stats-col-4:218px;
     }
+    @media (min-width:1201px){
+      .prn-body{
+        background:#ffffff;
+      }
+      .prn-page{
+        width:var(--apn-page-shell-width);
+        max-width:var(--apn-page-shell-width);
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        overflow:visible;
+        background:#ffffff;
+      }
+      .prn-page .site-header.fixed-top{
+        width:var(--apn-page-shell-width);
+        max-width:var(--apn-page-shell-width);
+        left:50%;
+        right:auto;
+        transform:translateX(-50%);
+      }
+      .prn-page .prn-main,
+      .prn-page .container{
+        width:100%;
+        max-width:var(--apn-page-shell-width);
+      }
+    }
     .apn-theme{
       background:linear-gradient(180deg,#faf7ff 0%,#efe8ff 100%);
     }
@@ -68,6 +94,7 @@
     .apn-hero__accent{margin:78px 0 50px;color:#6d45ea;font-size:39px;font-weight:500;line-height:71px;letter-spacing:0}
     .apn-search-card{width:540px;max-width:540px;margin-left:25px;padding:28px 18px 20px;background:rgba(255,255,255,.98);border-radius:28px;box-shadow:0 20px 54px rgba(86,57,175,.10)}
     .apn-search-card__title{margin:0 0 18px;color:#201a31;font-size:22px;font-weight:500;line-height:1.2}
+    .apn-search-title-break{display:none}
     .apn-search-card__row{display:grid;grid-template-columns:70px 1fr;gap:16px;align-items:start}
     .apn-search-card__row + .apn-search-card__row{margin-top:10px}
     .apn-search-card__label{padding-top:8px;color:#6c6678;font-size:12px;line-height:1.1}
@@ -330,7 +357,7 @@
     .apn-love-card__divider{height:1px;margin:25px 0 24px;background:#dedede}
     .apn-love-card__info{display:flex;flex-direction:column;gap:30px}
     .apn-love-card__facts{display:grid;gap:10px}
-    .apn-love-card__fact{display:flex;align-items:center;gap:13px;min-height:18px;color:#929292;font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;font-size:16px;line-height:18px;font-weight:400;letter-spacing:-0.48px}
+    .apn-love-card__fact{display:flex;align-items:center;gap:13px;min-height:18px;color:#929292;font-family:"Manrope",sans-serif;font-size:16px;line-height:18px;font-weight:400;letter-spacing:-0.48px}
     .apn-love-card__fact-text{display:inline-block}
     .apn-love-card__fact-accent{color:#7653d9}
     .apn-love-card__fact-muted{color:#929292}
@@ -508,9 +535,13 @@
     .apn-faq__item summary::-webkit-details-marker{display:none}
     .apn-faq__question{display:block;color:#101010;font-size:23px;line-height:35px;font-weight:600}
     .apn-faq__toggle{position:relative;display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:32px;background:#fff;flex:0 0 64px}
-    .apn-faq__toggle svg{display:block;width:16px;height:16px}
+    .apn-faq__toggle svg{display:none}
+    .apn-faq__toggle::before,.apn-faq__toggle::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:2px;border-radius:1px;background:#090909;transform:translate(-50%,-50%)}
+    .apn-faq__toggle::after{width:2px;height:16px}
     .apn-faq__item[open] .apn-faq__toggle{width:68px;height:68px;border-radius:34px;background:#efeaff;transform:translateY(-11px)}
-    .apn-faq__item[open] .apn-faq__toggle svg{width:22.63px;height:22.63px;transform:translateY(-2px)}
+    .apn-faq__item[open] .apn-faq__toggle svg{display:none}
+    .apn-faq__item[open] .apn-faq__toggle::before,.apn-faq__item[open] .apn-faq__toggle::after{width:22.63px;height:2.5px;border-radius:1.25px;transform:translate(-50%,-50%) rotate(45deg)}
+    .apn-faq__item[open] .apn-faq__toggle::after{transform:translate(-50%,-50%) rotate(-45deg)}
     .apn-faq__answer{margin-top:-9px;padding:0 105px 30px 40px}
     .apn-faq__answer p{margin:0;max-width:950px;color:#101010;font-size:18px;line-height:28px}
       @media (min-width:993px){
@@ -543,16 +574,19 @@
     .apn-answer-item summary::-webkit-details-marker{display:none}
     .apn-answer-item--short summary{min-height:182px}
     .apn-answer-item--tall summary{min-height:217px}
-    .apn-answer-item--open{min-height:708px}
-    .apn-answer-item--open summary{min-height:auto;padding:29px 10px 0 40px;column-gap:42px}
+    .apn-answer-item--open{min-height:0}
+    .apn-answer-item--open summary{min-height:auto;padding:17px 10px 0 40px;column-gap:24px}
     .apn-answer-head{display:grid;align-content:start;gap:14px;min-width:0;width:100%}
     .apn-answer-title{margin:0;color:#101010;font-size:30px;line-height:35px;letter-spacing:0;font-weight:600}
     .apn-answer-item--open .apn-answer-title{width:820px;max-width:820px;font-size:30px;line-height:35px;font-weight:600}
     .apn-answer-preview{max-width:100%;margin:0;color:#494357;font-size:18px;line-height:1.55}
     .apn-answer-item--open .apn-answer-preview{display:none}
     .apn-answer-toggle{position:relative;display:flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:34px;background:#f3f0f8;flex:0 0 68px}
-    .apn-answer-toggle svg{display:block;width:22.63px;height:22.63px}
-    .apn-answer-item--open .apn-answer-toggle svg{transform:translateY(2px)}
+    .apn-answer-toggle svg{display:none}
+    .apn-answer-toggle::before,.apn-answer-toggle::after{content:"";position:absolute;left:50%;top:50%;width:22.63px;height:2px;border-radius:1px;background:#2c2836;transform:translate(-50%,-50%)}
+    .apn-answer-toggle::after{width:2px;height:22.63px}
+    .apn-answer-item--open .apn-answer-toggle::before,.apn-answer-item--open .apn-answer-toggle::after{height:3px;background:#101010;transform:translate(-50%,-50%) rotate(45deg)}
+    .apn-answer-item--open .apn-answer-toggle::after{width:22.63px;transform:translate(-50%,-50%) rotate(-45deg)}
     .apn-answer-body{padding:20px 10px 29px 40px}
     .apn-answer-body p{width:820px;max-width:820px;margin:0;color:#101010;font-size:21px;line-height:35px;font-weight:400;letter-spacing:0;white-space:pre-line}
     .apn-answer-item--open .apn-answer-body p{font-size:21px;line-height:35px}
@@ -572,6 +606,15 @@
     .apn-reasons__cta .c-btn::after{content:none}
     .apn-reasons__cta .c-btn .apn-reasons__cta-label{display:block;white-space:nowrap}
     .apn-reasons__cta .c-btn .apn-reasons__cta-icon{display:inline-flex;align-items:center;justify-content:center;width:14px;height:12px;flex:0 0 14px;background:url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989592 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z' fill='%237653D9'/%3E%3C/svg%3E") center/contain no-repeat}
+    @media (min-width:993px){
+      .apn-reason-card:first-child .apn-reason-card__title{max-width:145px}
+      .apn-faq__toggle svg,.apn-answer-toggle svg{display:block}
+      .apn-faq__toggle::before,.apn-faq__toggle::after,.apn-answer-toggle::before,.apn-answer-toggle::after{content:none}
+      .apn-faq__item:nth-of-type(4) .apn-faq__toggle svg{width:16px;height:16px}
+      .apn-faq__item[open] .apn-faq__toggle svg,.apn-answer-item--open .apn-answer-toggle svg{display:block;width:22.63px;height:22.63px}
+      .apn-clients__stars{transform:translate(20px,1px)}
+      .apn-answer-item--open .apn-answer-body{padding-bottom:6px}
+    }
     .apn-route-card{padding:24px;background:#fff;border-radius:24px;border:1px solid rgba(109,69,234,.08);box-shadow:0 16px 36px rgba(86,57,175,.08)}
     .apn-route-card h3{margin:0 0 12px}
     .apn-route-card p{margin:0;color:#4a4456;font-size:16px;line-height:1.76}
@@ -737,6 +780,59 @@
       .apn-reasons__cta .c-btn{width:262px;min-height:70px}
     }
     @media (max-width:768px) and (min-width:577px){
+      .prn-page .site-header{
+        border-bottom:none;
+        background:transparent;
+      }
+      .apn-hero .prn-hero-section__title{
+        font-size:37px;
+        line-height:50px;
+        letter-spacing:-.37px;
+        transform:translateY(-6px);
+      }
+      .apn-hero__accent{
+        font-size:24px;
+        line-height:71px;
+        transform:translateY(-6px);
+      }
+      .apn-search-card{
+        padding:0;
+        background:transparent;
+        border-radius:0;
+        box-shadow:none;
+      }
+      .apn-search-card__title{
+        margin-bottom:15px;
+        font-size:20px;
+        line-height:25px;
+      }
+      .apn-search-title-break{
+        display:block;
+      }
+      .apn-search-card__row{
+        display:block;
+        gap:0;
+      }
+      .apn-search-card__row + .apn-search-card__row{
+        margin-top:10px;
+      }
+      .apn-search-card__label{
+        padding-top:0;
+        font-size:13px;
+        line-height:13px;
+      }
+      .apn-search-card__chips{
+        margin-top:12px;
+        margin-left:0;
+      }
+      .apn-chip{
+        min-height:28px;
+        height:28px;
+        padding:0 8px;
+        font-size:12px;
+        line-height:28px;
+        letter-spacing:-.12px;
+      }
       .apn-love,.apn-online{padding-top:54px;padding-bottom:68px}
       .apn-love__head,.apn-online__head{margin-bottom:35px;min-height:128px}
       .apn-love__head-row,.apn-online__head{align-items:flex-start;justify-content:space-between}
@@ -768,7 +864,7 @@
       .apn-online__nav-btn{width:64px;height:64px;font-size:28px}
       .apn-online__browse{width:344px;min-height:70px;margin:68px auto 0}
       .apn-affordable{padding:56px 0 52px}
-      .apn-affordable__title{width:690px;font-size:60px;line-height:1}
+      .apn-affordable__title{width:690px;font-size:45px;line-height:60px;letter-spacing:0}
       .apn-affordable__row{grid-template-columns:1fr;justify-items:center;gap:30px;height:806px;margin-top:30px}
       .apn-affordable__art{width:426px;height:302px;margin-top:0;justify-content:center;overflow:hidden}
       .apn-affordable__art img{width:426px;height:302px;object-fit:contain;object-position:center}
@@ -963,12 +1059,16 @@
     @media (max-width:992px) and (min-width:769px){
       .apn-answer-section{padding-top:60px}
       .apn-answer-stack{width:930px}
-      .apn-answer-item--open{min-height:708px}
+      .apn-answer-item--open{min-height:0}
       .apn-answer-item--short summary{min-height:182px}
       .apn-answer-item--tall summary{min-height:217px}
       .apn-answer-body p{max-width:770px}
     }
     @media (max-width:992px) and (min-width:769px){
+      .prn-page .site-header{
+        border-bottom:none;
+        background:transparent;
+      }
       .apn-hero-shell{
         grid-template-columns:minmax(0,500px) minmax(0,426px);
         grid-template-areas:"copy media" "search media";
@@ -983,22 +1083,23 @@
         width:500px;
         max-width:500px;
         font-size:50px;
-        line-height:63px;
+        line-height:54px;
         letter-spacing:-.5px;
       }
       .apn-hero__accent{
-        margin:13px 0 32px;
+        margin:40px 0 32px;
         font-size:34px;
-        line-height:71px;
+        line-height:24px;
         letter-spacing:0;
       }
       .apn-hero-media{
         height:533px;
         margin-top:2px;
+        transform:translateX(11px);
       }
       .apn-search-shell{
         width:500px;
-        margin-top:-147px;
+        margin-top:-128px;
         margin-left:0;
         transform:none;
       }
@@ -1007,7 +1108,7 @@
         max-width:500px;
         min-height:255px;
         margin-left:0;
-        padding:24px 16px 18px;
+        padding:36px 30px 18px;
         box-sizing:border-box;
       }
       .apn-hero-cluster{
@@ -1086,7 +1187,7 @@
       .apn-answer-section{padding-top:54px}
       .apn-answer-stack{width:690px}
       .apn-answer-item summary{grid-template-columns:minmax(0,1fr) 68px;column-gap:24px;padding:17px 28px 17px 40px}
-      .apn-answer-item--open{min-height:653px}
+      .apn-answer-item--open{min-height:0}
       .apn-answer-item--short summary,.apn-answer-item--tall summary{min-height:217px}
       .apn-answer-title{font-size:32px}
       .apn-answer-item--open .apn-answer-title{width:530px;max-width:530px;font-size:25px;line-height:35px}
@@ -1099,7 +1200,7 @@
       .apn-answer-stack{width:510px}
       .apn-answer-item{border-radius:33px}
       .apn-answer-item summary{grid-template-columns:minmax(0,1fr) 56px;column-gap:28px;padding:17px 24px 17px 30px}
-      .apn-answer-item--open{min-height:679px}
+      .apn-answer-item--open{min-height:0}
       .apn-answer-item--short summary,.apn-answer-item--tall summary{min-height:211px}
       .apn-answer-title{font-size:29px;line-height:1}
       .apn-answer-item--open .apn-answer-title{width:372px;max-width:372px;font-size:20px;line-height:29px}
@@ -1114,7 +1215,7 @@
       .apn-answer-stack{width:288px}
       .apn-answer-item{border-radius:28px}
       .apn-answer-item summary{grid-template-columns:minmax(0,1fr) 50px;column-gap:10px;padding:20px}
-      .apn-answer-item--open{min-height:1024px}
+      .apn-answer-item--open{min-height:0}
       .apn-answer-item--short summary,.apn-answer-item--tall summary{min-height:268px}
       .apn-answer-title{font-size:22px;line-height:1.3}
       .apn-answer-item--open .apn-answer-title{width:188px;max-width:188px;font-size:20px;line-height:29px}
@@ -1142,7 +1243,7 @@
         font-size:37px;
         line-height:50px;
         letter-spacing:-0.37px;
-        transform:none;
+        transform:translateY(-6px);
       }
       .apn-hero__accent{
         width:370px;
@@ -1164,9 +1265,58 @@
         max-width:350px;
         min-height:310px;
         margin-left:0;
-        padding:28px 18px 20px;
-        border-radius:28px;
+        padding:0;
+        background:transparent;
+        border-radius:0;
+        box-shadow:none;
         box-sizing:border-box;
+      }
+      .apn-neuro-catalog__title{
+        width:690px;
+        max-width:690px;
+        font-size:45px;
+        line-height:77px;
+        letter-spacing:-1.35px;
+        transform:translate(24px,-12px);
+      }
+      .apn-neuro-catalog__grid{
+        width:690px;
+        max-width:690px;
+        grid-template-columns:repeat(2,335px);
+        gap:30px 20px;
+        margin:38px auto 0;
+      }
+      .apn-search-card__title{
+        margin-bottom:15px;
+        font-size:20px;
+        line-height:25px;
+      }
+      .apn-search-title-break{
+        display:block;
+      }
+      .apn-search-card__row{
+        display:block;
+        gap:0;
+      }
+      .apn-search-card__row + .apn-search-card__row{
+        margin-top:10px;
+      }
+      .apn-search-card__label{
+        padding-top:0;
+        font-size:13px;
+        line-height:13px;
+      }
+      .apn-search-card__chips{
+        margin-top:12px;
+        margin-left:0;
+      }
+      .apn-chip{
+        min-height:28px;
+        height:28px;
+        padding:0 8px;
+        font-size:12px;
+        line-height:28px;
+        letter-spacing:-.12px;
       }
       .prn-plain-section.apn-love-host{
         margin-top:20px;
@@ -1309,20 +1459,21 @@
       .apn-hero .prn-hero-section__title{
         width:510px;
         max-width:510px;
-        padding-right:160px;
         font-size:33px;
         line-height:40px;
         letter-spacing:-0.33px;
+        text-align:center;
         transform:none;
       }
       .apn-hero__accent{
         width:510px;
         max-width:510px;
         height:16px;
-        margin:-26px 0 0;
+        margin:14px 0 0;
         font-size:22px;
         line-height:71px;
         letter-spacing:0;
+        text-align:center;
       }
       .apn-hero-media{
         height:400px;
@@ -1338,24 +1489,31 @@
         max-width:480px;
         min-height:220px;
         margin:0;
-        padding:18px 18px 16px;
+        padding:30px 44px 16px;
         border-radius:22px;
         box-sizing:border-box;
       }
       .apn-search-card__title{
-        margin-bottom:16px;
+        margin-bottom:25px;
         font-size:16px;
       }
+      .apn-search-card__row + .apn-search-card__row{
+        margin-top:10px;
+      }
       .apn-search-card__row{
-        grid-template-columns:70px 1fr;
-        gap:8px;
+        display:block;
       }
       .apn-search-card__label{
-        padding-top:3px;
+        padding-top:0;
+        margin-bottom:10px;
+      }
+      .apn-search-card__chips{
+        gap:7px;
+        flex-wrap:nowrap;
       }
       .apn-chip{
         min-height:26px;
-        padding:0 10px;
+        padding:0 8px;
         font-size:11px;
       }
       .apn-hero-cluster{
@@ -1506,7 +1664,7 @@
       }
       .prn-plain-section.apn-love-host .apn-love-card__cta{
         width:218px;
-        margin-top:53px;
+        margin-top:37px;
       }
       .prn-plain-section.apn-love-host .apn-love-card__cta .c-btn{
         min-height:50px;
@@ -1562,8 +1720,8 @@
         font-size:22px;
         line-height:33px;
         letter-spacing:0;
-        text-align:left;
-        white-space:nowrap;
+        text-align:center;
+        white-space:normal;
       }
       .apn-hero-media{
         height:400px;
@@ -1579,24 +1737,30 @@
         max-width:288px;
         min-height:310px;
         margin:0;
-        padding:18px 14px 16px;
+        padding:18px 20px 16px;
         border-radius:22px;
         box-sizing:border-box;
       }
       .apn-search-card__title{
-        margin-bottom:14px;
+        margin-bottom:47px;
         font-size:16px;
       }
       .apn-search-card__row{
-        grid-template-columns:70px 1fr;
-        gap:8px;
+        display:block;
+      }
+      .apn-search-card__row + .apn-search-card__row{
+        margin-top:20px;
       }
       .apn-search-card__label{
-        padding-top:3px;
+        padding-top:0;
+        margin-bottom:10px;
+      }
+      .apn-search-card__chips{
+        gap:8px;
       }
       .apn-chip{
         min-height:26px;
-        padding:0 10px;
+        padding:0 8px;
         font-size:11px;
       }
       .apn-hero-cluster{
@@ -1673,17 +1837,17 @@
       .prn-plain-section.apn-love-host .apn-love__grid{
         display:grid !important;
         grid-auto-flow:column;
-        grid-auto-columns:290px;
+        grid-auto-columns:250px;
         grid-template-columns:none !important;
         justify-content:start;
-        gap:0;
-        width:290px;
-        max-width:290px;
+        gap:0 10px;
+        width:770px;
+        max-width:none;
         margin-top:124px;
         overflow:hidden;
       }
       .prn-plain-section.apn-love-host .apn-love-card{
-        width:290px;
+        width:250px;
         height:437px;
         padding:18px;
         border-radius:22px;
@@ -1819,7 +1983,7 @@
       .prn-plain-section.apn-love-host .apn-love-card__fact,
       .prn-plain-section.apn-online-host .apn-love-card__fact,
       .apn-neuro-catalog .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:16px;
         line-height:18px;
         font-weight:400;
@@ -1861,10 +2025,10 @@
         min-height:71px;
         margin-top:66px;
         gap:10px;
-        font-size:13px;
-        line-height:17px;
+        font-size:23px;
+        line-height:30px;
         font-weight:500;
-        letter-spacing:-.13px;
+        letter-spacing:-.23px;
         box-shadow:none;
         filter:none;
         text-shadow:none;
@@ -1894,23 +2058,26 @@
         padding-top:102px;
       }
       .apn-answer-item--open{
-        height:708px;
-        min-height:708px;
+        height:auto;
+        min-height:0;
       }
       .apn-answer-item--open summary{
         position:relative;
-        display:block;
-        height:64px;
+        display:grid;
+        grid-template-columns:minmax(0,1fr) 68px;
+        column-gap:24px;
+        align-items:start;
+        height:auto;
         min-height:64px;
       }
       .apn-answer-item--open .apn-answer-toggle{
-        position:absolute;
-        top:10px;
-        right:10px;
+        position:relative;
+        top:auto;
+        right:auto;
       }
       .apn-answer-item--open .apn-answer-body p{
-        font-size:18px;
-        line-height:27.54px;
+        font-size:21px;
+        line-height:35px;
         font-weight:400;
       }
       .site-footer{
@@ -1941,6 +2108,15 @@
       .apn-hero-cluster>*{display:none !important}
       .apn-hero-cluster__source--320{display:block !important;width:320px;height:400px;max-width:none}
     }
+    @media (min-width:993px){
+      .apn-hero-cluster__source,
+      .apn-hero-cluster__source--992,
+      .apn-hero-cluster__source--768,
+      .apn-hero-cluster__source--576,
+      .apn-hero-cluster__source--320{
+        display:none !important;
+      }
+    }
     @media (max-width:768px) and (min-width:577px){
       .apn-neuro-proof{height:631px;margin-top:0;padding-top:42px;padding-bottom:0;box-sizing:border-box;overflow:hidden}
       .apn-neuro-proof__title{width:690px;font-size:40px;line-height:54.64px;letter-spacing:0}
@@ -1952,10 +2128,21 @@
       .apn-neuro-proof__stat:nth-child(2) .apn-neuro-proof__copy{max-width:118px}
       .apn-neuro-proof__stat:nth-child(3) .apn-neuro-proof__copy{max-width:93px}
       .apn-neuro-proof__stat:nth-child(4) .apn-neuro-proof__copy{max-width:114px}
-      .apn-neuro-quote{width:690px;min-height:232px;height:232px;margin:99px 0 0;padding:42px 0 0 43px;border-radius:32px}
+      .apn-neuro-quote{width:690px;min-height:240px;height:240px;margin:96px 0 0 24px;padding:41px 0 0 43px;border-radius:32px}
       .apn-neuro-quote__text{width:487px;max-width:487px;font-size:15px;line-height:30px;letter-spacing:0}
-      .apn-neuro-quote__mark{right:47px;bottom:20px;width:102px;height:70px;background-size:102px 70px}
+      .apn-neuro-quote__mark{right:41px;bottom:28px;width:102px;height:70px;background-size:102px 70px}
+      .apn-hero-media{transform:translateX(-9px)}
       .apn-neuro-video{margin-top:0}
+      .apn-neuro-catalog__grid .apn-love-card{padding:24px 30px 30px}
+      .apn-neuro-catalog__grid .apn-love-card__top{min-height:84px;height:84px}
+      .apn-neuro-catalog__grid .apn-love-card__avatar{width:80px;height:80px;flex-basis:80px}
+      .apn-neuro-catalog__grid .apn-love-card__identity{width:148px;height:84px;min-height:84px}
+      .apn-neuro-catalog__grid .apn-love-card__name{margin-bottom:0}
+      .apn-neuro-catalog__grid .apn-love-card__meta{margin-top:6px}
+      .apn-neuro-catalog__grid .apn-love-card__status{box-sizing:border-box;width:88px;min-width:88px;height:28px;margin-top:6px}
+      .apn-neuro-catalog__grid .apn-love-card__divider{margin:20px 0 19px}
+      .apn-neuro-catalog__grid .apn-love-card__info{gap:30px}
+      .apn-neuro-catalog__grid .apn-love-card__cta{margin-top:25px}
     }
     @media (max-width:576px) and (min-width:400px){
       .apn-neuro-proof{height:570px;margin-top:10px;padding-top:31px;padding-bottom:0;box-sizing:border-box;overflow:hidden}
@@ -1971,9 +2158,9 @@
       .apn-neuro-quote{width:510px;min-height:260px;height:260px;margin:77px 0 0;padding:30px 0 0 27px;border-radius:28px}
       .apn-neuro-quote__text{width:447px;max-width:447px;font-size:16px;line-height:30px;letter-spacing:0}
       .apn-neuro-quote__mark{right:0;bottom:3px;width:93px;height:64px;background-size:93px 64px}
-      .apn-neuro-video{height:477px;margin-top:6px;padding:33px 0 56px;box-sizing:border-box;background-color:#f1f1f1;background-image:url('img/video-pattern-figma.png') !important;background-position:center top;background-repeat:no-repeat;background-size:320px 477px}
-      .apn-neuro-video__title{width:290px;max-width:290px;margin:0 auto;font-size:30px;line-height:38px;letter-spacing:-.9px;text-align:center}
-      .apn-neuro-video__frame{width:290px;height:272px;margin:40px auto 0;border-radius:30px}
+      .apn-neuro-video{height:477px;margin-top:27px;padding:33px 0 0;box-sizing:border-box;background-color:#f1f1f1;background-image:url('img/video-pattern-figma.png') !important;background-position:center top;background-repeat:no-repeat;background-size:1142px 476px}
+      .apn-neuro-video__title{width:510px;max-width:510px;margin:0 auto;font-size:30px;line-height:42px;letter-spacing:-.9px;text-align:left}
+      .apn-neuro-video__frame{width:510px;height:301px;margin:35px auto 0;border-radius:30px}
       .apn-neuro-video__frame img{width:100%;height:100%;object-fit:cover}
     }
     @media (max-width:399px){
@@ -2065,7 +2252,7 @@
       .prn-plain-section.apn-love-host .apn-love-card__fact,
       .prn-plain-section.apn-online-host .apn-love-card__fact,
       .apn-neuro-catalog .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:16px;
         line-height:18px;
         letter-spacing:-.48px;
@@ -2088,6 +2275,43 @@
         font-size:23px;
         line-height:30px;
         letter-spacing:-.23px;
+      }
+      .prn-plain-section.apn-love-host .apn-online__browse,
+      .apn-neuro-catalog__browse{
+        font-size:17px;
+        line-height:17px;
+        letter-spacing:-.17px;
+      }
+      .apn-neuro-catalog__title{
+        font-size:77px;
+        line-height:78.54px;
+        letter-spacing:-3.47px;
+      }
+      .apn-neuro-catalog .apn-love-card__name{
+        font-size:26px;
+        line-height:20px;
+        font-weight:500;
+        letter-spacing:0;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        width:236px;
+        max-width:236px;
+        max-height:130px;
+        font-size:16px;
+        line-height:25.5px;
+      }
+      .prn-plain-section.apn-love-host .apn-love-card:first-child .apn-love-card__price{
+        margin-top:6px;
+      }
+      .prn-plain-section.apn-love-host .apn-love-card:first-child .apn-love-card__cta{
+        padding-top:10px;
+        transform:translateY(-10px);
+      }
+      .apn-neuro-catalog__grid .apn-love-card:first-child .apn-love-card__desc{
+        width:236px;
+        max-width:236px;
+        overflow:visible;
+        white-space:nowrap;
       }
     }
     @media (max-width:768px) and (min-width:577px){
@@ -2150,7 +2374,7 @@
       .prn-plain-section.apn-love-host .apn-love-card__fact,
       .prn-plain-section.apn-online-host .apn-love-card__fact,
       .apn-neuro-catalog .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:16px;
         line-height:18px;
         letter-spacing:-.48px;
@@ -2174,6 +2398,11 @@
         font-size:18px;
         line-height:30px;
         letter-spacing:-.18px;
+      }
+      .prn-plain-section.apn-love-host .apn-online__browse{
+        font-size:17px;
+        line-height:17px;
+        letter-spacing:-.17px;
       }
       .apn-faq__question{
         font-size:20px;
@@ -2274,7 +2503,7 @@
       .prn-plain-section.apn-love-host .apn-love-card__fact,
       .prn-plain-section.apn-online-host .apn-love-card__fact,
       .apn-neuro-catalog .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:13px;
         line-height:18px;
         letter-spacing:-.39px;
@@ -2298,6 +2527,11 @@
         font-size:18px;
         line-height:30px;
         letter-spacing:-.18px;
+      }
+      .prn-plain-section.apn-love-host .apn-online__browse{
+        font-size:17px;
+        line-height:17px;
+        letter-spacing:-.17px;
       }
       .apn-faq__question{
         font-size:18px;
@@ -2381,7 +2615,7 @@
       }
       .prn-plain-section.apn-love-host .apn-love-card__fact,
       .prn-plain-section.apn-online-host .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:13px;
         line-height:18px;
         letter-spacing:-.39px;
@@ -2430,7 +2664,7 @@
         letter-spacing:-.39px;
       }
       .apn-neuro-catalog .apn-love-card__fact{
-        font-family:"TT Norms","TT Norms Pro","Manrope",sans-serif;
+        font-family:"Manrope",sans-serif;
         font-size:11px;
         line-height:14px;
         letter-spacing:-.33px;
@@ -2443,10 +2677,18 @@
         letter-spacing:0;
         font-weight:400;
       }
+      .prn-plain-section.apn-love-host .apn-love-card__cta{
+        margin-top:42px;
+      }
+      .prn-plain-section.apn-love-host .apn-love-card__price{
+        margin-top:7px;
+        font-size:10px;
+        line-height:10px;
+      }
       .prn-plain-section.apn-love-host .apn-online__browse{
-        font-size:18px;
-        line-height:30px;
-        letter-spacing:-.18px;
+        font-size:17px;
+        line-height:17px;
+        letter-spacing:-.17px;
       }
       .apn-neuro-catalog__browse{
         font-size:17px;
@@ -2666,6 +2908,24 @@
       .apn-clients-shot-hide{
         padding-bottom:243px;
       }
+      .apn-reasons__title,
+      .apn-reasons__grid{
+        width:930px;
+        max-width:930px;
+        transform:translate(-15px,95px);
+      }
+      .apn-reasons__grid{
+        min-height:700px;
+      }
+      .apn-reasons__cta .c-btn{
+        transform:translateY(93px);
+      }
+      .apn-clients__head,
+      .apn-clients__grid{
+        width:930px;
+        max-width:930px;
+        transform:translate(-15px,116px);
+      }
       .apn-faq-shot-hide{
         height:920px;
         overflow:visible;
@@ -2677,11 +2937,32 @@
       }
     }
     @media (max-width:768px) and (min-width:577px){
+      .apn-affordable-shot-hide{
+        height:1120px;
+        margin-top:-40px;
+        padding-top:60px;
+        padding-bottom:0;
+        box-sizing:border-box;
+      }
+      .apn-affordable__title{
+        transform:translateX(24px);
+      }
       .apn-reasons-shot-hide{
-        margin-top:-45px;
+        margin-top:0;
       }
       .apn-clients-shot-hide{
         padding-bottom:120px;
+      }
+      .apn-reasons__title,
+      .apn-reasons__grid{
+        transform:translateY(31px);
+      }
+      .apn-reasons__cta .c-btn{
+        transform:translateY(37px);
+      }
+      .apn-clients__head,
+      .apn-clients__grid{
+        transform:translateY(50px);
       }
       .apn-faq-shot-hide{
         height:820px;
@@ -2692,16 +2973,244 @@
         margin-bottom:-10px;
         overflow:visible;
       }
+      .apn-answer-section{
+        padding-top:50px;
+      }
+      .apn-faq-section{
+        width:690px;
+        max-width:690px;
+        margin:0 auto;
+        padding-top:61px;
+        transform:translateY(-11px);
+      }
+      .apn-faq__title{
+        width:690px;
+        max-width:690px;
+        font-size:45px;
+        line-height:61.47px;
+        letter-spacing:-1.35px;
+        font-weight:500;
+      }
+      .apn-faq{
+        width:690px;
+        max-width:690px;
+        gap:14px;
+        margin-top:58px;
+      }
+      .apn-faq__item{
+        width:690px;
+        border:0;
+        border-radius:44px;
+        background:#efeaff;
+        box-shadow:none;
+      }
+      .apn-faq__item:not([open]){
+        height:66px;
+        min-height:66px;
+      }
+      .apn-faq__item:not([open]) summary{
+        display:block;
+        position:relative;
+        height:66px;
+        min-height:66px;
+        padding:0;
+      }
+      .apn-faq__item:not([open]) .apn-faq__question{
+        position:absolute;
+        left:30px;
+        top:19.5px;
+        width:557px;
+        max-width:557px;
+        font-size:20px;
+        line-height:27px;
+        font-weight:600;
+      }
+      .apn-faq__item:not([open]) .apn-faq__toggle{
+        position:absolute;
+        top:5px;
+        right:5px;
+        width:56px;
+        height:56px;
+        flex:0 0 56px;
+        background:#fff;
+      }
+      .apn-faq__item[open]{
+        height:257px;
+        border:1px solid #eaebf0;
+        border-radius:33px;
+        background:#fff;
+      }
+      .apn-faq__item[open] summary{
+        display:block;
+        position:relative;
+        height:62.63px;
+        min-height:62.63px;
+        padding:0;
+      }
+      .apn-faq__item[open] .apn-faq__question{
+        position:absolute;
+        left:29px;
+        top:21px;
+        width:550.37px;
+        max-width:550.37px;
+        font-size:20px;
+        line-height:35px;
+        font-weight:600;
+      }
+      .apn-faq__item[open] .apn-faq__toggle{
+        position:absolute;
+        top:4px;
+        right:4px;
+        width:62.63px;
+        height:62.63px;
+        flex:0 0 62.63px;
+        background:#efeaff;
+        transform:none;
+      }
+      .apn-faq__answer{
+        margin:0;
+        padding:13.37px 30px 0 29px;
+      }
+      .apn-faq__answer p{
+        width:550.37px;
+        max-width:550.37px;
+        font-size:16px;
+        line-height:29px;
+        font-weight:400;
+      }
+      .apn-online-host .apn-online__grid{
+        transform:translate(28px,-11px);
+      }
+      .apn-online-host .apn-online__titlebox{
+        transform:translate(24px,-20px);
+      }
+      .apn-online-host .apn-online__subtitle{
+        transform:translate(24px,-22px);
+      }
+      .apn-online-host .apn-online__nav{
+        transform:translate(-16px,-20px);
+      }
+      .apn-online-host .apn-love-card__desc{
+        width:275px;
+        max-width:275px;
+        max-height:130px;
+        margin-top:10px;
+        font-size:14px;
+        line-height:27px;
+      }
+      .apn-online-host .apn-love-card__cta{
+        margin-top:20px;
+      }
+      .apn-neuro-quote{
+        margin-top:28px;
+      }
+      .apn-neuro-quote__text{
+        width:487px;
+        max-width:487px;
+        font-size:15px;
+        line-height:30px;
+        letter-spacing:-.15px;
+      }
+      .apn-neuro-video__title{
+        transform:translate(15px,6px);
+      }
+      .apn-neuro-proof__title{
+        transform:translate(24px,-37px);
+      }
+      .apn-neuro-proof__stats{
+        transform:translate(24px,-37px);
+      }
+      .apn-neuro-catalog__grid > .apn-love-card:nth-child(5) .apn-love-card__cta .apn-love-card__cta-label,
+      .apn-neuro-catalog__grid > .apn-love-card:nth-child(6) .apn-love-card__cta .apn-love-card__cta-label{
+        display:inline-block;
+        width:103px;
+        min-width:103px;
+      }
+      .apn-neuro-catalog__grid > .apn-love-card:nth-child(5) .apn-love-card__cta .apn-love-card__cta-icon,
+      .apn-neuro-catalog__grid > .apn-love-card:nth-child(6) .apn-love-card__cta .apn-love-card__cta-icon{
+        width:20px;
+        height:18.42px;
+        flex:0 0 20px;
+      }
+      .apn-answer-item{
+        border:0;
+        border-radius:44px;
+        background:#f1f1f1;
+        box-shadow:none;
+      }
+      .apn-answer-item--open{
+        background:#fff;
+        border:1px solid #eaebf0;
+      }
+      .apn-answer-item--open summary{
+        height:80px;
+        min-height:80px;
+        padding:21px 28px 0 40px;
+      }
+      .apn-answer-item--open .apn-answer-title{
+        transform:translateY(3px);
+      }
+      .apn-answer-item--open .apn-answer-body{
+        padding-top:4px;
+        padding-bottom:31px;
+      }
+      .apn-answer-item:not(.apn-answer-item--open) summary{
+        display:block;
+        position:relative;
+        height:217px;
+        min-height:217px;
+        padding:29px 10px 0 40px;
+      }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-head{
+        width:530px;
+        max-width:530px;
+        gap:20px;
+      }
       .apn-answer-title,
       .apn-answer-item--open .apn-answer-title{
         font-size:25px;
         line-height:35px;
         font-weight:600;
       }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-title{
+        width:530px;
+        max-width:530px;
+      }
       .apn-answer-preview{
+        width:530px;
+        max-width:530px;
+        height:69px;
+        max-height:69px;
+        overflow:hidden;
         font-size:15px;
         line-height:30px;
         font-weight:400;
+        color:#000;
+      }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-toggle{
+        position:absolute;
+        top:12px;
+        right:10px;
+        width:68px;
+        height:68px;
+        flex:0 0 68px;
+        background:#fff;
+      }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-toggle svg{
+        display:none;
+      }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-toggle::before{
+        content:"";
+        position:absolute;
+        left:50%;
+        top:50%;
+        width:14px;
+        height:6px;
+        background:url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 5L13 1' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+        transform:translate(-50%,-50%);
+      }
+      .apn-answer-item:not(.apn-answer-item--open) .apn-answer-toggle::after{
+        content:none;
       }
     }
     @media (max-width:576px) and (min-width:400px){
@@ -2843,6 +3352,7 @@
         background:#fff;
         border:1px solid #eaebf0;
         box-shadow:none;
+        min-height:1024px;
       }
       .apn-answer-toggle{
         background:#fff;
@@ -2913,6 +3423,112 @@
         min-height:239px;
       }
     }
+    /* All Psychic mobile tail geometry from current Figma frames.
+       These locks are intentionally local: they align lower section seams and
+       footer frame height without changing the global grid or desktop/tablet. */
+    @media (max-width:992px){
+      .apn-hero{
+        background:none;
+        --apn-hero-bg-top:-74px;
+        --apn-hero-bg-height:810px;
+        --apn-hero-bg-node-image:url('img/all-psychic-hero-bg-992-figma.png');
+      }
+      .apn-hero::before{
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        top:var(--apn-hero-bg-top);
+        height:var(--apn-hero-bg-height);
+        background:transparent var(--apn-hero-bg-node-image) center top/100% 100% no-repeat;
+        pointer-events:none;
+        z-index:0;
+      }
+      .apn-hero>.container{
+        position:relative;
+        z-index:1;
+      }
+      .prn-page .site-header{
+        background:transparent;
+        border-bottom:none;
+        box-shadow:none;
+      }
+    }
+    @media (max-width:768px) and (min-width:577px){
+      .apn-hero{
+        --apn-hero-bg-height:660px;
+        --apn-hero-bg-node-image:url('img/all-psychic-hero-bg-768-figma.png');
+      }
+    }
+    @media (max-width:576px) and (min-width:400px){
+      .apn-hero{
+        --apn-hero-bg-height:840px;
+        --apn-hero-bg-node-image:url('img/all-psychic-hero-bg-576-figma.png');
+      }
+    }
+    @media (max-width:399px){
+      .apn-hero{
+        --apn-hero-bg-height:1070px;
+        --apn-hero-bg-node-image:url('img/all-psychic-hero-bg-320-figma.png');
+      }
+    }
+    @media (max-width:576px) and (min-width:400px){
+      .apn-affordable-shot-hide{
+        height:960px;
+        margin-top:0;
+        padding-top:42px;
+        padding-bottom:42px;
+        box-sizing:border-box;
+      }
+      .apn-neuro-catalog{
+        padding-bottom:56px;
+      }
+      .apn-reasons{
+        height:1020px;
+        padding-top:41px;
+        box-sizing:border-box;
+      }
+      .apn-reasons__cta{
+        margin-top:40px;
+      }
+      .apn-clients__head,
+      .apn-clients__grid{
+        transform:translateY(89px);
+      }
+      .site-footer{
+        height:680px;
+        overflow:hidden;
+      }
+      .site-footer__logo img{
+        width:129px;
+        height:27px;
+      }
+      .home::after{
+        content:"";
+        display:block;
+        height:831px;
+      }
+    }
+    @media (max-width:399px){
+      .site-footer{
+        height:1035px;
+        overflow:hidden;
+      }
+      .site-footer__inner{
+        width:300px;
+        max-width:300px;
+        padding-top:45px;
+      }
+      .site-footer__logo img{
+        width:129px;
+        height:27px;
+      }
+      .home::after{
+        content:"";
+        display:block;
+        height:1279px;
+      }
+    }
   </style>
 </head>
 <body class="prn-body">
@@ -2939,7 +3555,7 @@
               </div>
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="site-header__link" href="psychic-reading-new.html">Psychic Reading</a></li>
-                <li class="nav-item"><a class="site-header__link is-active" href="all-psychic-new.html">Psychics</a></li>
+                <li class="nav-item"><a class="site-header__link" href="all-psychic-new.html">Psychics</a></li>
                 <li class="nav-item"><a class="site-header__link" href="topic-new.html">Topic</a></li>
                 <li class="nav-item"><a class="site-header__link" href="zodiac-compatibility-new.html">Zodiac Signs</a></li>
                 <li class="nav-item"><a class="site-header__link" href="birth-chart-new.html">Charts</a></li>
@@ -2971,7 +3587,7 @@
             <div class="prn-hero-section__media apn-hero-cluster" aria-label="Psychic advisors cluster">
               <img class="apn-hero-cluster__source" src="img/all-psychic-hero-cluster-1200.png" alt="" loading="eager">
               <img class="apn-hero-cluster__source--992" src="img/all-psychic-hero-cluster-992.png" alt="" loading="eager">
-              <img class="apn-hero-cluster__source--768" src="img/all-psychic-hero-cluster-768.png" alt="" loading="eager">
+              <img class="apn-hero-cluster__source--768" src="img/all-psychic-hero-img-768-figma.png" alt="" loading="eager">
               <img class="apn-hero-cluster__source--576" src="img/all-psychic-hero-cluster-576.png" alt="" loading="eager">
               <img class="apn-hero-cluster__source--320" src="img/all-psychic-hero-cluster-320.png" alt="" loading="eager">
               <div class="apn-hero-cluster__ring"></div>
@@ -2992,7 +3608,7 @@
           </div>
           <div class="apn-search-shell">
             <div class="apn-search-card" aria-label="Find a psychic online for your needs">
-              <p class="apn-search-card__title">Find a psychic online for your needs</p>
+              <p class="apn-search-card__title">Find a psychic online <br class="apn-search-title-break">for your needs</p>
               <div class="apn-search-card__row">
                 <div class="apn-search-card__label">Category</div>
                 <div class="apn-search-card__chips">
@@ -3238,7 +3854,7 @@
           </div>
         </div>
         <article class="apn-neuro-quote">
-          <p class="apn-neuro-quote__text">So on point. She told me things that helped me make the best decision<br> for myself. The suitor ended up choosing after my psychic reading is now<br> my fiancé—we are getting married in a few months! He is the best man<br> for me, just like she said when I started going out with him. I’m over the<br> moon!</p>
+          <p class="apn-neuro-quote__text">So on point. She told me things that helped me make the best<br> decision for myself. The suitor ended up choosing after my psychic<br> reading is now my fiancé—we are getting married in a few months!<br> He is the best man for me, just like she said when I started going<br> out with him. I’m over the moon!</p>
           <span class="apn-neuro-quote__mark" aria-hidden="true">”</span>
         </article>
       </div>
@@ -3274,7 +3890,7 @@
                 <span class="apn-love-card__fact">9 years of experience</span>
                 <span class="apn-love-card__fact">16752 consultation done</span>
               </div>
-              <p class="apn-love-card__desc">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world, live in harmony and pleasure. And also to maintain a connection with your Higher Self, to be able to live ...</p>
+              <p class="apn-love-card__desc">The main goal of my work is to help find<br>answers to tormenting questions,<br>understand and love yourself and the world,<br>live in harmony and pleasure. And also to<br>maintain a connection with your Higher Self,<br>to be able to live ...</p>
             </div>
             <div class="apn-love-card__cta">
               <a class="c-btn c-btn--primary" href="expert-page-new.html"><span class="apn-love-card__cta-label">Start chat</span><span class="c-btn__icon apn-love-card__cta-icon" aria-hidden="true"><svg viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19.42C16.5228 19.42 21 15.2965 21 10.21C21 5.12346 16.5228 1 11 1C5.47715 1 1 5.12346 1 10.21C1 11.6833 1.37562 13.0758 2.04346 14.3108C2.22094 14.6389 2.28001 15.014 2.17712 15.3682L1.58151 17.4184C1.32295 18.3084 2.20701 19.1225 3.17335 18.8844L5.39939 18.3359C5.78393 18.2411 6.19121 18.2956 6.54753 18.4589C7.88837 19.0741 9.4003 19.42 11 19.42Z" stroke="#fff" stroke-width="2"/><path d="M7.00002 10.21H7.00902M10.991 10.21H11M14.991 10.21H15" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
@@ -3660,12 +4276,18 @@ from Neuro?</h2>
                 <span class="apn-faq__question">Where can i talk to a psychic online?</span>
                 <span class="apn-faq__toggle" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="7" width="16" height="2" rx="1" fill="#090909"/><rect x="7" y="0" width="2" height="16" rx="1" fill="#090909"/></svg></span>
               </summary>
+              <div class="apn-faq__answer">
+                <p>You can talk to a psychic online on Nebula by choosing an advisor who matches your topic, checking their availability, and starting a private chat when you are ready. The online format lets you ask questions from home without scheduling an offline session.</p>
+              </div>
             </details>
             <details class="apn-faq__item">
               <summary>
                 <span class="apn-faq__question">How accurate are online psychics?</span>
                 <span class="apn-faq__toggle" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="7" width="16" height="2" rx="1" fill="#090909"/><rect x="7" y="0" width="2" height="16" rx="1" fill="#090909"/></svg></span>
               </summary>
+              <div class="apn-faq__answer">
+                <p>Accuracy depends on the advisor, the clarity of your question, and how open you are during the reading. A good online psychic should give grounded guidance, ask relevant follow-up questions, and help you understand possible directions rather than promise guaranteed outcomes.</p>
+              </div>
             </details>
             <details class="apn-faq__item" open>
               <summary>
@@ -3673,7 +4295,7 @@ from Neuro?</h2>
                 <span class="apn-faq__toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.065" width="22.63" height="2.5" rx="1.25" fill="#090909"/></svg></span>
               </summary>
               <div class="apn-faq__answer">
-                <p>It is recommended to consult a psychic when looking for insight into your personal life, relationships, work, or growth and development. <br>To pick the best time of the day for online reading, choose a moment when you can be alone, undistracted, and receptive to advice. Make sure you will not be interrupted and can devote your full attention to the session.</p>
+                <p>It is recommended to consult a psychic when looking for insight into your personal life, relationships, work, or growth and development. To pick the best time of the day for online reading, choose a moment when you can be alone, undistracted, and receptive to advice. Make sure you will not be interrupted and can devote your full attention to the session.</p>
               </div>
             </details>
             <details class="apn-faq__item">
@@ -3681,12 +4303,18 @@ from Neuro?</h2>
                 <span class="apn-faq__question">How to have an effective chat with psychic?</span>
                 <span class="apn-faq__toggle" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="7" width="16" height="2" rx="1" fill="#090909"/><rect x="7" y="0" width="2" height="16" rx="1" fill="#090909"/></svg></span>
               </summary>
+              <div class="apn-faq__answer">
+                <p>Prepare your main questions in advance, choose a quiet moment, and give the advisor enough context to understand your situation. During the chat, stay focused on the topic, ask clarifying questions, and note the guidance that feels useful after the session.</p>
+              </div>
             </details>
             <details class="apn-faq__item">
               <summary>
                 <span class="apn-faq__question">How to spot if an online psychic is a scam?</span>
                 <span class="apn-faq__toggle" aria-hidden="true"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="7" width="16" height="2" rx="1" fill="#090909"/><rect x="7" y="0" width="2" height="16" rx="1" fill="#090909"/></svg></span>
               </summary>
+              <div class="apn-faq__answer">
+                <p>Be careful with advisors who guarantee specific results, pressure you into repeated payments, or use fear to keep you in a session. Prefer transparent pricing, clear profiles, visible reviews, and readings that respect your boundaries and personal decisions.</p>
+              </div>
             </details>
           </div>
         </div>
@@ -3715,6 +4343,9 @@ from Neuro?</h2>
                 </div>
                 <span class="apn-answer-toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.315" width="22.63" height="2" rx="1" fill="#2C2836"/><rect x="10.315" y="0" width="2" height="22.63" rx="1" fill="#2C2836"/></svg></span>
               </summary>
+              <div class="apn-answer-body">
+                <p>We can help you find your perfect match via a quiz upon setting up your account. Based on the responses, we&apos;ll offer you a few matches. You can choose one of those or keep looking. There is hardly a psychic reading type we don&apos;t offer!</p>
+              </div>
             </details>
             <details class="apn-answer-item apn-answer-item--tall">
               <summary>
@@ -3724,6 +4355,9 @@ from Neuro?</h2>
                 </div>
                 <span class="apn-answer-toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.315" width="22.63" height="2" rx="1" fill="#2C2836"/><rect x="10.315" y="0" width="2" height="22.63" rx="1" fill="#2C2836"/></svg></span>
               </summary>
+              <div class="apn-answer-body">
+                <p>Our online psychics services will transport you to a realm of mystical insight and wise counsel.&nbsp;Our exceptional advisors are always at your service to help you find focus and purpose in your life.<br>Our experts can help you find love, a direction in your career, and true personal development so that you may better deal with life&apos;s challenges.<br>Here are some of our online services to help you find the answers that matter the most:</p>
+              </div>
             </details>
             <details class="apn-answer-item apn-answer-item--tall">
               <summary>
@@ -3733,6 +4367,9 @@ from Neuro?</h2>
                 </div>
                 <span class="apn-answer-toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.315" width="22.63" height="2" rx="1" fill="#2C2836"/><rect x="10.315" y="0" width="2" height="22.63" rx="1" fill="#2C2836"/></svg></span>
               </summary>
+              <div class="apn-answer-body">
+                <p>At Nebula, our advisors are committed to providing attentive, individual service to each customer. The best part is that joining and using our service is a breeze. The process is simple and straightforward. Here is all you have to do:</p>
+              </div>
             </details>
             <details class="apn-answer-item apn-answer-item--short">
               <summary>
@@ -3742,6 +4379,9 @@ from Neuro?</h2>
                 </div>
                 <span class="apn-answer-toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.315" width="22.63" height="2" rx="1" fill="#2C2836"/><rect x="10.315" y="0" width="2" height="22.63" rx="1" fill="#2C2836"/></svg></span>
               </summary>
+              <div class="apn-answer-body">
+                <p>Our services are made for everyone interested in learning more about themselves, their loved ones, and the world at large. Our online psychic readings and astrological consultations can aid you in a variety of situations.<br>Our psychic reading online is for you if you can relate to the following situations:</p>
+              </div>
             </details>
             <details class="apn-answer-item apn-answer-item--short">
               <summary>
@@ -3751,6 +4391,9 @@ from Neuro?</h2>
                 </div>
                 <span class="apn-answer-toggle" aria-hidden="true"><svg viewBox="0 0 22.63 22.63" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10.315" width="22.63" height="2" rx="1" fill="#2C2836"/><rect x="10.315" y="0" width="2" height="22.63" rx="1" fill="#2C2836"/></svg></span>
               </summary>
+              <div class="apn-answer-body">
+                <p>Joining our site is the best bet because our real psychics offer career advice, resolve relationship conflicts, and answer every tricky question through live communication.<br>Here are some reasons why Nebula is among the best psychic sites out there.</p>
+              </div>
             </details>
           </div>
         </div>
@@ -3839,13 +4482,27 @@ from Neuro?</h2>
         }
       });
     };
+    const syncAccordionItemState = (item) => {
+      item.classList.toggle('apn-answer-item--open', item.open && item.classList.contains('apn-answer-item'));
+      const summary = item.querySelector('summary');
+      if (summary) {
+        summary.setAttribute('aria-expanded', item.open ? 'true' : 'false');
+      }
+    };
     const bindAccordions = () => {
       document.querySelectorAll('[data-accordion-root]').forEach((root) => {
         root.querySelectorAll('details').forEach((item) => {
+          syncAccordionItemState(item);
+          if (item.dataset.accordionBound === 'true') return;
+          item.dataset.accordionBound = 'true';
           item.addEventListener('toggle', () => {
+            syncAccordionItemState(item);
             if (!item.open) return;
             root.querySelectorAll('details').forEach((other) => {
-              if (other !== item) other.open = false;
+              if (other !== item) {
+                other.open = false;
+                syncAccordionItemState(other);
+              }
             });
           });
         });
@@ -3870,16 +4527,68 @@ from Neuro?</h2>
         node.append(textWrap);
       });
     };
+    const syncMobileLoveCardOrder = () => {
+      const shouldUseFigmaMobileOrder = window.matchMedia('(min-width:400px) and (max-width:576px)').matches;
+      const cards = document.querySelectorAll('.apn-love-host .apn-love__grid > .apn-love-card');
+      if (cards.length < 2) return;
+      const second = cards[1];
+      if (!second.dataset.apnOriginalHtml) second.dataset.apnOriginalHtml = second.innerHTML;
+      if (shouldUseFigmaMobileOrder) {
+        second.innerHTML = cards[0].innerHTML;
+      } else {
+        second.innerHTML = second.dataset.apnOriginalHtml;
+      }
+      syncExpertFactColors();
+    };
+    const syncResponsiveCatalogCards = () => {
+      const shouldUseFigmaTabletSet = window.matchMedia('(max-width:992px)').matches;
+      const cards = document.querySelectorAll('.apn-neuro-catalog__grid > .apn-love-card');
+      if (cards.length < 2) return;
+      const source = cards[0];
+      cards.forEach((card) => {
+        if (!card.dataset.apnOriginalHtml) card.dataset.apnOriginalHtml = card.innerHTML;
+        if (shouldUseFigmaTabletSet) {
+          card.innerHTML = source.dataset.apnOriginalHtml || source.innerHTML;
+        } else {
+          card.innerHTML = card.dataset.apnOriginalHtml;
+        }
+      });
+      syncExpertFactColors();
+    };
+    const syncResponsiveOnlineCards = () => {
+      const shouldUseFigmaTabletSet = window.matchMedia('(min-width:577px) and (max-width:768px)').matches;
+      const cards = document.querySelectorAll('.apn-online-host .apn-online__grid > .apn-love-card');
+      if (cards.length < 2) return;
+      const source = cards[0];
+      cards.forEach((card, index) => {
+        if (!card.dataset.apnOriginalHtml) card.dataset.apnOriginalHtml = card.innerHTML;
+        if (index > 0 && shouldUseFigmaTabletSet) {
+          card.innerHTML = source.dataset.apnOriginalHtml || source.innerHTML;
+        } else {
+          card.innerHTML = card.dataset.apnOriginalHtml;
+        }
+      });
+      syncExpertFactColors();
+    };
     window.addEventListener('DOMContentLoaded', bindAccordions);
     window.addEventListener('DOMContentLoaded', syncClientTitles);
     window.addEventListener('DOMContentLoaded', syncAnswerCards);
     window.addEventListener('DOMContentLoaded', syncExpertFactColors);
+    window.addEventListener('DOMContentLoaded', syncMobileLoveCardOrder);
+    window.addEventListener('DOMContentLoaded', syncResponsiveCatalogCards);
+    window.addEventListener('DOMContentLoaded', syncResponsiveOnlineCards);
     window.addEventListener('resize', syncClientTitles);
     window.addEventListener('resize', syncAnswerCards);
+    window.addEventListener('resize', syncMobileLoveCardOrder);
+    window.addEventListener('resize', syncResponsiveCatalogCards);
+    window.addEventListener('resize', syncResponsiveOnlineCards);
     bindAccordions();
     syncClientTitles();
     syncAnswerCards();
     syncExpertFactColors();
+    syncMobileLoveCardOrder();
+    syncResponsiveCatalogCards();
+    syncResponsiveOnlineCards();
   })();
 </script>
 </body>

@@ -13,6 +13,8 @@
     <meta property="og:description"
         content="Explore Neuro online psychic readings, tarot guidance, love readings, zodiac insights, trusted advisors, and answers tailored to your life path." />
     <meta property="og:url" content="https://cutthreat.github.io/nebula-pages-public/home.html" />
+    <meta property="og:image" content="https://cutthreat.github.io/nebula-pages-public/img/home-figma-reference.png" />
+    <meta name="twitter:image" content="https://cutthreat.github.io/nebula-pages-public/img/home-figma-reference.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Neuro Home | Online Psychic Readings, Tarot, Love and Zodiac" />
     <meta name="twitter:description"
@@ -21,9 +23,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23673EDA' d='M8 0l1.9 4.3L14 6.2l-4.1 1.2L8 11.6 6.1 7.4 2 6.2l4.1-1.9L8 0z'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="img/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="bootstrap.css" />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="home.css?v=20260430-breakpoint-final" />
+    <link rel="stylesheet" href="home-reverse-type-owner.css?v=20260430-breakpoint-final" />
+    <link rel="stylesheet" href="home-reverse-shell-owner.css?v=20260430-breakpoint-final" />
 </head>
 
 <body>
@@ -60,7 +65,7 @@
                                         <a class="site-header__link" href="all-psychic-new.html">Psychics</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="site-header__link" href="home.html#topics">Topic</a>
+                                        <a class="site-header__link" href="topic-new.html">Topic</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="site-header__link" href="zodiac-compatibility-new.html">Zodiac Signs</a>
@@ -77,10 +82,8 @@
                     </nav>
 
                     <div class="site-header__actions">
-                        <button class="site-header__theme-toggle d-none d-md-inline-flex" type="button"
-                            aria-label="Theme toggle" tabindex="-1">
-                            <span class="site-header__theme-toggle-thumb"></span>
-                        </button>
+                        <input type="checkbox" class="site-header__theme d-none d-md-inline-block" id="switchTheme"
+                            aria-label="Theme toggle">
                         <a class="c-btn c-btn--ghost site-header__btn" href="signup-step-1.html">
                             <span>Sign up</span>
                             <span class="c-btn__icon c-btn__icon--arrow"></span>
@@ -96,8 +99,8 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-sm-7 col-md-6 hero-section__content">
-                            <h1 class="hero-section__title section__title section__title--h1">Get Your Unique Psychic
-                                reading</h1>
+                            <h1 class="hero-section__title section__title section__title--h1">Get Your Unique <br
+                                    class="d-block d-sm-none">Psychic reading</h1>
                             <div class="hero-section__text">from the best online psychic</div>
                             <p class="hero-section__paragraph d-none d-sm-block">Neuro is one of the best psychic sites
                                 that offer online
@@ -180,7 +183,7 @@
                     </div>
 
                     <blockquote class="what-neuro-section__quote" aria-label="Client testimonial">
-                        <p class="what-neuro-section__quote-text">So on point. She told me things that helped me make the best decision for myself. The suitor ended up choosing after my psychic reading is now my fiance—we are getting married in a few months! He is the best man for me, just like she said when I started going out with him. I’m over the moon!</p>
+                        <p class="what-neuro-section__quote-text">So on point. She told me things that helped me make the best decision for myself. The suitor ended up choosing after my psychic reading is now my fiancé—we are getting married in a few months! He is the best man for me, just like she said when I started going out with him. I’m over the moon!</p>
                         <span class="what-neuro-section__quote-mark" aria-hidden="true">”</span>
                     </blockquote>
                 </div>
@@ -560,7 +563,7 @@
                         <h2 class="clients-section__title section__title section__title--h2">Clients love our services
                         </h2>
                         <div class="clients-section__rating-wrapper" aria-label="Rating 4.8">
-                            <span class="clients-section__rating">4.8 rating</span>
+                            <span class="clients-section__rating">4.8 raiting</span>
                             <span class="clients-section__rate">
                                 <svg width="24" height="23" viewBox="0 0 24 23"><use href="img/sprite.svg#icon-star-brand"></use></svg>
                                 <svg width="24" height="23" viewBox="0 0 24 23"><use href="img/sprite.svg#icon-star-brand"></use></svg>
@@ -585,6 +588,7 @@
                                             <div class="clients-section__name">Kate</div>
                                         </div>
                                         <div class="clients-section__review-stars" aria-label="5 star rating">
+                                            <svg width="15" height="15" viewBox="0 0 20 19"><use href="img/sprite.svg#icon-star"></use></svg>
                                             <svg width="15" height="15" viewBox="0 0 20 19"><use href="img/sprite.svg#icon-star"></use></svg>
                                             <svg width="15" height="15" viewBox="0 0 20 19"><use href="img/sprite.svg#icon-star"></use></svg>
                                             <svg width="15" height="15" viewBox="0 0 20 19"><use href="img/sprite.svg#icon-star"></use></svg>
@@ -658,6 +662,27 @@
                                 aria-label="Next review"><svg width="31" height="15" viewBox="0 0 31 15"><use href="img/sprite.svg#icon-arrow-next"></use></svg>
                             </button>
                         </div>
+                    </div>
+
+                    <h3 class="clients-section__video-title section__title section__title--h2">Testimonials from
+                        satisfied Users</h3>
+                    <div class="clients-section__videos" aria-label="Video testimonials">
+                        <button class="clients-section__video-card" type="button" aria-label="Play testimonial video">
+                            <img src="img/clients-video-1.png" alt="" width="255" height="450" loading="lazy" />
+                            <span class="clients-section__video-play" aria-hidden="true"></span>
+                        </button>
+                        <button class="clients-section__video-card" type="button" aria-label="Play testimonial video">
+                            <img src="img/clients-video-2.png" alt="" width="255" height="450" loading="lazy" />
+                            <span class="clients-section__video-play" aria-hidden="true"></span>
+                        </button>
+                        <button class="clients-section__video-card" type="button" aria-label="Play testimonial video">
+                            <img src="img/clients-video-3.png" alt="" width="255" height="450" loading="lazy" />
+                            <span class="clients-section__video-play" aria-hidden="true"></span>
+                        </button>
+                        <button class="clients-section__video-card" type="button" aria-label="Play testimonial video">
+                            <img src="img/clients-video-4.png" alt="" width="255" height="450" loading="lazy" />
+                            <span class="clients-section__video-play" aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -932,7 +957,7 @@
                                 techniques and spiritual readings. Talk with one of our psychic advisors about any topic
                                 you want.</p>
                             <picture>
-                                <source media="(min-width: 768px)" srcset="img/situation_d.png" />
+                                <source media="(min-width: 769px)" srcset="img/situation_d.png" />
                                 <source media="(max-width: 768px)" srcset="img/situation_m.png" />
                                 <img src="img/situation_d.png" alt="Psychic reading illustration" width="1639"
                                     height="570" class="situation-section__image" loading="eager" decoding="sync" />
