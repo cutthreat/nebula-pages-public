@@ -30,27 +30,28 @@
     .prn-body .site-header__link,.prn-body .site-header__btn{white-space:nowrap}
     .prn-body .site-header__link{font-size:15px}
     .prn-body .site-header__btn{min-height:44px;padding:0 18px}
+    .tcn-hero{overflow:hidden}
     .tcn-hero .prn-hero-section__row{min-height:560px;padding-top:32px;padding-bottom:18px}
     .tcn-badge,.tcn-mini-badge{display:inline-flex;margin-bottom:18px;padding:10px 16px;border-radius:999px;background:#fff;color:#6d45ea;border:1px solid rgba(109,69,234,.12);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
     .tcn-mini-badge{margin-bottom:14px}
     .tcn-hero .prn-hero-section__content{max-width:520px}
-    .tcn-hero .prn-hero-section__title{max-width:520px;font-size:56px;line-height:1.04;letter-spacing:-.04em}
+    .tcn-hero .prn-hero-section__title{max-width:520px;font-size:56px;line-height:1.04;letter-spacing:-.04em;overflow-wrap:break-word}
     .tcn-hero .prn-hero-section__text{max-width:500px;font-size:15px;line-height:1.65}
     .tcn-hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 14px;color:#6d45ea;font-size:14px;font-weight:700}
     .tcn-hero-links{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:16px}
     .tcn-hero-links a{color:#7a5ce8;font-size:13px;font-weight:700;text-decoration:none}
-    .tcn-bull-art{display:flex;justify-content:center;align-items:center}
-    .tcn-bull-art svg{width:min(100%,470px);height:auto;filter:drop-shadow(0 24px 38px rgba(108,74,229,.16))}
-    .tcn-bull-art .tcn-star{fill:#ffca45}
-    .tcn-bull-art .tcn-ring{fill:none;stroke:#c8b6ff;stroke-width:12}
-    .tcn-bull-art .tcn-horn{fill:#7a58ea}
-    .tcn-bull-art .tcn-face{fill:#ffc93f}
-    .tcn-bull-art .tcn-detail{fill:#6e4fe2}
+    .tcn-bull-art{position:relative;left:0;display:flex;justify-content:center;align-items:center;overflow:hidden;max-width:100%}
+    .prn-page .tcn-hero .prn-hero-section__media.tcn-bull-art{right:0 !important;max-width:100% !important;overflow:hidden !important}
+    @media (min-width:1200px){.prn-page .tcn-hero .prn-hero-section__media.tcn-bull-art{width:calc(100% - 551px) !important}}
+    @media (min-width:992px) and (max-width:1199.98px){.prn-page .tcn-hero .prn-hero-section__media.tcn-bull-art{width:calc(100% - 451px) !important}}
+    @media (min-width:768px) and (max-width:991.98px){.prn-page .tcn-hero .prn-hero-section__media.tcn-bull-art{width:calc(100% - 345px) !important}}
+    .tcn-bull-art img{width:min(calc(100% - 16px),520px);height:auto;filter:drop-shadow(0 24px 38px rgba(108,74,229,.16))}
+    .prn-page .tcn-bull-art img{width:min(calc(100% - 16px),520px) !important;min-width:0 !important;max-width:calc(100% - 16px) !important;height:auto !important;margin:0 !important;object-fit:contain !important;flex:0 1 auto !important}
     .tcn-section-lead{max-width:840px;margin:0 0 22px;color:#3d3846;font-size:18px;line-height:1.72}
-    .tcn-card,.tcn-sign-card,.tcn-chart,.tcn-faq details,.tcn-panel,.tcn-love-card,.tcn-copy-card{background:#fff;border-radius:24px;box-shadow:0 16px 36px rgba(86,57,175,.08);border:1px solid rgba(109,69,234,.08)}
+    .tcn-card,.tcn-sign-card,.tcn-chart,.tcn-faq details,.tcn-faq .faq-section__item,.tcn-panel,.tcn-love-card,.tcn-copy-card{background:#fff;border-radius:24px;box-shadow:0 16px 36px rgba(86,57,175,.08);border:1px solid rgba(109,69,234,.08)}
     .tcn-card,.tcn-sign-card,.tcn-panel,.tcn-love-card,.tcn-copy-card{padding:24px}
-    .tcn-card h3,.tcn-sign-card h3,.tcn-love-card h3,.tcn-copy-card h3,.tcn-faq summary{margin:0 0 10px}
-    .tcn-card p,.tcn-sign-card p,.tcn-love-card p,.tcn-copy-card p,.tcn-faq p{margin:0;color:#3d3846;font-size:18px;line-height:1.7}
+    .tcn-card h3,.tcn-sign-card h3,.tcn-love-card h3,.tcn-copy-card h3,.tcn-faq summary,.tcn-faq .faq-section__title{margin:0 0 10px}
+    .tcn-card p,.tcn-sign-card p,.tcn-love-card p,.tcn-copy-card p,.tcn-faq p,.tcn-faq .faq-section__body{margin:0;color:#3d3846;font-size:18px;line-height:1.7}
     .tcn-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:18px;align-items:start}
     .tcn-point-list{display:grid;gap:14px}
     .tcn-point{padding:20px;border-radius:22px;background:linear-gradient(180deg,#faf7ff 0%,#fff 100%);border:1px solid rgba(109,69,234,.08)}
@@ -90,9 +91,13 @@
     .tcn-watch-art img{width:min(100%,320px)}
     .tcn-faq{display:grid;gap:12px}
     .tcn-faq details{padding:0;overflow:hidden}
+    .tcn-faq .faq-section__item{padding:0;overflow:hidden}
     .tcn-faq summary{list-style:none;cursor:pointer;padding:22px 24px;font-size:21px;font-weight:700}
+    .tcn-faq .faq-section__toggle{list-style:none;cursor:pointer;padding:22px 78px 22px 24px;font-size:21px;font-weight:700}
     .tcn-faq summary::-webkit-details-marker{display:none}
     .tcn-faq__body{padding:0 24px 24px}
+    .tcn-faq .faq-section__panel{padding:0 24px 24px}
+    .tcn-faq .faq-section__body{max-width:none;padding:0;display:block;overflow:visible;-webkit-line-clamp:unset}
     .tcn-cta{padding:32px;border-radius:28px;background:linear-gradient(180deg,#faf7ff 0%,#efe6ff 100%);border:1px solid rgba(109,69,234,.08)}
     .tcn-cta__row{display:flex;align-items:center;justify-content:space-between;gap:24px}
     .tcn-cta__copy{max-width:720px}
@@ -131,6 +136,104 @@
     .tcn-stage--sex .tcn-conclusion{margin-top:6px}
     .tcn-stage--friendship .tcn-essay{padding-bottom:14px}
     .tcn-stage--faq .tcn-faq{margin-top:8px}
+    .tcn-pair-list{grid-template-columns:1fr;gap:24px}
+    .tcn-pair-card{padding:30px 32px;border-radius:0;background:transparent;border:0;border-top:1px solid rgba(109,69,234,.12);box-shadow:none}
+    .tcn-pair-card:last-child{border-bottom:1px solid rgba(109,69,234,.12)}
+    .tcn-pair-top{align-items:flex-start;margin-bottom:12px}
+    .tcn-pair-top h3{font-size:30px;line-height:1.18;letter-spacing:-.025em}
+    .tcn-pair-card p{max-width:960px;font-size:18px;line-height:1.82}
+    .tcn-love-grid,.tcn-copy-grid{grid-template-columns:1fr;gap:22px}
+    .tcn-love-card,.tcn-copy-card{padding:30px 32px;border-radius:0;background:transparent;border:0;border-top:1px solid rgba(109,69,234,.12);box-shadow:none}
+    .tcn-love-card h3,.tcn-copy-card h3{font-size:28px;line-height:1.2;letter-spacing:-.02em}
+    .tcn-love-card p,.tcn-copy-card p{max-width:980px;font-size:18px;line-height:1.82}
+    .tcn-essay{max-width:1060px;padding:18px 0 34px}
+    .tcn-essay p{max-width:1020px;font-size:18px;line-height:1.86}
+    .tcn-bullet-list{max-width:1020px;gap:16px}
+    .tcn-bullet-list li{font-size:18px;line-height:1.82}
+    .tcn-faq summary{position:relative;padding-right:78px}
+    .tcn-faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;color:#1d172c;font-size:22px;font-weight:800}
+    .tcn-faq details[open] summary::after{content:"×"}
+    .tcn-faq .faq-section__toggle{position:relative;background:transparent;border:0;width:100%;text-align:left}
+    .tcn-faq .faq-section__icon{position:absolute;right:22px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;color:#1d172c;font-size:22px;font-weight:800}
+    @media (min-width:1200px){
+      .prn-main > section:nth-of-type(2){min-height:1100px}
+      .prn-main > section:nth-of-type(3){min-height:318px}
+      .prn-main > section:nth-of-type(4){min-height:1000px}
+      .prn-main > section:nth-of-type(5){min-height:1500px}
+      .prn-main > section:nth-of-type(6){min-height:900px}
+      .prn-main > section:nth-of-type(7){min-height:3500px}
+      .prn-main > section:nth-of-type(8){min-height:318px}
+      .prn-main > section:nth-of-type(9){min-height:2950px}
+      .prn-main > section:nth-of-type(10){min-height:1430px}
+      .prn-main > section:nth-of-type(11){min-height:1320px}
+      .prn-main > section:nth-of-type(12){min-height:860px}
+      .prn-main > section:nth-of-type(13){min-height:930px}
+      .prn-body .site-footer{min-height:420px}
+    }
+    @media (min-width:992px) and (max-width:1199.98px){
+      .prn-main > section:nth-of-type(2){min-height:1270px}
+      .prn-main > section:nth-of-type(3){min-height:318px}
+      .prn-main > section:nth-of-type(4){min-height:1040px}
+      .prn-main > section:nth-of-type(5){min-height:1640px}
+      .prn-main > section:nth-of-type(6){min-height:900px}
+      .prn-main > section:nth-of-type(7){min-height:3500px}
+      .prn-main > section:nth-of-type(8){min-height:318px}
+      .prn-main > section:nth-of-type(9){min-height:3040px}
+      .prn-main > section:nth-of-type(10){min-height:1330px}
+      .prn-main > section:nth-of-type(11){min-height:1320px}
+      .prn-main > section:nth-of-type(12){min-height:860px}
+      .prn-main > section:nth-of-type(13){min-height:920px}
+      .prn-body .site-footer{min-height:570px}
+    }
+    @media (min-width:992px){
+      .prn-main > section:nth-of-type(n+6){display:flex;align-items:flex-start}
+      .prn-main > section:nth-of-type(n+6) > .container{width:100%}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .prn-main > section:nth-of-type(2){min-height:1073px}
+      .prn-main > section:nth-of-type(3){min-height:300px}
+      .prn-main > section:nth-of-type(4){min-height:1320px}
+      .prn-main > section:nth-of-type(5){min-height:1310px}
+      .prn-main > section:nth-of-type(6){min-height:684px}
+      .prn-main > section:nth-of-type(7){min-height:3000px}
+      .prn-main > section:nth-of-type(8){min-height:300px}
+      .prn-main > section:nth-of-type(9){min-height:2960px}
+      .prn-main > section:nth-of-type(10){min-height:1270px}
+      .prn-main > section:nth-of-type(11){min-height:1350px}
+      .prn-main > section:nth-of-type(12){min-height:860px}
+      .prn-main > section:nth-of-type(13){min-height:760px}
+      .prn-body .site-footer{min-height:700px}
+    }
+    @media (min-width:391px) and (max-width:767.98px){
+      .prn-main > section:nth-of-type(2){min-height:920px}
+      .prn-main > section:nth-of-type(3){min-height:300px}
+      .prn-main > section:nth-of-type(4){min-height:1260px}
+      .prn-main > section:nth-of-type(5){min-height:1200px}
+      .prn-main > section:nth-of-type(6){min-height:517px}
+      .prn-main > section:nth-of-type(7){min-height:2750px}
+      .prn-main > section:nth-of-type(8){min-height:300px}
+      .prn-main > section:nth-of-type(9){min-height:3537px}
+      .prn-main > section:nth-of-type(10){min-height:1180px}
+      .prn-main > section:nth-of-type(11){min-height:1220px}
+      .prn-main > section:nth-of-type(12){min-height:590px}
+      .prn-main > section:nth-of-type(13){min-height:740px}
+      .prn-body .site-footer{min-height:680px}
+    }
+    @media (max-width:390.98px){
+      .prn-main > section:nth-of-type(2){min-height:1260px}
+      .prn-main > section:nth-of-type(3){min-height:300px}
+      .prn-main > section:nth-of-type(4){min-height:1550px}
+      .prn-main > section:nth-of-type(5){min-height:1650px}
+      .prn-main > section:nth-of-type(6){min-height:516px}
+      .prn-main > section:nth-of-type(7){min-height:3980px}
+      .prn-main > section:nth-of-type(8){min-height:300px}
+      .prn-main > section:nth-of-type(9){min-height:5500px}
+      .prn-main > section:nth-of-type(10){min-height:1950px}
+      .prn-main > section:nth-of-type(11){min-height:1700px}
+      .prn-main > section:nth-of-type(12){min-height:940px}
+      .prn-main > section:nth-of-type(13){min-height:1050px}
+      .prn-body .site-footer{min-height:1035px}
+    }
     .prn-body .site-footer{margin-top:34px;padding:0 0 26px;background:transparent}
     .prn-body .site-footer .container{position:relative}
     .prn-body .site-footer__inner{padding:28px 30px 18px;border-radius:28px;background:linear-gradient(180deg,#fbf9ff 0%,#f3efff 100%);border:1px solid rgba(109,69,234,.08);box-shadow:0 18px 40px rgba(86,57,175,.08)}
@@ -149,6 +252,13 @@
     }
     @media (max-width:767.98px){
       .tcn-sign-grid,.tcn-best-grid,.tcn-love-grid,.tcn-copy-grid,.tcn-chart-grid,.tcn-pair-list{grid-template-columns:1fr}
+      .tcn-stage--marriage .tcn-sign-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+      .tcn-stage--marriage .tcn-sign-card{min-height:132px;padding:12px 8px}
+      .tcn-stage--marriage .tcn-sign-icon{width:54px;height:54px;border-radius:18px;font-size:30px;box-shadow:5px 0 0 rgba(255,203,69,.95)}
+      .tcn-stage--marriage .tcn-sign-card h3{font-size:16px}
+      .tcn-stage--marriage .tcn-sign-card p{font-size:10px}
+      .tcn-chart > div{grid-template-columns:1fr !important}
+      .tcn-chart table{margin-top:8px}
       .tcn-card,.tcn-sign-card,.tcn-panel,.tcn-love-card,.tcn-copy-card,.tcn-chart,.tcn-watch-copy,.tcn-watch-art,.tcn-cta,.tcn-pair-card{padding:18px}
       .tcn-card p,.tcn-sign-card p,.tcn-love-card p,.tcn-copy-card p,.tcn-section-lead,.tcn-faq p,.tcn-cta__copy p,.tcn-conclusion-copy p,.tcn-pair-card p,.tcn-essay p,.tcn-bullet-list li{font-size:15px}
       .tcn-faq summary{font-size:18px}
@@ -161,6 +271,215 @@
       .tcn-pair-top h3{font-size:24px}
       .prn-body .site-footer{margin-top:26px;padding-bottom:18px}
       .prn-body .site-footer__inner{padding:22px 20px 16px;border-radius:24px}
+    }
+    @media (max-width:390.98px){
+      .tcn-chart{overflow:hidden}
+      .tcn-chart > div{grid-template-columns:1fr !important}
+      .tcn-stage--marriage .tcn-sign-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .tcn-stage--marriage .tcn-sign-card{min-height:116px;padding:10px 6px}
+      .tcn-stage--marriage .tcn-sign-icon{width:46px;height:46px;border-radius:15px;font-size:26px}
+      .tcn-chart-table{table-layout:fixed}
+      .tcn-chart-table th,.tcn-chart-table td{padding:8px 6px;font-size:12px}
+      .tcn-chart-cellset{justify-content:flex-end;gap:4px;flex-wrap:wrap}
+      .tcn-chart-mark{width:20px;height:20px;font-size:11px}
+      .tcn-pair-card,.tcn-love-card,.tcn-copy-card{padding-left:0;padding-right:0}
+      .tcn-pair-top h3{font-size:22px}
+      .tcn-faq summary{padding-right:62px;font-size:17px}
+      .tcn-faq summary::after{right:14px;width:38px;height:38px}
+    }
+
+    /* Source-frame remap: live section 2 contains Figma "Zodiac Sign" + first "03-Bunner". */
+    @media (min-width:1200px){
+      .prn-main > section:nth-of-type(1){min-height:855px !important}
+      .prn-main > section:nth-of-type(2){min-height:1418px !important}
+      .prn-main > section:nth-of-type(3){min-height:1000px !important}
+      .prn-main > section:nth-of-type(4){min-height:1500px !important}
+      .prn-main > section:nth-of-type(5){min-height:900px !important}
+      .prn-main > section:nth-of-type(6){min-height:3500px !important}
+      .prn-main > section:nth-of-type(7){min-height:318px !important}
+      .prn-main > section:nth-of-type(8){min-height:2950px !important}
+      .prn-main > section:nth-of-type(9){min-height:1430px !important}
+      .prn-main > section:nth-of-type(10){min-height:1320px !important}
+      .prn-main > section:nth-of-type(11){min-height:860px !important}
+      .prn-main > section:nth-of-type(12){min-height:930px !important}
+    }
+    @media (min-width:992px) and (max-width:1199.98px){
+      .prn-main > section:nth-of-type(1){min-height:800px !important}
+      .prn-main > section:nth-of-type(2){min-height:1588px !important}
+      .prn-main > section:nth-of-type(3){min-height:1040px !important}
+      .prn-main > section:nth-of-type(4){min-height:1640px !important}
+      .prn-main > section:nth-of-type(5){min-height:900px !important}
+      .prn-main > section:nth-of-type(6){min-height:3500px !important}
+      .prn-main > section:nth-of-type(7){min-height:318px !important}
+      .prn-main > section:nth-of-type(8){min-height:3040px !important}
+      .prn-main > section:nth-of-type(9){min-height:1330px !important}
+      .prn-main > section:nth-of-type(10){min-height:1320px !important}
+      .prn-main > section:nth-of-type(11){min-height:860px !important}
+      .prn-main > section:nth-of-type(12){min-height:920px !important}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .prn-main > section:nth-of-type(1){min-height:800px !important}
+      .prn-main > section:nth-of-type(2){min-height:1373px !important}
+      .prn-main > section:nth-of-type(3){min-height:1320px !important}
+      .prn-main > section:nth-of-type(4){min-height:1310px !important}
+      .prn-main > section:nth-of-type(5){min-height:684px !important}
+      .prn-main > section:nth-of-type(6){min-height:3000px !important}
+      .prn-main > section:nth-of-type(7){min-height:300px !important}
+      .prn-main > section:nth-of-type(8){min-height:2960px !important}
+      .prn-main > section:nth-of-type(9){min-height:1270px !important}
+      .prn-main > section:nth-of-type(10){min-height:1350px !important}
+      .prn-main > section:nth-of-type(11){min-height:860px !important}
+      .prn-main > section:nth-of-type(12){min-height:760px !important}
+    }
+    @media (min-width:391px) and (max-width:767.98px){
+      .prn-main > section:nth-of-type(1){min-height:900px !important}
+      .prn-main > section:nth-of-type(2){min-height:1220px !important}
+      .prn-main > section:nth-of-type(3){min-height:1260px !important}
+      .prn-main > section:nth-of-type(4){min-height:1200px !important}
+      .prn-main > section:nth-of-type(5){min-height:517px !important}
+      .prn-main > section:nth-of-type(6){min-height:2750px !important}
+      .prn-main > section:nth-of-type(7){min-height:300px !important}
+      .prn-main > section:nth-of-type(8){min-height:3537px !important}
+      .prn-main > section:nth-of-type(9){min-height:1180px !important}
+      .prn-main > section:nth-of-type(10){min-height:1220px !important}
+      .prn-main > section:nth-of-type(11){min-height:590px !important}
+      .prn-main > section:nth-of-type(12){min-height:740px !important}
+    }
+    @media (max-width:390.98px){
+      .prn-main > section:nth-of-type(1){min-height:1000px !important}
+      .prn-main > section:nth-of-type(2){min-height:1560px !important}
+      .prn-main > section:nth-of-type(3){min-height:1550px !important}
+      .prn-main > section:nth-of-type(4){min-height:1650px !important}
+      .prn-main > section:nth-of-type(5){min-height:516px !important}
+      .prn-main > section:nth-of-type(6){min-height:3980px !important}
+      .prn-main > section:nth-of-type(7){min-height:300px !important}
+      .prn-main > section:nth-of-type(8){min-height:5500px !important}
+      .prn-main > section:nth-of-type(9){min-height:1950px !important}
+      .prn-main > section:nth-of-type(10){min-height:1700px !important}
+      .prn-main > section:nth-of-type(11){min-height:940px !important}
+      .prn-main > section:nth-of-type(12){min-height:1050px !important}
+    }
+
+    .prn-main > section{box-sizing:border-box}
+    @media (min-width:1200px){
+      .prn-main > section:nth-of-type(1){height:855px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(2){height:1418px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(3){height:1000px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(4){height:1500px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(5){height:900px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(6){height:3500px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(7){height:318px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(8){height:2950px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(9){height:1430px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(10){height:1320px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(11){height:860px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(12){height:930px !important;overflow:hidden}
+    }
+    @media (min-width:992px) and (max-width:1199.98px){
+      .prn-main > section:nth-of-type(1){height:800px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(2){height:1588px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(3){height:1040px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(4){height:1640px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(5){height:900px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(6){height:3500px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(7){height:318px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(8){height:3040px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(9){height:1330px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(10){height:1320px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(11){height:860px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(12){height:920px !important;overflow:hidden}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .prn-main > section:nth-of-type(1){height:800px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(2){height:1373px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(3){height:1320px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(4){height:1310px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(5){height:684px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(6){height:3000px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(7){height:300px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(8){height:2960px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(9){height:1270px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(10){height:1350px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(11){height:860px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(12){height:760px !important;overflow:hidden}
+    }
+    @media (min-width:391px) and (max-width:767.98px){
+      .prn-main > section:nth-of-type(1){height:900px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(2){height:1220px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(3){height:1260px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(4){height:1200px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(5){height:517px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(6){height:2750px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(7){height:300px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(8){height:3537px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(9){height:1180px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(10){height:1220px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(11){height:590px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(12){height:740px !important;overflow:hidden}
+    }
+    @media (max-width:390.98px){
+      .prn-main > section:nth-of-type(1){height:1000px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(2){height:1560px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(3){height:1550px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(4){height:1650px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(5){height:516px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(6){height:3980px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(7){height:300px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(8){height:5500px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(9){height:1950px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(10){height:1700px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(11){height:940px !important;overflow:hidden}
+      .prn-main > section:nth-of-type(12){height:1050px !important;overflow:hidden}
+    }
+    .prn-main{padding-top:0!important}
+    .prn-body .site-footer{margin-top:0!important;padding-bottom:0!important}
+    @media (min-width:1200px){
+      .prn-body .site-footer{height:420px!important;min-height:420px!important}
+    }
+    @media (min-width:992px) and (max-width:1199.98px){
+      .prn-main>section:nth-of-type(12){margin-top:-60px!important}
+      .prn-body .site-footer{height:570px!important;min-height:570px!important}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .prn-body .site-footer{height:700px!important;min-height:700px!important}
+      .prn-body .site-footer .container{height:700px!important;max-width:768px!important;padding:0 39px!important}
+      .prn-body .site-footer__inner{height:700px!important;padding:45px 0 64px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;box-sizing:border-box!important}
+      .prn-body .site-footer__inner-top{display:block!important;height:438px!important;padding:0!important;gap:0!important}
+      .prn-body .site-footer__col-left{width:212px!important;height:77px!important;margin:0 auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:20px!important}
+      .prn-body .site-footer__logo,.prn-body .site-footer__logo img{width:129px!important;height:auto!important}
+      .prn-body .site-footer__apps{display:flex!important;gap:10px!important;margin-top:0!important}
+      .prn-body .site-footer__apps img{width:101px!important;height:30px!important}
+      .prn-body .site-footer__col-right{width:450px!important;height:311px!important;margin:50px auto 0!important;display:grid!important;grid-template-columns:150px 140px 100px!important;column-gap:30px!important;row-gap:40px!important;align-items:start!important;justify-content:start!important}
+      .prn-body .site-footer__col-menu{display:block!important;width:auto!important;height:auto!important;min-width:0!important;gap:0!important}
+      .prn-body .site-footer__title{font-size:13px!important;line-height:20px!important;margin:0 0 20px!important}
+      .prn-body .site-footer__col-menu ul{display:grid!important;gap:6px!important;margin:0!important;padding:0!important}
+      .prn-body .site-footer__link{font-size:13px!important;line-height:23px!important}
+      .prn-body .site-footer__inner-bottom{height:103px!important;margin-top:50px!important;padding:50px 0 0!important;border-top:1px solid rgba(109,69,234,.08)!important;display:block!important;text-align:center!important;box-sizing:border-box!important}
+      .prn-body .site-footer__payments{justify-content:center!important;margin:0 auto 10px!important}
+      .prn-body .site-footer__copyright{font-size:13px!important;line-height:23px!important;margin:0!important;text-align:center!important}
+    }
+    @media (max-width:767.98px){
+      .prn-body .site-footer{height:680px!important;min-height:680px!important;margin-top:0!important;padding:0!important;overflow:visible!important}
+      .prn-body .site-footer .container{height:680px!important;max-width:576px!important;padding:0 33px!important}
+      .prn-body .site-footer__inner{height:680px!important;padding:45px 0 44px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;box-sizing:border-box!important}
+      .prn-body .site-footer__inner-top{display:block!important;height:438px!important;padding:0!important;gap:0!important}
+      .prn-body .site-footer__col-left{width:212px!important;height:77px!important;margin:0 auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:20px!important}
+      .prn-body .site-footer__logo,.prn-body .site-footer__logo img{width:129px!important;height:auto!important}
+      .prn-body .site-footer__apps{display:flex!important;gap:10px!important;margin-top:0!important}
+      .prn-body .site-footer__apps img{width:101px!important;height:30px!important}
+      .prn-body .site-footer__col-right{width:420px!important;height:311px!important;margin:50px auto 0!important;display:grid!important;grid-template-columns:150px 120px 100px!important;column-gap:25px!important;row-gap:40px!important;align-items:start!important;justify-content:start!important}
+      .prn-body .site-footer__col-menu{display:block!important;width:auto!important;height:auto!important;min-width:0!important;gap:0!important}
+      .prn-body .site-footer__title{font-size:13px!important;line-height:20px!important;margin:0 0 20px!important}
+      .prn-body .site-footer__col-menu ul{display:grid!important;gap:6px!important;margin:0!important;padding:0!important}
+      .prn-body .site-footer__link{font-size:13px!important;line-height:23px!important}
+      .prn-body .site-footer__inner-bottom{height:103px!important;margin-top:50px!important;padding:50px 0 0!important;border-top:1px solid rgba(109,69,234,.08)!important;display:block!important;text-align:center!important;box-sizing:border-box!important}
+      .prn-body .site-footer__payments{justify-content:center!important;margin:0 auto 10px!important}
+      .prn-body .site-footer__copyright{font-size:13px!important;line-height:23px!important;margin:0!important;text-align:center!important}
+    }
+    @media (max-width:390.98px){
+      .prn-body .site-footer{height:1035px!important;min-height:1035px!important}
+      .prn-body .site-footer .container{height:1035px!important;padding:0 22px!important}
+      .prn-body .site-footer__inner{height:1035px!important;background:transparent!important;box-shadow:none!important;border:0!important}
     }
   </style>
 </head>
@@ -213,18 +532,7 @@
           </div>
           <div class="col-lg-6">
             <div class="prn-hero-section__media tcn-bull-art">
-              <svg viewBox="0 0 460 360" role="img" aria-label="Taurus bull illustration">
-                <circle class="tcn-ring" cx="78" cy="184" r="15"></circle>
-                <circle class="tcn-ring" cx="392" cy="142" r="12"></circle>
-                <path class="tcn-star" d="M341 42l10 22 24 10-24 10-10 23-10-23-23-10 23-10z"></path>
-                <path class="tcn-horn" d="M112 168c-44-36-52-104-20-136 30-29 92-20 123 16 6 8 10 18 12 27-48 4-86 34-115 93z"></path>
-                <path class="tcn-horn" d="M348 168c44-36 52-104 20-136-30-29-92-20-123 16-6 8-10 18-12 27 48 4 86 34 115 93z"></path>
-                <path class="tcn-face" d="M175 102h110c44 0 82 30 92 72 12 54-8 114-54 154-26 22-58 32-93 32s-67-10-93-32c-46-40-66-100-54-154 10-42 48-72 92-72z"></path>
-                <path class="tcn-detail" d="M211 238c-4 0-8-4-8-9 0-18 12-34 27-34s27 16 27 34c0 5-4 9-8 9-5 0-9-4-9-9 0-9-5-17-10-17s-10 8-10 17c0 5-4 9-9 9z"></path>
-                <ellipse class="tcn-detail" cx="201" cy="184" rx="8" ry="13"></ellipse>
-                <ellipse class="tcn-detail" cx="259" cy="184" rx="8" ry="13"></ellipse>
-                <path class="tcn-detail" d="M190 267c13 14 27 20 40 20s27-6 40-20c-26-8-54-8-80 0z"></path>
-              </svg>
+              <img src="img/zodiac-sign-02-taurus.png" alt="Taurus bull illustration" width="800" height="800" />
             </div>
           </div>
         </div>
@@ -248,7 +556,7 @@
           <article class="tcn-sign-card"><div class="tcn-sign-icon">♒</div><h3>AQUARIUS</h3><p>Jan 20 - Feb 18</p></article>
           <article class="tcn-sign-card"><div class="tcn-sign-icon">♓</div><h3>PISCES</h3><p>Feb 19 - Mar 20</p></article>
         </div>
-        <div style="margin-top:22px;padding:26px 28px;border-radius:24px;background:linear-gradient(90deg,#3a2a7f 0%,#5d43c5 58%,#30225e 100%);color:#fff;box-shadow:0 22px 42px rgba(67,48,140,.24);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+        <div style="padding:26px 28px;border-radius:24px;background:linear-gradient(90deg,#3a2a7f 0%,#5d43c5 58%,#30225e 100%);color:#fff;box-shadow:0 22px 42px rgba(67,48,140,.24);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
           <div style="max-width:560px">
             <strong style="display:block;margin-bottom:8px;font-size:34px;line-height:1.08;text-transform:uppercase;">Explore the universe of your relationship</strong>
             <p style="margin:0;color:rgba(255,255,255,.86);font-size:14px;line-height:1.5;">Start your free compatibility read with one of our expert advisors and turn this Taurus screen into a more personal relationship answer.</p>
@@ -309,7 +617,7 @@
         <h2 class="section__title section__title--h2 prn-simple-title">Watch What Signs Are Compatible With Taurus</h2>
         <div class="tcn-video-stage">
           <div class="tcn-video-frame">
-            <img src="img/video-cover.png" alt="Compatibility video preview" width="1160" height="652" loading="lazy" />
+            <img src="img/video-cover.png" alt="Compatibility video preview" width="1160" height="652" loading="eager" />
             <div class="tcn-video-play">▶</div>
           </div>
           <div class="tcn-video-meta">
@@ -433,12 +741,42 @@
     <section class="prn-plain-section">
       <div class="container">
         <h2 class="section__title section__title--h2 prn-simple-title">Frequently asked questions</h2>
-        <div class="tcn-faq">
-          <details><summary>How accurate is zodiac compatibility?</summary><div class="tcn-faq__body"><p>It works best as a first structure. It can show likely rhythm, attraction, and tension, but it should not replace a deeper personal reading when the relationship is complex.</p></div></details>
-          <details><summary>How to check zodiac compatibility?</summary><div class="tcn-faq__body"><p>Start with sign matching and general rhythm, then move into the specific pairing that matters most. Use a guided expert flow if you need more than a pattern-level answer.</p></div></details>
-          <details open><summary>How accurate is Chinese zodiac compatibility?</summary><div class="tcn-faq__body"><p>Chinese zodiac compatibility can add another symbolic layer, but it should still be treated as a complementary frame rather than a standalone verdict. It becomes most useful when combined with broader relationship context and a more detailed personal reading.</p></div></details>
-          <details><summary>How important is zodiac compatibility?</summary><div class="tcn-faq__body"><p>It matters most when you are trying to understand pace, emotional style, and long-term fit before you invest more deeply. It is a framing tool, not a final verdict on love.</p></div></details>
-          <details><summary>What zodiac signs are compatible?</summary><div class="tcn-faq__body"><p>Compatibility depends on the sign pair. For Taurus, Capricorn, Virgo, Cancer, and Pisces tend to be the strongest broad matches, while the more restless signs need more conscious effort.</p></div></details>
+        <div class="tcn-faq faq-section__list" id="taurusFaq" data-accordion="single" data-heritage-component="faq-accordion.v1" data-heritage-source="zodiac-compatibility-new.html:.faq-section__list">
+          <div class="faq-section__item">
+            <button class="faq-section__toggle" type="button" aria-expanded="false" aria-controls="taurus-faq-1">
+              <span class="faq-section__toggle-content"><span class="faq-section__title">How accurate is zodiac compatibility?</span></span>
+              <span class="faq-section__icon" aria-hidden="true"><span class="faq-section__icon-plus"></span></span>
+            </button>
+            <div class="tcn-faq__body faq-section__panel" id="taurus-faq-1" role="region"><div class="faq-section__body"><p>It works best as a first structure. It can show likely rhythm, attraction, and tension, but it should not replace a deeper personal reading when the relationship is complex.</p></div></div>
+          </div>
+          <div class="faq-section__item">
+            <button class="faq-section__toggle" type="button" aria-expanded="false" aria-controls="taurus-faq-2">
+              <span class="faq-section__toggle-content"><span class="faq-section__title">How to check zodiac compatibility?</span></span>
+              <span class="faq-section__icon" aria-hidden="true"><span class="faq-section__icon-plus"></span></span>
+            </button>
+            <div class="tcn-faq__body faq-section__panel" id="taurus-faq-2" role="region"><div class="faq-section__body"><p>Start with sign matching and general rhythm, then move into the specific pairing that matters most. Use a guided expert flow if you need more than a pattern-level answer.</p></div></div>
+          </div>
+          <div class="faq-section__item is-open">
+            <button class="faq-section__toggle" type="button" aria-expanded="true" aria-controls="taurus-faq-3">
+              <span class="faq-section__toggle-content"><span class="faq-section__title">How accurate is Chinese zodiac compatibility?</span></span>
+              <span class="faq-section__icon" aria-hidden="true"><span class="faq-section__icon-cross"></span></span>
+            </button>
+            <div class="tcn-faq__body faq-section__panel" id="taurus-faq-3" role="region"><div class="faq-section__body"><p>Chinese zodiac compatibility can add another symbolic layer, but it should still be treated as a complementary frame rather than a standalone verdict. It becomes most useful when combined with broader relationship context and a more detailed personal reading.</p></div></div>
+          </div>
+          <div class="faq-section__item">
+            <button class="faq-section__toggle" type="button" aria-expanded="false" aria-controls="taurus-faq-4">
+              <span class="faq-section__toggle-content"><span class="faq-section__title">How important is zodiac compatibility?</span></span>
+              <span class="faq-section__icon" aria-hidden="true"><span class="faq-section__icon-plus"></span></span>
+            </button>
+            <div class="tcn-faq__body faq-section__panel" id="taurus-faq-4" role="region"><div class="faq-section__body"><p>It matters most when you are trying to understand pace, emotional style, and long-term fit before you invest more deeply. It is a framing tool, not a final verdict on love.</p></div></div>
+          </div>
+          <div class="faq-section__item">
+            <button class="faq-section__toggle" type="button" aria-expanded="false" aria-controls="taurus-faq-5">
+              <span class="faq-section__toggle-content"><span class="faq-section__title">What zodiac signs are compatible?</span></span>
+              <span class="faq-section__icon" aria-hidden="true"><span class="faq-section__icon-plus"></span></span>
+            </button>
+            <div class="tcn-faq__body faq-section__panel" id="taurus-faq-5" role="region"><div class="faq-section__body"><p>Compatibility depends on the sign pair. For Taurus, Capricorn, Virgo, Cancer, and Pisces tend to be the strongest broad matches, while the more restless signs need more conscious effort.</p></div></div>
+          </div>
         </div>
       </div>
     </section>

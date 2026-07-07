@@ -48,7 +48,7 @@ body{
 
 .forgot-frame{
   position:relative;
-  width:1280px;
+  width:min(1280px,100vw);
   height:855px;
   overflow:hidden;
 }
@@ -371,7 +371,7 @@ body{
 
 @media (max-width: 980px){
   .forgot-frame{
-    width:960px;
+    width:min(960px,100vw);
     height:855px;
   }
   .forgot-frame-bg{
@@ -392,7 +392,8 @@ body{
   }
   .forgot-menu-right{
     position:absolute;
-    left:662px;
+    left:auto;
+    right:0;
     top:0;
     width:218px;
     height:50px;
@@ -1049,16 +1050,16 @@ body{
   .forgot-title{
     position:absolute;
     left:0;
-    top:0;
+    top:-7px;
     width:300px;
     font-size:27px;
     line-height:30px;
   }
   .forgot-subtitle{
     position:absolute;
-    left:0;
-    top:50px;
-    width:300px;
+    left:-5px;
+    top:43px;
+    width:305px;
     margin:0;
     font-size:12px;
     line-height:20px;

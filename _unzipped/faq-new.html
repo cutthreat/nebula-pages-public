@@ -27,14 +27,14 @@
     .faq-answers-shell{width:100vw;height:3560px;background:#f9faff;overflow:hidden}
     .faq-answers__inner{width:920px;margin:0 auto;padding-top:96px}
     .faq-answers__title{margin:0 0 80px;text-align:center;color:#101010;font-size:65px;font-weight:500;line-height:88.79px;letter-spacing:-1.95px}
-    .faq-group{margin-bottom:80px}
-    .faq-group__title{margin:0 0 43px;color:#673dea;font-size:50px;font-weight:500;line-height:68.3px;letter-spacing:-1.5px}
-    .faq-item{position:relative;min-height:90px;border-bottom:1px solid rgba(16,16,16,.1)}
-    .faq-item--tall{min-height:124px}
-    .faq-item--open{min-height:262px}
-    .faq-item__question{display:flex;align-items:center;min-height:90px;width:760px;margin-left:40px;color:#101010;font-size:23px;font-weight:600;line-height:35px;background:none;border:0;text-align:left;padding:0}
-    .faq-item__answer{width:760px;margin-left:40px;color:#101010;font-size:18px;font-weight:400;line-height:28px}
-    .faq-item__plus{position:absolute;right:10px;top:10px;width:68px;height:68px;border-radius:50%;display:grid;place-items:center}
+.faq-group{margin-bottom:80px;display:grid;gap:16px}
+.faq-group__title{margin:0 0 43px;color:#673dea;font-size:50px;font-weight:500;line-height:68.3px;letter-spacing:-1.5px}
+.faq-item{position:relative;min-height:90px;border:0;border-radius:32px;background:#f0e7ff;box-shadow:inset 0 0 0 1px rgba(103,61,234,.04);overflow:hidden}
+.faq-item--tall{min-height:124px}
+.faq-item--open{min-height:262px;background:#fff;box-shadow:inset 0 0 0 1px rgba(103,61,234,.18)}
+.faq-item__question{display:flex;align-items:center;min-height:90px;width:760px;margin-left:40px;color:#101010;font-size:23px;font-weight:600;line-height:35px;background:none;border:0;text-align:left;padding:0}
+.faq-item__answer{width:760px;margin:0 0 30px 40px;color:#101010;font-size:18px;font-weight:400;line-height:28px}
+.faq-item__plus{position:absolute;right:12px;top:11px;width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:#fff}
     .faq-item__plus::before,.faq-item__plus::after{content:"";position:absolute;background:#673dea;width:16px;height:2px}
     .faq-item__plus::after{transform:rotate(90deg)}
     .site-footer{width:100vw;height:420px;background:#f5f5f5}
@@ -49,18 +49,36 @@
     .site-footer__inner-bottom{justify-content:center;margin-top:105px}
     .site-footer__copyright{font-size:16px;line-height:23px;letter-spacing:-.16px;color:#929292}
     @media (max-width:1199.98px){.faq-hero-shell,.faq-answers-shell,.site-footer{width:100vw}.faq-hero__inner{width:calc(100vw - 90px)}.faq-hero__cards{left:90px;right:90px;grid-template-columns:1fr 1fr;gap:48px}.faq-answers__inner{width:calc(100vw - 180px)}}
-    @media (max-width:767.98px){.faq-hero-shell{height:620px}.faq-hero__inner{width:calc(100vw - 32px);padding-top:150px}.faq-hero__kicker{font-size:16px;line-height:32px;margin-bottom:24px}.faq-hero__title{font-size:42px;line-height:48px;letter-spacing:-.42px}.faq-hero__cards{left:24px;right:24px;bottom:56px;grid-template-columns:1fr;gap:24px}.faq-hero__headline{font-size:22px;line-height:30px}.faq-hero__text{font-size:15px;line-height:24px}.faq-answers-shell{height:auto;min-height:2200px}.faq-answers__inner{width:calc(100vw - 32px);padding-top:56px}.faq-answers__title{font-size:42px;line-height:52px;margin-bottom:48px}.faq-group__title{font-size:30px;line-height:38px}.faq-item__question,.faq-item__answer{width:calc(100% - 72px);margin-left:0}.faq-item__question{font-size:18px;line-height:27px}.faq-item__answer{font-size:15px;line-height:24px}.faq-item__plus{right:0}.site-footer,.site-footer__inner{height:auto}.site-footer .container{width:calc(100vw - 32px)}.site-footer__inner{padding:42px 0}.site-footer__inner-top,.site-footer__col-right{display:block}.site-footer__col-left{width:auto;margin-bottom:36px}.site-footer__col-menu{margin-bottom:24px}.site-footer__inner-bottom{margin-top:24px;justify-content:flex-start}}
+@media (max-width:767.98px){.faq-hero-shell{height:620px}.faq-hero__inner{width:calc(100vw - 32px);padding-top:150px}.faq-hero__kicker{font-size:16px;line-height:32px;margin-bottom:24px}.faq-hero__title{font-size:42px;line-height:48px;letter-spacing:-.42px}.faq-hero__cards{left:24px;right:24px;bottom:56px;grid-template-columns:1fr;gap:24px}.faq-hero__headline{font-size:22px;line-height:30px}.faq-hero__text{font-size:15px;line-height:24px}.faq-answers-shell{height:auto;min-height:2200px}.faq-answers__inner{width:calc(100vw - 32px);padding-top:56px}.faq-answers__title{font-size:42px;line-height:52px;margin-bottom:48px}.faq-group__title{font-size:30px;line-height:38px}.faq-item{border-radius:24px}.faq-item__question,.faq-item__answer{width:calc(100% - 72px);margin-left:16px}.faq-item__question{font-size:18px;line-height:27px}.faq-item__answer{font-size:15px;line-height:24px}.faq-item__plus{right:12px;width:54px;height:54px}.site-footer,.site-footer__inner{height:auto}.site-footer .container{width:calc(100vw - 32px)}.site-footer__inner{padding:42px 0}.site-footer__inner-top,.site-footer__col-right{display:block}.site-footer__col-left{width:auto;margin-bottom:36px}.site-footer__col-menu{margin-bottom:24px}.site-footer__inner-bottom{margin-top:24px;justify-content:flex-start}}
     @media (min-width:992px) and (max-width:1199.98px){.site-footer{height:570px}.site-footer__inner{height:570px}}
-    @media (min-width:768px) and (max-width:991.98px){.faq-answers-shell{height:3330px}.site-footer{height:700px}.site-footer__inner{height:700px}}
-    @media (min-width:391px) and (max-width:767.98px){.faq-hero-shell{height:600px}.faq-answers-shell{height:3400px;min-height:0}.site-footer{height:680px}.site-footer__inner{height:680px}}
-    @media (max-width:390.98px){.faq-hero-shell{height:620px}.faq-answers-shell{height:4600px;min-height:0}.site-footer{height:1035px}.site-footer__inner{height:1035px}}
+    @media (min-width:768px) and (max-width:991.98px){.faq-answers-shell{height:3330px}.site-footer{height:700px;min-height:700px}.site-footer__inner{height:700px}}
+    @media (min-width:391px) and (max-width:767.98px){.faq-hero-shell{height:600px}.faq-answers-shell{height:3400px;min-height:0}.site-footer{height:680px;min-height:680px}.site-footer__inner{height:680px}}
+    @media (max-width:390.98px){.faq-hero-shell{height:620px}.faq-answers-shell{height:4600px;min-height:0}.site-footer{height:1035px;min-height:1035px}.site-footer__inner{height:1035px}}
     .faq-hero-shell::before{background-color:#f5f5f5}
     .faq-hero__kicker,.faq-group__title{color:#673eda}
     .site-footer{background:#f1f1f1}
     @media (max-width:1199.98px){.faq-hero__headline{font-size:28px;letter-spacing:.28px}}
     @media (min-width:768px) and (max-width:991.98px){.faq-answers__title{font-size:55px;line-height:75.13px;letter-spacing:-1.65px}.faq-answers__inner > .faq-answers__title:nth-of-type(2){font-size:65px;line-height:88.79px;letter-spacing:-1.95px}.faq-group__title{font-size:35px;line-height:47.81px;letter-spacing:-1.05px}.faq-item__question{font-size:20px}}
     @media (max-width:767.98px){.faq-hero__inner{width:930px;padding-top:196px;left:50%;transform:translateX(-50%)}.faq-hero__kicker{font-size:20px;line-height:71px;margin-bottom:39px}.faq-hero__title{font-size:71px;line-height:79px;letter-spacing:-.71px}.faq-hero__cards{left:50%;right:auto;top:489px;bottom:auto;width:930px;transform:translateX(-50%);grid-template-columns:459px 459px;gap:12px}.faq-hero__headline{font-size:28px;line-height:40px;letter-spacing:.28px}.faq-hero__text{font-size:18px;line-height:30px;letter-spacing:.18px}.faq-answers__title{font-size:45px;line-height:61.47px;letter-spacing:-1.35px}.faq-group__title{font-size:30px;line-height:40.98px;letter-spacing:-.9px}.faq-item__question{font-size:18px;line-height:30px}.faq-item__answer{font-size:16px;line-height:30px}}
-    @media (max-width:390.98px){.faq-answers__title{font-size:40px;line-height:54.64px;letter-spacing:-1.2px}.faq-item__answer{font-size:14px;line-height:30px}}
+    @media (max-width:390.98px){.faq-hero-shell{height:760px}.faq-hero__cards{top:370px;bottom:auto}.faq-answers__title{font-size:40px;line-height:54.64px;letter-spacing:-1.2px}.faq-item__answer{font-size:14px;line-height:30px}}
+    @media (max-width:767.98px){.faq-hero__inner{width:calc(100vw - 32px);padding-top:150px;left:auto;transform:none}.faq-hero__kicker{font-size:16px;line-height:32px;margin-bottom:24px}.faq-hero__title{font-size:42px;line-height:48px;letter-spacing:-.42px}.faq-hero__cards{left:24px;right:24px;top:318px;bottom:auto;width:auto;transform:none;grid-template-columns:1fr;gap:24px}.faq-hero__headline{font-size:22px;line-height:30px;letter-spacing:.22px}.faq-hero__text{font-size:15px;line-height:24px;letter-spacing:.15px}}
+    @media (max-width:390.98px){.faq-hero-shell{height:760px}.faq-hero__cards{top:370px;bottom:auto}}
+    @media (min-width:391px) and (max-width:767.98px){.site-footer{height:680px;min-height:680px;overflow:hidden}.site-footer .container{width:510px}.site-footer__inner{height:680px;padding:45px 0 0}.site-footer__inner-top{display:block;padding-top:0}.site-footer__col-left{width:510px;margin:0;align-items:center;gap:20px}.site-footer__logo,.site-footer__logo img{width:129px;height:27px}.site-footer__appstores-links{display:flex;width:212px;gap:10px;justify-content:flex-start}.site-footer__col-right{display:grid;grid-template-columns:150px 120px 100px;column-gap:25px;row-gap:40px;width:420px;max-width:420px;margin:50px auto 0}.site-footer__col-menu,.site-footer__col-menu:last-child{display:flex;width:100%;max-width:none;gap:16px;margin:0;text-align:left;align-items:flex-start}.site-footer__col-menu:nth-child(4){grid-column:1;grid-row:2;width:150px}.site-footer__col-menu:nth-child(5){grid-column:2 / span 2;grid-row:2;width:160px}.site-footer__title{font-size:16px;line-height:20px;letter-spacing:-.16px;margin:0}.site-footer__col-menu ul{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0;padding:0}.site-footer__col-menu li+li{margin-top:0}.site-footer__link{font-size:13px;line-height:23px;letter-spacing:-.13px}.site-footer__inner-bottom{display:block;width:510px;height:103px;min-height:0;margin:0 auto;padding-top:50px}.pay-icon-wrapper{width:270px;height:20px;margin:0 auto 10px}.site-footer__copyright{width:295px;margin:0 auto;font-size:13px;line-height:23px;letter-spacing:-.13px;text-align:center;white-space:nowrap}}
+    @media (max-width:390.98px){.site-footer{height:895px;min-height:895px;overflow:hidden}.site-footer__inner{height:895px;padding:0;position:relative}.site-footer__inner-top{display:flex;flex-direction:column;align-items:center;gap:50px;padding-top:0}.site-footer__col-left{width:218px;margin:0;gap:0;align-items:center}.site-footer__logo{display:none}.site-footer__appstores-links{display:flex;width:218px;gap:16px;justify-content:flex-start;margin-top:-28px}.site-footer__col-right{display:flex;flex-direction:column;align-items:center;width:160px;max-width:160px;gap:26px}.site-footer__col-menu,.site-footer__col-menu:last-child{display:flex;width:160px;max-width:160px;gap:16px;margin:0;text-align:center;align-items:center}.site-footer__title{font-size:16px;line-height:20px;letter-spacing:-.16px;margin:0}.site-footer__col-menu ul{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0;padding:0}.site-footer__col-menu li+li{margin-top:0}.site-footer__link{font-size:13px;line-height:23px;letter-spacing:-.13px}.site-footer__inner-bottom{display:block;width:295px;height:117px;min-height:0;margin:1px auto 0;padding-top:50px;justify-content:center}.pay-icon-wrapper{width:270px;height:20px;margin:0 auto 10px}.site-footer__copyright{width:295px;font-size:13px;line-height:23px;letter-spacing:-.13px;text-align:center;white-space:nowrap}}
+    .faq-item:not(.faq-item--open) .faq-item__answer{display:none}
+    .faq-item--open .faq-item__plus::after{transform:rotate(0deg)}
+    @media (min-width:768px){
+      .faq-hero__inner{padding-top:126px}
+      .faq-hero__kicker{line-height:40px;margin-bottom:14px}
+      .faq-hero__icon::after{content:"?";position:absolute;inset:0;display:grid;place-items:center;color:#673dea;font-size:170px;font-weight:300;line-height:1;opacity:.18}
+    }
+    @media (min-width:992px){
+      .faq-hero__cards{bottom:180px}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .faq-hero__inner{padding-top:124px}
+      .faq-hero__cards{bottom:116px}
+    }
   </style>
 </head>
 <body>
@@ -68,8 +86,40 @@
     <header class="site-header fixed-top">
       <div class="container">
         <div class="site-header__inner d-flex align-items-center justify-content-between">
-          <a class="site-header__logo" href="home.html"><img src="img/logo.png" alt="logo neuro" width="142" height="30" /></a>
-          <div class="site-header__actions"><a class="c-btn c-btn--ghost site-header__btn" href="login.html"><span>Log in</span><span class="c-btn__icon c-btn__icon--arrow"></span></a></div>
+          <a class="site-header__logo" href="home.html">
+            <img src="img/logo.png" alt="logo neuro" width="142" height="30" />
+          </a>
+          <nav class="navbar navbar-expand-lg navbar-light site-header__nav" aria-label="Primary">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarOffcanvas">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="site-header__language" type="button" aria-label="Language selector">Eng</button>
+            <div class="navbar-collapse collapse navbar-nav-scroll" id="navbarOffcanvas">
+              <div class="site-header__offcanvas">
+                <div class="site-header__offcanvas-top">
+                  <a class="site-header__logo" href="home.html">
+                    <img src="img/logo-white.png" alt="logo neuro" width="142" height="30" />
+                  </a>
+                  <button class="site-header__offcanvas-close" type="button" data-toggle="collapse" data-target="#navbarOffcanvas" aria-label="Close menu" aria-controls="navbarOffcanvas" aria-expanded="true"></button>
+                </div>
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="site-header__link" href="psychic-reading-new.html">Psychic Reading</a></li>
+                  <li class="nav-item"><a class="site-header__link" href="all-psychic-new.html">Psychics</a></li>
+                  <li class="nav-item"><a class="site-header__link" href="topic-new.html">Topic</a></li>
+                  <li class="nav-item"><a class="site-header__link" href="zodiac-compatibility-new.html">Zodiac Signs</a></li>
+                  <li class="nav-item"><a class="site-header__link" href="birth-chart-new.html">Charts</a></li>
+                  <li class="nav-item"><a class="site-header__link" href="blog-new.html">Articles</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="site-header__actions">
+            <input type="checkbox" class="site-header__theme d-none d-md-inline-block" id="switchTheme" aria-label="Theme toggle">
+            <a class="c-btn c-btn--ghost site-header__btn site-header__action-link" href="signup-step-1.html">
+              <span>Sign up</span>
+              <span class="c-btn__icon c-btn__icon--arrow"></span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -85,7 +135,7 @@ Asked Questions</h1>
             <p class="faq-hero__headline">Find the answers to the most frequent questions here</p>
             <p class="faq-hero__text">If your questions stay unanswered, please contact us via support.</p>
           </div>
-          <p class="faq-hero__headline">If you need help with your subscription, mobile or web app, please contact us&nbsp;here</p>
+          <p class="faq-hero__headline">If you need help with your subscription, mobile or web app, please contact us&nbsp;<a href="mailto:support@neuro.example">here</a></p>
         </div>
         <div class="faq-hero__icon" aria-hidden="true"></div>
       </section>
@@ -147,21 +197,72 @@ Asked Questions</h1>
           <div class="site-footer__inner-top">
             <div class="site-footer__col-left">
               <a class="site-footer__logo" href="home.html"><img src="img/logo.png" alt="logo neuro" width="142" height="30"></a>
+              <div class="site-footer__appstores-links">
+                <a class="site-footer__appstore-link" href="signup-step-1.html"><img src="img/google_play.png" alt="Google Play" width="101" height="30"></a>
+                <a class="site-footer__appstore-link" href="signup-step-1.html"><img src="img/appstore.png" alt="Apple Store" width="101" height="30"></a>
+              </div>
             </div>
             <div class="site-footer__col-right">
-              <div class="site-footer__col-menu"><div class="site-footer__title">Neuro</div><ul class="list-group list-group-flush"><li class="list-unstyled"><a class="site-footer__link" href="about-us-new.html">About Us</a></li><li class="list-unstyled"><a class="site-footer__link" href="home.html#reviews">Neuro Reviews</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">How we pick advisors</a></li></ul></div>
-              <div class="site-footer__col-menu"><div class="site-footer__title">Support</div><ul class="list-group list-group-flush"><li class="list-unstyled"><a class="site-footer__link" href="contact-us-new.html">Support</a></li><li class="list-unstyled"><a class="site-footer__link" href="faq-new.html">FAQ</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Privacy Policy</a></li></ul></div>
-              <div class="site-footer__col-menu"><div class="site-footer__title">Contact Us</div><ul class="list-group list-group-flush"><li class="list-unstyled"><a class="site-footer__link" href="contact-us-new.html">Contact Us</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Press</a></li></ul></div>
-              <div class="site-footer__col-menu"><div class="site-footer__title">Account</div><ul class="list-group list-group-flush"><li class="list-unstyled"><a class="site-footer__link" href="#">Sign Up / Log In</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Join as a Psychic</a></li></ul></div>
-              <div class="site-footer__col-menu"><div class="site-footer__title">Terms and Policies</div><ul class="list-group list-group-flush"><li class="list-unstyled"><a class="site-footer__link" href="#">Terms and Conditions</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Payment Terms</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Monez back Policz</a></li><li class="list-unstyled"><a class="site-footer__link" href="#">Live chat rules</a></li></ul></div>
+              <div class="site-footer__col-menu">
+                <div class="site-footer__title">Neuro</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-unstyled"><a class="site-footer__link" href="about-us-new.html">About Us</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="home.html#reviews">Neuro Reviews</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="home.html#why-trust">How we pick advisors</a></li>
+                </ul>
+              </div>
+              <div class="site-footer__col-menu">
+                <div class="site-footer__title">Support</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-unstyled"><a class="site-footer__link" href="contact-us-new.html">Support</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="faq-new.html">FAQ</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="privacy-policy-new.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="site-footer__col-menu">
+                <div class="site-footer__title">Contact Us</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-unstyled"><a class="site-footer__link" href="contact-us-new.html">Contact Us</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="about-us-new.html">Press</a></li>
+                </ul>
+              </div>
+              <div class="site-footer__col-menu">
+                <div class="site-footer__title">Account</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-unstyled"><a class="site-footer__link" href="login.html">Sign Up / Log In</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="careers-join-new.html">Join as a Psychic</a></li>
+                </ul>
+              </div>
+              <div class="site-footer__col-menu">
+                <div class="site-footer__title">Terms and Policies</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-unstyled"><a class="site-footer__link" href="terms-conditions-new.html">Terms and Conditions</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="payment-terms-new.html">Payment Terms</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="refund-policy-new.html">Money Back Policy</a></li>
+                  <li class="list-unstyled"><a class="site-footer__link" href="live-chat-rules-new.html">Live chat rules</a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="site-footer__inner-bottom">
+            <div class="pay-icon-wrapper"><img src="img/pay_icons.png" width="270" height="20" alt=""></div>
             <div class="site-footer__copyright">2025. Spiritual Neuro Limited. © All rights reserved.</div>
           </div>
         </div>
       </div>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll('.faq-item__question').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        if (!item || !item.querySelector('.faq-item__answer')) return;
+        item.classList.toggle('faq-item--open');
+      });
+    });
+  </script>
+  <script src="jquery.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

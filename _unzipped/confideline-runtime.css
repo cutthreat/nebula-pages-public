@@ -1,0 +1,30 @@
+/* Neuro runtime bridge for Confideline/Yii2 handoff. Scope: Home preview only. */
+.home {
+    --neuro-outline-rest: rgba(103, 62, 218, 0.22);
+    --neuro-outline-hover: rgba(103, 62, 218, 0.34);
+    --neuro-play-hover: #9f7bff;
+}
+
+.home .site-header__link,
+.home .c-btn,
+.home .faq-section__toggle,
+.home .clients-section__video-card,
+.home .video-section__cover,
+.home .topics-section__card,
+.home .topics-section__promo-card,
+.home .experts-section__card,
+.home .steps-section__card,
+.home .situation-section__item {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.home .clients-section__video-card:focus-visible,
+.home .video-section__cover:focus-visible,
+.home .topics-section__card:focus-visible,
+.home .topics-section__promo-card:focus-visible,
+.home .experts-section__card:focus-visible,
+.home .steps-section__cta:focus-visible,
+.home .faq-section__toggle:focus-visible {
+    outline: 2px solid rgba(103, 62, 218, 0.5);
+    outline-offset: 4px;
+}

@@ -130,6 +130,7 @@ select {
 
 .palm-hero {
   position: relative;
+  z-index: 2;
   overflow: hidden;
   background-color: var(--palm-bg);
   background:
@@ -145,12 +146,17 @@ select {
   inset: auto 0 0;
   height: 96px;
   background: #eadcff;
+  z-index: 0;
 }
 
 .palm-hero__row {
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 595px 1fr;
+  grid-template-areas:
+    "copy art"
+    "actions art";
   align-items: center;
   min-height: 768px;
   padding-top: 108px;
@@ -158,6 +164,13 @@ select {
 }
 
 .palm-hero__copy {
+  grid-area: copy;
+  position: relative;
+  z-index: 2;
+}
+
+.palm-hero__actions {
+  grid-area: actions;
   position: relative;
   z-index: 2;
 }
@@ -191,7 +204,7 @@ select {
 }
 
 .palm-hero__points li::before {
-  content: "✦";
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -199,8 +212,9 @@ select {
   place-items: center;
   width: 30px;
   height: 30px;
-  color: #b593ff;
-  font-size: 17px;
+  background-color: #b593ff;
+  -webkit-mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
+  mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
 }
 
 .palm-cta {
@@ -221,6 +235,7 @@ select {
 }
 
 .palm-hero__art {
+  grid-area: art;
   position: relative;
   min-height: 717px;
 }
@@ -246,6 +261,76 @@ select {
   height: auto;
 }
 
+@media (min-width: 1200px) {
+  .palm-hero {
+    min-height: 855px;
+  }
+
+  .palm-hero__row {
+    display: block;
+    height: 855px;
+    min-height: 855px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .palm-hero__copy {
+    position: absolute;
+    left: 45px;
+    top: 220px;
+    width: 595px;
+  }
+
+  .palm-hero__copy h1 {
+    width: 595px;
+    height: 189px;
+    margin: 0;
+    line-height: 63px;
+    letter-spacing: 0;
+  }
+
+  .palm-hero__actions {
+    position: absolute;
+    left: 45px;
+    top: 459px;
+    width: 540px;
+  }
+
+  .palm-hero__points {
+    margin-bottom: 50px;
+  }
+
+  .palm-cta {
+    width: 344px;
+    height: 70px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .palm-hero__art {
+    position: absolute;
+    left: 615px;
+    top: 119px;
+    width: 527px;
+    height: 717px;
+    min-height: 717px;
+  }
+
+  .palm-hero__orb {
+    left: 32px;
+    right: auto;
+    top: 111px;
+  }
+
+  .palm-hero__art img {
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 527px;
+    height: 717px;
+  }
+}
+
 .palm-story {
   padding: 96px 0 98px;
   background: #fff;
@@ -261,6 +346,10 @@ select {
 
 .palm-story h2 {
   line-height: 77px;
+}
+
+.palm-story__title-320 {
+  display: none;
 }
 
 .palm-questions h2 {
@@ -321,9 +410,9 @@ select {
 .palm-questions__row {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 570px;
+  grid-template-columns: 540px 570px;
   align-items: start;
-  gap: 48px;
+  gap: 10px;
 }
 
 .palm-questions__intro {
@@ -332,6 +421,7 @@ select {
 }
 
 .palm-questions__intro h2 {
+  width: 900px;
   max-width: 905px;
 }
 
@@ -340,6 +430,11 @@ select {
   left: -40px;
   top: 170px;
   width: 631px;
+}
+
+.palm-questions__art img {
+  width: 100%;
+  height: auto;
 }
 
 .palm-questions__card {
@@ -370,7 +465,7 @@ select {
 }
 
 .palm-questions__card li::before {
-  content: "✦";
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -378,8 +473,9 @@ select {
   place-items: center;
   width: 40px;
   height: 40px;
-  color: #b593ff;
-  font-size: 20px;
+  background-color: #b593ff;
+  -webkit-mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
+  mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
 }
 
 .palm-seo {
@@ -412,7 +508,7 @@ select {
   background: transparent;
   text-align: left;
   color: var(--palm-text);
-  cursor: default;
+  cursor: pointer;
 }
 
 .palm-seo__toggle span:first-child {
@@ -438,19 +534,38 @@ select {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 16px;
-  height: 2px;
-  background: #101010;
-  border-radius: 99px;
-  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-right: 3px solid #101010;
+  border-bottom: 3px solid #101010;
+  background: transparent;
+  border-radius: 0;
+}
+
+.palm-seo__icon::before {
+  transform: translate(-50%, -62%) rotate(45deg);
 }
 
 .palm-seo__icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
+  display: none;
+}
+
+.palm-seo__icon--close::before,
+.palm-seo__icon--close::after {
+  width: 22px;
+  height: 2.5px;
+  border: 0;
+  background: #101010;
+  border-radius: 99px;
+}
+
+.palm-seo__icon--close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .palm-seo__icon--close::after {
-  display: none;
+  display: block;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .palm-seo__content {
@@ -478,6 +593,20 @@ select {
   font-size: 21px;
   line-height: 35px;
   color: #000;
+}
+
+.palm-seo__preview--mobile,
+.palm-seo__content--mobile,
+.palm-seo__item--mobile-only {
+  display: none;
+}
+
+.palm-seo__item:not(.palm-seo__item--open) .palm-seo__content {
+  display: none;
+}
+
+.palm-seo__item.palm-seo__item--open .palm-seo__preview {
+  display: none;
 }
 
 .palm-footer {
@@ -603,6 +732,11 @@ select {
     font-size: 60px;
     line-height: 76px;
     letter-spacing: -0.03em;
+  }
+
+  .palm-questions__intro h2 {
+    width: auto;
+    max-width: 100%;
   }
 
   .palm-hero__points,
@@ -883,27 +1017,47 @@ select {
 
   .palm-hero__row {
     grid-template-columns: 1fr;
-    padding-top: 28px;
-    padding-bottom: 42px;
+    grid-template-areas:
+      "copy"
+      "art"
+      "actions";
+    align-content: start;
+    padding-top: 76px;
+    padding-bottom: 86px;
   }
 
   .palm-hero__copy {
-    order: 1;
+    display: block;
   }
 
   .palm-hero__art {
-    order: 2;
-    min-height: 280px;
+    min-height: 250px;
     margin-top: -8px;
   }
 
   .palm-hero__copy h1 {
-    font-size: 33px;
-    line-height: 40px;
-    max-width: 310px;
+    margin: 0 auto 18px;
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 530px;
+    text-align: center;
+  }
+
+  .palm-hero__points {
+    width: min(100%, 430px);
+    margin: 4px auto 16px;
+  }
+
+  .palm-hero__points li {
+    font-size: 13px;
+    line-height: 22px;
   }
 
   .palm-cta {
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
   }
@@ -911,12 +1065,15 @@ select {
   .palm-hero__art img {
     position: relative;
     right: auto;
+    width: 230px;
     margin: 0 auto;
   }
 
   .palm-hero__orb {
     left: 50%;
     right: auto;
+    width: 240px;
+    height: 240px;
     transform: translateX(-50%);
   }
 
@@ -1073,20 +1230,101 @@ select {
 }
 
 @media (max-width: 374.98px) {
+  .palm-hero__row {
+    display: block;
+    height: 870px;
+    min-height: 870px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .palm-hero__copy {
+    position: absolute;
+    top: 109px;
+    left: 15px;
+    right: 15px;
+  }
+
   .palm-hero__copy h1 {
+    width: 290px;
+    max-width: 100%;
+    margin: 0 auto;
     font-size: 35px;
-    line-height: 43px;
+    line-height: 38.5px;
+    letter-spacing: -0.01em;
+    text-align: center;
+  }
+
+  .palm-hero__actions {
+    position: absolute;
+    top: 578px;
+    left: 16px;
+    width: 288px;
+  }
+
+  .palm-hero__art {
+    position: absolute;
+    top: 271px;
+    left: 39px;
+    width: 228px;
+    min-height: 311px;
+    margin-top: 0;
+  }
+
+  .palm-hero__art img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 228px;
+    height: 311px;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .palm-hero__orb {
+    width: 200px;
+    height: 200px;
+    top: 46px;
   }
 
   .palm-hero__points li {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 22px;
+    min-height: 22px;
+    padding-left: 24px;
+  }
+
+  .palm-hero__points li::before {
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+  }
+
+  .palm-hero__points {
+    width: 288px;
+    margin: 0 0 40px;
+    gap: 16px;
   }
 
   .palm-cta {
-    font-size: 18px;
-    line-height: 30px;
+    box-sizing: border-box;
+    width: 288px;
+    height: 50px;
+    justify-content: center;
+    margin: 0;
+    min-height: 50px;
+    padding: 11px 14px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .palm-story__title-default {
+    display: none;
+  }
+
+  .palm-story__title-320 {
+    display: inline;
   }
 
   .palm-story__body {
@@ -1124,5 +1362,130 @@ select {
   .palm-seo__preview {
     font-size: 13px;
     line-height: 25px;
+    -webkit-line-clamp: 3;
+  }
+
+  .palm-seo__item:not(.palm-seo__item--open) {
+    margin-bottom: 63px;
+  }
+
+  .palm-seo__preview--desktop {
+    display: none;
+  }
+
+  .palm-seo__content--desktop,
+  .palm-seo__content-desktop {
+    display: none;
+  }
+
+  .palm-seo__preview--mobile {
+    display: -webkit-box;
+  }
+
+  .palm-seo__item.palm-seo__item--open .palm-seo__content--mobile {
+    display: block;
+  }
+
+  .palm-seo__item--mobile-only {
+    display: block;
+  }
+}
+
+/* Footer source-frame repair: keep inherited footer bottom row inside the Figma footer frame. */
+.palm-page .site-footer {
+  overflow: hidden;
+}
+
+.palm-page .pay-icon-wrapper {
+  height: 20px;
+  margin: 0 !important;
+  line-height: 0;
+}
+
+.palm-page .pay-icon-wrapper img {
+  display: block;
+  width: 270px !important;
+  height: 20px !important;
+  margin: 0 auto;
+}
+
+.palm-page .site-footer__copyright {
+  margin-top: 10px;
+  color: #929292 !important;
+  font-size: 13px !important;
+  line-height: 23px !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .palm-page .site-footer .container,
+  .palm-page .site-footer__inner {
+    height: 700px;
+    min-height: 700px;
+  }
+
+  .palm-page .site-footer__inner {
+    position: relative;
+  }
+
+  .palm-page .site-footer__inner-bottom {
+    position: absolute;
+    left: 197px;
+    top: 583px;
+    width: 295px;
+    padding: 0 !important;
+    border-top: 0 !important;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .palm-page .site-footer .container,
+  .palm-page .site-footer__inner {
+    height: 680px;
+    min-height: 680px;
+  }
+
+  .palm-page .site-footer__inner {
+    position: relative;
+  }
+
+  .palm-page .site-footer__inner-bottom {
+    position: absolute;
+    left: 108px;
+    top: 583px;
+    width: 295px;
+    padding: 0 !important;
+    border-top: 0 !important;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .palm-page .site-footer .container,
+  .palm-page .site-footer__inner {
+    height: 1035px;
+    min-height: 1035px;
+  }
+
+  .palm-page .site-footer__inner {
+    position: relative;
+  }
+
+  .palm-page .site-footer__inner-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 968px;
+    width: min(295px, calc(100vw - 32px));
+    padding: 0 !important;
+    border-top: 0 !important;
+    display: block;
+    text-align: center;
+  }
+
+  .palm-page .site-footer__copyright {
+    margin-top: 0 !important;
   }
 }

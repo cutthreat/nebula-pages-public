@@ -783,6 +783,13 @@ body.oracle-404-body::-webkit-scrollbar,
     pointer-events: none;
   }
 
+  .oracle-404-nav:has(.navbar-collapse.collapse:not(.show)) {
+    width: 0;
+    min-width: 0;
+    max-width: 0;
+    overflow: hidden;
+  }
+
   .oracle-404-nav.navbar-expand-lg .navbar-collapse.collapse.show {
     display: block !important;
     visibility: visible;
@@ -904,6 +911,17 @@ body.oracle-404-body::-webkit-scrollbar,
   .oracle-404-footer {
     height: 570px;
     min-height: 570px;
+  }
+
+  .oracle-404-footer .site-footer__inner-top {
+    grid-template-columns: 142px minmax(0, 1fr);
+    gap: 72px;
+  }
+
+  .oracle-404-footer .site-footer__col-right {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
 
@@ -1307,6 +1325,42 @@ body.oracle-404-body::-webkit-scrollbar,
     width: 290px;
   }
 
+  .oracle-404-title {
+    height: auto;
+    max-width: 290px;
+    font-size: 26px;
+    line-height: 1.22;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .oracle-404-title-line {
+    display: block;
+  }
+
+  .oracle-404-copy {
+    height: auto;
+    max-width: 290px;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.55;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .oracle-404-cta {
+    box-sizing: border-box;
+    width: min(100%, 222px);
+    min-width: 0;
+    padding: 0 18px;
+    gap: 8px;
+  }
+
+  .oracle-404-cta > span:first-child {
+    width: auto;
+    min-width: 0;
+  }
+
   .oracle-404-footer {
     height: 1035px;
     min-height: 1035px;
@@ -1380,16 +1434,17 @@ body.oracle-404-body::-webkit-scrollbar,
   }
 
   .oracle-404-art {
-    width: 350px;
-    max-width: none;
+    width: 290px;
+    max-width: 100%;
     height: auto;
-    margin-left: -30px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 
   .oracle-404-title {
     max-width: 290px;
-    height: 118px;
+    height: auto;
     font-size: 25px;
     line-height: 33px;
     font-weight: 600;
@@ -1406,8 +1461,8 @@ body.oracle-404-body::-webkit-scrollbar,
 
   .oracle-404-copy {
     max-width: 290px;
-    height: 203px;
-    margin-top: 40px;
+    height: auto;
+    margin-top: 20px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.14px;
@@ -1422,12 +1477,13 @@ body.oracle-404-body::-webkit-scrollbar,
   }
 
   .oracle-404-cta {
-    width: 222px;
-    min-width: 222px;
+    box-sizing: border-box;
+    width: min(100%, 222px);
+    min-width: 0;
     height: 50px;
     min-height: 50px;
-    margin-top: 40px;
-    padding: 0 30px;
+    margin-top: 28px;
+    padding: 0 18px;
     font-size: 18px;
     line-height: 1;
     letter-spacing: -0.18px;

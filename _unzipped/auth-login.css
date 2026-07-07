@@ -53,7 +53,7 @@ body{
 
 .login-frame{
   position:relative;
-  width:1280px;
+  width:min(1280px,100vw);
   height:855px;
   overflow:hidden;
 }
@@ -423,7 +423,7 @@ body{
 
 @media (max-width: 980px){
   .login-frame{
-    width:960px;
+    width:min(960px,100vw);
     height:855px;
   }
   .login-frame-bg{
@@ -439,7 +439,8 @@ body{
   }
   .login-menu-right{
     position:absolute;
-    left:662px;
+    left:auto;
+    right:0;
     top:0;
     width:218px;
     height:50px;
@@ -1018,6 +1019,8 @@ body{
     line-height:53px;
   }
   .login-social-title{
+    position:relative;
+    top:-8px;
     margin-bottom:11px;
     font-size:20px;
     line-height:30px;
@@ -1044,9 +1047,24 @@ body{
     font-size:16px;
     font-weight:500;
   }
+  .login-fields{
+    gap:12px;
+  }
+  .login-forgot{
+    margin-top:0;
+  }
   .login-submit{
     height:60px;
     font-size:20px;
     font-weight:500;
+  }
+  .login-legal{
+    margin-top:0;
+    color:#5a5a5a;
+    font-size:9px;
+    line-height:17px;
+  }
+  .login-legal a{
+    color:var(--login-purple);
   }
 }

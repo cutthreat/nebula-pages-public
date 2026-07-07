@@ -79,7 +79,8 @@ body.account-page{margin:0;font-family:"Manrope",sans-serif;color:var(--nebula-t
 .account-section-title{margin:0 0 14px;font-size:26px;line-height:1.05;letter-spacing:-.04em}
 .account-table{display:grid;gap:12px}
 .account-row{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid rgba(111,73,239,.08)}
-.account-row strong{font-size:15px}
+.account-row strong{display:block;margin-bottom:2px;font-size:15px}
 .account-row span{color:var(--nebula-muted);font-size:13px;line-height:1.45}
 @media (max-width:1199.98px){.account-title{font-size:48px}.account-hero{grid-template-columns:1fr}.account-panel--wide,.account-panel--side{grid-column:span 12}}
 @media (max-width:767.98px){.account-header__inner{padding:14px 16px;gap:12px;flex-wrap:wrap;align-items:flex-start}.account-brand{flex:0 0 auto}.account-cta{min-height:42px;padding:0 14px;font-size:13px}.account-nav{display:flex;order:3;width:100%;flex-wrap:nowrap;justify-content:flex-start;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.account-nav::-webkit-scrollbar{display:none}.account-nav a{flex:0 0 auto;padding:9px 12px;font-size:13px;white-space:nowrap}.account-main{padding:24px 16px 56px}.account-hero__content,.account-hero__aside,.account-panel,.account-summary,.account-hero-box{border-radius:22px}.account-hero__content{padding:22px}.account-title{font-size:34px}.account-lead{font-size:16px}.account-stats{grid-template-columns:1fr}.account-grid{grid-template-columns:1fr}.account-panel--wide,.account-panel--side{grid-column:span 1}.account-row{grid-template-columns:1fr}}
+@media (max-width:360px){.account-nav{flex-wrap:wrap;overflow-x:visible}.account-nav a{padding:8px 10px;font-size:12px}}

@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var icon = btn ? btn.querySelector(".faq-section__icon") : null;
       if (!icon) return;
       icon.innerHTML = isOpen
-        ? '<span class="faq-section__icon-x"></span>'
-        : '<span class="faq-section__icon-chevron"></span>';
+        ? '<span class="faq-section__icon-cross"></span>'
+        : '<span class="faq-section__icon-plus"></span>';
     }
 
     function measurePreviewHeight(item) {
@@ -211,32 +211,61 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initClientsSlider() {
-  if (typeof Swiper === "undefined") return;
-
   var container = document.querySelector(
     ".clients-section__grid-swiper.swiper",
   );
   if (!container) return;
 
+  var track = container.querySelector(".swiper-wrapper");
+  var slides = Array.prototype.slice.call(
+    container.querySelectorAll(".clients-section__review"),
+  );
   var prevBtn = document.querySelector(".clients-section__slider-btn--prev");
   var nextBtn = document.querySelector(".clients-section__slider-btn--next");
+  if (!track || !slides.length || !prevBtn || !nextBtn) return;
 
-  var swiper = new Swiper(container, {
-    slidesPerView: "auto",
-    spaceBetween: 10,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 14,
-      },
-      768: {
-        slidesPerView: "auto",
-        spaceBetween: 10,
-      },
-    },
-    navigation: {
-      prevEl: prevBtn,
-      nextEl: nextBtn,
-    },
+  var index = 0;
+  var mobileQuery = window.matchMedia("(max-width: 767.98px)");
+
+  function setDisabled(btn, disabled) {
+    btn.disabled = disabled;
+    btn.classList.toggle("is-disabled", disabled);
+    btn.classList.toggle("swiper-button-disabled", disabled);
+  }
+
+  function getStep() {
+    var slide = slides[0];
+    var styles = window.getComputedStyle(track);
+    var gap = parseFloat(styles.columnGap || styles.gap || "0") || 0;
+    return slide.getBoundingClientRect().width + gap;
+  }
+
+  function apply() {
+    if (!mobileQuery.matches) {
+      index = 0;
+      track.style.transform = "";
+      setDisabled(prevBtn, true);
+      setDisabled(nextBtn, true);
+      return;
+    }
+
+    var maxIndex = Math.max(0, slides.length - 1);
+    index = Math.max(0, Math.min(index, maxIndex));
+    track.style.transform = "translateX(" + -index * getStep() + "px)";
+    setDisabled(prevBtn, index === 0);
+    setDisabled(nextBtn, index === maxIndex);
+  }
+
+  prevBtn.addEventListener("click", function () {
+    index -= 1;
+    apply();
   });
+
+  nextBtn.addEventListener("click", function () {
+    index += 1;
+    apply();
+  });
+
+  window.addEventListener("resize", apply);
+  apply();
 }

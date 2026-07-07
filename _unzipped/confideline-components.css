@@ -1,0 +1,112 @@
+/* Neuro component interaction policy. Scope: Home preview only. */
+.home .experts-section__card::after,
+.home .topics-section__promo-card::after,
+.home .topics-section__card::after {
+    border-color: var(--neuro-outline-rest);
+    transition: opacity 220ms ease, transform 220ms ease, border-color 220ms ease;
+}
+
+@media (min-width: 1200px) {
+    html:root body .home .what-neuro-section__quote-mark,
+    html:root body .what-neuro-section__quote-mark {
+        line-height: 80px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .home .experts-section__card:hover,
+    .home .topics-section__promo-card:hover,
+    .home .topics-section__card:hover {
+        transform: none;
+    }
+
+    .home .experts-section__card:hover::after,
+    .home .topics-section__promo-card:hover::after,
+    .home .topics-section__card:hover::after {
+        opacity: 1;
+        transform: scale(1.018);
+        border-color: var(--neuro-outline-hover);
+    }
+
+    .home .experts-section__card:hover .experts-section__avatar,
+    .home .experts-section__card:hover .experts-section__stat-icon,
+    .home .topics-section__promo-card:hover .topics-section__promo-icon img,
+    .home .topics-section__card:hover .topics-section__card-icon,
+    .home .topics-section__card:hover .topics-section__card-link,
+    .home .topics-section__card:hover .topics-section__card-link::after {
+        transform: none;
+        filter: none;
+    }
+
+    .home .clients-section__video-card:hover {
+        transform: none;
+    }
+
+    .home .clients-section__video-card:hover img {
+        transform: none;
+        filter: none;
+    }
+
+    .home .clients-section__video-card:hover .clients-section__video-play {
+        transform: translate(-50%, -50%);
+        background: var(--neuro-play-hover);
+    }
+
+    .home .best-reading-section__item:hover,
+    .home .best-reading-section__item:hover .best-reading-section__icon svg,
+    .home .best-reading-section__item:hover .best-reading-section__content,
+    .home .best-reading-section__item:hover .best-reading-section__item-title,
+    .home .best-reading-section__item:hover .best-reading-section__item-text {
+        transform: none;
+        filter: none;
+    }
+
+    .home .situation-section__list:hover,
+    .home .situation-section__item:hover,
+    .home .situation-section__item:hover .situation-section__item-icon {
+        transform: none;
+        filter: none;
+    }
+
+    .home .steps-section__card:hover {
+        transform: translateY(-8px);
+    }
+
+    .home .steps-section__card:hover .steps-section__num {
+        transform: scale(1.04);
+        outline: 1px solid rgba(103, 62, 218, 0.14);
+        outline-offset: -1px;
+    }
+}
+
+.home .clients-section__grid-swiper .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    transition: transform 260ms ease;
+}
+
+.home .clients-section__grid-swiper .swiper-slide {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 767.98px) {
+    .home .clients-section__grid-swiper {
+        overflow: hidden;
+    }
+
+    .home .clients-section__grid-swiper .swiper-wrapper {
+        gap: 14px;
+    }
+
+    .home .clients-section__slider-btn.is-disabled {
+        color: #c9c9c9;
+        cursor: default;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .clients-section__grid-swiper .swiper-wrapper {
+        transform: none;
+    }
+}

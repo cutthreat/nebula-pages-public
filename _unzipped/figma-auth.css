@@ -373,6 +373,18 @@ img{max-width:100%;display:block;}
       linear-gradient(rgba(5,5,5,.77), rgba(5,5,5,.77)),
       url("img/auth-bg-abstract-figma.png") center center/cover no-repeat;
   }
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-bg-layer--root{
+    top:0;
+    width:1280px;
+    height:855px;
+    background:url("img/auth-signup-step1-1280-bg-root-figma.png") center center/100% 100% no-repeat;
+  }
+  .na-auth-page--step2 .na-auth-bg-layer--root{
+    top:0;
+    width:1280px;
+    height:855px;
+    background:url("img/auth-signup-step2-1280-bg-root-figma.png") center center/100% 100% no-repeat;
+  }
   .na-auth-page--create .na-auth-bg-layer--silhouette{
     z-index:0;
     left:543.75px;
@@ -381,6 +393,22 @@ img{max-width:100%;display:block;}
     height:801.5625px;
     background:url("img/auth-bg-silhouette-figma.png") center center/cover no-repeat;
     opacity:.12;
+  }
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-bg-layer--silhouette{
+    left:712px;
+    top:0;
+    width:568px;
+    height:855px;
+    background:url("img/auth-signup-step1-1280-bg-silhouette-figma.png") center center/100% 100% no-repeat;
+    opacity:1;
+  }
+  .na-auth-page--step2 .na-auth-bg-layer--silhouette{
+    left:712px;
+    top:0;
+    width:568px;
+    height:855px;
+    background:url("img/auth-signup-step2-1280-bg-silhouette-figma.png") center center/100% 100% no-repeat;
+    opacity:1;
   }
   .na-auth-page--create .na-auth-page__shell{
     position:relative;
@@ -410,6 +438,12 @@ img{max-width:100%;display:block;}
     padding:96px 0 0;
     background:url("img/auth-bg-abstract-figma.png") center center/auto 100% no-repeat;
     box-shadow:0 4px 40px rgba(0,0,0,.25);
+  }
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__panel{
+    background:url("img/auth-signup-step1-1280-panel-group-figma.png") center center/100% 100% no-repeat;
+  }
+  .na-auth-page--step2 .na-auth-page__panel{
+    background:url("img/auth-signup-step2-1280-panel-group-figma.png") center center/100% 100% no-repeat;
   }
   .na-auth-page--create .na-auth-page__panel::before{
     inset:0;
@@ -1057,7 +1091,7 @@ img{max-width:100%;display:block;}
   }
   .na-auth-page--create .na-auth-page__links{
     display:flex;
-    left:716px;
+    left:min(716px, calc(100vw - 224px));
     right:auto;
     top:19px;
     width:204px;
@@ -1240,15 +1274,16 @@ img{max-width:100%;display:block;}
 
 @media (min-width:481px) and (max-width:640px){
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-stage{
-    width:640px;
-    max-width:none;
-    flex:0 0 640px;
+    width:100vw;
+    max-width:640px;
+    flex:0 0 auto;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__shell::before{
     background:transparent;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-bg-layer--root{
     background:url("/_unzipped/img/auth-signup-step1-640-bg-root-figma.png") center center/100% 100% no-repeat;
+    width:100%;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-bg-layer--silhouette{
     background:url("/_unzipped/img/auth-signup-step1-640-bg-silhouette-figma.png") center center/100% 100% no-repeat;
@@ -1260,6 +1295,7 @@ img{max-width:100%;display:block;}
     background-position:center center;
     background-size:100% 100%;
     background-repeat:no-repeat;
+    width:100%;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__panel::before{
     content:none;
@@ -1276,8 +1312,8 @@ img{max-width:100%;display:block;}
     object-fit:contain;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__links{
-    left:416px;
-    right:auto;
+    left:auto;
+    right:20px;
     top:20px;
     width:204px;
     height:50px;
@@ -1414,7 +1450,7 @@ img{max-width:100%;display:block;}
   }
   .na-auth-page--create .na-auth-page__links{
     display:flex;
-    left:1016px;
+    left:min(1016px, calc(100vw - 224px));
     right:auto;
     top:29px;
     width:204px;
@@ -1484,6 +1520,15 @@ img{max-width:100%;display:block;}
     display:block;
     overflow:hidden;
     background:transparent url("/_unzipped/img/auth-signup-step1-1280-panel-group-figma.png") center center/100% 100% no-repeat;
+  }
+  .na-auth-page--create.na-auth-page--step2 .na-auth-bg-layer--root{
+    background:url("img/auth-signup-step2-1280-bg-root-figma.png") center center/100% 100% no-repeat;
+  }
+  .na-auth-page--create.na-auth-page--step2 .na-auth-bg-layer--silhouette{
+    background:url("img/auth-signup-step2-1280-bg-silhouette-figma.png") center center/100% 100% no-repeat;
+  }
+  .na-auth-page--create.na-auth-page--step2 .na-auth-page__panel{
+    background:transparent url("img/auth-signup-step2-1280-panel-group-figma.png") center center/100% 100% no-repeat;
   }
   .na-auth-page--create .na-auth-page__panel::before{
     content:none;
@@ -2372,10 +2417,10 @@ img{max-width:100%;display:block;}
     height:30px;
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-social-btn--google img{
-    content:url("/_unzipped/img/auth-signup-step1-320-google-icon-rect-figma.png");
+    content:url("img/auth-signup-step1-320-google-icon-rect-figma.png");
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-social-btn--facebook img{
-    content:url("/_unzipped/img/auth-signup-step1-320-facebook-icon-rect-figma.png");
+    content:url("img/auth-signup-step1-320-facebook-icon-rect-figma.png");
   }
   .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__links{
     left:148px;
@@ -2671,6 +2716,9 @@ img{max-width:100%;display:block;}
   .na-auth-page--step2 .na-auth-page__chevron{
     content:url("/_unzipped/img/auth-signup-step2-1280-lang-chevron-figma.png");
   }
+  .na-auth-page--step2 .na-auth-page__links{
+    left:min(1016px, calc(100vw - 224px));
+  }
 }
 
 @media (min-width:641px) and (max-width:1199px){
@@ -2687,6 +2735,9 @@ img{max-width:100%;display:block;}
   .na-auth-page--step2 .na-auth-page__chevron{
     content:url("/_unzipped/img/auth-signup-step2-960-lang-chevron-figma.png");
   }
+  .na-auth-page--step2 .na-auth-page__links{
+    left:min(716px, calc(100vw - 224px));
+  }
 }
 
 @media (min-width:481px) and (max-width:640px){
@@ -2697,8 +2748,19 @@ img{max-width:100%;display:block;}
     --bg-x:-240px;
     --silhouette-x:234px;
   }
+  .na-auth-page--step2 .na-auth-page__brand{
+    left:20px;
+    top:30px;
+    width:142px;
+    height:30px;
+  }
+  .na-auth-page--step2 .na-auth-page__brand img{
+    width:142px;
+    height:30px;
+    object-fit:contain;
+  }
   .na-auth-page--step2 .na-auth-page__links{
-    left:416px;
+    left:min(416px, calc(100vw - 224px));
     right:auto;
     top:20px;
     width:204px;
@@ -2760,7 +2822,7 @@ img{max-width:100%;display:block;}
     transform:none;
   }
   .na-auth-page--step2 .na-auth-page__links{
-    left:274px;
+    left:min(274px, calc(100vw - 206px));
     right:auto;
     top:10px;
     width:196px;
@@ -2821,6 +2883,44 @@ img{max-width:100%;display:block;}
   .na-auth-page--step2 .na-auth-form__title{
     transform:none;
   }
+  .na-auth-page--step2 .na-auth-checks{
+    width:229px;
+    margin-top:28px;
+    margin-left:44px;
+    gap:8px;
+  }
+  .na-auth-page--step2 .na-auth-check{
+    grid-template-columns:14px 207px;
+    gap:8px;
+    min-height:24px;
+    height:auto;
+  }
+  .na-auth-page--step2 .na-auth-check input{
+    width:14px;
+    height:14px;
+    top:4px;
+  }
+  .na-auth-page--step2 .na-auth-check:first-child span{
+    color:#171717;
+    font-size:8.5px;
+    line-height:12px;
+    font-weight:500;
+  }
+  .na-auth-page--step2 .na-auth-check:nth-child(2) span{
+    color:#232323;
+    font-size:8.5px;
+    line-height:12px;
+    max-width:166px;
+  }
+  .na-auth-page--step2 .na-auth-btn{
+    margin-top:36px;
+    box-shadow:0 2px 5px 2px rgba(103,62,218,.34);
+  }
+  .na-auth-page--step2 .na-auth-btn--ghost,
+  .na-auth-page--step2 .na-auth-btn--ghost:hover{
+    margin-top:13px;
+    box-shadow:none;
+  }
   .na-auth-page--step2 .na-auth-page__links{
     left:148px;
     right:auto;
@@ -2856,16 +2956,29 @@ img{max-width:100%;display:block;}
     height:8px;
   }
   .na-auth-page--step2 .na-auth-bg-layer--root{
-    background:url("/_unzipped/img/auth-signup-step2-320-bg-root-figma.png") center center/100% 100% no-repeat;
+    background:url("img/auth-signup-step2-320-bg-root-figma.png") center center/100% 100% no-repeat;
   }
   .na-auth-page--step2 .na-auth-bg-layer--silhouette{
-    background:url("/_unzipped/img/auth-signup-step2-320-bg-silhouette-figma.png") center center/100% 100% no-repeat;
+    background:url("img/auth-signup-step2-320-bg-silhouette-figma.png") center center/100% 100% no-repeat;
     opacity:1;
   }
   .na-auth-page--step2 .na-auth-page__panel{
-    background:transparent url("/_unzipped/img/auth-signup-step2-320-panel-group-figma.png") -240px 0/640px 700px no-repeat;
+    background:transparent url("img/auth-signup-step2-320-panel-group-figma.png") -240px 0/640px 700px no-repeat;
   }
   .na-auth-page--step2 .na-auth-page__chevron{
-    content:url("/_unzipped/img/auth-signup-step2-320-lang-chevron-figma.png");
+    content:url("img/auth-signup-step2-320-lang-chevron-figma.png");
+  }
+}
+
+/* Owner live-rejection repair: fill tall mobile viewports instead of exposing dark body below the create form. */
+@media (max-width:640px){
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-stage,
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__shell{
+    height:max(var(--frame-h), 100dvh);
+    min-height:max(var(--frame-h), 100dvh);
+  }
+
+  .na-auth-page--create:not(.na-auth-page--step2) .na-auth-page__panel{
+    height:calc(max(var(--frame-h), 100dvh) - var(--panel-y));
   }
 }

@@ -112,6 +112,7 @@ button { font: inherit; }
   font-size: 43px;
   font-weight: 500;
   line-height: 71px;
+  white-space: nowrap;
 }
 
 .pp-hero__text {
@@ -191,6 +192,14 @@ button { font: inherit; }
   font-size: 20px;
 }
 
+.pp-expert-card__rating-star {
+  width: 20px;
+  height: 19px;
+  flex: 0 0 auto;
+  color: #f1b45a;
+  fill: currentColor;
+}
+
 .pp-expert-card__rating small {
   font-size: 15px;
   color: #919191;
@@ -228,6 +237,21 @@ button { font: inherit; }
 
 .pp-expert-card__stats strong { color: var(--pp-purple-2); }
 
+.pp-expert-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pp-expert-card__stat-icon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  color: #6f6f6f;
+  fill: none;
+  stroke: currentColor;
+}
+
 .pp-expert-card__desc {
   flex: 1 1 auto;
   margin: 30px 0 25px;
@@ -239,12 +263,24 @@ button { font: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 58px;
   border-radius: 13px;
   background: var(--pp-purple);
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.pp-expert-card__chat-icon,
+.pp-expert-card__chat-icon svg {
+  width: 20px;
+  height: 16px;
+  display: block;
+  color: #fff;
+  fill: none;
+  stroke: currentColor;
 }
 
 .pp-expert-card__price {
@@ -426,13 +462,15 @@ button { font: inherit; }
 }
 
 .pp-why-phone__grid article::after {
-  content: "★";
+  content: "";
   position: absolute;
   left: 29px;
   top: 47px;
-  color: #c8b4ff;
-  font-size: 58px;
-  line-height: 1;
+  width: 58px;
+  height: 58px;
+  background: #c8b4ff;
+  -webkit-mask: url("img/prn-trust-star-favorite-source.svg") center / contain no-repeat;
+  mask: url("img/prn-trust-star-favorite-source.svg") center / contain no-repeat;
 }
 
 .pp-why-phone__grid h3 {
@@ -515,11 +553,15 @@ button { font: inherit; }
 
 .pp-scenarios__copy li::before,
 .pp-affordable__card li::before {
-  content: "✦";
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--pp-purple-2);
+  width: 16px;
+  height: 16px;
+  background-color: var(--pp-purple-2);
+  -webkit-mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
+  mask: url("img/prn-star7-figma.svg") center / contain no-repeat;
 }
 
 .pp-scenarios__art img {
@@ -605,6 +647,45 @@ button { font: inherit; }
   line-height: 28px;
 }
 
+.pp-faq__item:not(.pp-faq__item--open) .pp-faq__content,
+.pp-seo__item:not(.pp-seo__item--open) .pp-seo__content {
+  display: none;
+}
+
+.pp-faq__item.is-open {
+  border: 1px solid #eaebf0;
+  background: #fff;
+}
+
+.pp-faq__item.is-open .pp-faq__content {
+  display: block;
+}
+
+/* Phone Psychic source-frame tail guard after FAQ interaction repair. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pp-page .site-footer {
+    height: 692px !important;
+    min-height: 692px !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .pp-page .site-footer {
+    height: 768px !important;
+    min-height: 768px !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp-page .site-footer {
+    height: 914px !important;
+    min-height: 914px !important;
+    overflow: hidden !important;
+  }
+}
+
 .pp-footer {
   padding: 8px 0 56px;
   background: #fff;
@@ -681,7 +762,7 @@ button { font: inherit; }
 
 .pp-page .pp-reviews,
 .pp-page .pp-scenarios {
-  background-color: #fff;
+  background-color: #f1f1f1;
 }
 
 .pp-page .pp-reasons {
@@ -719,7 +800,7 @@ button { font: inherit; }
 }
 
 .pp-page .pp-reasons .pp-scenarios__copy li {
-  max-width: 622px;
+  max-width: 600px;
   padding-left: 78px;
   font-size: 17px;
   font-weight: 400;
@@ -728,13 +809,12 @@ button { font: inherit; }
 }
 
 .pp-page .pp-reasons .pp-scenarios__copy li::before {
-  content: "✧";
+  content: "";
   left: 0;
   top: 18px;
-  color: #a083ff;
-  font-size: 66px;
-  font-weight: 400;
-  line-height: 1;
+  width: 50px;
+  height: 65px;
+  background: url("img/prn-star6-figma.svg") center / contain no-repeat;
 }
 
 .pp-page .pp-reasons .pp-scenarios__copy li strong {
@@ -749,14 +829,90 @@ button { font: inherit; }
 
 .pp-page .pp-reasons .pp-scenarios__art {
   position: absolute;
-  right: 32px;
-  top: 60px;
+  right: 36px;
+  top: 205px;
   z-index: 0;
 }
 
 .pp-page .pp-reasons .pp-scenarios__art img {
-  width: 512px;
+  width: 520px;
   max-width: none;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pp-page .pp-reasons .pp-scenarios__copy h2 {
+    max-width: 660px;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: -0.5px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy li {
+    max-width: 500px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__art {
+    right: -4px;
+    top: 360px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__art img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .pp-page .pp-reasons .pp-scenarios__copy {
+    width: auto;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy h2 {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 31px;
+    line-height: 39px;
+    letter-spacing: -0.31px;
+    text-align: center;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy ul {
+    gap: 30px;
+    margin-top: 42px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy li {
+    max-width: 100%;
+    padding-left: 66px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.32px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy li strong {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.4px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__copy li::before {
+    top: 4px;
+    width: 44px;
+    height: 58px;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__art {
+    position: static;
+    width: min(100%, 390px);
+    margin: 20px auto 0;
+  }
+
+  .pp-page .pp-reasons .pp-scenarios__art img {
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .pp-page .site-footer {
@@ -794,7 +950,7 @@ button { font: inherit; }
   .pp-nav a { font-size: 15px; }
   .pp-hero__row { grid-template-columns: 480px 1fr; }
   .pp-hero__copy h1 { font-size: 50px; line-height: 66px; letter-spacing: -0.5px; }
-  .pp-hero__subtitle { font-size: 34px; line-height: 1.3; }
+  .pp-hero__subtitle { display: none; }
   .pp-experts__grid { gap: 18px; }
   .pp-expert-card { padding: 24px; }
   .pp-reasons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -826,9 +982,13 @@ button { font: inherit; }
   .pp-nav { display: none; }
   .pp-signup { font-size: 15px; padding: 8px 0; }
   .pp-hero__row { grid-template-columns: 1fr 280px; gap: 16px; min-height: 0; padding-top: 48px; padding-bottom: 60px; }
-  .pp-hero__copy h1 { font-size: 40px; line-height: 52px; letter-spacing: -0.4px; }
-  .pp-hero__subtitle { margin: 8px 0 14px; font-size: 22px; line-height: 1.2; }
+  .pp-hero__copy h1 { max-width: 340px; font-size: 40px; line-height: 52px; letter-spacing: -0.4px; }
   .pp-hero__text { font-size: 14px; line-height: 26px; }
+  .pp-hero__art img {
+    width: auto;
+    max-width: none;
+    height: 500px;
+  }
   .pp-experts,
   .pp-reviews,
   .pp-reasons,
@@ -868,11 +1028,56 @@ button { font: inherit; }
 }
 
 @media (max-width: 767.98px) and (min-width: 576px) {
+  .pp-hero__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: none;
+    gap: 0;
+    padding-top: 108px;
+    padding-bottom: 76px;
+  }
+  .pp-hero__copy { display: contents; }
   .pp-page .pp-hero__copy h1 {
+    order: 1;
+    max-width: 400px;
+    margin: 0 auto;
     font-size: 33px;
     line-height: 40px;
     letter-spacing: -0.33px;
+    text-align: center;
   }
+  .pp-hero__text {
+    order: 3;
+    max-width: 430px;
+    margin: 26px auto 0;
+    text-align: center;
+  }
+  .pp-hero__art {
+    order: 2;
+    width: 100%;
+    margin-top: -36px;
+    margin-bottom: -34px;
+  }
+  .pp-hero__art img {
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .pp-expert-card { min-height: 0; padding: 18px 16px; border-radius: 22px; }
+  .pp-expert-card__person {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .pp-expert-card__avatar { width: 64px; height: 64px; }
+  .pp-expert-card__meta h3 { font-size: 18px; line-height: 18px; }
+  .pp-expert-card__rating strong { font-size: 16px; line-height: 16px; }
+  .pp-expert-card__rating small,
+  .pp-expert-card__desc,
+  .pp-expert-card__stats { font-size: 12px; line-height: 20px; }
+  .pp-expert-card__cta { min-height: 42px; font-size: 14px; border-radius: 10px; }
+  .pp-expert-card__price { font-size: 11px; }
   .pp-page .pp-reviews h2 {
     font-size: 30px;
     line-height: 40px;
@@ -895,7 +1100,15 @@ button { font: inherit; }
   .pp-toggle { width: 26px; height: 14px; }
   .pp-toggle span { width: 14px; height: 14px; }
   .pp-signup { font-size: 12px; }
-  .pp-hero__row { grid-template-columns: 1fr; padding-top: 28px; padding-bottom: 42px; }
+  .pp-hero__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: none;
+    padding-top: 108px;
+    padding-bottom: 95px;
+  }
+  .pp-hero__copy { display: contents; }
   .pp-hero__copy h1,
   .pp-reviews h2,
   .pp-reasons h2,
@@ -903,9 +1116,13 @@ button { font: inherit; }
   .pp-affordable h2,
   .pp-faq h2 { font-size: 27px; line-height: 1.08; }
   .pp-hero__copy h1 {
+    order: 1;
+    max-width: 292px;
+    margin: 0 auto;
     font-size: 35px;
     line-height: 43px;
     letter-spacing: -0.35px;
+    text-align: center;
   }
   .pp-page .pp-reviews h2 {
     font-size: 30px;
@@ -923,20 +1140,51 @@ button { font: inherit; }
     letter-spacing: -0.16px;
   }
   .pp-hero__subtitle { font-size: 18px; }
-  .pp-hero__text { font-size: 13px; line-height: 22px; }
-  .pp-hero__art img { width: 260px; margin: 0 auto; }
-  .pp-experts__grid,
+  .pp-hero__text {
+    order: 3;
+    max-width: 292px;
+    margin: 26px auto 0;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .pp-hero__art {
+    order: 2;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: -62px;
+  }
+  .pp-hero__art img {
+    width: 260px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .pp-experts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
   .pp-reasons__grid { grid-template-columns: 1fr; }
-  .pp-expert-card { min-height: 0; padding: 20px 16px; border-radius: 22px; }
-  .pp-expert-card__person { align-items: flex-start; }
-  .pp-expert-card__avatar { width: 64px; height: 64px; }
-  .pp-expert-card__meta h3 { font-size: 18px; line-height: 18px; }
-  .pp-expert-card__rating strong { font-size: 16px; line-height: 16px; }
+  .pp-expert-card { min-height: 0; padding: 14px 10px; border-radius: 16px; }
+  .pp-expert-card__person {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .pp-expert-card__avatar { width: 74px; height: 74px; }
+  .pp-expert-card__meta h3 { font-size: 14px; line-height: 16px; }
+  .pp-expert-card__rating {
+    justify-content: center;
+    gap: 3px;
+  }
+  .pp-expert-card__rating strong { font-size: 13px; line-height: 15px; }
   .pp-expert-card__rating small,
   .pp-expert-card__desc,
-  .pp-expert-card__stats { font-size: 12px; line-height: 20px; }
-  .pp-expert-card__cta { min-height: 42px; font-size: 14px; border-radius: 10px; }
-  .pp-expert-card__price { font-size: 11px; }
+  .pp-expert-card__stats { font-size: 10px; line-height: 16px; }
+  .pp-expert-card__divider { margin: 12px 0; }
+  .pp-expert-card__desc { margin-bottom: 14px; }
+  .pp-expert-card__cta { min-height: 34px; font-size: 12px; border-radius: 8px; }
+  .pp-expert-card__price { margin-top: 8px; font-size: 9px; }
   .pp-review-card,
   .pp-reason-card,
   .pp-affordable__card { padding: 18px 14px; border-radius: 18px; }
@@ -969,4 +1217,223 @@ button { font: inherit; }
   .pp-footer__bottom p { font-size: 12px; line-height: 18px; }
   .pp-footer__bottom { margin-top: 26px; padding-top: 20px; }
   .pp-footer__bottom img { width: 186px; height: auto; }
+}
+
+/* Phone Psychic final source-frame tail guard. Keep this after all responsive rules. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pp-page .site-footer {
+    height: 724px !important;
+    min-height: 724px !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Source-backed asset aspect repair: image owners keep Figma bbox, not stretched fill. */
+@media (min-width: 1200px) {
+  .pp-hero__art img {
+    width: 561px !important;
+    height: 594px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-scenarios__art img {
+    width: 549px !important;
+    height: 750.85px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-affordable__art img {
+    width: 545px !important;
+    height: 529px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pp-hero__art img {
+    width: 484px !important;
+    height: 512px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-scenarios__art img {
+    width: 478px !important;
+    height: 654px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-affordable__art img {
+    width: 334px !important;
+    height: 458px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pp-hero__art img {
+    width: 390px !important;
+    height: 413px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-scenarios__art img {
+    width: 397px !important;
+    height: 543px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-affordable__art img {
+    width: 210px !important;
+    height: 288px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pp-hero__art img {
+    width: 280px !important;
+    height: 296px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-scenarios__art img {
+    width: 359px !important;
+    height: 491px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-affordable__art img {
+    width: 210px !important;
+    height: 288px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pp-hero__art img {
+    width: 267px !important;
+    height: 283px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-scenarios__art img {
+    width: 299px !important;
+    height: 409px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .pp-affordable__art img {
+    width: 210px !important;
+    height: 288px !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .pp-page .site-footer {
+    height: 820px !important;
+    min-height: 820px !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pp-page .site-footer {
+    height: 1035px !important;
+    min-height: 1035px !important;
+    overflow: hidden !important;
+  }
+}
+
+
+/* Heritage owner repair: source-backed star rows, no Unicode star glyph fallback. */
+.pp-reviews__rating-stars,.pp-review-card__stars{display:inline-flex;align-items:center;gap:5px;font-size:0;line-height:0;letter-spacing:0;color:transparent}
+.pp-reviews__rating-stars span{display:block;width:23.44px;height:22.32px;background:url('img/all-psychic-rating-star-purple-figma.svg') center/contain no-repeat}
+.pp-review-card__stars span{display:block;width:15px;height:15px;background:url('img/all-psychic-rating-star-figma.svg') center/contain no-repeat}
+
+/* Source-backed 768/992 repair: the source keeps testimonial cards in a
+   compact row and the why-phone cards in a 2x2 grid. The generic tablet
+   fallback collapsed reviews to full-width strips. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pp-page .pp-reviews h2,
+  .pp-page .pp-why-phone h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    letter-spacing: -0.9px !important;
+  }
+  .pp-page .pp-reviews__grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    margin-top: 18px !important;
+  }
+  .pp-page .pp-review-card {
+    min-height: 154px !important;
+    padding: 17px 14px !important;
+    border-radius: 18px !important;
+  }
+  .pp-page .pp-review-card p {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  .pp-page .pp-review-card__body {
+    grid-template-columns: 18px minmax(0, 1fr) !important;
+    gap: 3px !important;
+    margin-top: 12px !important;
+  }
+  .pp-page .pp-review-card__quote {
+    font-size: 45px !important;
+    line-height: 18px !important;
+  }
+  .pp-page .pp-why-phone {
+    margin-top: 42px !important;
+  }
+  .pp-page .pp-why-phone__grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    width: 100% !important;
+    margin: 28px 0 0 !important;
+  }
+  .pp-page .pp-why-phone__grid article {
+    min-height: 230px !important;
+    padding: 116px 20px 20px !important;
+    border-radius: 20px !important;
+  }
+  .pp-page .pp-why-phone__grid article::before {
+    left: -22px !important;
+    top: -18px !important;
+    width: 126px !important;
+    height: 126px !important;
+  }
+  .pp-page .pp-why-phone__grid article::after {
+    left: 28px !important;
+    top: 38px !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .pp-page .pp-why-phone__grid h3 {
+    font-size: 19px !important;
+    line-height: 22px !important;
+  }
+  .pp-page .pp-why-phone__grid p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
 }
