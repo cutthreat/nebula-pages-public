@@ -1,0 +1,21 @@
+{
+  "schema": "nebula.horoscope.prefigma-full-art.v1",
+  "source_root": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\experiments\\nebula-account-chat-live-20260809",
+  "status": "user_approved_prefigma_draft",
+  "purpose": "Interim sign-to-full-art mapping pending optional Figma exports.",
+  "runtime_provenance": "prefigma-full-art-draft",
+  "replacement_contract": "Replace an individual file and its source/provenance entry without changing selector logic.",
+  "assets": {
+    "Aries": {"file": "aries-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/aries-draft.png", "sha256": "A8F087A9674999FD093A22DDA9F694DD11B50FD50D57830A9371E32D8AE299CD"},
+    "Gemini": {"file": "gemini-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/gemini-draft.png", "sha256": "DAF2E2E617BD9FC5630DDD68E057871CC4D5E10C2A0F79087D2273333B3359DE"},
+    "Cancer": {"file": "cancer-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/cancer-draft.png", "sha256": "0C81338976CE5582B21F9AAA20D8BAC5A590695E8AF84D9B0F430A49389B77DC"},
+    "Leo": {"file": "leo-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/leo-draft.png", "sha256": "50A5D189747CFB4F3643850B41308490477423A51E21C149DDAD885E7E9C8899"},
+    "Virgo": {"file": "virgo-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/virgo-draft.png", "sha256": "03AB91519E328C32E7BAF08F1C650850ED0BC5AD2D5ECEE72D617E653F520E4D"},
+    "Libra": {"file": "libra-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/libra-draft.png", "sha256": "C39B420855DB6D92E1C7A9510AA1C458AE132FFC18B2C8594A5CA5A83F1BA381"},
+    "Scorpio": {"file": "scorpio-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/scorpio-draft.png", "sha256": "C836A2CA81A5B7424E41BF5C303C905020F80919C1C1405128AF73AA72D20916"},
+    "Sagittarius": {"file": "sagittarius-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/sagittarius-draft.png", "sha256": "B4CF0571A3F59B916DC2358D51DBC86C9175FC2C1B4B67302FEC4409A548227D"},
+    "Capricorn": {"file": "capricorn-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/capricorn-draft.png", "sha256": "BDCD9EA31A8FB1D486CC7EBCC81131A1BE0D236D79D393411C3C6D037D42286D"},
+    "Aquarius": {"file": "aquarius-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/aquarius-draft.png", "sha256": "12FFA9DC715BA88D8E0D623CD2C9EDF11FD240F2A33B80807CFD30D59DD16B08"},
+    "Pisces": {"file": "pisces-prefigma.png", "source": "resources/design-drafts/horoscope-zodiac-v1/pisces-draft.png", "sha256": "89E1763C771C7EDCD59926E3878FB4E8FC2DDBB742E224F6AD1AD4248CD8F559"}
+  }
+}

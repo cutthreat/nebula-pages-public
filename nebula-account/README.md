@@ -1,8 +1,13 @@
-# Nebula account preview
+# Nebula account and paid-chat static demo
 
-Static GitHub Pages preview of the isolated Yii2-compatible Nebula account/chat markup.
+This directory is the GitHub Pages export of the canonical UI source:
+`experiments/nebula-account-chat-live-20260809`.
 
-- Entry point: `chatroom.html`
-- Cabinet pages: `profile.html`, `favorites.html`, `horoscope.html`, `settings.html`
-- Modal and fixture pages are included as separate HTML entry points.
-- This is a client-only preview: authentication, payment gateway, credit ledger, message delivery and persistence are not connected.
+Open `index.html` for the cabinet preview, or `chatroom.html` for the chat screen.
+The export includes the current HTML, CSS, JavaScript, fonts, images and local demo states.
+
+## Scope
+
+This is a frontend demonstration. It deliberately does not claim payment, billing,
+message persistence, service-session creation, realtime delivery or RBAC: those
+require the Yii2/backend integration package in the developer source repository.

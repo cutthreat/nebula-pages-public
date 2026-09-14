@@ -1,12 +1,130 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=chatroom.html">
-  <title>Nebula account preview</title>
+  <title>Nebula — локальный интерактивный preview</title>
+  <style>
+    :root{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#24212d;background:#f5f3f9}
+    *{box-sizing:border-box}
+    body{margin:0;padding:32px}
+    main{max-width:1120px;margin:0 auto}
+    h1{margin:0 0 8px;font-size:30px;letter-spacing:-.02em}
+    .lead{max-width:760px;color:#625d6d;line-height:1.55;margin:0 0 28px}
+    .notice{padding:14px 16px;border:1px solid #e3d9ff;border-radius:14px;background:#fbf9ff;color:#544a69;margin-bottom:24px}
+    .notice strong{color:#3e2c71}
+    section{margin:24px 0}
+    h2{font-size:18px;margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    a.card{display:block;padding:15px 16px;border-radius:14px;background:#fff;color:inherit;text-decoration:none;border:1px solid #e9e5ee;box-shadow:0 2px 10px rgba(40,25,70,.04);transition:.16s ease}
+    a.card:hover{border-color:#9a6cff;box-shadow:0 7px 20px rgba(87,48,164,.13);transform:translateY(-1px)}
+    a.card:focus-visible{outline:3px solid #8a5cf6;outline-offset:2px}
+    .title{font-weight:700;margin-bottom:5px}.meta{font-size:12px;color:#777080}
+    code{font-size:.9em;background:#eee9f7;border-radius:5px;padding:2px 5px}
+    footer{margin-top:32px;color:#777080;font-size:12px;line-height:1.5}
+    .catalog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+    .catalog-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;border:1px solid #e9e5ee;border-radius:12px;background:#fff}
+    .catalog-item strong{display:block;font-size:13px;line-height:1.25}.catalog-item small{display:block;margin-top:3px;color:#777080;font-size:11px}
+    .catalog-actions{display:flex;flex:0 0 auto;gap:6px}.catalog-actions a{padding:6px 8px;border-radius:8px;color:#4d2ab2;background:#f0eaff;font-size:11px;text-decoration:none}.catalog-actions a:hover{background:#e3d8ff}.catalog-actions a:focus-visible{outline:2px solid #8a5cf6;outline-offset:2px}
+    @media(max-width:600px){body{padding:20px}h1{font-size:25px}}
+  </style>
 </head>
 <body>
-  <p><a href="chatroom.html">Open Nebula Chatroom</a></p>
+<main>
+  <h1>Nebula Cabinet + Chat</h1>
+  <p class="lead">Локальный интерактивный preview текущего Yii2-контура. Здесь работают клиентские состояния, клавиатура, фокус, draft и host-intent события. Реальные отправка, платежи, сессия и сохранение данных намеренно не имитируются.</p>
+  <div class="notice"><strong>Как проверять:</strong> откройте экран, включите DevTools → Responsive Design Mode и проверьте 1200 / 992 / 768 / 576 / 320 px. Для inspector используйте ссылки с <code>?fixture=1</code>.</div>
+
+  <section>
+    <h2>Главные экраны</h2>
+    <div class="grid">
+      <a class="card" href="chatroom.html"><div class="title">Обычный чат</div><div class="meta">draft, подсказки, mobile list ↔ thread</div></a>
+      <a class="card" href="chatroom-active.html"><div class="title">Active Chat</div><div class="meta">статичный active-session projection</div></a>
+      <a class="card" href="chatroom-active.html?fixture=1&state=active"><div class="title">Active Chat + fixture inspector</div><div class="meta">локальный timer/rail inspector; не live-сессия</div></a>
+      <a class="card" href="profile.html"><div class="title">Profile</div><div class="meta">GET-навигация и host-intent действия</div></a>
+      <a class="card" href="settings.html"><div class="title">Settings</div><div class="meta">локальные GET-переходы</div></a>
+      <a class="card" href="faq.html"><div class="title">FAQ</div><div class="meta">source-answer accordion + keyboard</div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Chat overlays</h2>
+    <div class="grid">
+      <a class="card" href="expert-picker-generic.html"><div class="title">Expert picker</div><div class="meta">roving selection, dialog focus</div></a>
+      <a class="card" href="expert-picker-details.html"><div class="title">Expert details</div><div class="meta">favorite draft + host intents</div></a>
+      <a class="card" href="question-before-start.html"><div class="title">Question before start</div><div class="meta">local validation and focus recovery</div></a>
+      <a class="card" href="notification-destination.html"><div class="title">Notification destination</div><div class="meta">local channel selection; delivery unbound</div></a>
+      <a class="card" href="payment-order-error.html"><div class="title">Payment order error</div><div class="meta">pending/rejection UI only</div></a>
+      <a class="card" href="consultation-review.html"><div class="title">Consultation review</div><div class="meta">unsent draft; publish host-owned</div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Кабинет и настройки</h2>
+    <div class="grid">
+      <a class="card" href="notifications.html"><div class="title">Notifications</div><div class="meta">локальные GET-переходы</div></a>
+      <a class="card" href="messages-from-psychics.html"><div class="title">Messages from psychics</div><div class="meta">unsaved toggle draft</div></a>
+      <a class="card" href="special-offers.html"><div class="title">Special offers</div><div class="meta">unsaved channel states</div></a>
+      <a class="card" href="system-messages.html"><div class="title">System messages</div><div class="meta">unsaved channel states</div></a>
+      <a class="card" href="daily-horoscope.html"><div class="title">Daily horoscope</div><div class="meta">static preference projection</div></a>
+      <a class="card" href="helper-bot.html"><div class="title">Helper Bot</div><div class="meta">draft + send host intent</div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ограничения источника</h2>
+    <div class="grid">
+      <a class="card" href="question-topics.html"><div class="title">Question topics</div><div class="meta">routeIntentUnbound</div></a>
+      <a class="card" href="astrological-details.html"><div class="title">Astrological details</div><div class="meta">routeIntentUnbound</div></a>
+      <a class="card" href="video-preview-static.html"><div class="title">Video poster</div><div class="meta">poster-only; media contract absent</div></a>
+    </div>
+  </section>
+
+  <section aria-labelledby="all-screens-title">
+    <h2 id="all-screens-title">Все 55 экранов contour</h2>
+    <p class="lead" style="font-size:13px;margin-bottom:14px">Каждый экран можно открыть в обычном режиме и в opt-in fixture-режиме. Fixture добавляет только локальный inspector и не вызывает backend.</p>
+    <div id="all-screens" class="catalog-grid"></div>
+  </section>
+
+  <footer>Variant <code>nebula-account-chat-live-20260809</code> · source C76 · static/dormant boundary · production mount не заявлен.</footer>
+</main>
+<script>
+(() => {
+  const names = [
+    'account-created','account-information','astrological-details','astrology','billing','card-payment-error','chat-details','chatroom-active','chatroom-notify','chatroom',
+    'checkout-card-details','checkout-order-review','connecting-expert','consent-settings','consultation-completed','consultation-review','consultation-support','daily-horoscope',
+    'discounted-refill-offer','end-or-stay','expert-offline','expert-picker-details','expert-picker-generic','expert-picker-trial','expert-unavailable','expert-wants-to-continue',
+    'faq','favorites','helper-bot','horoscope','insufficient-credits','legal-center','legal','messages-from-psychics','no-matching-experts','notification-destination','notifications',
+    'notify-email','notify-telegram','one-click-top-up','payment-order-error','personal-data','plans','profile','question-before-start','question-topics','reconnect-grace',
+    'settings','special-offers','support-help','support','system-messages','top-up-to-continue','top-up-to-start','video-preview-static'
+  ];
+  const labels = {
+    'chatroom':'Chatroom default','chatroom-active':'Chatroom Active','chatroom-notify':'Chatroom Notify','profile':'Profile','settings':'Settings','horoscope':'Horoscope',
+    'question-topics':'Question topics · route unbound','astrological-details':'Astrological details · route unbound','video-preview-static':'Video poster · media unbound',
+    'helper-bot':'Helper Bot · host intent','g50':'Video poster · source blocked'
+  };
+  const target = document.getElementById('all-screens');
+  names.forEach((name) => {
+    const item = document.createElement('div');
+    item.className = 'catalog-item';
+    const title = document.createElement('div');
+    const strong = document.createElement('strong');
+    strong.textContent = labels[name] || name.replaceAll('-', ' ');
+    const meta = document.createElement('small');
+    meta.textContent = '1200 · 992 · 768 · 576 · 320';
+    title.append(strong, meta);
+    const actions = document.createElement('span');
+    actions.className = 'catalog-actions';
+    [['Открыть', `${name}.html`], ['Fixture', `${name}.html?fixture=1`]].forEach(([text, href]) => {
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = text;
+      actions.append(link);
+    });
+    item.append(title, actions);
+    target.append(item);
+  });
+})();
+</script>
 </body>
 </html>
