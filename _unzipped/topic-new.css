@@ -1,5 +1,0 @@
-@media (max-width:575.98px){
-  .topic-shell .topics-section__promos{grid-template-columns:1fr}
-  .topic-shell .topics-section__promo-card .topics-section__promo-inner{flex-direction:row}
-  .topic-shell .topics-section__promo-icon{max-width:100px}
-}

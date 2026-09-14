@@ -1,11 +1,10 @@
-# Nebula Public Pages
+# Nebula account and paid-chat demo
 
-Slim static export for GitHub Pages.
+The only published layout build in this repository is the static export of
+`experiments/nebula-account-chat-live-20260809`.
 
-## Local checks
+Open `nebula-account/` for the cabinet, and `nebula-account/chatroom.html` for the chat.
+The repository includes the matching HTML, CSS, JavaScript, fonts and image resources.
 
-Run the repository quality gate before pushing changes:
-
-```powershell
-pwsh -NoProfile -ExecutionPolicy Bypass -File .github/scripts/quality-gate.ps1 -Phase all
-```
+The screens implement frontend demo scenarios only. Payment, billing, message persistence,
+realtime delivery, service-session creation and RBAC require the separate Yii2/backend handoff.

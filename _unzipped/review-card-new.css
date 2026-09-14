@@ -1,7 +1,0 @@
-.review-card-page{margin:0;font-family:"Manrope",sans-serif;background:#f3f0f8}
-.frame{width:min(350px,100vw);height:184px;margin:0 auto;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);display:flex;align-items:center;justify-content:center;padding:14px;box-sizing:border-box}
-.card{width:100%;height:100%;border-radius:18px;background:#7a53ea;color:#fff;padding:16px 14px;box-shadow:0 14px 28px rgba(122,83,234,.2)}
-.head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;font-size:12px}
-.name{font-weight:700}
-.stars{display:flex;align-items:center;gap:5px;font-size:0;line-height:0;letter-spacing:0;color:transparent}.stars span{display:block;width:15px;height:15px;background:url('img/all-psychic-rating-star-figma.svg') center/contain no-repeat}
-.body{font-size:13px;line-height:1.55}
