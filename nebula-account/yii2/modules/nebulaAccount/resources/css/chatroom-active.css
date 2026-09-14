@@ -33,7 +33,11 @@
   font-size: 16px;
   color: #151515;
 }
-.active-top nav b {
+.active-top nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.active-top nav a.is-active {
   color: #a07eff;
   text-decoration: underline;
   font-weight: 500;
@@ -402,6 +406,7 @@
   border-radius: 14px;
   background: #9b78f0;
 }
+.active-chat-more-menu[hidden] { display: none; }
 .active-chat-more-menu button {
   display: flex;
   align-items: center;

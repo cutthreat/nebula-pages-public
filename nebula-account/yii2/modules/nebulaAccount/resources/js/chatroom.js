@@ -1,6 +1,7 @@
 (() => {
   const root = document.querySelector('[data-nebula-chatroom]');
   if (!root) return;
+  root.querySelectorAll('.c76-chat-actions[aria-label]').forEach((group) => group.setAttribute('role', 'group'));
 
   const assetBase = root.dataset.assetBase || '';
   const compact = window.matchMedia('(max-width: 991.98px)');
@@ -103,14 +104,13 @@
 
   const conversationSeed = {
     'Margo Lover': {
-      presence: 'Online', rate: '45 credits/min', favorite: true, topic: 'Love & astrology',
+      presence: 'Offline', rate: '45 credits/min', favorite: true, topic: 'Love & astrology',
+      // C76 default state "selected_empty": three static welcome bubbles, no
+      // pinned banner, reactions, media, voice notes, or delivery metadata.
       messages: [
-        make('expert', 'Hi! 💖 Your chart shows that relationships become clearer when you name what you truly need, not only what you fear losing. What would you like to understand first?', { time: '1:08 PM', pinned: true }),
-        make('me', 'I want to understand whether this relationship still has a future.', { time: '1:10 PM', reply: 'What would you like to understand first?', deliveryState: 'sent' }),
-        make('expert', 'There is a strong Venus–Moon theme here: affection is real, but your ways of asking for closeness are different. I would begin with one calm conversation about expectations.', { time: '1:11 PM', reactions: { '💜': 2, '✨': 1 } }),
-        make('expert', 'I marked the main compatibility pattern on this chart for you.', { time: '1:12 PM', media: { kind: 'photo', src: photoAstrology, title: 'Compatibility chart' } }),
-        make('me', 'Could you explain the part about communication?', { time: '1:13 PM', voice: { duration: '0:18' }, deliveryState: 'delivered' }),
-        make('me', 'I added one detail: we usually postpone difficult conversations until late at night.', { time: '1:14 PM', deliveryState: 'read', edited: true }),
+        make('expert', 'Hi! 💖 Would you like to know how your inner astrological map can answer the questions that lay dormant within? 🌌 Chat with me today!', { welcome: true }),
+        make('expert', "Greetings! If you really want to do something, you'll find a way. If you don't, you'll find an excuse.  Let's talk about it! Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.  Would you like a reading ?:)", { welcome: true }),
+        make('expert', "Greetings! If you really want to do something, you'll find a way. If you don't, you'll find an excuse.  Let's talk about it! Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.  Would you like a reading ?:)", { welcome: true }),
       ],
     },
     'Miss Shaya': {
@@ -177,7 +177,7 @@
         online: rowProfiles[name] ? rowProfiles[name].presence === 'Online' : seed.presence === 'Online', muted: rowProfiles[name]?.muted || false,
         ...seed,
         presence: rowProfiles[name]?.presence || seed.presence || 'Offline',
-        favorite: rowProfiles[name]?.favorite ?? seed.favorite ?? false, draft: '', replyId: null, editId: null, preEditDraft: '', attachment: null, pinnedId: null,
+        favorite: rowProfiles[name]?.favorite ?? seed.favorite ?? false, draft: '', draftSelection: null, draftInputScrollTop: 0, replyId: null, editId: null, preEditDraft: '', attachment: null, pinnedId: null, messageScroll: null,
       };
     });
   const seedSavedMessages = conversations.slice(0, 2).map((conversation, index) => {
@@ -434,16 +434,99 @@
     return `<div class="c76-file-card"><span>📎</span><div><b>${escapeHtml(media.title)}</b><small>${media.localObjectUrl ? `${escapeHtml(formatBytes(media.size))} · local preview · not uploaded` : 'Local attachment preview'}</small></div></div>`;
   };
 
-  const renderMessages = ({ keepScroll = false } = {}) => {
+  let suppressMessageScrollCapture = false;
+  const getMessageScrollSnapshot = () => {
+    if (!messagesNode) return null;
+    const box = messagesNode.getBoundingClientRect();
+    const visible = Array.from(messagesNode.querySelectorAll('[data-message-id]')).find((message) => {
+      const rect = message.getBoundingClientRect();
+      return rect.bottom > box.top + 1 && rect.top < box.bottom - 1;
+    });
+    return {
+      top: messagesNode.scrollTop,
+      bottom: Math.max(0, messagesNode.scrollHeight - messagesNode.clientHeight - messagesNode.scrollTop),
+      anchorId: visible?.dataset.messageId || null,
+      anchorOffset: visible ? visible.getBoundingClientRect().top - box.top : 0,
+    };
+  };
+  const rememberMessageScroll = () => {
+    if (suppressMessageScrollCapture) return;
+    const conversation = activeConversation();
+    const snapshot = getMessageScrollSnapshot();
+    if (conversation && snapshot) conversation.messageScroll = snapshot;
+  };
+  const rememberComposerState = ({ force = false } = {}) => {
+    const conversation = activeConversation();
+    if (!conversation || !input || (!force && document.activeElement !== input)) return;
+    conversation.draft = input.value;
+    conversation.draftSelection = {
+      start: input.selectionStart,
+      end: input.selectionEnd,
+      direction: input.selectionDirection || 'none',
+    };
+    conversation.draftInputScrollTop = input.scrollTop;
+  };
+  const restoreComposerState = (conversation) => {
+    const selection = conversation?.draftSelection;
+    if (!input || !selection || input.value !== conversation.draft) return;
+    const start = Math.max(0, Math.min(input.value.length, Number(selection.start)));
+    const end = Math.max(start, Math.min(input.value.length, Number(selection.end)));
+    const previousFocus = document.activeElement;
+    const restoreFocus = previousFocus && previousFocus !== input;
+    if (restoreFocus) input.focus({ preventScroll: true });
+    try { input.setSelectionRange(start, end, selection.direction || 'none'); } catch (_) { /* textarea may be temporarily inert */ }
+    input.scrollTop = Math.max(0, Number(conversation.draftInputScrollTop) || 0);
+    if (restoreFocus && previousFocus.isConnected) previousFocus.focus({ preventScroll: true });
+  };
+  const setMessageScrollTop = (top) => {
+    if (!messagesNode) return;
+    const max = Math.max(0, messagesNode.scrollHeight - messagesNode.clientHeight);
+    const previousBehavior = messagesNode.style.scrollBehavior;
+    // Switching conversations should restore the exact reading position, not
+    // animate from the previous thread's bottom. Keep user scroll animations
+    // untouched; this one-frame override is only for deterministic restoration.
+    messagesNode.style.scrollBehavior = 'auto';
+    messagesNode.scrollTop = Math.min(max, Math.max(0, Number.isFinite(Number(top)) ? Number(top) : 0));
+    if (previousBehavior) messagesNode.style.scrollBehavior = previousBehavior;
+    else messagesNode.style.removeProperty('scroll-behavior');
+  };
+  const restoreMessageScroll = (conversation) => {
+    const saved = conversation?.messageScroll;
+    if (!messagesNode || !saved) return false;
+    const box = messagesNode.getBoundingClientRect();
+    const anchor = saved.anchorId
+      ? Array.from(messagesNode.querySelectorAll('[data-message-id]')).find((message) => message.dataset.messageId === saved.anchorId)
+      : null;
+    let target = Number(saved.top);
+    if (Number(saved.bottom) < 48) {
+      target = messagesNode.scrollHeight;
+    } else if (anchor) {
+      target = messagesNode.scrollTop + (anchor.getBoundingClientRect().top - box.top - Number(saved.anchorOffset || 0));
+    } else if (Number.isFinite(Number(saved.bottom))) {
+      target = messagesNode.scrollHeight - messagesNode.clientHeight - Number(saved.bottom);
+    }
+    setMessageScrollTop(target);
+    return true;
+  };
+
+  const renderMessages = ({ keepScroll = false, restoreScroll = false } = {}) => {
     const conversation = activeConversation();
     if (!messagesNode) return;
     const priorBottom = messagesNode.scrollHeight - messagesNode.scrollTop - messagesNode.clientHeight;
     messagesNode.innerHTML = conversation.messages.map((message) => messageMarkup(conversation, message)).join('');
-    readyCard.hidden = conversation.messages.length > 0;
+    // Default "selected_empty" state shows the ready card under the static
+    // welcome bubbles; it hides once the thread holds real conversation turns.
+    readyCard.hidden = conversation.messages.some((message) => !message.welcome);
     if (keepScroll) messagesNode.scrollTop = Math.max(0, messagesNode.scrollHeight - messagesNode.clientHeight - priorBottom);
     else messagesNode.scrollTop = messagesNode.scrollHeight;
     renderPinned();
     if (!keepScroll) messagesNode.scrollTo({ top: messagesNode.scrollHeight, behavior: 'auto' });
+    if (restoreScroll) {
+      suppressMessageScrollCapture = true;
+      restoreMessageScroll(conversation);
+      suppressMessageScrollCapture = false;
+      rememberMessageScroll();
+    }
     applyThreadSearch();
   };
 
@@ -505,6 +588,11 @@
   };
 
   const messageMarkup = (conversation, message, { savedContext = false } = {}) => {
+    // C76 default-state welcome bubbles keep the static Figma projection:
+    // full-width expert bubble with an always-visible pin, no tools or meta.
+    if (message.welcome && !savedContext) {
+      return `<article class="c76-message c76-message--welcome" data-message-id="${message.id}" data-conversation-id="${conversation.id}" data-search-copy="${escapeHtml((message.text || '').toLowerCase())}" tabindex="-1"><p>${escapeHtml(message.text)}</p><img class="c76-message__pin" src="${assetBase}/images/chatroom/message-pin.webp" alt="" /></article>`;
+    }
     const replyText = message.reply ? `<blockquote>${escapeHtml(message.reply)}</blockquote>` : '';
     const text = message.text ? `<p>${escapeHtml(message.text)}</p>` : '';
     const voice = message.voice ? `<div class="c76-voice-card"><button type="button" data-voice-play aria-label="Play local voice preview" aria-pressed="false">${playAssetMarkup('c76-voice-card__play')}</button><span class="c76-voice-wave" aria-hidden="true"></span><small>${escapeHtml(message.voice.duration)}</small><img class="c76-voice-card__emoji" src="${escapeHtml(voiceEmojiAsset)}" alt="" aria-hidden="true"></div>` : '';
@@ -564,14 +652,18 @@
     rows.forEach((row) => {
       if (row.classList.contains('c76-thread--saved')) { row.hidden = Boolean(query) || state.filter !== 'all'; return; }
       const conversation = conversations.find((item) => item.name === row.dataset.conversationName);
-      if (!conversation) { row.hidden = true; return; }
+      // Deactivated rows (Milana Ocean) stay visible in the default list.
+      if (!conversation) { const deactivatedName = (row.dataset.conversationName || '').toLowerCase(); row.hidden = Boolean(query) && !deactivatedName.includes(query); return; }
       const filterMatch = state.filter === 'all' || (state.filter === 'unread' && conversation.unread > 0) || (state.filter === 'online' && conversation.online) || (state.filter === 'favorites' && conversation.favorite) || (state.filter === 'muted' && conversation.muted);
       const queryMatch = !query || `${conversation.name} ${conversation.topic}`.toLowerCase().includes(query);
       row.hidden = !(filterMatch && queryMatch);
       if (!row.hidden) visible += 1;
       const selected = conversation.id === state.activeId;
       row.classList.toggle('is-active', selected);
-      row.setAttribute('aria-selected', selected ? 'true' : 'false');
+      // Conversation rows are buttons/links, not listbox options. Use the
+      // shared current-item contract instead of aria-selected, which is only
+      // valid for composite widgets such as listbox/tablist/menu.
+      row.setAttribute('aria-current', selected ? 'true' : 'false');
       row.dataset.conversationUnread = String(conversation.unread);
       const unread = row.querySelector('.c76-unread');
       if (unread) { unread.hidden = conversation.unread === 0; unread.textContent = String(conversation.unread); }
@@ -585,7 +677,8 @@
     const viewportHeight = conversationList.clientHeight;
     const maxScroll = Math.max(0, conversationList.scrollHeight - viewportHeight);
     const overflowing = maxScroll > 1;
-    conversationScrollbar.hidden = !overflowing;
+    // The C76 source always paints the scrollbar track, even when the list fits.
+    conversationScrollbar.hidden = false;
     conversationScrollbar.dataset.overflow = overflowing ? 'true' : 'false';
     if (!conversationThumb) return;
     if (!overflowing) {
@@ -613,7 +706,7 @@
     conversation.row.querySelectorAll('.c76-avatar-adornment--favorite').forEach((icon) => { icon.hidden = !conversation.favorite; });
   };
 
-  const renderConversation = ({ focus = true } = {}) => {
+  const renderConversation = ({ focus = true, restoreScroll = false } = {}) => {
     const conversation = activeConversation();
     const name = root.querySelector('[data-chat-name]');
     const avatar = root.querySelector('[data-chat-avatar]');
@@ -639,16 +732,16 @@
     });
     syncChatFavoriteVisual(conversation.favorite);
     syncConversationRowVisual(conversation);
-    conversation.unread = 0;
+    // Keep the unread badge visible like the C76 reference (static list state).
     const editMessage = conversation.messages.find((message) => message.id === conversation.editId && message.from === 'me');
     input.value = editMessage?.text || conversation.draft;
     if (threadSearch) threadSearch.value = '';
     if (threadSearchCount) threadSearchCount.textContent = '';
-    renderMessages(); renderReply(); renderEdit(); renderAttachment(); renderList(); updateComposer();
+    renderMessages({ restoreScroll }); renderReply(); renderEdit(); renderAttachment(); renderList(); updateComposer(); restoreComposerState(conversation);
     searchShell?.classList.remove('is-search-open');
     if (compact.matches) menu?.classList.remove('is-expanded');
     syncConversationSearch();
-    if (focus) { name?.setAttribute('tabindex', '-1'); name?.focus(); }
+    if (focus) { name?.setAttribute('tabindex', '-1'); name?.focus(); restoreComposerState(conversation); }
     announce(`${conversation.name} conversation shown. ${conversation.messages.length} messages.`);
   };
 
@@ -712,23 +805,36 @@
     if (!conversation) return;
     if (voiceRecorder && !voiceRecorder.hidden) cancelVoiceRecording({ restoreFocus: false });
     closeSavedView();
+    workspace?.classList.remove('is-list-view');
+    rememberMessageScroll();
+    rememberComposerState();
     state.activeId = conversation.id;
     closePopovers();
-    renderConversation({ focus });
+    renderConversation({ focus, restoreScroll: true });
     root.dispatchEvent(new CustomEvent('nebula:chat-conversation-selected-local', { bubbles: true, detail: { conversationId: conversation.id, localOnly: true, persisted: false } }));
     row?.scrollIntoView({ block: 'nearest' });
   };
 
   rows.forEach((row) => {
+    // Native buttons/links already dispatch keyboard clicks. Keep the
+    // fallback key handler only for legacy non-native projections so Enter
+    // and Space cannot select a conversation twice.
+    const isNativeInteractive = row instanceof HTMLButtonElement || row instanceof HTMLAnchorElement;
+    const addKeyboardFallback = (open) => {
+      if (isNativeInteractive) return;
+      row.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(); }
+      });
+    };
     if (row.classList.contains('c76-thread--saved')) {
-      const open = () => { renderSaved(); savedView.hidden = false; threadPanel.inert = true; threadPanel.setAttribute('inert', ''); threadPanel.setAttribute('aria-hidden', 'true'); savedView.querySelector('[data-saved-back]')?.focus(); };
-      row.addEventListener('click', open); row.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(); } }); return;
+    const open = () => { rememberMessageScroll(); rememberComposerState(); renderSaved(); savedView.hidden = false; threadPanel.inert = true; threadPanel.setAttribute('inert', ''); threadPanel.setAttribute('aria-hidden', 'true'); savedView.querySelector('[data-saved-back]')?.focus(); };
+      row.addEventListener('click', open); addKeyboardFallback(open); return;
     }
     const conversation = conversations.find((item) => item.name === row.dataset.conversationName);
     if (!conversation) return;
     const open = () => selectConversation(conversation, row);
     row.addEventListener('click', open);
-    row.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(); } });
+    addKeyboardFallback(open);
   });
 
   root.querySelector('[data-saved-back]')?.addEventListener('click', () => { closeSavedView({ restoreFocus: true }); });
@@ -756,8 +862,11 @@
     const item = event.target.closest('[data-saved-open]');
     if (item && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); const saved = state.saved.find((entry) => entry.key === item.dataset.savedOpen); if (saved) openSavedMessage(saved); }
   });
-  backButton?.addEventListener('click', () => { openConversationSearch(); });
-  root.querySelector('[data-menu-collapse]')?.addEventListener('click', () => { closeConversationSearch({ restoreFocus: false }); activeConversation().row.focus(); });
+  // Compact breakpoints follow the C76 source: no avatar rail — the back
+  // button swaps the thread for a full-width conversation list instead.
+  const syncBackButton = () => { if (backButton) backButton.hidden = !compact.matches; };
+  backButton?.addEventListener('click', () => { rememberMessageScroll(); rememberComposerState(); workspace?.classList.add('is-list-view'); openConversationSearch(); });
+  root.querySelector('[data-menu-collapse]')?.addEventListener('click', () => { workspace?.classList.remove('is-list-view'); closeConversationSearch({ restoreFocus: false }); activeConversation().row.focus(); });
   searchInput?.addEventListener('focus', () => { searchShell?.classList.add('is-search-open'); if (compact.matches) menu?.classList.add('is-expanded'); syncConversationSearch(); });
   searchInput?.addEventListener('input', renderList);
   searchClear?.addEventListener('click', (event) => { event.preventDefault(); event.stopPropagation(); closeConversationSearch(); });
@@ -773,7 +882,7 @@
       openConversationSearch();
     }
   });
-  compact.addEventListener?.('change', () => { if (!compact.matches) menu?.classList.remove('is-expanded'); syncConversationSearch(); });
+  compact.addEventListener?.('change', () => { if (!compact.matches) { menu?.classList.remove('is-expanded'); workspace?.classList.remove('is-list-view'); } syncBackButton(); syncConversationSearch(); });
   filterToggle?.addEventListener('click', () => { const opening = filterMenu.hidden; closePopovers(); if (compact.matches) menu?.classList.add('is-expanded'); filterMenu.hidden = !opening; filterToggle.setAttribute('aria-expanded', opening ? 'true' : 'false'); if (opening) { popoverOpener = filterToggle; filterMenu.querySelector('button')?.focus(); } });
   root.querySelectorAll('[data-conversation-filter]').forEach((button) => button.addEventListener('click', () => {
     state.filter = button.dataset.conversationFilter;
@@ -994,13 +1103,21 @@
     const advanceDeliveryPreview = (deliveryState, delay) => window.setTimeout(() => {
       if (!conversation.messages.includes(message)) return;
       message.deliveryState = deliveryState;
-      renderMessages({ keepScroll: true });
+      if (activeConversation().id === conversation.id) renderMessages({ keepScroll: true });
       root.dispatchEvent(new CustomEvent('nebula:chat-delivery-preview-changed', { bubbles: true, detail: { conversationId: conversation.id, messageId: message.id, deliveryState, localOnly: true, persisted: false, serverReceipt: false } }));
     }, delay);
     advanceDeliveryPreview('delivered', 700);
     advanceDeliveryPreview('read', 1500);
   };
-  input?.addEventListener('input', updateComposer);
+  // Capture before a desktop pointer click blurs the textarea and collapses its
+  // selection. The explicit switch/back hooks remain the authoritative restore
+  // boundary; this capture only records the last user-owned caret state.
+  root.addEventListener('pointerdown', (event) => {
+    if (input && event.target !== input && !input.contains(event.target)) rememberComposerState();
+  }, true);
+  input?.addEventListener('input', () => { updateComposer(); rememberComposerState(); });
+  input?.addEventListener('select', rememberComposerState);
+  input?.addEventListener('blur', () => rememberComposerState({ force: true }));
   input?.addEventListener('keydown', (event) => { if (event.isComposing || event.keyCode === 229 || event.key !== 'Enter' || event.shiftKey) return; event.preventDefault(); sendLocal(); });
   sendButton?.addEventListener('click', sendLocal);
 
@@ -1076,7 +1193,9 @@
     activeConversation().attachment = attachment;
     if (attachment.kind === 'video') {
       const probe = document.createElement('video');
-      probe.preload = 'metadata'; probe.src = localObjectUrl;
+      // The object URL is owned by the selected attachment item. The map-local
+      // variable is not available here, especially for a single video file.
+      probe.preload = 'metadata'; probe.src = attachment.src;
       probe.addEventListener('loadedmetadata', () => { if (activeConversation().attachment === attachment && Number.isFinite(probe.duration)) attachment.duration = `${Math.floor(probe.duration / 60)}:${String(Math.round(probe.duration % 60)).padStart(2, '0')}`; renderAttachment(); });
     }
     renderAttachment(); updateComposer(); input?.focus();
@@ -1196,9 +1315,16 @@
   const renderConsultationControl = (state) => {
     if (!consultationControls.length) return;
     const running = state === 'running';
+    threadPanel?.setAttribute('data-consultation-visual-state', state === 'running' ? 'active' : state);
     consultationControls.forEach((control) => {
       control.dataset.consultationState = state;
-      control.setAttribute('aria-pressed', running ? 'true' : 'false');
+      control.closest('[data-consultation-cluster]')?.setAttribute('data-consultation-state', state);
+      if (control.getAttribute('role') === 'switch') {
+        control.setAttribute('aria-checked', running ? 'true' : 'false');
+        control.removeAttribute('aria-pressed');
+      } else {
+        control.setAttribute('aria-pressed', running ? 'true' : 'false');
+      }
       const label = control.querySelector('[data-consultation-label]');
       if (label) label.textContent = control.classList.contains('c76-consultation-action') ? (state === 'idle' ? 'Start' : (running ? 'Pause' : 'Resume')) : (state === 'idle' ? 'Start consultation' : (running ? 'Pause consultation' : 'Resume consultation'));
       control.setAttribute('aria-label', state === 'idle' ? 'Start consultation' : (running ? 'Pause consultation' : 'Resume consultation'));
@@ -1279,8 +1405,8 @@
 
   const scrollBottom = root.querySelector('[data-scroll-bottom]');
   const syncScrollBottom = () => { if (!messagesNode || !scrollBottom) return; scrollBottom.hidden = messagesNode.scrollHeight - messagesNode.scrollTop - messagesNode.clientHeight < 48; };
-  messagesNode?.addEventListener('scroll', syncScrollBottom, { passive: true });
+  messagesNode?.addEventListener('scroll', () => { rememberMessageScroll(); syncScrollBottom(); }, { passive: true });
   scrollBottom?.addEventListener('click', () => { messagesNode?.scrollTo({ top: messagesNode.scrollHeight, behavior: 'smooth' }); });
 
-  renderSaved(); renderList(); renderConversation({ focus: false }); syncConversationSearch(); syncSuggestionNav(); syncScrollBottom();
+  renderSaved(); renderList(); renderConversation({ focus: false }); syncBackButton(); syncConversationSearch(); syncSuggestionNav(); syncScrollBottom();
 })();

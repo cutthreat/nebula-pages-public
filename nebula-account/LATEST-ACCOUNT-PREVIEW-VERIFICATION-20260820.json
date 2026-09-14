@@ -1,0 +1,37 @@
+{
+  "kind": "nebula_account_preview_verification",
+  "schemaVersion": 1,
+  "status": "pass_with_known_limit",
+  "checkedAt": "2026-08-20",
+  "scope": "latest_local_account_and_chat_preview",
+  "checks": {
+    "htmlFiles": 57,
+    "htmlLocalReferences": 1282,
+    "cssFiles": 69,
+    "cssLocalReferences": 160,
+    "jsFiles": 58,
+    "brokenLocalReferences": 0,
+    "jsSyntaxFailures": 0,
+    "servedHtmlRoutes": 57,
+    "servedHtmlRoutesOk": 57,
+    "servedHtmlRouteFailures": 0,
+    "boardInlineScriptParse": "PASS"
+  },
+  "entry": {
+    "local": "/nebula-account/chatroom.html",
+    "boardUses": true,
+    "legacyPreserved": "/lk-chatroom-c76.html"
+  },
+  "knownLimits": [
+    "Figma crosswalk for the imported latest local branch is pending and is not promoted as visual acceptance.",
+    "Browser visual acceptance was not claimed; the in-app browser runtime previously timed out before a controlled visual readback.",
+    "This is a client-only preview; backend authentication, payments, credits, messaging and persistence remain unconnected."
+  ],
+  "evidence": {
+    "lineage": "nebula-account/LATEST-ACCOUNT-PREVIEW-LINEAGE-20260820.json",
+    "sourceCommit": "b5a79aa984a317d2ee92149e4a1a35f83061c602",
+    "chatroomSha256": "CF41A2BD606CEC93E378E29A5E7B64AA7D68DD3A8D3FC19CA28F704013DA4690",
+    "chatroomCssSha256": "FB56CE60D66BEF39D588430206CD05ED47C7D5F62514C71F101E3D3881AA8C64",
+    "chatroomJsSha256": "0F7CDF90C4DD9C90976D6AB0C90E9161661329033508C3E54CC420B42B610997"
+  }
+}

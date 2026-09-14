@@ -29,16 +29,24 @@
     menu.addEventListener('keydown', (event) => {
       const list = items();
       if (event.key === 'Escape') { event.preventDefault(); setOpen(false, true); return; }
-      if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-        event.preventDefault();
-        const index = Math.max(0, list.indexOf(document.activeElement));
-        list[(index + (event.key === 'ArrowDown' ? 1 : list.length - 1)) % list.length]?.focus();
-      }
-      if (event.key === 'Tab' && list.length) {
-        const first = list[0]; const last = list[list.length - 1];
-        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-      }
+      if (event.key === 'Tab') { setOpen(false, true); return; }
+      if (event.key === ' ') { event.preventDefault(); document.activeElement?.click(); return; }
+      if (!list.length) return;
+      let next;
+      const index = Math.max(0, list.indexOf(document.activeElement));
+      if (event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (index + 1) % list.length;
+      else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (index - 1 + list.length) % list.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = list.length - 1;
+      else return;
+      event.preventDefault();
+      list[next]?.focus();
+    });
+    document.addEventListener('click', (event) => {
+      if (open && !header.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener('focusin', (event) => {
+      if (open && !header.contains(event.target)) setOpen(false);
     });
     document.addEventListener('keydown', (event) => {
       if (open && event.key === 'Escape') { event.preventDefault(); setOpen(false, true); }

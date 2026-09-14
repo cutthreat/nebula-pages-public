@@ -6,25 +6,28 @@
   <title>Chatroom Notify — Neuro</title>
   <meta name="description" content="Static C76 Chatroom Notify fixture" />
   <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="yii2/modules/nebulaAccount/resources/shared/conversation-list/list.css" />
   <link rel="stylesheet" href="yii2/modules/nebulaAccount/resources/css/chatroom-notify.css" />
+  <link rel="stylesheet" href="yii2/modules/nebulaAccount/resources/css/notification-indicator.css" />
 </head>
 <body class="c76-page-body">
   <main class="c76-page" aria-label="Chatroom" data-c76-state="notification_destination" data-nebula-chatroom>
     <section class="c76-frame" data-node-id="1489:45092" data-node-id-992="1489:45491" data-node-id-768="1489:45890" data-node-id-576="1489:46292" data-node-id-320="1489:46694" data-name="01-Chatroom 1201 / 992 / 768 / 576 / 320" aria-label="Chatroom workspace default state" data-c76-state="notification_destination">
       <div class="c76-bg" aria-hidden="true"></div>
 
-      <header class="c76-header" data-name="HEADER">
+      <header class="c76-header" data-notification-shell data-name="HEADER">
         <a class="c76-logo" href="profile.html" aria-label="Neuro profile">
           <img src="yii2/modules/nebulaAccount/resources/images/chatroom/neuro-logo.webp" alt="" />
         </a>
         <div class="c76-header__right">
           <nav class="c76-nav" aria-label="Primary LK navigation">
-            <span>Psychic</span>
-            <span>Favorite</span>
+            <a href="psychics.html">Psychic</a>
+            <a href="favorites.html">Favorite</a>
             <a class="is-active" href="chatroom.html" aria-current="page">Chatroom</a>
-            <span>Horoscope</span>
+            <a href="horoscope.html">Horoscope</a>
           </nav>
           <div class="c76-credits-menu">
+            <a class="nb-notifications-pill" href="notifications.html" data-notifications-link data-notification-indicator="count" data-notification-unread-source="preview-fixture" aria-label="Notifications, 2 unread notifications"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" /></span><b class="nb-notifications-pill__badge" data-notification-unread-count data-topbar-notification-unread-count aria-hidden="true">2</b></a>
             <div class="c76-credit-pill" aria-label="Credits balance 120">
               <img src="yii2/modules/nebulaAccount/resources/images/chatroom/credit-coin.svg" alt="" />
               <span>120</span>

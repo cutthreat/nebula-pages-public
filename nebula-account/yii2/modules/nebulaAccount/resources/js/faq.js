@@ -5,6 +5,7 @@
   const live = root.querySelector('.faq-sr-only');
   const items = () => Array.from(root.querySelectorAll('[data-faq-item]'));
   const setItem = (item, open) => {
+    if (!item) return;
     const button = item.querySelector('[data-faq-action="toggle-answer"]');
     const panel = item.querySelector('[data-faq-panel]');
     if (!button || !panel) return;
@@ -15,6 +16,7 @@
     panel.hidden = !open;
   };
   const toggleItem = (item) => {
+    if (!item) return;
     const button = item.querySelector('[data-faq-action="toggle-answer"]');
     const open = button?.getAttribute('aria-expanded') !== 'true';
     items().forEach((candidate) => { if (candidate !== item) setItem(candidate, false); });
@@ -23,7 +25,8 @@
     if (live) live.textContent = open ? 'Answer opened.' : 'Answer closed.';
   };
   root.addEventListener('click', (event) => {
-    const support = event.target.closest('[data-faq-action="support-required"]');
+    const target = event.target instanceof Element ? event.target : null;
+    const support = target?.closest('[data-faq-action="support-required"]');
     if (support && root.contains(support)) {
       event.preventDefault();
       event.stopPropagation();
@@ -35,12 +38,12 @@
       }));
       return;
     }
-    const toggle = event.target.closest('[data-faq-action="toggle-answer"]');
+    const toggle = target?.closest('[data-faq-action="toggle-answer"]');
     if (toggle && root.contains(toggle)) toggleItem(toggle.closest('[data-faq-item]'));
   });
   root.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
-    const item = event.target.closest('[data-faq-item]');
+    const item = event.target instanceof Element ? event.target.closest('[data-faq-item]') : null;
     if (!item || item.querySelector('[data-faq-action="toggle-answer"]')?.getAttribute('aria-expanded') !== 'true') return;
     event.preventDefault();
     setItem(item, false);

@@ -3,7 +3,7 @@
 @font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-600.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-700.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
 
-body.nb-account-body:has(.pc-page){margin:0;background:#fff}
+body:has(.pc-page),body:has(.ps-page){margin:0;background:#fff}
 .pc-page,.pc-page *{box-sizing:border-box}
 .pc-page{--pc-purple:#673eda;--pc-purple-dark:#281b59;--pc-lilac:#f3efff;--pc-soft:#f4f4f5;--pc-muted:#786d8c;--pc-peach:#ffc476;min-width:320px;overflow:hidden;background:#fff;color:var(--pc-purple-dark);font-family:"Manrope",Arial,sans-serif;font-size:14px;line-height:1.45}
 .pc-page a{color:inherit;text-decoration:none}.pc-page button,.pc-page a{font-family:inherit}.pc-page button{cursor:pointer}.pc-page a:focus-visible,.pc-page button:focus-visible{outline:2px solid var(--pc-purple);outline-offset:3px}
