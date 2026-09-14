@@ -1,0 +1,4 @@
+.button-reg-page{margin:0;font-family:"Manrope",sans-serif;background:#f3f0f8}
+.frame{width:min(335px,100vw);height:180px;margin:0 auto;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);display:flex;align-items:center;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 28px;border-radius:16px;background:#734ff0;color:#fff;font-size:20px;font-weight:700;letter-spacing:-.2px;box-shadow:0 12px 28px rgba(115,79,240,.24);text-decoration:none}
+.btn:hover{background:#6644df}

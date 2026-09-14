@@ -1,0 +1,214 @@
+{
+  "name": "NEBULA Product Breakpoint Matrix",
+  "updatedAt": "2026-04-01",
+  "goal": "Formalize breakpoint acceptance for the 5 proven product families after desktop closure.",
+  "families": [
+    {
+      "key": "psychic-reading",
+      "label": "Psychic Reading",
+      "page": "psychic-reading-new.html?v=20260401-psychic-final-pass-2",
+      "board": "psychic-review-board.html?v=20260401-psychic-final-pass-2",
+      "status": "all_breakpoints_proven",
+      "notes": "Dedicated contour + Manhattan live/board proof completed on desktop 1200. Breakpoint boards and Manhattan proof artifacts now exist for 992 / 768 / 576 / 320.",
+      "breakpoints": [
+        {
+          "width": 1200,
+          "nodeId": "413:3566",
+          "status": "proven",
+          "height": 7456
+        },
+        {
+          "width": 992,
+          "nodeId": "874:8758",
+          "status": "proven",
+          "height": 7479
+        },
+        {
+          "width": 768,
+          "nodeId": "874:10483",
+          "status": "proven",
+          "height": 8034
+        },
+        {
+          "width": 576,
+          "nodeId": "881:12511",
+          "status": "proven",
+          "height": 8028
+        },
+        {
+          "width": 320,
+          "nodeId": "883:13989",
+          "status": "proven",
+          "height": 9240
+        }
+      ]
+    },
+    {
+      "key": "tarot-reading",
+      "label": "Tarot Reading",
+      "page": "tarot-reading-new.html?v=20260401-tarot-final-pass-2",
+      "board": "tarot-review-board.html?v=20260401-tarot-final-pass-2",
+      "status": "all_breakpoints_proven",
+      "notes": "Canonical family is 893:*; duplicate 902:* branch is explicitly rejected. Breakpoint boards and Manhattan proof artifacts now exist for 992 / 768 / 576 / 320.",
+      "breakpoints": [
+        {
+          "width": 1200,
+          "nodeId": "893:12319",
+          "status": "proven",
+          "height": 8542
+        },
+        {
+          "width": 992,
+          "nodeId": "893:12510",
+          "status": "proven",
+          "height": 8400
+        },
+        {
+          "width": 768,
+          "nodeId": "894:10617",
+          "status": "proven",
+          "height": 8831
+        },
+        {
+          "width": 576,
+          "nodeId": "893:12903",
+          "status": "proven",
+          "height": 8740
+        },
+        {
+          "width": 320,
+          "nodeId": "893:13096",
+          "status": "proven",
+          "height": 9995
+        }
+      ]
+    },
+    {
+      "key": "palm-reading",
+      "label": "Palm Reading",
+      "page": "palm-reading-new.html?v=20260401-palm-final-pass-2",
+      "board": "palm-review-board.html?v=20260401-palm-final-pass-2",
+      "status": "all_breakpoints_proven",
+      "notes": "Desktop board is clean; smaller breakpoint boards are the next serial wave. Breakpoint boards and Manhattan proof artifacts now exist for 992 / 768 / 576 / 320.",
+      "breakpoints": [
+        {
+          "width": 1200,
+          "nodeId": "910:20010",
+          "status": "proven",
+          "height": 4392
+        },
+        {
+          "width": 992,
+          "nodeId": "910:20217",
+          "status": "proven",
+          "height": 4297
+        },
+        {
+          "width": 768,
+          "nodeId": "910:19799",
+          "status": "proven",
+          "height": 4345
+        },
+        {
+          "width": 576,
+          "nodeId": "910:20428",
+          "status": "proven",
+          "height": 4272
+        },
+        {
+          "width": 320,
+          "nodeId": "910:20635",
+          "status": "proven",
+          "height": 5886
+        }
+      ]
+    },
+    {
+      "key": "phone-psychic",
+      "label": "Phone Psychic",
+      "page": "phone-psychic-new.html?v=20260401-phone-final-pass-2",
+      "board": "phone-review-board.html?v=20260401-phone-final-pass-2",
+      "status": "all_breakpoints_proven",
+      "notes": "Long reference board already hardened with explicit Manhattan wait before screenshot. Breakpoint boards and Manhattan proof artifacts now exist for 992 / 768 / 576 / 320.",
+      "breakpoints": [
+        {
+          "width": 1200,
+          "nodeId": "912:12253",
+          "status": "proven",
+          "height": 8552
+        },
+        {
+          "width": 992,
+          "nodeId": "912:12444",
+          "status": "proven",
+          "height": 8223
+        },
+        {
+          "width": 768,
+          "nodeId": "912:12639",
+          "status": "proven",
+          "height": 8649
+        },
+        {
+          "width": 576,
+          "nodeId": "912:12837",
+          "status": "proven",
+          "height": 8946
+        },
+        {
+          "width": 320,
+          "nodeId": "912:13030",
+          "status": "proven",
+          "height": 10554
+        }
+      ]
+    },
+    {
+      "key": "cheap-psychic",
+      "label": "Cheap Psychic",
+      "page": "cheap-psychic-new.html?v=20260401-cheap-final-pass-2",
+      "board": "cheap-review-board.html?v=20260401-cheap-final-pass-2",
+      "status": "all_breakpoints_proven",
+      "notes": "Same-host proof already uses double URL assert before screenshot. Breakpoint boards and Manhattan proof artifacts now exist for 992 / 768 / 576 / 320.",
+      "breakpoints": [
+        {
+          "width": 1200,
+          "nodeId": "917:17364",
+          "status": "proven",
+          "height": 8632
+        },
+        {
+          "width": 992,
+          "nodeId": "917:17603",
+          "status": "proven",
+          "height": 8373
+        },
+        {
+          "width": 768,
+          "nodeId": "917:17846",
+          "status": "proven",
+          "height": 8907
+        },
+        {
+          "width": 576,
+          "nodeId": "917:18089",
+          "status": "proven",
+          "height": 8960
+        },
+        {
+          "width": 320,
+          "nodeId": "917:18327",
+          "status": "proven",
+          "height": 10729
+        }
+      ]
+    }
+  ],
+  "globalChecklist": [
+    "Canonical breakpoint family is locked from visual evidence before implementation.",
+    "Page runs on dedicated HTML/CSS contour, not a shared shell override.",
+    "Desktop 1200 clean board is manifest-driven and already proven.",
+    "Each smaller breakpoint needs its own board lane or explicit compare mode before closure.",
+    "Same-host Manhattan proof must stay sequential and use target_url -> assert -> sleep -> assert -> screenshot."
+  ]
+}

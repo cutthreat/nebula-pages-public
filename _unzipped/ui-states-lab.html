@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UI States Lab — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="ui-states-lab.css" />
+</head>
+<body class="ui-states-lab-page">
+  <main class="ui-lab">
+    <div class="container">
+      <section class="ui-lab__section">
+        <h1 class="ui-lab__title">UI states and overlays</h1>
+        <p class="ui-lab__lead">This page collects the non-page UI entities you pointed out: offer bars, modals, menus, cookies, steps, review cards, tabs, buttons, and responsive variants. Each block is treated as a state, not a standalone page.</p>
+      </section>
+
+      <section class="ui-lab__section">
+        <div class="ui-band">
+          <div class="ui-band__inner">
+            <span>3 Minutes FREE</span>
+            <span>•</span>
+            <span>80% OFF For New Customers</span>
+            <span class="ui-band__tag">Try now</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <h2 class="section__title section__title--h2">Menu and offcanvas</h2>
+        <div class="ui-offcanvas">
+          <div class="ui-menu-shell">
+            <div class="ui-menu-shell__top">
+              <div class="ui-menu-shell__logo"><span class="ui-menu-shell__dot"></span><span>NEURO</span></div>
+              <button class="ui-menu-shell__close" type="button" aria-label="Close menu"></button>
+            </div>
+            <ul class="ui-menu-list">
+              <li><a href="#"><span>Psychic Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Psychic</span><span>›</span></a></li>
+              <li><a href="#"><span>Topics</span><span>›</span></a></li>
+              <li><a href="#"><span>Zodiac Signs</span><span>›</span></a></li>
+              <li><a href="#"><span>Charts</span><span>›</span></a></li>
+              <li><a href="#"><span>Articles</span><span>›</span></a></li>
+            </ul>
+            <div class="ui-menu-meta">
+              <span class="ui-menu-pill">Sign up</span>
+              <span>Eng</span>
+              <span class="ui-menu-pill">●</span>
+            </div>
+          </div>
+          <div class="ui-menu-shell ui-menu-shell--open">
+            <div class="ui-menu-shell__top">
+              <div class="ui-menu-shell__logo"><span class="ui-menu-shell__dot"></span><span>NEURO</span></div>
+              <button class="ui-menu-shell__close" type="button" aria-label="Close menu"></button>
+            </div>
+            <ul class="ui-menu-list">
+              <li><a href="#"><span>Psychic Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Tarot Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Astrology Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Aura Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Numerology Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Palm Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Phone Psychic Reading</span><span>›</span></a></li>
+              <li><a href="#"><span>Email Psychic Reading</span><span>›</span></a></li>
+            </ul>
+            <div class="ui-menu-meta">
+              <span class="ui-menu-pill">Menu open</span>
+              <span>Sign in</span>
+              <span class="ui-menu-pill">←</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <h2 class="section__title section__title--h2">Cookies and offer states</h2>
+        <div class="ui-grid ui-grid--two">
+          <div class="ui-card ui-mini">
+            <h3>Cookies bar</h3>
+            <div class="ui-cookies">
+              <div class="ui-cookies__text">Cookies help us personalize your experience on our site, provide social media features, and analyze our traffic.</div>
+              <div class="ui-cookies__actions">
+                <a class="ui-btn" href="#">Accept</a>
+                <a class="ui-btn ui-btn--ghost" href="#">Settings</a>
+              </div>
+            </div>
+          </div>
+          <div class="ui-card ui-mini">
+            <h3>Top offer bar</h3>
+            <div class="ui-band" style="border-radius:14px">
+              <div class="ui-band__inner" style="min-height:32px">
+                <span>3 Minutes FREE - 80% OFF For New Customers</span>
+                <span class="ui-band__tag">Try now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <h2 class="section__title section__title--h2">Modal offer</h2>
+        <div class="ui-modal-backdrop">
+          <div class="ui-modal">
+            <button class="ui-modal__close" type="button" aria-label="Close modal"></button>
+            <picture><source srcset="img/prn-tailored-orb-v2.webp" type="image/webp"><img class="ui-modal__art" src="img/prn-tailored-orb-v2.png" alt="offer art" /></picture>
+            <div class="ui-modal__title">Get your first psychic reading for FREE</div>
+            <ul class="ui-modal__list">
+              <li>Conditions depending on the selected offer</li>
+              <li>Service available for new users</li>
+              <li>No credit card required</li>
+            </ul>
+            <a class="ui-btn" href="#">Start Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <h2 class="section__title section__title--h2">Steps, reviews, tabs, buttons</h2>
+        <div class="ui-grid ui-grid--four">
+          <article class="ui-step">
+            <div class="ui-step__circle">1</div>
+            <div class="ui-step__title">Sign Up</div>
+            <p class="ui-step__text">Create an account and start with the onboarding step that is visible across the mobile and desktop versions.</p>
+            <a class="ui-btn ui-step__cta" href="#">Get started</a>
+          </article>
+          <article class="ui-step">
+            <div class="ui-step__circle">2</div>
+            <div class="ui-step__title">Choose</div>
+            <p class="ui-step__text">Pick the service or expert that matches your immediate question.</p>
+          </article>
+          <article class="ui-step">
+            <div class="ui-step__circle">3</div>
+            <div class="ui-step__title">Read</div>
+            <p class="ui-step__text">Continue into the reading flow and keep the same visual rhythm.</p>
+          </article>
+          <article class="ui-step">
+            <div class="ui-step__circle">4</div>
+            <div class="ui-step__title">Continue</div>
+            <p class="ui-step__text">The last step becomes the conversion point with an emphasized CTA.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <div class="ui-grid ui-grid--three">
+          <div class="ui-review">
+            <div class="ui-review__top"><span class="ui-review__name">Kate</span><span class="heritage-star-row" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></div>
+            <div class="ui-review__body">The psychic reading on Neuro was exactly what I needed. It helped me start from scratch with more trust.</div>
+          </div>
+          <div class="ui-review">
+            <div class="ui-review__top"><span class="ui-review__name">Vika</span><span class="heritage-star-row" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></div>
+            <div class="ui-review__body">This result felt spot-on and useful. The card format keeps the review readable even in tight widths.</div>
+          </div>
+          <div class="ui-review">
+            <div class="ui-review__top"><span class="ui-review__name">Eva</span><span class="heritage-star-row" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span></div>
+            <div class="ui-review__body">The experience was reassuring and clear. The purple review card is treated as a state, not a page.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <div class="ui-tabs">
+          <div class="ui-tab">
+            <div class="ui-tab__title">Cheap Psychic</div>
+            <div class="ui-tab__text">Low-friction entry state with a conversion-oriented button.</div>
+          </div>
+          <div class="ui-tab">
+            <div class="ui-tab__title">TABS</div>
+            <div class="ui-tab__text">Tab-like state block that is used for directory or chooser UX.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-lab__section">
+        <div class="ui-pills">
+          <span class="ui-pill">BUTTON REG</span>
+          <span class="ui-pill">NEXT</span>
+          <span class="ui-pill">CANCEL</span>
+          <span class="ui-pill">PLAY</span>
+          <span class="ui-pill">GET STARTED</span>
+          <span class="ui-pill">FIND PSYCHIC</span>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

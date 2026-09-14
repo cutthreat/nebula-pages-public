@@ -1,0 +1,24 @@
+{
+    "schema": "nebula_all_psychics_yii2_package_proof.v1",
+    "generatedAt": "2026-08-10T04:35:50+00:00",
+    "status": "pass",
+    "integrationStatus": "package_ready_host_mount_pending",
+    "moduleRoot": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/integrations/yii2/nebulaLanding",
+    "checks": {
+        "page_owned_files_exist": "pass",
+        "source_css_hashes_preserved": "pass",
+        "referenced_assets_preserved": "pass",
+        "source_body_is_package_safe": "pass",
+        "source_routes_use_yii_helpers": "pass",
+        "route_intent": "pass",
+        "asset_bundle_contract": "pass",
+        "encoded_transport_rendering": "pass",
+        "namespaced_interactions": "pass",
+        "structured_meta": "pass"
+    },
+    "details": {
+        "page_owned_files_exist": [],
+        "source_css_hashes_preserved": [],
+        "referenced_assets_preserved": []
+    }
+}

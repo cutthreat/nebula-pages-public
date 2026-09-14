@@ -1,0 +1,78 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-tarot-reading.html",
+  "prefix": "post",
+  "status": "pass",
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 8542,
+        "readerCount": 6,
+        "faqCount": 6
+      },
+      "menu": "n/a",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 992,
+        "scrollWidth": 992,
+        "scrollHeight": 8400,
+        "readerCount": 6,
+        "faqCount": 6
+      },
+      "menu": "n/a",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 8831,
+        "readerCount": 6,
+        "faqCount": 6
+      },
+      "menu": "pass",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 576,
+        "scrollWidth": 576,
+        "scrollHeight": 8649,
+        "readerCount": 6,
+        "faqCount": 6
+      },
+      "menu": "pass",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "scrollHeight": 9978,
+        "readerCount": 6,
+        "faqCount": 6
+      },
+      "menu": "pass",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    }
+  ],
+  "generatedAt": "2026-08-10T06:52:17.835Z"
+}

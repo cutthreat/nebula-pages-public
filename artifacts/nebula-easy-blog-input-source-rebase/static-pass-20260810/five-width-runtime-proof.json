@@ -1,0 +1,66 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-blog-input.html",
+  "status": "pass",
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "metrics": {
+        "cw": 1200,
+        "sw": 1200,
+        "h": 6667,
+        "broken": 0
+      },
+      "errors": [],
+      "failures": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "metrics": {
+        "cw": 992,
+        "sw": 992,
+        "h": 7117,
+        "broken": 0
+      },
+      "errors": [],
+      "failures": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "metrics": {
+        "cw": 768,
+        "sw": 768,
+        "h": 6548,
+        "broken": 0
+      },
+      "errors": [],
+      "failures": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "metrics": {
+        "cw": 576,
+        "sw": 576,
+        "h": 6624,
+        "broken": 0
+      },
+      "errors": [],
+      "failures": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "metrics": {
+        "cw": 320,
+        "sw": 320,
+        "h": 9886,
+        "broken": 0
+      },
+      "errors": [],
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEBULA Product Breakpoint Matrix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product-breakpoint-matrix.css" />
+</head>
+<body class="product-breakpoint-matrix-page">
+  <div class="app">
+    <section class="hero">
+      <h1>NEBULA Product Breakpoint Matrix</h1>
+      <p>Единый реестр breakpoint-приемки по 5 закрытым product families. Desktop `1200` уже доказан, smaller breakpoints зафиксированы как следующий обязательный acceptance gate.</p>
+      <div class="meta">
+        <span class="pill">5 families</span>
+        <span class="pill">1200 proven</span>
+        <span class="pill">992 / 768 / 576 / 320 pending boards</span>
+        <span class="pill">updated 2026-04-01</span>
+      </div>
+    </section>
+    <section class="grid" id="families"></section>
+    <section class="panel check-panel">
+      <h2>Global Checklist</h2>
+      <div class="checklist" id="checklist"></div>
+    </section>
+  </div>
+  <script>
+    const dataUrl = 'product-breakpoint-matrix.json?v=20260401-breakpoint-matrix-1';
+    const familiesEl = document.getElementById('families');
+    const checklistEl = document.getElementById('checklist');
+    const statusBadge = (status) => {
+      if (status === 'proven') return '<span class="badge badge--ok">proven</span>';
+      return '<span class="badge badge--pending">pending</span>';
+    };
+    const familyHtml = (family) => `
+      <article class="panel">
+        <div class="family-head">
+          <div class="family-meta">
+            <h2>${family.label}</h2>
+            <p>${family.notes}</p>
+          </div>
+          <span class="chip">${family.status.replaceAll('_',' ')}</span>
+        </div>
+        <div class="actions">
+          <a class="action-link" href="${family.page}">Live page</a>
+          <a class="action-link" href="${family.board}">Desktop board</a>
+        </div>
+        <div class="bp-col">
+          ${family.breakpoints.map((bp) => `
+            <div class="bp-item">
+              <div>
+                <strong>${bp.width}px</strong>
+                <span>node ${bp.nodeId}</span>
+              </div>
+              ${statusBadge(bp.status)}
+            </div>
+          `).join('')}
+        </div>
+      </article>
+    `;
+    fetch(dataUrl)
+      .then((r) => r.json())
+      .then((data) => {
+        familiesEl.innerHTML = data.families.map(familyHtml).join('');
+        checklistEl.innerHTML = data.globalChecklist.map((item) => `<span class="pill">${item}</span>`).join('');
+      })
+      .catch((error) => {
+        familiesEl.innerHTML = `<article class="panel"><h2>Load failed</h2><p>${error.message}</p></article>`;
+      });
+  </script>
+</body>
+</html>

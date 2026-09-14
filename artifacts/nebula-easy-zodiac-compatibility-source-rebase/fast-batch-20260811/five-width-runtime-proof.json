@@ -1,0 +1,105 @@
+{
+  "schema": "nebula_easy.fast_batch_01.runtime.v3",
+  "page": "zodiac-compatibility",
+  "url": "http://127.0.0.1:8765/nebula-easy-zodiac-compatibility.html",
+  "captureMethod": "fresh_browser_context_per_width; menu waits for native transition completion",
+  "generatedAt": "2026-08-11T15:02:19.097Z",
+  "productHashes": {
+    "html": "1922893843f94b7cea5bcef3e94f36d00bc74eb11307fac0d2008fbc0b3a5145",
+    "css": "1711ae7544a0ceab6ac2a0708f41f23f98c9a8601d477847e01a19766cc11bb1",
+    "js": "59b7e50862933f91f9c53e1cb344003e6aabbdb99bda2470127bf779238b271c"
+  },
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "initial": {
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 10953,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "not_applicable",
+      "cta": "pass",
+      "ctaCount": 7,
+      "seo": "pass",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "initial": {
+        "clientWidth": 992,
+        "scrollWidth": 992,
+        "scrollHeight": 10953,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "not_applicable",
+      "cta": "pass",
+      "ctaCount": 7,
+      "seo": "pass",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "initial": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 9892,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 7,
+      "seo": "pass",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "initial": {
+        "clientWidth": 576,
+        "scrollWidth": 576,
+        "scrollHeight": 9557,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 7,
+      "seo": "pass",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "initial": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "scrollHeight": 12849,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 7,
+      "seo": "pass",
+      "consoleErrors": [],
+      "failedResponses": []
+    }
+  ],
+  "status": "pass"
+}

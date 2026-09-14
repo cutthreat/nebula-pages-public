@@ -1,0 +1,26 @@
+{
+  "nodeId": "366:1100",
+  "name": "Log in",
+  "viewport": {
+    "width": 1280,
+    "height": 855
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 366:1100.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/login-figma-reference.png?v=20260331-login-pass-2"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live login page under the same viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "login.html?v=20260331-login-pass-2"
+    }
+  ]
+}

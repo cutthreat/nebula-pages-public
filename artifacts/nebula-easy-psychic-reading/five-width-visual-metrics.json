@@ -1,0 +1,57 @@
+{
+  "schema": "nebula_easy_psychic_reading_visual_metrics.v1",
+  "status": "pass",
+  "method": "RGB normalized mean absolute error over common source/candidate area; height delta reported separately",
+  "widths": [
+    {
+      "width": 1200,
+      "sourceHeight": 7456,
+      "candidateHeight": 7494,
+      "heightDelta": 38,
+      "normalizedMAECommonArea": 0.05474671348929405,
+      "sourceSha256": "319f72ce8b370028af0d09ed1f041d575decf0acc633f40f603b6bcc283f3745",
+      "candidateSha256": "4b2f8c5226f3a7d3b2f2b8201ed187f83af8bdf7b492d824670dedabfb3a3fff",
+      "candidate": "artifacts/nebula-easy-psychic-reading/postimages/candidate-1200.png"
+    },
+    {
+      "width": 992,
+      "sourceHeight": 7479,
+      "candidateHeight": 7489,
+      "heightDelta": 10,
+      "normalizedMAECommonArea": 0.06654205173254013,
+      "sourceSha256": "c41a38996ed9523fd7fabd08c09154701068632e97efcdd113a22a56fdacd815",
+      "candidateSha256": "ce6405e31e6b09e6409299a7ee9f7a685ed8599b12a9822bf270256553a32fd1",
+      "candidate": "artifacts/nebula-easy-psychic-reading/postimages/candidate-992.png"
+    },
+    {
+      "width": 768,
+      "sourceHeight": 8034,
+      "candidateHeight": 8042,
+      "heightDelta": 8,
+      "normalizedMAECommonArea": 0.05748633295297623,
+      "sourceSha256": "03c2800e2e6a7dc5d093a11cf5f785efffc765dc4be7231aade91a2beba41056",
+      "candidateSha256": "48ee87298f35675954a2a4f5ee3682a18d0ac9132034527fc0eaecca77c9d72b",
+      "candidate": "artifacts/nebula-easy-psychic-reading/postimages/candidate-768.png"
+    },
+    {
+      "width": 576,
+      "sourceHeight": 8028,
+      "candidateHeight": 8032,
+      "heightDelta": 4,
+      "normalizedMAECommonArea": 0.059376150369644165,
+      "sourceSha256": "d835df386f6f6bbda4dac862819bac3390b844f0103cf3d2a7bed55b8524aacd",
+      "candidateSha256": "b482cd26c77f82d4e1eb047ea67b49b1a3afc5828929623193a52318a51430a7",
+      "candidate": "artifacts/nebula-easy-psychic-reading/postimages/candidate-576.png"
+    },
+    {
+      "width": 320,
+      "sourceHeight": 9240,
+      "candidateHeight": 9247,
+      "heightDelta": 7,
+      "normalizedMAECommonArea": 0.07527890801429749,
+      "sourceSha256": "d387af34d2174fdcd7b632c0339d23fd41d67f6277904aa1cf7e2280ccf3a15a",
+      "candidateSha256": "66fb285c1693583915283234288f34b0be2f8ecfd4b1cc3e0e9d89a565adc5b4",
+      "candidate": "artifacts/nebula-easy-psychic-reading/postimages/candidate-320.png"
+    }
+  ]
+}

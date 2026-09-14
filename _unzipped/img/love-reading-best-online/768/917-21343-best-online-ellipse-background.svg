@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1546" height="1546" viewBox="0 0 1546 1546">
+  <defs>
+    <filter id="figma-layer-blur" x="0" y="0" width="1546" height="1546" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="249"/>
+    </filter>
+  </defs>
+  <ellipse cx="773" cy="773" rx="275" ry="275" fill="#8a68ea" fill-opacity="0.740000009536743" filter="url(#figma-layer-blur)"/>
+</svg>

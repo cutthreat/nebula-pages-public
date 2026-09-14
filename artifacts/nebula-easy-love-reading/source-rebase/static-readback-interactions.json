@@ -1,0 +1,51 @@
+{
+  "ctaTarget": "signup-step-1.html",
+  "menuOpen": {
+    "expanded": "true",
+    "show": true
+  },
+  "menuClosed": {
+    "expanded": "false",
+    "show": false
+  },
+  "faqSingle": {
+    "hidden": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "open": [
+      1
+    ]
+  },
+  "seoSingleAndTeaser": {
+    "closed": [
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      }
+    ],
+    "open": [
+      2
+    ]
+  },
+  "consoleErrors": []
+}

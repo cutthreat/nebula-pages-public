@@ -1,0 +1,317 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-blog-input.html",
+  "captureMethod": "fresh_playwright_context_per_width",
+  "widths": [
+    {
+      "width": 1200,
+      "httpStatus": 200,
+      "toc": [
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-gaining-clarity-and-direction",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-identifying-strengths-and-weaknesses",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-overcoming-obstacles-and-challenges-with-psychic-career-advice",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-enhancing-intuition-and-decision-making-skills",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-career-reading-for-finding-purpose-and-fulfillment",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-navigating-career-transitions",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-final-words",
+          "target": "_blank"
+        }
+      ],
+      "routes": [
+        "signup-step-1.html",
+        "blog-new.html"
+      ],
+      "routeStatuses": {
+        "signup-step-1.html": 200,
+        "blog-new.html": 200
+      },
+      "theme": {
+        "themeFocused": true,
+        "themeBefore": false,
+        "themeAfter": true
+      },
+      "menu": {
+        "applicable": false
+      },
+      "cta": {
+        "ctaFocused": true,
+        "route": "http://127.0.0.1:8765/_unzipped/signup-step-1.html",
+        "status": "complete",
+        "formPresent": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 992,
+      "httpStatus": 200,
+      "toc": [
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-gaining-clarity-and-direction",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-identifying-strengths-and-weaknesses",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-overcoming-obstacles-and-challenges-with-psychic-career-advice",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-enhancing-intuition-and-decision-making-skills",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-career-reading-for-finding-purpose-and-fulfillment",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-navigating-career-transitions",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-final-words",
+          "target": "_blank"
+        }
+      ],
+      "routes": [
+        "signup-step-1.html",
+        "blog-new.html"
+      ],
+      "routeStatuses": {
+        "signup-step-1.html": 200,
+        "blog-new.html": 200
+      },
+      "theme": {
+        "themeFocused": true,
+        "themeBefore": false,
+        "themeAfter": true
+      },
+      "menu": {
+        "applicable": true,
+        "opened": true,
+        "expanded": "true",
+        "closed": true,
+        "openerFocused": true
+      },
+      "cta": {
+        "ctaFocused": true,
+        "route": "http://127.0.0.1:8765/_unzipped/signup-step-1.html",
+        "status": "complete",
+        "formPresent": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 768,
+      "httpStatus": 200,
+      "toc": [
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-gaining-clarity-and-direction",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-identifying-strengths-and-weaknesses",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-overcoming-obstacles-and-challenges-with-psychic-career-advice",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-enhancing-intuition-and-decision-making-skills",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-career-reading-for-finding-purpose-and-fulfillment",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-navigating-career-transitions",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-final-words",
+          "target": "_blank"
+        }
+      ],
+      "routes": [
+        "signup-step-1.html",
+        "blog-new.html"
+      ],
+      "routeStatuses": {
+        "signup-step-1.html": 200,
+        "blog-new.html": 200
+      },
+      "theme": {
+        "themeFocused": true,
+        "themeBefore": false,
+        "themeAfter": true
+      },
+      "menu": {
+        "applicable": true,
+        "opened": true,
+        "expanded": "true",
+        "closed": true,
+        "openerFocused": true
+      },
+      "cta": {
+        "ctaFocused": true,
+        "route": "http://127.0.0.1:8765/_unzipped/signup-step-1.html",
+        "status": "complete",
+        "formPresent": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 576,
+      "httpStatus": 200,
+      "toc": [
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-gaining-clarity-and-direction",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-identifying-strengths-and-weaknesses",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-overcoming-obstacles-and-challenges-with-psychic-career-advice",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-enhancing-intuition-and-decision-making-skills",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-career-reading-for-finding-purpose-and-fulfillment",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-navigating-career-transitions",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-final-words",
+          "target": "_blank"
+        }
+      ],
+      "routes": [
+        "signup-step-1.html",
+        "blog-new.html"
+      ],
+      "routeStatuses": {
+        "signup-step-1.html": 200,
+        "blog-new.html": 200
+      },
+      "theme": {
+        "themeFocused": false,
+        "themeBefore": false,
+        "themeAfter": false
+      },
+      "menu": {
+        "applicable": true,
+        "opened": true,
+        "expanded": "true",
+        "closed": true,
+        "openerFocused": true
+      },
+      "cta": {
+        "ctaFocused": true,
+        "route": "http://127.0.0.1:8765/_unzipped/signup-step-1.html",
+        "status": "complete",
+        "formPresent": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 320,
+      "httpStatus": 200,
+      "toc": [
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-gaining-clarity-and-direction",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-identifying-strengths-and-weaknesses",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-overcoming-obstacles-and-challenges-with-psychic-career-advice",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-enhancing-intuition-and-decision-making-skills",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-career-reading-for-finding-purpose-and-fulfillment",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-navigating-career-transitions",
+          "target": "_blank"
+        },
+        {
+          "href": "https://www.asknebula.com/blog/how-psychic-reading-can-help-your-career#user-content-final-words",
+          "target": "_blank"
+        }
+      ],
+      "routes": [
+        "signup-step-1.html",
+        "blog-new.html"
+      ],
+      "routeStatuses": {
+        "signup-step-1.html": 200,
+        "blog-new.html": 200
+      },
+      "theme": {
+        "themeFocused": false,
+        "themeBefore": false,
+        "themeAfter": false
+      },
+      "menu": {
+        "applicable": true,
+        "opened": true,
+        "expanded": "true",
+        "closed": true,
+        "openerFocused": true
+      },
+      "cta": {
+        "ctaFocused": true,
+        "route": "http://127.0.0.1:8765/_unzipped/signup-step-1.html",
+        "status": "complete",
+        "formPresent": true
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    }
+  ]
+}

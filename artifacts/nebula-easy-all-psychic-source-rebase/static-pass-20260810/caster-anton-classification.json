@@ -1,0 +1,58 @@
+{
+  "unit": "landing_public/all-psychic-source-rebase",
+  "evidence_ceiling": "expert_proxy_only; isolated static preview, not canonical-host or end-user validation",
+  "caster": {
+    "page_type": "public advisor-catalog landing",
+    "primary_task": "find a psychic and enter the signup/chat journey",
+    "main_cta": "signup-step-1.html",
+    "figma_evidence": {
+      "file": "ayfBFNukkQC05XmCVsJB6f",
+      "root": "924:16998 ALL PSYCHIC NEW 1200+",
+      "critical_subtrees": [
+        "924:16999 01-BOX -> .apn-hero / .apn-hero-cluster / .apn-search-card",
+        "926:20877 03-BEST -> .apn-love and .apn-online",
+        "924:17017 03-psychic cards -> .apn-neuro-catalog",
+        "924:17079 09-Situation -> .apn-affordable",
+        "924:17102 01-ANSWER -> .apn-faq",
+        "924:17145 SEO CONTENT -> .apn-answer-section",
+        "924:17183 FOOTER -> .site-footer"
+      ]
+    },
+    "cold_pass": "Category, search offer and the first browseable advisor cards read immediately. The hero media supports the category instead of replacing it; on compact widths the composition remains one-column but preserves the same action order.",
+    "visible_findings": [
+      "No human-visible source mismatch found in hero, card grids, affordable-device media, FAQ/PLUS states, SEO stack or footer after scroll-primed captures.",
+      "Source/live total heights differ by 50px at 992, -17px at 576 and -54px at 320. Full-page pairs show no visible section-order, clipping, overflow or card/media omission; classify as nonblocking capture/rhythm tolerance, not a repair target."
+    ],
+    "typographic_verdict": "pass: live text stays selectable and wrapping survives all five source widths.",
+    "ux_verdict": "pass for the isolated surface: menu opens/closes on compact widths, FAQ uses native details state, and signup destination is a local HTTP 200 route.",
+    "marketing_verdict": "source fidelity only; conversion, attribution and audience evidence are unavailable and not claimed.",
+    "bad_decision_codes": [],
+    "copy_as_ui_verdict": "no newly introduced copy-as-UI or annotation leakage",
+    "implementation_risk": "Do not promote this result to a shared component or canonical host from static proof; retain the page-owned candidate boundary.",
+    "verdict": "pass_static_visual_candidate_with_nonblocking_tolerance"
+  },
+  "anton": {
+    "result": "conditional",
+    "facts": [
+      "5/5 local runtime captures return HTTP 200, no horizontal overflow, visible broken assets, console errors or request failures.",
+      "Menu state works at 992/768/576/320; desktop state has no hamburger by design. FAQ opens and closes. Signup href resolves locally with HTTP 200."
+    ],
+    "defects": [],
+    "severity": "no P0-P2 surface defect",
+    "scorecard": {
+      "clarity": 8,
+      "trust": 7,
+      "navigation": 8,
+      "form_integrity": "not_applicable_no_form_in_scope",
+      "visual_hierarchy": 8,
+      "copy_quality": 7,
+      "operator_readiness": "not_applicable_public_landing"
+    },
+    "residual_risks": [
+      "Canonical host mount, authentication and downstream signup semantics were explicitly out of scope and are not certified.",
+      "The source file is registered Figma authority ayfBFNukkQC05XmCVsJB6f, not C76 authority; donor/heritage/promotion remain false."
+    ],
+    "release_decision": "conditional_isolated_static_candidate_only"
+  },
+  "next_action": "No CSS repair. Keep the isolated candidate as a static visual/runtime proof; canonical-host or Yii2 work requires a separate explicit unit."
+}

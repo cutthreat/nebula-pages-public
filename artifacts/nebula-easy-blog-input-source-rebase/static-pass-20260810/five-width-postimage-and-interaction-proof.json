@@ -1,0 +1,61 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-blog-input.html",
+  "widths": {
+    "1200": {
+      "http": 200,
+      "scrollWidth": 1200,
+      "clientWidth": 1200,
+      "height": 6667,
+      "broken": [],
+      "errors": []
+    },
+    "992": {
+      "http": 200,
+      "scrollWidth": 992,
+      "clientWidth": 992,
+      "height": 7117,
+      "broken": [],
+      "errors": []
+    },
+    "768": {
+      "http": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "height": 6548,
+      "broken": [],
+      "errors": []
+    },
+    "576": {
+      "http": 200,
+      "scrollWidth": 576,
+      "clientWidth": 576,
+      "height": 6624,
+      "broken": [],
+      "errors": []
+    },
+    "320": {
+      "http": 200,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "height": 9886,
+      "broken": [],
+      "errors": []
+    }
+  },
+  "interactions": {
+    "menu": {
+      "before": "navbar-collapse collapse navbar-nav-scroll",
+      "opened": "navbar-collapse navbar-nav-scroll collapse show",
+      "closed": "navbar-collapse navbar-nav-scroll collapse",
+      "pass": true
+    },
+    "header_cta": {
+      "href": "signup-step-1.html",
+      "pass": true
+    },
+    "article_cta": {
+      "href": "signup-step-1.html",
+      "pass": true
+    }
+  }
+}

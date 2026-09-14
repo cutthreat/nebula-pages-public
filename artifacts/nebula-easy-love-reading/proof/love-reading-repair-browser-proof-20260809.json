@@ -1,0 +1,84 @@
+{
+  "protocol": "oracle_nebula_light.v1",
+  "unit": "landing_public/love-reading",
+  "captured_at": "2026-08-09",
+  "repair_batch": "second_and_final_source_backed_batch: hide inline sprite, restore source SEO accordion/card structure and copy, keep CTA mask asset",
+  "route": "http://127.0.0.1:8765/nebula-easy-love-reading.html",
+  "source_refs": [
+    "compare-board-sources/love-reading-c76-1200.png",
+    "compare-board-sources/love-reading-c76-992.png",
+    "compare-board-sources/love-reading-c76-768.png",
+    "compare-board-sources/love-reading-c76-576.png",
+    "compare-board-sources/love-reading-c76-320.png"
+  ],
+  "widths": {
+    "1200": {"innerWidth": 1200, "scrollWidth": 1181, "bodyScrollWidth": 1181, "gridColumns": "343.75px 343.75px 343.75px", "faqClosedHeight": 90, "faqOpenHeight": 178, "faqIcon": 68, "openCount": 1, "brokenImages": 0},
+    "992": {"innerWidth": 992, "scrollWidth": 973, "bodyScrollWidth": 974, "gridColumns": "295.996px 295.996px 295.996px", "faqClosedHeight": 90, "faqOpenHeight": 178, "faqIcon": 68, "openCount": 1, "brokenImages": 0},
+    "768": {"innerWidth": 767, "scrollWidth": 748, "bodyScrollWidth": 749, "gridColumns": "335px 335px", "faqClosedHeight": 66, "faqOpenHeight": 205, "faqIcon": 63, "openCount": 1, "brokenImages": 0},
+    "576": {"innerWidth": 576, "scrollWidth": 557, "bodyScrollWidth": 558, "gridColumns": "250px 250px", "faqClosedHeight": 88, "faqOpenHeight": 224, "faqIcon": 63, "openCount": 1, "brokenImages": 0},
+    "320": {"innerWidth": 320, "scrollWidth": 301, "bodyScrollWidth": 305, "gridColumns": "140px 140px", "faqFirstHeight": 138, "faqOpenHeight": 332, "faqIcon": 48, "openCount": 1, "brokenImages": 0}
+  },
+  "post_repair_static_readback": {
+    "route_http": 200,
+    "node_check": "pass",
+    "asset_refs": 25,
+    "missing_assets": 0,
+    "inline_sprite_layout_box": "0x0 via .easy-svg-sprite",
+    "seo_source_copy": "pass",
+    "faq_items": 5,
+    "seo_accordion_items": 5,
+    "cta_asset_mask": "nebula-easy-chat-bubble.svg",
+    "cta_placeholder_glyph": "font-size:0;color:transparent; not rendered"
+  },
+  "fresh_post_repair_visual_readback": {
+    "reviewer": "Sol/high",
+    "status": "done_with_known_limits",
+    "widths": [1200, 992, 768, 576, 320],
+    "top_gap": "0px; sprite 0x0",
+    "hero_order_card_rhythm": "pass",
+    "faq_plus_cross": "pass",
+    "seo_plus_cross": "pass",
+    "cta_icon": "visible 22x21 local SVG mask",
+    "broken_assets": 0,
+    "console_errors": 0,
+    "meaningful_overflow": false,
+    "blocker": "closed SEO cards retain 210-298px height while their panels are hidden, leaving large empty fields instead of source teaser text",
+    "capture_residual": "full-page compositor duplicates tiles; independent viewport/DOM readback is valid"
+  },
+  "source_live_1200_compare": {
+    "source": "compare-board-sources/love-reading-c76-1200.png",
+    "candidate": "http://127.0.0.1:8765/nebula-easy-love-reading.html",
+    "status": "material_mismatch",
+    "source_height_px": 7607,
+    "candidate_height_px": 6446,
+    "findings": [
+      "proof/help is compressed by about 588px and reading paths by about 520px; FAQ begins about 1134px too early",
+      "header navigation, hero vertical boundary, and reading-path background differ materially",
+      "FAQ heading wraps to two lines in source but one line in candidate, with a non-source eyebrow",
+      "footer columns collapse at the left, leaving large unused area",
+      "closed SEO cards keep the 88px panel but inherited FAQ closed-body height is 0, so source teaser text is absent"
+    ],
+    "runtime_baseline": {"console_errors": 0, "broken_assets": 0},
+    "capture_note": "standard compositor whitened lower frame; independent CDP viewport frame confirmed footer and SEO findings"
+  },
+  "file_hashes_sha256": {
+    "nebula-easy-love-reading.html": "762F2F9BFB1F0823C57F9069148887BDDF183BE9383B02BFFA0B6FF579BBBB45",
+    "nebula-easy-love-reading.css": "94B2B98C1D4AF3B23F30D223F4733D5490F2AA2AAF2CF0D5DB654D4372844D3B",
+    "nebula-easy-love-reading.js": "631C70C695130CC13F904D1146B863F019BBD0C288A7159094500B7727A8504E",
+    "nebula-easy-chat-bubble.svg": "F78A28360841C620EB8B22DC196A61BAA78768166B4FB49C3980C797151E89A2"
+  },
+  "interactions": {
+    "menu_open_close": "pass; aria-expanded true/false and nav class synchronized",
+    "faq_single_open": "pass; opening item 1 produced open=[true,false,false,false,false], four panels hidden",
+    "cta_target": "pass by direct local target readback; signup-step-1.html returned Create an account — Step 1",
+    "console_errors": 0
+  },
+  "capture_note": "Fresh post-repair Sol/high viewport/DOM readback covers all five widths. Browser screenshot compositor emits a duplicated tiled surface under viewport override; no Invalid URL occurred on the literal route.",
+  "acceptance": "rejected_visual_source_fidelity",
+  "rejection": {
+    "reason": "structural_source_mismatch_after_bounded_repairs",
+    "preservation": "current isolated candidate files and this proof are retained as rejected evidence; no rollback executed",
+    "successor_unit": "landing_public/love-reading-source-rebase"
+  },
+  "yii2_status": "blocked_missing_integration_target"
+}

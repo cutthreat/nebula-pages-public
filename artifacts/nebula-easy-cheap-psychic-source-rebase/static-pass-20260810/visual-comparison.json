@@ -1,0 +1,70 @@
+{
+  "source_family": "C76",
+  "rows": [
+    {
+      "width": 1200,
+      "source_size": [
+        1200,
+        8632
+      ],
+      "candidate_size": [
+        1200,
+        8632
+      ],
+      "same_dimensions": true,
+      "mae_rgb": 13.7227
+    },
+    {
+      "width": 992,
+      "source_size": [
+        992,
+        8373
+      ],
+      "candidate_size": [
+        992,
+        8373
+      ],
+      "same_dimensions": true,
+      "mae_rgb": 27.4397
+    },
+    {
+      "width": 768,
+      "source_size": [
+        768,
+        8907
+      ],
+      "candidate_size": [
+        768,
+        8883
+      ],
+      "same_dimensions": false,
+      "mae_rgb": null
+    },
+    {
+      "width": 576,
+      "source_size": [
+        576,
+        8960
+      ],
+      "candidate_size": [
+        576,
+        8956
+      ],
+      "same_dimensions": false,
+      "mae_rgb": null
+    },
+    {
+      "width": 320,
+      "source_size": [
+        320,
+        10729
+      ],
+      "candidate_size": [
+        320,
+        10729
+      ],
+      "same_dimensions": true,
+      "mae_rgb": 27.328
+    }
+  ]
+}

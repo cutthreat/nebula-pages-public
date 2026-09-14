@@ -1102,3 +1102,18 @@
   .c76-page[data-messenger-live="true"] .c76-search:not(.is-search-open) .c76-search__field input{position:static;width:100%;height:auto;min-width:0;padding:0;border:0;opacity:1;pointer-events:auto;outline:0;background:transparent;font:inherit}
   .c76-page[data-messenger-live="true"] .c76-search:not(.is-search-open) .c76-search__field img{width:26px;height:26px;flex:0 0 26px;opacity:1}
 }
+
+/* Mobile is an application shell, not the fixed 320x673 Figma export. */
+@media (max-width:575.98px){
+  .c76-page-body{min-width:0;min-height:100vh;min-height:100dvh}
+  .c76-page{width:100%;min-height:100vh;min-height:100dvh}
+  .c76-frame{width:100%;height:100vh;height:100dvh;min-height:0}
+  .c76-header{width:calc(100% - 30px)}
+  .c76-workspace{width:100%;height:calc(100vh - 50px);height:calc(100dvh - 50px)}
+  .c76-workspace.is-list-view .c76-menu{width:100%;height:100%;grid-template-columns:minmax(0,1fr) 20px}
+  .c76-workspace.is-list-view .c76-menu-list,.c76-workspace.is-list-view .c76-search,.c76-workspace.is-list-view .c76-thread{width:100%}
+  .c76-thread-panel,.c76-page[data-messenger-live="true"] .c76-thread-panel{width:100%;height:100%!important}
+  .c76-page[data-messenger-live="true"] .c76-workspace{width:100%}
+  .c76-page[data-messenger-live="true"] .c76-menu-list{height:100%!important}
+  .c76-page .c76-saved-view{width:100%;height:100%}
+}

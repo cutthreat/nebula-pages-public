@@ -284,3 +284,15 @@
 @media (min-width:768px) and (max-width:991.98px){.c76-page[data-c76-state="notification_destination"] .c76-messages{height:93px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:228px}}
 @media (min-width:576px) and (max-width:767.98px){.c76-page[data-c76-state="notification_destination"] .c76-chat-controls{gap:10px}.c76-page[data-c76-state="notification_destination"] .c76-notify{width:115px;height:48px;padding:0 13px;gap:9px}.c76-page[data-c76-state="notification_destination"] .c76-notify b{font-size:14px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(1){display:none}.c76-page[data-c76-state="notification_destination"] .c76-messages{height:90px;padding-left:15px;padding-right:15px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:234px}}
 @media (max-width:575.98px){.c76-page[data-c76-state="notification_destination"] .c76-chat-identity>div{min-width:0;flex:1 1 0}.c76-page[data-c76-state="notification_destination"] .c76-chat-identity h1{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}.c76-page[data-c76-state="notification_destination"] .c76-chat-identity p b em{display:none}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls{gap:13px}.c76-page[data-c76-state="notification_destination"] .c76-notify{width:81px;height:32px;border-radius:8px;padding:0 9px;gap:6px}.c76-page[data-c76-state="notification_destination"] .c76-notify>img:first-child{width:14px;height:16px}.c76-page[data-c76-state="notification_destination"] .c76-notify b{font-size:12px;line-height:13px}.c76-page[data-c76-state="notification_destination"] .c76-notify__arrow{width:12px;height:8px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-actions{gap:0;padding-top:7px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(1),.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(2){display:none}.c76-page[data-c76-state="notification_destination"] .c76-messages{height:128px;padding-left:15px;padding-right:15px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:54.5px}}
+
+/* Notification destination shares the chat shell: use the available viewport. */
+@media (max-width:575.98px){
+  .c76-page-body{min-width:0;min-height:100vh;min-height:100dvh}
+  .c76-page{width:100%;min-height:100vh;min-height:100dvh}
+  .c76-frame{width:100%;height:100vh;height:100dvh;min-height:0}
+  .c76-header{width:calc(100% - 30px)}
+  .c76-workspace{width:100%;height:calc(100vh - 50px);height:calc(100dvh - 50px)}
+  .c76-workspace.is-list-view .c76-menu{width:100%;height:100%;grid-template-columns:minmax(0,1fr) 20px}
+  .c76-workspace.is-list-view .c76-menu-list,.c76-workspace.is-list-view .c76-search,.c76-workspace.is-list-view .c76-thread{width:100%}
+  .c76-thread-panel{width:100%;height:100%}
+}

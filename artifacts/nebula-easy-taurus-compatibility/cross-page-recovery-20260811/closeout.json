@@ -1,0 +1,48 @@
+{
+  "unit": "landing_public/taurus-compatibility-cross-page-recovery",
+  "status": "page_layout_ready_with_source_gate",
+  "interactiveFullFunnel": "not_ready",
+  "signupMissingBeforeAfter": {
+    "before": [
+      "img/auth-signup-step1-320-lang-chevron-figma.png",
+      "img/auth-signup-step1-320-login-arrow-figma.png",
+      "img/auth-create-google-figma.png",
+      "img/auth-create-facebook-figma.png"
+    ],
+    "owner": "signup-step-1.html",
+    "after": "All four bindings now resolve to exact local _unzipped/img Figma-backed PNG assets; target check is 7/7 images and zero errors at every width."
+  },
+  "videoSourceResult": "exact_source_missing",
+  "verification5Width": {
+    "widths": [1200, 992, 768, 576, 320],
+    "taurus": "28/28 images, zero overflow, zero console/page/request errors",
+    "signupViaCtaEnter": "7/7 images, zero console/page/request errors, form present, first control focusable, enabled submit",
+    "faq": "5/5 keyboard open with copy",
+    "navigation": "6/6 confirmed local targets",
+    "menu": "keyboard focus and Escape return pass below 1200",
+    "reducedMotion": "scroll behavior auto and video transition 0s"
+  },
+  "caster": {
+    "verdict": "pass_visual_source_parity",
+    "scope": "Fresh Taurus five-width postimages; the signup correction changes only resource paths and does not alter its composition."
+  },
+  "anton": {
+    "verdict": "conditional_source_gate",
+    "ctaTarget": "pass",
+    "actionHonesty": "pass for CTA and disabled video control; full-funnel readiness remains blocked by the sole missing exact video source."
+  },
+  "residual": [
+    "blocked_missing_exact_video_media_or_destination"
+  ],
+  "exactOwnerGate": "Provide the Taurus-approved media file or a source-proven destination/prototype binding for C76 node 636:6746. No Yii2, promotion, or deploy action is authorized before Head decision.",
+  "proofRefs": [
+    "artifacts/nebula-easy-taurus-compatibility/runtime-proof.json",
+    "artifacts/nebula-easy-taurus-compatibility/cross-page-recovery-20260811/video-source-gap.json",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-1200.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-992.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-768.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-576.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-320.png"
+  ],
+  "yii2Promotion": false
+}

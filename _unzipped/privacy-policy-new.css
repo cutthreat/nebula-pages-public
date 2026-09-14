@@ -1,0 +1,960 @@
+/*
+ * Source: Figma C76 privacy-policy frames
+ * 1200 869:8706, 992 871:9004, 768 871:9202, 576 872:7387, 320 872:7588.
+ */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("fonts/manrope/Manrope-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: block;
+    src: url("fonts/manrope/Manrope-500.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url("fonts/manrope/Manrope-600.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url("fonts/manrope/Manrope-700.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: block;
+    src: url("fonts/manrope/Manrope-800.ttf") format("truetype");
+}
+
+.privacy-policy-page {
+    --primary-color: #673EDA;
+    --secondary-color: #A585FF;
+    --accent-color: #FFC478;
+    --light-gray: #F1F1F1;
+    --text-color: #000;
+    --muted-color: #6b6b6b;
+    --radius-lg: 24px;
+    padding-top: 130px;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    /* source: Figma 869:8708 */
+    background:
+        linear-gradient(220.93deg, rgba(181, 127, 255, 0.13) 0%, rgba(255, 255, 255, 0) 45.189%) top center / 1200px 2215px no-repeat,
+        #f9faff;
+}
+
+.privacy-policy-page picture {
+    display: contents;
+}
+
+.privacy-policy {
+    padding: 0;
+}
+
+.privacy-policy > .container {
+    width: 1110px;
+    max-width: 1110px;
+    padding: 0;
+}
+
+.privacy-policy__grid {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+}
+
+.privacy-policy__aside,
+.privacy-policy__article {
+    border-radius: 30px;
+    background: #f1f1f1;
+}
+
+.privacy-policy__aside {
+    position: static;
+    flex: 0 0 350px;
+    width: 350px;
+    padding: 40px;
+}
+
+.privacy-policy__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 270px;
+}
+
+.privacy-policy__nav-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+}
+
+.privacy-policy__nav-link:hover {
+    color: #673eda;
+    text-decoration: none;
+}
+
+.privacy-policy__nav-link.is-active {
+    color: #673eda;
+    font-weight: 500;
+    background: #efeaff;
+}
+
+.privacy-policy__article {
+    display: flex;
+    flex: 0 0 730px;
+    flex-direction: column;
+    gap: 70px;
+    width: 730px;
+    max-width: none;
+    padding: 60px;
+}
+
+.privacy-policy__intro,
+.privacy-policy__body {
+    width: 100%;
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    /* source: Figma privacy-policy text nodes use Manrope Medium and tracking -0.15px at desktop */
+    font-weight: 500;
+    letter-spacing: -0.15px;
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+}
+
+/* source: Figma intro copy (872:7607 / 872:7406) remains regular; body copy is Medium */
+.privacy-policy__intro {
+    font-weight: 400;
+    line-height: 28.4px;
+}
+
+.privacy-policy__body,
+.privacy-policy__body p,
+.privacy-policy__body li,
+.privacy-policy__body a,
+.privacy-policy__body h2,
+.privacy-policy__body h3 {
+    line-height: 28.95px;
+}
+
+.privacy-policy__title {
+    margin: 0 0 40px;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    text-transform: none;
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+}
+
+.privacy-policy__body .privacy-policy__policy-title {
+    margin: 0 0 40px;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    text-transform: none;
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+}
+
+.privacy-policy__intro p,
+.privacy-policy__body p,
+.privacy-policy__body ol,
+.privacy-policy__body li {
+    margin: 0;
+}
+
+.privacy-policy__body ol {
+    padding-left: 0;
+}
+
+.privacy-policy__body ol ol {
+    padding-left: 0;
+}
+
+.privacy-policy__body h2,
+.privacy-policy__body h3 {
+    margin: 0;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.15px;
+}
+
+.privacy-policy__source-strong {
+    font-weight: 600;
+}
+
+/* source: Figma privacy-policy bullet groups (872:7588 and responsive siblings) */
+.privacy-policy__body .privacy-policy__bullet-list {
+    margin: 0 0 16px;
+    padding-left: 40px;
+    list-style: disc;
+}
+
+.privacy-policy__body .privacy-policy__bullet-list > li {
+    margin: 0;
+    padding-left: 0;
+}
+
+/* source: Figma Virginia-rights list uses the same single-level list grammar */
+.privacy-policy__body .privacy-policy__rights-list {
+    margin: 0 0 16px;
+    padding-left: 40px;
+    list-style: disc;
+}
+
+.privacy-policy__body .privacy-policy__rights-list > li {
+    margin: 0;
+    padding-left: 0;
+}
+
+/* source: Figma body text is one trim-both text box; preserve its edge metrics after semantic splitting */
+.privacy-policy__intro > p:first-of-type,
+.privacy-policy__intro > p:last-of-type,
+.privacy-policy__body > p:first-of-type,
+.privacy-policy__body > p:last-of-type {
+    text-box-edge: cap alphabetic;
+    text-box-trim: trim-both;
+}
+
+.privacy-policy__subitem {
+    padding-left: 0;
+}
+
+/* source: footer link and copyright text use a 23px Manrope Regular line with nowrap copyright */
+.privacy-policy-page .site-footer__link {
+    display: block;
+    line-height: 23px;
+}
+
+.privacy-policy-page .site-footer__col-menu li {
+    display: block;
+    line-height: 23px;
+}
+
+.privacy-policy-page .site-footer__copyright {
+    letter-spacing: -0.13px;
+    white-space: nowrap;
+}
+
+.privacy-policy-page .site-footer {
+    height: 468px;
+    min-height: 0;
+    border-radius: 40px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+    .privacy-policy-page {
+        padding-top: 120px;
+        /* source: Figma 871:9006 */
+        background:
+            linear-gradient(257.53deg, rgba(181, 127, 255, 0.13) 0%, rgba(255, 255, 255, 0) 45.189%) top center / 992px 9551px no-repeat,
+            #f9faff;
+    }
+
+    .privacy-policy > .container {
+        width: 930px;
+        max-width: 930px;
+    }
+
+    .privacy-policy__aside {
+        flex-basis: 290px;
+        width: 290px;
+        padding: 30px 20px;
+    }
+
+    .privacy-policy__nav {
+        width: 250px;
+    }
+
+    .privacy-policy__article {
+        flex-basis: 610px;
+        width: 610px;
+        padding: 40px;
+    }
+
+    .privacy-policy__intro,
+    .privacy-policy__body {
+        letter-spacing: -0.15px;
+    }
+
+    .privacy-policy__intro {
+        min-height: 596px;
+        line-height: 29px;
+    }
+
+    .privacy-policy__body,
+    .privacy-policy__body p,
+    .privacy-policy__body li,
+    .privacy-policy__body a,
+    .privacy-policy__body h2,
+    .privacy-policy__body h3 {
+        line-height: 28.855px;
+    }
+
+    .privacy-policy-page .site-footer {
+        height: 570px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199.98px) {
+    /* source: Figma 871:9004 body geometry at the 992px breakpoint */
+    .privacy-policy__body {
+        font-weight: 500;
+        letter-spacing: -0.24px;
+    }
+
+    /* source: Figma 871:9137 footer frame x=31,w=930 */
+    .privacy-policy-page .site-footer > .container {
+        width: 930px;
+        max-width: 930px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* source: Figma 871:9144 / 871:9163 footer columns */
+    .privacy-policy-page .site-footer__inner-top {
+        grid-template-columns: 142px 500px;
+        gap: 288px;
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+
+    .privacy-policy-page .site-footer__col-right {
+        display: grid;
+        grid-template-columns: 160px 140px 160px;
+        column-gap: 20px;
+        row-gap: 40px;
+        width: 500px;
+        max-width: 500px;
+        align-items: start;
+    }
+
+    .privacy-policy-page .site-footer__col-menu {
+        align-self: start;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .privacy-policy-page {
+        padding-top: 70px;
+        /* source: Figma 871:9204 */
+        background:
+            linear-gradient(233.57deg, rgba(181, 127, 255, 0.13) 0%, rgba(255, 255, 255, 0) 45.189%) top center / 768px 2215px no-repeat,
+            #f9faff;
+    }
+
+    .privacy-policy > .container {
+        width: 690px;
+        max-width: 690px;
+    }
+
+    .privacy-policy__grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .privacy-policy__aside {
+        flex: 0 0 auto;
+        width: 690px;
+        padding: 30px 20px;
+    }
+
+    .privacy-policy__nav {
+        width: 650px;
+    }
+
+    .privacy-policy__nav-link {
+        min-height: 46px;
+        padding: 8px 20px;
+        font-size: 17px;
+        letter-spacing: -0.17px;
+    }
+
+    .privacy-policy__article {
+        flex: 0 0 auto;
+        width: 690px;
+        padding: 40px;
+    }
+
+    .privacy-policy__intro,
+    .privacy-policy__body {
+        letter-spacing: -0.15px;
+    }
+
+    .privacy-policy__intro {
+        min-height: 0;
+        line-height: 28.4px;
+    }
+
+    .privacy-policy__body,
+    .privacy-policy__body p,
+    .privacy-policy__body li,
+    .privacy-policy__body a,
+    .privacy-policy__body h2,
+    .privacy-policy__body h3 {
+        line-height: 28.95px;
+    }
+
+    .privacy-policy__title {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.3px;
+    }
+
+    .privacy-policy-page .site-footer {
+        height: 700px;
+        margin-top: 50px;
+    }
+
+    .privacy-policy-page .site-footer__inner {
+        width: 690px;
+        max-width: calc(100% - 78px);
+        height: 591px;
+        margin: 45px auto 0;
+        padding: 0;
+    }
+
+    .privacy-policy-page .site-footer__inner-top {
+        display: block;
+        height: 438px;
+        padding: 0;
+    }
+
+    .privacy-policy-page .site-footer__col-left {
+        width: 100%;
+        max-width: none;
+        height: 77px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .privacy-policy-page .site-footer__appstores-links {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .privacy-policy-page .site-footer__col-right {
+        display: grid;
+        grid-template-columns: 140px 140px 160px;
+        grid-auto-rows: auto;
+        column-gap: 5px;
+        row-gap: 35px;
+        width: 450px;
+        max-width: 450px;
+        margin: 50px auto 0;
+    }
+
+    .privacy-policy-page .site-footer__col-menu {
+        width: auto;
+        max-width: none;
+        gap: 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .privacy-policy-page .site-footer__col-menu:nth-child(4) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .privacy-policy-page .site-footer__col-menu:nth-child(5) {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .privacy-policy-page .site-footer__col-menu .list-group {
+        /* source: Figma footer link rows y=0,29,58 (872:7333 / 872:7534) */
+        gap: 6px;
+    }
+
+    .privacy-policy-page .site-footer__inner-bottom {
+        width: 295px;
+        margin: 50px auto 0;
+        padding: 50px 0 0;
+        border-top: 1px solid #a7a7a7;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768.98px) {
+    /* source: Figma 871:9202 IMPORTANT INFORMATION = 610x479 */
+    .privacy-policy__intro {
+        min-height: 479px;
+    }
+
+    /* source: Figma 871:9218 HEAD SITE = 610x7968; compensate semantic edge rounding */
+    .privacy-policy__body {
+        margin-bottom: -1.63px;
+    }
+
+    /* source: Figma 871:9202 footer Frame 81 x=39,w=690 */
+    .privacy-policy-page .site-footer > .container {
+        width: 690px;
+        max-width: 690px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .privacy-policy-page .site-footer__inner {
+        width: 690px;
+        max-width: 690px;
+    }
+
+    /* source: Figma 872:7329 footer Frame 85 = 450x311 */
+    .privacy-policy-page .site-footer__col-right {
+        grid-template-columns: 150px 140px 100px;
+        column-gap: 30px;
+        row-gap: 40px;
+        width: 450px;
+        max-width: 450px;
+        align-items: start;
+    }
+
+    .privacy-policy-page .site-footer__col-menu {
+        align-self: start;
+    }
+
+    /* source: Figma 872:7361 separator spans the full Frame 81 width */
+    .privacy-policy-page .site-footer__inner-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .privacy-policy-page {
+        /* source: Figma 872:7388 */
+        background:
+            linear-gradient(263.33deg, rgba(181, 127, 255, 0.13) 0%, rgba(255, 255, 255, 0) 45.189%) top center / 576px 10485px no-repeat,
+            #f9faff;
+    }
+
+    .privacy-policy > .container {
+        width: 510px;
+        max-width: calc(100% - 66px);
+    }
+
+    .privacy-policy__aside {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .privacy-policy__nav {
+        width: 100%;
+    }
+
+    .privacy-policy__nav-link {
+        min-height: 44px;
+        padding: 7.5px 20px;
+    }
+
+    .privacy-policy__nav-link.is-active {
+        min-height: 45px;
+    }
+
+    .privacy-policy__article {
+        gap: 40px;
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .privacy-policy__intro,
+    .privacy-policy__body {
+        font-size: 14px;
+        /* source geometry: 872:7388 text wraps at regular weight on the 576 frame */
+        font-weight: 400;
+        letter-spacing: -0.14px;
+    }
+
+    .privacy-policy__intro {
+        line-height: 28.53px;
+    }
+
+    .privacy-policy__body,
+    .privacy-policy__body p,
+    .privacy-policy__body li,
+    .privacy-policy__body a,
+    .privacy-policy__body h2,
+    .privacy-policy__body h3 {
+        line-height: 29.033px;
+    }
+
+    .privacy-policy__title {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: -0.25px;
+    }
+
+    .privacy-policy__body .privacy-policy__policy-title {
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: -0.34px;
+    }
+
+    .privacy-policy__body h2,
+    .privacy-policy__body h3 {
+        font-size: 14px;
+        letter-spacing: -0.14px;
+    }
+
+    .privacy-policy-page .site-footer {
+        height: 680px;
+        margin-top: 59px;
+    }
+
+    .privacy-policy-page .site-footer__inner {
+        width: 510px;
+        max-width: calc(100% - 66px);
+    }
+
+    .privacy-policy-page .site-footer__col-right {
+        grid-template-columns: 140px 120px 140px;
+        column-gap: 10px;
+        width: 420px;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 420.98px) {
+    .privacy-policy-page .site-header {
+        height: 59px;
+        padding-top: 20px;
+    }
+
+    .privacy-policy-page .site-header__actions,
+    .privacy-policy-page .site-header__btn {
+        
+    }
+
+    .privacy-policy-page .site-header__btn {
+        gap: 4px;
+        color: #7653d9;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    .privacy-policy-page .site-header__btn .c-btn__icon {
+        
+        height: 8px;
+    }
+
+    .privacy-policy-page {
+        padding-top: 59px;
+        background:
+            linear-gradient(263.33deg, rgba(181, 127, 255, 0.13) 0%, rgba(255, 255, 255, 0) 45.189%) top center / 576px 10485px no-repeat,
+            #f9faff;
+    }
+
+    .privacy-policy > .container {
+        width: 100%;
+        max-width: none;
+        padding: 0 16px;
+    }
+
+    .privacy-policy__grid {
+        gap: 10px;
+    }
+
+    .privacy-policy__aside {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .privacy-policy__nav-link {
+        min-height: 40px;
+        height: 40px;
+        padding: 6.5px 16px;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: -0.16px;
+    }
+
+    .privacy-policy__nav-link.is-active {
+        min-height: 40px;
+    }
+
+    .privacy-policy__article {
+        gap: 40px;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .privacy-policy__intro,
+    .privacy-policy__body {
+        font-size: 14px;
+        /* source: Figma 872:7607 / 872:7610 */
+        letter-spacing: -0.14px;
+    }
+
+    /* source: Figma 872:7610 body copy uses Manrope Medium at 320px */
+    .privacy-policy__body {
+        font-weight: 500;
+        /* source: Figma 872:7608 text box edge after semantic paragraph splitting */
+        padding-bottom: 7px;
+    }
+
+    .privacy-policy__intro {
+        /* source: Figma 872:7605 IMPORTANT INFORMATION = 248x1055 */
+        min-height: 1055px;
+        line-height: 28.95px;
+    }
+
+    .privacy-policy__body,
+    .privacy-policy__body p,
+    .privacy-policy__body li,
+    .privacy-policy__body a,
+    .privacy-policy__body h2,
+    .privacy-policy__body h3,
+    .privacy-policy__source-strong {
+        line-height: 28.976px;
+    }
+
+    .privacy-policy__title {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: -0.25px;
+    }
+
+    .privacy-policy__intro a,
+    .privacy-policy__intro p,
+    .privacy-policy__body a,
+    .privacy-policy__body p,
+    .privacy-policy__body li {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .privacy-policy__body h2,
+    .privacy-policy__body h3 {
+        font-size: 14px;
+    }
+
+    /* source: Figma text box ends at the effective-date baseline; keep the semantic leaf untrimmed */
+    .privacy-policy__body > p:last-of-type {
+        text-box-edge: auto;
+        text-box-trim: none;
+    }
+
+    .privacy-policy-page .site-footer {
+        height: 1035px;
+        margin-top: 43px;
+    }
+
+    /* source: Figma 886:8999 Content x=10, h=976 within the 320x1035 footer */
+    .privacy-policy-page .site-footer > .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .privacy-policy-page .site-footer__inner {
+        width: 300px;
+        max-width: 300px;
+        height: 976px;
+        margin: 0 auto;
+        padding: 45px 0 0;
+    }
+
+    .privacy-policy-page .site-footer__inner-top {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 823px;
+        padding: 0;
+    }
+
+    .privacy-policy-page .site-footer__col-left {
+        width: 100%;
+        max-width: none;
+        height: 97px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .privacy-policy-page .site-footer__appstores-links {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .privacy-policy-page .site-footer__col-right {
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        max-width: 160px;
+        gap: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .privacy-policy-page .site-footer__col-menu,
+    .privacy-policy-page .site-footer__col-menu:last-child {
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .privacy-policy-page .site-footer__col-menu .list-group {
+        /* source: Figma 886:9033 / 886:9064: 29px link row pitch */
+        gap: 6px;
+    }
+
+    .privacy-policy-page .site-footer__inner-bottom {
+        /* source: Figma 886:9069 / 886:9070 / 886:9079 */
+        width: 300px;
+        height: 103px;
+        margin: 50px auto 0;
+        padding: 50px 0 0;
+        border-top: 1px solid #a7a7a7;
+    }
+
+    .privacy-policy-page .site-footer__copyright {
+        /* source: Figma 886:9079 uses a single 23px nowrap line */
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 576.98px) {
+    /* source: Figma 872:7388 intro frame is 450x619 at this width */
+    .privacy-policy__intro {
+        letter-spacing: -0.3px;
+        min-height: 619px;
+    }
+
+    /* source: 872:7404 preserves the full 619px intro box at 576px */
+    .privacy-policy__intro > p:first-of-type,
+    .privacy-policy__intro > p:last-of-type {
+        text-box-edge: auto;
+        text-box-trim: none;
+    }
+
+    /* source: Figma 872:7388 body height; semantic list groups retain an 8px hand-off */
+    .privacy-policy__body .privacy-policy__bullet-list {
+        margin-bottom: 8px;
+    }
+
+    /* source: Figma 872:7388 body frame is 9296px; semantic list boxes add a 2.515625px browser edge remainder */
+    .privacy-policy__body {
+        margin-bottom: -2.515625px;
+    }
+
+    /* source: Figma 872:7523 footer Frame 81 x=33,w=510 */
+    .privacy-policy-page .site-footer > .container {
+        width: 510px;
+        max-width: 510px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .privacy-policy-page .site-footer__inner {
+        width: 510px;
+        max-width: 510px;
+    }
+
+    /* source: Figma 872:7530 footer Frame 86 = 420x311 */
+    .privacy-policy-page .site-footer__col-right {
+        grid-template-columns: 150px 120px 100px;
+        column-gap: 25px;
+        row-gap: 40px;
+        width: 420px;
+        max-width: 420px;
+        align-items: start;
+    }
+
+    .privacy-policy-page .site-footer__col-menu {
+        align-self: start;
+    }
+
+    /* source: Figma 872:7562 separator spans the full Frame 81 width */
+    .privacy-policy-page .site-footer__inner-bottom {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* source: Figma 869:8706 IMPORTANT INFORMATION = 610x480 */
+    .privacy-policy__intro {
+        min-height: 480px;
+    }
+
+    /* source: Figma 869:8722 HEAD SITE = 610x7968; compensate semantic edge rounding */
+    .privacy-policy__body {
+        margin-bottom: -1.63px;
+    }
+
+    /* source: Figma 871:8868 footer logo/copyright frame is 363px wide */
+    .privacy-policy-page .site-footer__copyright {
+        width: 363px;
+    }
+
+    /* source: Figma 871:8828 footer is separated from the content by 48px */
+    .privacy-policy-page .site-footer {
+        height: 420px;
+        margin-top: 48px;
+    }
+
+    /* source: Figma 871:8831 / 871:8837 footer content uses a 142px icon rail and 860px menu rail */
+    .privacy-policy-page .site-footer__inner-top {
+        grid-template-columns: 142px 860px;
+        gap: 108px;
+        align-items: start;
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    /* source: Figma 871:8837 menu columns x=0,180,340,520,700 */
+    .privacy-policy-page .site-footer__col-right {
+        display: grid;
+        grid-template-columns: 160px 140px 160px 160px 160px;
+        column-gap: 20px;
+        row-gap: 40px;
+        width: 860px;
+        max-width: 860px;
+        align-items: start;
+    }
+
+    .privacy-policy-page .site-footer__col-menu {
+        align-self: start;
+        width: auto;
+        max-width: none;
+    }
+}

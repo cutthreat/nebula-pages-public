@@ -1,0 +1,58 @@
+/* source: C76 BLOG INPUT 1200 node 643:7448 and responsive companion frames */
+.blog-input-page .article-copy__secondary > .article-copy__headline-lg {
+  text-align: center;
+}
+
+/* C76 post-banner Frame 337 map: preserve each source frame's 318/300px shell
+   while binding its source-owned top rhythm and following content gap. */
+@media (min-width: 1200px) {
+  .blog-input-page .article-banner-shell {
+    padding-top: 41px;
+    padding-bottom: 77px;
+    margin-bottom: 40px;
+  }
+
+  /* Figma 1006:23062 is a 90px final text frame at 1200: no empty source line. */
+  .blog-input-page .article-copy__secondary > p:last-child br {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .blog-input-page .article-banner-shell {
+    padding-top: 71px;
+    padding-bottom: 47px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog-input-page .article-banner-shell {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .blog-input-page .article-banner-shell {
+    margin-top: 14px;
+  }
+}
+
+.blog-input-page .article-detail__toc a:focus-visible,
+.blog-input-page .article-banner__button:focus-visible,
+.blog-input-page .article-related__cta-link:focus-visible {
+  outline: 3px solid #673eda;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-input-page *,
+  .blog-input-page *::before,
+  .blog-input-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

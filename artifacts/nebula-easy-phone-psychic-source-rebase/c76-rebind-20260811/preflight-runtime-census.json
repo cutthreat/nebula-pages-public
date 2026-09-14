@@ -1,0 +1,356 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-phone-psychic.html",
+  "captureMethod": "fresh-context-per-width",
+  "results": [
+    {
+      "width": 1200,
+      "http": 200,
+      "snapshot": {
+        "scrollWidth": 1200,
+        "clientWidth": 1200,
+        "scrollHeight": 8552,
+        "duplicateIds": [],
+        "brokenImages": [],
+        "sourceOwners": {
+          "hero": {
+            "x": 0,
+            "y": 0,
+            "width": 1200,
+            "height": 855,
+            "visible": true
+          },
+          "experts": {
+            "x": 0,
+            "y": 855,
+            "width": 1200,
+            "height": 1451,
+            "visible": true
+          },
+          "reviews": {
+            "x": 0,
+            "y": 2306,
+            "width": 1200,
+            "height": 1385,
+            "visible": true
+          },
+          "faq": {
+            "x": 0,
+            "y": 5481,
+            "width": 1200,
+            "height": 1240,
+            "visible": true
+          },
+          "seo": {
+            "x": 0,
+            "y": 6721,
+            "width": 1200,
+            "height": 1411,
+            "visible": true
+          },
+          "footer": {
+            "x": 0,
+            "y": 8132,
+            "width": 1200,
+            "height": 420,
+            "visible": true
+          }
+        },
+        "faq": {
+          "count": 8,
+          "open": [
+            3
+          ]
+        },
+        "seo": {
+          "count": 5,
+          "open": [
+            1
+          ]
+        },
+        "reviewNav": []
+      },
+      "consoleErrors": [],
+      "requestErrors": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "snapshot": {
+        "scrollWidth": 992,
+        "clientWidth": 992,
+        "scrollHeight": 8223,
+        "duplicateIds": [],
+        "brokenImages": [],
+        "sourceOwners": {
+          "hero": {
+            "x": 0,
+            "y": 0,
+            "width": 992,
+            "height": 750,
+            "visible": true
+          },
+          "experts": {
+            "x": 0,
+            "y": 700,
+            "width": 992,
+            "height": 1242,
+            "visible": true
+          },
+          "reviews": {
+            "x": 0,
+            "y": 1942,
+            "width": 992,
+            "height": 1400,
+            "visible": true
+          },
+          "faq": {
+            "x": 0,
+            "y": 5072,
+            "width": 992,
+            "height": 1210,
+            "visible": true
+          },
+          "seo": {
+            "x": 0,
+            "y": 6282,
+            "width": 992,
+            "height": 1371,
+            "visible": true
+          },
+          "footer": {
+            "x": 0,
+            "y": 7653,
+            "width": 992,
+            "height": 570,
+            "visible": true
+          }
+        },
+        "faq": {
+          "count": 8,
+          "open": [
+            3
+          ]
+        },
+        "seo": {
+          "count": 5,
+          "open": [
+            1
+          ]
+        },
+        "reviewNav": []
+      },
+      "consoleErrors": [],
+      "requestErrors": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "snapshot": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 8649,
+        "duplicateIds": [],
+        "brokenImages": [],
+        "sourceOwners": {
+          "hero": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 700,
+            "visible": true
+          },
+          "experts": {
+            "x": 0,
+            "y": 610,
+            "width": 768,
+            "height": 1732,
+            "visible": true
+          },
+          "reviews": {
+            "x": 0,
+            "y": 2342,
+            "width": 768,
+            "height": 1420,
+            "visible": true
+          },
+          "faq": {
+            "x": 0,
+            "y": 5564,
+            "width": 768,
+            "height": 1050,
+            "visible": true
+          },
+          "seo": {
+            "x": 0,
+            "y": 6614,
+            "width": 768,
+            "height": 1311,
+            "visible": true
+          },
+          "footer": {
+            "x": 0,
+            "y": 7925,
+            "width": 768,
+            "height": 724,
+            "visible": true
+          }
+        },
+        "faq": {
+          "count": 8,
+          "open": [
+            3
+          ]
+        },
+        "seo": {
+          "count": 5,
+          "open": [
+            1
+          ]
+        },
+        "reviewNav": []
+      },
+      "consoleErrors": [],
+      "requestErrors": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "snapshot": {
+        "scrollWidth": 576,
+        "clientWidth": 576,
+        "scrollHeight": 8946,
+        "duplicateIds": [],
+        "brokenImages": [],
+        "sourceOwners": {
+          "hero": {
+            "x": 0,
+            "y": 0,
+            "width": 576,
+            "height": 740,
+            "visible": true
+          },
+          "experts": {
+            "x": 0,
+            "y": 740,
+            "width": 576,
+            "height": 1550,
+            "visible": true
+          },
+          "reviews": {
+            "x": 0,
+            "y": 2290,
+            "width": 576,
+            "height": 1610,
+            "visible": true
+          },
+          "faq": {
+            "x": 0,
+            "y": 5706,
+            "width": 576,
+            "height": 1060,
+            "visible": true
+          },
+          "seo": {
+            "x": 0,
+            "y": 6766,
+            "width": 576,
+            "height": 1360,
+            "visible": true
+          },
+          "footer": {
+            "x": 0,
+            "y": 8126,
+            "width": 576,
+            "height": 680,
+            "visible": true
+          }
+        },
+        "faq": {
+          "count": 8,
+          "open": [
+            3
+          ]
+        },
+        "seo": {
+          "count": 5,
+          "open": [
+            1
+          ]
+        },
+        "reviewNav": []
+      },
+      "consoleErrors": [],
+      "requestErrors": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "snapshot": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "scrollHeight": 10554,
+        "duplicateIds": [],
+        "brokenImages": [],
+        "sourceOwners": {
+          "hero": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 800,
+            "visible": true
+          },
+          "experts": {
+            "x": 0,
+            "y": 800,
+            "width": 320,
+            "height": 1300,
+            "visible": true
+          },
+          "reviews": {
+            "x": 0,
+            "y": 2100,
+            "width": 320,
+            "height": 1830,
+            "visible": true
+          },
+          "faq": {
+            "x": 0,
+            "y": 6246,
+            "width": 320,
+            "height": 1550,
+            "visible": true
+          },
+          "seo": {
+            "x": 0,
+            "y": 7796,
+            "width": 320,
+            "height": 1693,
+            "visible": true
+          },
+          "footer": {
+            "x": 0,
+            "y": 9519,
+            "width": 320,
+            "height": 1035,
+            "visible": true
+          }
+        },
+        "faq": {
+          "count": 8,
+          "open": [
+            3
+          ]
+        },
+        "seo": {
+          "count": 5,
+          "open": [
+            1
+          ]
+        },
+        "reviewNav": []
+      },
+      "consoleErrors": [],
+      "requestErrors": []
+    }
+  ]
+}

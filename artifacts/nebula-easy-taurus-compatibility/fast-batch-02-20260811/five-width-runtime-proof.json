@@ -1,0 +1,327 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-taurus-compatibility.html",
+  "captureMethod": "fresh-playwright-context-per-width",
+  "results": [
+    {
+      "width": 1200,
+      "httpStatus": 200,
+      "before": {
+        "viewport": 1200,
+        "pageHeight": 17401,
+        "scrollWidth": 1200,
+        "overflow": false,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "consoleErrors": [],
+      "requestFailures": [],
+      "faqStates": [
+        [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "true",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "true",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "true",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "false",
+          "true"
+        ]
+      ],
+      "menuState": "desktop-source-nav",
+      "consultation": {
+        "open": true,
+        "videoHidden": true
+      },
+      "video": {
+        "open": true,
+        "consultationHidden": true
+      }
+    },
+    {
+      "width": 992,
+      "httpStatus": 200,
+      "before": {
+        "viewport": 992,
+        "pageHeight": 17766,
+        "scrollWidth": 992,
+        "overflow": false,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "requestFailures": [
+        "GET https://fonts.gstatic.com/s/manrope/v20/xn7KYHE41ni1AdIRqAuZuw1Bx9mbZk79FI3O0Ugp5H3HH7ex10yFoFRh.woff2 net::ERR_ABORTED"
+      ],
+      "faqStates": [
+        [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "true",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "true",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "true",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "false",
+          "true"
+        ]
+      ],
+      "menuState": {
+        "opened": "true",
+        "closed": "false"
+      },
+      "consultation": {
+        "open": true,
+        "videoHidden": true
+      },
+      "video": {
+        "open": true,
+        "consultationHidden": true
+      }
+    },
+    {
+      "width": 768,
+      "httpStatus": 200,
+      "before": {
+        "viewport": 768,
+        "pageHeight": 16687,
+        "scrollWidth": 768,
+        "overflow": false,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "consoleErrors": [],
+      "requestFailures": [],
+      "faqStates": [
+        [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "true",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "true",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "true",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "false",
+          "true"
+        ]
+      ],
+      "menuState": {
+        "opened": "true",
+        "closed": "false"
+      },
+      "consultation": {
+        "open": true,
+        "videoHidden": true
+      },
+      "video": {
+        "open": true,
+        "consultationHidden": true
+      }
+    },
+    {
+      "width": 576,
+      "httpStatus": 200,
+      "before": {
+        "viewport": 576,
+        "pageHeight": 16094,
+        "scrollWidth": 576,
+        "overflow": false,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "consoleErrors": [],
+      "requestFailures": [],
+      "faqStates": [
+        [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "true",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "true",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "true",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "false",
+          "true"
+        ]
+      ],
+      "menuState": {
+        "opened": "true",
+        "closed": "false"
+      },
+      "consultation": {
+        "open": true,
+        "videoHidden": true
+      },
+      "video": {
+        "open": true,
+        "consultationHidden": true
+      }
+    },
+    {
+      "width": 320,
+      "httpStatus": 200,
+      "before": {
+        "viewport": 320,
+        "pageHeight": 22731,
+        "scrollWidth": 320,
+        "overflow": false,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "consoleErrors": [],
+      "requestFailures": [],
+      "faqStates": [
+        [
+          "true",
+          "false",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "true",
+          "false",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "true",
+          "false",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "true",
+          "false"
+        ],
+        [
+          "false",
+          "false",
+          "false",
+          "false",
+          "true"
+        ]
+      ],
+      "menuState": {
+        "opened": "true",
+        "closed": "false"
+      },
+      "consultation": {
+        "open": true,
+        "videoHidden": true
+      },
+      "video": {
+        "open": true,
+        "consultationHidden": true
+      }
+    }
+  ],
+  "hashes": {
+    "nebula-easy-taurus-compatibility.html": "6A37A1CF3E3F927C85ACEDC69F09BBF445A29BBC26387EB7DA5D26DEFAD323F6",
+    "nebula-easy-taurus-compatibility.css": "735D12A3E20C037EFAE24414082919B75EFC9FE0A30374C2CD6BB5392D1565B6",
+    "nebula-easy-taurus-compatibility.js": "A9481C89B51A66043DD4C2057D69863449CDD83AEE75BA795FFF57E909B9EE73"
+  }
+}

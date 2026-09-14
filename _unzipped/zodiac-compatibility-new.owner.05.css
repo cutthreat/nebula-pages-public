@@ -1,0 +1,418 @@
+@media (min-width:768px) and (max-width:991.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title{
+        max-width:690px;
+        font-size:46px;
+        line-height:60px;
+        font-weight:500;
+        letter-spacing:0;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        width:690px;
+        margin:0 auto 42px;
+      }
+    }
+@media (min-width:576px) and (max-width:767.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title{
+        max-width:510px;
+        font-size:38px;
+        line-height:50px;
+        font-weight:500;
+        letter-spacing:0;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        width:510px;
+        margin:0 auto 38px;
+      }
+    }
+@media (max-width:575.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title{
+        max-width:288px;
+        font-size:26px;
+        line-height:34px;
+        font-weight:500;
+        letter-spacing:0;
+        text-align:left;
+        overflow-wrap:normal;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .zcn-title:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        width:288px;
+        margin:0 auto 32px;
+        white-space:normal;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__list:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        gap:18px;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item{
+        min-height:90px;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        height:auto;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item:not(.is-open){
+        min-height:90px;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item:not(.is-open):not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){
+        height:auto;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__toggle{
+        height:auto;
+        
+        padding:20px 78px 20px 26px;
+        align-items:flex-start;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item.is-open .faq-section__toggle{
+        height:auto;
+        
+        padding:20px 78px 20px 26px;
+        align-items:flex-start;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__item.is-open .faq-section__toggle{
+        min-height:120px;
+        padding-bottom:10px;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__title{
+        font-size:18px;
+        line-height:25px;
+      }
+      .zcn-page main > section[data-oracle-section="01-answer"] .faq-section__body{
+        padding:0 26px 30px;
+        font-size:18px;
+        line-height:28px;
+      }
+    }
+.zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:not([open]) > .zcn-lower__body{
+      display:block;
+    }
+.zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower__body{
+      overflow:hidden;
+      padding-bottom:0;
+    }
+@media (min-width:1200px){
+      .zcn-page main > section[data-oracle-section="01-answer"]{height:933px;min-height:933px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"]{height:2107px;min-height:2107px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower{display:grid;width:980px;min-height:1947px;margin:80px auto 0;gap:15px;grid-auto-rows:unset;align-items:stretch;align-content:start}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details{width:980px;min-height:0;height:auto;border-radius:40px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1){height:428px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(2){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(4){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(6){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(8){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(3){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(5){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(7){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1) .zcn-lower__body{height:315px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2) .zcn-lower__body{height:69px}
+    }
+@media (min-width:992px) and (max-width:1199.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"]{height:920px;min-height:920px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"]{height:2142px;min-height:2142px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower{width:930px;margin:80px auto 0;gap:15px;min-height:1954px;grid-auto-rows:unset}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details{width:930px;min-height:0}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1){height:463px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(2){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(4){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(6){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(8){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(3){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(5){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(7){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1) .zcn-lower__body{height:350px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2) .zcn-lower__body{height:69px}
+    }
+@media (min-width:768px) and (max-width:991.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"]{height:760px;min-height:760px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"]{height:2102px;min-height:2102px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower{width:690px;margin:50px auto 0;gap:15px;min-height:1852px;grid-auto-rows:unset}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details{width:690px;min-height:0}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1){height:413px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(3){height:182px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:not(:nth-child(1)):not(:nth-child(3)){height:217px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1) .zcn-lower__body{height:300px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2) .zcn-lower__body{height:69px}
+    }
+@media (min-width:576px) and (max-width:767.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"]{height:740px;min-height:740px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"]{height:2087px;min-height:2087px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower{width:510px;margin:30px auto 0;gap:15px;min-height:1933px;grid-auto-rows:unset}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details{width:510px;min-height:0}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1){height:445px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2){height:211px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1) .zcn-lower__body{height:325px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2) .zcn-lower__body{height:70px}
+    }
+@media (max-width:575.98px){
+      .zcn-page main > section[data-oracle-section="01-answer"]{height:1050px;min-height:1050px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"]{height:2594px;min-height:2594px;padding-bottom:0;overflow:hidden}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower{width:290px;margin:26px auto 0;gap:15px;min-height:2416px;grid-auto-rows:unset}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details{width:290px;min-height:0}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1){height:610px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2){height:260px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(1) .zcn-lower__body{height:442px}
+      .zcn-page main > section[data-oracle-section="seo-content"] .zcn-lower details:nth-child(n+2) .zcn-lower__body{height:75px}
+    }
+@media (max-width:1199.98px){
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__rating::after{
+        content:"";
+        display:block;
+        width:20px;
+        height:19px;
+        flex:0 0 20px;
+        background:url("img/all-psychic-rating-star-figma.svg") center/contain no-repeat;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact::before{
+        content:"";
+        display:block;
+        width:18px;
+        height:18px;
+        flex:0 0 18px;
+        background:center/contain no-repeat;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact:first-child::before{
+        background-image:image-set(url("img/all-psychic-fact-exp.webp") type("image/webp"), url("img/all-psychic-fact-exp.png") type("image/png"));
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact:nth-child(2)::before{
+        background-image:image-set(url("img/all-psychic-fact-consult.webp") type("image/webp"), url("img/all-psychic-fact-consult.png") type("image/png"));
+      }
+    }
+@media (max-width:991.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor.apn-love-card:nth-child(n+3){
+        display:none;
+      }
+    }
+@media (max-width:1199.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor.apn-love-card{overflow:hidden}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__top{min-height:90px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__avatar{width:90px;height:90px;flex-basis:90px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__identity{min-height:90px;height:90px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__name{font-size:26px;line-height:20px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__meta{margin-top:8px;gap:6px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__rating{font-size:17px;line-height:20px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__role{font-size:13px;line-height:13px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__status{height:28px;margin-top:8px;padding:0 15px 0 12px;font-size:11px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__divider{margin:18px 0}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__info{gap:18px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact{font-size:15px;line-height:15px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__desc{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;max-height:126px;font-size:14px;line-height:21px;-webkit-line-clamp:6}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__cta{margin-top:18px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__cta .c-btn{min-height:52px;height:52px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__price{font-size:10px}
+    }
+@media (min-width:1200px){
+      .zcn-page main > section:nth-of-type(5) .container{
+        padding-left:0;
+        padding-right:0;
+        overflow-x:hidden;
+      }
+    }
+@media (max-width:575.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-expert{
+        height:auto;
+        padding-bottom:34px;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__top{
+        min-width:0;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__avatar{
+        width:50px;
+        height:50px;
+        flex:0 0 50px;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__identity{
+        flex:1 1 auto;
+        width:auto;
+        min-width:0;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__role{
+        min-width:0;
+      }
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__name{
+        min-width:0;
+      }
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-plus{
+      position:relative;
+      display:block;
+      width:18px;
+      height:18px;
+      margin:auto;
+      background:none;
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-cross{
+      position:relative;
+      display:block;
+      width:18px;
+      height:18px;
+      margin:auto;
+      background:none;
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-x{
+      position:relative;
+      display:block;
+      width:18px;
+      height:18px;
+      margin:auto;
+      background:none;
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-plus::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-plus::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-cross::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-cross::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-x::before{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-x::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      display:block;
+      width:18px;
+      height:3px;
+      border-radius:3px;
+      background:#101010;
+      
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-plus:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c)::after{
+      transform:translate(-50%,-50%) rotate(90deg);
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-cross::before{
+      transform:translate(-50%,-50%) rotate(45deg);
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-x::before{
+      transform:translate(-50%,-50%) rotate(45deg);
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-cross::after{
+      transform:translate(-50%,-50%) rotate(-45deg);
+    }
+.zcn-page main > section[data-oracle-section="01-answer"] .faq-section__icon-x::after{
+      transform:translate(-50%,-50%) rotate(-45deg);
+    }
+@media (max-width:767.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor:nth-child(n+3){display:none}
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor.apn-love-card{height:437px;padding:18px;border-radius:22px;overflow:hidden}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__top{min-height:74px;gap:8px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__avatar{width:50px;height:50px;flex-basis:50px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__identity{min-height:74px;height:74px;width:130px;flex-basis:130px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__name{font-size:22px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__name:not(#zcn-priority-a):not(#zcn-priority-b):not(#zcn-priority-c){line-height:18px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__meta{min-height:18px;margin-top:6px;gap:5px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__rating{font-size:14px;line-height:18px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__rating::after{width:14px;height:14px;flex-basis:14px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__role{font-size:11px;line-height:11px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__status{height:24px;margin-top:6px;padding:0 12px 0 10px;font-size:10px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__status::before{width:12px;height:12px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__divider{margin:14px 0}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__info{gap:14px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact{gap:8px;font-size:12px;line-height:12px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__fact::before{width:14px;height:14px;flex-basis:14px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__desc{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;max-height:120px;font-size:12px;line-height:18px;-webkit-line-clamp:6}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__cta{margin-top:14px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__cta .c-btn{min-height:50px;height:50px;font-size:15px;border-radius:10px}
+      .zcn-page main > section:nth-of-type(7) .apn-love-card__price{margin-top:12px;font-size:10px;line-height:1.1}
+    }
+@media (max-width:575.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor:nth-child(2){display:flex}
+    }
+@media (max-width:575.98px){
+      .zcn-page main > section:nth-of-type(7) .zcn-expert-grid{
+        grid-template-columns:290px;
+        width:290px;
+        gap:18px;
+        overflow:visible;
+      }
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor{
+        width:290px;
+      }
+      .zcn-page main > section:nth-of-type(7) .zcn-advisor:nth-child(n+2){
+        display:none;
+      }
+    }
+.zcn-title--sign-grid{
+      color:#6d45ea;
+    }
+.zcn-section--banner{
+      padding-top:34px;
+    }
+.zcn-section--elements{
+      background:#f5f5f5;
+    }
+.zcn-section--seo-content{
+      padding-top:0;
+    }
+
+/* source: Zodiac compatibility chart frame (Figma node 621:8434 / raster
+   chart exports for 1200/992/768/576/320). The document owns vertical
+   navigation; the chart surface may never create a second y-axis scroller.
+   Keep the x-axis policy in the breakpoint owners (mobile may pan its wide
+   table) while making the vertical contract explicit in the last owner layer.
+*/
+.zcn-page .zcn-chart-grid{
+      overflow-y:hidden;
+}
+
+/* source: Figma chart content frame 621:8434. The raster carrier is a
+   section background, not a viewport. Let its DOM fallback flow naturally so
+   the fixed 1200px export cannot turn the section container into a nested
+   vertical scroller. */
+.zcn-page main > section:nth-of-type(5) > .container{
+      overflow:visible;
+}
+@media (min-width:1200px){
+      .zcn-page main > section:nth-of-type(5) > .container{
+            height:auto;
+            min-height:1587px;
+      }
+}

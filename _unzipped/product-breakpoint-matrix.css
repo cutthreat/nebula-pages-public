@@ -1,0 +1,28 @@
+.product-breakpoint-matrix-page{--bg:#0c0819;--panel:#171129;--panel-2:#120d22;--line:rgba(255,255,255,.08);--text:#fff;--muted:rgba(255,255,255,.72);--purple:#8f6cff;--green:#41d39a;--amber:#f1b45a;box-sizing:border-box;min-height:100%;margin:0;font-family:"Manrope",system-ui,sans-serif;color:var(--text);background:radial-gradient(circle at 20% 10%, rgba(143,108,255,.14), transparent 18%),linear-gradient(180deg,#100b22 0%,#08050f 100%)}
+.product-breakpoint-matrix-page a{color:inherit}
+.product-breakpoint-matrix-page .app{max-width:1400px;margin:0 auto;padding:24px 18px 40px}
+.product-breakpoint-matrix-page .hero,.product-breakpoint-matrix-page .panel{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg, rgba(26,19,47,.94), rgba(12,9,25,.94));box-shadow:0 24px 70px rgba(6,5,17,.36)}
+.product-breakpoint-matrix-page .hero{padding:18px 20px;margin-bottom:18px}
+.product-breakpoint-matrix-page .hero h1{margin:0 0 8px;font-size:28px;line-height:1.05;letter-spacing:-.04em}
+.product-breakpoint-matrix-page .hero p{margin:0;color:var(--muted);max-width:980px;line-height:1.5}
+.product-breakpoint-matrix-page .meta,.product-breakpoint-matrix-page .checklist,.product-breakpoint-matrix-page .actions,.product-breakpoint-matrix-page .bp-list{display:flex;flex-wrap:wrap;gap:10px}
+.product-breakpoint-matrix-page .meta{margin-top:14px}
+.product-breakpoint-matrix-page .pill,.product-breakpoint-matrix-page .badge,.product-breakpoint-matrix-page .chip{display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-size:12px;line-height:1}
+.product-breakpoint-matrix-page .badge--ok{border-color:rgba(65,211,154,.24);background:rgba(65,211,154,.12);color:#dffff3}
+.product-breakpoint-matrix-page .badge--pending{border-color:rgba(241,180,90,.24);background:rgba(241,180,90,.12);color:#fff0d5}
+.product-breakpoint-matrix-page .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.product-breakpoint-matrix-page .panel{padding:16px}
+.product-breakpoint-matrix-page .panel h2{margin:0 0 8px;font-size:18px;line-height:1.15}
+.product-breakpoint-matrix-page .panel p{margin:0;color:var(--muted);line-height:1.45;font-size:13px}
+.product-breakpoint-matrix-page .family-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}
+.product-breakpoint-matrix-page .family-meta{display:grid;gap:8px}
+.product-breakpoint-matrix-page .actions{margin-top:12px}
+.product-breakpoint-matrix-page .action-link{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid rgba(143,108,255,.22);background:rgba(143,108,255,.12);text-decoration:none;font-size:13px}
+.product-breakpoint-matrix-page .bp-list{margin-top:14px}
+.product-breakpoint-matrix-page .bp-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px 14px;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+.product-breakpoint-matrix-page .bp-item strong{font-size:14px}
+.product-breakpoint-matrix-page .bp-item span{color:var(--muted);font-size:12px}
+.product-breakpoint-matrix-page .bp-col{display:grid;gap:10px}
+.product-breakpoint-matrix-page .check-panel{margin-top:16px}
+.product-breakpoint-matrix-page .checklist{margin-top:12px}
+@media (max-width:1100px){.product-breakpoint-matrix-page .grid{grid-template-columns:1fr}}

@@ -1,0 +1,476 @@
+{
+  "contract": "oracle-nebula-auth-surface-signals",
+  "version": 1,
+  "plane": {
+    "width": 1280,
+    "height": 855
+  },
+  "rules": {
+    "reference_normalization": "Resize source reference proportionally to the selected breakpoint width, then paste/crop on the common viewport canvas.",
+    "panel": "Largest connected light matte component.",
+    "purple_components": "Connected purple controls inside the light panel; catches form/button/social geometry drift.",
+    "surface_samples": "Fixed background/glow RGB sample points; catches missing radial light fields."
+  },
+  "screens": {
+    "login": {
+      "reference": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\_unzipped\\img\\login-figma-reference.png",
+      "normalization": {
+        "source_size": [
+          2560,
+          1710
+        ],
+        "normalized_size": [
+          1280,
+          855
+        ],
+        "scale": 0.5,
+        "canvas_size": [
+          1280,
+          855
+        ]
+      },
+      "signals": {
+        "panel_bbox": {
+          "x": 390,
+          "y": 77,
+          "width": 500,
+          "height": 700,
+          "area": 287838
+        },
+        "purple_components": [
+          {
+            "x": 575,
+            "y": 298,
+            "width": 61,
+            "height": 61,
+            "area": 614,
+            "kind": "icon_control"
+          },
+          {
+            "x": 645,
+            "y": 298,
+            "width": 61,
+            "height": 61,
+            "area": 611,
+            "kind": "icon_control"
+          },
+          {
+            "x": 493,
+            "y": 412,
+            "width": 295,
+            "height": 51,
+            "area": 1252,
+            "kind": "rect_control"
+          },
+          {
+            "x": 493,
+            "y": 474,
+            "width": 295,
+            "height": 51,
+            "area": 1250,
+            "kind": "rect_control"
+          },
+          {
+            "x": 492,
+            "y": 565,
+            "width": 296,
+            "height": 63,
+            "area": 18021,
+            "kind": "rect_control"
+          }
+        ],
+        "surface_samples": [
+          {
+            "id": "left_glow_upper",
+            "x": 300,
+            "y": 220,
+            "rgb": [
+              36,
+              29,
+              63
+            ]
+          },
+          {
+            "id": "left_glow_mid",
+            "x": 360,
+            "y": 390,
+            "rgb": [
+              44,
+              32,
+              72
+            ]
+          },
+          {
+            "id": "left_glow_low",
+            "x": 260,
+            "y": 330,
+            "rgb": [
+              41,
+              33,
+              69
+            ]
+          },
+          {
+            "id": "panel_texture_upper",
+            "x": 600,
+            "y": 235,
+            "rgb": [
+              212,
+              211,
+              209
+            ]
+          },
+          {
+            "id": "right_dark_field",
+            "x": 900,
+            "y": 250,
+            "rgb": [
+              43,
+              34,
+              69
+            ]
+          }
+        ]
+      },
+      "tolerances": {
+        "geometry_px": 7,
+        "surface_rgb": 28
+      }
+    },
+    "forgot": {
+      "reference": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\_unzipped\\img\\forgot-export-raster.png",
+      "normalization": {
+        "source_size": [
+          1280,
+          855
+        ],
+        "normalized_size": [
+          1280,
+          855
+        ],
+        "scale": 1.0,
+        "canvas_size": [
+          1280,
+          855
+        ]
+      },
+      "signals": {
+        "panel_bbox": {
+          "x": 390,
+          "y": 167,
+          "width": 500,
+          "height": 520,
+          "area": 218571
+        },
+        "purple_components": [
+          {
+            "x": 493,
+            "y": 395,
+            "width": 295,
+            "height": 50,
+            "area": 702,
+            "kind": "rect_control"
+          },
+          {
+            "x": 488,
+            "y": 467,
+            "width": 304,
+            "height": 70,
+            "area": 20261,
+            "kind": "rect_control"
+          }
+        ],
+        "surface_samples": [
+          {
+            "id": "left_glow_upper",
+            "x": 300,
+            "y": 220,
+            "rgb": [
+              42,
+              36,
+              67
+            ]
+          },
+          {
+            "id": "left_glow_mid",
+            "x": 360,
+            "y": 390,
+            "rgb": [
+              42,
+              32,
+              72
+            ]
+          },
+          {
+            "id": "left_glow_low",
+            "x": 260,
+            "y": 330,
+            "rgb": [
+              41,
+              32,
+              70
+            ]
+          },
+          {
+            "id": "panel_texture_upper",
+            "x": 600,
+            "y": 235,
+            "rgb": [
+              206,
+              209,
+              214
+            ]
+          },
+          {
+            "id": "right_dark_field",
+            "x": 900,
+            "y": 250,
+            "rgb": [
+              43,
+              33,
+              68
+            ]
+          }
+        ]
+      },
+      "tolerances": {
+        "geometry_px": 7,
+        "surface_rgb": 28
+      }
+    },
+    "signup-step-1": {
+      "reference": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\_unzipped\\img\\signup-step-1-figma-reference.png",
+      "normalization": {
+        "source_size": [
+          1280,
+          855
+        ],
+        "normalized_size": [
+          1280,
+          855
+        ],
+        "scale": 1.0,
+        "canvas_size": [
+          1280,
+          855
+        ]
+      },
+      "signals": {
+        "panel_bbox": {
+          "x": 390,
+          "y": 41,
+          "width": 500,
+          "height": 794,
+          "area": 325836
+        },
+        "purple_components": [
+          {
+            "x": 493,
+            "y": 277,
+            "width": 295,
+            "height": 50,
+            "area": 701,
+            "kind": "rect_control"
+          },
+          {
+            "x": 493,
+            "y": 481,
+            "width": 295,
+            "height": 60,
+            "area": 17039,
+            "kind": "rect_control"
+          },
+          {
+            "x": 585,
+            "y": 609,
+            "width": 51,
+            "height": 50,
+            "area": 446,
+            "kind": "icon_control"
+          },
+          {
+            "x": 645,
+            "y": 609,
+            "width": 51,
+            "height": 50,
+            "area": 437,
+            "kind": "icon_control"
+          }
+        ],
+        "surface_samples": [
+          {
+            "id": "left_glow_upper",
+            "x": 300,
+            "y": 220,
+            "rgb": [
+              36,
+              28,
+              63
+            ]
+          },
+          {
+            "id": "left_glow_mid",
+            "x": 360,
+            "y": 390,
+            "rgb": [
+              49,
+              37,
+              82
+            ]
+          },
+          {
+            "id": "left_glow_low",
+            "x": 260,
+            "y": 330,
+            "rgb": [
+              41,
+              32,
+              69
+            ]
+          },
+          {
+            "id": "panel_texture_upper",
+            "x": 600,
+            "y": 235,
+            "rgb": [
+              213,
+              210,
+              210
+            ]
+          },
+          {
+            "id": "right_dark_field",
+            "x": 900,
+            "y": 250,
+            "rgb": [
+              38,
+              30,
+              60
+            ]
+          }
+        ]
+      },
+      "tolerances": {
+        "geometry_px": 7,
+        "surface_rgb": 28
+      }
+    },
+    "signup-step-2": {
+      "reference": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\_unzipped\\img\\signup-step-2-figma-reference.png",
+      "normalization": {
+        "source_size": [
+          1280,
+          855
+        ],
+        "normalized_size": [
+          1280,
+          855
+        ],
+        "scale": 1.0,
+        "canvas_size": [
+          1280,
+          855
+        ]
+      },
+      "signals": {
+        "panel_bbox": {
+          "x": 390,
+          "y": 41,
+          "width": 500,
+          "height": 794,
+          "area": 326917
+        },
+        "purple_components": [
+          {
+            "x": 493,
+            "y": 277,
+            "width": 295,
+            "height": 50,
+            "area": 701,
+            "kind": "rect_control"
+          },
+          {
+            "x": 493,
+            "y": 341,
+            "width": 295,
+            "height": 50,
+            "area": 702,
+            "kind": "rect_control"
+          },
+          {
+            "x": 493,
+            "y": 405,
+            "width": 295,
+            "height": 50,
+            "area": 702,
+            "kind": "rect_control"
+          },
+          {
+            "x": 492,
+            "y": 575,
+            "width": 296,
+            "height": 63,
+            "area": 17652,
+            "kind": "rect_control"
+          }
+        ],
+        "surface_samples": [
+          {
+            "id": "left_glow_upper",
+            "x": 300,
+            "y": 220,
+            "rgb": [
+              36,
+              28,
+              63
+            ]
+          },
+          {
+            "id": "left_glow_mid",
+            "x": 360,
+            "y": 390,
+            "rgb": [
+              49,
+              37,
+              82
+            ]
+          },
+          {
+            "id": "left_glow_low",
+            "x": 260,
+            "y": 330,
+            "rgb": [
+              41,
+              32,
+              69
+            ]
+          },
+          {
+            "id": "panel_texture_upper",
+            "x": 600,
+            "y": 235,
+            "rgb": [
+              213,
+              210,
+              210
+            ]
+          },
+          {
+            "id": "right_dark_field",
+            "x": 900,
+            "y": 250,
+            "rgb": [
+              38,
+              30,
+              60
+            ]
+          }
+        ]
+      },
+      "tolerances": {
+        "geometry_px": 7,
+        "surface_rgb": 28
+      }
+    }
+  }
+}

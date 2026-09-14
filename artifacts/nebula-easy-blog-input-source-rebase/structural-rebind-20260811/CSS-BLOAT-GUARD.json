@@ -1,0 +1,58 @@
+{
+  "schema": "oracle_nebula_css_bloat_guard.v1",
+  "checked_at_utc": "2026-08-11T09:48:37.4025317Z",
+  "status": "warning",
+  "css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-blog-input.css",
+  "baseline_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\artifacts\\nebula-easy-blog-input-source-rebase\\structural-rebind-20260811\\css-bloat-baseline.json",
+  "identity": {
+    "current_page_id": "nebula-easy-blog-input",
+    "baseline_page_id": "nebula-easy-blog-input",
+    "baseline_css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-blog-input.css",
+    "baseline_css_page_id": "nebula-easy-blog-input",
+    "baseline_page_matches_current": true
+  },
+  "justification_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\artifacts\\nebula-easy-blog-input-source-rebase\\structural-rebind-20260811\\CSS-OWNER-REPLACEMENT-JUSTIFICATION.md",
+  "current": {
+    "bytes": 5303,
+    "lines": 248,
+    "selector_like_count": 47,
+    "source_comment_count": 1
+  },
+  "baseline": {
+    "bytes": 1641,
+    "lines": 58
+  },
+  "delta": {
+    "added_bytes": 3662,
+    "added_lines": 190,
+    "bytes_growth_percent": 223.1566,
+    "lines_growth_percent": 327.5862
+  },
+  "thresholds": {
+    "warning_bytes_growth_percent": 5.0,
+    "alarm_bytes_growth_percent": 10.0,
+    "stop_bytes_growth_percent": 15.0,
+    "warning_added_lines": 150,
+    "alarm_added_lines": 300,
+    "stop_added_lines": 500
+  },
+  "decision": {
+    "stop_blind_css_tuning": false,
+    "next_action": "Review CSS growth before more visual patching.",
+    "justification_present": true,
+    "justification_valid": true
+  },
+  "issue_count": 2,
+  "issues": [
+    {
+      "severity": "warn",
+      "code": "css_growth_warning",
+      "message": "CSS grew beyond warning threshold; inspect source-backed owner before further tuning."
+    },
+    {
+      "severity": "warn",
+      "code": "css_bloat_alarm_justified",
+      "message": "CSS growth crossed alarm threshold but has a justification packet."
+    }
+  ]
+}

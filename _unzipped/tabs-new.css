@@ -1,0 +1,7 @@
+.tabs-page{margin:0;font-family:"Manrope",sans-serif;background:#f3f0f8}
+.frame{width:min(380px,100vw);height:460px;margin:0 auto;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);padding:18px;box-sizing:border-box}
+.card{background:#fff;border-radius:22px;box-shadow:0 16px 36px rgba(86,57,175,.08);border:1px solid rgba(115,79,240,.12);padding:16px}
+.title{margin:0 0 8px;font-size:33px;line-height:1;color:#171717;letter-spacing:0}
+.link{display:inline-block;margin-bottom:12px;color:#6d45ea;font-size:16px;text-decoration:underline}
+.pill{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:18px;background:#f4f0ff;border:1px solid rgba(115,79,240,.12);margin-top:10px}
+.pill strong{font-size:16px;color:#171717}

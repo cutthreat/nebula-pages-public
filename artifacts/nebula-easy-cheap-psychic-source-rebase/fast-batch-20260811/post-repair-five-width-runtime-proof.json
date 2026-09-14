@@ -1,0 +1,178 @@
+{
+  "schema": "nebula_easy.cheap_psychic.post_repair_runtime.v1",
+  "url": "http://127.0.0.1:8765/nebula-easy-cheap-psychic.html",
+  "productHashes": {
+    "html": "f26a555ce2787991ceda77352743cdbdbb90001c027cb0e70f4c1bc7cc119c9f",
+    "css": "9cec05f9fbc07ce6e353b442c319699f8fa2a345358270bf7655c4c9e7ac2c3f",
+    "js": null
+  },
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "m": {
+        "cw": 1200,
+        "sw": 1200,
+        "h": 8632,
+        "broken": 0,
+        "dupes": 0,
+        "reviewRects": [
+          {
+            "x": 45,
+            "w": 350,
+            "y": 2608
+          },
+          {
+            "x": 425,
+            "w": 350,
+            "y": 2608
+          },
+          {
+            "x": 805,
+            "w": 350,
+            "y": 2608
+          }
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "ctas": 11,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "m": {
+        "cw": 992,
+        "sw": 992,
+        "h": 8373,
+        "broken": 0,
+        "dupes": 0,
+        "reviewRects": [
+          {
+            "x": 26,
+            "w": 301.328125,
+            "y": 2238.3125
+          },
+          {
+            "x": 345.328125,
+            "w": 301.328125,
+            "y": 2238.3125
+          },
+          {
+            "x": 664.65625,
+            "w": 301.34375,
+            "y": 2238.3125
+          }
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "ctas": 11,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "m": {
+        "cw": 768,
+        "sw": 768,
+        "h": 8883,
+        "broken": 0,
+        "dupes": 0,
+        "reviewRects": [
+          {
+            "x": 16,
+            "w": 210,
+            "y": 2614.3125
+          },
+          {
+            "x": 256,
+            "w": 210,
+            "y": 2614.3125
+          },
+          {
+            "x": 496,
+            "w": 210,
+            "y": 2614.3125
+          }
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "ctas": 11,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "m": {
+        "cw": 576,
+        "sw": 576,
+        "h": 8956,
+        "broken": 0,
+        "dupes": 0,
+        "reviewRects": [
+          {
+            "x": 16,
+            "w": 544,
+            "y": 2521.3125
+          },
+          {
+            "x": 16,
+            "w": 544,
+            "y": 2705.3125
+          },
+          {
+            "x": 16,
+            "w": 544,
+            "y": 2889.3125
+          }
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "ctas": 11,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "m": {
+        "cw": 320,
+        "sw": 320,
+        "h": 10729,
+        "broken": 0,
+        "dupes": 0,
+        "reviewRects": [
+          {
+            "x": 16,
+            "w": 288,
+            "y": 2405.3125
+          },
+          {
+            "x": 16,
+            "w": 288,
+            "y": 2589.3125
+          },
+          {
+            "x": 16,
+            "w": 288,
+            "y": 2773.3125
+          }
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "ctas": 11,
+      "errs": [],
+      "bad": []
+    }
+  ],
+  "status": "pass",
+  "generatedAt": "2026-08-11T15:07:30.885Z"
+}

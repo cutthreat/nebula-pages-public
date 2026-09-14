@@ -1,0 +1,51 @@
+{
+  "schema": "palm_hero_source_live_split.v1",
+  "widths": {
+    "320": {
+      "source": "source-320-hero.png",
+      "live": "live-320-hero.png",
+      "split": "split-320-hero.png",
+      "difference": "difference-320-hero.png",
+      "dimensions": "320x870",
+      "changedPixels": 22504,
+      "changedRatio": 0.080833
+    },
+    "576": {
+      "source": "source-576-hero.png",
+      "live": "live-576-hero.png",
+      "split": "split-576-hero.png",
+      "difference": "difference-576-hero.png",
+      "dimensions": "576x740",
+      "changedPixels": 43118,
+      "changedRatio": 0.101159
+    },
+    "768": {
+      "source": "source-768-hero.png",
+      "live": "live-768-hero.png",
+      "split": "split-768-hero.png",
+      "difference": "difference-768-hero.png",
+      "dimensions": "768x580",
+      "changedPixels": 82303,
+      "changedRatio": 0.184768
+    },
+    "992": {
+      "source": "source-992-hero.png",
+      "live": "live-992-hero.png",
+      "split": "split-992-hero.png",
+      "difference": "difference-992-hero.png",
+      "dimensions": "992x700",
+      "changedPixels": 107816,
+      "changedRatio": 0.155265
+    },
+    "1200": {
+      "source": "source-1200-hero.png",
+      "live": "live-1200-hero.png",
+      "split": "split-1200-hero.png",
+      "difference": "difference-1200-hero.png",
+      "dimensions": "1200x855",
+      "changedPixels": 147535,
+      "changedRatio": 0.143796
+    }
+  },
+  "verdict": "source_geometry_match"
+}

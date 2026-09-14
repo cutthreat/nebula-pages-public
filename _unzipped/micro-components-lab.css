@@ -1,0 +1,21 @@
+.micro-components-lab-page{margin:0;font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#f6f3fb 0%,#ece6f8 100%);color:#171717}
+.wrap{max-width:1180px;margin:0 auto;padding:44px 20px 60px}
+h1{margin:0 0 10px;font-size:46px;line-height:1;letter-spacing:0}
+p{margin:0 0 24px;max-width:820px;font-size:18px;line-height:1.65;color:#5b5267}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{background:#fff;border:1px solid rgba(115,79,240,.12);border-radius:18px;box-shadow:0 14px 30px rgba(86,57,175,.08);padding:18px;min-height:170px}
+.label{display:inline-flex;margin-bottom:10px;padding:6px 10px;border-radius:999px;background:rgba(115,79,240,.08);color:#6d45ea;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.title{margin:0 0 10px;font-size:20px;font-weight:700}
+.text{margin:0;color:#433b4f;font-size:14px;line-height:1.6}
+.icon-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.icon{width:32px;height:32px;border-radius:10px;background:#fff;border:1px solid rgba(115,79,240,.18);display:inline-flex;align-items:center;justify-content:center;color:#734ff0;font-weight:700;box-shadow:0 8px 18px rgba(115,79,240,.08);overflow:hidden}
+.icon img{display:block;width:100%;height:100%;object-fit:contain}
+.icon--play{width:38px;height:38px;border-radius:50%}
+.icon--play-filled{background:#734ff0;color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 14px;border-radius:12px;background:#734ff0;color:#fff;text-decoration:none;font-size:14px;font-weight:700;box-shadow:0 12px 24px rgba(115,79,240,.22)}
+.btn--light{background:#fff;color:#734ff0;border:1px solid rgba(115,79,240,.22);box-shadow:none}
+.btn--warm{background:#ffbf73;color:#6a3300}
+.pill{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 12px;border-radius:999px;border:1px solid rgba(115,79,240,.18);color:#734ff0;background:#fff;font-size:12px;font-weight:700}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:991.98px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:38px}}
+@media (max-width:767.98px){.grid{grid-template-columns:1fr}p{font-size:16px}}

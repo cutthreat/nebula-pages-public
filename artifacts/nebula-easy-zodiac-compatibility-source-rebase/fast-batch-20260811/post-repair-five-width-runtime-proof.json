@@ -1,0 +1,143 @@
+{
+  "schema": "nebula_easy.zodiac.post_repair_runtime.v1",
+  "url": "http://127.0.0.1:8765/nebula-easy-zodiac-compatibility.html",
+  "productHashes": {
+    "html": "a233660aacb88bf4193c3890e2a8687d8e3ecd2d4be638db3f26dcee909c715e",
+    "css": "1711ae7544a0ceab6ac2a0708f41f23f98c9a8601d477847e01a19766cc11bb1",
+    "js": "59b7e50862933f91f9c53e1cb344003e6aabbdb99bda2470127bf779238b271c"
+  },
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "m": {
+        "cw": 1200,
+        "sw": 1200,
+        "h": 10953,
+        "broken": 0,
+        "dupes": 0,
+        "seo": [
+          "What Is an Psychic Reading?",
+          "Psychic Readers vs Real-Life Psychics: Is There a Difference?",
+          "What to Expect From Psychic Readings?",
+          "How Can You Benefit From a Personal Psychic Reading?",
+          "What Are the Main Psychic Reading Types?",
+          "How to Ensure Your Psychic Reading is Accurate and Effective?",
+          "Why Should You Trust Neuro Psychic Readings?",
+          "Change Your Life Today with Trusted Psychic Readings by Neuro"
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "seo": true,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "m": {
+        "cw": 992,
+        "sw": 992,
+        "h": 10953,
+        "broken": 0,
+        "dupes": 0,
+        "seo": [
+          "What Is an Psychic Reading?",
+          "Psychic Readers vs Real-Life Psychics: Is There a Difference?",
+          "What to Expect From Psychic Readings?",
+          "How Can You Benefit From a Personal Psychic Reading?",
+          "What Are the Main Psychic Reading Types?",
+          "How to Ensure Your Psychic Reading is Accurate and Effective?",
+          "Why Should You Trust Neuro Psychic Readings?",
+          "Change Your Life Today with Trusted Psychic Readings by Neuro"
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "seo": true,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "m": {
+        "cw": 768,
+        "sw": 768,
+        "h": 9892,
+        "broken": 0,
+        "dupes": 0,
+        "seo": [
+          "What Is an Psychic Reading?",
+          "Psychic Readers vs Real-Life Psychics: Is There a Difference?",
+          "What to Expect From Psychic Readings?",
+          "How Can You Benefit From a Personal Psychic Reading?",
+          "What Are the Main Psychic Reading Types?",
+          "How to Ensure Your Psychic Reading is Accurate and Effective?",
+          "Why Should You Trust Neuro Psychic Readings?",
+          "Change Your Life Today with Trusted Psychic Readings by Neuro"
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "seo": true,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "m": {
+        "cw": 576,
+        "sw": 576,
+        "h": 9557,
+        "broken": 0,
+        "dupes": 0,
+        "seo": [
+          "What Is an Psychic Reading?",
+          "Psychic Readers vs Real-Life Psychics: Is There a Difference?",
+          "What to Expect From Psychic Readings?",
+          "How Can You Benefit From a Personal Psychic Reading?",
+          "What Are the Main Psychic Reading Types?",
+          "How to Ensure Your Psychic Reading is Accurate and Effective?",
+          "Why Should You Trust Neuro Psychic Readings?",
+          "Change Your Life Today with Trusted Psychic Readings by Neuro"
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "seo": true,
+      "errs": [],
+      "bad": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "m": {
+        "cw": 320,
+        "sw": 320,
+        "h": 12849,
+        "broken": 0,
+        "dupes": 0,
+        "seo": [
+          "What Is an Psychic Reading?",
+          "Psychic Readers vs Real-Life Psychics: Is There a Difference?",
+          "What to Expect From Psychic Readings?",
+          "How Can You Benefit From a Personal Psychic Reading?",
+          "What Are the Main Psychic Reading Types?",
+          "How to Ensure Your Psychic Reading is Accurate and Effective?",
+          "Why Should You Trust Neuro Psychic Readings?",
+          "Change Your Life Today with Trusted Psychic Readings by Neuro"
+        ]
+      },
+      "faq": true,
+      "menu": true,
+      "seo": true,
+      "errs": [],
+      "bad": []
+    }
+  ],
+  "status": "pass",
+  "generatedAt": "2026-08-11T15:04:57.364Z"
+}

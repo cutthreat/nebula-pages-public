@@ -1,0 +1,67 @@
+[
+  {
+    "bodyScrollWidth": 1481,
+    "brokenEager": 0,
+    "clientWidth": 1481,
+    "documentScrollWidth": 1481,
+    "expertColumns": "350px 350px 350px",
+    "experts": 6,
+    "faqThird": true,
+    "height": 7607,
+    "innerWidth": 1500,
+    "requested": 1200,
+    "seoTeasers": true
+  },
+  {
+    "bodyScrollWidth": 1221,
+    "brokenEager": 0,
+    "clientWidth": 1221,
+    "documentScrollWidth": 1221,
+    "expertColumns": "350px 350px 350px",
+    "experts": 6,
+    "faqThird": true,
+    "height": 7607,
+    "innerWidth": 1240,
+    "requested": 992,
+    "seoTeasers": true
+  },
+  {
+    "bodyScrollWidth": 941,
+    "brokenEager": 0,
+    "clientWidth": 941,
+    "documentScrollWidth": 941,
+    "expertColumns": "335px 335px",
+    "experts": 6,
+    "faqThird": true,
+    "height": 7590,
+    "innerWidth": 960,
+    "requested": 768,
+    "seoTeasers": true
+  },
+  {
+    "bodyScrollWidth": 701,
+    "brokenEager": 0,
+    "clientWidth": 701,
+    "documentScrollWidth": 701,
+    "expertColumns": "250px 250px",
+    "experts": 6,
+    "faqThird": true,
+    "height": 7657,
+    "innerWidth": 720,
+    "requested": 576,
+    "seoTeasers": true
+  },
+  {
+    "bodyScrollWidth": 381,
+    "brokenEager": 0,
+    "clientWidth": 381,
+    "documentScrollWidth": 381,
+    "expertColumns": "140px 140px",
+    "experts": 6,
+    "faqThird": true,
+    "height": 8993,
+    "innerWidth": 400,
+    "requested": 320,
+    "seoTeasers": true
+  }
+]

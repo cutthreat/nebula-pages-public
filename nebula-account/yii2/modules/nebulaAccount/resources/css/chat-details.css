@@ -4,6 +4,7 @@
 @font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-700.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
 .chat-details{font-family:"Manrope",Arial,sans-serif;color:#101010;background:#49415e}
 .chat-details,.chat-details *{box-sizing:border-box}
+.c76-expert-details-modal.chat-details{position:fixed;z-index:100;inset:0;width:100%;height:100vh;height:100dvh}
 body:has(.chat-details){margin:0;width:100%;min-width:320px;min-height:100%;background:#49415e}
 .chat-details{width:100%;height:1062px;overflow:hidden}
 .chat-details__scrim{position:relative;width:100%;height:1062px;background:#49415e;overflow:hidden}
@@ -57,11 +58,12 @@ body:has(.chat-details){margin:0;width:100%;min-width:320px;min-height:100%;back
   .expert-card__bio--compact{display:block}
 }
 
-@media(max-width:320px){
-  body:has(.chat-details){min-width:320px}
+@media(max-width:575.98px){
+  body:has(.chat-details){min-width:0}
+  .c76-expert-details-modal.chat-details,.chat-details,.chat-details__scrim{height:100vh;height:100dvh}
   .chat-details,.chat-details__scrim{height:834px}
   .expert-card--standard{display:none}
-  .expert-card--mobile{position:absolute;display:block;left:15px;top:20px;width:290px;height:600px;padding:22px;background:#fff}
+  .expert-card--mobile{position:absolute;display:block;left:15px;top:20px;width:calc(100% - 30px);max-width:390px;height:600px;padding:22px;background:#fff}
   .mobile-card__header{position:relative;height:84px;display:flex;gap:10px;align-items:flex-start}
   .mobile-card__portrait{display:block;width:80px;height:80px;border-radius:50%;object-fit:cover}
   .mobile-card__identity{min-width:0;flex:1;display:flex;flex-direction:column;gap:8px}
@@ -84,4 +86,5 @@ body:has(.chat-details){margin:0;width:100%;min-width:320px;min-height:100%;back
   .mobile-card__facts img{width:16px;height:16px;margin-right:13px}
   .mobile-card__facts b{color:#7653d9;font-weight:500}
   .mobile-card__bio{min-height:0;flex:1;margin:0;overflow:hidden;color:#101010;font-size:14px;line-height:23px}
+  .mobile-card__profile-link{position:absolute;left:22px;bottom:22px;color:#7653d9;font-size:14px;line-height:20px}
 }

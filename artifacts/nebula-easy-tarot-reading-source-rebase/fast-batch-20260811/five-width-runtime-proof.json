@@ -1,0 +1,105 @@
+{
+  "schema": "nebula_easy.fast_batch_01.runtime.v3",
+  "page": "tarot-reading",
+  "url": "http://127.0.0.1:8765/nebula-easy-tarot-reading.html",
+  "captureMethod": "fresh_browser_context_per_width; menu waits for native transition completion",
+  "generatedAt": "2026-08-11T15:01:43.239Z",
+  "productHashes": {
+    "html": "6392fbae2b82a4e8de6070b5e03ed32cd340a4996342f9d1df8d7ce7737d058c",
+    "css": "0fd97dc4995fd1e4b776cdbc0a5a9dfc3c60ad65fadac9a16a2b47d6f736bddd",
+    "js": "6c8026a4a87a32b5a1397b6348905702129bc8b19ef9000fdfab138e1b925e39"
+  },
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "initial": {
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 8542,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "not_applicable",
+      "cta": "pass",
+      "ctaCount": 10,
+      "seo": "source_static_default",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "initial": {
+        "clientWidth": 992,
+        "scrollWidth": 992,
+        "scrollHeight": 8400,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "not_applicable",
+      "cta": "pass",
+      "ctaCount": 10,
+      "seo": "source_static_default",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "initial": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 8831,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 10,
+      "seo": "source_static_default",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "initial": {
+        "clientWidth": 576,
+        "scrollWidth": 576,
+        "scrollHeight": 8649,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 10,
+      "seo": "source_static_default",
+      "consoleErrors": [],
+      "failedResponses": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "initial": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "scrollHeight": 9978,
+        "brokenImages": [],
+        "duplicateIds": []
+      },
+      "faq": "pass",
+      "menu": "pass",
+      "cta": "pass",
+      "ctaCount": 10,
+      "seo": "source_static_default",
+      "consoleErrors": [],
+      "failedResponses": []
+    }
+  ],
+  "status": "pass"
+}

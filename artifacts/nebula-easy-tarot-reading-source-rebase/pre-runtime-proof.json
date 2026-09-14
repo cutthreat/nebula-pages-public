@@ -1,0 +1,21 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-tarot-reading.html",
+  "prefix": "pre",
+  "status": "pass",
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "metrics": {
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 5771,
+        "readerCount": 6
+      },
+      "menu": "n/a",
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    }
+  ],
+  "generatedAt": "2026-08-10T06:45:49.326Z"
+}

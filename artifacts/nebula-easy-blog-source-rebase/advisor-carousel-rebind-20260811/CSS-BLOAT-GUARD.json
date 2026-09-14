@@ -1,0 +1,52 @@
+{
+  "schema": "oracle_nebula_css_bloat_guard.v1",
+  "checked_at_utc": "2026-08-11T10:57:46.4646102Z",
+  "status": "warning",
+  "css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-blog.css",
+  "baseline_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\artifacts\\nebula-easy-blog-source-rebase\\advisor-carousel-rebind-20260811\\css-bloat-baseline.json",
+  "identity": {
+    "current_page_id": "nebula-easy-blog",
+    "baseline_page_id": "nebula-easy-blog",
+    "baseline_css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-blog.css",
+    "baseline_css_page_id": "nebula-easy-blog",
+    "baseline_page_matches_current": true
+  },
+  "justification_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\artifacts\\nebula-easy-blog-source-rebase\\advisor-carousel-rebind-20260811\\CSS-OWNER-REPLACEMENT-JUSTIFICATION.md",
+  "current": {
+    "bytes": 26514,
+    "lines": 354,
+    "selector_like_count": 330,
+    "source_comment_count": 0
+  },
+  "baseline": {
+    "bytes": 25753,
+    "lines": 34
+  },
+  "delta": {
+    "added_bytes": 761,
+    "added_lines": 320,
+    "bytes_growth_percent": 2.955
+  },
+  "thresholds": {
+    "warning_bytes_growth_percent": 5.0,
+    "alarm_bytes_growth_percent": 10.0,
+    "stop_bytes_growth_percent": 15.0,
+    "warning_added_lines": 150,
+    "alarm_added_lines": 300,
+    "stop_added_lines": 500
+  },
+  "decision": {
+    "stop_blind_css_tuning": false,
+    "next_action": "Freeze the advisor owner; no additional visual patching is authorized.",
+    "justification_present": true,
+    "justification_valid": true
+  },
+  "issue_count": 1,
+  "issues": [
+    {
+      "severity": "warn",
+      "code": "mechanical_line_growth_justified",
+      "message": "Line-count alarm is caused by formatting the prior minified file; byte growth is 2.955% and the owner replacement is documented."
+    }
+  ]
+}

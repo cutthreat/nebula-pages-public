@@ -1,0 +1,70 @@
+{
+  "unit": "landing_public/taurus-compatibility-source-rebase",
+  "candidate": "nebula-easy-taurus-compatibility.html",
+  "generatedAt": "2026-08-11T08:45:00.000Z",
+  "status": "not_pass_interactive_full_funnel",
+  "visualParity": "pass",
+  "candidateRuntime": "pass",
+  "caster": {
+    "verdict": "pass_visual_source_parity",
+    "basis": [
+      "fresh post-repair 1200/992/768/576/320 screenshots",
+      "no geometry changes outside source-raster action wrappers",
+      "zero horizontal overflow and zero candidate runtime errors"
+    ]
+  },
+  "anton": {
+    "verdict": "not_pass_action_honesty",
+    "basis": [
+      "video control is honestly disabled instead of simulating playback",
+      "the exact C76 Taurus packet has no local media asset or source URL for the promised video",
+      "the confirmed consultation route opens, but its isolated target reports four missing image assets in file-preview mode"
+    ]
+  },
+  "repaired": [
+    "both source-raster consultation banners are keyboard-focusable links to signup-step-1.html",
+    "desktop and drawer navigation use existing Taurus-source bindings with local target status 200",
+    "Taurus breadcrumb and author are no longer fake links",
+    "all five FAQ answers are populated, ARIA-linked, and keyboard-verified",
+    "drawer opens with focus on close and returns focus to the opener on Escape",
+    "fake video is-active toggle is removed"
+  ],
+  "fiveWidthVerification": {
+    "widths": [1200, 992, 768, 576, 320],
+    "horizontalOverflow": 0,
+    "candidateConsolePageRequestErrors": 0,
+    "loadedImagesPerWidth": "28/28",
+    "faqKeyboardPass": "5/5 each width",
+    "navigationTargetsPass": "6/6 each width",
+    "ctaKeyboardRoute": "signup-step-1.html each width",
+    "menuKeyboardPass": "992/768/576/320",
+    "reducedMotion": "scroll-behavior:auto; video transition:0s"
+  },
+  "blockers": [
+    {
+      "id": "blocked_missing_source_video_media",
+      "scope": "exact local C76 Taurus asset packet",
+      "detail": "No mp4, webm, mov, m3u8, or source-backed media URL is present. A real video lifecycle cannot be implemented without inventing media."
+    },
+    {
+      "id": "blocked_consultation_target_assets_outside_write_set",
+      "scope": "signup-step-1.html target",
+      "detail": "Keyboard navigation reaches the confirmed local route, whose file-preview requests four absent img/auth-* image files. This page is outside the approved Taurus write set."
+    },
+    {
+      "id": "blocked_runtime_http_listener_policy",
+      "scope": "local preview harness",
+      "detail": "127.0.0.1:8765 was not listening; the one permitted Start-Process server attempt was policy-blocked before execution. Fresh proof used file:// and local route-existence checks."
+    }
+  ],
+  "promotion": false,
+  "yii2Hardening": "prohibited_until_full_funnel_pass",
+  "proofRefs": [
+    "artifacts/nebula-easy-taurus-compatibility/runtime-proof.json",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-1200.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-992.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-768.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-576.png",
+    "artifacts/nebula-easy-taurus-compatibility/screenshots/taurus-320.png"
+  ]
+}

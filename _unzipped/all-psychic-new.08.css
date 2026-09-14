@@ -1,0 +1,439 @@
+.apn-love-card__desc{max-height:153px;margin:0;color:#101010;font-size:16px;line-height:25.5px;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+      @media (min-width:993px){
+      .apn-neuro-catalog__grid .apn-love-card__desc{width:290px;max-width:290px;max-height:153px;color:#101010;-webkit-line-clamp:6}
+    }
+      @media (max-width:992px){.apn-neuro-catalog__grid .apn-love-card__desc{max-height:126px;font-size:14px;line-height:21px;-webkit-line-clamp:6}}
+      @media (max-width:768px){.apn-love-card__desc{-webkit-line-clamp:7}.apn-neuro-catalog__grid .apn-love-card__desc{max-height:126px;font-size:14px;line-height:21px;-webkit-line-clamp:6}}
+      @media (max-width:576px){.apn-neuro-catalog__grid .apn-love-card__desc{max-height:120px;font-size:12px;line-height:18px;-webkit-line-clamp:6}}
+      @media (max-width:399px){.apn-neuro-catalog__grid .apn-love-card__desc{-webkit-line-clamp:6}}
+      @media (max-width:992px) and (min-width:769px){
+      .apn-neuro-catalog__grid .apn-love-card__desc{width:290px;max-width:290px;max-height:153px;color:#101010;font-family:"Manrope",sans-serif;font-size:14px;line-height:27px;font-weight:400;letter-spacing:0;-webkit-line-clamp:6}
+      .apn-love-card__desc{max-height:126px;font-size:14px;line-height:21px;-webkit-line-clamp:6}
+    }
+      @media (max-width:768px) and (min-width:577px){
+      .apn-love-card__desc{max-height:126px;font-size:14px;line-height:21px;-webkit-line-clamp:6}
+    }
+      @media (max-width:576px) and (min-width:400px){
+      .apn-love-card__desc{max-height:120px;font-size:12px;line-height:18px;-webkit-line-clamp:6}
+    }
+      @media (max-width:399px){
+      .apn-love-card__desc{max-height:120px;font-size:12px;line-height:18px;-webkit-line-clamp:6}
+    }
+      @media (max-width:992px) and (min-width:769px){
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        width:auto;
+        max-width:none;
+      }
+    }
+      @media (max-width:768px) and (min-width:577px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        max-height:126px;
+      }
+      .apn-online-host .apn-love-card__desc{
+        max-height:126px;
+        -webkit-line-clamp:6;
+      }
+    }
+      @media (max-width:576px) and (min-width:400px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        max-height:120px;
+      }
+    }
+      @media (max-width:399px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        max-height:120px;
+      }
+    }
+      @media (min-width:1200px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        width:290px;
+        max-width:290px;
+        max-height:153px;
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        font-weight:400;
+        letter-spacing:0;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        width:290px;
+        max-width:290px;
+        max-height:153px;
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        font-weight:400;
+        letter-spacing:0;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        width:290px;
+        max-width:290px;
+        max-height:153px;
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        font-weight:400;
+        letter-spacing:0;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+    }
+      @media (max-width:992px) and (min-width:769px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        width:236px;
+        max-width:236px;
+        max-height:130px;
+        font-size:14px;
+        line-height:27px;
+      }
+    }
+      @media (max-width:768px) and (min-width:577px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        letter-spacing:0;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        letter-spacing:0;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:14px;
+        line-height:27px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+    }
+      @media (max-width:576px) and (min-width:400px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:12px;
+        line-height:22px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:12px;
+        line-height:22px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:12px;
+        line-height:22px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+    }
+      @media (max-width:399px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:12px;
+        line-height:22px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:12px;
+        line-height:22px;
+        letter-spacing:0;
+        font-weight:400;
+        display:block;
+        -webkit-line-clamp:unset;
+        -webkit-box-orient:initial;
+        overflow:hidden;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        color:#101010;
+        font-family:"Manrope",sans-serif;
+        font-size:10px;
+        line-height:14px;
+        letter-spacing:0;
+        font-weight:400;
+      }
+      .apn-neuro-catalog .apn-love-card__desc{
+        display:none;
+      }
+    }
+      @media (max-width:768px) and (min-width:577px){
+      .apn-online-host .apn-love-card__desc{
+        width:275px;
+        max-width:275px;
+        margin-top:10px;
+        font-size:14px;
+        line-height:27px;
+      }
+    }
+      @media (max-width:768px) and (min-width:577px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        transform:translateX(6px);
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        transform:translateX(6px);
+      }
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        transform:translate(6px,1px);
+      }
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        color:#101010;
+        font-weight:400;
+        opacity:1;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        color:#101010;
+        font-weight:400;
+        opacity:1;
+      }
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        color:#101010;
+        font-weight:400;
+        opacity:1;
+      }
+    }
+      @media (max-width:576px) and (min-width:400px){
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        height:130px;
+        max-height:130px;
+      }
+    }
+      @media (min-width:993px){
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        line-height:26px;
+      }
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        font-size:14px;
+        line-height:27px;
+        font-weight:400;
+        letter-spacing:0;
+        transform:translateY(-8px);
+      }
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        font-size:14px;
+        line-height:27px;
+        font-weight:400;
+        letter-spacing:0;
+        transform:translateY(-8px);
+      }
+    }
+      @media (min-width:400px) and (max-width:576px){
+      .prn-plain-section.apn-love-host .apn-love-card__desc{
+        font-weight:400;
+        opacity:.92;
+      }
+      .prn-plain-section.apn-online-host .apn-love-card__desc{
+        font-weight:400;
+        opacity:.92;
+      }
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        font-weight:400;
+        opacity:.92;
+      }
+    }
+      @media (max-width:399px){
+      .prn-body .apn-online-host .apn-love-card__desc{
+        width:100%;
+        max-width:100%;
+        margin:0;
+        line-height:18px;
+        transform:none;
+      }
+      .prn-body .apn-neuro-catalog__grid .apn-love-card__desc{
+        line-height:18px;
+      }
+    }
+      @media (max-width:399px){
+      .apn-neuro-catalog__grid .apn-love-card__desc{
+        width:auto;
+        max-width:none;
+        max-height:105px;
+        font-size:10px;
+        line-height:14px;
+      }
+    }
+      @media (max-width:399px) {
+      .prn-body .prn-plain-section.apn-love-host .apn-love-card__desc {
+        max-height:125px;
+        -webkit-line-clamp:5;
+        overflow:hidden;
+        transform:translateY(-24px);
+      }
+      .prn-body .prn-plain-section.apn-online-host .apn-love-card__desc {
+        max-height:125px;
+        -webkit-line-clamp:5;
+        overflow:hidden;
+      }
+      .prn-body .prn-plain-section.apn-neuro-catalog .apn-love-card__desc {
+        max-height:125px;
+        -webkit-line-clamp:5;
+        overflow:hidden;
+        transform:translateY(-24px);
+      }
+    }
+      @media (width: 992px) {
+
+      .prn-body .apn-online-host .apn-love-card__desc {
+        width: 236px;
+        max-width: 236px;
+        height: 130px;
+        max-height: 130px;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transform: none;
+      }
+
+      .prn-body .apn-neuro-catalog__grid .apn-love-card__desc {
+        width: 236px;
+        max-width: 236px;
+        height: 130px;
+        max-height: 130px;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transform: none;
+      }
+    }
+      @media (min-width:577px) and (max-width:768px){
+      .prn-body .prn-plain-section .apn-love-card--chat[data-heritage-component="expert-card.v1"] .apn-love-card__desc{
+        width:275px;
+        max-width:275px;
+        max-height:135px;
+        font-size:14px;
+        line-height:27px;
+        -webkit-line-clamp:5;
+        overflow:hidden;
+        transform:none;
+      }
+    }
+      @media (max-width:399px){
+      .prn-body .prn-plain-section.apn-online-host .apn-love-card__desc{
+        width:auto;
+        max-width:none;
+        margin:0;
+        transform:none;
+      }
+      .prn-body .apn-neuro-catalog__grid .apn-love-card__desc{
+        width:auto;
+        max-width:none;
+        margin:0;
+        transform:none;
+      }
+    }
+      @media (min-width:769px) and (max-width:992px){
+      .prn-body .prn-plain-section.apn-love-host .apn-love-card__desc{
+        width:100%;
+        max-width:100%;
+        margin:0;
+        line-height:18px;
+        transform:none;
+      }
+      .prn-body .prn-plain-section.apn-online-host .apn-love-card__desc{
+        width:100%;
+        max-width:100%;
+        margin:0;
+        line-height:18px;
+        transform:none;
+      }
+      .prn-body .apn-neuro-catalog__grid .apn-love-card__desc{
+        width:100%;
+        margin:0;
+        line-height:18px;
+        transform:none;
+      }
+    }

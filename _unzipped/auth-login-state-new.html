@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in - Neuro</title>
+  <link rel="stylesheet" href="auth-fonts.css" />
+  <link rel="stylesheet" href="auth-login.css?v=20260506-figma-bbox-1200" />
+  <link rel="stylesheet" href="auth-form-states.css" />
+  <script src="auth-forms.js" defer></script>
+</head>
+<body class="auth-login-page">
+  <main class="login-stage" aria-label="Log in" data-figma-id="366:1100" data-nebula-alias-source="login.html">
+    <div class="login-frame">
+      <picture><source srcset="img/auth-login-1280-bg-root-figma.webp" type="image/webp"><img class="login-frame-bg" src="img/auth-login-1280-bg-root-figma.png" alt="" aria-hidden="true" /></picture>
+      <div class="login-menu" aria-label="Top navigation">
+        <button class="login-burger" type="button" tabindex="-1" aria-hidden="true"></button>
+        <a class="login-brand" href="home.html" aria-label="Home">
+          <picture><source srcset="img/login-brand-figma.webp" type="image/webp"><img src="img/login-brand-figma.png" alt="NEURO" /></picture>
+        </a>
+        <div class="login-menu-right">
+          <span class="login-lang">Eng</span>
+          <a class="login-signup" href="signup-step-1.html">Sign up</a>
+          <button class="login-toggle" type="button" tabindex="-1" aria-hidden="true">
+            <img src="img/login-toggle-icon.svg" alt="" />
+          </button>
+        </div>
+        <button class="login-mobile-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <img src="img/login-toggle-icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="login-hero" aria-hidden="true">
+        <picture><source srcset="img/auth-login-1280-bg-silhouette-figma.webp" type="image/webp"><img src="img/auth-login-1280-bg-silhouette-figma.png" alt="" /></picture>
+      </div>
+
+      <section class="login-card-wrap" aria-label="Log in form">
+        <div class="login-card">
+          <picture><source srcset="img/auth-login-1280-panel-group-figma.webp" type="image/webp"><img class="login-card-bg" src="img/auth-login-1280-panel-group-figma.png" alt="" aria-hidden="true" /></picture>
+          <form class="login-panel" method="post" data-auth-form="login">
+            <h1 class="login-title">Log In</h1>
+            <p class="login-social-title">Log in with</p>
+
+            <div class="login-social-row" aria-label="Social sign in">
+              <button class="login-social" type="button" aria-label="Log in with Google" data-auth-social="social-google" disabled>
+                <picture><source srcset="img/auth-login-1200-google-social-node-figma.webp" type="image/webp"><img src="img/auth-login-1200-google-social-node-figma.png" alt="" data-figma-id="572:6248" data-figma-export="node-raster" /></picture>
+              </button>
+              <button class="login-social" type="button" aria-label="Log in with Facebook" data-auth-social="social-facebook" disabled>
+                <picture><source srcset="img/auth-login-1200-facebook-social-node-figma.webp" type="image/webp"><img src="img/auth-login-1200-facebook-social-node-figma.png" alt="" data-figma-id="572:6341" data-figma-export="node-raster" /></picture>
+              </button>
+            </div>
+
+            <div class="login-divider" aria-hidden="true"></div>
+
+            <div class="login-fields">
+              <input class="login-field" type="email" name="email" autocomplete="username" required placeholder="Your email" aria-label="Your email" />
+              <input class="login-field" type="password" name="password" autocomplete="current-password" required placeholder="Your password" aria-label="Your password" />
+              <a class="login-forgot" href="auth-forgot-new.html">Forgot password?</a>
+              <button class="login-submit" type="submit" data-auth-submit disabled>Log in</button>
+              <p class="login-legal">
+                By logging in, you agree to our <a href="https://asknebula.com/app/terms" target="_blank" rel="noopener">Terms of service</a><br />
+                and <a href="https://asknebula.com/app/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <noscript><p class="auth-form-status">Enable JavaScript to use these forms. No information has been submitted.</p></noscript>
+</body>
+</html>

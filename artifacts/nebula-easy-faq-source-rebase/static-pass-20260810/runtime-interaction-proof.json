@@ -1,0 +1,137 @@
+{
+  "route": "http://127.0.0.1:8765/nebula-easy-faq.html",
+  "widths": [
+    {
+      "width": 1200,
+      "source": "compare-board-sources/faq-91ku-1200.png",
+      "sourceExists": true,
+      "bodyHeight": 4730,
+      "horizontalOverflow": false,
+      "faqItems": 17,
+      "initialOpenItems": 1,
+      "menuControl": true,
+      "openGlyph": {
+        "before": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+        "after": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+      },
+      "theme": {
+        "checked": true,
+        "background": "rgb(103, 62, 218)",
+        "thumb": "rgb(255, 196, 120)"
+      },
+      "accordionToggled": true,
+      "accordionRestored": true,
+      "themeToggled": true,
+      "menuToggled": null,
+      "menuRestored": null,
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 992,
+      "source": "compare-board-sources/faq-91ku-992.png",
+      "sourceExists": true,
+      "bodyHeight": 4880,
+      "horizontalOverflow": false,
+      "faqItems": 17,
+      "initialOpenItems": 1,
+      "menuControl": true,
+      "openGlyph": {
+        "before": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+        "after": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+      },
+      "theme": {
+        "checked": true,
+        "background": "rgb(103, 62, 218)",
+        "thumb": "rgb(255, 196, 120)"
+      },
+      "accordionToggled": true,
+      "accordionRestored": true,
+      "themeToggled": true,
+      "menuToggled": null,
+      "menuRestored": null,
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 768,
+      "source": "compare-board-sources/faq-91ku-768.png",
+      "sourceExists": true,
+      "bodyHeight": 4780,
+      "horizontalOverflow": false,
+      "faqItems": 17,
+      "initialOpenItems": 1,
+      "menuControl": true,
+      "openGlyph": {
+        "before": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+        "after": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+      },
+      "theme": {
+        "checked": true,
+        "background": "rgb(103, 62, 218)",
+        "thumb": "rgb(255, 196, 120)"
+      },
+      "accordionToggled": true,
+      "accordionRestored": true,
+      "themeToggled": null,
+      "menuToggled": true,
+      "menuRestored": true,
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 576,
+      "source": "compare-board-sources/faq-91ku-576.png",
+      "sourceExists": true,
+      "bodyHeight": 4680,
+      "horizontalOverflow": false,
+      "faqItems": 17,
+      "initialOpenItems": 1,
+      "menuControl": true,
+      "openGlyph": {
+        "before": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+        "after": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+      },
+      "theme": {
+        "checked": true,
+        "background": "rgb(103, 62, 218)",
+        "thumb": "rgb(255, 196, 120)"
+      },
+      "accordionToggled": true,
+      "accordionRestored": true,
+      "themeToggled": null,
+      "menuToggled": true,
+      "menuRestored": true,
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    },
+    {
+      "width": 320,
+      "source": "compare-board-sources/faq-91ku-320.png",
+      "sourceExists": true,
+      "bodyHeight": 6255,
+      "horizontalOverflow": false,
+      "faqItems": 17,
+      "initialOpenItems": 1,
+      "menuControl": true,
+      "openGlyph": {
+        "before": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+        "after": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)"
+      },
+      "theme": {
+        "checked": true,
+        "background": "rgb(103, 62, 218)",
+        "thumb": "rgb(255, 196, 120)"
+      },
+      "accordionToggled": true,
+      "accordionRestored": true,
+      "themeToggled": null,
+      "menuToggled": true,
+      "menuRestored": true,
+      "consoleErrors": [],
+      "failedLocalRequests": []
+    }
+  ],
+  "generatedAt": "2026-08-10T05:04:52.616Z",
+  "pass": true
+}

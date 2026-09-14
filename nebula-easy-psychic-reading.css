@@ -1,0 +1,493 @@
+/* Isolated source-rebase bundle. Imported owners are frozen under task-local proof assets. */
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/bootstrap.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/home.css");
+/* source: shared public offcanvas contract; the canonical Psychic Reading
+   export must use the same mobile owner through 992px as every alias page. */
+@import url("_unzipped/public-offcanvas.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-1.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-2.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-3.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-4.css");
+
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-200.ttf") format("truetype");font-style:normal;font-weight:200;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-300.ttf") format("truetype");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-400.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-500.ttf") format("truetype");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-600.ttf") format("truetype");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-700.ttf") format("truetype");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-800.ttf") format("truetype");font-style:normal;font-weight:800;font-display:swap}
+
+/* source: shared Home token contract in artifacts/nebula-easy-psychic-reading/static-assets/home.css:1-8.
+   The isolated Psychic Reading export owns its base tokens under .prn-body;
+   expose the shared aliases so c-btn and shell rules resolve to the approved
+   C76 palette instead of silently falling back to transparent/UA styles. */
+.prn-body {
+  --primary-color: #673EDA;
+  --secondary-color: #A585FF;
+  --accent-color: #FFC478;
+  --light-gray: #F1F1F1;
+  --text-color: #000;
+}
+
+/* source: shared Home c-btn contract in artifacts/nebula-easy-psychic-reading/static-assets/home.css:130-135.
+   The page link reset (.prn-page a) is intentionally more specific than the
+   generic utility selector, so retain the source fill and white label here. */
+.prn-page a.c-btn--primary,
+.prn-page a.c-btn--primary:hover {
+  color: #fff;
+  border-color: #673EDA;
+  background: #673EDA;
+}
+
+/* source: Figma C76 Psychic Reading 1200 / nodes 873:8349–873:8353 and
+   873:8389; geometry inventory confirms the section starts at y=2201,
+   the heading starts at y=91, and the reviews row at y=301.  The imported
+   export contains a higher-specificity legacy translateY(29px) rule; this
+   owner rule restores the source frame without changing paint or content. */
+@media (min-width: 1200px) {
+  .prn-page .prn-clients-section > .container {
+    transform: none;
+  }
+
+  .prn-page .prn-clients-section .prn-reviews__meta {
+    margin: 0;
+  }
+
+  /* source: Figma C76 Psychic Reading 1200 / nodes 874:8602–874:8606
+     keep the visual card at h=530 while the source grid wrappers remain
+     h=500; the overflow is intentional in the source component. */
+  .prn-page .prn-trust-section .row {
+    grid-template-rows: 500px;
+  }
+
+  .prn-page .prn-trust-section .prn-trust-card {
+    height: 530px;
+    padding: 194px 31px 28px 24px;
+  }
+
+  /* source: Figma C76 context node 413:4465–413:4467 (first card) and
+     I874:8604–I874:8606; retain the per-card 16/15px body styles and
+     source tracking values instead of the shared 16px fallback. */
+  .prn-page .prn-trust-section .row > div:first-child .prn-trust-card p {
+    letter-spacing: -0.16px;
+  }
+
+  .prn-page .prn-trust-section .row > div:nth-child(n + 2) .prn-trust-card p {
+    font-size: 15px;
+    letter-spacing: -0.15px;
+  }
+}
+
+/* source: Figma C76 Psychic Reading 992+ / nodes 874:9767, 874:10052,
+   874:9773–874:9781 and Card 1 component 523:2846–523:2887.
+   The imported Bootstrap row leaves the expert cards content-sized at this
+   breakpoint (the live cards become 588px tall instead of the source 489px).
+   Keep the repeated expert-card heritage component on the source geometry:
+   930px content rail, 296px cards, 482/489px row tracks, and the 50px gap
+   before the 392x71px browse control. This is scoped to the 992 frame only;
+   1200, 768, 576 and 320 retain their own approved source contracts. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .prn-page .prn-experts-section {
+    padding: 70px 0 60px;
+  }
+
+  .prn-page .prn-experts-section > .container {
+    width: 930px;
+    max-width: 930px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .prn-page .prn-experts-section .experts-section__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 296px);
+    grid-template-rows: 482px 489px;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 930px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .prn-page .prn-experts-section .experts-section__col {
+    flex: 0 0 296px;
+    width: 296px;
+    max-width: 296px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .prn-page .prn-experts-section .experts-section__card {
+    box-sizing: border-box;
+    width: 296px;
+    max-width: 296px;
+    height: 489px;
+    min-height: 489px;
+    max-height: 489px;
+    padding: 24px 30px 30px;
+    gap: 0;
+  }
+
+  .prn-page .prn-experts-section .experts-section__person {
+    width: 236px;
+    height: 84px;
+    min-height: 84px;
+    margin: 0 0 20px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .prn-page .prn-experts-section .experts-section__person > picture {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__avatar {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__meta {
+    width: 148px;
+    height: 84px;
+    min-height: 84px;
+    flex: 0 0 148px;
+    gap: 6px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__name {
+    width: 148px;
+    max-width: 148px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.54px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__rating {
+    width: 148px;
+    height: 22px;
+    min-height: 22px;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .prn-page .prn-experts-section .experts-section__rating-value {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.54px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__role {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.42px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__online {
+    height: 28px;
+    padding: 6px 14px;
+    gap: 3px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__online-text {
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: -0.42px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__divider {
+    width: 236px;
+    height: 1px;
+    flex: 0 0 1px;
+    margin: 0 0 19px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__stats {
+    width: 236px;
+    height: 46px;
+    min-height: 46px;
+    gap: 10px;
+    margin: 0 0 30px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__stat {
+    width: 236px;
+    min-height: 18px;
+    gap: 13px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__stat-text,
+  .prn-page .prn-experts-section .experts-section__stat-text strong {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__desc {
+    display: block;
+    width: 236px;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    flex: 0 0 130px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0;
+    overflow: hidden;
+  }
+
+  .prn-page .prn-experts-section .experts-section__cta {
+    width: 236px;
+    min-height: 92px;
+    height: 92px;
+    margin: 0;
+    gap: 16px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__chat-btn {
+    width: 236px;
+    height: 58.42px;
+    min-height: 58.42px;
+    padding: 20px 30px;
+    border-radius: 13px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0;
+    gap: 10px;
+  }
+
+  .prn-page .prn-experts-section .experts-section__price {
+    width: 236px;
+    max-width: 236px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+
+  .prn-page .prn-experts-section__more {
+    margin-top: 50px;
+  }
+
+  .prn-page .prn-experts-section__more .experts-section__link {
+    box-sizing: border-box;
+    width: 392px;
+    height: 71px;
+    min-height: 71px;
+    padding: 21px 28px;
+  }
+
+  /* source: Figma node 874:8819 (IMG), x=250, y=385, w=972, h=677
+     relative to the 992px Transform section. The generic responsive export
+     caps this carrier at 620px; that cap changes the artwork crop and is not
+     part of the 992 source frame. */
+  .prn-page .prn-transform__art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 972px;
+    height: 677px;
+    left: 250px;
+    top: 385px;
+  }
+
+  .prn-page .prn-transform__art picture {
+    display: block;
+    flex: 0 0 972px;
+    width: 972px;
+    height: 677px;
+  }
+
+  .prn-page .prn-transform__art img {
+    display: block;
+    width: 972px;
+    height: 677px;
+    max-width: none;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* source: Figma C76 Psychic Reading 992+ / nodes 874:10416–874:10467.
+     The 992 footer is a 992x570 rounded surface with a 930x509 content rail:
+     the menu heritage component is 500px wide, wraps as 3 columns + 2
+     columns (Frame 85 / Frame 84), and the separator/pay row starts at
+     content y=406.  The generic home export keeps five menus on one line
+     and adds a 10px footer margin; this owner restores the source frame
+     without changing the shared content or paint tokens. */
+  .prn-page .site-footer {
+    box-sizing: border-box;
+    width: 992px;
+    max-width: 992px;
+    height: 570px;
+    min-height: 570px;
+    max-height: 570px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 40px;
+    background: #f1f1f1;
+  }
+
+  .prn-page .site-footer > .container {
+    box-sizing: border-box;
+    width: 930px;
+    max-width: 930px;
+    height: 509px;
+    min-height: 509px;
+    max-height: 509px;
+    margin: 45px auto 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .prn-page .site-footer__inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 930px;
+    max-width: 930px;
+    height: 509px;
+    min-height: 509px;
+    max-height: 509px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .prn-page .site-footer__inner-top {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0 0 356px;
+    width: 930px;
+    height: 356px;
+    min-height: 356px;
+    max-height: 356px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .prn-page .site-footer__col-left {
+    box-sizing: border-box;
+    flex: 0 0 142px;
+    width: 142px;
+    max-width: 142px;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    gap: 40px;
+  }
+
+  .prn-page .site-footer__col-right {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex: 0 0 500px;
+    flex-wrap: wrap;
+    width: 500px;
+    max-width: 500px;
+    height: 356px;
+    min-height: 356px;
+    max-height: 356px;
+    gap: 40px 20px;
+  }
+
+  .prn-page .site-footer__col-right > .site-footer__col-menu {
+    box-sizing: border-box;
+    flex: 0 0 160px;
+    width: 160px;
+    max-width: 160px;
+    align-items: flex-start;
+  }
+
+  .prn-page .site-footer__col-right > .site-footer__col-menu:nth-child(2) {
+    flex-basis: 140px;
+    width: 140px;
+    max-width: 140px;
+  }
+
+  .prn-page .site-footer__col-right > .site-footer__col-menu:nth-child(3) {
+    flex-basis: 160px;
+    width: 160px;
+    max-width: 160px;
+  }
+
+  .prn-page .site-footer__col-menu .site-footer__title,
+  .prn-page .site-footer__col-menu > ul {
+    width: 100%;
+  }
+
+  /* source: Figma C76 Psychic Reading 992 / nodes 874:10429–874:10432,
+     874:10435–874:10438 and 874:10452–874:10456.  Each menu item is a
+     23px source instance with a 15px inter-item gap; the shared export's
+     24px list line-height adds 3px to the first row and shifts Frame 84. */
+  .prn-page .site-footer__col-menu > ul > li,
+  .prn-page .site-footer__col-menu > ul > li > a {
+    box-sizing: border-box;
+    height: 23px;
+    min-height: 23px;
+    max-height: 23px;
+    line-height: 23px;
+  }
+
+  .prn-page .site-footer__inner-bottom {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex: 0 0 103px;
+    width: 930px;
+    height: 103px;
+    min-height: 103px;
+    max-height: 103px;
+    margin: 0;
+    padding: 49px 0 0;
+    border-top: 1px solid #a7a7a7;
+    gap: 10px;
+  }
+
+  .prn-page .site-footer .pay-icon-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 295px;
+    width: 295px;
+    max-width: 295px;
+    height: 20px;
+    min-height: 20px;
+    max-height: 20px;
+  }
+
+  .prn-page .site-footer .pay-icon-wrapper img {
+    display: block;
+    flex: 0 0 270px;
+    width: 270px;
+    height: 20px;
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .prn-page .site-footer__copyright {
+    box-sizing: border-box;
+    width: 295px;
+    max-width: 295px;
+    height: 23px;
+    min-height: 23px;
+    max-height: 23px;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+.prn-bp-not-1200{display:none}
+@media (max-width:1199.98px){.prn-bp-1200-only{display:none!important}.prn-bp-not-1200{display:inline!important}}

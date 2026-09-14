@@ -1,0 +1,26 @@
+{
+  "nodeId": "910:19799",
+  "name": "Palm Reading 768",
+  "viewport": {
+    "width": 768,
+    "height": 4345
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 910:19799.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/breakpoints/palm-reading-768-reference.png?v=20260401-bp-proof-1"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Palm Reading page under the same breakpoint viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "palm-reading-new.html?v=20260401-palm-final-pass-2"
+    }
+  ]
+}

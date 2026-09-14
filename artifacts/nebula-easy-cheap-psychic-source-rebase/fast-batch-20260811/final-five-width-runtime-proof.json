@@ -1,0 +1,87 @@
+{
+  "schema": "nebula_easy.cheap_psychic.final_runtime.v2",
+  "url": "http://127.0.0.1:8765/nebula-easy-cheap-psychic.html",
+  "productHashes": {
+    "html": "c6afb595d4bf52894e2c53af6c84fc9e0e32856caabd6e797551337d16dfb600",
+    "css": "cf63a477469245eb80ee9eb565c0ce78a3bda2a285b1bad920e2cdb76b14228e"
+  },
+  "widths": [
+    {
+      "width": 1200,
+      "http": 200,
+      "m": {
+        "cw": 1200,
+        "sw": 1200,
+        "h": 8632,
+        "broken": 0,
+        "dupes": 0
+      },
+      "faq": true,
+      "menu": true,
+      "er": [],
+      "bad": []
+    },
+    {
+      "width": 992,
+      "http": 200,
+      "m": {
+        "cw": 992,
+        "sw": 992,
+        "h": 8373,
+        "broken": 0,
+        "dupes": 0
+      },
+      "faq": true,
+      "menu": true,
+      "er": [],
+      "bad": []
+    },
+    {
+      "width": 768,
+      "http": 200,
+      "m": {
+        "cw": 768,
+        "sw": 768,
+        "h": 8883,
+        "broken": 0,
+        "dupes": 0
+      },
+      "faq": true,
+      "menu": true,
+      "er": [],
+      "bad": []
+    },
+    {
+      "width": 576,
+      "http": 200,
+      "m": {
+        "cw": 576,
+        "sw": 576,
+        "h": 8956,
+        "broken": 0,
+        "dupes": 0
+      },
+      "faq": true,
+      "menu": true,
+      "er": [],
+      "bad": []
+    },
+    {
+      "width": 320,
+      "http": 200,
+      "m": {
+        "cw": 320,
+        "sw": 320,
+        "h": 10729,
+        "broken": 0,
+        "dupes": 0
+      },
+      "faq": true,
+      "menu": true,
+      "er": [],
+      "bad": []
+    }
+  ],
+  "status": "pass",
+  "generatedAt": "2026-08-11T15:11:14.389Z"
+}

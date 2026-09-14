@@ -1,0 +1,697 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-all-psychic.html",
+  "widths": [
+    1200,
+    992,
+    768,
+    576,
+    320
+  ],
+  "captureMethod": "fresh-context-per-width",
+  "results": [
+    {
+      "width": 1200,
+      "httpStatus": 200,
+      "overflow": false,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "snapshot": {
+        "bodyWidth": 1200,
+        "viewport": 1200,
+        "pageHeight": 13226,
+        "brokenImages": [],
+        "duplicateIds": [],
+        "sections": [
+          {
+            "node": "924:16999",
+            "top": 64,
+            "height": 791
+          },
+          {
+            "node": "926:20877",
+            "top": 927,
+            "height": 970
+          },
+          {
+            "node": "926:21514",
+            "top": 1937,
+            "height": 970
+          },
+          {
+            "node": "926:20840",
+            "top": 2967,
+            "height": 1000
+          },
+          {
+            "node": "926:20865",
+            "top": 3966,
+            "height": 900
+          },
+          {
+            "node": "924:17017",
+            "top": 4866,
+            "height": 2774
+          },
+          {
+            "node": "924:17079",
+            "top": 7640,
+            "height": 900
+          },
+          {
+            "node": "924:17050",
+            "top": 8540,
+            "height": 968
+          },
+          {
+            "node": "924:17051",
+            "top": 8540,
+            "height": 969
+          },
+          {
+            "node": "924:17032",
+            "top": 9507,
+            "height": 496
+          },
+          {
+            "node": "924:17037",
+            "top": 9507,
+            "height": 471
+          },
+          {
+            "node": "924:17102",
+            "top": 10100,
+            "height": 980
+          },
+          {
+            "node": "924:17145",
+            "top": 11080,
+            "height": 1726
+          },
+          {
+            "node": "924:17183",
+            "top": 12806,
+            "height": 420
+          }
+        ],
+        "chips": 11,
+        "carouselControls": 4,
+        "faqCount": 5,
+        "faqOpen": 1
+      },
+      "interaction": {
+        "menu": null,
+        "faq": [
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          }
+        ],
+        "chips": "static-source-composition",
+        "carousel": "static-visible-next-source-composition",
+        "theme": true
+      }
+    },
+    {
+      "width": 992,
+      "httpStatus": 200,
+      "overflow": false,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "snapshot": {
+        "bodyWidth": 992,
+        "viewport": 992,
+        "pageHeight": 12880,
+        "brokenImages": [],
+        "duplicateIds": [],
+        "sections": [
+          {
+            "node": "924:16999",
+            "top": 62,
+            "height": 748
+          },
+          {
+            "node": "926:20877",
+            "top": 862,
+            "height": 900
+          },
+          {
+            "node": "926:21514",
+            "top": 1802,
+            "height": 900
+          },
+          {
+            "node": "926:20840",
+            "top": 2760,
+            "height": 984
+          },
+          {
+            "node": "926:20865",
+            "top": 3744,
+            "height": 860
+          },
+          {
+            "node": "924:17017",
+            "top": 4604,
+            "height": 2450
+          },
+          {
+            "node": "924:17079",
+            "top": 7054,
+            "height": 920
+          },
+          {
+            "node": "924:17050",
+            "top": 7968,
+            "height": 1163
+          },
+          {
+            "node": "924:17051",
+            "top": 7968,
+            "height": 1046
+          },
+          {
+            "node": "924:17032",
+            "top": 9137,
+            "height": 527
+          },
+          {
+            "node": "924:17037",
+            "top": 9132,
+            "height": 426
+          },
+          {
+            "node": "924:17102",
+            "top": 9664,
+            "height": 920
+          },
+          {
+            "node": "924:17145",
+            "top": 10584,
+            "height": 1726
+          },
+          {
+            "node": "924:17183",
+            "top": 12310,
+            "height": 570
+          }
+        ],
+        "chips": 11,
+        "carouselControls": 4,
+        "faqCount": 5,
+        "faqOpen": 1
+      },
+      "interaction": {
+        "menu": {
+          "opened": "true",
+          "closed": "false"
+        },
+        "faq": [
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          }
+        ],
+        "chips": "static-source-composition",
+        "carousel": "static-visible-next-source-composition",
+        "theme": true
+      }
+    },
+    {
+      "width": 768,
+      "httpStatus": 200,
+      "overflow": false,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "snapshot": {
+        "bodyWidth": 768,
+        "viewport": 768,
+        "pageHeight": 12076,
+        "brokenImages": [],
+        "duplicateIds": [],
+        "sections": [
+          {
+            "node": "924:16999",
+            "top": 59,
+            "height": 601
+          },
+          {
+            "node": "926:20877",
+            "top": 700,
+            "height": 870
+          },
+          {
+            "node": "926:21514",
+            "top": 1610,
+            "height": 870
+          },
+          {
+            "node": "926:20840",
+            "top": 2480,
+            "height": 631
+          },
+          {
+            "node": "926:20865",
+            "top": 3111,
+            "height": 670
+          },
+          {
+            "node": "924:17017",
+            "top": 3781,
+            "height": 2380
+          },
+          {
+            "node": "924:17079",
+            "top": 6161,
+            "height": 1120
+          },
+          {
+            "node": "924:17050",
+            "top": 7312,
+            "height": 970
+          },
+          {
+            "node": "924:17051",
+            "top": 7312,
+            "height": 964
+          },
+          {
+            "node": "924:17032",
+            "top": 8342,
+            "height": 429
+          },
+          {
+            "node": "924:17037",
+            "top": 8342,
+            "height": 429
+          },
+          {
+            "node": "924:17102",
+            "top": 8841,
+            "height": 820
+          },
+          {
+            "node": "924:17145",
+            "top": 9661,
+            "height": 1681
+          },
+          {
+            "node": "924:17183",
+            "top": 11342,
+            "height": 734
+          }
+        ],
+        "chips": 11,
+        "carouselControls": 4,
+        "faqCount": 5,
+        "faqOpen": 1
+      },
+      "interaction": {
+        "menu": {
+          "opened": "true",
+          "closed": "false"
+        },
+        "faq": [
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          }
+        ],
+        "chips": "static-source-composition",
+        "carousel": "static-visible-next-source-composition",
+        "theme": true
+      }
+    },
+    {
+      "width": 576,
+      "httpStatus": 200,
+      "overflow": false,
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+      ],
+      "requestFailures": [
+        "GET http://127.0.0.1:8765/_unzipped/all-psychic.owner.01.css?v=20260726r5-seam net::ERR_NO_BUFFER_SPACE"
+      ],
+      "snapshot": {
+        "bodyWidth": 576,
+        "viewport": 576,
+        "pageHeight": 11893,
+        "brokenImages": [],
+        "duplicateIds": [],
+        "sections": [
+          {
+            "node": "924:16999",
+            "top": 58,
+            "height": 782
+          },
+          {
+            "node": "926:20877",
+            "top": 880,
+            "height": 770
+          },
+          {
+            "node": "926:21514",
+            "top": 1680,
+            "height": 770
+          },
+          {
+            "node": "926:20840",
+            "top": 2490,
+            "height": 570
+          },
+          {
+            "node": "926:20865",
+            "top": 3060,
+            "height": 477
+          },
+          {
+            "node": "924:17017",
+            "top": 3537,
+            "height": 1630
+          },
+          {
+            "node": "924:17079",
+            "top": 5167,
+            "height": 960
+          },
+          {
+            "node": "924:17050",
+            "top": 6127,
+            "height": 1109
+          },
+          {
+            "node": "924:17051",
+            "top": 6127,
+            "height": 1020
+          },
+          {
+            "node": "924:17032",
+            "top": 7236,
+            "height": 671
+          },
+          {
+            "node": "924:17037",
+            "top": 7236,
+            "height": 594
+          },
+          {
+            "node": "924:17102",
+            "top": 7907,
+            "height": 820
+          },
+          {
+            "node": "924:17145",
+            "top": 8727,
+            "height": 1672
+          },
+          {
+            "node": "924:17183",
+            "top": 10399,
+            "height": 663
+          }
+        ],
+        "chips": 11,
+        "carouselControls": 4,
+        "faqCount": 5,
+        "faqOpen": 1
+      },
+      "interaction": {
+        "menu": {
+          "opened": "true",
+          "closed": "false"
+        },
+        "faq": [
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          }
+        ],
+        "chips": "static-source-composition",
+        "carousel": "static-visible-next-source-composition",
+        "theme": null
+      }
+    },
+    {
+      "width": 320,
+      "httpStatus": 200,
+      "overflow": false,
+      "consoleErrors": [],
+      "requestFailures": [],
+      "snapshot": {
+        "bodyWidth": 320,
+        "viewport": 320,
+        "pageHeight": 14373,
+        "brokenImages": [],
+        "duplicateIds": [],
+        "sections": [
+          {
+            "node": "924:16999",
+            "top": 70,
+            "height": 1000
+          },
+          {
+            "node": "926:20877",
+            "top": 1110,
+            "height": 890
+          },
+          {
+            "node": "926:21514",
+            "top": 2030,
+            "height": 890
+          },
+          {
+            "node": "926:20840",
+            "top": 2920,
+            "height": 720
+          },
+          {
+            "node": "926:20865",
+            "top": 3639,
+            "height": 477
+          },
+          {
+            "node": "924:17017",
+            "top": 4116,
+            "height": 1400
+          },
+          {
+            "node": "924:17079",
+            "top": 5516,
+            "height": 1180
+          },
+          {
+            "node": "924:17050",
+            "top": 6696,
+            "height": 1482
+          },
+          {
+            "node": "924:17051",
+            "top": 6696,
+            "height": 1452
+          },
+          {
+            "node": "924:17032",
+            "top": 8178,
+            "height": 498
+          },
+          {
+            "node": "924:17037",
+            "top": 8178,
+            "height": 418
+          },
+          {
+            "node": "924:17102",
+            "top": 8676,
+            "height": 1250
+          },
+          {
+            "node": "924:17145",
+            "top": 9940,
+            "height": 2103
+          },
+          {
+            "node": "924:17183",
+            "top": 12029,
+            "height": 1035
+          }
+        ],
+        "chips": 11,
+        "carouselControls": 4,
+        "faqCount": 5,
+        "faqOpen": 1
+      },
+      "interaction": {
+        "menu": {
+          "opened": "true",
+          "closed": "false"
+        },
+        "faq": [
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          },
+          {
+            "open": true,
+            "expanded": "true"
+          }
+        ],
+        "chips": "static-source-composition",
+        "carousel": "static-visible-next-source-composition",
+        "theme": null
+      }
+    }
+  ],
+  "routeAudit": [
+    {
+      "href": "home.html",
+      "exists": true
+    },
+    {
+      "href": "psychic-reading-new.html",
+      "exists": true
+    },
+    {
+      "href": "all-psychic-new.html",
+      "exists": true
+    },
+    {
+      "href": "topic-new.html",
+      "exists": true
+    },
+    {
+      "href": "zodiac-compatibility-new.html",
+      "exists": true
+    },
+    {
+      "href": "birth-chart-new.html",
+      "exists": true
+    },
+    {
+      "href": "blog-new.html",
+      "exists": true
+    },
+    {
+      "href": "signup-step-1.html",
+      "exists": true
+    },
+    {
+      "href": "expert-page-new.html",
+      "exists": true
+    },
+    {
+      "href": "about-us-new.html",
+      "exists": true
+    },
+    {
+      "href": "contact-us-new.html",
+      "exists": true
+    },
+    {
+      "href": "faq-new.html",
+      "exists": true
+    },
+    {
+      "href": "privacy-policy-new.html",
+      "exists": true
+    },
+    {
+      "href": "login.html",
+      "exists": true
+    },
+    {
+      "href": "careers-join-new.html",
+      "exists": true
+    },
+    {
+      "href": "terms-conditions-new.html",
+      "exists": true
+    },
+    {
+      "href": "payment-terms-new.html",
+      "exists": true
+    },
+    {
+      "href": "refund-policy-new.html",
+      "exists": true
+    },
+    {
+      "href": "live-chat-rules-new.html",
+      "exists": true
+    }
+  ]
+}

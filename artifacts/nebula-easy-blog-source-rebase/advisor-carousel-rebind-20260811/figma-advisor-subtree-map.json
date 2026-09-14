@@ -1,0 +1,22 @@
+{
+  "schema": "oracle_nebula_blog_advisor_subtree_map.v1",
+  "fileKey": "C76M54fY7z926wIQoWFh8Y",
+  "sourceGeneration": "c76-normalized-export-20260727",
+  "owner": ".blog-advisor",
+  "sourceMode": ["local_current_raster", "figma_mcp_get_design_context", "figma_mcp_get_metadata"],
+  "breakpoints": {
+    "1200": {"screen":"642:5788","section":"643:7311","carrier":{"width":1200,"height":560},"cards":{"count":2,"width":350,"height":479,"gap":30},"controls":"absent"},
+    "992": {"screen":"1001:20800","section":"1001:20842","carrier":{"width":992,"height":560},"cards":{"count":2,"width":296,"height":489,"gap":20},"controls":"absent"},
+    "768": {"screen":"1002:21942","section":"1002:21986","background":"1002:21987","carrier":{"width":768,"height":880},"cards":{"count":2,"width":335,"height":483,"gap":20},"controls":"absent"},
+    "576": {"screen":"1002:23955","section":"1002:24003","background":"1002:24004","content":"1002:24005","row":"1005:21897","carrier":{"width":576,"height":780},"contentWidth":510,"cards":{"count":2,"width":250,"height":437,"gap":10},"controls":"absent","cta":{"width":183,"height":50}},
+    "320": {"screen":"1005:22168","section":"1005:22213","background":"1005:22214","content":"1005:22215","controls":"1005:22653","arrowGroup":"1005:22658","clip":"1005:22665","rail":"1005:22666","carrier":{"width":320,"height":960},"contentWidth":290,"cards":{"count":2,"width":250,"height":437,"gap":10,"railWidth":510,"visibleNext":30},"controlState":{"previous":"disabled","next":"active","buttonWidth":50,"gap":10},"cta":{"width":183,"height":50}}
+  },
+  "sourceToLive": {
+    "carrier": ".blog-advisor",
+    "intro": ".blog-advisor__copy",
+    "controls": ".blog-advisor__controls",
+    "rail": ".blog-advisor__experts",
+    "card": ".blog-advisor__expert",
+    "cta": ".blog-advisor__button"
+  }
+}

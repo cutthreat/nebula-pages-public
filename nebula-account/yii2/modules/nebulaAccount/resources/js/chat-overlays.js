@@ -6,7 +6,9 @@
   const scrim = modal?.querySelector('[data-action="close-expert-details"]');
   if (!root || !frame || !opener || !modal || !scrim) return;
 
-  const desktop = window.matchMedia('(min-width: 321px)');
+  // Keep the dialog variant in the same responsive cohort as chat-details.css.
+  // The former 321px cutoff selected the desktop card on ordinary phones.
+  const desktop = window.matchMedia('(min-width: 576px)');
   const activeDialog = () => modal.querySelector(desktop.matches ? '.expert-card--standard' : '.expert-card--mobile');
   const activeHeading = () => activeDialog()?.querySelector('h2');
   const focusables = () => Array.from(activeDialog()?.querySelectorAll('button:not([disabled]),a[href]') || [])

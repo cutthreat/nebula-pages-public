@@ -1,0 +1,157 @@
+[
+  {
+    "requested": 1200,
+    "actual": 1200,
+    "scrollWidth": 1200,
+    "clientWidth": 1200,
+    "bodyHeight": 6666,
+    "post": {
+      "y": 3554,
+      "w": 1110,
+      "h": 120,
+      "align": "center",
+      "font": "50px",
+      "line": "60px"
+    },
+    "banner": {
+      "y": 3294,
+      "h": 200
+    },
+    "imagesMissing": 0,
+    "hashLinks": 0,
+    "tocExternal": true,
+    "ctaHrefs": [
+      "signup-step-1.html",
+      "blog-new.html"
+    ],
+    "menu": {
+      "exists": true,
+      "visible": false,
+      "aria": "false"
+    }
+  },
+  {
+    "requested": 992,
+    "actual": 992,
+    "scrollWidth": 992,
+    "clientWidth": 992,
+    "bodyHeight": 7117,
+    "post": {
+      "y": 3684,
+      "w": 930,
+      "h": 120,
+      "align": "center",
+      "font": "50px",
+      "line": "60px"
+    },
+    "banner": {
+      "y": 3424,
+      "h": 200
+    },
+    "imagesMissing": 0,
+    "hashLinks": 0,
+    "tocExternal": true,
+    "ctaHrefs": [
+      "signup-step-1.html",
+      "blog-new.html"
+    ],
+    "menu": {
+      "exists": true,
+      "visible": true,
+      "aria": "false"
+    }
+  },
+  {
+    "requested": 768,
+    "actual": 768,
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "bodyHeight": 6548,
+    "post": {
+      "y": 3268,
+      "w": 690,
+      "h": 110,
+      "align": "center",
+      "font": "40px",
+      "line": "55px"
+    },
+    "banner": {
+      "y": 2988,
+      "h": 200
+    },
+    "imagesMissing": 0,
+    "hashLinks": 0,
+    "tocExternal": true,
+    "ctaHrefs": [
+      "signup-step-1.html",
+      "blog-new.html"
+    ],
+    "menu": {
+      "exists": true,
+      "visible": true,
+      "aria": "false"
+    }
+  },
+  {
+    "requested": 576,
+    "actual": 576,
+    "scrollWidth": 576,
+    "clientWidth": 576,
+    "bodyHeight": 6624,
+    "post": {
+      "y": 3210,
+      "w": 510,
+      "h": 80,
+      "align": "center",
+      "font": "30px",
+      "line": "40px"
+    },
+    "banner": {
+      "y": 2910,
+      "h": 240
+    },
+    "imagesMissing": 0,
+    "hashLinks": 0,
+    "tocExternal": true,
+    "ctaHrefs": [
+      "signup-step-1.html",
+      "blog-new.html"
+    ],
+    "menu": {
+      "exists": true,
+      "visible": true,
+      "aria": "false"
+    }
+  },
+  {
+    "requested": 320,
+    "actual": 320,
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "bodyHeight": 9886,
+    "post": {
+      "y": 4158,
+      "w": 290,
+      "h": 120,
+      "align": "center",
+      "font": "30px",
+      "line": "40px"
+    },
+    "banner": {
+      "y": 3858,
+      "h": 240
+    },
+    "imagesMissing": 0,
+    "hashLinks": 0,
+    "tocExternal": true,
+    "ctaHrefs": [
+      "signup-step-1.html",
+      "blog-new.html"
+    ],
+    "menu": {
+      "exists": true,
+      "visible": true,
+      "aria": "false"
+    }
+  }
+]

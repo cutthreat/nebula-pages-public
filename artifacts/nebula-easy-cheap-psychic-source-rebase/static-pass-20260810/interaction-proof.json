@@ -1,0 +1,67 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-cheap-psychic.html",
+  "status": "pass",
+  "harness_contract": "independent source-defined controls; cheap SEO buttons have no implemented state contract in the baseline",
+  "widths": [
+    {
+      "width": 1200,
+      "states": {
+        "menu": "n/a",
+        "faq": "pass",
+        "seo": "present_no_source_state_contract",
+        "cta": "pass"
+      },
+      "console_errors": [],
+      "http": 200,
+      "failures": []
+    },
+    {
+      "width": 992,
+      "states": {
+        "menu": "n/a",
+        "faq": "pass",
+        "seo": "present_no_source_state_contract",
+        "cta": "pass"
+      },
+      "console_errors": [],
+      "http": 200,
+      "failures": []
+    },
+    {
+      "width": 768,
+      "states": {
+        "menu": "pass",
+        "faq": "pass",
+        "seo": "present_no_source_state_contract",
+        "cta": "pass"
+      },
+      "console_errors": [],
+      "http": 200,
+      "failures": []
+    },
+    {
+      "width": 576,
+      "states": {
+        "menu": "pass",
+        "faq": "pass",
+        "seo": "present_no_source_state_contract",
+        "cta": "pass"
+      },
+      "console_errors": [],
+      "http": 200,
+      "failures": []
+    },
+    {
+      "width": 320,
+      "states": {
+        "menu": "pass",
+        "faq": "pass",
+        "seo": "present_no_source_state_contract",
+        "cta": "pass"
+      },
+      "console_errors": [],
+      "http": 200,
+      "failures": []
+    }
+  ]
+}

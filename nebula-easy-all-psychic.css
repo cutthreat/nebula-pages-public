@@ -1,0 +1,39 @@
+/* C76 2026-07-27 page owner. Baseline geometry remains in the verified
+   source-local owner sheets. The Figma packet proves static chips and a
+   visible-next carousel composition, not a filter/result or carousel state. */
+
+.prn-body .home.prn-page[data-nebula-all-psychics] {
+  font-family: "Manrope", sans-serif;
+}
+
+.prn-body .home.prn-page[data-nebula-all-psychics] > .site-header.fixed-top {
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prn-body[data-nebula-page-owner="all-psychic-c76-20260727"] *,
+  .prn-body[data-nebula-page-owner="all-psychic-c76-20260727"] *::before,
+  .prn-body[data-nebula-page-owner="all-psychic-c76-20260727"] *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+  }
+}
+
+@media (max-width: 399px) {
+  .prn-body .home.prn-page[data-nebula-all-psychics] .apn-answer-item:not([open]):not(.apn-answer-item--open) .apn-answer-toggle svg {
+    display: none;
+  }
+
+  .prn-body .home.prn-page[data-nebula-all-psychics] .apn-answer-item:not([open]):not(.apn-answer-item--open) .apn-answer-toggle::before {
+    content: "";
+    width: 16px;
+    height: 10px;
+    background: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L8 8L14 2' stroke='%23090909' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    transform: translate(-50%, -50%);
+  }
+
+  .prn-body .home.prn-page[data-nebula-all-psychics] .apn-answer-item:not([open]):not(.apn-answer-item--open) .apn-answer-toggle::after {
+    content: none;
+  }
+}

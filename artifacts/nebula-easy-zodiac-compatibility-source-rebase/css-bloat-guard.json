@@ -1,0 +1,63 @@
+{
+  "schema": "oracle_nebula_css_bloat_guard.v1",
+  "checked_at_utc": "2026-08-13T21:54:10.0979544Z",
+  "status": "fail",
+  "css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-zodiac-compatibility.css",
+  "baseline_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-manifest\\runtime-cascade\\zodiac-compatibility.runtime-cascade-baseline.json",
+  "identity": {
+    "current_page_id": "nebula-easy-zodiac-compatibility",
+    "baseline_page_id": "",
+    "baseline_css_path": "",
+    "baseline_css_page_id": "",
+    "baseline_page_matches_current": true
+  },
+  "justification_path": "",
+  "current": {
+    "bytes": 38478,
+    "lines": 315,
+    "selector_like_count": 296,
+    "source_comment_count": 11
+  },
+  "baseline": {
+    "bytes": 0,
+    "lines": 0
+  },
+  "delta": {
+    "added_bytes": 38478,
+    "added_lines": 315,
+    "bytes_growth_percent": 0.0,
+    "lines_growth_percent": 0.0
+  },
+  "thresholds": {
+    "warning_bytes_growth_percent": 5.0,
+    "alarm_bytes_growth_percent": 10.0,
+    "stop_bytes_growth_percent": 15.0,
+    "warning_added_lines": 150,
+    "alarm_added_lines": 300,
+    "stop_added_lines": 500
+  },
+  "decision": {
+    "stop_blind_css_tuning": true,
+    "next_action": "Stop CSS tuning; use Figma asset/component/owner strategy or provide a source-backed CSS growth justification.",
+    "justification_present": false,
+    "justification_valid": false
+  },
+  "issue_count": 3,
+  "issues": [
+    {
+      "severity": "fail",
+      "code": "baseline_missing",
+      "message": "CSS bloat baseline is missing: F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-manifest\\runtime-cascade\\zodiac-compatibility.runtime-cascade-baseline.json"
+    },
+    {
+      "severity": "warn",
+      "code": "css_growth_warning",
+      "message": "CSS grew beyond warning threshold; inspect source-backed owner before further tuning."
+    },
+    {
+      "severity": "fail",
+      "code": "css_bloat_alarm_stop_required",
+      "message": "CSS growth crossed alarm threshold without valid source-backed justification; stop blind CSS tuning."
+    }
+  ]
+}

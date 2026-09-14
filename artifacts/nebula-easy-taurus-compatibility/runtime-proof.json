@@ -1,0 +1,1106 @@
+{
+  "url": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/nebula-easy-taurus-compatibility.html",
+  "generatedAt": "2026-08-11T08:50:53.474Z",
+  "widths": [
+    {
+      "width": 1200,
+      "httpStatus": 200,
+      "metrics": {
+        "viewportWidth": 1200,
+        "scrollWidth": 1200,
+        "clientWidth": 1200,
+        "scrollHeight": 17401,
+        "horizontalOverflow": 0,
+        "images": {
+          "total": 28,
+          "complete": 28
+        },
+        "h1": "Taurus Compatibility",
+        "faqInitialOpen": 1,
+        "faqThirdExpanded": "true",
+        "signupHref": "signup-step-1.html",
+        "reducedMotion": {
+          "scrollBehavior": "auto",
+          "videoTransitionDuration": "0s"
+        },
+        "sections": [
+          {
+            "className": "tc-hero",
+            "top": 0,
+            "height": 855,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-zodiac tc-section",
+            "top": 855,
+            "height": 1100,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 1955,
+            "height": 318,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-chart tc-section",
+            "top": 2273,
+            "height": 1000,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-best tc-section",
+            "top": 3273,
+            "height": 1500,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-video tc-section",
+            "top": 4773,
+            "height": 900,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-pairs tc-section",
+            "top": 5673,
+            "height": 3500,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 9173,
+            "height": 318,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-love tc-section",
+            "top": 9491,
+            "height": 2950,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-marriage tc-section",
+            "top": 12441,
+            "height": 1430,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-sex tc-section",
+            "top": 13871,
+            "height": 1320,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-friendship tc-section",
+            "top": 15191,
+            "height": 860,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-faq tc-section",
+            "top": 16051,
+            "height": 930,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          }
+        ]
+      },
+      "interactions": {
+        "faq": [
+          {
+            "index": 1,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 2,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 3,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 4,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 5,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          }
+        ],
+        "video": {
+          "disabled": true,
+          "fakeActiveState": false,
+          "unavailableReasonPresent": true
+        },
+        "navigation": [
+          {
+            "href": "psychic-reading-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "all-psychic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "topic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "zodiac-compatibility-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "birth-chart-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "blog-new.html",
+            "httpStatus": 200
+          }
+        ],
+        "menu": {
+          "applicable": false
+        },
+        "ctas": [
+          {
+            "index": 1,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          },
+          {
+            "index": 2,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          }
+        ],
+        "ctaKeyboard": {
+          "route": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/signup-step-1.html",
+          "targetImages": {
+            "total": 7,
+            "complete": 7
+          },
+          "targetReadiness": {
+            "formPresent": true,
+            "firstControlFocused": true,
+            "enabledSubmit": true
+          },
+          "targetConsoleErrors": [],
+          "targetPageErrors": [],
+          "targetRequestFailures": []
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 992,
+      "httpStatus": 200,
+      "metrics": {
+        "viewportWidth": 992,
+        "scrollWidth": 992,
+        "clientWidth": 992,
+        "scrollHeight": 17766,
+        "horizontalOverflow": 0,
+        "images": {
+          "total": 28,
+          "complete": 28
+        },
+        "h1": "Taurus Compatibility",
+        "faqInitialOpen": 1,
+        "faqThirdExpanded": "true",
+        "signupHref": "signup-step-1.html",
+        "reducedMotion": {
+          "scrollBehavior": "auto",
+          "videoTransitionDuration": "0s"
+        },
+        "sections": [
+          {
+            "className": "tc-hero",
+            "top": 0,
+            "height": 800,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-zodiac tc-section",
+            "top": 800,
+            "height": 1270,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 2070,
+            "height": 318,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-chart tc-section",
+            "top": 2388,
+            "height": 1040,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-best tc-section",
+            "top": 3428,
+            "height": 1640,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-video tc-section",
+            "top": 5068,
+            "height": 900,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-pairs tc-section",
+            "top": 5968,
+            "height": 3500,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 9468,
+            "height": 318,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-love tc-section",
+            "top": 9786,
+            "height": 3040,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-marriage tc-section",
+            "top": 12826,
+            "height": 1330,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-sex tc-section",
+            "top": 14156,
+            "height": 1320,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-friendship tc-section",
+            "top": 15476,
+            "height": 860,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-faq tc-section",
+            "top": 16276,
+            "height": 920,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          }
+        ]
+      },
+      "interactions": {
+        "faq": [
+          {
+            "index": 1,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 2,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 3,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 4,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 5,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          }
+        ],
+        "video": {
+          "disabled": true,
+          "fakeActiveState": false,
+          "unavailableReasonPresent": true
+        },
+        "navigation": [
+          {
+            "href": "psychic-reading-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "all-psychic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "topic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "zodiac-compatibility-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "birth-chart-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "blog-new.html",
+            "httpStatus": 200
+          }
+        ],
+        "menu": {
+          "applicable": true,
+          "opened": true,
+          "expanded": "true",
+          "closeFocused": true,
+          "closed": true,
+          "openerFocused": true
+        },
+        "ctas": [
+          {
+            "index": 1,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          },
+          {
+            "index": 2,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          }
+        ],
+        "ctaKeyboard": {
+          "route": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/signup-step-1.html",
+          "targetImages": {
+            "total": 7,
+            "complete": 7
+          },
+          "targetReadiness": {
+            "formPresent": true,
+            "firstControlFocused": true,
+            "enabledSubmit": true
+          },
+          "targetConsoleErrors": [],
+          "targetPageErrors": [],
+          "targetRequestFailures": []
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 768,
+      "httpStatus": 200,
+      "metrics": {
+        "viewportWidth": 768,
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 16687,
+        "horizontalOverflow": 0,
+        "images": {
+          "total": 28,
+          "complete": 28
+        },
+        "h1": "Taurus Compatibility",
+        "faqInitialOpen": 1,
+        "faqThirdExpanded": "true",
+        "signupHref": "signup-step-1.html",
+        "reducedMotion": {
+          "scrollBehavior": "auto",
+          "videoTransitionDuration": "0s"
+        },
+        "sections": [
+          {
+            "className": "tc-hero",
+            "top": 0,
+            "height": 800,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-zodiac tc-section",
+            "top": 800,
+            "height": 1073,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 1873,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-chart tc-section",
+            "top": 2173,
+            "height": 1320,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-best tc-section",
+            "top": 3493,
+            "height": 1310,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-video tc-section",
+            "top": 4803,
+            "height": 684,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-pairs tc-section",
+            "top": 5487,
+            "height": 3000,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 8487,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-love tc-section",
+            "top": 8787,
+            "height": 2960,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-marriage tc-section",
+            "top": 11747,
+            "height": 1270,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-sex tc-section",
+            "top": 13017,
+            "height": 1350,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-friendship tc-section",
+            "top": 14367,
+            "height": 860,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-faq tc-section",
+            "top": 15227,
+            "height": 760,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          }
+        ]
+      },
+      "interactions": {
+        "faq": [
+          {
+            "index": 1,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 2,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 3,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 4,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 5,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          }
+        ],
+        "video": {
+          "disabled": true,
+          "fakeActiveState": false,
+          "unavailableReasonPresent": true
+        },
+        "navigation": [
+          {
+            "href": "psychic-reading-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "all-psychic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "topic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "zodiac-compatibility-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "birth-chart-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "blog-new.html",
+            "httpStatus": 200
+          }
+        ],
+        "menu": {
+          "applicable": true,
+          "opened": true,
+          "expanded": "true",
+          "closeFocused": true,
+          "closed": true,
+          "openerFocused": true
+        },
+        "ctas": [
+          {
+            "index": 1,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          },
+          {
+            "index": 2,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          }
+        ],
+        "ctaKeyboard": {
+          "route": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/signup-step-1.html",
+          "targetImages": {
+            "total": 7,
+            "complete": 7
+          },
+          "targetReadiness": {
+            "formPresent": true,
+            "firstControlFocused": true,
+            "enabledSubmit": true
+          },
+          "targetConsoleErrors": [],
+          "targetPageErrors": [],
+          "targetRequestFailures": []
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 576,
+      "httpStatus": 200,
+      "metrics": {
+        "viewportWidth": 576,
+        "scrollWidth": 576,
+        "clientWidth": 576,
+        "scrollHeight": 16094,
+        "horizontalOverflow": 0,
+        "images": {
+          "total": 28,
+          "complete": 28
+        },
+        "h1": "Taurus Compatibility",
+        "faqInitialOpen": 1,
+        "faqThirdExpanded": "true",
+        "signupHref": "signup-step-1.html",
+        "reducedMotion": {
+          "scrollBehavior": "auto",
+          "videoTransitionDuration": "0s"
+        },
+        "sections": [
+          {
+            "className": "tc-hero",
+            "top": 0,
+            "height": 900,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-zodiac tc-section",
+            "top": 900,
+            "height": 920,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 1820,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-chart tc-section",
+            "top": 2120,
+            "height": 1260,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-best tc-section",
+            "top": 3380,
+            "height": 1200,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-video tc-section",
+            "top": 4580,
+            "height": 517,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-pairs tc-section",
+            "top": 5097,
+            "height": 2750,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 7847,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-love tc-section",
+            "top": 8147,
+            "height": 3537,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-marriage tc-section",
+            "top": 11684,
+            "height": 1180,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-sex tc-section",
+            "top": 12864,
+            "height": 1220,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-friendship tc-section",
+            "top": 14084,
+            "height": 590,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-faq tc-section",
+            "top": 14674,
+            "height": 740,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          }
+        ]
+      },
+      "interactions": {
+        "faq": [
+          {
+            "index": 1,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 2,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 3,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 4,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 5,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          }
+        ],
+        "video": {
+          "disabled": true,
+          "fakeActiveState": false,
+          "unavailableReasonPresent": true
+        },
+        "navigation": [
+          {
+            "href": "psychic-reading-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "all-psychic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "topic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "zodiac-compatibility-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "birth-chart-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "blog-new.html",
+            "httpStatus": 200
+          }
+        ],
+        "menu": {
+          "applicable": true,
+          "opened": true,
+          "expanded": "true",
+          "closeFocused": true,
+          "closed": true,
+          "openerFocused": true
+        },
+        "ctas": [
+          {
+            "index": 1,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          },
+          {
+            "index": 2,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          }
+        ],
+        "ctaKeyboard": {
+          "route": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/signup-step-1.html",
+          "targetImages": {
+            "total": 7,
+            "complete": 7
+          },
+          "targetReadiness": {
+            "formPresent": true,
+            "firstControlFocused": true,
+            "enabledSubmit": true
+          },
+          "targetConsoleErrors": [],
+          "targetPageErrors": [],
+          "targetRequestFailures": []
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "width": 320,
+      "httpStatus": 200,
+      "metrics": {
+        "viewportWidth": 320,
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "scrollHeight": 22731,
+        "horizontalOverflow": 0,
+        "images": {
+          "total": 28,
+          "complete": 28
+        },
+        "h1": "Taurus Compatibility",
+        "faqInitialOpen": 1,
+        "faqThirdExpanded": "true",
+        "signupHref": "signup-step-1.html",
+        "reducedMotion": {
+          "scrollBehavior": "auto",
+          "videoTransitionDuration": "0s"
+        },
+        "sections": [
+          {
+            "className": "tc-hero",
+            "top": 0,
+            "height": 1000,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-zodiac tc-section",
+            "top": 1000,
+            "height": 1260,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 2260,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-chart tc-section",
+            "top": 2560,
+            "height": 1550,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-best tc-section",
+            "top": 4110,
+            "height": 1650,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-video tc-section",
+            "top": 5760,
+            "height": 516,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-pairs tc-section",
+            "top": 6276,
+            "height": 3980,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-banner",
+            "top": 10256,
+            "height": 300,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-love tc-section",
+            "top": 10556,
+            "height": 5500,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-marriage tc-section",
+            "top": 16056,
+            "height": 1950,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-sex tc-section",
+            "top": 18006,
+            "height": 1700,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-friendship tc-section",
+            "top": 19706,
+            "height": 940,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          },
+          {
+            "className": "tc-faq tc-section",
+            "top": 20646,
+            "height": 1050,
+            "contentOverflowTop": 0,
+            "contentOverflowBottom": 0
+          }
+        ]
+      },
+      "interactions": {
+        "faq": [
+          {
+            "index": 1,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 2,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 3,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 4,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          },
+          {
+            "index": 5,
+            "expanded": "true",
+            "visible": true,
+            "hasCopy": true
+          }
+        ],
+        "video": {
+          "disabled": true,
+          "fakeActiveState": false,
+          "unavailableReasonPresent": true
+        },
+        "navigation": [
+          {
+            "href": "psychic-reading-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "all-psychic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "topic-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "zodiac-compatibility-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "birth-chart-new.html",
+            "httpStatus": 200
+          },
+          {
+            "href": "blog-new.html",
+            "httpStatus": 200
+          }
+        ],
+        "menu": {
+          "applicable": true,
+          "opened": true,
+          "expanded": "true",
+          "closeFocused": true,
+          "closed": true,
+          "openerFocused": true
+        },
+        "ctas": [
+          {
+            "index": 1,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          },
+          {
+            "index": 2,
+            "href": "signup-step-1.html",
+            "httpStatus": 200,
+            "focused": true
+          }
+        ],
+        "ctaKeyboard": {
+          "route": "file:///F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/signup-step-1.html",
+          "targetImages": {
+            "total": 7,
+            "complete": 7
+          },
+          "targetReadiness": {
+            "formPresent": true,
+            "firstControlFocused": true,
+            "enabledSubmit": true
+          },
+          "targetConsoleErrors": [],
+          "targetPageErrors": [],
+          "targetRequestFailures": []
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": []
+    }
+  ]
+}

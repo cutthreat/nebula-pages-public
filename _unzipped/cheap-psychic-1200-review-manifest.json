@@ -1,0 +1,26 @@
+{
+  "nodeId": "917:17364",
+  "name": "Cheap Psychic 1200",
+  "viewport": {
+    "width": 1200,
+    "height": 8632
+  },
+  "columns": [
+    {
+      "title": "Figma reference",
+      "subtitle": "Clean frame screenshot for node 917:17364.",
+      "tag": "Ref",
+      "note": "reference-first",
+      "kind": "image",
+      "src": "img/breakpoints/cheap-psychic-1200-reference.png?v=20260401-bp-proof-1"
+    },
+    {
+      "title": "Current implementation",
+      "subtitle": "Live Cheap Psychic page under the same breakpoint viewport.",
+      "tag": "Live",
+      "note": "same viewport",
+      "kind": "iframe",
+      "src": "cheap-psychic-new.html?v=20260401-cheap-final-pass-2"
+    }
+  ]
+}

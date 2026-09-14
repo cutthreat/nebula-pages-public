@@ -1,0 +1,96 @@
+{
+  "url": "http://127.0.0.1:8765/nebula-easy-phone-psychic.html",
+  "status": "pass",
+  "widths": [
+    {
+      "width": 1200,
+      "d": {
+        "candidate": "phone-psychic-source-rebase",
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 7167,
+        "broken": 0
+      },
+      "interactions": {
+        "menu": "n/a",
+        "seo": "pass",
+        "review": "present"
+      },
+      "err": [],
+      "screenshot": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/postimages/candidate-1200.png",
+      "failures": []
+    },
+    {
+      "width": 992,
+      "d": {
+        "candidate": "phone-psychic-source-rebase",
+        "clientWidth": 992,
+        "scrollWidth": 992,
+        "scrollHeight": 6823,
+        "broken": 0
+      },
+      "interactions": {
+        "menu": "n/a",
+        "seo": "pass",
+        "review": "present"
+      },
+      "err": [],
+      "screenshot": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/postimages/candidate-992.png",
+      "failures": []
+    },
+    {
+      "width": 768,
+      "d": {
+        "candidate": "phone-psychic-source-rebase",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 7229,
+        "broken": 0
+      },
+      "interactions": {
+        "menu": "pass",
+        "seo": "pass",
+        "review": "present"
+      },
+      "err": [],
+      "screenshot": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/postimages/candidate-768.png",
+      "failures": []
+    },
+    {
+      "width": 576,
+      "d": {
+        "candidate": "phone-psychic-source-rebase",
+        "clientWidth": 576,
+        "scrollWidth": 576,
+        "scrollHeight": 7336,
+        "broken": 0
+      },
+      "interactions": {
+        "menu": "pass",
+        "seo": "pass",
+        "review": "present"
+      },
+      "err": [],
+      "screenshot": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/postimages/candidate-576.png",
+      "failures": []
+    },
+    {
+      "width": 320,
+      "d": {
+        "candidate": "phone-psychic-source-rebase",
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "scrollHeight": 8724,
+        "broken": 0
+      },
+      "interactions": {
+        "menu": "pass",
+        "seo": "pass",
+        "review": "present"
+      },
+      "err": [],
+      "screenshot": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/postimages/candidate-320.png",
+      "failures": []
+    }
+  ]
+}

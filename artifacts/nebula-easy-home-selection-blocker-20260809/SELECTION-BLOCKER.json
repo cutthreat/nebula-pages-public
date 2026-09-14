@@ -1,0 +1,171 @@
+{
+  "schema": "oracle_nebula.nebula_easy_home_selection_closeout.v1",
+  "status": "blocked_selection_empty_set",
+  "formal_goal_status": "blocked",
+  "thread_id": "019fe748-0527-70e2-88e9-1cb11fb08555",
+  "recorded_at": "2026-08-09T19:52:49+03:00",
+  "selected_page": null,
+  "blocker_id": "no_exact_5of5_public_home_shell_page_without_existing_layout",
+  "selection_predicate": {
+    "public_home_shell_compatible": true,
+    "exact_c76_widths": [1200, 992, 768, 576, 320],
+    "not_yet_laid_out": true,
+    "no_accepted_implementation": true,
+    "protected_exclusions": ["home", "aura-reading", "account", "chat", "auth", "modal", "archives", "production"]
+  },
+  "set_proof": {
+    "coverage_page_ids": 66,
+    "coverage_rows": 330,
+    "published_exact_rows": 84,
+    "exact_public_crosswalk_families": 14,
+    "exact_public_production_ids_including_home": 15,
+    "exact_public_ids_after_home_aura_exclusion": 13,
+    "exact_public_ids_without_existing_layout": 0,
+    "eligible_count": 0,
+    "equation": "public_exact_5of5 AND not_yet_laid_out AND no_accepted_implementation AND allowed_scope = empty_set"
+  },
+  "exact_public_crosswalk_families": [
+    "faq",
+    "blog",
+    "blog-input",
+    "all-psychic",
+    "aura-reading",
+    "cheap-psychic",
+    "love-reading",
+    "palm-reading",
+    "phone-psychic",
+    "psychic-reading",
+    "tarot-reading",
+    "zodiac-compatibility",
+    "taurus-compatibility",
+    "privacy-policy"
+  ],
+  "near_misses": [
+    {
+      "page_id": "privacy-policy",
+      "reason": "exact five-width and not accepted, but an existing live implementation and compliance closeout are present",
+      "nodes": ["869:8706", "871:9004", "871:9202", "872:7387", "872:7588"]
+    },
+    {
+      "page_id": "faq",
+      "reason": "exact five-width and not accepted, but live HTML and implemented queue rows are present",
+      "nodes": ["866:7108", "866:7511", "868:7221", "868:7775", "868:8218"]
+    },
+    {
+      "page_id": "blog-input",
+      "reason": "exact five-width and not accepted, but live HTML and an implemented queue row are present",
+      "nodes": ["643:7448", "1006:23266", "1006:25391", "1008:22880", "1008:23368"]
+    },
+    {
+      "page_id": "404",
+      "reason": "existing live HTML and only four exact widths; node 1064:23839 is named BLOG INPUT 1204 and cannot be promoted to 404:320",
+      "nodes": ["1064:23227", "1064:23394", "1064:23542", "1064:23692"]
+    }
+  ],
+  "home_donor": {
+    "used": false,
+    "reason": "no eligible target page exists",
+    "preserved_areas": ["layout_root", "header", "navigation", "footer", "container", "assets", "fonts", "responsive_shell", "runtime_semantics"],
+    "files": {
+      "_unzipped/home.html": "AB36F192F236CE9E355645A5C59D35F966CED90790EC81F3A30F088D95BED620",
+      "_unzipped/home.css": "3484081DBD7A52C590BACA7958A37F7F715ABC9AC06B663589401F6E3C6A2A44",
+      "_unzipped/home.js": "648ABABCFECBDB4AF8779E2A465AE9E4E493F8D2E248012DC84B94D41E0A4551"
+    }
+  },
+  "heritage": {
+    "accepted_page_donors": ["home_public_shell.v1", "aura_reading_screen_bundle.v1"],
+    "transferred_blocks": [],
+    "new_blocks": [],
+    "donor_reuse_ratio": null,
+    "reason": "pre-code selection blocker"
+  },
+  "metrics": {
+    "time_to_first_usable_preview_seconds": null,
+    "goal_active_time_at_record_seconds": 2640,
+    "implementation_files_delta": 0,
+    "implementation_loc_delta": 0,
+    "css_loc_delta": 0,
+    "js_loc_delta": 0,
+    "repair_loops": 0,
+    "independent_selection_reviews": 3,
+    "visual_product_review_loops": 0,
+    "local_preview_url": null
+  },
+  "comparison": {
+    "nebula_easy_love": "produced an isolated five-width preview by rebuilding a page that already had a local implementation; that operational interpretation is disallowed by this task's stricter not-yet-laid-out predicate",
+    "aura_heavy": "has accepted source, runtime, visual and reviewer proof, but is an existing protected implementation and cannot supply a new-page candidate",
+    "conclusion": "selection feasibility failed before implementation, so no time or visual-fidelity speedup can be measured"
+  },
+  "verdict": "not_better",
+  "verdict_scope": "method_not_executable_under_current_selection_contract; not a visual-quality verdict",
+  "proof_refs": [
+    {
+      "path": "F:/Figma Nebula/c76-source-index-20260727/C76-PAGE-CROSSWALK-20260727.json",
+      "sha256": "0E41D50149C318EB6A69D76BD2F4E45E8072411AAA380D37AAE0D41974F8E08B"
+    },
+    {
+      "path": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/figma-manifest/status-packets/compare-board-canonical-source-coverage.registry.json",
+      "sha256": "A128988E7836843DAABC4BB566609FD8E9C00BD47FEE40899A6AE37ABBE03252"
+    },
+    {
+      "path": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/figma-manifest/truth-packets/c76-master-map-top-level-frame-index-20260716.json",
+      "sha256": "5931DB0481F75FFDB624F0B0833147BA007F5AE3793D97949474A2C19A84728C"
+    },
+    {
+      "path": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/figma-manifest/accepted-heritage-library.json",
+      "sha256": "EEDBE7BF337FE1209B556FA90D14A3D017D38C2618734B2576B0BC10816378BC"
+    },
+    {
+      "path": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt/docs/oracle-nebula/layout-production-backlog-2026-07-12.csv",
+      "sha256": "39DFE053C772890FDD92EC08B53A57FC8005AFC359BF5DEA45B1A832CBD640D4"
+    }
+  ],
+  "residual_ledger": [
+    {
+      "severity": "blocking",
+      "id": "ELIGIBLE_PAGE_SET_EMPTY",
+      "fact": "No exact C76 five-width public Home-shell family lacks an existing layout.",
+      "resolution_required": "Register a genuinely unimplemented exact-five-width public page, or explicitly authorize rebuild-of-existing-layout semantics in a new scope."
+    }
+  ],
+  "scope_containment": {
+    "page_code_written": false,
+    "home_changed": false,
+    "aura_changed_by_this_task": false,
+    "production_changed": false,
+    "archives_changed": false,
+    "account_chat_changed_after_head_stop": false,
+    "publish_or_deploy": false
+  },
+  "blocked_audit": {
+    "consecutive_goal_turns": 3,
+    "final_checked_at": "2026-08-09T19:52:49+03:00",
+    "eligible_count": 0,
+    "coverage_sha256": "A128988E7836843DAABC4BB566609FD8E9C00BD47FEE40899A6AE37ABBE03252",
+    "crosswalk_sha256": "0E41D50149C318EB6A69D76BD2F4E45E8072411AAA380D37AAE0D41974F8E08B",
+    "master_index_sha256": "5931DB0481F75FFDB624F0B0833147BA007F5AE3793D97949474A2C19A84728C"
+  },
+  "resumed_blocked_audit": {
+    "sequence": 2,
+    "consecutive_goal_turns": 3,
+    "final_checked_at": "2026-08-09T20:13:28+03:00",
+    "goal_active_time_seconds": 2701,
+    "eligible_count": 0,
+    "coverage_sha256": "A128988E7836843DAABC4BB566609FD8E9C00BD47FEE40899A6AE37ABBE03252",
+    "crosswalk_sha256": "0E41D50149C318EB6A69D76BD2F4E45E8072411AAA380D37AAE0D41974F8E08B",
+    "master_index_sha256": "5931DB0481F75FFDB624F0B0833147BA007F5AE3793D97949474A2C19A84728C",
+    "formal_goal_status": "blocked"
+  },
+  "resumed_blocked_audit_2": {
+    "sequence": 3,
+    "consecutive_goal_turns": 3,
+    "final_checked_at": "2026-08-09T20:30:56+03:00",
+    "goal_active_time_seconds": 2753,
+    "eligible_count": 0,
+    "coverage_sha256": "A128988E7836843DAABC4BB566609FD8E9C00BD47FEE40899A6AE37ABBE03252",
+    "crosswalk_sha256": "0E41D50149C318EB6A69D76BD2F4E45E8072411AAA380D37AAE0D41974F8E08B",
+    "master_index_sha256": "5931DB0481F75FFDB624F0B0833147BA007F5AE3793D97949474A2C19A84728C",
+    "formal_goal_status": "blocked"
+  },
+  "next_action": "Await an external source-registry change or a new explicit selection contract; do not choose a near-miss implicitly."
+}

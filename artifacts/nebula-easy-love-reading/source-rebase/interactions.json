@@ -1,0 +1,101 @@
+{
+  "ctaTarget": "signup-step-1.html",
+  "menuOpen": {
+    "expanded": "true",
+    "show": true
+  },
+  "menuClosed": {
+    "expanded": "false",
+    "show": false
+  },
+  "faqAfterKeyboard": {
+    "hidden": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "open": [
+      3
+    ]
+  },
+  "seoAfterOpenSecond": {
+    "closedPanels": [
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      },
+      {
+        "height": 75,
+        "hidden": false,
+        "text": true
+      }
+    ],
+    "open": [
+      2
+    ]
+  },
+  "assets": [
+    "_unzipped/img/logo.webp",
+    "_unzipped/img/logo-white.webp",
+    "_unzipped/img/love-hero-art-figma.webp",
+    "_unzipped/img/avatar-1.webp",
+    "_unzipped/img/love-best-online-art-figma.webp",
+    "_unzipped/img/google_play.webp",
+    "_unzipped/img/appstore.webp",
+    "_unzipped/img/pay_icons.webp"
+  ],
+  "overflow": {
+    "body": 0,
+    "document": 0
+  },
+  "consoleErrors": [],
+  "faqAfterClick": {
+    "hidden": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "open": [
+      1
+    ]
+  },
+  "faqAfterSpace": {
+    "hidden": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "open": [
+      1
+    ]
+  },
+  "faqRestored": {
+    "hidden": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "open": [
+      3
+    ]
+  }
+}

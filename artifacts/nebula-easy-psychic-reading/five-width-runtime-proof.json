@@ -1,0 +1,288 @@
+{
+  "schema": "nebula_easy_psychic_reading_runtime_proof.v1",
+  "generatedAt": "2026-08-09T19:27:09.098Z",
+  "url": "http://127.0.0.1:8765/nebula-easy-psychic-reading.html",
+  "status": "pass",
+  "widths": [
+    {
+      "width": 1200,
+      "dimensions": {
+        "innerWidth": 1200,
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "scrollHeight": 7494
+      },
+      "images": {
+        "total": 15,
+        "broken": []
+      },
+      "expertNames": [
+        "Veronika",
+        "Marina",
+        "Svetlana",
+        "Izolda",
+        "Galina",
+        "Magic Pig"
+      ],
+      "ctaHrefs": [
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html"
+      ],
+      "interactions": {
+        "menu": "desktop_not_required",
+        "faq": "pass",
+        "faqStates": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": [],
+      "screenshot": "artifacts/nebula-easy-psychic-reading/postimages/candidate-1200.png",
+      "screenshotBytes": 2443020,
+      "failures": []
+    },
+    {
+      "width": 992,
+      "dimensions": {
+        "innerWidth": 992,
+        "clientWidth": 992,
+        "scrollWidth": 992,
+        "scrollHeight": 7489
+      },
+      "images": {
+        "total": 15,
+        "broken": []
+      },
+      "expertNames": [
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika"
+      ],
+      "ctaHrefs": [
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html"
+      ],
+      "interactions": {
+        "menu": "desktop_not_required",
+        "faq": "pass",
+        "faqStates": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": [],
+      "screenshot": "artifacts/nebula-easy-psychic-reading/postimages/candidate-992.png",
+      "screenshotBytes": 1764920,
+      "failures": []
+    },
+    {
+      "width": 768,
+      "dimensions": {
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 8042
+      },
+      "images": {
+        "total": 15,
+        "broken": []
+      },
+      "expertNames": [
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika"
+      ],
+      "ctaHrefs": [
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html"
+      ],
+      "interactions": {
+        "menu": "pass",
+        "faq": "pass",
+        "faqStates": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": [],
+      "screenshot": "artifacts/nebula-easy-psychic-reading/postimages/candidate-768.png",
+      "screenshotBytes": 1500025,
+      "failures": []
+    },
+    {
+      "width": 576,
+      "dimensions": {
+        "innerWidth": 576,
+        "clientWidth": 576,
+        "scrollWidth": 576,
+        "scrollHeight": 8032
+      },
+      "images": {
+        "total": 15,
+        "broken": []
+      },
+      "expertNames": [
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika"
+      ],
+      "ctaHrefs": [
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html"
+      ],
+      "interactions": {
+        "menu": "pass",
+        "faq": "pass",
+        "faqStates": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": [],
+      "screenshot": "artifacts/nebula-easy-psychic-reading/postimages/candidate-576.png",
+      "screenshotBytes": 1214247,
+      "failures": []
+    },
+    {
+      "width": 320,
+      "dimensions": {
+        "innerWidth": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "scrollHeight": 9247
+      },
+      "images": {
+        "total": 15,
+        "broken": []
+      },
+      "expertNames": [
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika",
+        "Veronika"
+      ],
+      "ctaHrefs": [
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html",
+        "signup-step-1.html"
+      ],
+      "interactions": {
+        "menu": "pass",
+        "faq": "pass",
+        "faqStates": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [],
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ]
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": [],
+      "screenshot": "artifacts/nebula-easy-psychic-reading/postimages/candidate-320.png",
+      "screenshotBytes": 913510,
+      "failures": []
+    }
+  ]
+}

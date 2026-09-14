@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auth Forgot Password — Neuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth-forgot.css?v=20260331-forgot-pass-4" />
+</head>
+<body>
+  <main class="forgot-stage" aria-label="Forgot password">
+    <div class="forgot-frame">
+      <div class="forgot-menu" aria-label="Top navigation">
+        <button class="forgot-burger" type="button" tabindex="-1" aria-hidden="true"></button>
+        <a class="forgot-brand" href="home.html" aria-label="Home">
+          <img src="img/login-brand-figma.png" alt="NEURO" />
+        </a>
+        <div class="forgot-menu-right">
+          <span class="forgot-lang">Eng ▾</span>
+          <a href="signup-step-1.html">Sign up →</a>
+          <button class="forgot-toggle" type="button" tabindex="-1" aria-hidden="true">
+            <img src="img/login-toggle-icon.svg" alt="" />
+          </button>
+        </div>
+        <button class="forgot-mobile-toggle" type="button" tabindex="-1" aria-hidden="true">
+          <img src="img/login-toggle-icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="forgot-hero" aria-hidden="true">
+        <img src="img/login-left-figma.png" alt="" />
+      </div>
+
+      <section class="forgot-card-wrap" aria-label="Password reset form">
+        <div class="forgot-card">
+          <form class="forgot-panel" action="login.html" method="get">
+            <h1 class="forgot-title">Forgot your password?</h1>
+            <p class="forgot-subtitle">
+              Please enter email address you specified during registration. If you have any issues, please contact us via
+              <a href="https://24hours.support-nebula.com/hc/en-us" target="_blank" rel="noopener">Support center</a>
+            </p>
+
+            <input class="forgot-field" type="email" placeholder="Your email" aria-label="Your email" />
+
+            <button class="forgot-button" type="submit">Continue</button>
+            <a class="forgot-cancel" href="login.html">Cancel</a>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<script>
+window.addEventListener('load', () => {
+  const el = document.querySelector('.forgot-mobile-toggle');
+  const menu = document.querySelector('.forgot-menu-right');
+  const info = {
+    innerWidth: window.innerWidth,
+    scrollWidth: document.documentElement.scrollWidth,
+    bodyScrollWidth: document.body.scrollWidth,
+    toggle: el ? {x: Math.round(el.getBoundingClientRect().x), y: Math.round(el.getBoundingClientRect().y), w: Math.round(el.getBoundingClientRect().width), h: Math.round(el.getBoundingClientRect().height)} : null,
+    menu: menu ? {x: Math.round(menu.getBoundingClientRect().x), y: Math.round(menu.getBoundingClientRect().y), w: Math.round(menu.getBoundingClientRect().width), h: Math.round(menu.getBoundingClientRect().height)} : null
+  };
+  const pre = document.createElement('pre');
+  pre.id = 'dbg';
+  pre.style.position = 'fixed';
+  pre.style.left = '0';
+  pre.style.top = '0';
+  pre.style.zIndex = '999999';
+  pre.style.margin = '0';
+  pre.style.padding = '6px';
+  pre.style.background = 'rgba(0,0,0,.85)';
+  pre.style.color = '#0f0';
+  pre.style.fontSize = '10px';
+  pre.textContent = JSON.stringify(info, null, 2);
+  document.body.appendChild(pre);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿{
+    "nodeId":  "368:1257",
+    "name":  "Signup step 2",
+    "viewport":  {
+                     "width":  1280,
+                     "height":  855
+                 },
+    "columns":  [
+                    {
+                        "title":  "Figma reference",
+                        "subtitle":  "Full-screen frame screenshot for node 368:1257.",
+                        "tag":  "Ref",
+                        "note":  "reference-first",
+                        "kind":  "image",
+                        "src":  "img/signup-step-2-figma-reference.png"
+                    },
+                    {
+                        "title":  "Current implementation",
+                        "subtitle":  "Live auth page under the same viewport.",
+                        "tag":  "Live",
+                        "note":  "same viewport",
+                        "kind":  "iframe",
+                        "src":  "signup-step-2.html"
+                    }
+                ]
+}

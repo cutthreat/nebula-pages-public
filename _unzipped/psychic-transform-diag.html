@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Psychic Transform Diagnostic</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .diag {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 8px 10px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            white-space: pre-wrap;
+            font: 12px/1.4 monospace;
+        }
+
+        iframe {
+            display: block;
+            width: 883px;
+            height: 1100px;
+            border: 0;
+            margin: 0 auto;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <pre class="diag" id="diag">loading...</pre>
+    <iframe id="frame" src="http://127.0.0.1:8130/psychic-reading-new.html"></iframe>
+
+    <script>
+        const diag = document.getElementById("diag");
+        const frame = document.getElementById("frame");
+
+        frame.addEventListener("load", () => {
+            const doc = frame.contentDocument;
+            const win = frame.contentWindow;
+            const section = doc.querySelector(".prn-transform");
+            const art = doc.querySelector(".prn-transform__art");
+            const title = doc.querySelector(".prn-transform .prn-section-title");
+
+            if (!section) {
+                diag.textContent = "section not found";
+                return;
+            }
+
+            const sectionTop = section.getBoundingClientRect().top + win.scrollY;
+            win.scrollTo(0, Math.max(0, sectionTop - 8));
+
+            setTimeout(() => {
+                const fmt = (el, name) => {
+                    if (!el) return `${name}: none`;
+                    const r = el.getBoundingClientRect();
+                    return `${name}: left=${Math.round(r.left)} right=${Math.round(r.right)} top=${Math.round(r.top)} width=${Math.round(r.width)}`;
+                };
+
+                diag.textContent =
+`frame.innerWidth=${win.innerWidth}
+scrollY=${Math.round(win.scrollY)}
+${fmt(section, "section")}
+${fmt(title, "title")}
+${fmt(art, "art")}`;
+            }, 150);
+        });
+    </script>
+</body>
+</html>

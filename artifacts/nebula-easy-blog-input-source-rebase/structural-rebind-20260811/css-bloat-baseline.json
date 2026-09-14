@@ -1,0 +1,18 @@
+{
+  "contract": "oracle-nebula-css-bloat-baseline-v1",
+  "page_id": "nebula-easy-blog-input",
+  "css_path": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\nebula-easy-blog-input.css",
+  "baseline": {
+    "bytes": 1641,
+    "lines": 58,
+    "sha256": "942CE3A9CCEE0D5A66EFB23187BCD2AE52202044E3BD8D0C88FA339091FEBEFF"
+  },
+  "thresholds": {
+    "warning_bytes_growth_percent": 5,
+    "alarm_bytes_growth_percent": 10,
+    "stop_bytes_growth_percent": 15,
+    "warning_added_lines": 150,
+    "alarm_added_lines": 300,
+    "stop_added_lines": 500
+  }
+}

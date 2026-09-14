@@ -1,0 +1,21 @@
+{
+  "schema": "oracle_nebula.derived_webp_asset_manifest.v1",
+  "state_id": "lk.chatroom.state.paid_active_1207",
+  "source_packet": "H:\\Nebula\\GPT\\figma-manifest\\truth-packets\\lk-chatroom-c76-paid-active-1200-source",
+  "source_hash_ledger": "H:\\Nebula\\GPT\\figma-manifest\\truth-packets\\lk-chatroom-c76-paid-active-1200-source\\SHA256SUMS.json",
+  "derivation": "ImageMagick lossless WebP conversion; original exact PNG remains the picture fallback and provenance source",
+  "figma_mutation": false,
+  "source_packet_mutation": false,
+  "assets": [
+    {"name":"header-avatar-1424-51594.webp","bytes":12226,"sha256":"867F8FC88E53AEDC3F9B1E06869EBA653D2D757DFADAC48622EF52CA56ECDD92"},
+    {"name":"ready-image-01.webp","bytes":10386,"sha256":"F2FF911E05A5FC5FB764DD7AD1A04DA6FBC1FD8B71A0FAEF1DF2A4C45F3DA7D2"},
+    {"name":"ready-image-02.webp","bytes":14464,"sha256":"FF10C2A27BD86FF92EA83EC9825466B41B6E4E30C2D8AAA812F7F6E6B048AC62"},
+    {"name":"ready-image-04.webp","bytes":8528,"sha256":"66F929F17B6A3401F0F68355E30DCABCDB6EA26F009B6D04B7FBFFDB4F73E703"},
+    {"name":"ready-image-05.webp","bytes":9946,"sha256":"9F481575DA6F860B8A921FD39BF7443F035FA3BFDA127255DFCA4F91D6479CF9"},
+    {"name":"ready-image-06.webp","bytes":9712,"sha256":"6FEF3D3CAF4FC7FC41903A98FA53EE545D9E9A728E6DD38191E03E95E213DC36"},
+    {"name":"ready-zodiac-main-1424-51753.webp","bytes":1606134,"sha256":"EACDB31B4AA431ACB0516E40C389B2E2F0D4446059E8A851FFC876852918EAB9"},
+    {"name":"ready-zodiac-thumb-1.webp","bytes":712410,"sha256":"70CE8F9979BE73DF92AE93C60688F1497E5A1BC76F4F9426BE2DF5BABC9F724A"},
+    {"name":"ready-zodiac-thumb-2.webp","bytes":868494,"sha256":"82EC77ACB18A24900D87428F11FC863D362AA4D633DBF62029B9D8D6955082C7"},
+    {"name":"ready-zodiac-thumb-3.webp","bytes":1510730,"sha256":"2CC587D8BA1D13FA03A2EE911574A871232F26D3F62F412FC79C6027C877F74D"}
+  ]
+}

@@ -1,0 +1,446 @@
+/* ===== Oracle Home reverse shell-owner contract ===== */
+/* Source: artifacts/home-reverse-contract/home-breakpoint-contract.json */
+/* Runtime rule: this late owner layer must be content-safe. Use min-height, not fixed height. */
+
+@media (min-width: 1200px) {
+    .home-page.home-page .hero-section {
+        box-sizing: border-box;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 1000px;
+    }
+
+    .home-page.home-page #why-trust {
+        box-sizing: border-box;
+        min-height: 1838px;
+    }
+
+    .home-page.home-page #reviews {
+        box-sizing: border-box;
+    }
+
+    .home-page.home-page .best-reading-section {
+        box-sizing: border-box;
+        min-height: 1044px;
+    }
+
+    .home-page.home-page #topics {
+        box-sizing: border-box;
+        min-height: 1331px;
+    }
+
+    .home-page.home-page .video-section {
+        box-sizing: border-box;
+        min-height: 900px;
+    }
+
+    .home-page.home-page .steps-section {
+        box-sizing: border-box;
+        min-height: 915px;
+    }
+
+    .home-page.home-page #situation {
+        box-sizing: border-box;
+        min-height: 1043px;
+    }
+
+    .home-page.home-page #faq {
+        box-sizing: border-box;
+        min-height: 1407px;
+    }
+
+    .home-page.home-page .site-footer {
+        box-sizing: border-box;
+        min-height: 420px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199.98px) {
+    .home-page.home-page .hero-section {
+        box-sizing: border-box;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #why-trust {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #reviews {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .best-reading-section {
+        box-sizing: border-box;
+    }
+
+    .home-page.home-page #topics {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .video-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .steps-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #situation {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #faq {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .site-footer {
+        box-sizing: border-box;
+    }
+}
+
+@media (width: 992px) {
+    .home-page.home-page .home .hero-section {
+        box-sizing: border-box;
+        height: 728px;
+        min-height: 728px;
+        padding-bottom: 0;
+    }
+
+    .home-page.home-page .home .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 972px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .home-page.home-page .hero-section {
+        box-sizing: border-box;
+        min-height: 644px;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #why-trust {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #reviews {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .best-reading-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #topics {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .video-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .steps-section {
+        box-sizing: border-box;
+        min-height: 930px;
+    }
+
+    .home-page.home-page #situation {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #faq {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .site-footer {
+        box-sizing: border-box;
+        min-height: 720px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 575.98px) {
+    .home-page.home-page .hero-section {
+        box-sizing: border-box;
+        min-height: 657px;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 570px;
+    }
+
+    .home-page.home-page #why-trust {
+        box-sizing: border-box;
+        min-height: 1745px;
+    }
+
+    .home-page.home-page #reviews {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .best-reading-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #topics {
+        box-sizing: border-box;
+        min-height: 1200px;
+    }
+
+    .home-page.home-page .video-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .steps-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #situation {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #faq {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .site-footer {
+        box-sizing: border-box;
+        min-height: 680px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page.home-page .hero-section {
+        box-sizing: border-box;
+        min-height: 680px;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        box-sizing: border-box;
+        min-height: 800px;
+    }
+
+    .home-page.home-page #why-trust {
+        box-sizing: border-box;
+        min-height: 1830px;
+    }
+
+    .home-page.home-page #reviews {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .best-reading-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #topics {
+        box-sizing: border-box;
+        min-height: 1775px;
+    }
+
+    .home-page.home-page .video-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page .steps-section {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #situation {
+        box-sizing: border-box;
+        min-height: 0;
+    }
+
+    .home-page.home-page #faq {
+        box-sizing: border-box;
+        min-height: 1542px;
+    }
+
+    .home-page.home-page .site-footer {
+        box-sizing: border-box;
+        min-height: 1190px;
+    }
+}
+
+/* Pavlo-grade responsive fit: breakpoints must be content-driven, not stretched by export shell heights. */
+@media (min-width: 1200px) {
+    .home-page.home-page .hero-section {
+        height: auto;
+        min-height: 855px;
+        padding-top: 205px;
+        padding-bottom: 72px;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        min-height: 1000px;
+    }
+
+    .home-page.home-page #why-trust {
+        min-height: 1838px;
+    }
+
+    .home-page.home-page #reviews {
+        min-height: 1333px;
+    }
+
+    .home-page.home-page .best-reading-section {
+        min-height: 1044px;
+    }
+
+    .home-page.home-page #topics {
+        min-height: 1331px;
+    }
+
+    .home-page.home-page .video-section {
+        min-height: 900px;
+    }
+
+    .home-page.home-page .steps-section {
+        min-height: 915px;
+    }
+
+    .home-page.home-page #situation {
+        min-height: 1043px;
+    }
+
+    .home-page.home-page #faq {
+        min-height: 1407px;
+    }
+
+    .home-page.home-page .site-footer {
+        min-height: 420px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199.98px) {
+    .home-page.home-page .hero-section {
+        height: auto;
+        min-height: 768px;
+        padding-top: 140px;
+        padding-bottom: 72px;
+    }
+
+    .home-page.home-page .what-neuro-section,
+    .home-page.home-page #why-trust,
+    .home-page.home-page #reviews,
+    .home-page.home-page .best-reading-section,
+    .home-page.home-page #topics,
+    .home-page.home-page .video-section,
+    .home-page.home-page .steps-section,
+    .home-page.home-page #situation,
+    .home-page.home-page #faq,
+    .home-page.home-page .site-footer {
+        min-height: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .home-page.home-page .hero-section {
+        height: auto;
+        min-height: 644px;
+    }
+
+    .home-page.home-page .what-neuro-section,
+    .home-page.home-page #why-trust,
+    .home-page.home-page #reviews,
+    .home-page.home-page .best-reading-section,
+    .home-page.home-page #topics,
+    .home-page.home-page .video-section,
+    .home-page.home-page .steps-section,
+    .home-page.home-page #situation,
+    .home-page.home-page #faq,
+    .home-page.home-page .site-footer {
+        min-height: 0;
+    }
+}
+
+@media (width: 576px) {
+    .home-page.home-page .hero-section {
+        height: auto;
+        min-height: 542px;
+    }
+
+    .home-page.home-page .what-neuro-section,
+    .home-page.home-page #why-trust,
+    .home-page.home-page #reviews,
+    .home-page.home-page .best-reading-section,
+    .home-page.home-page #topics,
+    .home-page.home-page .video-section,
+    .home-page.home-page .steps-section,
+    .home-page.home-page #situation,
+    .home-page.home-page #faq,
+    .home-page.home-page .site-footer {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-page.home-page #why-trust,
+    .home-page.home-page #reviews,
+    .home-page.home-page .best-reading-section,
+    .home-page.home-page #topics,
+    .home-page.home-page .video-section,
+    .home-page.home-page .steps-section,
+    .home-page.home-page #situation,
+    .home-page.home-page #faq,
+    .home-page.home-page .site-footer {
+        min-height: 0;
+    }
+
+    .home-page.home-page .what-neuro-section {
+        height: 720px;
+        min-height: 720px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page.home-page .hero-section {
+        height: 680px;
+        min-height: 680px;
+        padding-top: 97px;
+        padding-bottom: 50px;
+    }
+}
+
+/* source: current export shell `index.html` / data-nebula-page="home";
+   keep the intentionally wide testimonial track clipped to the mobile
+   viewport instead of allowing a page-level horizontal scroll residual. */
+@media (max-width: 400px) {
+    .home[data-nebula-page="home"] {
+        overflow-x: hidden;
+    }
+}

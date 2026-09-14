@@ -1,0 +1,323 @@
+{
+  "schema": "human_qa_perception_packet.v1",
+  "source": "screenshot_pixels_only_no_dom",
+  "viewport": {
+    "width": 320,
+    "height": 900
+  },
+  "limitations": [
+    "OCR may omit or misread text",
+    "non-text imagery is represented only by coarse brightness, contrast, and detail density",
+    "attention_rank is a physical-salience heuristic, not eye-tracking data"
+  ],
+  "visible_text_by_pixel_salience": [
+    {
+      "attention_rank": 1,
+      "text": "Ruled = 4 pl",
+      "confidence": 65,
+      "position": {
+        "x": 0.041,
+        "y": 0.529,
+        "width": 0.325,
+        "height": 0.051
+      },
+      "relative_size": 0.0511,
+      "pixel_salience": 43.15
+    },
+    {
+      "attention_rank": 2,
+      "text": "Compatibility",
+      "confidence": 79,
+      "position": {
+        "x": 0.166,
+        "y": 0.167,
+        "width": 0.672,
+        "height": 0.039
+      },
+      "relative_size": 0.0389,
+      "pixel_salience": 40.12
+    },
+    {
+      "attention_rank": 3,
+      "text": "Taurus",
+      "confidence": 95,
+      "position": {
+        "x": 0.328,
+        "y": 0.12,
+        "width": 0.344,
+        "height": 0.029
+      },
+      "relative_size": 0.0289,
+      "pixel_salience": 32.81
+    },
+    {
+      "attention_rank": 4,
+      "text": "Apr 20 - Мау 20",
+      "confidence": 92,
+      "position": {
+        "x": 0.281,
+        "y": 0.228,
+        "width": 0.438,
+        "height": 0.022
+      },
+      "relative_size": 0.0222,
+      "pixel_salience": 24.02
+    },
+    {
+      "attention_rank": 5,
+      "text": "@ NEURO",
+      "confidence": 90,
+      "position": {
+        "x": 0.347,
+        "y": 0.043,
+        "width": 0.303,
+        "height": 0.019
+      },
+      "relative_size": 0.0189,
+      "pixel_salience": 21.44
+    },
+    {
+      "attention_rank": 6,
+      "text": "prefers to walk towards their goal in",
+      "confidence": 93,
+      "position": {
+        "x": 0.122,
+        "y": 0.657,
+        "width": 0.756,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 15.57
+    },
+    {
+      "attention_rank": 7,
+      "text": "asensual and grounded sign. When it",
+      "confidence": 85,
+      "position": {
+        "x": 0.1,
+        "y": 0.59,
+        "width": 0.8,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 15.33
+    },
+    {
+      "attention_rank": 8,
+      "text": "steady but certain steps. They rarely rush",
+      "confidence": 91,
+      "position": {
+        "x": 0.056,
+        "y": 0.69,
+        "width": 0.887,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 15.22
+    },
+    {
+      "attention_rank": 9,
+      "text": "match and are willing to wait. Guided by",
+      "confidence": 95,
+      "position": {
+        "x": 0.081,
+        "y": 0.79,
+        "width": 0.841,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 14.92
+    },
+    {
+      "attention_rank": 10,
+      "text": "potential; they want to find their perfect",
+      "confidence": 91,
+      "position": {
+        "x": 0.072,
+        "y": 0.757,
+        "width": 0.859,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 14.83
+    },
+    {
+      "attention_rank": 11,
+      "text": "comes to romantic relationships, Taurus",
+      "confidence": 77,
+      "position": {
+        "x": 0.069,
+        "y": 0.623,
+        "width": 0.863,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 14.52
+    },
+    {
+      "attention_rank": 12,
+      "text": "sensuality, tranquility, and unhurried love.",
+      "confidence": 90,
+      "position": {
+        "x": 0.056,
+        "y": 0.857,
+        "width": 0.887,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 14.17
+    },
+    {
+      "attention_rank": 13,
+      "text": "into anything without seeing its complete",
+      "confidence": 74,
+      "position": {
+        "x": 0.053,
+        "y": 0.723,
+        "width": 0.894,
+        "height": 0.017
+      },
+      "relative_size": 0.0167,
+      "pixel_salience": 13.75
+    },
+    {
+      "attention_rank": 14,
+      "text": "&, Written by Elena Lubimova",
+      "confidence": 78,
+      "position": {
+        "x": 0.197,
+        "y": 0.957,
+        "width": 0.603,
+        "height": 0.018
+      },
+      "relative_size": 0.0178,
+      "pixel_salience": 13.62
+    },
+    {
+      "attention_rank": 15,
+      "text": "itself, Taurus is.",
+      "confidence": 84,
+      "position": {
+        "x": 0.631,
+        "y": 0.557,
+        "width": 0.319,
+        "height": 0.014
+      },
+      "relative_size": 0.0144,
+      "pixel_salience": 13.38
+    },
+    {
+      "attention_rank": 16,
+      "text": "Venus, their existence is infused with",
+      "confidence": 92,
+      "position": {
+        "x": 0.1,
+        "y": 0.823,
+        "width": 0.797,
+        "height": 0.014
+      },
+      "relative_size": 0.0144,
+      "pixel_salience": 12.57
+    },
+    {
+      "attention_rank": 17,
+      "text": "Home / Zodiac Compatibility / Taurus",
+      "confidence": 89,
+      "position": {
+        "x": 0.131,
+        "y": 0.926,
+        "width": 0.738,
+        "height": 0.014
+      },
+      "relative_size": 0.0144,
+      "pixel_salience": 11.87
+    }
+  ],
+  "coarse_visual_zones": [
+    {
+      "zone": "1:1",
+      "position": "top-left",
+      "brightness": 245,
+      "contrast": 14,
+      "detail_density": 0.024
+    },
+    {
+      "zone": "1:2",
+      "position": "top-center-left",
+      "brightness": 231,
+      "contrast": 38,
+      "detail_density": 0.187
+    },
+    {
+      "zone": "1:3",
+      "position": "top-center-right",
+      "brightness": 230,
+      "contrast": 38,
+      "detail_density": 0.203
+    },
+    {
+      "zone": "1:4",
+      "position": "top-right",
+      "brightness": 242,
+      "contrast": 18,
+      "detail_density": 0.031
+    },
+    {
+      "zone": "2:1",
+      "position": "middle-left",
+      "brightness": 224,
+      "contrast": 43,
+      "detail_density": 0.137
+    },
+    {
+      "zone": "2:2",
+      "position": "middle-center-left",
+      "brightness": 206,
+      "contrast": 41,
+      "detail_density": 0.173
+    },
+    {
+      "zone": "2:3",
+      "position": "middle-center-right",
+      "brightness": 202,
+      "contrast": 47,
+      "detail_density": 0.186
+    },
+    {
+      "zone": "2:4",
+      "position": "middle-right",
+      "brightness": 231,
+      "contrast": 32,
+      "detail_density": 0.114
+    },
+    {
+      "zone": "3:1",
+      "position": "bottom-left",
+      "brightness": 216,
+      "contrast": 16,
+      "detail_density": 0.117
+    },
+    {
+      "zone": "3:2",
+      "position": "bottom-center-left",
+      "brightness": 218,
+      "contrast": 18,
+      "detail_density": 0.163
+    },
+    {
+      "zone": "3:3",
+      "position": "bottom-center-right",
+      "brightness": 222,
+      "contrast": 19,
+      "detail_density": 0.165
+    },
+    {
+      "zone": "3:4",
+      "position": "bottom-right",
+      "brightness": 231,
+      "contrast": 17,
+      "detail_density": 0.128
+    }
+  ],
+  "prominent_visual_regions": []
+}
