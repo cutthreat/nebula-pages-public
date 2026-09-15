@@ -1,6 +1,0 @@
-<svg width="42" height="24" viewBox="0 0 42 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- C76 1435:59433 + 1435:59434: source 40x20 frame, 16px circle, exact drop shadow and 2px render padding. -->
-<rect x="0" y="2" width="40" height="20" rx="12" fill="#A07EFF"/>
-<g filter="url(#shadow)"><circle cx="30" cy="12" r="8" fill="#F1F1F1"/></g>
-<defs><filter id="shadow" x="18" y="0" width="24" height="24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="bg"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"/><feGaussianBlur stdDeviation="2"/><feComposite in2="alpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="bg" mode="normal" result="shadow"/><feBlend in="SourceGraphic" in2="shadow" mode="normal"/></filter></defs>
-</svg>

@@ -25,6 +25,74 @@ foreach ($requiredPath in @($assetSource, $moduleResourceSource, $htmlTarget)) {
     }
 }
 
+$routes = @(
+    @{ path='/nebula-account/profile'; file='profile.html' },
+    @{ path='/nebula-account/psychics'; file='psychics.html' },
+    @{ path='/nebula-account/psychics/margo-lover'; file='psychic-margo-lover.html' },
+    @{ path='/nebula-account/psychics/mia-jacomo'; file='psychic-mia-jacomo.html' },
+    @{ path='/nebula-account/favorites'; file='favorites.html' },
+    @{ path='/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue'; file='chatroom.html' },
+    @{ path='/nebula-account/chatroom/notify'; file='chatroom-notify.html' },
+    @{ path='/nebula-account/chatroom/expert-offline'; file='expert-offline.html' },
+    @{ path='/nebula-account/chatroom/consultation-support'; file='consultation-support.html' },
+    @{ path='/nebula-account/static/question-topics'; file='question-topics.html' },
+    @{ path='/nebula-account/static/astrological-details'; file='astrological-details.html' },
+    @{ path='/nebula-account/static/video-preview'; file='video-preview-static.html' },
+    @{ path='/nebula-account/horoscope'; file='horoscope.html' },
+    @{ path='/nebula-account/settings'; file='settings.html' },
+    @{ path='/nebula-account/settings/support'; file='support.html' },
+    @{ path='/nebula-account/settings/notifications'; file='notifications.html' },
+    @{ path='/nebula-account/settings/support/billing'; file='billing.html' },
+    @{ path='/nebula-account/settings/support/plans'; file='plans.html' },
+    @{ path='/nebula-account/settings/support/help'; file='support-help.html' },
+    @{ path='/nebula-account/settings/support/helper'; file='helper-bot.html' },
+    @{ path='/nebula-account/settings/support/faq'; file='faq.html' },
+    @{ path='/nebula-account/settings/astrology'; file='astrology.html' },
+    @{ path='/nebula-account/settings/notifications/daily-horoscope'; file='daily-horoscope.html' },
+    @{ path='/nebula-account/settings/account'; file='account-information.html' },
+    @{ path='/nebula-account/settings/legal'; file='legal.html' },
+    @{ path='/nebula-account/settings/legal/privacy-policy'; file='privacy-policy.html' },
+    @{ path='/nebula-account/settings/legal/personal-data'; file='personal-data.html' },
+    @{ path='/nebula-account/settings/legal/center'; file='legal-center.html' },
+    @{ path='/nebula-account/settings/legal/consent'; file='consent-settings.html' },
+    @{ path='/nebula-account/settings/notifications/messages'; file='messages-from-psychics.html' },
+    @{ path='/nebula-account/settings/notifications/offers'; file='special-offers.html' },
+    @{ path='/nebula-account/settings/notifications/system'; file='system-messages.html' }
+)
+
+$routeMap = @{}
+foreach ($route in $routes) { $routeMap[$route.path.Split('?')[0]] = $route.file }
+
+function Convert-InternalHref([string]$href) {
+    try {
+        $uri = [System.Uri]('http://local' + $href)
+        $path = $uri.AbsolutePath
+        $query = $uri.Query
+    } catch { return $href }
+    if ($routeMap.ContainsKey($path)) { return $routeMap[$path] + $query }
+    # The local catalogue contains more expert cards than the static snapshot.
+    # Keep unknown catalogue profiles inside the published surface instead of emitting a 404 root route.
+    if ($path -match '^/nebula-account/psychics/') { return 'psychics.html' + $query }
+    return $href
+}
+
+$captured = @{}
+$statuses = @{}
+$assetNames = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+foreach ($route in $routes) {
+    $response = Invoke-WebRequest -UseBasicParsing -Uri ($BaseUrl + $route.path) -TimeoutSec 20
+    $captured[$route.file] = $response.Content
+    $statuses[$route.file] = [int]$response.StatusCode
+    $assetScanHtml = [regex]::Replace($response.Content, '(?is)<meta\s+name="nebula-integration-config"[^>]*>\s*', '')
+    $assetScanHtml = [regex]::Replace($assetScanHtml, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
+    $assetScanHtml = [regex]::Replace($assetScanHtml, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
+    foreach ($match in [regex]::Matches($assetScanHtml, '/assets/(?<name>[a-z0-9]+)/')) {
+        [void]$assetNames.Add($match.Groups['name'].Value)
+    }
+}
+# The module's Yii asset bundle is rewritten to the release resource tree.
+[void]$assetNames.Add('3f6bda43')
+
 if ($CopyAssets) {
     $stagingRoot = Join-Path $releaseRootResolved ('.snapshot-staging-' + [guid]::NewGuid().ToString('N'))
     $backupRoot = Join-Path $releaseRootResolved ('.snapshot-backup-' + [guid]::NewGuid().ToString('N'))
@@ -33,7 +101,13 @@ if ($CopyAssets) {
     $records = @()
     New-Item -ItemType Directory -Force -Path $stageAssets, $stageModuleResources | Out-Null
     try {
-        Copy-Item -Path (Join-Path $assetSource '*') -Destination $stageAssets -Recurse -Force
+        foreach ($assetName in $assetNames) {
+            $assetSourcePath = Join-Path $assetSource $assetName
+            if (-not (Test-Path -LiteralPath $assetSourcePath -PathType Container)) {
+                throw "Referenced Yii asset bundle was not found: $assetSourcePath"
+            }
+            Copy-Item -LiteralPath $assetSourcePath -Destination (Join-Path $stageAssets $assetName) -Recurse -Force
+        }
         Copy-Item -Path (Join-Path $moduleResourceSource '*') -Destination $stageModuleResources -Recurse -Force
         $generatedConversationCss = Join-Path $assetSource '3f6bda43\css\conversation-list.css'
         if (Test-Path -LiteralPath $generatedConversationCss) {
@@ -88,64 +162,12 @@ if ($CopyAssets) {
     }
 }
 
-$routes = @(
-    @{ path='/nebula-account/profile'; file='profile.html' },
-    @{ path='/nebula-account/psychics'; file='psychics.html' },
-    @{ path='/nebula-account/psychics/margo-lover'; file='psychic-margo-lover.html' },
-    @{ path='/nebula-account/psychics/mia-jacomo'; file='psychic-mia-jacomo.html' },
-    @{ path='/nebula-account/favorites'; file='favorites.html' },
-    @{ path='/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue'; file='chatroom.html' },
-    @{ path='/nebula-account/chatroom/notify'; file='chatroom-notify.html' },
-    @{ path='/nebula-account/chatroom/expert-offline'; file='expert-offline.html' },
-    @{ path='/nebula-account/chatroom/consultation-support'; file='consultation-support.html' },
-    @{ path='/nebula-account/static/question-topics'; file='question-topics.html' },
-    @{ path='/nebula-account/static/astrological-details'; file='astrological-details.html' },
-    @{ path='/nebula-account/static/video-preview'; file='video-preview-static.html' },
-    @{ path='/nebula-account/horoscope'; file='horoscope.html' },
-    @{ path='/nebula-account/settings'; file='settings.html' },
-    @{ path='/nebula-account/settings/support'; file='support.html' },
-    @{ path='/nebula-account/settings/notifications'; file='notifications.html' },
-    @{ path='/nebula-account/settings/support/billing'; file='billing.html' },
-    @{ path='/nebula-account/settings/support/plans'; file='plans.html' },
-    @{ path='/nebula-account/settings/support/help'; file='support-help.html' },
-    @{ path='/nebula-account/settings/support/helper'; file='helper-bot.html' },
-    @{ path='/nebula-account/settings/support/faq'; file='faq.html' },
-    @{ path='/nebula-account/settings/astrology'; file='astrology.html' },
-    @{ path='/nebula-account/settings/notifications/daily-horoscope'; file='daily-horoscope.html' },
-    @{ path='/nebula-account/settings/account'; file='account-information.html' },
-    @{ path='/nebula-account/settings/legal'; file='legal.html' },
-    @{ path='/nebula-account/settings/legal/privacy-policy'; file='privacy-policy.html' },
-    @{ path='/nebula-account/settings/legal/personal-data'; file='personal-data.html' },
-    @{ path='/nebula-account/settings/legal/center'; file='legal-center.html' },
-    @{ path='/nebula-account/settings/legal/consent'; file='consent-settings.html' },
-    @{ path='/nebula-account/settings/notifications/messages'; file='messages-from-psychics.html' },
-    @{ path='/nebula-account/settings/notifications/offers'; file='special-offers.html' },
-    @{ path='/nebula-account/settings/notifications/system'; file='system-messages.html' }
-)
-
-$routeMap = @{}
-foreach ($route in $routes) { $routeMap[$route.path.Split('?')[0]] = $route.file }
-
-function Convert-InternalHref([string]$href) {
-    try {
-        $uri = [System.Uri]('http://local' + $href)
-        $path = $uri.AbsolutePath
-        $query = $uri.Query
-    } catch { return $href }
-    if ($routeMap.ContainsKey($path)) { return $routeMap[$path] + $query }
-    # The local catalogue contains more expert cards than the static snapshot.
-    # Keep unknown catalogue profiles inside the published surface instead of emitting a 404 root route.
-    if ($path -match '^/nebula-account/psychics/') { return 'psychics.html' + $query }
-    return $href
-}
-
 $results = @()
 foreach ($route in $routes) {
-    $response = Invoke-WebRequest -UseBasicParsing -Uri ($BaseUrl + $route.path) -TimeoutSec 20
-    $html = $response.Content
+    $html = [string]$captured[$route.file]
     $html = $html.Replace('/assets/3f6bda43/', '../yii2/modules/nebulaAccount/resources/')
-    foreach ($assetDir in (Get-ChildItem -LiteralPath $assetSource -Directory)) {
-        $html = $html.Replace('/assets/' + $assetDir.Name + '/', '../assets/' + $assetDir.Name + '/')
+    foreach ($assetName in $assetNames) {
+        $html = $html.Replace('/assets/' + $assetName + '/', '../assets/' + $assetName + '/')
     }
     $html = $html.Replace('data-asset-base="/assets/3f6bda43"', 'data-asset-base="../yii2/modules/nebulaAccount/resources"')
     # The loopback source intentionally exposes the integration sandbox for local QA.
@@ -168,7 +190,7 @@ foreach ($route in $routes) {
     $output = Join-Path $htmlTarget $route.file
     [System.IO.File]::WriteAllText($output, $html, (New-Object System.Text.UTF8Encoding($false)))
     $title = ([regex]::Match($html, '<title[^>]*>(.*?)</title>', 'IgnoreCase')).Groups[1].Value
-    $results += [pscustomobject]@{ route=$route.path; file=$route.file; status=[int]$response.StatusCode; bytes=$html.Length; title=$title }
+    $results += [pscustomobject]@{ route=$route.path; file=$route.file; status=[int]$statuses[$route.file]; bytes=$html.Length; title=$title }
 }
 
 $manifest = [ordered]@{
