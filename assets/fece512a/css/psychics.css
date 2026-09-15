@@ -362,3 +362,13 @@ body.nb-account-body:has(.pc-page){margin:0;background:#fff}
 /* Shared expert-card action states preserve the existing CTA rail. */
 .ps-card__action>button.is-notify{background:#d7caf9}.ps-card__action>button.is-action-confirmed{background:#66e3ad;color:#174b37}
 .ps-card__action>button.is-notify{font-size:14px;line-height:17px;padding:3px 10px}
+
+/* Mobile touch targets: keep the authored icon art, but give controls a reliable finger area. */
+@media (max-width:767px){
+ .ps-card__person{grid-template-columns:46px minmax(0,1fr) 44px}
+ .ps-card__favorite,.ps-card__favorite:hover,.ps-card__favorite[aria-pressed=true],.ps-card__favorite:active{width:44px;height:44px;min-width:44px;min-height:44px;margin:-9px;padding:13px;border-radius:0;background:transparent!important}
+ .ps-card__favorite img{width:18px;height:17px}
+ .ps-section__controls button,.ps-section__controls .ps-section-filter{min-width:44px;min-height:44px}
+ .ps-card__action a,.pc-cta,.pc-banner a{min-height:44px}
+ .ps-feature__favorite,.pc-favorite{width:44px;height:44px;min-width:44px;min-height:44px;padding:13px}
+}

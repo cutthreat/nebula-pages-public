@@ -81,6 +81,11 @@ foreach ($route in $routes) {
         $html = $html.Replace('/assets/' + $hash + '/', '../assets/' + $hash + '/')
     }
     $html = $html.Replace('data-asset-base="/assets/3f6bda43"', 'data-asset-base="../yii2/modules/nebulaAccount/resources"')
+    # The loopback source intentionally exposes the integration sandbox for local QA.
+    # GitHub Pages is a static projection, so retain no local API metadata/assets there.
+    $html = [regex]::Replace($html, '(?is)<meta\s+name="nebula-integration-config"[^>]*>\s*', '')
+    $html = [regex]::Replace($html, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
+    $html = [regex]::Replace($html, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
     $html = [regex]::Replace($html, '(?i)(href=")(/nebula-account[^"#]*)', { param($match) $match.Groups[1].Value + (Convert-InternalHref $match.Groups[2].Value) })
     $output = Join-Path $htmlTarget $route.file
     [System.IO.File]::WriteAllText($output, $html, (New-Object System.Text.UTF8Encoding($false)))

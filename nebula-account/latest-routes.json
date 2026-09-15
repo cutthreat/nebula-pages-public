@@ -1,6 +1,6 @@
 {
   "schema": "nebula.local-layout-snapshot.v1",
-  "generatedAt": "2026-09-15T07:15:25.5987951Z",
+  "generatedAt": "2026-09-15T09:58:36.3226042Z",
   "sourceBaseUrl": "http://127.0.0.1:8173",
   "sourceModuleRoot": "experiments/nebula-account-chat-live-20260809/yii2/modules/nebulaAccount",
   "sourceConfig": "host/yii2/config/web.php",
@@ -10,224 +10,224 @@
       "route": "/nebula-account/profile",
       "file": "profile.html",
       "status": 200,
-      "bytes": 43794,
+      "bytes": 43455,
       "title": "Profile — Neuro"
     },
     {
       "route": "/nebula-account/psychics",
       "file": "psychics.html",
       "status": 200,
-      "bytes": 151721,
+      "bytes": 151382,
       "title": "Psychics — Neuro"
     },
     {
       "route": "/nebula-account/psychics/margo-lover",
       "file": "psychic-margo-lover.html",
       "status": 200,
-      "bytes": 40443,
+      "bytes": 40104,
       "title": "Margo Lover — Neuro"
     },
     {
       "route": "/nebula-account/psychics/mia-jacomo",
       "file": "psychic-mia-jacomo.html",
       "status": 200,
-      "bytes": 45995,
+      "bytes": 45656,
       "title": "Mia Jacomo — Neuro"
     },
     {
       "route": "/nebula-account/favorites",
       "file": "favorites.html",
       "status": 200,
-      "bytes": 24004,
+      "bytes": 23665,
       "title": "Favorite — Neuro"
     },
     {
       "route": "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
       "file": "chatroom.html",
       "status": 200,
-      "bytes": 80519,
+      "bytes": 80180,
       "title": "Chatroom — Neuro"
     },
     {
       "route": "/nebula-account/chatroom/notify",
       "file": "chatroom-notify.html",
       "status": 200,
-      "bytes": 30212,
+      "bytes": 29873,
       "title": "Chatroom Notify — Neuro"
     },
     {
       "route": "/nebula-account/chatroom/expert-offline",
       "file": "expert-offline.html",
       "status": 200,
-      "bytes": 1831,
+      "bytes": 1492,
       "title": ""
     },
     {
       "route": "/nebula-account/chatroom/consultation-support",
       "file": "consultation-support.html",
       "status": 200,
-      "bytes": 2112,
+      "bytes": 1773,
       "title": "Help with consultation — Neuro"
     },
     {
       "route": "/nebula-account/static/question-topics",
       "file": "question-topics.html",
       "status": 200,
-      "bytes": 2976,
+      "bytes": 2637,
       "title": "Question topics — Neuro"
     },
     {
       "route": "/nebula-account/static/astrological-details",
       "file": "astrological-details.html",
       "status": 200,
-      "bytes": 2799,
+      "bytes": 2460,
       "title": "Astrological details — Neuro"
     },
     {
       "route": "/nebula-account/static/video-preview",
       "file": "video-preview-static.html",
       "status": 200,
-      "bytes": 1594,
+      "bytes": 1256,
       "title": "Video preview — Neuro"
     },
     {
       "route": "/nebula-account/horoscope",
       "file": "horoscope.html",
       "status": 200,
-      "bytes": 29677,
+      "bytes": 29338,
       "title": "Horoscope — Neuro"
     },
     {
       "route": "/nebula-account/settings",
       "file": "settings.html",
       "status": 200,
-      "bytes": 12626,
+      "bytes": 12287,
       "title": "Settings — Neuro"
     },
     {
       "route": "/nebula-account/settings/support",
       "file": "support.html",
       "status": 200,
-      "bytes": 12453,
+      "bytes": 12114,
       "title": "Customer Support — Neuro"
     },
     {
       "route": "/nebula-account/settings/notifications",
       "file": "notifications.html",
       "status": 200,
-      "bytes": 19595,
+      "bytes": 19256,
       "title": "Notifications — Neuro"
     },
     {
       "route": "/nebula-account/settings/support/billing",
       "file": "billing.html",
       "status": 200,
-      "bytes": 35301,
+      "bytes": 34962,
       "title": "Billing — Neuro"
     },
     {
       "route": "/nebula-account/settings/support/plans",
       "file": "plans.html",
       "status": 200,
-      "bytes": 12643,
+      "bytes": 12304,
       "title": "Plans — Neuro"
     },
     {
       "route": "/nebula-account/settings/support/help",
       "file": "support-help.html",
       "status": 200,
-      "bytes": 12049,
+      "bytes": 11710,
       "title": "Help — Neuro"
     },
     {
       "route": "/nebula-account/settings/support/helper",
       "file": "helper-bot.html",
       "status": 200,
-      "bytes": 16752,
+      "bytes": 16413,
       "title": "Helper Bot — Neuro"
     },
     {
       "route": "/nebula-account/settings/support/faq",
       "file": "faq.html",
       "status": 200,
-      "bytes": 21583,
+      "bytes": 21244,
       "title": "FAQ — Neuro"
     },
     {
       "route": "/nebula-account/settings/astrology",
       "file": "astrology.html",
       "status": 200,
-      "bytes": 14860,
+      "bytes": 14521,
       "title": "Astrology profile — Neuro"
     },
     {
       "route": "/nebula-account/settings/notifications/daily-horoscope",
       "file": "daily-horoscope.html",
       "status": 200,
-      "bytes": 12427,
+      "bytes": 12088,
       "title": "Daily horoscope notifications — Neuro"
     },
     {
       "route": "/nebula-account/settings/account",
       "file": "account-information.html",
       "status": 200,
-      "bytes": 19442,
+      "bytes": 19103,
       "title": "Account information — Neuro"
     },
     {
       "route": "/nebula-account/settings/legal",
       "file": "legal.html",
       "status": 200,
-      "bytes": 13341,
+      "bytes": 13002,
       "title": "Legal &amp; Privacy — Neuro"
     },
     {
       "route": "/nebula-account/settings/legal/privacy-policy",
       "file": "privacy-policy.html",
       "status": 200,
-      "bytes": 46432,
+      "bytes": 46093,
       "title": "Privacy Policy — Neuro"
     },
     {
       "route": "/nebula-account/settings/legal/personal-data",
       "file": "personal-data.html",
       "status": 200,
-      "bytes": 13023,
+      "bytes": 12684,
       "title": "Manage Personal Data — Neuro"
     },
     {
       "route": "/nebula-account/settings/legal/center",
       "file": "legal-center.html",
       "status": 200,
-      "bytes": 13826,
+      "bytes": 13487,
       "title": "Legal Center — Neuro"
     },
     {
       "route": "/nebula-account/settings/legal/consent",
       "file": "consent-settings.html",
       "status": 200,
-      "bytes": 18300,
+      "bytes": 17961,
       "title": "Privacy Preference Center — Neuro"
     },
     {
       "route": "/nebula-account/settings/notifications/messages",
       "file": "messages-from-psychics.html",
       "status": 200,
-      "bytes": 13117,
+      "bytes": 12778,
       "title": "Messages from psychics — Neuro"
     },
     {
       "route": "/nebula-account/settings/notifications/offers",
       "file": "special-offers.html",
       "status": 200,
-      "bytes": 13307,
+      "bytes": 12968,
       "title": "Special offers — Neuro"
     },
     {
       "route": "/nebula-account/settings/notifications/system",
       "file": "system-messages.html",
       "status": 200,
-      "bytes": 13137,
+      "bytes": 12798,
       "title": "System messages — Neuro"
     }
   ]

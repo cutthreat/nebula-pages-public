@@ -1106,3 +1106,16 @@
   .c76-page .c76-menu.is-expanded .c76-search.is-search-open{padding:12px;gap:8px}
   .c76-page .c76-menu.is-expanded .c76-search.is-search-open .c76-search__clear{right:44px}
 }
+
+/* Mobile suggestion controls need a full finger target even when the export is narrow. */
+@media (max-width:767px){
+ .c76-page .c76-suggestions>button,.c76-page .c76-suggestions>button img{width:44px;height:44px;min-width:44px;min-height:44px;flex:0 0 44px}
+}
+@media (max-width:479px){
+ .c76-page .c76-suggestions{gap:8px}
+ .c76-page .c76-suggestion-chip:first-child{width:195px;flex-basis:195px}
+}
+
+@media (max-width:767px){
+ .c76-page[data-messenger-live="true"] .c76-composer-tool,.c76-page[data-messenger-live="true"] .c76-send-button{width:44px;height:44px;min-width:44px;min-height:44px;flex:0 0 44px}
+}

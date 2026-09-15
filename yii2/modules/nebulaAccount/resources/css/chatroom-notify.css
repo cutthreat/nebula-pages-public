@@ -12,6 +12,7 @@
   --c76-dark:#313131;
   --c76-composer:#aeaeae;
 }
+
 .c76-page,.c76-page *{box-sizing:border-box}
 .c76-page-body{margin:0;min-width:1200px;overflow:auto;background:#fff;font-family:"Manrope",Arial,sans-serif;color:#000}
 .c76-page button,.c76-page input,.c76-page textarea{font:inherit}
@@ -287,3 +288,14 @@
 @media (min-width:768px) and (max-width:991.98px){.c76-page[data-c76-state="notification_destination"] .c76-messages{height:93px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:228px}}
 @media (min-width:576px) and (max-width:767.98px){.c76-page[data-c76-state="notification_destination"] .c76-chat-controls{gap:10px}.c76-page[data-c76-state="notification_destination"] .c76-notify{width:115px;height:48px;padding:0 13px;gap:9px}.c76-page[data-c76-state="notification_destination"] .c76-notify b{font-size:14px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(1){display:none}.c76-page[data-c76-state="notification_destination"] .c76-messages{height:90px;padding-left:15px;padding-right:15px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:234px}}
 @media (max-width:575.98px){.c76-page[data-c76-state="notification_destination"] .c76-chat-identity>div{min-width:0;flex:1 1 0}.c76-page[data-c76-state="notification_destination"] .c76-chat-identity h1{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}.c76-page[data-c76-state="notification_destination"] .c76-chat-identity p b em{display:none}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls{gap:13px}.c76-page[data-c76-state="notification_destination"] .c76-notify{width:81px;height:32px;border-radius:8px;padding:0 9px;gap:6px}.c76-page[data-c76-state="notification_destination"] .c76-notify>img:first-child{width:14px;height:16px}.c76-page[data-c76-state="notification_destination"] .c76-notify b{font-size:12px;line-height:13px}.c76-page[data-c76-state="notification_destination"] .c76-notify__arrow{width:12px;height:8px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-actions{gap:0;padding-top:7px}.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(1),.c76-page[data-c76-state="notification_destination"] .c76-chat-controls .c76-chat-action:nth-child(2){display:none}.c76-page[data-c76-state="notification_destination"] .c76-messages{height:128px;padding-left:15px;padding-right:15px}.c76-page[data-c76-state="notification_destination"] .c76-ready-card{margin-top:54.5px}.c76-page[data-c76-state="notification_destination"] .c76-inputbar .c76-composer-entry{font-size:12px}}
+
+/* Mobile suggestion controls need a full finger target even when the export is narrow. */
+@media (max-width:767px){
+ .c76-page .c76-suggestions>button,.c76-page .c76-suggestions>button img{width:44px;height:44px;min-width:44px;min-height:44px;flex:0 0 44px}
+ .c76-page .c76-composer-tool,.c76-page .c76-send-button{width:44px;height:44px;min-width:44px;min-height:44px;flex:0 0 44px}
+ .c76-page .c76-composer-tool img,.c76-page .c76-send-state{width:19px;height:19px}
+}
+@media (max-width:479px){
+ .c76-page .c76-suggestions{gap:8px}
+ .c76-page .c76-suggestion-chip:first-child{width:195px;flex-basis:195px}
+}
