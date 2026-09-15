@@ -8,3 +8,6 @@ The repository includes the matching HTML, CSS, JavaScript, fonts and image reso
 
 The screens implement frontend demo scenarios only. Payment, billing, message persistence,
 realtime delivery, service-session creation and RBAC require the separate Yii2/backend handoff.
+
+See [QA-REPORT-2026-09-15.md](QA-REPORT-2026-09-15.md) for the evidence-bound QA scope,
+the confirmed JavaScript repair and the remaining NOT PROVEN backend claims.
