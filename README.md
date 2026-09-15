@@ -13,5 +13,14 @@ resources used by the snapshot.
 The screens implement frontend demo scenarios only. Payment, billing, message persistence,
 realtime delivery, service-session creation and RBAC require the separate Yii2/backend handoff.
 
+The release is a static projection, not the Yii2 source module. The canonical source module,
+host requirements, backend boundary and transfer instructions are in the separate Codex transfer
+packet. The current projection has 32 route-backed account screens; standalone state fixtures in
+`nebula-account/` are not additional route inventories.
+
+The export script is portable: pass `-SourceRoot <implementation-root>` and, when regenerating,
+use `-CopyAssets`. It copies the complete current asset/resource closure, pins the preview asset
+version, and replaces local CSRF tokens with `static-preview-csrf-token`.
+
 See [QA-REPORT-2026-09-15.md](QA-REPORT-2026-09-15.md) for the evidence-bound QA scope,
 the confirmed JavaScript repair and the remaining NOT PROVEN backend claims.

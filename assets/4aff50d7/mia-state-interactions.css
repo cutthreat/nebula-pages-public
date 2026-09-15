@@ -1,0 +1,57 @@
+/* source: C76M54fY7z926wIQoWFh8Y / c76_group_24 Expert unavailable + 1489:45092 Chatroom Notify */
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-400.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-500.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-600.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+.mia-notification-modal,.mia-notification-modal *{box-sizing:border-box}
+.mia-notification-modal[hidden]{display:none!important}
+.mia-notification-modal{position:fixed;inset:0;z-index:2147483100;display:grid;place-items:center;padding:24px;background:rgba(80,73,99,.7);font-family:"Manrope",Arial,sans-serif;color:#313131}
+.mia-notification-modal__scrim{position:absolute;inset:0;border:0;background:rgba(45,37,78,.34);cursor:default}
+.mia-notification-modal__dialog{position:relative;z-index:1;width:min(730px,calc(100vw - 48px));max-height:calc(100dvh - 48px);overflow:auto;padding:20px 54px 42px;border-radius:40px;background:#fff;box-shadow:0 24px 72px rgba(24,12,57,.28);text-align:center}
+.mia-notification-modal__close{position:absolute;right:22px;top:20px;width:40px;height:40px;border:0;border-radius:50%;background:transparent;color:#7653d9;font:400 34px/34px Arial,sans-serif;cursor:pointer}
+.mia-notification-modal__close:hover{background:#f6f2ff}.mia-notification-modal button:focus-visible{outline:3px solid #bcaaff;outline-offset:3px}
+.mia-notification-modal__header{display:flex;flex-direction:column;align-items:center;gap:9px;margin:14px auto 22px;max-width:560px}
+.mia-notification-modal__icon{width:46px;height:46px;object-fit:contain;padding:8px;border-radius:50%;background:#f1eaff}
+.mia-notification-modal__eyebrow{margin:0;color:#a07eff;font-size:12px;line-height:18px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.mia-notification-modal h2{margin:0;color:#673eda;font-size:32px;line-height:40px;font-weight:600;letter-spacing:-.32px}
+.mia-notification-modal__header>p:last-child{max-width:500px;margin:0;color:#8e8796;font-size:17px;line-height:25px;font-weight:500}
+.mia-notification-modal__channels{width:min(500px,100%);margin:0 auto;padding:0;border:0;text-align:left}
+.mia-notification-modal__channels legend{margin:0 0 9px;padding:0;color:#382457;font-size:14px;line-height:20px;font-weight:600}
+.mia-notification-modal__channels label{display:flex;align-items:center;gap:12px;min-height:54px;margin:7px 0;padding:10px 14px;border:1px solid #ddceff;border-radius:13px;background:#faf8ff;cursor:pointer}
+.mia-notification-modal__channels label:has(input:checked){border-color:#a07eff;background:#f1eaff;box-shadow:inset 0 0 0 1px #a07eff}
+.mia-notification-modal__channels input{width:18px;height:18px;accent-color:#673eda;flex:0 0 18px}
+.mia-notification-modal__channels label>span{display:flex;min-width:0;flex-direction:column;gap:1px}
+.mia-notification-modal__channels strong{color:#382457;font-size:14px;line-height:19px;font-weight:600}
+.mia-notification-modal__channels small{color:#8e8796;font-size:12px;line-height:17px}
+.mia-notification-modal__demo-note{margin:17px auto 8px;color:#a07eff;font-size:12px;line-height:18px}
+.mia-notification-modal__status{min-height:22px;margin:0 auto 13px;color:#706578;font-size:13px;line-height:20px}
+.mia-notification-modal__actions{display:grid;width:min(500px,100%);gap:8px;margin:0 auto}
+.mia-notification-modal__submit,.mia-notification-modal__secondary,.mia-notification-modal__reconcile{min-height:52px;border:1px solid #673eda;border-radius:13px;padding:13px 18px;font:500 16px/24px "Manrope",Arial,sans-serif;cursor:pointer}
+.mia-notification-modal__submit{background:#673eda;color:#fff}.mia-notification-modal__submit:hover:not(:disabled){background:#5c32d2}
+.mia-notification-modal__secondary,.mia-notification-modal__reconcile{background:#fff;color:#673eda}.mia-notification-modal__secondary:hover:not(:disabled),.mia-notification-modal__reconcile:hover:not(:disabled){background:#f6f2ff}
+.mia-notification-modal button:disabled{cursor:wait;opacity:.58}
+.mia-notification-modal__reconcile{width:min(500px,100%);margin:8px auto 0;border-color:#d8bc70;color:#765a1a}
+.mia-notification-modal[data-mia-notification-phase="pending"] .mia-notification-modal__status,.mia-notification-modal[data-mia-notification-phase="cancelling"] .mia-notification-modal__status{color:#7653d9}
+.mia-notification-modal[data-mia-notification-phase="confirmed"] .mia-notification-modal__status{color:#2d8a62}
+.mia-notification-modal[data-mia-notification-phase="error"] .mia-notification-modal__status{color:#a84867}
+.mia-notification-modal[data-mia-notification-phase="indeterminate"] .mia-notification-modal__status{color:#765a1a}
+.mia-notification-modal[data-mia-notification-phase="confirmed"] .mia-notification-modal__icon{background:#e2f5eb}
+.mia-notification-modal[data-mia-notification-phase="error"] .mia-notification-modal__icon{background:#fff0f3}
+.mia-notification-modal[data-mia-notification-phase="indeterminate"] .mia-notification-modal__icon{background:#fff7df}
+@media(max-width:575.98px){
+ .mia-notification-modal{padding:12px}
+ .mia-notification-modal__dialog{width:100%;max-height:calc(100dvh - 24px);padding:16px 20px 24px;border-radius:30px}
+ .mia-notification-modal__close{right:10px;top:10px;width:36px;height:36px;font-size:30px;line-height:30px}
+ .mia-notification-modal__header{margin:12px auto 17px;gap:7px}
+ .mia-notification-modal__icon{width:40px;height:40px}
+ .mia-notification-modal h2{font-size:25px;line-height:32px;letter-spacing:-.25px}
+ .mia-notification-modal__header>p:last-child{font-size:15px;line-height:22px}
+ .mia-notification-modal__channels label{min-height:50px;margin:6px 0;padding:9px 11px}
+ .mia-notification-modal__submit,.mia-notification-modal__secondary,.mia-notification-modal__reconcile{min-height:48px;font-size:15px}
+}
+@media(max-width:320px){
+ .mia-notification-modal__dialog{padding-left:14px;padding-right:14px;border-radius:24px}
+ .mia-notification-modal h2{font-size:22px;line-height:29px}
+ .mia-notification-modal__header>p:last-child{font-size:14px;line-height:20px}
+ .mia-notification-modal__channels small{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.mia-notification-modal *{transition:none!important}}

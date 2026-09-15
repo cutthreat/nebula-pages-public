@@ -1,0 +1,12 @@
+/* Local QA control only. It is loaded exclusively with ?sandbox=1&scenarioLab=1. */
+.nb-scenario-lab { position: fixed; right: 16px; bottom: 16px; z-index: 1100; font: 13px/1.35 Arial, sans-serif; }
+.nb-scenario-lab button { border: 0; border-radius: 8px; padding: 8px 10px; color: #fff; background: #633fe0; cursor: pointer; }
+.nb-scenario-lab__panel { width: 280px; margin-bottom: 8px; padding: 14px; border: 1px solid #d8caff; border-radius: 12px; background: #fff; box-shadow: 0 12px 32px rgba(33, 23, 70, .22); }
+.nb-scenario-lab__title { margin-bottom: 4px; color: #3d247f; font-weight: 700; }
+.nb-scenario-lab p { margin: 0 0 10px; color: #514a62; font-size: 12px; }
+.nb-scenario-lab__actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.nb-scenario-lab__actions button { min-height: 44px; text-align: left; font-size: 12px; }
+.nb-scenario-lab__random { margin-right: 6px; background: #4d2db3 !important; }
+.nb-scenario-lab__reset { background: #756d85 !important; }
+.nb-scenario-lab__status { display: block; min-height: 18px; margin-top: 10px; color: #514a62; font-size: 12px; }
+@media (max-width: 576px) { .nb-scenario-lab { right: 8px; bottom: 8px; } .nb-scenario-lab__panel { width: min(280px, calc(100vw - 16px)); } }

@@ -1,0 +1,18 @@
+/* State layer: active, valid and invalid rows stay visually unambiguous. */
+[data-nebula-account-information] .nb-account-information-field.is-valid .nb-account-information-control p {
+  border-color: #23b26d;
+  color: #168b50;
+  background: #f4fff9;
+}
+[data-nebula-account-information] .nb-account-information-field.is-valid .nb-account-information-action .is-confirmed {
+  color: #23b26d;
+}
+[data-nebula-account-information] .nb-account-information-field.is-invalid {
+  border-radius: 10px;
+}
+[data-nebula-account-information] .nb-account-information-field.is-invalid .nb-account-information-error {
+  color: #c84261 !important;
+}
+[data-nebula-account-information] .nb-account-information-field.is-editing {
+  position: relative;
+}

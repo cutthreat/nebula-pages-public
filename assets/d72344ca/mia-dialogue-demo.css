@@ -1,0 +1,14 @@
+/* Test controls, not a replacement Figma/product surface. Existing chat stays unchanged. */
+.mia-demo { position: fixed; right: 12px; top: 12px; z-index: 900; width: min(340px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow: auto; padding: 12px; border: 2px solid #633fe0; border-radius: 12px; background: white; color: #282033; box-shadow: 0 4px 20px #28203330; font: 13px/1.45 Arial, sans-serif; }
+.mia-demo summary { cursor: pointer; font-weight: 700; }
+.mia-demo__body { display: grid; gap: 10px; padding-top: 10px; }
+.mia-demo p { margin: 0; }
+.mia-demo button, .mia-demo select { min-height: 36px; max-width: 100%; padding: 6px 8px; font: inherit; }
+.mia-demo button { border: 1px solid #633fe0; border-radius: 7px; color: #432694; background: #f5f1ff; cursor: pointer; }
+.mia-demo button:disabled { opacity: .55; cursor: wait; }
+.mia-demo__actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.mia-demo [hidden] { display: none !important; }
+.mia-demo pre { margin: 6px 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; }
+.mia-demo output { overflow-wrap: anywhere; }
+[data-mia-dialogue-demo="true"] [data-question-action="skip-demo"] { margin: 0 auto 8px; }
+@media (max-width: 575px) { .mia-demo { top: 4px; right: 4px; width: min(310px, calc(100vw - 8px)); padding: 8px; max-height: calc(100dvh - 8px); } }

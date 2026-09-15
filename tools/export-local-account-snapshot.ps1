@@ -1,29 +1,91 @@
 param(
     [string]$BaseUrl = 'http://127.0.0.1:8173',
     [string]$ReleaseRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$SourceRoot = '',
+    [string]$SnapshotVersion = '20260915',
     [switch]$CopyAssets
 )
 
 $ErrorActionPreference = 'Stop'
 
-$sourceRoot = 'F:\CodexProjects\confideline-nebula\implementation\nebula-gpt'
+$releaseRootResolved = (Resolve-Path -LiteralPath $ReleaseRoot).Path
+if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
+    $SourceRoot = Join-Path (Split-Path -Parent (Split-Path -Parent $releaseRootResolved)) 'implementation\nebula-gpt'
+}
+$sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
 $assetSource = Join-Path $sourceRoot 'host\yii2\web\assets'
-$assetTarget = Join-Path $ReleaseRoot 'assets'
-$htmlTarget = Join-Path $ReleaseRoot 'nebula-account'
+$moduleResourceSource = Join-Path $sourceRoot 'experiments\nebula-account-chat-live-20260809\yii2\modules\nebulaAccount\resources'
+$assetTarget = Join-Path $releaseRootResolved 'assets'
+$moduleResourceTarget = Join-Path $releaseRootResolved 'yii2\modules\nebulaAccount\resources'
+$htmlTarget = Join-Path $releaseRootResolved 'nebula-account'
+
+foreach ($requiredPath in @($assetSource, $moduleResourceSource, $htmlTarget)) {
+    if (-not (Test-Path -LiteralPath $requiredPath)) {
+        throw "Required exporter path was not found: $requiredPath"
+    }
+}
 
 if ($CopyAssets) {
-    New-Item -ItemType Directory -Force -Path $assetTarget | Out-Null
-    $hashes = @('1afd7040','1fcb51d','26673cb2','26cf1e05','3fe51ac8','431cad45','46a5959a','6531e1a1','7d412407','9c3604ba','c18bc218','f2ce81c5','fece512a')
-    foreach ($hash in $hashes) {
-        $source = Join-Path $assetSource $hash
-        $target = Join-Path $assetTarget $hash
-        if (Test-Path $target) { Remove-Item -LiteralPath $target -Recurse -Force }
-        Copy-Item -LiteralPath $source -Destination $target -Recurse -Force
+    $stagingRoot = Join-Path $releaseRootResolved ('.snapshot-staging-' + [guid]::NewGuid().ToString('N'))
+    $backupRoot = Join-Path $releaseRootResolved ('.snapshot-backup-' + [guid]::NewGuid().ToString('N'))
+    $stageAssets = Join-Path $stagingRoot 'assets'
+    $stageModuleResources = Join-Path $stagingRoot 'yii2\modules\nebulaAccount\resources'
+    $records = @()
+    New-Item -ItemType Directory -Force -Path $stageAssets, $stageModuleResources | Out-Null
+    try {
+        Copy-Item -Path (Join-Path $assetSource '*') -Destination $stageAssets -Recurse -Force
+        Copy-Item -Path (Join-Path $moduleResourceSource '*') -Destination $stageModuleResources -Recurse -Force
+        $generatedConversationCss = Join-Path $assetSource '3f6bda43\css\conversation-list.css'
+        if (Test-Path -LiteralPath $generatedConversationCss) {
+            Copy-Item -LiteralPath $generatedConversationCss -Destination (Join-Path $stageModuleResources 'css\conversation-list.css') -Force
+        }
+        foreach ($requiredStaged in @(
+            (Join-Path $stageModuleResources 'css\chatroom.css'),
+            (Join-Path $stageModuleResources 'css\chat-overlays.css'),
+            (Join-Path $stageModuleResources 'css\expert-picker-details.css')
+        )) {
+            if (-not (Test-Path -LiteralPath $requiredStaged -PathType Leaf)) {
+                throw "Staged module resource is missing: $requiredStaged"
+            }
+        }
+
+        New-Item -ItemType Directory -Force -Path $backupRoot | Out-Null
+        foreach ($install in @(
+            [pscustomobject]@{ stage = $stageAssets; target = $assetTarget; name = 'assets' },
+            [pscustomobject]@{ stage = $stageModuleResources; target = $moduleResourceTarget; name = 'module-resources' }
+        )) {
+            $record = [pscustomobject]@{
+                stage = $install.stage
+                target = $install.target
+                backup = Join-Path $backupRoot $install.name
+                hadExisting = Test-Path -LiteralPath $install.target
+            }
+            $records += $record
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $install.target) | Out-Null
+            if ($record.hadExisting) {
+                Move-Item -LiteralPath $install.target -Destination $record.backup
+            }
+            Move-Item -LiteralPath $install.stage -Destination $install.target
+        }
+        Remove-Item -LiteralPath $backupRoot -Recurse -Force -ErrorAction SilentlyContinue
+    } catch {
+        foreach ($record in @($records | Sort-Object target -Descending)) {
+            if (Test-Path -LiteralPath $record.target) {
+                Remove-Item -LiteralPath $record.target -Recurse -Force
+            }
+            if ($record.hadExisting -and (Test-Path -LiteralPath $record.backup)) {
+                Move-Item -LiteralPath $record.backup -Destination $record.target
+            }
+        }
+        throw
+    } finally {
+        if (Test-Path -LiteralPath $stagingRoot) {
+            Remove-Item -LiteralPath $stagingRoot -Recurse -Force -ErrorAction SilentlyContinue
+        }
+        if (Test-Path -LiteralPath $backupRoot) {
+            Remove-Item -LiteralPath $backupRoot -Recurse -Force -ErrorAction SilentlyContinue
+        }
     }
-    $conversationList = Join-Path $ReleaseRoot 'yii2\modules\nebulaAccount\resources\css\conversation-list.css'
-    Copy-Item -LiteralPath (Join-Path $assetSource '3f6bda43\css\conversation-list.css') -Destination $conversationList -Force
-    $chatroomCss = Join-Path $ReleaseRoot 'yii2\modules\nebulaAccount\resources\css\chatroom.css'
-    Copy-Item -LiteralPath (Join-Path $assetSource '3f6bda43\css\chatroom.css') -Destination $chatroomCss -Force
 }
 
 $routes = @(
@@ -82,8 +144,8 @@ foreach ($route in $routes) {
     $response = Invoke-WebRequest -UseBasicParsing -Uri ($BaseUrl + $route.path) -TimeoutSec 20
     $html = $response.Content
     $html = $html.Replace('/assets/3f6bda43/', '../yii2/modules/nebulaAccount/resources/')
-    foreach ($hash in @('1afd7040','1fcb51d','26673cb2','26cf1e05','3fe51ac8','431cad45','46a5959a','6531e1a1','7d412407','9c3604ba','c18bc218','f2ce81c5','fece512a')) {
-        $html = $html.Replace('/assets/' + $hash + '/', '../assets/' + $hash + '/')
+    foreach ($assetDir in (Get-ChildItem -LiteralPath $assetSource -Directory)) {
+        $html = $html.Replace('/assets/' + $assetDir.Name + '/', '../assets/' + $assetDir.Name + '/')
     }
     $html = $html.Replace('data-asset-base="/assets/3f6bda43"', 'data-asset-base="../yii2/modules/nebulaAccount/resources"')
     # The loopback source intentionally exposes the integration sandbox for local QA.
@@ -91,6 +153,9 @@ foreach ($route in $routes) {
     $html = [regex]::Replace($html, '(?is)<meta\s+name="nebula-integration-config"[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
+    # A static projection must not publish a live Yii CSRF token or a volatile asset timestamp.
+    $html = [regex]::Replace($html, '(?i)(<meta\s+name="csrf-token"\s+content=")[^"]*(")', ('$1static-preview-csrf-token$2'))
+    $html = [regex]::Replace($html, '(?i)(\.(?:css|js))\?v=\d+', ('$1?v=' + $SnapshotVersion))
     if ($route.file -eq 'expert-offline.html') {
         $html = [regex]::Replace($html, '(?is)<title>\s*</title>', '<title>Expert offline — Neuro</title>', 1)
     }

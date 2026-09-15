@@ -1,0 +1,91 @@
+(() => {
+  const root = document.querySelector('[data-nebula-profile]');
+  if (!root) return;
+  const statuses = root.querySelectorAll('[data-profile-status]');
+  const showStatus = (message) => statuses.forEach((status) => { status.textContent = message; status.classList.add('is-visible'); });
+
+  const trigger = root.querySelector('#profile-menu-trigger:not([data-common-account-menu-trigger])');
+  const drawer = root.querySelector('[data-profile-drawer]');
+  const scrim = root.querySelector('[data-profile-drawer-scrim]');
+  let drawerOpen = false; let lastFocused = trigger;
+  const isCompact = () => window.matchMedia('(max-width: 991.98px)').matches;
+  const focusables = (scope) => scope ? [...scope.querySelectorAll('a, button:not([disabled]), input:not([disabled])')].filter((el) => el.getClientRects().length > 0) : [];
+  const setDrawer = (open, restore = true) => {
+    if (!drawer || !trigger || !isCompact()) return;
+    drawerOpen = open; drawer.classList.toggle('is-drawer-open', open); drawer.setAttribute('aria-hidden', open ? 'false' : 'true'); drawer.setAttribute('role', open ? 'dialog' : 'navigation'); drawer.setAttribute('aria-modal', open ? 'true' : 'false'); trigger.setAttribute('aria-expanded', open ? 'true' : 'false'); if (scrim) scrim.hidden = !open; root.classList.toggle('is-profile-drawer-open', open);
+    if (open) { lastFocused = trigger; focusables(drawer)[0]?.focus(); } else if (restore && lastFocused?.focus) lastFocused.focus();
+  };
+  const syncDrawerMode = () => {
+    if (!drawer || !trigger) return;
+    if (isCompact()) { if (!drawerOpen) { drawer.classList.remove('is-drawer-open'); drawer.setAttribute('aria-hidden', 'true'); drawer.setAttribute('role', 'navigation'); drawer.setAttribute('aria-modal', 'false'); trigger.setAttribute('aria-expanded', 'false'); if (scrim) scrim.hidden = true; } }
+    else { drawerOpen = false; drawer.classList.remove('is-drawer-open'); drawer.removeAttribute('aria-hidden'); drawer.setAttribute('role', 'navigation'); drawer.setAttribute('aria-modal', 'false'); trigger.setAttribute('aria-expanded', 'false'); if (scrim) scrim.hidden = true; root.classList.remove('is-profile-drawer-open'); }
+  };
+  syncDrawerMode(); window.addEventListener('resize', syncDrawerMode, { passive: true });
+  trigger?.addEventListener('click', () => { if (isCompact()) setDrawer(!drawerOpen); else showStatus('Account navigation is already visible.'); });
+  scrim?.addEventListener('click', () => setDrawer(false));
+  drawer?.addEventListener('keydown', (event) => { if (!drawerOpen) return; if (event.key === 'Escape') { event.preventDefault(); setDrawer(false); return; } if (event.key !== 'Tab') return; const items = focusables(drawer); if (!items.length) return; const first = items[0]; const last = items[items.length - 1]; if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); } else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); } });
+
+  root.querySelectorAll('[data-profile-navigation]').forEach((control) => control.addEventListener('click', () => { const action = control.dataset.profileNavigation; showStatus(`${action === 'favorite' ? 'Favorite' : 'Psychics'} requires the host; no route or server list was changed.`); root.dispatchEvent(new CustomEvent('nebula:profile-navigation-intent', { bubbles: true, detail: { action, routeIntentUnbound: true, navigationStarted: false, persisted: false, staticProjection: true } })); if (drawerOpen) setDrawer(false); }));
+  const horoscopePeriods = {
+    today: { title: 'April 17, 2026', copy: 'Today, Taurus, the fiery energy of the Aries moon ignites your passion and determination. You may feel a surge of motivation, pushing you to take bold steps toward your goals. Embrace this dynamic energy and let it fuel your ambitions. This day is ideal for initiating new projects or tackling challenges you\'ve been postponing. With Aries\' assertive influence, you have the courage to pursue what you want. Use this momentum to take charge of your life and make impactful decisions. However, be mindful of impulsiveness. While the urge to act quickly is strong, taking a moment to pause and reflect before diving in can help you avoid potential missteps. Balance your enthusiasm with patience for the best outcomes.' },
+    tomorrow: { title: 'April 18, 2026', copy: 'Tomorrow, steady Taurus energy supports a thoughtful conversation. Give one decision enough time to settle, then choose the next practical step with confidence.' },
+    week: { title: 'April 14 - 20, 2026', copy: 'This week, your grounded approach helps you turn a larger intention into a realistic plan. Protect your focus and let small, repeatable choices build momentum.' },
+    month: { title: 'April 2026', copy: 'This month, make room for the relationships and routines that help you feel secure. A clear priority will be more useful than a sudden change of direction.' },
+    year: { title: '2026', copy: 'This year, Taurus, return to the values that make your choices feel steady. Patient progress and honest communication will guide the opportunities worth keeping.' }
+  };
+  const horoscopeTitle = root.querySelector('[data-profile-horoscope-title]');
+  const horoscopeCopy = root.querySelector('[data-profile-horoscope-copy]');
+  const horoscopeControls = [...root.querySelectorAll('[data-horoscope-period]')];
+  const chooseHoroscopePeriod = (control) => {
+    const period = control.dataset.horoscopePeriod || 'today';
+    const reading = horoscopePeriods[period] || horoscopePeriods.today;
+    horoscopeControls.forEach((candidate) => {
+      const selected = candidate === control;
+      candidate.setAttribute('aria-selected', String(selected));
+      candidate.tabIndex = selected ? 0 : -1;
+    });
+    if (horoscopeTitle) horoscopeTitle.textContent = reading.title;
+    if (horoscopeCopy) { horoscopeCopy.textContent = reading.copy; horoscopeCopy.setAttribute('aria-labelledby', control.id); }
+    root.dispatchEvent(new CustomEvent('nebula:horoscope-period-intent', { bubbles: true, detail: { period, zodiac: 'Taurus', frontendProjection: true, backendRequired: false, contentRecomputed: false, navigationStarted: false, persisted: false } }));
+  };
+  horoscopeControls.forEach((control, index) => {
+    control.addEventListener('click', () => chooseHoroscopePeriod(control));
+    control.addEventListener('keydown', (event) => {
+      if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      let nextIndex = index;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % horoscopeControls.length;
+      if (event.key === 'ArrowLeft') nextIndex = (index - 1 + horoscopeControls.length) % horoscopeControls.length;
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = horoscopeControls.length - 1;
+      horoscopeControls[nextIndex].focus();
+      chooseHoroscopePeriod(horoscopeControls[nextIndex]);
+    });
+  });
+  root.querySelectorAll('[data-profile-action]').forEach((control) => {
+    const activate = (event) => { const action = control.dataset.profileAction; if (action === 'see-all') return; if (control.tagName === 'A') event?.preventDefault(); control.classList.add('is-active'); if (action === 'refill') { showStatus('Choose a credit package in the local top-up preview. No payment was started.'); root.dispatchEvent(new CustomEvent('nebula:credit-topup-open-requested', { bubbles: true, detail: { opener: control, demoOnly: true } })); return; } showStatus(`${action === 'learn-more' ? 'Learn more' : action} requires the host; no navigation or payment was started.`); root.dispatchEvent(new CustomEvent('nebula:profile-host-intent', { bubbles: true, detail: { action, backendRequired: true, navigationStarted: false, paymentStarted: false, creditsChanged: false, persisted: false, staticProjection: true } })); };
+    control.addEventListener('click', activate); control.addEventListener('keydown', (event) => { if ((event.key === 'Enter' || event.key === ' ') && control.tagName !== 'A') { event.preventDefault(); activate(); } });
+  });
+
+  const filterToggle = root.querySelector('[data-profile-filter-toggle]'); const filterPanel = root.querySelector('[data-profile-filter-panel]'); const cards = [...root.querySelectorAll('[data-profile-card]')];
+  const setFilterOpen = (open, restore = true) => { if (!filterToggle || !filterPanel) return; filterPanel.hidden = !open; filterToggle.setAttribute('aria-expanded', open ? 'true' : 'false'); if (open) filterPanel.querySelector('input')?.focus(); else if (restore) filterToggle.focus(); };
+  const applyFilters = () => { const selectedStatus = [...root.querySelectorAll('[data-profile-filter-status]:checked')].map((input) => input.value); const selectedSpecialties = [...root.querySelectorAll('[data-profile-filter-specialty]:checked')].map((input) => input.value); let visible = 0; cards.forEach((card) => { const statusMatch = !selectedStatus.length || selectedStatus.includes(card.dataset.psychicStatus); const specialtyText = card.dataset.psychicSpecialties || ''; const specialtyMatch = !selectedSpecialties.length || selectedSpecialties.some((value) => specialtyText.includes(value)); card.hidden = !(statusMatch && specialtyMatch); if (!card.hidden) visible += 1; }); showStatus(visible ? `${visible} matched psychics shown locally.` : 'No matched psychics for these filters.'); };
+  filterToggle?.addEventListener('click', () => setFilterOpen(filterPanel?.hidden !== false));
+  filterPanel?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault(); setFilterOpen(false); } });
+  filterPanel?.querySelector('[data-profile-filter-apply]')?.addEventListener('click', () => { applyFilters(); setFilterOpen(false); });
+  filterPanel?.querySelector('[data-profile-filter-reset]')?.addEventListener('click', () => { filterPanel.querySelectorAll('input').forEach((input) => { input.checked = false; }); cards.forEach((card) => { card.hidden = false; }); showStatus('Matched psychics filters reset.'); setFilterOpen(false); });
+  document.addEventListener('pointerdown', (event) => { if (filterPanel && !filterPanel.hidden && !filterPanel.contains(event.target) && event.target !== filterToggle && !filterToggle?.contains(event.target)) setFilterOpen(false, false); });
+
+  root.querySelectorAll('[data-profile-card-action="favorite"]').forEach((control) => control.addEventListener('click', (event) => { event.stopPropagation(); const pressed = control.getAttribute('aria-pressed') === 'true'; const name = control.dataset.psychicName || 'Psychic'; control.setAttribute('aria-pressed', pressed ? 'false' : 'true'); control.setAttribute('aria-label', `${pressed ? 'Add' : 'Remove'} ${name} ${pressed ? 'to' : 'from'} favorites`); const image = control.querySelector('img'); if (image) image.src = pressed ? image.dataset.favoriteOff : image.dataset.favoriteOn; showStatus(`${name} ${pressed ? 'removed from' : 'added to'} favorites locally. No server list was changed.`); }));
+  root.querySelectorAll('[data-profile-card-action="book"],[data-profile-card-action="offline"]').forEach((control) => control.addEventListener('click', (event) => { event.stopPropagation(); const action = control.dataset.profileCardAction; const name = control.dataset.psychicName || 'psychic'; root.dispatchEvent(new CustomEvent('nebula:profile-card-host-intent', { bubbles: true, detail: { action, psychicName: name, backendRequired: true, bookingStarted: false, availabilityChanged: false, persisted: false, staticProjection: true } })); showStatus(`${action === 'offline' ? 'This expert is offline' : 'Booking'} requires the host; no session or payment was started.`); }));
+
+  const preview = root.querySelector('[data-profile-expert-preview]'); const previewDialog = preview?.querySelector('.nb-expert-preview__dialog'); let previewOpener = null;
+  const setPreviewInert = (open) => root.querySelectorAll(':scope > *:not([data-profile-expert-preview])').forEach((node) => { if (open) { node.inert = true; node.setAttribute('aria-hidden', 'true'); } else { node.inert = false; node.removeAttribute('aria-hidden'); } });
+  const closePreview = (restore = true) => { if (!preview) return; preview.hidden = true; preview.classList.remove('is-open'); setPreviewInert(false); if (restore) previewOpener?.focus(); };
+  const openPreview = (card) => { if (!preview) return; previewOpener = card; const set = (key, value) => { const node = preview.querySelector(`[data-profile-preview-${key}]`); if (node) node.textContent = value || ''; }; const profileUrl = card.dataset.profileUrl || ''; const image = preview.querySelector('[data-profile-preview-image]'); if (image) { image.src = card.dataset.psychicImage || ''; image.alt = card.dataset.psychicName || ''; image.dataset.profileUrl = profileUrl; image.tabIndex = 0; image.setAttribute('role', 'link'); image.setAttribute('aria-label', `Open full profile of ${card.dataset.psychicName || 'psychic'}`); } const name = preview.querySelector('[data-profile-preview-name]'); if (name) { name.dataset.profileUrl = profileUrl; name.tabIndex = 0; name.setAttribute('role', 'link'); name.setAttribute('aria-label', `Open full profile of ${card.dataset.psychicName || 'psychic'}`); } set('name', card.dataset.psychicName); set('role', card.dataset.psychicRole); set('rating', card.dataset.psychicRating); set('reviews', card.dataset.psychicReviews); set('experience', card.dataset.psychicExperience); set('consultations', card.dataset.psychicConsultations); set('status', card.dataset.psychicStatus ? card.dataset.psychicStatus[0].toUpperCase() + card.dataset.psychicStatus.slice(1) : 'Offline'); preview.hidden = false; preview.classList.add('is-open'); setPreviewInert(true); preview.querySelector('[data-profile-preview-close]')?.focus(); };
+  cards.forEach((card) => { card.addEventListener('click', (event) => { if (event.target.closest('button,a')) return; openPreview(card); }); card.addEventListener('keydown', (event) => { if ((event.key === 'Enter' || event.key === ' ') && document.activeElement === card) { event.preventDefault(); openPreview(card); } }); });
+  preview?.querySelectorAll('[data-profile-preview-close]').forEach((control) => control.addEventListener('click', () => closePreview()));
+  preview?.querySelector('[data-profile-preview-start]')?.addEventListener('click', () => { const name = preview.querySelector('[data-profile-preview-name]')?.textContent || 'psychic'; root.dispatchEvent(new CustomEvent('nebula:profile-card-host-intent', { bubbles: true, detail: { action: 'start-chat', psychicName: name, backendRequired: true, bookingStarted: false, availabilityChanged: false, persisted: false, staticProjection: true } })); const status = preview.querySelector('[data-profile-preview-status]'); if (status) status.textContent = 'Start chat requires the host; no session or payment was started.'; });
+  preview?.querySelectorAll('[data-profile-preview-image],[data-profile-preview-name]').forEach((control) => { const openFullProfile = () => { if (control.dataset.profileUrl) window.location.assign(control.dataset.profileUrl); }; control.addEventListener('click', openFullProfile); control.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openFullProfile(); } }); });
+  previewDialog?.addEventListener('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault(); closePreview(); return; } if (event.key !== 'Tab') return; const items = focusables(previewDialog); if (!items.length) return; const first = items[0]; const last = items[items.length - 1]; if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); } else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); } });
+})();

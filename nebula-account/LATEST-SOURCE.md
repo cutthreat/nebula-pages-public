@@ -24,3 +24,8 @@ latest snapshot.
 GitHub Pages serves the HTML/CSS/JS projection only. Yii2 integration routes,
 payments, persistence, realtime delivery and RBAC are backend handoff items;
 they are not represented as production claims by this static snapshot.
+
+Export integrity: the published module CSS/resources are synchronized from the
+current live module resource tree. The exporter is parameterized by
+`-SourceRoot`, copies the full asset/resource closure, pins `?v=20260915`, and
+removes live local CSRF values from the static projection.

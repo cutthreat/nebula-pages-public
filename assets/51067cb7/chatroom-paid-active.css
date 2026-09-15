@@ -1,0 +1,37 @@
+/* C76 paid-active crosswalk: 1424:51531 / 46482 / 47241 / 48000 / 48511.
+   Scoped variant of the existing active owner, not another chat implementation. */
+.paid-active-source .active-top{height:80px}
+.paid-active-source .active-thread-head{padding-top:20px;height:88px}
+.paid-active-source .active-identity{gap:6px;align-self:center}
+.paid-active-source .active-identity h1{font-size:16px;font-weight:700;line-height:16px;color:#000}
+.paid-active-source .active-identity-meta{gap:10px}
+.paid-active-source .active-identity small{margin:0;font-size:12px;line-height:12px;font-weight:400}
+.paid-active-source .active-identity small b{font-weight:400;color:#7653d9}
+.paid-active-source .online{padding:6px 7px;border-radius:16px;background:#00c66f;font-size:13px;line-height:12px;font-weight:500}
+.paid-active-source .active-end{border-radius:13px;background:#00c66f;font-size:15px;line-height:16px;justify-content:flex-start}
+.paid-active-source .active-consultation-icon{width:25px;height:25px;flex-basis:25px;border-radius:5px}
+.paid-active-source [data-consultation-label]{width:68px;text-align:left;line-height:16px}
+.paid-active-source .active-end span small{font-size:11px;font-weight:500;line-height:16px;margin-top:-1px}
+.paid-active-source .active-actions{width:89px;gap:16px;justify-content:flex-start;align-items:center}
+.paid-active-source .active-favorite{width:20px;flex:0 0 20px}
+.paid-active-source .active-search-icon{width:20px;height:20px;flex:0 0 20px}
+.paid-active-source .active-more,.paid-active-source .active-actions .active-dots{width:17px;flex:0 0 17px}
+.paid-active-source .active-back{background:transparent;border-radius:0}
+.paid-active-source .active-back img{display:block;width:100%;height:100%}
+.paid-active-source .active-back .paid-back-phone{display:none}
+.paid-active-source .active-list-rail{display:none}
+.paid-active-source .active-pin{display:flex;align-items:flex-start;gap:10px;margin:0 20px;padding:16px;background:#e5dbff;color:#313131;font-size:14px;font-weight:400;line-height:21px}
+.paid-active-source .active-pin[hidden]{display:none}
+.paid-active-source .paid-pin-copy{flex:1;min-width:0}
+.paid-active-source .paid-pin-icon-slot{position:relative;flex:none;width:18px;height:18px}
+.paid-active-source .paid-pin-icon-slot .active-pin-icon{position:absolute;inset:-1px;width:20px;height:20px;float:none;transform:scaleX(-1)}
+.paid-active-source .active-divider{margin-inline:20px}
+.paid-active-source .active-transcript{margin-inline:20px}
+/* Keep the diagnostic console reachable after the source frame, not over it. */
+body:has(.paid-active-source) [data-nebula-fixture-console]{position:relative;inset:auto;margin:16px auto}
+@media(min-width:576px) and (max-width:767px){.paid-active-source .active-pin{font-size:12px;line-height:20px}}
+@media(max-width:575px){.paid-active-source .active-pin{margin:0 15px;padding:10px 13px;font-size:12px;line-height:19px}.paid-active-source .paid-pin-icon-slot{width:14px;height:14px}.paid-active-source .paid-pin-icon-slot .active-pin-icon{width:16px;height:16px}.paid-active-source .active-divider,.paid-active-source .active-transcript{margin-inline:15px}}
+@media(min-width:1200px){.paid-active-source .active-actions{align-self:center}}
+@media(min-width:576px) and (max-width:991px){.paid-active-source .active-top{height:60px}.paid-active-source .active-main{padding-inline:0;width:calc(100% - 78px);margin-inline:auto}.paid-active-source .active-thread-head{padding:20px 20px 16px;height:88px}}
+@media(min-width:576px) and (max-width:767px){.paid-active-source .active-main{width:calc(100% - 66px)}.paid-active-source .active-thread-head{grid-template-columns:48px 6px 48px 6px minmax(0,1fr) 6px 105px 12px 53px}.paid-active-source .active-identity small{font-size:12px}.paid-active-source .active-end{padding:10px;gap:5px;font-size:13px;line-height:13px}.paid-active-source [data-consultation-label]{width:auto;line-height:13px}.paid-active-source .active-end span small{font-size:10px;line-height:10px;margin-top:2px}.paid-active-source .active-actions{width:53px;display:flex}}
+@media(max-width:575px){.paid-active-source .active-top{height:50px}.paid-active-source .active-thread-head{height:69px;padding:15px 15px 12px}.paid-active-source .active-identity{gap:5px}.paid-active-source .active-identity h1{font-size:13px;line-height:15px;overflow:hidden;text-overflow:ellipsis;max-width:100%}.paid-active-source .active-identity small{font-size:10px;line-height:12px;margin:0}.paid-active-source .active-end{padding:4px 10px;font-size:11px;line-height:13px;border-radius:8px}.paid-active-source [data-consultation-label]{width:auto;line-height:13px}.paid-active-source .active-end span small{font-size:9px;line-height:10px;margin-top:1px}.paid-active-source .active-consultation-icon{display:none}.paid-active-source .active-actions{width:17px}.paid-active-source .active-back .paid-back-wide{display:none}.paid-active-source .active-back .paid-back-phone{display:block}}

@@ -1,0 +1,18 @@
+/* Isolated source-rebase bundle. Imported owners are frozen under task-local proof assets. */
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/bootstrap.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/home.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-1.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-2.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-3.css");
+@import url("artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-4.css");
+
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-200.ttf") format("truetype");font-style:normal;font-weight:200;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-300.ttf") format("truetype");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-400.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-500.ttf") format("truetype");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-600.ttf") format("truetype");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-700.ttf") format("truetype");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:Manrope;src:url("_unzipped/fonts/manrope/Manrope-800.ttf") format("truetype");font-style:normal;font-weight:800;font-display:swap}
+
+.prn-bp-not-1200{display:none}
+@media (max-width:1199.98px){.prn-bp-1200-only{display:none!important}.prn-bp-not-1200{display:inline!important}}

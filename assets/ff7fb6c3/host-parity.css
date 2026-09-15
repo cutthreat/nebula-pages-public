@@ -1,0 +1,13 @@
+/* C76 full-frame host parity for All Psychics only.
+   Source: node 924:16998/17233/17473/17713/17948 normalized exports. */
+
+.prn-body .home.prn-page[data-nebula-all-psychics] {
+  font-family: "Manrope", sans-serif;
+}
+
+/* C76 source frames include the header at the top of the page only; it must
+   leave deep catalog/FAQ/SEO captures with the document rather than remain a
+   Bootstrap fixed viewport overlay. */
+.prn-body .home.prn-page[data-nebula-all-psychics] > .site-header.fixed-top {
+  position: absolute;
+}

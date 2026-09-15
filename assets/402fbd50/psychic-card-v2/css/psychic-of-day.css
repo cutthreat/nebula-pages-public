@@ -1,0 +1,713 @@
+/*
+ * source: Figma Psychic of the day symbols
+ * 1134:33234 (1200), 1441:44294 (992), 1438:43932 (768),
+ * 1435:68613 (576), 1441:44782 (320).
+ *
+ * Margo is the only expert mounted with this source component. The standard
+ * profile hero remains untouched for every other slug. Desktop uses the
+ * authored Info/Rating split; the compact variants flatten the same semantic
+ * regions into the source mobile reading order.
+ */
+.pc-page--psychic-of-day .pc-day-card,
+.pc-page--psychic-of-day .pc-day-card * {
+  box-sizing: border-box;
+}
+
+.pc-day-card {
+  --pc-day-purple: #673eda;
+  --pc-day-peach: #ffc478;
+  --pc-day-ink: #171126;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 95px 65px minmax(0, 1fr) 132px;
+  width: 290px;
+  height: 645px;
+  min-height: 645px;
+  margin: 0 auto 50px;
+  padding: 18px 18px 0;
+  overflow: hidden;
+  border: 3px solid var(--pc-day-peach);
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255, 201, 68, .9), inset 0 0 10px rgba(255, 201, 68, .9);
+}
+
+.pc-day-card__info,
+.pc-day-card__rating-panel {
+  display: contents;
+}
+
+.pc-day-card__identity {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-row: 1;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  min-width: 0;
+  height: 100px;
+}
+
+.pc-day-card__portrait {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.pc-day-card__portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pc-day-card__portrait::after {
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--pc-day-peach);
+  border-radius: inherit;
+  pointer-events: none;
+  content: "";
+}
+
+.pc-day-card__presence {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #66e3ad;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.pc-day-card__identity-copy {
+  min-width: 0;
+  padding-top: 7px;
+}
+
+.pc-day-card__identity-copy h1 {
+  margin: 0;
+  /* Reserve the source favorite glyph rail for narrow or long expert names. */
+  padding-inline-end: 32px;
+  overflow: hidden;
+  color: #7653d9;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pc-day-card__identity-copy > p {
+  margin: 2px 0 0;
+  overflow: hidden;
+  color: #919191;
+  font-size: 10px;
+  line-height: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pc-day-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  margin-top: 3px;
+  color: var(--pc-day-ink);
+}
+
+.pc-day-card__rating strong {
+  color: var(--pc-day-ink);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pc-day-card__stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.pc-day-card__stars img {
+  display: block;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.pc-day-card__identity-reviews {
+  min-width: 0;
+  overflow: hidden;
+  color: #919191;
+  font-size: 11px;
+  line-height: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pc-day-card__favorite {
+  /* Source glyph geometry is unchanged; only the transparent hit area grows. */
+  --favorite-width: 20px;
+  --favorite-height: 19px;
+  --favorite-inset: 18px;
+  position: absolute;
+  top: calc(var(--favorite-inset) - (44px - var(--favorite-height)) / 2);
+  right: calc(var(--favorite-inset) - (44px - var(--favorite-width)) / 2);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.pc-day-card__favorite img {
+  display: block;
+  width: var(--favorite-width);
+  height: var(--favorite-height);
+}
+
+.pc-day-card__profile-bottom {
+  z-index: 1;
+  display: flex;
+  grid-row: 4;
+  min-height: 0;
+  margin-top: 14px;
+  padding-top: 14px;
+  flex-direction: column;
+}
+
+.pc-day-card__bio {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--pc-day-ink);
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
+.pc-day-card__profile-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: auto;
+  color: #704bdc !important;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.pc-day-card__review {
+  display: none;
+}
+
+.pc-day-card__stats {
+  display: flex;
+  grid-row: 3;
+  min-width: 0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pc-day-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  margin: 6px 0;
+  color: var(--pc-day-ink);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.pc-day-card__stat img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+}
+
+.pc-day-card__stat strong {
+  color: #704bdc;
+  font-weight: 600;
+}
+
+.pc-day-card__tags {
+  display: flex;
+  grid-row: 2;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  max-width: 193px;
+  margin: 18px 0 14px;
+  flex-wrap: wrap;
+}
+
+.pc-day-card__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  padding: 4px 9px;
+  border: 1px solid #7653d9;
+  border-radius: 12px;
+  color: #704bdc;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.pc-day-card__tag--repeat,
+.pc-day-card__tag--extra-psychics,
+.pc-day-card__tag--extra-mediums {
+  display: none;
+}
+
+.pc-day-card__actions {
+  z-index: 1;
+  display: flex;
+  grid-row: 5;
+  min-width: 0;
+  margin: 0 -18px;
+  padding: 20px 22px 13px;
+  flex-direction: column;
+  background: #ffdfb5;
+}
+
+.pc-day-card__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 70px;
+  min-height: 70px;
+  padding: 0 22px;
+  border-radius: 13px;
+  background: var(--pc-day-purple);
+  color: #fff !important;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.pc-day-card__cta img {
+  display: block;
+  width: 22px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.pc-day-card__rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 32px;
+  padding-top: 8px;
+  color: #704bdc;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.pc-day-card__rate img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pc-day-card {
+    width: 510px;
+    height: 645px;
+    min-height: 645px;
+    grid-template-rows: 140px 95px 65px minmax(0, 1fr) 132px;
+    padding: 18px 18px 0;
+  }
+
+  .pc-day-card__identity {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 14px;
+    height: 140px;
+    grid-row: 1;
+  }
+
+  .pc-day-card__portrait {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+  }
+
+  .pc-day-card__identity-copy {
+    padding-top: 7px;
+  }
+
+  .pc-day-card__identity-copy h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pc-day-card__identity-copy > p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .pc-day-card__rating {
+    margin-top: 8px;
+  }
+
+  .pc-day-card__rating strong {
+    font-size: 21px;
+  }
+
+  .pc-day-card__identity-reviews {
+    font-size: 16px;
+  }
+
+  .pc-day-card__favorite {
+    --favorite-width: 24px;
+    --favorite-height: 23px;
+  }
+
+  .pc-day-card__profile-bottom {
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+
+  /* source: C76 1435:68613/68614, 510px card; do not inherit
+     the narrow 320px tag rail into this wider source variant. */
+  .pc-day-card__tags {
+    max-width: none;
+  }
+
+  .pc-day-card__tag--repeat,
+  .pc-day-card__tag--extra-psychics,
+  .pc-day-card__tag--extra-mediums,
+  .pc-day-card__tag--clairvoyance,
+  .pc-day-card__tag--angel {
+    display: flex;
+  }
+
+  .pc-day-card__tag--clairvoyance,
+  .pc-day-card__tag--angel {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .pc-day-card {
+    width: 630px;
+    height: 650px;
+    min-height: 650px;
+    grid-template-rows: 150px 95px 65px minmax(0, 1fr) 132px;
+    padding: 22px 22px 0;
+  }
+
+  .pc-day-card__identity {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 19px;
+    height: 150px;
+  }
+
+  .pc-day-card__portrait {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .pc-day-card__identity-copy {
+    padding-top: 10px;
+  }
+
+  .pc-day-card__identity-copy h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .pc-day-card__identity-copy > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .pc-day-card__rating {
+    margin-top: 12px;
+  }
+
+  .pc-day-card__rating strong {
+    font-size: 22px;
+  }
+
+  .pc-day-card__identity-reviews {
+    font-size: 18px;
+  }
+
+  .pc-day-card__favorite {
+    --favorite-width: 30px;
+    --favorite-height: 28px;
+    --favorite-inset: 22px;
+  }
+
+  .pc-day-card__profile-bottom {
+    margin-top: 18px;
+    padding-top: 18px;
+  }
+
+  .pc-day-card__bio {
+    -webkit-line-clamp: 5;
+  }
+
+  .pc-day-card__tags {
+    max-width: none;
+    margin: 22px 0 16px;
+  }
+
+  .pc-day-card__tag--repeat,
+  .pc-day-card__tag--extra-psychics {
+    display: flex;
+  }
+
+  .pc-day-card__tag--extra-mediums {
+    display: none;
+  }
+
+  .pc-day-card__tag--clairvoyance {
+    order: -2;
+  }
+
+  .pc-day-card__tag--angel {
+    order: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .pc-day-card {
+    width: 850px;
+    height: 360px;
+    min-height: 360px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 30px;
+    background: transparent;
+    box-shadow: none;
+    grid-template-columns: 520px 330px;
+    grid-template-rows: 1fr;
+  }
+
+  .pc-day-card__info {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    padding: 27px 27px 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--pc-day-peach);
+    border-radius: 30px 0 0 30px;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(255, 201, 68, .9), inset 0 0 10px rgba(255, 201, 68, .9);
+  }
+
+  .pc-day-card__rating-panel {
+    display: flex;
+    min-width: 0;
+    padding: 36px 30px 19px;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+    background: #ffe7c8;
+  }
+
+  .pc-day-card__identity {
+    grid-row: auto;
+    grid-template-columns: 200px minmax(0, 1fr) 18px;
+    gap: 19px;
+    height: auto;
+  }
+
+  .pc-day-card__portrait {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .pc-day-card__presence {
+    left: 20px;
+    bottom: 20px;
+    height: 28px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  .pc-day-card__identity-copy {
+    padding-top: 13px;
+  }
+
+  .pc-day-card__identity-copy h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .pc-day-card__identity-copy > p {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .pc-day-card__rating {
+    margin-top: 12px;
+  }
+
+  .pc-day-card__rating strong {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .pc-day-card__stars img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .pc-day-card__identity-reviews {
+    display: none;
+  }
+
+  .pc-day-card__favorite {
+    position: static;
+    display: none;
+  }
+
+  .pc-day-card__profile-bottom {
+    margin-top: 20px;
+    padding-top: 13px;
+    border-top: 1px solid #a280ff;
+  }
+
+  .pc-day-card__bio {
+    font-size: 15px;
+    line-height: 26px;
+    -webkit-line-clamp: 3;
+  }
+
+  .pc-day-card__profile-link {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .pc-day-card__review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0;
+    color: var(--pc-day-ink);
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .pc-day-card__review a {
+    display: inline-flex;
+    gap: 10px;
+    color: #704bdc;
+    font-size: 15px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+
+  .pc-day-card__stats {
+    margin-top: 16px;
+  }
+
+  .pc-day-card__stat {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .pc-day-card__stat img {
+    width: 17px;
+    height: 17px;
+    flex-basis: 17px;
+  }
+
+  .pc-day-card__tags {
+    max-width: none;
+    margin: 17px 0 20px;
+  }
+
+  .pc-day-card__tag {
+    height: auto;
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 12px;
+    background: #fff;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .pc-day-card__tag--repeat {
+    display: flex;
+  }
+
+  .pc-day-card__tag--extra-psychics,
+  .pc-day-card__tag--extra-mediums {
+    display: none;
+  }
+
+  .pc-day-card__actions {
+    display: flex;
+    margin: auto 0 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .pc-day-card__cta {
+    height: 60px;
+    min-height: 60px;
+    border-radius: 13px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pc-day-card__rate {
+    min-height: 28px;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pc-day-card {
+    width: 1030px;
+    grid-template-columns: 640px 390px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pc-day-card__stars img:not(:first-child) {
+    display: none;
+  }
+}

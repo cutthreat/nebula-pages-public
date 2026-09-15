@@ -1,0 +1,48 @@
+.expert-card-action-modal[hidden]{display:none!important}
+.expert-card-action-modal,.expert-card-action-modal *{box-sizing:border-box}
+.expert-card-action-modal{position:fixed;inset:0;z-index:2147483001;display:grid;place-items:center;padding:24px;font-family:Manrope,Arial,sans-serif}
+.expert-card-action-modal__scrim{position:absolute;inset:0;border:0;background:rgba(45,37,78,.68);-webkit-backdrop-filter:blur(13px) saturate(.78) brightness(.78);backdrop-filter:blur(13px) saturate(.78) brightness(.78);cursor:default}
+.expert-card-action-modal__dialog{position:relative;z-index:1;width:min(620px,calc(100vw - 48px));max-height:calc(100dvh - 48px);overflow:auto;padding:16px 0 30px;border-radius:30px;background:#fff;color:#101010;box-shadow:0 24px 72px rgba(24,12,57,.28)}
+.expert-card-action-modal__toolbar{height:40px;padding:0 18px;display:flex;justify-content:flex-end}
+.expert-card-action-modal__close{display:grid;width:40px;height:40px;padding:0;place-items:center;border:0;border-radius:50%;background:transparent;color:#673eda;font:400 32px/1 Arial,sans-serif;cursor:pointer}
+.expert-card-action-modal__close:hover{background:#f6f2ff}
+.expert-card-action-modal__close:focus-visible,.expert-card-action-modal__calendar button:focus-visible,.expert-card-action-modal__submit:focus-visible,.expert-card-action-modal__secondary:focus-visible{outline:3px solid rgba(103,62,218,.35);outline-offset:3px}
+.expert-card-action-modal__content{display:flex;flex-direction:column;align-items:center;gap:12px;padding:0 38px}
+.expert-card-action-modal__intro{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;text-align:center}
+.expert-card-action-modal__icon{display:grid;width:64px;height:64px;place-items:center;border-radius:50%;background:#efe9fd;color:#673eda;font-size:30px}
+/* Source owners: booking-session-v1 calendar and chatroom-notify bell assets. */
+.expert-card-action-modal__icon img{display:block;width:1em;height:1em;object-fit:contain}
+.expert-card-action-modal__intro h2{max-width:100%;margin:0;color:#673eda;font-size:30px;line-height:38px;font-weight:600;letter-spacing:-.3px}
+.expert-card-action-modal__intro p{width:min(470px,100%);margin:0;color:#706578;font-size:15px;line-height:22px}
+.expert-card-action-modal__demo{margin:0;padding:8px 12px;border-radius:10px;background:#f2edff;color:#7653d9;font-size:12px;line-height:18px;text-align:center}
+.expert-card-action-modal__view{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%}
+.expert-card-action-modal__view[hidden]{display:none!important}
+.expert-card-action-modal__hint{width:100%;margin:0;color:#706578;text-align:center;font-size:13px;line-height:19px}
+.expert-card-action-modal__status{width:100%;min-height:20px;margin:0;color:#7653d9;text-align:center;font-size:13px;line-height:20px}
+.expert-card-action-modal__calendar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%}
+.expert-card-action-modal__calendar button{display:flex;min-height:68px;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:12px 14px;border:2px solid #ddceff;border-radius:13px;background:#efe9fd;color:#313131;text-align:left;font:inherit;cursor:pointer}
+.expert-card-action-modal__calendar button strong{color:#673eda;font-size:14px;line-height:18px;font-weight:600}
+.expert-card-action-modal__calendar button span{color:#7653d9;font-size:12px;line-height:17px}
+.expert-card-action-modal__calendar button[aria-pressed=true]{border-color:#a07eff;background:#e6d9ff;box-shadow:inset 0 0 0 1px #a07eff}
+.expert-card-action-modal__actions{display:grid;width:100%;gap:8px}
+.expert-card-action-modal__submit,.expert-card-action-modal__secondary{min-height:50px;padding:12px 16px;border-radius:13px;font:600 15px/22px Manrope,Arial,sans-serif;cursor:pointer}
+.expert-card-action-modal__submit{border:0;background:#673eda;color:#fff}
+.expert-card-action-modal__submit:hover:not(:disabled){background:#5c32d2}
+.expert-card-action-modal__submit:disabled{background:#e7dfff;color:#9b8cc4;cursor:not-allowed}
+.expert-card-action-modal__secondary{border:1px solid #ddceff;background:#fff;color:#673eda}
+.expert-card-action-modal[data-expert-action-phase=pending] .expert-card-action-modal__status{color:#7653d9}
+.expert-card-action-modal[data-expert-action-phase=error] .expert-card-action-modal__status{color:#a84867}
+.expert-card-action-modal[data-expert-action-phase=indeterminate] .expert-card-action-modal__status{color:#765a1a}
+.expert-card-action-modal[data-expert-action-phase=confirmed] .expert-card-action-modal__status{color:#2d8a62}
+html[data-expert-card-action-open=true]{overflow:hidden}
+@media(max-width:575.98px){
+ .expert-card-action-modal{padding:12px}
+ .expert-card-action-modal__dialog{width:100%;max-height:calc(100dvh - 24px);padding-bottom:20px;border-radius:24px}
+ .expert-card-action-modal__content{padding:0 16px;gap:10px}
+ .expert-card-action-modal__icon{width:48px;height:48px;font-size:23px}
+ .expert-card-action-modal__intro h2{font-size:24px;line-height:32px}
+ .expert-card-action-modal__intro p{font-size:14px;line-height:20px}
+ .expert-card-action-modal__calendar{grid-template-columns:1fr}
+ .expert-card-action-modal__calendar button{min-height:58px}
+}
+@media(prefers-reduced-motion:reduce){.expert-card-action-modal__calendar button{transition:none}}

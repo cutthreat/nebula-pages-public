@@ -1,0 +1,40 @@
+[data-account-shell].nb-topbar{--nb-header-accent:#673eda;--nb-header-peach:#ffc478;position:relative;left:50%;z-index:80;box-sizing:border-box;width:1110px;max-width:calc(100vw - 30px);height:60px;margin:0;padding-top:20px;transform:translateX(-50%);display:flex;align-items:flex-start;justify-content:space-between}
+[data-account-shell] .nb-logo{display:block;width:142px;height:30px;flex:0 0 auto}[data-account-shell] .nb-logo img{display:block;width:100%;height:100%;object-fit:contain;transform:none}
+[data-account-shell] .nb-topbar__right{height:40px;display:flex;align-items:center;gap:40px;min-width:0}[data-account-shell] .nb-topnav{display:flex;align-items:center;gap:40px}[data-account-shell] .nb-topnav a{border:0;background:transparent;padding:0;color:#000;font:400 18px/25px Manrope,Arial,sans-serif;text-decoration:none;white-space:nowrap;cursor:pointer}[data-account-shell] .nb-topnav a.is-active,[data-account-shell] .nb-topnav a:hover{color:var(--nb-header-accent)}
+[data-account-shell] .nb-account-summary{height:40px;display:flex;align-items:center;gap:6px;flex:0 0 auto}[data-account-shell] .nb-credit-pill,[data-account-shell] .nb-menu-pill{position:relative;height:40px;border:1px solid #7653d9;border-radius:25px;display:flex;align-items:center;box-sizing:border-box}[data-account-shell] .nb-credit-pill{width:93px;gap:8px;padding:0 17px;background:#673eda;color:var(--nb-header-peach);text-decoration:none;cursor:pointer}[data-account-shell] .nb-credit-pill img{width:20px;height:20px;flex:none}[data-account-shell] .nb-credit-pill span{font:500 18px/25px Manrope,Arial,sans-serif}[data-account-shell] .nb-menu-pill{width:94px;justify-content:center;gap:8px;padding:0;background:#fff;color:#7653d9;cursor:pointer}[data-account-shell] .nb-menu-pill>span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:url("../images/horoscope/ellipse-12.svg");color:#fff;font:500 10px/10px Manrope,Arial,sans-serif}
+[data-account-shell] .nb-credit-pill:hover,[data-account-shell] .nb-credit-pill:focus-visible{filter:brightness(1.04)}
+[data-account-shell] .nb-menu-pill:focus-visible,[data-account-shell] .nb-credit-pill:focus-visible,[data-account-shell] .nb-topnav a:focus-visible{outline:3px solid var(--nb-peach);outline-offset:3px}
+/* source: accepted C76 Chatroom account-menu frame 1394:31113 / identity 1394:31114; shared route projection keeps the exact white card and shadow contract. */
+[data-account-shell] .nb-account-menu{position:absolute;right:0;top:48px;z-index:120;width:236px;padding:8px;border:1px solid #ded3fb;border-radius:16px;background:#fff;box-shadow:0 18px 50px rgba(39,23,78,.22)}
+[data-account-shell] .nb-account-menu[hidden],[data-account-shell] .nb-account-menu-scrim[hidden]{display:none!important}
+[data-account-shell] .nb-account-menu__identity{display:flex;align-items:center;gap:10px;margin:0 0 6px;padding:9px 10px 12px;border-bottom:1px solid #eee9f8}
+[data-account-shell] .nb-account-menu__identity b,[data-account-shell] .nb-account-menu__identity small{display:block}
+[data-account-shell] .nb-account-menu__identity b{color:#2f214e;font:600 13px/17px Manrope,Arial,sans-serif}
+[data-account-shell] .nb-account-menu__identity small{color:#9285a9;font:10px/14px Manrope,Arial,sans-serif}
+[data-account-shell] .nb-account-menu a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;color:#3c2a60;text-decoration:none;font:12px/16px Manrope,Arial,sans-serif}
+[data-account-shell] .nb-account-menu a:hover,[data-account-shell] .nb-account-menu a:focus-visible{background:#f0eaff;color:#6738cf;outline:0}
+[data-account-shell] .nb-account-menu a[aria-current="page"]{background:#f0eaff;color:#6738cf}
+[data-account-shell] .nb-account-menu a>span,[data-account-shell] .nb-account-menu a>img{display:grid;width:22px;height:22px;flex:0 0 22px;place-items:center;border-radius:7px;background:#eee7ff;color:#7043d3;object-fit:contain}
+[data-account-shell] .nb-account-menu a>img{padding:3px}
+[data-account-shell] .nb-account-avatar{display:grid;width:24px;height:24px;flex:0 0 24px;place-items:center;border-radius:50%;background:url("../images/horoscope/ellipse-12.svg") center/cover no-repeat;color:#fff;font:500 10px/10px Manrope,Arial,sans-serif}
+[data-account-shell] .nb-account-menu-scrim{display:none;position:fixed;inset:0;z-index:110;border:0;background:transparent}
+@media(max-width:991.98px){[data-account-shell] .nb-account-menu{position:fixed;top:12px;right:16px;width:min(236px,calc(100vw - 32px));padding:8px;border-radius:16px}[data-account-shell] .nb-account-menu-scrim{display:block}
+/* CAB-010 UX exception: preserve source pills, extend only their invisible mobile hit height. */
+[data-account-shell] .nb-menu-pill::before,[data-account-shell] .nb-credit-pill::before{content:"";position:absolute;left:50%;top:50%;width:max(100%,44px);height:max(100%,44px);transform:translate(-50%,-50%)}}
+@media(min-width:992px) and (max-width:1199.98px){[data-account-shell].nb-topbar{width:930px}}
+@media(min-width:768px) and (max-width:991.98px){[data-account-shell].nb-topbar{width:690px}[data-account-shell] .nb-logo{width:121px;height:26px}[data-account-shell] .nb-topnav{display:none}[data-account-shell] .nb-topbar__right{gap:6px}}
+@media(min-width:576px) and (max-width:767.98px){[data-account-shell].nb-topbar{width:510px;height:50px;padding-top:10px;align-items:center}[data-account-shell] .nb-logo{width:121px;height:26px}[data-account-shell] .nb-topnav{display:none}[data-account-shell] .nb-topbar__right{gap:6px}}
+@media(max-width:575.98px){[data-account-shell].nb-topbar{width:290px;height:40px;padding-top:10px}[data-account-shell] .nb-logo{width:99px;height:21px}[data-account-shell] .nb-topnav{display:none}[data-account-shell] .nb-topbar__right{height:30px;gap:6px}[data-account-shell] .nb-account-summary{height:30px;gap:6px}[data-account-shell] .nb-credit-pill,[data-account-shell] .nb-menu-pill{height:30px}[data-account-shell] .nb-credit-pill{width:63px;padding:0 9px;gap:4px}[data-account-shell] .nb-credit-pill img{width:14px;height:14px}[data-account-shell] .nb-credit-pill span{font-size:15px;line-height:20px}[data-account-shell] .nb-menu-pill{width:62px;gap:5px;padding:0 2px 0 9px;justify-content:flex-start}[data-account-shell] .nb-menu-pill>span{width:24px;height:24px}}
+@media(prefers-reduced-motion:reduce){[data-account-shell] .nb-account-menu,[data-account-shell] .nb-account-menu-scrim{transition:none!important}}
+/* C76 shared paint: psychic 1394:31940/1415:46914; Legal 1428:43461/43862. Settings retains its source 576 top=10. */
+[data-account-shell]:is(.nb-topbar--psychic-profile,.nb-topbar--settings){align-items:center}
+/* C76 HEADER rails 1095:28957 / 1415:44364 / 45426 / 45978 / 46896; source-centered logo. */
+@media(min-width:576px) and (max-width:991.98px){[data-account-shell]:is(.nb-topbar--psychic-profile,.nb-topbar--settings) .nb-logo{width:120px;height:25px}}
+@media(min-width:576px) and (max-width:767.98px){[data-account-shell].nb-topbar--psychic-profile{height:60px;padding-top:20px}}
+@media(max-width:575.98px){[data-account-shell]:is(.nb-topbar--psychic-profile,.nb-topbar--settings){max-width:calc(100vw - 30px)}[data-account-shell]:is(.nb-topbar--psychic-profile,.nb-topbar--settings) .nb-logo{width:100px;height:21.127px}}
+[data-account-shell] .nb-menu-pill>span{display:grid;place-items:center}
+/* source: existing C76 ellipse-12.svg export used by the accepted Chatroom avatar carrier; do not replace with a hand-tuned gradient. */
+[data-account-shell] .nb-menu-pill>span,[data-account-shell] .nb-account-menu__identity .nb-account-avatar{background-image:url("../images/horoscope/ellipse-12.svg");background-position:center;background-size:cover;background-repeat:no-repeat}
+[data-account-shell] .nb-menu-source{position:relative;display:block;flex:0 0 auto;width:26px;height:16px}
+[data-account-shell] .nb-menu-source img{position:absolute;left:0;top:-1px;width:26px;height:17px}
+@media(max-width:575.98px){[data-account-shell] .nb-menu-source{width:20px;height:12px;transform:translateY(1px)}[data-account-shell] .nb-menu-source img{width:20px;height:13px}}

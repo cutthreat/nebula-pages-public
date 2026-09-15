@@ -1,0 +1,51 @@
+[data-nebula-fixture-console] {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2147483647;
+    width: min(320px, calc(100vw - 32px));
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    background: rgba(29, 20, 48, .96);
+    color: #fff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .35);
+    font: 12px/1.4 Arial, sans-serif;
+}
+
+[data-nebula-fixture-console] strong { display: block; margin-bottom: 4px; }
+[data-nebula-fixture-console] p { margin: 0 0 10px; color: #d9d1e8; }
+[data-nebula-fixture-console] label { display: block; margin-bottom: 8px; }
+[data-nebula-fixture-console] select,
+[data-nebula-fixture-console] button {
+    min-height: 32px;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 9px;
+    font: inherit;
+}
+[data-nebula-fixture-console] select { width: 100%; }
+[data-nebula-fixture-console] button { margin-right: 6px; cursor: pointer; }
+[data-nebula-fixture-console] output { display: block; min-height: 34px; color: #fff; overflow-wrap: anywhere; }
+
+[data-nebula-chatroom] .c76-chat-action[data-fixture-interactive="true"],
+[data-nebula-chatroom] .c76-message__pin[data-fixture-interactive="true"] { cursor: pointer; }
+[data-nebula-chatroom] .c76-chat-actions { position: relative; }
+[data-nebula-chatroom] .c76-chat-action.is-fixture-selected,
+[data-nebula-chatroom] .c76-message.is-fixture-pinned { filter: drop-shadow(0 0 4px rgba(145, 105, 255, .72)); }
+[data-nebula-chatroom] .c76-fixture-search { position: absolute; right: 0; top: 38px; z-index: 4; width: 180px; height: 30px; border: 1px solid #8f6aff; border-radius: 8px; padding: 0 9px; font: 12px/1 Arial, sans-serif; }
+[data-nebula-chatroom] .c76-message--fixture-local { align-self: flex-end; width: auto; max-width: 78%; min-height: auto; background: #e9e0ff; }
+[data-nebula-chatroom] .c76-message--fixture-local p::after { content: ' · local fixture'; color: #7c67a8; font-size: 11px; }
+
+[data-nebula-messages-from-psychics] [data-fixture-interactive="true"],
+[data-nebula-special-offers] [data-fixture-interactive="true"],
+[data-nebula-system-messages] [data-fixture-interactive="true"] { cursor: pointer; }
+[data-nebula-messages-from-psychics] [data-fixture-interactive="true"]:focus-visible,
+[data-nebula-special-offers] [data-fixture-interactive="true"]:focus-visible,
+[data-nebula-system-messages] [data-fixture-interactive="true"]:focus-visible { outline: 3px solid #8f6aff; outline-offset: 3px; }
+[data-nebula-messages-from-psychics] [data-fixture-preference-draft="off"],
+[data-nebula-special-offers] [data-fixture-preference-draft="off"],
+[data-nebula-system-messages] [data-fixture-preference-draft="off"] { opacity: .62; }
+[data-nebula-messages-from-psychics] [data-fixture-preference-draft="on"],
+[data-nebula-special-offers] [data-fixture-preference-draft="on"],
+[data-nebula-system-messages] [data-fixture-preference-draft="on"] { box-shadow: 0 0 0 2px rgba(145, 105, 255, .36); }

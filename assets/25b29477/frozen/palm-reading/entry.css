@@ -1,0 +1,5 @@
+/* Isolated Palm Reading rebase: source-backed imports, legacy files remain read-only. */
+@import url("_unzipped/bootstrap.css");
+@import url("_unzipped/oracle-shared-shell.00.css?v=20260726r5-seam");
+@import url("_unzipped/oracle-shared-shell.01.css?v=20260726r5-seam");
+@import url("_unzipped/palm-reading.owner.00.css?v=20260726r5-seam");

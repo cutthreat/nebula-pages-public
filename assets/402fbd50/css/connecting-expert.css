@@ -1,0 +1,57 @@
+/* C76 consultation_connecting: source palette/assets; fluid viewport adaptation. */
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-400.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-600.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("../fonts/manrope/Manrope-700.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+.connecting-expert{position:fixed;inset:0;z-index:2147483000;width:100%;height:100dvh;overflow:auto;font-family:"Manrope",Arial,sans-serif;background:#49415e;color:#000}
+.connecting-expert,.connecting-expert *{box-sizing:border-box}
+.connecting-expert[hidden],.connecting-expert__frame[hidden]{display:none}
+.connecting-expert button{font:inherit}
+.connecting-expert button:focus-visible{outline:3px solid #bcaaff;outline-offset:2px}
+.connecting-expert button:hover{background:#f4efff}
+.nebula-modal-open,.nebula-modal-open body{overflow:hidden}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.connecting-expert__frame{width:100%;min-height:100dvh;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));display:grid;place-items:center}
+.connecting-expert__modal{width:100%;max-width:930px;padding:16px 20px 40px;border-radius:40px;background:#fff;display:flex;flex-direction:column}
+.connecting-expert__toolbar{width:100%;height:44px;display:flex;justify-content:flex-end;align-items:center;flex:0 0 auto}
+.connecting-expert__close{width:44px;height:44px;padding:8px;border:0;border-radius:50%;background:transparent;cursor:pointer;display:grid;place-items:center}
+.connecting-expert__close picture,.connecting-expert__close img{display:block;width:28px;height:28px}
+.connecting-expert__close img{transform:rotate(-45deg);object-fit:contain}
+.connecting-expert__body{display:flex;flex-direction:column;align-items:center;gap:28px;min-width:0}
+.connecting-expert__body h1{width:100%;max-width:700px;margin:0;color:#673eda;text-align:center;font-size:36px;line-height:46px;letter-spacing:-.36px;font-weight:600}
+.connecting-expert__status{width:100%;max-width:715px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.connecting-expert__profile{display:flex;flex-direction:column;align-items:center;gap:18px}
+.connecting-expert__avatar{width:231px;height:231px;border:7px solid #e5dbff;border-radius:50%;box-shadow:0 0 5px rgba(0,0,0,.15);overflow:hidden;flex:0 0 auto}
+.connecting-expert__avatar picture,.connecting-expert__avatar img{display:block;width:100%;height:100%}
+.connecting-expert__avatar img{object-fit:cover}
+.connecting-expert__profile strong{font-size:20px;line-height:26px;font-weight:700;text-align:center}
+.connecting-expert__progress{width:100%;height:12px;border-radius:6px;background:#ebebeb;overflow:hidden;flex:0 0 auto}
+.connecting-expert__progress span{display:block;width:var(--connecting-attempt-progress,0%);height:100%;border-radius:inherit;background:#a07eff;transition:width .16s linear}
+.connecting-expert__countdown,.connecting-expert__demo{margin:0;color:#673eda;text-align:center;font-size:14px;line-height:20px}
+.connecting-expert__demo{display:none;font-size:12px;color:#625772}
+.connecting-expert[data-connection-demo="true"] .connecting-expert__demo{display:block}
+.connecting-expert__facts{width:100%;max-width:716px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.connecting-expert__facts p{min-height:46px;margin:0;padding:10px 14px;border-radius:13px;background:#efe9fd;color:#673eda;display:flex;align-items:center;gap:10px;font-size:14px;line-height:20px;font-weight:600}
+/* Desktop SVGs include a transparent 10px trailing field; preserve their native ratio inside the icon + gap slot. */
+.connecting-expert__facts picture{display:block;width:20px;height:20px;flex:0 0 auto}
+.connecting-expert__facts img{display:block;width:auto;height:20px;max-width:none;object-fit:contain}
+@media(max-width:767.98px){
+  .connecting-expert__modal{padding:8px 20px 24px;border-radius:26px}
+  .connecting-expert__body{gap:20px}
+  .connecting-expert__body h1{font-size:26px;line-height:34px}
+  .connecting-expert__avatar{width:170px;height:170px}
+  .connecting-expert__facts{grid-template-columns:1fr}
+}
+@media(max-width:575.98px){
+  .connecting-expert__modal{padding:6px 16px 20px;border-radius:24px}
+  .connecting-expert__body{gap:18px}
+  .connecting-expert__body h1{font-size:22px;line-height:30px;letter-spacing:-.22px}
+  .connecting-expert__avatar{width:130px;height:130px;border-width:5px}
+  .connecting-expert__profile{gap:10px}
+  .connecting-expert__facts{gap:6px}
+  .connecting-expert__facts p{padding:10px;font-size:12px;line-height:18px}
+}
+@media(max-width:320px){
+  .connecting-expert__facts picture{width:16px;height:16px;display:grid;place-items:center}
+  .connecting-expert__facts img{width:auto;height:auto;max-height:16px}
+}
+@media(prefers-reduced-motion:reduce){.connecting-expert__progress span{transition:none}}
