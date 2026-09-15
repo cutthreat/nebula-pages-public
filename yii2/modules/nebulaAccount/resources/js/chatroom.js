@@ -1505,13 +1505,41 @@
     });
   });
 
+  const selectSuggestion = (index, { focus = false } = {}) => {
+    const chip = suggestions[index];
+    if (!chip) return;
+    suggestions.forEach((item, itemIndex) => {
+      const selected = itemIndex === index;
+      item.classList.toggle('is-selected', selected);
+      item.setAttribute('aria-selected', selected ? 'true' : 'false');
+      item.tabIndex = selected ? 0 : -1;
+    });
+    input.value = chip.textContent.trim();
+    updateComposer();
+    chip.scrollIntoView?.({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+    if (focus) { chip.focus(); input.focus(); }
+    syncSuggestionNav();
+  };
   suggestions.forEach((chip, index) => {
     chip.tabIndex = index === 0 ? 0 : -1;
-    chip.addEventListener('keydown', (event) => { const current = suggestions.indexOf(chip); let next = current; if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (current + 1) % suggestions.length; else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (current - 1 + suggestions.length) % suggestions.length; else if (event.key === 'Home') next = 0; else if (event.key === 'End') next = suggestions.length - 1; else return; event.preventDefault(); suggestions.forEach((item, itemIndex) => { item.tabIndex = itemIndex === next ? 0 : -1; }); suggestions[next].focus(); });
-    chip.addEventListener('click', () => { suggestions.forEach((item) => { const selected = item === chip; item.classList.toggle('is-selected', selected); item.setAttribute('aria-selected', selected ? 'true' : 'false'); }); input.value = chip.textContent.trim(); updateComposer(); input.focus(); });
+    chip.addEventListener('keydown', (event) => { const current = suggestions.indexOf(chip); let next = current; if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (current + 1) % suggestions.length; else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (current - 1 + suggestions.length) % suggestions.length; else if (event.key === 'Home') next = 0; else if (event.key === 'End') next = suggestions.length - 1; else return; event.preventDefault(); selectSuggestion(next, { focus: true }); });
+    chip.addEventListener('click', () => selectSuggestion(index, { focus: true }));
   });
-  const syncSuggestionNav = () => { if (!suggestionRail) return; const max = Math.max(0, suggestionRail.scrollWidth - suggestionRail.clientWidth); suggestionNav.forEach((button) => { const disabled = button.dataset.suggestionNav === 'prev' ? suggestionRail.scrollLeft <= 1 : suggestionRail.scrollLeft >= max - 1; button.disabled = disabled; button.setAttribute('aria-disabled', disabled ? 'true' : 'false'); }); };
-  suggestionNav.forEach((button) => button.addEventListener('click', () => { if (!button.disabled) suggestionRail.scrollBy({ left: button.dataset.suggestionNav === 'next' ? 240 : -240, behavior: 'smooth' }); }));
+  const syncSuggestionNav = () => {
+    if (!suggestionRail) return;
+    const current = Math.max(0, suggestions.findIndex((item) => item.getAttribute('aria-selected') === 'true'));
+    suggestionNav.forEach((button) => {
+      const disabled = button.dataset.suggestionNav === 'prev' ? current <= 0 : current >= suggestions.length - 1;
+      button.disabled = disabled;
+      button.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+    });
+  };
+  suggestionNav.forEach((button) => button.addEventListener('click', () => {
+    if (button.disabled || !suggestions.length) return;
+    const current = Math.max(0, suggestions.findIndex((item) => item.getAttribute('aria-selected') === 'true'));
+    const next = button.dataset.suggestionNav === 'next' ? Math.min(suggestions.length - 1, current + 1) : Math.max(0, current - 1);
+    selectSuggestion(next, { focus: true });
+  }));
   suggestionRail?.addEventListener('scroll', syncSuggestionNav, { passive: true });
 
   root.querySelectorAll('[data-intention]').forEach((button) => { button.setAttribute('aria-pressed', 'false'); button.addEventListener('click', () => { root.querySelectorAll('[data-intention]').forEach((item) => { const selected = item === button; item.classList.toggle('is-selected', selected); item.setAttribute('aria-pressed', selected ? 'true' : 'false'); }); input.value = `I would like to ask about ${button.textContent.trim().toLowerCase()}. `; updateComposer(); input.focus(); }); });
