@@ -90,6 +90,7 @@ foreach ($route in $routes) {
     $html = [regex]::Replace($html, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
     $html = [regex]::Replace($html, '(?i)(href=")(/nebula-account[^"#]*)', { param($match) $match.Groups[1].Value + (Convert-InternalHref $match.Groups[2].Value) })
+    $html = [regex]::Replace($html, '(?i)(data-[a-z0-9_-]+=")(/nebula-account[^"#]*)', { param($match) $match.Groups[1].Value + (Convert-InternalHref $match.Groups[2].Value) })
     $output = Join-Path $htmlTarget $route.file
     [System.IO.File]::WriteAllText($output, $html, (New-Object System.Text.UTF8Encoding($false)))
     $title = ([regex]::Match($html, '<title[^>]*>(.*?)</title>', 'IgnoreCase')).Groups[1].Value

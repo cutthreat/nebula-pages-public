@@ -1,6 +1,6 @@
 {
   "schema": "nebula.local-layout-snapshot.v1",
-  "generatedAt": "2026-09-15T10:37:16.4685334Z",
+  "generatedAt": "2026-09-15T10:38:55.9350997Z",
   "sourceBaseUrl": "http://127.0.0.1:8173",
   "sourceModuleRoot": "experiments/nebula-account-chat-live-20260809/yii2/modules/nebulaAccount",
   "sourceConfig": "host/yii2/config/web.php",
@@ -10,14 +10,14 @@
       "route": "/nebula-account/profile",
       "file": "profile.html",
       "status": 200,
-      "bytes": 43455,
+      "bytes": 43349,
       "title": "Profile — Neuro"
     },
     {
       "route": "/nebula-account/psychics",
       "file": "psychics.html",
       "status": 200,
-      "bytes": 150972,
+      "bytes": 150377,
       "title": "Psychics — Neuro"
     },
     {
@@ -38,14 +38,14 @@
       "route": "/nebula-account/favorites",
       "file": "favorites.html",
       "status": 200,
-      "bytes": 23639,
+      "bytes": 23601,
       "title": "Favorite — Neuro"
     },
     {
       "route": "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
       "file": "chatroom.html",
       "status": 200,
-      "bytes": 80180,
+      "bytes": 80158,
       "title": "Chatroom — Neuro"
     },
     {
@@ -122,7 +122,7 @@
       "route": "/nebula-account/settings/support/billing",
       "file": "billing.html",
       "status": 200,
-      "bytes": 34962,
+      "bytes": 34929,
       "title": "Billing — Neuro"
     },
     {
