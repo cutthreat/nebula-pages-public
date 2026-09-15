@@ -1,6 +1,6 @@
 {
   "schema": "nebula.local-layout-snapshot.v1",
-  "generatedAt": "2026-09-15T11:49:22.2858721Z",
+  "generatedAt": "2026-09-15T12:33:56.8349426Z",
   "sourceBaseUrl": "http://127.0.0.1:8173",
   "sourceModuleRoot": "experiments/nebula-account-chat-live-20260809/yii2/modules/nebulaAccount",
   "sourceConfig": "host/yii2/config/web.php",

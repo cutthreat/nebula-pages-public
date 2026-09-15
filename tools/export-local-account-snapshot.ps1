@@ -22,6 +22,8 @@ if ($CopyAssets) {
     }
     $conversationList = Join-Path $ReleaseRoot 'yii2\modules\nebulaAccount\resources\css\conversation-list.css'
     Copy-Item -LiteralPath (Join-Path $assetSource '3f6bda43\css\conversation-list.css') -Destination $conversationList -Force
+    $chatroomCss = Join-Path $ReleaseRoot 'yii2\modules\nebulaAccount\resources\css\chatroom.css'
+    Copy-Item -LiteralPath (Join-Path $assetSource '3f6bda43\css\chatroom.css') -Destination $chatroomCss -Force
 }
 
 $routes = @(
