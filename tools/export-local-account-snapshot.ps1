@@ -2,6 +2,8 @@ param(
     [string]$BaseUrl = 'http://127.0.0.1:8173',
     [string]$ReleaseRoot = (Split-Path -Parent $PSScriptRoot),
     [string]$SourceRoot = '',
+    [string]$AssetSource = '',
+    [string]$ModuleResourceSource = '',
     [string]$SnapshotVersion = '20260915',
     [switch]$CopyAssets
 )
@@ -13,8 +15,14 @@ if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
     $SourceRoot = Join-Path (Split-Path -Parent (Split-Path -Parent $releaseRootResolved)) 'implementation\nebula-gpt'
 }
 $sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
-$assetSource = Join-Path $sourceRoot 'host\yii2\web\assets'
-$moduleResourceSource = Join-Path $sourceRoot 'experiments\nebula-account-chat-live-20260809\yii2\modules\nebulaAccount\resources'
+if ([string]::IsNullOrWhiteSpace($AssetSource)) {
+    $AssetSource = Join-Path $sourceRoot 'host\yii2\web\assets'
+}
+if ([string]::IsNullOrWhiteSpace($ModuleResourceSource)) {
+    $ModuleResourceSource = Join-Path $sourceRoot 'experiments\nebula-account-chat-live-20260809\yii2\modules\nebulaAccount\resources'
+}
+$assetSource = (Resolve-Path -LiteralPath $AssetSource).Path
+$moduleResourceSource = (Resolve-Path -LiteralPath $ModuleResourceSource).Path
 $assetTarget = Join-Path $releaseRootResolved 'assets'
 $moduleResourceTarget = Join-Path $releaseRootResolved 'yii2\modules\nebulaAccount\resources'
 $htmlTarget = Join-Path $releaseRootResolved 'nebula-account'
