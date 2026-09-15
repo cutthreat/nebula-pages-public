@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nebula account/chat — QA report</title>
+  <style>body{font:16px/1.55 system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#25202d}h1,h2{color:#6536d8}code{background:#f1edff;padding:2px 5px;border-radius:4px}.pass{color:#087f45}.np{color:#9a5b00}</style>
+</head>
+<body>
+  <h1>Nebula account/chat — honest QA report</h1>
+  <p><strong>Published build:</strong> <code>main</code> at <code>4c70db1</code>.</p>
+  <h2>Executed</h2>
+  <ul>
+    <li>55 screens × CSS widths 1200 / 992 / 768 / 576 / 320.</li>
+    <li>Public route reachability, titles, body and horizontal overflow.</li>
+    <li>Local Yii2 online, busy and offline paid-chat modal flows.</li>
+    <li>Chatroom menu, search, filter, suggestion navigation, draft/send preview, attachment, emoji, voice preview, primary navigation and CSS-320 pointer clicks.</li>
+  </ul>
+  <h2>Results</h2>
+  <p class="pass"><strong>PASS:</strong> 55/55 screens × 5 widths; no horizontal overflow observed.</p>
+  <p class="pass"><strong>PASS:</strong> online/busy/offline modal scenarios for the local demo UI.</p>
+  <p class="pass"><strong>PASS:</strong> public GitHub Pages catalogue and chatroom are reachable.</p>
+  <p class="pass"><strong>FIXED:</strong> Next/Previous suggestion now changes the selected question and draft instead of only scrolling.</p>
+  <p class="np"><strong>NOT PROVEN:</strong> real payment, billing, persistence, realtime delivery, notification delivery, calendar acknowledgement, service-session/RBAC and production media playback.</p>
+  <p class="np"><strong>NOT PROVEN:</strong> <code>video-preview-static.html</code> is intentionally poster-only and has no media-runtime contract.</p>
+  <h2>Source mapping note</h2>
+  <p>The local Yii2 host resolves the account module from <code>experiments/nebula-account-chat-live-20260809</code>. Keep this mapping explicit when mounting the backend; the public package is a frontend demo/handoff, not a backend deployment.</p>
+</body>
+</html>
