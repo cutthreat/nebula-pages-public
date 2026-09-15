@@ -89,6 +89,9 @@ foreach ($route in $routes) {
     $html = [regex]::Replace($html, '(?is)<meta\s+name="nebula-integration-config"[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
+    if ($html -notmatch '(?i)<link\s+[^>]*rel="icon"') {
+        $html = $html.Replace('<head>', '<head>\n<link rel="icon" type="image/svg+xml" href="../favicon.svg">')
+    }
     $html = [regex]::Replace($html, '(?i)(href=")(/nebula-account[^"#]*)', { param($match) $match.Groups[1].Value + (Convert-InternalHref $match.Groups[2].Value) })
     $html = [regex]::Replace($html, '(?i)(data-[a-z0-9_-]+=")(/nebula-account[^"#]*)', { param($match) $match.Groups[1].Value + (Convert-InternalHref $match.Groups[2].Value) })
     $output = Join-Path $htmlTarget $route.file
