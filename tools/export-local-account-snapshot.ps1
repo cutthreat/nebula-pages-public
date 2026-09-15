@@ -69,6 +69,9 @@ function Convert-InternalHref([string]$href) {
         $query = $uri.Query
     } catch { return $href }
     if ($routeMap.ContainsKey($path)) { return $routeMap[$path] + $query }
+    # The local catalogue contains more expert cards than the static snapshot.
+    # Keep unknown catalogue profiles inside the published surface instead of emitting a 404 root route.
+    if ($path -match '^/nebula-account/psychics/') { return 'psychics.html' + $query }
     return $href
 }
 
