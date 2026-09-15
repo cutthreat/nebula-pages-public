@@ -89,6 +89,9 @@ foreach ($route in $routes) {
     $html = [regex]::Replace($html, '(?is)<meta\s+name="nebula-integration-config"[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<link\s+[^>]*integration-sandbox\.css[^>]*>\s*', '')
     $html = [regex]::Replace($html, '(?is)<script\s+[^>]*integration-sandbox\.js[^>]*></script>\s*', '')
+    if ($route.file -eq 'expert-offline.html') {
+        $html = [regex]::Replace($html, '(?is)<title>\s*</title>', '<title>Expert offline — Neuro</title>', 1)
+    }
     if ($html -notmatch '(?i)<link\s+[^>]*rel="icon"') {
         $iconMarkup = '<link rel="icon" href="../favicon.ico"><link rel="shortcut icon" href="../favicon.ico">'
         $html = $html.Replace('<head>', '<head>' + [Environment]::NewLine + $iconMarkup)
