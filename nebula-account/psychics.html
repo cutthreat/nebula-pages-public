@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="oENVTUCjM1GIXvhotAw5s3BGGCq3z3zTTdS1s8Eu-dvkATQONOtnOt8Pzxj3dG_aP3J6TuaKDpZ6l9jyo3-r4w==">
+    <title>Psychics — Neuro</title>
+    <meta name="nebula-integration-config" content="{&quot;baseUrl&quot;:&quot;/nebula-account/integration-sandbox/v1&quot;,&quot;mode&quot;:&quot;local-file-backed-v1&quot;}">
+<link href="../assets/26673cb2/integration-sandbox.css?v=1788121957" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/expert-card-actions.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/profile.css?v=1789456518" rel="stylesheet">
+<link href="../assets/fece512a/css/psychics.css?v=1789456518" rel="stylesheet">
+<link href="../assets/6531e1a1/css/favorites.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/expert-picker-trial.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/question-before-start.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/connecting-expert.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/chat-overlays.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/checkout-order-review.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/checkout-card-details.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/card-payment-error.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/payment-order-error.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup-flow.css?v=1789456518" rel="stylesheet">
+<link href="../assets/46a5959a/notification-indicator.css?v=1789456518" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/account-header.css?v=1789456518" rel="stylesheet"></head>
+<body class="nb-account-body">
+<main class="ps-page" data-nebula-psychics data-static-projection="true" data-live-mount="0" data-backend-capability="unbound" data-client-preview-chatroom-url="/nebula-account/chatroom?fixture=1&amp;state=active&amp;clientFlow=psychics-start" data-sandbox-fixture="false" data-focus-query-parameter="focus" data-focus-contract-version="psychic-focus/v1" data-psychics-focus="" data-psychics-focus-label="" data-psychics-focus-state="all" data-node-id="1412:32676">
+    <header class="nb-topbar" data-account-shell data-notification-shell data-node-id="1134:32219">
+    <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><picture><source srcset="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.webp" type="image/webp"><img src="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.png" alt="Neuro"></picture></a>
+    <div class="nb-topbar__right">
+        <nav class="nb-topnav" aria-label="Primary navigation">
+            <a class="is-active" href="psychics.html" aria-current="page">Psychic</a>
+            <a class="" href="favorites.html">Favorite</a>
+            <a class="" href="chatroom.html">Chatroom</a>
+            <a class="" href="horoscope.html">Horoscope</a>
+        </nav>
+        <!-- Account status cluster: notification, balance and account menu share one spacing rhythm. -->
+        <div class="nb-account-summary" aria-label="Account summary">
+            <a class="nb-notifications-pill" href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notifications-link="" data-notification-indicator="count" data-notification-unread-source="preview-fixture"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"></span><b class="nb-notifications-pill__badge" data-notification-unread-count="" aria-hidden="true" data-topbar-notification-unread-count="">2</b></a>            <a class="nb-credit-pill" href="billing.html" data-credit-topup-trigger aria-label="Open credit top up. Credits balance 120"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt=""><span>120</span></a>
+            <button class="nb-menu-pill" id="profile-menu-trigger" data-common-account-menu-trigger type="button" aria-label="Account menu" aria-haspopup="menu" aria-controls="nb-account-menu" aria-expanded="false"><picture class="nb-menu-source"><source media="(max-width:575.98px)" srcset="../yii2/modules/nebulaAccount/resources/images/account-shell/menu-mobile-c76.svg"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt=""></picture><span>VI</span></button>
+        </div>
+    </div>
+    <div class="nb-account-menu" id="nb-account-menu" role="menu" aria-label="Account navigation" hidden>
+        <!-- Shared account-menu owner mirrors the accepted Chatroom menu: identity first, then account destinations. -->
+        <div class="nb-account-menu__identity"><span class="nb-account-avatar">VI</span><div><b>Victoriya</b><small>Account navigation</small></div></div>
+        <a role="menuitem" href="profile.html"><span aria-hidden="true">◉</span>Profile</a>
+        <a role="menuitem" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-setting.svg" alt="" aria-hidden="true">Settings</a>
+        <a href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notification-menu-link="" role="menuitem"><span class="nb-account-menu__notification-icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"><b class="nb-account-menu__notification-badge" data-notification-unread-count="" aria-hidden="true">2</b></span>Notifications</a>        <a role="menuitem" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt="" aria-hidden="true">Billing &amp; credits</a>
+        <a role="menuitem" href="support.html"><span aria-hidden="true">?</span>Customer support</a>
+    </div>
+    <button class="nb-account-menu-scrim" type="button" data-common-account-menu-scrim aria-label="Close account menu" hidden></button>
+</header>
+    <div class="ps-container">
+        <header class="ps-heading"><h1>Choose your psychic</h1><div class="ps-offer" data-trial-entitlement-minutes="3" data-trial-entitlement-state="fixture-eligible"><span><img src="../assets/fece512a/images/psychics/offer-gift.png" alt="" aria-hidden="true">New user gift: 3 free minutes with a psychic</span><a href="#trial-offer" data-psychic-gift>Pick up a gift</a></div></header>
+                                            <section id="most-accurate" class="ps-section ps-section--grey" aria-labelledby="most-accurate-title" data-collection-id="most-accurate">
+                <header class="ps-section__header"><div><h2 id="most-accurate-title"><img src="../assets/fece512a/images/psychics/section-most-accurate.png" alt="" aria-hidden="true">Voted most accurate</h2><p>Acknowledged psychics as being most accurate in their predictions and guidance</p></div><div class="ps-section__controls" role="group" aria-label="Browse Voted most accurate"><button class="ps-section-filter" type="button" aria-label="Filter psychics" aria-controls="ps-filter-drawer" aria-expanded="false"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/filter.svg" alt=""></button><button type="button" data-section-prev aria-label="Previous psychics">‹</button><button type="button" data-section-next aria-label="Next psychics">›</button></div></header>
+                <div class="ps-grid">        <article class="ps-card" data-psychic-card data-question-expert-id="veronika" data-expert-id="veronika" data-expert-name="Veronika" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/veronika">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/veronika.jpeg" alt="Veronika">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/veronika" data-profile-anchor tabindex="0" aria-label="Open profile of Veronika">Veronika</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Veronika to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=veronika&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="veronika" data-expert-name="Veronika" data-psychic-start tabindex="0" data-psychic-name="Veronika" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="marina" data-expert-id="marina" data-expert-name="Marina" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/marina">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Marina">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/marina" data-profile-anchor tabindex="0" aria-label="Open profile of Marina">Marina</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Marina to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=marina&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="marina" data-expert-name="Marina" data-psychic-start tabindex="0" data-psychic-name="Marina" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card is-busy-card" data-psychic-card data-question-expert-id="mia-jacomo" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-status="busy" data-expert-status="busy" data-experience="9" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/mia-jacomo">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/mia.jpeg" alt="Mia Jacomo">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-mia-jacomo.html" data-profile-anchor tabindex="0" aria-label="Open profile of Mia Jacomo">Mia Jacomo</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-busy"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true">Busy</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Mia Jacomo from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <button type="button" class="is-notify" data-expert-card-action="notify" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-expert-action-state="off" aria-pressed="false"><span data-expert-action-label>Notify me</span></button>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="nickel" data-expert-id="nickel" data-expert-name="Nickel" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/nickel">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/nickel.jpeg" alt="Nickel">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/nickel" data-profile-anchor tabindex="0" aria-label="Open profile of Nickel">Nickel</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Nickel to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=nickel&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="nickel" data-expert-name="Nickel" data-psychic-start tabindex="0" data-psychic-name="Nickel" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="margo-lover" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/margo-lover">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-margo-lover.html" data-profile-anchor tabindex="0" aria-label="Open profile of Margo Lover">Margo Lover</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Margo Lover to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-psychic-start tabindex="0" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="karilla-huckes" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-status="online" data-expert-status="online" data-experience="2" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/karilla-huckes">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/karilla.jpeg" alt="Karilla Huckes">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/karilla-huckes" data-profile-anchor tabindex="0" aria-label="Open profile of Karilla Huckes">Karilla Huckes</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Karilla Huckes from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>2 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=karilla-huckes&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-psychic-start tabindex="0" data-psychic-name="Karilla Huckes" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+    </div>
+                <a class="ps-view-all" href="psychics.html?collection=most-accurate&amp;page=1#most-accurate" data-collection-link="most-accurate" aria-expanded="false">View All →</a>
+            </section>
+                                            <section id="best-online" class="ps-section ps-section--lilac" aria-labelledby="best-online-title" data-collection-id="best-online" data-catalog-filter="online">
+                <header class="ps-section__header"><div><h2 id="best-online-title"><img src="../assets/fece512a/images/psychics/section-best-online.png" alt="" aria-hidden="true">Best Online Psychics</h2><p>Connect with spirits or deceased loved ones to relay messages, get guidance, and answers to your questions.</p></div><div class="ps-section__controls" role="group" aria-label="Browse Best Online Psychics"><button type="button" data-section-prev aria-label="Previous psychics">‹</button><button type="button" data-section-next aria-label="Next psychics">›</button></div></header>
+                <div class="ps-grid">        <article class="ps-card" data-psychic-card data-question-expert-id="veronika" data-expert-id="veronika" data-expert-name="Veronika" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/veronika">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/veronika.jpeg" alt="Veronika">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/veronika" data-profile-anchor tabindex="0" aria-label="Open profile of Veronika">Veronika</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Veronika to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=veronika&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="veronika" data-expert-name="Veronika" data-psychic-start tabindex="0" data-psychic-name="Veronika" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="marina" data-expert-id="marina" data-expert-name="Marina" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/marina">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Marina">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/marina" data-profile-anchor tabindex="0" aria-label="Open profile of Marina">Marina</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Marina to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=marina&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="marina" data-expert-name="Marina" data-psychic-start tabindex="0" data-psychic-name="Marina" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="nickel" data-expert-id="nickel" data-expert-name="Nickel" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/nickel">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/nickel.jpeg" alt="Nickel">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/nickel" data-profile-anchor tabindex="0" aria-label="Open profile of Nickel">Nickel</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Nickel to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=nickel&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="nickel" data-expert-name="Nickel" data-psychic-start tabindex="0" data-psychic-name="Nickel" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="margo-lover" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/margo-lover">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-margo-lover.html" data-profile-anchor tabindex="0" aria-label="Open profile of Margo Lover">Margo Lover</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Margo Lover to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-psychic-start tabindex="0" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="karilla-huckes" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-status="online" data-expert-status="online" data-experience="2" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/karilla-huckes">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/karilla.jpeg" alt="Karilla Huckes">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/karilla-huckes" data-profile-anchor tabindex="0" aria-label="Open profile of Karilla Huckes">Karilla Huckes</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Karilla Huckes from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>2 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=karilla-huckes&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-psychic-start tabindex="0" data-psychic-name="Karilla Huckes" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+    </div>
+                <a class="ps-view-all" href="psychics.html?collection=best-online&amp;page=1#best-online" data-collection-link="best-online" aria-expanded="false">View All →</a>
+            </section>
+                                                    <section class="ps-feature" aria-labelledby="ps-feature-title" data-node-id="1413:35167">
+                    <header><h2 id="ps-feature-title"><img src="../assets/fece512a/images/psychics/section-psychic-of-day.png" alt="" aria-hidden="true">Psychic of the day</h2></header>
+                    <div class="ps-feature__body" data-figma-nodes="1413:35167 1134:33234 1438:43932 1435:68613 1441:44782">
+                        <article class="ps-feature__profile" aria-label="Psychic of the day: Margo Lover">
+                            <div class="ps-feature__identity">
+                                <a class="ps-feature__portrait" href="psychic-margo-lover.html" aria-label="Open Margo Lover profile"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover"></a>
+                                <div class="ps-feature__identity-copy"><h3>Margo Lover</h3><p>Love &amp; Relationship expert</p><strong class="ps-feature__rating">4.8 <span class="ps-feature__stars" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"></span><span class="ps-feature__rating-review">1,211 reviews</span></strong><em>Online</em></div>
+                                <button class="ps-feature__favorite" type="button" data-psychic-favorite data-psychic-name="Margo Lover" aria-pressed="false" aria-label="Add Margo Lover to favorites"><img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt=""></button>
+                            </div>
+                            <div class="ps-feature__profile-bottom"><p class="ps-feature__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world, live in harmony and pleasure. And also to maintain a connection with your Higher Self, to be able to live The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world, live in harmony and pleasure. And also to maintain a connection with your Higher Self, to be able to live ... ...</p><a class="ps-feature__profile-link" href="psychic-margo-lover.html">View full profile <span aria-hidden="true">→</span></a></div>
+                        </article>
+                        <aside class="ps-feature__aside">
+                            <p class="ps-feature__review"><span>1,211 reviews</span><a href="psychic-margo-lover.html#reviews">View reviews <span aria-hidden="true">→</span></a></p>
+                            <div class="ps-feature__stats"><p class="ps-feature__stat"><img src="../assets/fece512a/images/psychics/stat-experience.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p><p class="ps-feature__stat"><img src="../assets/fece512a/images/psychics/stat-consultations.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultations done</p></div>
+                            <div class="ps-card__tags ps-feature__tags"><span class="ps-feature__tag ps-feature__tag--tarot">Tarot reading</span><span class="ps-feature__tag ps-feature__tag--psychics">Psychics</span><span class="ps-feature__tag ps-feature__tag--tarot ps-feature__tag--repeat">Tarot reading</span><span class="ps-feature__tag ps-feature__tag--psychics ps-feature__tag--extra">Psychics</span><span class="ps-feature__tag ps-feature__tag--mediums ps-feature__tag--extra">Mediums</span><span class="ps-feature__tag ps-feature__tag--clairvoyance">Clairvoyance</span><span class="ps-feature__tag ps-feature__tag--angel">Angel reading</span></div>
+                            <div class="ps-feature__actions"><a class="ps-feature__cta" href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-psychic-start data-question-expert-id="margo-lover" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45">Start chat <img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a><small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small></div>
+                        </aside>
+                    </div>
+                </section>
+                                    <section id="recommended" class="ps-section ps-section--white" aria-labelledby="recommended-title" data-collection-id="recommended">
+                <header class="ps-section__header"><div><h2 id="recommended-title"><img src="../assets/fece512a/images/psychics/section-recommended.png" alt="" aria-hidden="true">Recommended for you</h2><p>Psychics that are best matches with your profile and highly recommended by their loyal following</p></div><div class="ps-section__controls" role="group" aria-label="Browse Recommended for you"><button type="button" data-section-prev aria-label="Previous psychics">‹</button><button type="button" data-section-next aria-label="Next psychics">›</button></div></header>
+                <div class="ps-grid">        <article class="ps-card" data-psychic-card data-question-expert-id="veronika" data-expert-id="veronika" data-expert-name="Veronika" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/veronika">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/veronika.jpeg" alt="Veronika">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/veronika" data-profile-anchor tabindex="0" aria-label="Open profile of Veronika">Veronika</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Veronika to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=veronika&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="veronika" data-expert-name="Veronika" data-psychic-start tabindex="0" data-psychic-name="Veronika" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="marina" data-expert-id="marina" data-expert-name="Marina" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/marina">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Marina">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/marina" data-profile-anchor tabindex="0" aria-label="Open profile of Marina">Marina</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Marina to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=marina&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="marina" data-expert-name="Marina" data-psychic-start tabindex="0" data-psychic-name="Marina" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card is-busy-card" data-psychic-card data-question-expert-id="mia-jacomo" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-status="busy" data-expert-status="busy" data-experience="9" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/mia-jacomo">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/mia.jpeg" alt="Mia Jacomo">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-mia-jacomo.html" data-profile-anchor tabindex="0" aria-label="Open profile of Mia Jacomo">Mia Jacomo</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-busy"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true">Busy</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Mia Jacomo from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <button type="button" class="is-notify" data-expert-card-action="notify" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-expert-action-state="off" aria-pressed="false"><span data-expert-action-label>Notify me</span></button>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="nickel" data-expert-id="nickel" data-expert-name="Nickel" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/nickel">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/nickel.jpeg" alt="Nickel">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/nickel" data-profile-anchor tabindex="0" aria-label="Open profile of Nickel">Nickel</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Nickel to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=nickel&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="nickel" data-expert-name="Nickel" data-psychic-start tabindex="0" data-psychic-name="Nickel" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="margo-lover" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/margo-lover">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-margo-lover.html" data-profile-anchor tabindex="0" aria-label="Open profile of Margo Lover">Margo Lover</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Margo Lover to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-psychic-start tabindex="0" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="karilla-huckes" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-status="online" data-expert-status="online" data-experience="2" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/karilla-huckes">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/karilla.jpeg" alt="Karilla Huckes">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/karilla-huckes" data-profile-anchor tabindex="0" aria-label="Open profile of Karilla Huckes">Karilla Huckes</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Karilla Huckes from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>2 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=karilla-huckes&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-psychic-start tabindex="0" data-psychic-name="Karilla Huckes" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+    </div>
+                <a class="ps-view-all" href="psychics.html?collection=recommended&amp;page=1#recommended" data-collection-link="recommended" aria-expanded="false">View All →</a>
+            </section>
+                                            <section id="top-rated" class="ps-section ps-section--peach" aria-labelledby="top-rated-title" data-collection-id="top-rated">
+                <header class="ps-section__header"><div><h2 id="top-rated-title"><img src="../assets/fece512a/images/psychics/section-top-rated.png" alt="" aria-hidden="true">Top Rated</h2><p>All-time top-rated list of superior psychics rated by thousands of users over the years</p></div><div class="ps-section__controls" role="group" aria-label="Browse Top Rated"><button type="button" data-section-prev aria-label="Previous psychics">‹</button><button type="button" data-section-next aria-label="Next psychics">›</button></div></header>
+                <div class="ps-grid">        <article class="ps-card" data-psychic-card data-question-expert-id="veronika" data-expert-id="veronika" data-expert-name="Veronika" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/veronika">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/veronika.jpeg" alt="Veronika">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/veronika" data-profile-anchor tabindex="0" aria-label="Open profile of Veronika">Veronika</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Veronika to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=veronika&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="veronika" data-expert-name="Veronika" data-psychic-start tabindex="0" data-psychic-name="Veronika" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="marina" data-expert-id="marina" data-expert-name="Marina" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/marina">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Marina">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/marina" data-profile-anchor tabindex="0" aria-label="Open profile of Marina">Marina</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Marina to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=marina&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="marina" data-expert-name="Marina" data-psychic-start tabindex="0" data-psychic-name="Marina" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card is-busy-card" data-psychic-card data-question-expert-id="mia-jacomo" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-status="busy" data-expert-status="busy" data-experience="9" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/mia-jacomo">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/mia.jpeg" alt="Mia Jacomo">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-mia-jacomo.html" data-profile-anchor tabindex="0" aria-label="Open profile of Mia Jacomo">Mia Jacomo</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-busy"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true">Busy</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Mia Jacomo from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <button type="button" class="is-notify" data-expert-card-action="notify" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-expert-action-state="off" aria-pressed="false"><span data-expert-action-label>Notify me</span></button>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="nickel" data-expert-id="nickel" data-expert-name="Nickel" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/nickel">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/nickel.jpeg" alt="Nickel">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/nickel" data-profile-anchor tabindex="0" aria-label="Open profile of Nickel">Nickel</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Nickel to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=nickel&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="nickel" data-expert-name="Nickel" data-psychic-start tabindex="0" data-psychic-name="Nickel" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="margo-lover" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/margo-lover">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-margo-lover.html" data-profile-anchor tabindex="0" aria-label="Open profile of Margo Lover">Margo Lover</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Margo Lover to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-psychic-start tabindex="0" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="karilla-huckes" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-status="online" data-expert-status="online" data-experience="2" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/karilla-huckes">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/karilla.jpeg" alt="Karilla Huckes">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/karilla-huckes" data-profile-anchor tabindex="0" aria-label="Open profile of Karilla Huckes">Karilla Huckes</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Karilla Huckes from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>2 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=karilla-huckes&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-psychic-start tabindex="0" data-psychic-name="Karilla Huckes" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+    </div>
+                <a class="ps-view-all" href="psychics.html?collection=top-rated&amp;page=1#top-rated" data-collection-link="top-rated" aria-expanded="false">View All →</a>
+            </section>
+                                            <section id="all-psychics" class="ps-section ps-section--grey" aria-labelledby="all-psychics-title" data-collection-id="all-psychics">
+                <header class="ps-section__header"><div><h2 id="all-psychics-title"><img src="../assets/fece512a/images/psychics/section-all-psychics.png" alt="" aria-hidden="true">All psychics</h2><p>All-time top-rated list of superior psychics ready to answer your questions</p></div><div class="ps-section__controls" role="group" aria-label="Browse All psychics"><button type="button" data-section-prev aria-label="Previous psychics">‹</button><button type="button" data-section-next aria-label="Next psychics">›</button></div></header>
+                <div class="ps-grid">        <article class="ps-card" data-psychic-card data-question-expert-id="veronika" data-expert-id="veronika" data-expert-name="Veronika" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/veronika">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/veronika.jpeg" alt="Veronika">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/veronika" data-profile-anchor tabindex="0" aria-label="Open profile of Veronika">Veronika</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Veronika to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=veronika&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="veronika" data-expert-name="Veronika" data-psychic-start tabindex="0" data-psychic-name="Veronika" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="marina" data-expert-id="marina" data-expert-name="Marina" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/marina">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Marina">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/marina" data-profile-anchor tabindex="0" aria-label="Open profile of Marina">Marina</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Marina to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=marina&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="marina" data-expert-name="Marina" data-psychic-start tabindex="0" data-psychic-name="Marina" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card is-busy-card" data-psychic-card data-question-expert-id="mia-jacomo" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-status="busy" data-expert-status="busy" data-experience="9" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/mia-jacomo">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/mia.jpeg" alt="Mia Jacomo">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-mia-jacomo.html" data-profile-anchor tabindex="0" aria-label="Open profile of Mia Jacomo">Mia Jacomo</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-busy"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true">Busy</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Mia Jacomo from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <button type="button" class="is-notify" data-expert-card-action="notify" data-expert-id="mia-jacomo" data-expert-name="Mia Jacomo" data-expert-action-state="off" aria-pressed="false"><span data-expert-action-label>Notify me</span></button>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="nickel" data-expert-id="nickel" data-expert-name="Nickel" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/nickel">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/nickel.jpeg" alt="Nickel">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/nickel" data-profile-anchor tabindex="0" aria-label="Open profile of Nickel">Nickel</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Nickel to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=nickel&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="nickel" data-expert-name="Nickel" data-psychic-start tabindex="0" data-psychic-name="Nickel" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="margo-lover" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-status="online" data-expert-status="online" data-experience="9" data-rating="4.8" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/margo-lover">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../yii2/modules/nebulaAccount/resources/images/favorites/marina.png" alt="Margo Lover">
+            <div class="ps-card__identity">
+                <h3><a href="psychic-margo-lover.html" data-profile-anchor tabindex="0" aria-label="Open profile of Margo Lover">Margo Lover</a></h3>
+                <p><strong>4.8</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>1,211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="false" aria-label="Add Margo Lover to favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>9 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>16,752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action ps-card__action--promo">
+                            <a href="chatroom.html?expert=margo-lover&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="margo-lover" data-expert-name="Margo Lover" data-psychic-start tabindex="0" data-psychic-name="Margo Lover" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <div class="ps-card__free" data-promoted-offer="free-minutes"><span class="ps-card__offer-label">3 FREE MINUTES</span></div>
+                            <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+            <article class="ps-card" data-psychic-card data-question-expert-id="karilla-huckes" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-status="online" data-expert-status="online" data-experience="2" data-rating="4.1" data-specialties="tarot reading psychics clairvoyance angel reading" data-psychic-focuses="" data-profile-url="/nebula-account/psychics/karilla-huckes">
+        <header class="ps-card__person">
+            <img class="ps-card__avatar" src="../assets/1afd7040/karilla.jpeg" alt="Karilla Huckes">
+            <div class="ps-card__identity">
+                <h3><a href="/nebula-account/psychics/karilla-huckes" data-profile-anchor tabindex="0" aria-label="Open profile of Karilla Huckes">Karilla Huckes</a></h3>
+                <p><strong>4.1</strong><img src="../yii2/modules/nebulaAccount/resources/images/favorites/star.svg" alt="" aria-hidden="true"><small>211 reviews</small></p>
+                <em class="is-online">Online</em>            </div>
+            <button class="ps-card__favorite" type="button" data-psychic-favorite aria-pressed="true" aria-label="Remove Karilla Huckes from favorites">
+                <img src="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-on="../yii2/modules/nebulaAccount/resources/images/favorites/like-filled.svg" data-favorite-off="../yii2/modules/nebulaAccount/resources/images/favorites/like.svg" alt="">
+            </button>
+        </header>
+        <div class="ps-card__details">
+            <div class="ps-card__tags"><span>Tarot reading</span><span>Psychics</span><span>Clairvoyance</span><span>Angel reading</span></div>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/medal.svg" alt="" aria-hidden="true"><strong>2 years</strong> of experience</p>
+            <p><img src="../yii2/modules/nebulaAccount/resources/images/favorites/group.svg" alt="" aria-hidden="true"><strong>752</strong> consultation done</p>
+            <p class="ps-card__bio">The main goal of my work is to help find answers to tormenting questions, understand and love yourself and the world...</p>
+        </div>
+        <footer class="ps-card__action">
+                            <a href="chatroom.html?expert=karilla-huckes&amp;entry=catalogue" data-expert-card-action="chat" data-expert-id="karilla-huckes" data-expert-name="Karilla Huckes" data-psychic-start tabindex="0" data-psychic-name="Karilla Huckes" data-free-minutes="3" data-rate-credits-per-minute="45"><span data-expert-action-label>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/favorites/start-chat.svg" alt="" aria-hidden="true"></a>
+                                        <small class="ps-card__rate nb-consultation-rate" data-consultation-price><img src="../yii2/modules/nebulaAccount/resources/images/favorites/coin.svg" alt="" aria-hidden="true"><span>Chat for <strong>45</strong> credits/min</span></small>
+        </footer>
+    </article>
+    </div>
+                <a class="ps-view-all" href="psychics.html?collection=all-psychics&amp;page=1#all-psychics" data-collection-link="all-psychics" aria-expanded="false">View All →</a>
+            </section>
+        
+    </div>
+    <p class="fv-status" data-psychic-filter-status aria-live="polite"></p>
+    <div class="fv-filter-scrim" data-psychic-filter-scrim hidden></div>
+    <aside class="fv-filter-drawer" id="ps-filter-drawer" role="dialog" aria-modal="true" aria-labelledby="ps-filter-title" hidden>
+        <div class="fv-filter-drawer__inner">
+            <header class="fv-filter-drawer__header"><h2 id="ps-filter-title"><img class="fv-filter-drawer__icon" src="../yii2/modules/nebulaAccount/resources/images/favorites/filter.svg" alt="" aria-hidden="true">Add Filters</h2><button type="button" class="fv-filter-close" data-psychic-filter-close aria-label="Close filters">×</button></header>
+            <div class="fv-filter-section"><h3>Sort by</h3><label class="fv-filter-select"><span class="fv-sr-only">Sort psychics</span><select data-psychic-filter-sort><option value="recommended">Recommended</option><option value="rating-desc">Highest rating</option><option value="experience-desc">Most experience</option></select></label></div>
+            <fieldset class="fv-filter-section"><legend>Focus</legend><label><input type="radio" name="ps-focus" value="" data-psychic-filter-focus data-focus-label="" checked><span>All topics</span></label><label><input type="radio" name="ps-focus" value="career" data-psychic-filter-focus data-focus-label="Career" ><span>Career</span></label><label><input type="radio" name="ps-focus" value="love" data-psychic-filter-focus data-focus-label="Love" ><span>Love</span></label><label><input type="radio" name="ps-focus" value="health" data-psychic-filter-focus data-focus-label="Health" ><span>Health</span></label><label><input type="radio" name="ps-focus" value="family" data-psychic-filter-focus data-focus-label="Family" ><span>Family</span></label></fieldset>
+            <fieldset class="fv-filter-section"><legend>Status</legend><label><input type="checkbox" value="all" data-psychic-filter-status checked><span>All</span></label><label><input type="checkbox" value="online" data-psychic-filter-status><span>Online</span></label><label><input type="checkbox" value="busy" data-psychic-filter-status><span>Busy</span></label><label><input type="checkbox" value="offline" data-psychic-filter-status><span>Offline</span></label></fieldset>
+            <fieldset class="fv-filter-section"><legend>Speciality</legend><div class="fv-filter-chips"><label><input type="checkbox" value="tarot reading" data-psychic-filter-specialty><span>Tarot reading</span></label><label><input type="checkbox" value="psychics" data-psychic-filter-specialty><span>Psychics</span></label><label><input type="checkbox" value="clairvoyance" data-psychic-filter-specialty><span>Clairvoyance</span></label><label><input type="checkbox" value="angel reading" data-psychic-filter-specialty><span>Angel reading</span></label></div></fieldset>
+            <fieldset class="fv-filter-section"><legend>Experience</legend><label><input type="radio" name="ps-experience" value="any" data-psychic-filter-experience checked><span>Any</span></label><label><input type="radio" name="ps-experience" value="1" data-psychic-filter-experience><span>1+ years</span></label><label><input type="radio" name="ps-experience" value="5" data-psychic-filter-experience><span>5+ years</span></label></fieldset>
+            <fieldset class="fv-filter-section"><legend>Rating</legend><label><input type="radio" name="ps-rating" value="4" data-psychic-filter-rating checked><span>4+</span></label><label><input type="radio" name="ps-rating" value="4.5" data-psychic-filter-rating><span>4,5+</span></label><label><input type="radio" name="ps-rating" value="5" data-psychic-filter-rating><span>5</span></label></fieldset>
+            <footer class="fv-filter-drawer__actions"><button type="button" class="fv-filter-reset" data-psychic-filter-reset>Reset</button><button type="button" class="fv-filter-apply" data-psychic-filter-apply>Apply filters</button></footer>
+        </div>
+    </aside>
+    <section class="expert-card-action-modal" data-expert-card-action-modal hidden>
+    <button class="expert-card-action-modal__scrim" type="button" data-expert-action-close aria-label="Close expert action" tabindex="-1"></button>
+    <div class="expert-card-action-modal__dialog" id="expert-card-action-dialog" role="dialog" aria-modal="true" aria-labelledby="expert-card-action-title" aria-describedby="expert-card-action-description" tabindex="-1">
+        <header class="expert-card-action-modal__toolbar">
+            <button class="expert-card-action-modal__close" type="button" data-expert-action-close aria-label="Close"><span aria-hidden="true">×</span></button>
+        </header>
+        <div class="expert-card-action-modal__content">
+            <div class="expert-card-action-modal__intro">
+                <span class="expert-card-action-modal__icon" aria-hidden="true">
+                    <img data-expert-action-icon
+                         src="../yii2/modules/nebulaAccount/resources/booking-session-v1/images/calendar-gradient.svg"
+                         data-book-icon="../yii2/modules/nebulaAccount/resources/booking-session-v1/images/calendar-gradient.svg"
+                         data-notify-icon="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg"
+                         alt="">
+                </span>
+                <h2 id="expert-card-action-title" tabindex="-1" data-expert-action-title>Expert action</h2>
+                <p id="expert-card-action-description" data-expert-action-description></p>
+            </div>
+            <p class="expert-card-action-modal__demo" data-expert-action-demo>Preview only · no notification or reservation will be created.</p>
+
+            <div class="expert-card-action-modal__view" data-expert-action-view="notify" hidden>
+                <p class="expert-card-action-modal__hint" data-expert-action-hint>We’ll let you know when this expert can chat.</p>
+                <p class="expert-card-action-modal__status" data-expert-action-status aria-live="polite"></p>
+                <div class="expert-card-action-modal__actions">
+                    <button class="expert-card-action-modal__submit" type="button" data-expert-action-submit>Notify me when expert is available</button>
+                    <button class="expert-card-action-modal__secondary" type="button" data-expert-action-secondary>Not now</button>
+                </div>
+            </div>
+
+            <div class="expert-card-action-modal__view" data-expert-action-view="book" hidden>
+                <p class="expert-card-action-modal__hint" data-expert-action-hint>Choose a date and time window. Final availability is supplied by the booking service.</p>
+                <div class="expert-card-action-modal__calendar" data-expert-booking-calendar aria-label="Choose a consultation date"></div>
+                <p class="expert-card-action-modal__status" data-expert-action-status aria-live="polite"></p>
+                <div class="expert-card-action-modal__actions">
+                    <button class="expert-card-action-modal__submit" type="button" data-expert-action-submit disabled>Choose a date</button>
+                    <button class="expert-card-action-modal__secondary" type="button" data-expert-action-secondary>Not now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<section class="expert-picker-trial" data-route-owner="/nebula-account/chatroom" data-c76-state="expert_picker_trial" data-static-projection="true" data-modal-embed="true" data-nebula-expert-picker-trial hidden>
+    <div class="expert-picker-trial__frame" data-node-id="1407:31014" data-node-id-992="1407:31109" data-node-id-768="1407:31204" data-node-id-576="1407:31299" data-node-id-320="1407:31394">
+        <article class="expert-picker-trial__modal" role="dialog" aria-modal="true" aria-labelledby="expert-picker-trial-title" aria-describedby="expert-picker-trial-description">
+            <button class="expert-picker-trial__close" type="button" aria-label="Close" data-trial-picker-action="close"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/close.svg" alt=""></button>
+            <header class="expert-picker-trial__intro">
+                <h2 id="expert-picker-trial-title">Choose an available psychic</h2>
+                <p class="expert-picker-trial__entitlement"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/entitlement-star.svg" alt=""><span>You have 3 FREE minutes with a new psychic</span></p>
+                <p id="expert-picker-trial-description">The psychic you chose is busy now. Select another one<br class="desktop-only"> and get 3 free minutes.</p>
+            </header>
+            <div class="expert-picker-trial__carousel" role="radiogroup" aria-label="Trial-eligible psychics">
+                <button class="trial-picker-arrow trial-picker-arrow--previous" type="button" aria-label="Previous expert" data-trial-picker-action="previous"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/previous.svg" alt=""></button>
+                <div class="trial-picker-track">
+                                                                    <button class="trial-expert-choice is-before" type="button" role="radio" aria-checked="false" tabindex="-1" data-trial-picker-card data-index="0" data-expert-id="medium-mark">
+                            <span class="trial-expert-choice__portrait"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/portrait-01.png" alt="Medium Mark"><span class="trial-expert-choice__online">Online</span></span>
+                            <span class="trial-expert-choice__copy"><strong>Medium Mark</strong><small>Relationship expert</small><span class="trial-expert-choice__rating"><b>4.8</b><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/rating-star-small.svg" alt=""><em>1,211 reviews</em></span></span>
+                        </button>
+                                                                    <button class="trial-expert-choice is-active" type="button" role="radio" aria-checked="true" tabindex="0" data-trial-picker-card data-index="1" data-expert-id="margo-lover">
+                            <span class="trial-expert-choice__portrait"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/portrait-02.png" alt="Margo Lover"><span class="trial-expert-choice__online">Online</span></span>
+                            <span class="trial-expert-choice__copy"><strong>Margo Lover</strong><small>Love &amp; Relationship expert</small><span class="trial-expert-choice__rating"><b>4.8</b><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/rating-star-large.svg" alt=""><em>1,211 reviews</em></span></span>
+                        </button>
+                                                                    <button class="trial-expert-choice is-after" type="button" role="radio" aria-checked="false" tabindex="-1" data-trial-picker-card data-index="2" data-expert-id="victoriya-bikrets">
+                            <span class="trial-expert-choice__portrait"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/portrait-03.png" alt="Victoriya Bikrets"><span class="trial-expert-choice__online">Online</span></span>
+                            <span class="trial-expert-choice__copy"><strong>Victoriya Bikrets</strong><small>Tarot reader</small><span class="trial-expert-choice__rating"><b>4.7</b><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/rating-star-small.svg" alt=""><em>495 reviews</em></span></span>
+                        </button>
+                                    </div>
+                <button class="trial-picker-arrow trial-picker-arrow--next" type="button" aria-label="Next expert" data-trial-picker-action="next"><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/next.svg" alt=""></button>
+            </div>
+            <button class="expert-picker-trial__submit" type="button" data-trial-picker-action="commit-intent"><span>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/expert-picker-trial/chat.svg" alt=""></button>
+        </article>
+    </div>
+    <p class="sr-only" aria-live="polite" data-trial-picker-live></p>
+</section>
+<section class="question-before-start c76-question-before-start-modal" data-route-owner="/nebula-account/chatroom" data-c76-state="question_before_start" data-nebula-question-before-start data-question-expert-id="margo-lover" data-question-targets="[{&quot;id&quot;:&quot;veronika&quot;,&quot;displayName&quot;:&quot;Veronika&quot;},{&quot;id&quot;:&quot;marina&quot;,&quot;displayName&quot;:&quot;Marina&quot;},{&quot;id&quot;:&quot;mia-jacomo&quot;,&quot;displayName&quot;:&quot;Mia Jacomo&quot;},{&quot;id&quot;:&quot;nickel&quot;,&quot;displayName&quot;:&quot;Nickel&quot;},{&quot;id&quot;:&quot;margo-lover&quot;,&quot;displayName&quot;:&quot;Margo Lover&quot;},{&quot;id&quot;:&quot;karilla-huckes&quot;,&quot;displayName&quot;:&quot;Karilla Huckes&quot;},{&quot;id&quot;:&quot;medium-mark&quot;,&quot;displayName&quot;:&quot;Medium Mark&quot;},{&quot;id&quot;:&quot;victoriya-bikrets&quot;,&quot;displayName&quot;:&quot;Victoriya Bikrets&quot;}]" data-question-rate-source="fixture-copy-not-price-proof" hidden>
+    <div class="question-before-start__frame" data-action="question-before-start-scrim" data-node-id="1396:32772" data-node-id-992="1405:39764" data-node-id-768="1405:39800" data-node-id-576="1405:39836" data-node-id-320="1405:39872">
+        <article class="question-before-start__modal" role="dialog" aria-modal="true" aria-labelledby="question-before-start-title" aria-describedby="question-before-start-description">
+            <button class="question-before-start__close" type="button" aria-label="Close" data-question-action="close"><img src="../yii2/modules/nebulaAccount/resources/images/question-before-start/close.svg" alt=""></button>
+            <header class="question-before-start__intro">
+                <h2 id="question-before-start-title">Send a question</h2>
+                <p id="question-before-start-description">Give Margo Lover enough context before the consultation begins</p>
+            </header>
+            <div class="question-before-start__fields">
+                <label class="sr-only" for="question-subject">Subject of the request</label>
+                <input id="question-subject" type="text" placeholder="Subject of the request" autocomplete="off" data-question-subject>
+                <label class="sr-only" for="question-dob">Date of birth</label>
+                <input id="question-dob" type="date" autocomplete="bday" data-question-dob>
+                <label class="sr-only" for="question-details">Detailed question</label>
+                <textarea id="question-details" placeholder="Ask and describe in detail the topic that interests you." data-question-details></textarea>
+            </div>
+            <button class="question-before-start__attachment" type="button" data-question-action="attachment-intent"><img src="../yii2/modules/nebulaAccount/resources/images/question-before-start/attachment.svg" alt=""><span>Attach a file if required</span></button>
+                        <div class="question-before-start__submit-group">
+                <button class="question-before-start__submit" type="button" data-question-action="submit-intent"><span>Start chat</span><img src="../yii2/modules/nebulaAccount/resources/images/question-before-start/chat-white.svg" alt=""></button>
+                <p>Chat for <strong>45 credits/min</strong></p>
+            </div>
+        </article>
+    </div>
+    <p class="sr-only" aria-live="polite" data-question-live></p>
+</section>
+<section class="connecting-expert"
+         data-route-owner="/nebula-account/chatroom"
+         data-c76-state="consultation_connecting"
+         data-static-projection="true"
+         data-nebula-connecting-expert
+         hidden>
+    <div class="connecting-expert__frame"
+         data-node-id="1397:35852"
+         data-node-id-992="1405:41284"
+         data-node-id-768="1405:41334"
+         data-node-id-576="1405:41384"
+         data-node-id-320="1405:41435"
+         hidden>
+        <article class="connecting-expert__modal" role="dialog" aria-modal="true" aria-busy="true" aria-labelledby="connecting-expert-title">
+            <div class="connecting-expert__toolbar">
+                <button class="connecting-expert__close" type="button" aria-label="Dismiss connecting status" data-connecting-action="dismiss">
+                    <picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/close-mobile.svg"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/close-desktop.svg" alt=""></picture>
+                </button>
+            </div>
+            <div class="connecting-expert__body">
+                <h1 id="connecting-expert-title" tabindex="-1">Connecting you to Margo Lover so you can get the answer to your question</h1>
+                <div class="connecting-expert__status">
+                    <div class="connecting-expert__profile">
+                        <div class="connecting-expert__avatar"><picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/portrait-mobile.png"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/portrait-desktop.png" alt="Margo Lover"></picture></div>
+                        <strong>Margo Lover</strong>
+                    </div>
+                    <div class="connecting-expert__progress" role="progressbar" aria-label="Connection pending" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Waiting for server status" data-connecting-progress><span></span></div>
+                    <p class="connecting-expert__countdown" data-connecting-countdown>30 seconds remaining</p>
+                    <p class="connecting-expert__demo">Local demo · no credits charged</p>
+                </div>
+                <div class="connecting-expert__facts" aria-label="Connection information">
+                                            <p><picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/coin-mobile.svg"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/coin-desktop.svg" alt=""></picture><span>You will not be charged during this step</span></p>
+                                            <p><picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/time-mobile.svg"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/time-desktop.svg" alt=""></picture><span>The expert is preparing for your request</span></p>
+                                            <p><picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/dialog-mobile.svg"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/dialog-desktop.svg" alt=""></picture><span>Once connected, you can discuss any topic</span></p>
+                                            <p><picture><source media="(max-width:320px)" srcset="../yii2/modules/nebulaAccount/resources/images/connecting-expert/star-mobile.svg"><img src="../yii2/modules/nebulaAccount/resources/images/connecting-expert/star-desktop.svg" alt=""></picture><span>The psychic is focused on you. Enjoy!</span></p>
+                                    </div>
+            </div>
+        </article>
+    </div>
+    <p class="sr-only" aria-live="polite" data-connecting-live>Waiting for a connection update.</p>
+</section>
+<section class="c76-expert-unavailable-modal" data-expert-unavailable-modal data-c76-state="expert_unavailable" hidden>
+    <div class="expert-unavailable__frame" data-action="close-expert-unavailable">
+        <article class="expert-unavailable__modal" role="dialog" aria-modal="true" aria-labelledby="expert-unavailable-title">
+            <div class="expert-unavailable__close">
+                <button type="button" aria-label="Close" data-unavailable-action="close">
+                    <img src="../yii2/modules/nebulaAccount/resources/images/expert-unavailable/close-desktop.svg" alt="">                </button>
+            </div>
+            <div class="expert-unavailable__content">
+                <div class="expert-unavailable__copy">
+                    <h2 id="expert-unavailable-title" tabindex="-1">The Mia Jacomo is busy now</h2>
+                    <p>Mia Jacomo is currently busy, but your selection has been saved. You can wait, submit your question in advance, or select another expert online.</p>
+                </div>
+                <div class="expert-unavailable__choices">
+                    <div class="expert-unavailable__buttons">
+                        <button class="expert-unavailable__button expert-unavailable__button--primary" type="button" data-unavailable-action="select-another">Select another expert</button>
+                        <button class="expert-unavailable__button expert-unavailable__button--secondary" type="button" data-unavailable-action="wait">Wait for Mia Jacomo</button>
+                    </div>
+                    <button class="expert-unavailable__advance" type="button" data-unavailable-action="question-in-advance">Send a question in advance</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="nb-credit-topup"
+         data-nebula-credit-topup
+         data-static-projection="true"
+         data-live-mount="0"
+         data-demo-only="true"
+         hidden>
+    <div class="nb-credit-topup__scrim" data-credit-topup-scrim hidden>
+        <article class="nb-credit-topup__dialog"
+                 id="nebula-credit-topup-dialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="credit-topup-title"
+                 aria-describedby="credit-topup-description"
+                 tabindex="-1">
+            <header class="nb-credit-topup__header">
+                <div>
+                    <span class="nb-credit-topup__eyebrow">Balance</span>
+                    <h2 id="credit-topup-title">Top up credits</h2>
+                    <p id="credit-topup-description">Choose a package to continue your conversations.</p>
+                </div>
+                <button class="nb-credit-topup__close" type="button" data-credit-topup-action="close" aria-label="Close top up window">×</button>
+            </header>
+
+            <div class="nb-credit-topup__balance" aria-live="polite">
+                <span>Current balance</span>
+                <strong data-credit-topup-balance>120 credits</strong>
+            </div>
+
+            <div class="nb-credit-topup__step" data-credit-topup-step="packages">
+                <div class="nb-credit-topup__packages" role="radiogroup" aria-label="Credit package">
+                    <button class="nb-credit-topup__package is-selected" type="button" role="radio" aria-checked="true" tabindex="0" data-credit-package="fixture-120" data-credits="120" data-amount="$ 9.99">
+                        <span><strong>120 credits</strong><small>Starter package</small></span><b>$ 9.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-350" data-credits="350" data-amount="$ 24.99">
+                        <span><strong>350 credits</strong><small>+50 extra credits</small></span><b>$ 24.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-1800" data-credits="1800" data-amount="$ 99.99">
+                        <span><strong>1800 credits</strong><small>+600 extra credits</small></span><b>$ 99.99</b>
+                    </button>
+                </div>
+
+                <div class="nb-credit-topup__summary">
+                    <span data-credit-topup-summary>120 credits</span>
+                    <strong data-credit-topup-total>$ 9.99</strong>
+                </div>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="confirm">Top up balance</button>
+                <p class="nb-credit-topup__demo-note">Apple Pay test mode: credits are saved to this local demo account. No real charge.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--processing" data-credit-topup-step="processing" hidden>
+                <div class="nb-credit-topup__spinner" aria-hidden="true"></div>
+                <h3>Processing Apple Pay test payment</h3>
+                <p>Confirming your local order and updating credits. No real money is charged.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--success" data-credit-topup-step="success" hidden>
+                <div class="nb-credit-topup__success-mark" aria-hidden="true">✓</div>
+                <h3>Test payment successful</h3>
+                <p data-credit-topup-success-copy></p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="close">Return to page</button>
+            </div>
+            <div class="nb-credit-topup__step" data-credit-topup-step="error" hidden>
+                <h3>Test payment not confirmed yet</h3>
+                <p>The local receipt is unavailable. Retry to check the same order without adding credits twice.</p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="retry">Check test payment again</button>
+            </div>
+        </article>
+    </div>
+    <p class="nb-credit-topup__live" data-credit-topup-live aria-live="polite"></p>
+</section>
+<div class="nb-credit-checkout-flow" data-credit-topup-checkout-flow data-flow-context="psychics-paid-chat" hidden aria-live="polite">
+    <section class="checkout-review"
+         data-route-owner="/nebula-account/chatroom"
+         data-c76-state="checkout_order_review"
+         data-static-projection="false"
+         data-order-copy="server-approved"
+         data-checkout-id="billing-sandbox-checkout"
+         data-checkout-version="fixture-v1"
+         data-package-id="fixture-120"
+         data-package-version="fixture-v1"
+         data-selected-method-id="method-credit-card"
+         data-selected-method-version="method-v1"
+         data-submit-idempotency-key="billing-fixture-submit"
+         data-chooser-idempotency-key="billing-fixture-chooser"
+         data-nebula-checkout-review
+         hidden>
+    <section class="checkout-review__frame"
+             data-node-id="1397:34820"
+             data-node-id-992="1405:40776"
+             data-node-id-768="1405:40862"
+             data-node-id-576="1405:40948"
+             data-node-id-320="1405:41034"
+             hidden>
+        <article class="checkout-review__modal" role="dialog" aria-modal="true" aria-labelledby="checkout-review-title">
+            <div class="checkout-review__toolbar">
+                <button class="checkout-review__close" type="button" aria-label="Close order details" data-checkout-action="dismiss">
+                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-03.svg" alt="">                </button>
+            </div>
+
+            <div class="checkout-review__body">
+                <div class="checkout-review__head">
+                    <section class="checkout-review__order" aria-label="Order details">
+                        <h1 id="checkout-review-title" tabindex="-1">Order details:</h1>
+                        <img class="checkout-review__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-11.svg" alt="">                        <div class="checkout-review__line checkout-review__package">
+                            <span><strong>Package</strong><small>120 credits</small></span><b>$ 9.99</b>
+                        </div>
+                        <img class="checkout-review__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-11.svg" alt="">                        <div class="checkout-review__line"><strong>Total:</strong><b>$ 9.99</b></div>
+                        <img class="checkout-review__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-11.svg" alt="">                        <span class="sr-only">Currency: USD</span>
+                    </section>
+
+                    <section class="checkout-review__payment" aria-labelledby="checkout-payment-title">
+                        <h2 id="checkout-payment-title">Choose payment method</h2>
+                        <div class="checkout-review__methods" role="radiogroup" aria-labelledby="checkout-payment-title">
+                            <div class="checkout-review__providers">
+                                                                <button type="button" aria-label="PayPal"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-paypal" data-method-version="method-v1" data-method-type="paypal">
+                                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-05.svg" alt="PayPal">                                </button>
+                                                                <button type="button" aria-label="Apple Pay"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-apple-pay" data-method-version="method-v1" data-method-type="apple_pay">
+                                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-08.svg" alt="Apple Pay">                                </button>
+                                                                <button type="button" aria-label="Credit Card"  role="radio" aria-checked="true" tabindex="0" data-method-id="method-credit-card" data-method-version="method-v1" data-method-type="credit_card">
+                                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-04.svg" alt=""><span>Credit Card</span>
+                                </button>
+                            </div>
+                                                        <div class="checkout-review__saved-row">
+                                <button class="checkout-review__saved" type="button" aria-label="Saved Mastercard 5457 08XX XXXX 1075"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-saved-card" data-method-version="method-v1" data-method-type="saved_card">
+                                    <span><img class="checkout-review__selected" src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-06.svg" alt=""><img class="checkout-review__mastercard" src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-07.svg" alt="Mastercard"></span>
+                                    <b>5457 08XX XXXX 1075</b>
+                                </button>
+                                <button class="checkout-review__saved-chooser" type="button" aria-label="Choose another saved payment method" data-checkout-action="saved-chooser">
+                                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-12.svg" alt="">                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <button class="checkout-review__buy" type="button" data-checkout-action="submit">Buy</button>
+
+                <div class="checkout-review__security" aria-label="Guaranteed security payments">
+                    <img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-10.svg" alt=""><span>Guaranteed security payments</span>
+                </div>
+
+                <div class="checkout-review__networks" aria-label="Supported payment networks">
+                    <span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-07.svg" alt="Mastercard"></span>
+                    <span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-14.svg" alt="Visa"></span>
+                    <span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-13.svg" alt="American Express"></span>
+                    <span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-order-review/asset-09.svg" alt="Discover"></span>
+                </div>
+            </div>
+        </article>
+    </section>
+    <p class="sr-only" aria-live="polite" data-checkout-live></p>
+</section>
+    <section class="card-details"
+         data-route-owner="/nebula-account/chatroom"
+         data-c76-state="checkout_card_details"
+         data-static-projection="false"
+         data-order-copy="server-approved"
+         data-checkout-id="billing-sandbox-checkout"
+         data-checkout-version="fixture-v1"
+         data-package-id="fixture-120"
+         data-package-version="fixture-v1"
+         data-selected-method-id="method-credit-card"
+         data-selected-method-version="method-v1"
+         data-method-idempotency-key="billing-fixture-method"
+         data-chooser-idempotency-key="billing-fixture-chooser-card"
+         data-secure-form-idempotency-key="billing-fixture-secure-form"
+         data-submit-idempotency-key="billing-fixture-card-submit"
+         data-nebula-card-details hidden>
+    <section class="card-details__frame"
+             data-node-id="1488:44468" data-node-id-992="1488:44549"
+             data-node-id-768="1488:44630" data-node-id-576="1488:44711"
+             data-node-id-320="1488:44792" hidden>
+        <article class="card-details__modal" role="dialog" aria-modal="true" aria-labelledby="card-details-title">
+            <div class="card-details__toolbar">
+                <button class="card-details__close" type="button" aria-label="Close card details" data-card-details-action="dismiss"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-07.svg" alt=""></button>
+            </div>
+            <div class="card-details__body">
+                <div class="card-details__head">
+                    <section class="card-details__order" aria-label="Order details">
+                        <h1 id="card-details-title" tabindex="-1">Order details:</h1>
+                        <img class="card-details__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-03.svg" alt="">                        <div class="card-details__line card-details__package"><span><strong>Package</strong><small>120 credits</small></span><b>$ 9.99</b></div>
+                        <img class="card-details__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-03.svg" alt="">                        <div class="card-details__line"><strong>Total:</strong><b>$ 9.99</b></div>
+                        <img class="card-details__divider" src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-03.svg" alt="">                        <span class="sr-only">Currency: USD</span>
+                    </section>
+                    <section class="card-details__payment" aria-labelledby="card-details-payment-title">
+                        <h2 id="card-details-payment-title">Choose payment method</h2>
+                        <div class="card-details__methods" role="radiogroup" aria-labelledby="card-details-payment-title">
+                            <div class="card-details__providers">
+                                <button type="button" aria-label="PayPal"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-paypal" data-method-version="method-v1" data-method-type="paypal"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-08.svg" alt="PayPal"></button>
+                                <button type="button" aria-label="Apple Pay"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-apple-pay" data-method-version="method-v1" data-method-type="apple_pay"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-11.svg" alt="Apple Pay"></button>
+                                <button type="button" aria-label="Credit Card"  role="radio" aria-checked="true" tabindex="0" data-method-id="method-credit-card" data-method-version="method-v1" data-method-type="credit_card"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-14.svg" alt=""><span>Credit Card</span></button>
+                            </div>
+                                                        <div class="card-details__saved-row">
+                                <button class="card-details__saved" type="button" aria-label="Saved Mastercard 5457 08XX XXXX 1075"  role="radio" aria-checked="false" tabindex="-1" data-method-id="method-saved-card" data-method-version="method-v1" data-method-type="saved_card"><span><img class="card-details__selected" src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-09.svg" alt=""><img class="card-details__mastercard" src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-05.svg" alt="Mastercard"></span><b>5457 08XX XXXX 1075</b></button>
+                                <button class="card-details__saved-chooser" type="button" aria-label="Choose another saved payment method" data-card-details-action="saved-chooser"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-04.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="card-details__fields" aria-label="Secure payment fields require a provider-hosted form">
+                            <div class="card-details__field-row">
+                                <div class="card-details__field-group"><span>Validity period</span><button type="button" data-card-details-action="secure-form" data-secure-field-slot="expiry">MM/YY</button></div>
+                                <div class="card-details__field-group"><span>CVV/CVC</span><button type="button" data-card-details-action="secure-form" data-secure-field-slot="security-code"><i>CVV</i><em aria-hidden="true">!</em></button></div>
+                            </div>
+                            <div class="card-details__field-group"><span>Name on the card</span><button type="button" data-card-details-action="secure-form" data-secure-field-slot="cardholder-name">FULL NAME AS ON THE CARD</button></div>
+                        </div>
+                    </section>
+                </div>
+                <button class="card-details__buy" type="button" data-card-details-action="submit">Buy</button>
+                <div class="card-details__security" aria-label="Guaranteed security payments"><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-12.svg" alt=""><span>Guaranteed security payments</span></div>
+                <div class="card-details__networks" aria-label="Supported payment networks">
+                    <span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-05.svg" alt="Mastercard"></span><span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-06.svg" alt="Visa"></span><span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-02.svg" alt="American Express"></span><span><img src="../yii2/modules/nebulaAccount/resources/images/checkout-card-details/asset-10.svg" alt="Discover"></span>
+                </div>
+            </div>
+        </article>
+    </section>
+    <p class="sr-only" aria-live="polite" data-card-details-live></p>
+</section>
+    <section class="card-error"
+         data-route-owner="/nebula-account/chatroom"
+         data-c76-state="card_payment_error"
+         data-static-projection="false"
+         data-method-copy="server-approved"
+         data-order-id="billing-fixture-order"
+         data-order-version="fixture-v1"
+         data-attempt-id="billing-fixture-attempt"
+         data-attempt-version="fixture-v1"
+         data-upstream-context="billing-sandbox"
+         data-redacted-reference="fixture-no-provider"
+         data-wallet-method-id="method-apple-pay"
+         data-wallet-method-version="method-v1"
+         data-card-method-id="method-saved-card"
+         data-card-method-version="method-v1"
+         data-wallet-idempotency-key="billing-fixture-wallet"
+         data-card-idempotency-key="billing-fixture-saved"
+         data-chooser-idempotency-key="billing-fixture-error-chooser"
+         data-support-idempotency-key="billing-fixture-support"
+         data-nebula-card-error
+         hidden>
+    <div class="card-error__frame"
+         data-node-id="1488:44300"
+         data-node-id-992="1488:44327"
+         data-node-id-768="1488:44354"
+         data-node-id-576="1488:44381"
+         data-node-id-320="1488:44408"
+         hidden>
+        <article class="card-error__modal"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="card-error-title"
+                 aria-describedby="card-error-retry card-error-support-copy">
+            <div class="card-error__toolbar">
+                <button class="card-error__close" type="button" aria-label="Close card payment error" data-card-error-action="dismiss">
+                    <img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/close.svg" alt="">                </button>
+            </div>
+
+            <div class="card-error__body">
+                <div class="card-error__head">
+                    <div class="card-error__ring" aria-hidden="true">
+                        <img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/ring-inner.svg" alt="">                        <img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/ring-outer.svg" alt="">                        <span>!</span>
+                    </div>
+                    <div class="card-error__copy">
+                        <h1 id="card-error-title" tabindex="-1">An error processing your order</h1>
+                        <div class="card-error__message">
+                            <p id="card-error-retry">Please try again</p>
+                            <p id="card-error-support-copy">If you have any difficulties with solving this problem, do not hesitate to contact <a href="support-help.html" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Our support (opens in a new tab)" data-card-error-action="support">our<br class="card-error__support-break" /> support.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-error__actions">
+                    <button class="card-error__method card-error__apple" type="button" aria-label="Use Apple Pay" data-card-error-action="wallet">
+                        <img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/card.svg" alt="">                    </button>
+                    <button class="card-error__method card-error__card" type="button" aria-label="Use saved Mastercard ending 1075" data-card-error-action="saved-method">
+                        <span class="card-error__brand"><img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/mastercard.svg" alt=""><i></i></span>
+                        <span class="card-error__masked"><img src="../yii2/modules/nebulaAccount/resources/images/card-payment-error/apple-pay-tile.svg" alt="">**** 1075</span>
+                    </button>
+                    <button class="card-error__primary" type="button" data-card-error-action="chooser">Try another method</button>
+                </div>
+            </div>
+        </article>
+    </div>
+    <p class="sr-only" aria-live="polite" data-card-error-live></p>
+</section>
+    <section class="payment-error"
+         hidden
+         data-static-projection="false"
+         data-live-mount="0"
+         data-backend-capability="host-required"
+         data-c76-state="payment_order_error"
+         data-order-id="billing-fixture-order"
+         data-order-version="fixture-v1"
+         data-attempt-id="billing-fixture-attempt"
+         data-attempt-version="fixture-v1"
+         data-upstream-context="billing-sandbox"
+         data-redacted-reference="fixture-no-provider"
+         data-idempotency-key="billing-fixture-recovery"
+         data-nebula-payment-error>
+    <section class="payment-error__frame" hidden><article class="payment-error__modal" role="dialog" aria-modal="true" aria-labelledby="payment-error-title" aria-describedby="payment-error-retry payment-error-support-copy">
+        <div class="payment-error__toolbar"><button class="payment-error__close" type="button" aria-label="Close payment error" data-payment-error-action="dismiss"><img src="../yii2/modules/nebulaAccount/resources/images/payment-order-error/asset-02.svg" alt=""></button></div>
+        <div class="payment-error__body"><div class="payment-error__head"><div class="payment-error__ring" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/payment-order-error/asset-03.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/payment-order-error/asset-05.svg" alt=""><span>!</span></div><h1 id="payment-error-title" tabindex="-1">An error processing your order</h1></div>
+            <div class="payment-error__copy"><p id="payment-error-retry">Please try again</p><p id="payment-error-support-copy">If you have any difficulties with solving this problem, do not hesitate to contact <a href="support-help.html" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Our support (opens in a new tab)" data-payment-error-action="support">our support.</a></p></div>
+            <button class="payment-error__primary" type="button" data-payment-error-action="alternate">Try another method</button>
+        </div>
+    </article></section><p class="sr-only" aria-live="polite" data-payment-error-live>The payment outcome and every recovery action remain host-owned.</p>
+</section>
+</div>
+<script src="../assets/3fe51ac8/integration-sandbox.js?v=1788996389"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/expert-card-actions.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/profile.js?v=1789456518"></script>
+<script src="../assets/fece512a/js/psychics.js?v=1789456518"></script>
+<script src="../assets/6531e1a1/js/favorites.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/expert-picker-trial.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/question-before-start.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/connecting-expert.js?v=1789456518"></script>
+<script src="../assets/431cad45/credit-topup.js?v=1788899884"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/checkout-order-review.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/checkout-card-details.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/card-payment-error.js?v=1789456518"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/payment-order-error.js?v=1789456518"></script>
+<script src="../assets/c18bc218/credit-topup-flow.js?v=1788899884"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/account-header.js?v=1789456518"></script></body>
+</html>

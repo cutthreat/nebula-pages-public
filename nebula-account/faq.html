@@ -1,68 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FAQ — Neuro</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/profile.css">
-  <link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/notifications.css">
-  <link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/faq.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="HuXHa-cySfCOUg-_1NEVzkozL1lmQ7GScCj7ZruN72RbtPEAhlEBx8onOYesnCOXPgFcKzQsidk4WpQO2LmfKA==">
+    <title>FAQ — Neuro</title>
+    <meta name="nebula-integration-config" content="{&quot;baseUrl&quot;:&quot;/nebula-account/integration-sandbox/v1&quot;,&quot;mode&quot;:&quot;local-file-backed-v1&quot;}">
+<link href="../assets/26673cb2/integration-sandbox.css?v=1788121957" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/profile.css?v=1789456522" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/notifications.css?v=1789456522" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/faq.css?v=1789456522" rel="stylesheet">
+<link href="../assets/46a5959a/notification-indicator.css?v=1789456523" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/account-header.css?v=1789456522" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup.css?v=1789456522" rel="stylesheet"></head>
 <body class="nb-account-body">
-  <main class="nb-account-page nb-notifications-page nb-faq-page" data-nebula-faq data-balance-fixture="responsive-c76-sample" data-static-projection="true">
-    <header class="nb-topbar">
-      <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom/neuro-logo.webp" alt="Neuro"></a>
-      <div class="nb-topbar__right">
-        <nav class="nb-topnav" aria-label="Primary navigation"><span>Psychic</span><span>Favorite</span><a href="chatroom.html">Chatroom</a><a href="horoscope.html">Horoscope</a></nav>
-        <div class="nb-account-summary" aria-label="Account summary"><div class="nb-credit-pill"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-03.svg" alt=""><span>120</span></div><div class="nb-menu-pill"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-08.svg" alt=""><span class="nb-notifications-vi"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-13.svg" alt=""><b>VI</b></span></div></div>
-      </div>
-    </header>
-    <div class="nb-account-layout nb-notifications-layout">
-      <aside class="nb-account-sidebar nb-notifications-sidebar" aria-label="Account navigation">
-        <div class="nb-sidebar-profile"><div class="nb-sidebar-photo"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-raw-03.jpeg" alt="Victoriya"></div><strong>Victoriya</strong></div>
-        <nav class="nb-sidebar-nav">
-          <a href="profile.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-01.svg" alt="">Profile</a>
-          <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-06.svg" alt="">Psychics</span>
-          <a href="chatroom.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-07.svg" alt="">Chatroom <b>3</b></a>
-          <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-09.svg" alt="">Favorite</span>
-          <a href="horoscope.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-04.svg" alt="">Horoscope</a>
-          <a class="is-current" href="settings.html" aria-current="page"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-11.svg" alt="">Setting</a>
+<main class="nb-account-page nb-notifications-page nb-faq-page" data-nebula-faq data-static-projection="true" data-live-mount="0" data-balance-fixture="responsive-c76-sample">
+    <header class="nb-topbar" data-account-shell data-notification-shell data-node-id="1134:32219">
+    <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><picture><source srcset="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.webp" type="image/webp"><img src="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.png" alt="Neuro"></picture></a>
+    <div class="nb-topbar__right">
+        <nav class="nb-topnav" aria-label="Primary navigation">
+            <a class="" href="psychics.html">Psychic</a>
+            <a class="" href="favorites.html">Favorite</a>
+            <a class="" href="chatroom.html">Chatroom</a>
+            <a class="" href="horoscope.html">Horoscope</a>
         </nav>
-        <div class="nb-sidebar-balance"><strong>Balance: <span class="faq-balance-1200">0 credits</span><span class="faq-balance-compact">120 credits</span></strong><div class="nb-refill-visual"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-03.svg" alt="">Refill credits</div></div>
-      </aside>
-      <section class="nb-faq" aria-labelledby="faq-title">
-        <div class="nb-notifications-heading"><a href="support.html" aria-label="Back to customer support"><img src="../source/figma/settings-support/assets/vector-14.svg" alt=""></a><h1 id="faq-title">FAQ</h1></div>
-        <h2>Web subscription</h2>
-        <div class="faq-row">How can i cancel my Neuro Website subscription?<b>+</b></div>
-        <div class="faq-row">I made an error during the order for the Compatibility report on social networks!<b>+</b></div>
-        <article class="faq-open is-open" data-faq-item data-faq-answer>
-          <header><button type="button" data-faq-action="toggle-answer" aria-expanded="true" aria-controls="faq-source-answer"><span>Did not receive the report ordered on social networks!</span><b aria-hidden="true">×</b></button></header>
-          <div id="faq-source-answer" data-faq-panel><p>Dear customer, please note that it can take up to 24 hours from the time of order to generate a compatibility report based on the information provided and send it to the customer.</p><p>If you haven't received your compatibility report, please, contact our <button class="faq-support-intent" type="button" data-faq-action="support-required">Customer Support team</button> and we will assist you on this matter!</p></div>
-        </article>
-        <div class="faq-row">What features are included in Neuro Website subscription?<b>+</b></div>
-        <h2>Neuro Website Functional</h2>
-        <div class="faq-row">Why is my astrological info wrong on Neuro Website?<b>+</b></div>
-        <div class="faq-row">How can i log in to Neuro Website?<b>+</b></div>
-        <div class="faq-row">Where can i find the settings on the Neuro Website?<b>+</b></div>
-        <h2>Neuro App Functionality</h2>
-        <div class="faq-row">How can i change the language og the Neuro?<b>+</b></div>
-        <div class="faq-row">How can i edit my profile in the Neuro App?<b>+</b></div>
-        <div class="faq-row">How can i transfer my Neuro account from one device to another?<b>+</b></div>
-        <div class="faq-row">My device is not compatible with the Nebula or it is unavailable in my region.<b>+</b></div>
-        <h2>Neuro Premium Features</h2>
-        <div class="faq-row">What are the benefits of a Premium subscription in Neuro app?<b>+</b></div>
-        <div class="faq-row">How can I transfer my Neuro subscription or account from iOS to Android and vice versa?<b>+</b></div>
-        <div class="faq-row">I have won a subscription on Nebula in a SpinWeel but it is not visible in the subscriptions list.<b>+</b></div>
-        <h2>Neuro Astrologers</h2>
-        <div class="faq-row">How can I receive the refund of credits for chatting with astrologers in Neuro?<b>+</b></div>
-        <div class="faq-row faq-extra">My chats' history has disappeared after the reinstallation of Neuro app.<b>+</b></div>
-        <div class="faq-row faq-extra">How can I choose an astrologer?<b>+</b></div>
-      </section>
+        <!-- Account status cluster: notification, balance and account menu share one spacing rhythm. -->
+        <div class="nb-account-summary" aria-label="Account summary">
+            <a class="nb-notifications-pill" href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notifications-link="" data-notification-indicator="count" data-notification-unread-source="preview-fixture"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"></span><b class="nb-notifications-pill__badge" data-notification-unread-count="" aria-hidden="true" data-topbar-notification-unread-count="">2</b></a>            <a class="nb-credit-pill" href="billing.html" data-credit-topup-trigger aria-label="Open credit top up. Credits balance 120"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt=""><span>120</span></a>
+            <button class="nb-menu-pill" id="profile-menu-trigger" data-common-account-menu-trigger type="button" aria-label="Account menu" aria-haspopup="menu" aria-controls="nb-account-menu" aria-expanded="false"><picture class="nb-menu-source"><source media="(max-width:575.98px)" srcset="../yii2/modules/nebulaAccount/resources/images/account-shell/menu-mobile-c76.svg"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt=""></picture><span>VI</span></button>
+        </div>
+    </div>
+    <div class="nb-account-menu" id="nb-account-menu" role="menu" aria-label="Account navigation" hidden>
+        <!-- Shared account-menu owner mirrors the accepted Chatroom menu: identity first, then account destinations. -->
+        <div class="nb-account-menu__identity"><span class="nb-account-avatar">VI</span><div><b>Victoriya</b><small>Account navigation</small></div></div>
+        <a role="menuitem" href="profile.html"><span aria-hidden="true">◉</span>Profile</a>
+        <a role="menuitem" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-setting.svg" alt="" aria-hidden="true">Settings</a>
+        <a href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notification-menu-link="" role="menuitem"><span class="nb-account-menu__notification-icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"><b class="nb-account-menu__notification-badge" data-notification-unread-count="" aria-hidden="true">2</b></span>Notifications</a>        <a role="menuitem" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt="" aria-hidden="true">Billing &amp; credits</a>
+        <a role="menuitem" href="support.html"><span aria-hidden="true">?</span>Customer support</a>
+    </div>
+    <button class="nb-account-menu-scrim" type="button" data-common-account-menu-scrim aria-label="Close account menu" hidden></button>
+</header>
+    <div class="nb-account-layout nb-notifications-layout">
+        <aside class="nb-account-sidebar nb-notifications-sidebar" aria-label="Account navigation"><div class="nb-sidebar-profile"><div class="nb-sidebar-photo"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-raw-03.jpeg" alt="Victoriya"></div><strong>Victoriya</strong></div><nav class="nb-sidebar-nav"><a href="profile.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-01.svg" alt="">Profile</a><span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-06.svg" alt="">Psychics</span><a href="chatroom.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-07.svg" alt="">Chatroom <b>3</b></a><span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-09.svg" alt="">Favorite</span><a href="horoscope.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-04.svg" alt="">Horoscope</a><a class="is-current" aria-current="page" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-11.svg" alt="">Setting</a></nav><div class="nb-sidebar-balance"><strong>Balance: <span>120 credits</span></strong><a class="nb-refill-visual nb-refill-link" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-03.svg" alt="">Refill credits</a></div>
+</aside>
+        <section class="nb-faq" aria-labelledby="faq-title">
+            <div class="nb-notifications-heading"><a href="support.html" aria-label="Back to customer support"><img src="../yii2/modules/nebulaAccount/resources/images/support/vector-14.svg" alt=""></a><h1 id="faq-title">FAQ</h1></div>
+                            <h2>Web subscription</h2>
+                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-1"><span>How can i cancel my Neuro Website subscription?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-1" data-faq-panel hidden><p>Open your account settings, choose Subscription, and follow the cancellation steps. If the subscription was purchased through a platform store, cancellation is managed in that store.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-2"><span>I made an error during the order for the Compatibility report on social networks!</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-2" data-faq-panel hidden><p>Do not place a second order. Keep the order details and contact Customer Support so the host can review the order and advise on the available correction or refund.</p></div></article>                                    <article class="faq-open is-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="true" aria-controls="faq-answer-3"><span>Did not receive the report ordered on social networks!</span><b aria-hidden="true">×</b></button></header><div id="faq-answer-3" data-faq-panel><p>Dear customer, please note that it can take up to 24 hours from the time of order to generate a compatibility report based on the information provided and send it to the customer.</p><p>If you still need help, contact our <a class="faq-support-intent" tabindex="0" href="support-help.html">Customer Support team</a>.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-4"><span>What features are included in Neuro Website subscription?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-4" data-faq-panel hidden><p>Your plan features are shown in the subscription details for your account. Availability can vary by plan and platform; Customer Support can confirm the current entitlement for your account.</p></div></article>                                            <h2>Neuro Website Functional</h2>
+                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-5"><span>Why is my astrological info wrong on Neuro Website?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-5" data-faq-panel hidden><p>Check the birth date, time, and place saved in your profile. If the details are correct and the result still looks wrong, contact Customer Support for an account review.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-6"><span>How can i log in to Neuro Website?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-6" data-faq-panel hidden><p>Use the sign-in method connected to your Neuro account. If you cannot complete sign-in, use the account recovery option or contact Customer Support.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-7"><span>Where can i find the settings on the Neuro Website?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-7" data-faq-panel hidden><p>Open the account menu in the header and choose Settings. From there you can open the relevant profile, notification, support, or legal section.</p></div></article>                                            <h2>Neuro App Functionality</h2>
+                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-8"><span>How can i change the language og the Neuro?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-8" data-faq-panel hidden><p>Open Settings, choose Language, select the preferred language, and confirm the change. The available languages depend on the current host configuration.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-9"><span>How can i edit my profile in the Neuro App?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-9" data-faq-panel hidden><p>Open your profile, choose the field you want to edit, enter a valid value, and confirm it. The host must accept the change before it becomes persistent.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-10"><span>How can i transfer my Neuro account from one device to another?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-10" data-faq-panel hidden><p>Sign in on the new device with the same account. Your account data is available only after the host verifies the account and completes the transfer.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-11"><span>My device is not compatible with the Nebula or it is unavailable in my region.</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-11" data-faq-panel hidden><p>Check the supported platform and region requirements. If the issue remains, contact Customer Support with your device and region details.</p></div></article>                                            <h2>Neuro Premium Features</h2>
+                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-12"><span>What are the benefits of a Premium subscription in Neuro app?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-12" data-faq-panel hidden><p>Premium benefits are defined by the plan shown in your account. Open the plan details to review the included features before subscribing.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-13"><span>How can I transfer my Neuro subscription or account from iOS to Android and vice versa?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-13" data-faq-panel hidden><p>Use the same verified account on the new platform and contact Customer Support if the entitlement is not recognised. Do not purchase a second plan while the transfer is being reviewed.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-14"><span>I have won a subscription on Nebula in a SpinWeel but it is not visible in the subscriptions list.</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-14" data-faq-panel hidden><p>Keep the reward confirmation and contact Customer Support. The host must verify the reward before adding or correcting the subscription entitlement.</p></div></article>                                            <h2>Neuro Astrologers</h2>
+                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-15"><span>How can I receive the refund of credits for chatting with astrologers in Neuro?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-15" data-faq-panel hidden><p>Contact Customer Support with the conversation and payment details. Credits can be refunded only after the host reviews the session and payment record.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-16"><span>My chats&#039; history has disappeared after the reinstallation of Neuro app.</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-16" data-faq-panel hidden><p>Sign in with the original account and allow the host to synchronise the account. If history is still missing, contact Customer Support; do not create duplicate conversations.</p></div></article>                                    <article class="faq-open" data-faq-item><header><button type="button" data-faq-action="toggle-answer" aria-expanded="false" aria-controls="faq-answer-17"><span>How can I choose an astrologer?</span><b aria-hidden="true">+</b></button></header><div id="faq-answer-17" data-faq-panel hidden><p>Open the Psychic catalogue, compare the available profiles, and choose an expert whose status, specialties, rating, and rate match your request. Start chat opens the host-controlled consultation flow.</p></div></article>                                    </section>
     </div>
     <output class="faq-sr-only" aria-live="polite"></output>
-  </main>
-  <script src="../yii2/modules/nebulaAccount/resources/js/faq.js"></script>
-<script src="fixture-bootstrap.js"></script>
-</body>
+</main>
+<section class="nb-credit-topup"
+         data-nebula-credit-topup
+         data-static-projection="true"
+         data-live-mount="0"
+         data-demo-only="true"
+         hidden>
+    <div class="nb-credit-topup__scrim" data-credit-topup-scrim hidden>
+        <article class="nb-credit-topup__dialog"
+                 id="nebula-credit-topup-dialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="credit-topup-title"
+                 aria-describedby="credit-topup-description"
+                 tabindex="-1">
+            <header class="nb-credit-topup__header">
+                <div>
+                    <span class="nb-credit-topup__eyebrow">Balance</span>
+                    <h2 id="credit-topup-title">Top up credits</h2>
+                    <p id="credit-topup-description">Choose a package to continue your conversations.</p>
+                </div>
+                <button class="nb-credit-topup__close" type="button" data-credit-topup-action="close" aria-label="Close top up window">×</button>
+            </header>
+
+            <div class="nb-credit-topup__balance" aria-live="polite">
+                <span>Current balance</span>
+                <strong data-credit-topup-balance>120 credits</strong>
+            </div>
+
+            <div class="nb-credit-topup__step" data-credit-topup-step="packages">
+                <div class="nb-credit-topup__packages" role="radiogroup" aria-label="Credit package">
+                    <button class="nb-credit-topup__package is-selected" type="button" role="radio" aria-checked="true" tabindex="0" data-credit-package="fixture-120" data-credits="120" data-amount="$ 9.99">
+                        <span><strong>120 credits</strong><small>Starter package</small></span><b>$ 9.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-350" data-credits="350" data-amount="$ 24.99">
+                        <span><strong>350 credits</strong><small>+50 extra credits</small></span><b>$ 24.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-1800" data-credits="1800" data-amount="$ 99.99">
+                        <span><strong>1800 credits</strong><small>+600 extra credits</small></span><b>$ 99.99</b>
+                    </button>
+                </div>
+
+                <div class="nb-credit-topup__summary">
+                    <span data-credit-topup-summary>120 credits</span>
+                    <strong data-credit-topup-total>$ 9.99</strong>
+                </div>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="confirm">Top up balance</button>
+                <p class="nb-credit-topup__demo-note">Apple Pay test mode: credits are saved to this local demo account. No real charge.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--processing" data-credit-topup-step="processing" hidden>
+                <div class="nb-credit-topup__spinner" aria-hidden="true"></div>
+                <h3>Processing Apple Pay test payment</h3>
+                <p>Confirming your local order and updating credits. No real money is charged.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--success" data-credit-topup-step="success" hidden>
+                <div class="nb-credit-topup__success-mark" aria-hidden="true">✓</div>
+                <h3>Test payment successful</h3>
+                <p data-credit-topup-success-copy></p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="close">Return to page</button>
+            </div>
+            <div class="nb-credit-topup__step" data-credit-topup-step="error" hidden>
+                <h3>Test payment not confirmed yet</h3>
+                <p>The local receipt is unavailable. Retry to check the same order without adding credits twice.</p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="retry">Check test payment again</button>
+            </div>
+        </article>
+    </div>
+    <p class="nb-credit-topup__live" data-credit-topup-live aria-live="polite"></p>
+</section>
+<script src="../assets/3fe51ac8/integration-sandbox.js?v=1788996389"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/faq.js?v=1789456523"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/account-header.js?v=1789456523"></script>
+<script src="../assets/431cad45/credit-topup.js?v=1788899884"></script></body>
 </html>

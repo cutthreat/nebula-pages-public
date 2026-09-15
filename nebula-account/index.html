@@ -31,14 +31,15 @@
 </head>
 <body>
 <main>
-  <h1>Nebula Cabinet + Chat</h1>
-  <p class="lead">Локальный интерактивный preview текущего Yii2-контура. Здесь работают клиентские состояния, клавиатура, фокус, draft и host-intent события. Реальные отправка, платежи, сессия и сохранение данных намеренно не имитируются.</p>
-  <div class="notice"><strong>Как проверять:</strong> откройте экран, включите DevTools → Responsive Design Mode и проверьте 1200 / 992 / 768 / 576 / 320 px. Для inspector используйте ссылки с <code>?fixture=1</code>.</div>
+  <h1>Nebula Cabinet + Chat — latest snapshot</h1>
+  <p class="lead">Эта публикация зафиксирована по актуальному Yii2-контуру с <code>127.0.0.1:8173</code>. Основные страницы кабинета и чат экспортированы из рабочего модуля; статические state-экраны ниже сохранены для передачи программисту.</p>
+  <div class="notice"><strong>Источник:</strong> <code>experiments/nebula-account-chat-live-20260809</code>. Для текущих экранов используйте <a href="psychics.html">Psychics</a> и <a href="chatroom.html">Chatroom</a>. Реальные платежи, сессия, realtime и сохранение данных требуют backend.</div>
 
   <section>
     <h2>Главные экраны</h2>
     <div class="grid">
-      <a class="card" href="chatroom.html"><div class="title">Обычный чат</div><div class="meta">draft, подсказки, mobile list ↔ thread</div></a>
+      <a class="card" href="psychics.html"><div class="title">Psychics — latest</div><div class="meta">актуальный каталог из Yii2</div></a>
+      <a class="card" href="chatroom.html"><div class="title">Chatroom — latest</div><div class="meta">Mia Jacomo, entry=catalogue</div></a>
       <a class="card" href="chatroom-active.html"><div class="title">Active Chat</div><div class="meta">статичный active-session projection</div></a>
       <a class="card" href="chatroom-active.html?fixture=1&state=active"><div class="title">Active Chat + fixture inspector</div><div class="meta">локальный timer/rail inspector; не live-сессия</div></a>
       <a class="card" href="profile.html"><div class="title">Profile</div><div class="meta">GET-навигация и host-intent действия</div></a>

@@ -1,86 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Helper Bot — Neuro</title>
-  <meta name="description" content="Neuro Helper Bot chat source fixture" />
-  <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/helper-bot.css" />
-</head>
-<body>
-  <main class="hb-page" data-helper-bot data-static-projection="true" data-balance-fixture="responsive-c76-sample">
-    <header class="hb-topbar">
-      <a class="hb-logo" href="profile.html" aria-label="Neuro profile"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/logo.png" alt="Neuro" /></a>
-      <div class="hb-topbar-right">
-        <nav class="hb-topnav" aria-label="Primary navigation"><span>Psychic</span><span>Favorite</span><a href="chatroom.html">Chatroom</a><a href="horoscope.html">Horoscope</a></nav>
-        <div class="hb-account-summary" aria-label="Account summary">
-          <div class="hb-credit"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/coin.svg" alt="" /><span>120</span></div>
-          <div class="hb-menu"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/menu.svg" alt="" /><b>VI</b></div>
-        </div>
-      </div>
-    </header>
-
-    <div class="hb-layout">
-      <aside class="hb-sidebar" aria-label="Account navigation">
-        <div class="hb-profile"><div class="hb-photo"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/profile-photo.png" alt="Victoriya" /></div><strong>Victoriya</strong></div>
-        <nav class="hb-sidebar-nav">
-          <a href="profile.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-01.svg" alt="" />Profile</a>
-          <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-06.svg" alt="" />Psychics</span>
-          <a href="chatroom.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-07.svg" alt="" />Chatroom <b>3</b></a>
-          <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-09.svg" alt="" />Favorite</span>
-          <a href="horoscope.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-04.svg" alt="" />Horoscope</a>
-          <a class="is-current" href="settings.html" aria-current="page"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-11.svg" alt="" />Setting</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="kzI5fVMJI72D2dPSXiFVdQuZnBrOcv3uE8K1zfy8PtHgVn0iOm1y3vO74qsHUjk9fMHFSa8TlYh78NunpPVQgw==">
+    <title>Helper Bot — Neuro</title>
+    <meta name="nebula-integration-config" content="{&quot;baseUrl&quot;:&quot;/nebula-account/integration-sandbox/v1&quot;,&quot;mode&quot;:&quot;local-file-backed-v1&quot;}">
+<link href="../assets/26673cb2/integration-sandbox.css?v=1788121957" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/helper-bot.css?v=1789456522" rel="stylesheet">
+<link href="../assets/46a5959a/notification-indicator.css?v=1789456522" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/account-header.css?v=1789456522" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup.css?v=1789456522" rel="stylesheet"></head>
+<body class="nb-standalone-body" style="margin:0">
+<main class="hb-page" data-helper-bot data-static-projection="true" data-live-mount="0" data-backend-capability="unbound" data-c76-state="dialog" data-balance-fixture="responsive-c76-sample">
+  <header class="nb-topbar nb-topbar--settings" data-account-shell data-notification-shell data-node-id="1134:32219">
+    <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><picture><source srcset="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.webp" type="image/webp"><img src="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.png" alt="Neuro"></picture></a>
+    <div class="nb-topbar__right">
+        <nav class="nb-topnav" aria-label="Primary navigation">
+            <a class="" href="psychics.html">Psychic</a>
+            <a class="" href="favorites.html">Favorite</a>
+            <a class="is-active" href="chatroom.html" aria-current="page">Chatroom</a>
+            <a class="" href="horoscope.html">Horoscope</a>
         </nav>
-        <div class="hb-balance"><strong>Balance: <span class="hb-balance-1200">0 credits</span><span class="hb-balance-992">120 credits</span></strong><div><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/coin.svg" alt="" />Refill credits</div></div>
-      </aside>
-
-      <section class="hb-thread" aria-labelledby="helper-title">
-        <header class="hb-thread-head">
-          <div class="hb-thread-row">
-            <a class="hb-back" href="support-help.html" aria-label="Back to Help"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/back.svg" alt="" /></a>
-            <img class="hb-avatar" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/helper-avatar.svg" alt="" />
-            <h1 id="helper-title">Helper Bot</h1>
-            <div class="hb-thread-actions" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/search.svg" alt="" /><span class="hb-thread-more"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /></span></div>
-          </div>
-          <div class="hb-pinned"><span>Hi! 💖 Would you like to know how your inner astrological map can answer the questions that lay dormant within? 🌌 Chat with me today!</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/pin.svg" alt="" /></div>
-          <div class="hb-divider"></div>
-        </header>
-
-        <div class="hb-history" tabindex="0" aria-label="Helper Bot message history">
-          <div class="hb-date">20 april</div>
-          <article class="hb-message hb-message--bot hb-card-message">
-            <div class="hb-message-copy">Hello! Your card of the day is "III The Empress". Quick meaning: "Represents the Earth Mother". Want more detailed reading? I’m online and waiting for you in the chat!</div>
-            <span class="hb-message-more" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /></span><span class="hb-smile" aria-hidden="true">☺</span>
-            <img class="hb-illustration" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/illustration.png" alt="Astrological illustration for III The Empress" />
-            <div class="hb-meta"><span>2:20 PM</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/reaction-tongue.png" alt="Reaction" /></div>
-            <img class="hb-bookmark hb-bookmark--right" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/bookmark-bot.svg" alt="" />
-          </article>
-          <article class="hb-message hb-message--user">
-            <div class="hb-message-copy">Hi! 💖 Would you like to know how your inner astrological map can answer the questions that lay dormant within? 🌌 Chat with me today!</div>
-            <span class="hb-message-more" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt="" /></span><span class="hb-smile" aria-hidden="true">☺</span>
-            <div class="hb-meta"><span>2:22 PM</span><i>•</i><span class="hb-read">Read <img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/read.svg" alt="" /></span></div>
-            <img class="hb-bookmark hb-bookmark--left" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/bookmark-user.svg" alt="" />
-          </article>
-          <article class="hb-message hb-message--bot hb-message--long">
-            <div class="hb-message-copy">Greetings! If you really want to do something, you'll find a way. If you don't, you'll find an excuse.  Let's talk about it! Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently.  Would you like a reading ?:)</div>
-            <span class="hb-message-more hb-message-more--purple" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt="" /><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt="" /></span><span class="hb-smile" aria-hidden="true">☺</span>
-            <div class="hb-meta"><span>1:11 AM</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/reaction-heart.png" alt="Reaction" /></div>
-          </article>
+        <!-- Account status cluster: notification, balance and account menu share one spacing rhythm. -->
+        <div class="nb-account-summary" aria-label="Account summary">
+            <a class="nb-notifications-pill" href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notifications-link="" data-notification-indicator="count" data-notification-unread-source="preview-fixture"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"></span><b class="nb-notifications-pill__badge" data-notification-unread-count="" aria-hidden="true" data-topbar-notification-unread-count="">2</b></a>            <a class="nb-credit-pill" href="billing.html" data-credit-topup-trigger aria-label="Open credit top up. Credits balance 120"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt=""><span>120</span></a>
+            <button class="nb-menu-pill" id="profile-menu-trigger" data-common-account-menu-trigger type="button" aria-label="Account menu" aria-haspopup="menu" aria-controls="nb-account-menu" aria-expanded="false"><picture class="nb-menu-source"><source media="(max-width:575.98px)" srcset="../yii2/modules/nebulaAccount/resources/images/account-shell/menu-mobile-c76.svg"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt=""></picture><span>VI</span></button>
         </div>
-
-        <form class="hb-composer" data-helper-composer>
-          <button class="hb-attach" type="button" aria-label="Attach file" disabled><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-attach-c76.svg" alt="" /></button>
-          <label class="hb-sr-only" for="helper-draft">Message Helper Bot</label>
-          <textarea id="helper-draft" rows="3">Greetings! If you really want to do something, you'll find a way. If you don't, you'll find an excuse.  Let's talk about it! Courage is the most important of all the virtues because without courage, you can't practice any other virtue consisten |</textarea>
-          <button class="hb-emoji" type="button" aria-label="Choose emoji" disabled><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-emoji-c76.svg" alt="" /></button>
-          <button class="hb-send" type="submit" aria-label="Send message intent"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-send-c76.svg" alt="" /></button>
-        </form>
-      </section>
     </div>
-    <output class="hb-status hb-sr-only" aria-live="polite"></output>
-  </main>
-  <script src="../yii2/modules/nebulaAccount/resources/js/helper-bot.js"></script>
-<script src="fixture-bootstrap.js"></script>
-</body>
+    <div class="nb-account-menu" id="nb-account-menu" role="menu" aria-label="Account navigation" hidden>
+        <!-- Shared account-menu owner mirrors the accepted Chatroom menu: identity first, then account destinations. -->
+        <div class="nb-account-menu__identity"><span class="nb-account-avatar">VI</span><div><b>Victoriya</b><small>Account navigation</small></div></div>
+        <a role="menuitem" href="profile.html"><span aria-hidden="true">◉</span>Profile</a>
+        <a role="menuitem" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-setting.svg" alt="" aria-hidden="true">Settings</a>
+        <a href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notification-menu-link="" role="menuitem"><span class="nb-account-menu__notification-icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"><b class="nb-account-menu__notification-badge" data-notification-unread-count="" aria-hidden="true">2</b></span>Notifications</a>        <a role="menuitem" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt="" aria-hidden="true">Billing &amp; credits</a>
+        <a role="menuitem" href="support.html"><span aria-hidden="true">?</span>Customer support</a>
+    </div>
+    <button class="nb-account-menu-scrim" type="button" data-common-account-menu-scrim aria-label="Close account menu" hidden></button>
+</header>
+  <div class="hb-layout"><aside class="hb-sidebar" aria-label="Account navigation"><div class="hb-profile"><div class="hb-photo"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/profile-photo.png" alt="Victoriya"></div><strong>Victoriya</strong></div><nav class="hb-sidebar-nav"><a href="profile.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-01.svg" alt="">Profile</a><a href="psychics.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-06.svg" alt="">Psychics</a><a href="chatroom.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-07.svg" alt="">Chatroom <b>3</b></a><a href="favorites.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-09.svg" alt="">Favorite</a><a href="horoscope.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-04.svg" alt="">Horoscope</a><a class="is-current" href="settings.html" aria-current="page"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-11.svg" alt="">Setting</a></nav><div class="hb-balance"><strong>Balance: <span class="hb-balance-1200">0 credits</span><span class="hb-balance-992">120 credits</span></strong><a href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/coin.svg" alt="">Refill credits</a></div></aside>
+    <section class="hb-thread" aria-labelledby="helper-title"><header class="hb-thread-head"><div class="hb-thread-row"><a class="hb-back" href="support-help.html" aria-label="Back to Help"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/back.svg" alt=""></a><img class="hb-avatar" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/helper-avatar.svg" alt=""><h1 id="helper-title">Helper Bot</h1><div class="hb-thread-actions" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/search.svg" alt=""><span class="hb-thread-more"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""></span></div></div><div class="hb-pinned"><span>Hi! 💖 Would you like to know how your inner astrological map can answer the questions that lay dormant within? 🌌 Chat with me today!</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/pin.svg" alt=""></div><div class="hb-divider"></div></header>
+      <div class="hb-history" tabindex="0" aria-label="Helper Bot message history"><div class="hb-date">20 april</div><article class="hb-message hb-message--bot hb-card-message"><div class="hb-message-copy">Hello! Your card of the day is &quot;III The Empress&quot;. Quick meaning: &quot;Represents the Earth Mother&quot;. Want more detailed reading? I’m online and waiting for you in the chat!</div><span class="hb-message-more" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""></span><span class="hb-smile" aria-hidden="true">☺</span><img class="hb-illustration" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/illustration.png" alt="Astrological illustration for III The Empress"><div class="hb-meta"><span>2:20 PM</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/reaction-tongue.png" alt="Reaction"></div><img class="hb-bookmark hb-bookmark--right" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/bookmark-bot.svg" alt=""></article><article class="hb-message hb-message--user"><div class="hb-message-copy">Hi! 💖 Would you like to know how your inner astrological map can answer the questions that lay dormant within? 🌌 Chat with me today!</div><span class="hb-message-more" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more.svg" alt=""></span><span class="hb-smile" aria-hidden="true">☺</span><div class="hb-meta"><span>2:22 PM</span><i>•</i><span class="hb-read">Read <img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/read.svg" alt=""></span></div><img class="hb-bookmark hb-bookmark--left" src="../yii2/modules/nebulaAccount/resources/images/helper-bot/bookmark-user.svg" alt=""></article><article class="hb-message hb-message--bot hb-message--long"><div class="hb-message-copy">Greetings! If you really want to do something, you&#039;ll find a way. If you don&#039;t, you&#039;ll find an excuse.  Let&#039;s talk about it! Courage is the most important of all the virtues because without courage, you can&#039;t practice any other virtue consistently.  Would you like a reading ?:)</div><span class="hb-message-more hb-message-more--purple" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt=""><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/message-more-2.svg" alt=""></span><span class="hb-smile" aria-hidden="true">☺</span><div class="hb-meta"><span>1:11 AM</span><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/reaction-heart.png" alt="Reaction"></div></article></div>
+      <form class="hb-composer" data-helper-composer><button class="hb-attach" type="button" aria-label="Attach file" disabled><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-attach-c76.svg" alt=""></button><label class="hb-sr-only" for="helper-draft">Message Helper Bot</label><textarea id="helper-draft" rows="3">Greetings! If you really want to do something, you&#039;ll find a way. If you don&#039;t, you&#039;ll find an excuse.  Let&#039;s talk about it! Courage is the most important of all the virtues because without courage, you can&#039;t practice any other virtue consisten |</textarea><button class="hb-emoji" type="button" aria-label="Choose emoji" disabled><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-emoji-c76.svg" alt=""></button><button class="hb-send" type="submit" aria-label="Send message intent"><img src="../yii2/modules/nebulaAccount/resources/images/helper-bot/composer-send-c76.svg" alt=""></button></form></section></div>
+  <output class="hb-status hb-sr-only" aria-live="polite"></output>
+</main>
+<section class="nb-credit-topup"
+         data-nebula-credit-topup
+         data-static-projection="true"
+         data-live-mount="0"
+         data-demo-only="true"
+         hidden>
+    <div class="nb-credit-topup__scrim" data-credit-topup-scrim hidden>
+        <article class="nb-credit-topup__dialog"
+                 id="nebula-credit-topup-dialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="credit-topup-title"
+                 aria-describedby="credit-topup-description"
+                 tabindex="-1">
+            <header class="nb-credit-topup__header">
+                <div>
+                    <span class="nb-credit-topup__eyebrow">Balance</span>
+                    <h2 id="credit-topup-title">Top up credits</h2>
+                    <p id="credit-topup-description">Choose a package to continue your conversations.</p>
+                </div>
+                <button class="nb-credit-topup__close" type="button" data-credit-topup-action="close" aria-label="Close top up window">×</button>
+            </header>
+
+            <div class="nb-credit-topup__balance" aria-live="polite">
+                <span>Current balance</span>
+                <strong data-credit-topup-balance>120 credits</strong>
+            </div>
+
+            <div class="nb-credit-topup__step" data-credit-topup-step="packages">
+                <div class="nb-credit-topup__packages" role="radiogroup" aria-label="Credit package">
+                    <button class="nb-credit-topup__package is-selected" type="button" role="radio" aria-checked="true" tabindex="0" data-credit-package="fixture-120" data-credits="120" data-amount="$ 9.99">
+                        <span><strong>120 credits</strong><small>Starter package</small></span><b>$ 9.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-350" data-credits="350" data-amount="$ 24.99">
+                        <span><strong>350 credits</strong><small>+50 extra credits</small></span><b>$ 24.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-1800" data-credits="1800" data-amount="$ 99.99">
+                        <span><strong>1800 credits</strong><small>+600 extra credits</small></span><b>$ 99.99</b>
+                    </button>
+                </div>
+
+                <div class="nb-credit-topup__summary">
+                    <span data-credit-topup-summary>120 credits</span>
+                    <strong data-credit-topup-total>$ 9.99</strong>
+                </div>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="confirm">Top up balance</button>
+                <p class="nb-credit-topup__demo-note">Apple Pay test mode: credits are saved to this local demo account. No real charge.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--processing" data-credit-topup-step="processing" hidden>
+                <div class="nb-credit-topup__spinner" aria-hidden="true"></div>
+                <h3>Processing Apple Pay test payment</h3>
+                <p>Confirming your local order and updating credits. No real money is charged.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--success" data-credit-topup-step="success" hidden>
+                <div class="nb-credit-topup__success-mark" aria-hidden="true">✓</div>
+                <h3>Test payment successful</h3>
+                <p data-credit-topup-success-copy></p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="close">Return to page</button>
+            </div>
+            <div class="nb-credit-topup__step" data-credit-topup-step="error" hidden>
+                <h3>Test payment not confirmed yet</h3>
+                <p>The local receipt is unavailable. Retry to check the same order without adding credits twice.</p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="retry">Check test payment again</button>
+            </div>
+        </article>
+    </div>
+    <p class="nb-credit-topup__live" data-credit-topup-live aria-live="polite"></p>
+</section>
+<script src="../assets/3fe51ac8/integration-sandbox.js?v=1788996389"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/helper-bot.js?v=1789456522"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/account-header.js?v=1789456522"></script>
+<script src="../assets/431cad45/credit-topup.js?v=1788899884"></script></body>
 </html>

@@ -1,10 +1,14 @@
 # Nebula account and paid-chat demo
 
-The only published layout build in this repository is the static export of
-`experiments/nebula-account-chat-live-20260809`.
+The published account build is the latest static projection captured from the
+local Yii2 host at `127.0.0.1:8173`. The source mapping and complete route list
+are recorded in [nebula-account/LATEST-SOURCE.md](nebula-account/LATEST-SOURCE.md)
+and [nebula-account/latest-routes.json](nebula-account/latest-routes.json).
 
-Open `nebula-account/` for the cabinet, and `nebula-account/chatroom.html` for the chat.
-The repository includes the matching HTML, CSS, JavaScript, fonts and image resources.
+Open `nebula-account/psychics.html` for the catalogue, and
+`nebula-account/chatroom.html` for the current Mia Jacomo chat state. The
+repository includes the matching HTML, CSS, JavaScript, fonts and image
+resources used by the snapshot.
 
 The screens implement frontend demo scenarios only. Payment, billing, message persistence,
 realtime delivery, service-session creation and RBAC require the separate Yii2/backend handoff.

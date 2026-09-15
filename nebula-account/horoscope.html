@@ -1,163 +1,172 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Horoscope — Neuro</title>
-<link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/horoscope.css">
-</head>
-<body class="nh-body">
-<main class="nh-page" data-nebula-horoscope data-static-projection="true" data-live-mount="0" data-backend-capability="unbound" data-node-id="1118:27720" data-node-id-992="1416:50062" data-node-id-768="1416:50371" data-node-id-576="1416:50680" data-node-id-320="1416:51055">
-<header class="nh-topbar">
-<a class="nh-logo" href="profile.html">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/01-logotype.png" alt="Neuro">
-</a>
-<nav class="nh-nav">
-<span>Psychic</span>
-<span>Favorite</span>
-<a href="chatroom.html">Chatroom</a>
-<a class="is-active" href="horoscope.html">Horoscope</a>
-</nav>
-<div class="nh-actions">
-<span class="nh-credit">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/coin.svg" alt="">120</span>
-<span class="nh-menu">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt="">
-<b>VI</b>
-</span>
-</div>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="IZIUKrMl4dGVyAU1zYBKrJJLjmEgWZVTRmU-zWIj33FwwXpz4mC3sKyQd1n5sRjE2CTNCkwp52BwDEeeEk-FAg==">
+<title>Horoscope — Neuro</title><meta name="nebula-integration-config" content="{&quot;baseUrl&quot;:&quot;/nebula-account/integration-sandbox/v1&quot;,&quot;mode&quot;:&quot;local-file-backed-v1&quot;}">
+<link href="../assets/26673cb2/integration-sandbox.css?v=1788121957" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/expert-card-actions.css?v=1789456520" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/profile.css?v=1789456520" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/horoscope.css?v=1789456520" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup.css?v=1789456520" rel="stylesheet">
+<link href="../assets/46a5959a/notification-indicator.css?v=1789456521" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/account-header.css?v=1789456520" rel="stylesheet"></head><body class="nh-body"><main class="nh-page" data-nebula-horoscope data-static-projection="true" data-live-mount="0" data-backend-capability="unbound" data-focus-query-parameter="focus" data-focus-contract-version="psychic-focus/v1" data-video-contract-version="horoscope-video/v1" data-horoscope-art-map="{&quot;Taurus&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/taurus-c76.png&quot;,&quot;provenance&quot;:&quot;figma-full-runtime-adapted&quot;},&quot;Aries&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/aries-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Gemini&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/gemini-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Cancer&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/cancer-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Leo&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/leo-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Virgo&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/virgo-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Libra&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/libra-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Scorpio&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/scorpio-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Sagittarius&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/sagittarius-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Capricorn&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/capricorn-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Aquarius&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/aquarius-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;},&quot;Pisces&quot;:{&quot;src&quot;:&quot;../yii2/modules/nebulaAccount/resources/images/horoscope/full-art/pisces-prefigma.png&quot;,&quot;provenance&quot;:&quot;prefigma-full-art-draft&quot;}}" data-bio-birth-date="1992-05-07" data-bio-contract-version="biorhythm-reading-intent/v1" data-node-id="1118:27720" data-node-id-992="1416:50062" data-node-id-768="1416:50371" data-node-id-576="1416:50680" data-node-id-320="1416:51055">
+    <header class="nb-topbar" data-account-shell data-notification-shell data-node-id="1134:32219">
+    <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><picture><source srcset="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.webp" type="image/webp"><img src="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.png" alt="Neuro"></picture></a>
+    <div class="nb-topbar__right">
+        <nav class="nb-topnav" aria-label="Primary navigation">
+            <a class="" href="psychics.html">Psychic</a>
+            <a class="" href="favorites.html">Favorite</a>
+            <a class="" href="chatroom.html">Chatroom</a>
+            <a class="is-active" href="horoscope.html" aria-current="page">Horoscope</a>
+        </nav>
+        <!-- Account status cluster: notification, balance and account menu share one spacing rhythm. -->
+        <div class="nb-account-summary" aria-label="Account summary">
+            <a class="nb-notifications-pill" href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notifications-link="" data-notification-indicator="count" data-notification-unread-source="preview-fixture"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"></span><b class="nb-notifications-pill__badge" data-notification-unread-count="" aria-hidden="true" data-topbar-notification-unread-count="">2</b></a>            <a class="nb-credit-pill" href="billing.html" data-credit-topup-trigger aria-label="Open credit top up. Credits balance 120"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt=""><span>120</span></a>
+            <button class="nb-menu-pill" id="profile-menu-trigger" data-common-account-menu-trigger type="button" aria-label="Account menu" aria-haspopup="menu" aria-controls="nb-account-menu" aria-expanded="false"><picture class="nb-menu-source"><source media="(max-width:575.98px)" srcset="../yii2/modules/nebulaAccount/resources/images/account-shell/menu-mobile-c76.svg"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt=""></picture><span>VI</span></button>
+        </div>
+    </div>
+    <div class="nb-account-menu" id="nb-account-menu" role="menu" aria-label="Account navigation" hidden>
+        <!-- Shared account-menu owner mirrors the accepted Chatroom menu: identity first, then account destinations. -->
+        <div class="nb-account-menu__identity"><span class="nb-account-avatar">VI</span><div><b>Victoriya</b><small>Account navigation</small></div></div>
+        <a role="menuitem" href="profile.html"><span aria-hidden="true">◉</span>Profile</a>
+        <a role="menuitem" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-setting.svg" alt="" aria-hidden="true">Settings</a>
+        <a href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notification-menu-link="" role="menuitem"><span class="nb-account-menu__notification-icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"><b class="nb-account-menu__notification-badge" data-notification-unread-count="" aria-hidden="true">2</b></span>Notifications</a>        <a role="menuitem" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt="" aria-hidden="true">Billing &amp; credits</a>
+        <a role="menuitem" href="support.html"><span aria-hidden="true">?</span>Customer support</a>
+    </div>
+    <button class="nb-account-menu-scrim" type="button" data-common-account-menu-scrim aria-label="Close account menu" hidden></button>
 </header>
-<p class="nh-sr-only" data-horoscope-status role="status" aria-live="polite">Today horoscope preview is shown. Zodiac and period changes require the horoscope host.</p>
-<section class="nh-panel nh-hero">
-<h1>Taurus daily horoscope</h1>
-<h2>Apr 20 - May 20</h2>
-<div class="nh-zodiac" role="group" aria-label="Choose a zodiac sign">
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Aries">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector.svg" alt="">Aries</button>
-<button class="is-selected" type="button" tabindex="0" aria-pressed="true" data-horoscope-zodiac="Taurus">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-1.svg" alt="">Taurus</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Gemini">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-2.svg" alt="">Gemini</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Cancer">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-3.svg" alt="">Cancer</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Leo">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-4.svg" alt="">Leo</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Virgo">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-5.svg" alt="">Virgo</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Libra">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-6.svg" alt="">Libra</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Scorpio">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-7.svg" alt="">Scorpio</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Sigittarius">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-8.svg" alt="">Sigittarius</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Capricorn">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/group.svg" alt="">Capricorn</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Aquarius">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/group-1.svg" alt="">Aquarius</button>
-<button type="button" tabindex="-1" aria-pressed="false" data-horoscope-zodiac="Pisces">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/group-2.svg" alt="">Pisces</button>
-</div>
-<div class="nh-today">
-<div class="nh-taurus">
-<img src="../yii2/modules/nebulaAccount/resources/images/horoscope/taurus-c76.png" alt="">
-</div>
-<div class="nh-copy">
-<div class="nh-periods" role="group" aria-label="Horoscope period">
-<button type="button" aria-current="page" aria-label="Today horoscope" data-horoscope-period="today">Today</button>
-<span aria-disabled="true">Tomorrow</span>
-<span aria-disabled="true">Week</span>
-<span aria-disabled="true">Month</span>
-<span aria-disabled="true">Year</span>
-</div>
-<h3>April 17, 2026</h3>
-<p>Today, Taurus, the fiery energy of the Aries moon ignites your passion and determination. You may feel a surge of motivation, pushing you to take bold steps toward your goals. Embrace this dynamic energy and let it fuel your ambitions. This day is ideal for initiating new projects or tackling challenges you’ve been postponing. With Aries’ assertive influence, you have the courage to pursue what you want. Use this momentum to take charge of your life and make impactful decisions. However, be mindful of impulsiveness. While the urge to act quickly is strong, taking a moment to pause and reflect before diving in can help you avoid potential missteps. Balance your enthusiasm with patience for the best outcomes.</p>
-</div>
-</div>
-</section>
-<section class="nh-banner nh-banner--explore">
-<div>
-<b>EXPLORE THE UNIVERSE<br>OF YOUR RELATIONSHIP</b>
-<small>Start off with free minutes of chat with our expert advisors</small>
-</div>
-<a href="chatroom.html">START MY FREE CONSULTATION</a>
-</section>
-<section class="nh-panel nh-focus">
-<h2>Focus of the day: Career</h2>
-<div class="nh-focus-grid">
-<div>
-<b>Career</b>
-<span class="nh-ring nh-ring--gold">80%</span>
-<em>Find psychic&nbsp; →</em>
-</div>
-<div>
-<b>Love</b>
-<span class="nh-ring nh-ring--pink">70%</span>
-<em>Find psychic&nbsp; →</em>
-</div>
-<div>
-<b>Health</b>
-<span class="nh-ring nh-ring--blue">50%</span>
-<em>Find psychic&nbsp; →</em>
-</div>
-<div>
-<b>Family</b>
-<span class="nh-ring nh-ring--purple">60%</span>
-<em>Find psychic&nbsp; →</em>
-</div>
-</div>
-</section>
-<section class="nh-video">
-<span class="nh-play">▶</span>
-<small>Play video</small>
-</section>
-<section class="nh-panel nh-biorhythm">
-<h2>Biorhythm</h2>
-<p>Biorhythms are human cycles that regulate our health, emotions and intellect.</p>
-<div class="nh-legend">
-<span>Physical</span>
-<span>Emotional</span>
-<span>Intellectual</span>
-</div>
-<div class="nh-chart">
-<svg viewBox="0 0 620 300">
-<g class="nh-grid">
-<path d="M55 30H580M55 85H580M55 140H580M55 195H580M55 250H580M55 30V250M142 30V250M230 30V250M318 30V250M405 30V250M493 30V250M580 30V250"/>
-</g>
-<path class="nh-physical" d="M55 190 C145 150 235 105 318 78 S490 25 580 15"/>
-<path class="nh-emotional" d="M55 220 C155 225 240 218 318 202 S490 180 580 155"/>
-<path class="nh-intellectual" d="M55 185 C150 210 235 228 318 230 S490 225 580 216"/>
-<path class="nh-today-marker" d="M318 30V250"/>
-<text x="4" y="35">100%</text>
-<text x="13" y="90">50%</text>
-<text x="20" y="145">0%</text>
-<text x="11" y="200">-50%</text>
-<text x="4" y="255">-100%</text>
-<text x="45" y="280">04/14</text>
-<text x="132" y="280">04/15</text>
-<text x="219" y="280">04/16</text>
-<text x="306" y="280">04/17</text>
-<text x="393" y="280">04/18</text>
-<text x="480" y="280">04/19</text>
-<text x="567" y="280">04/20</text>
-<rect x="292" y="286" width="52" height="14" rx="7" fill="#9c72ff"/>
-<text x="301" y="297" fill="#fff">Today</text>
-</svg>
-</div>
-<aside>
-<h3>Today insight</h3>
-<p>Emotional energy is rising. Use confidence for connection, but keep balance and humility.</p>
-<button type="button" data-horoscope-action="ask-advisor">Ask advisor</button>
-</aside>
-<div class="nh-banner nh-banner--reading">
-<div>
-<b>WANT A PERSONAL READING FOR<br>TODAY’S TAURUS ENERGY?</b>
-<small>Use the chart as a guide and then contact a psychic</small>
-</div>
-<span>FIND PSYCHIC</span>
-</div>
+    <p class="nh-sr-only" data-horoscope-status role="status" aria-live="polite">Today horoscope preview is shown. Zodiac and period changes stay local until the horoscope host confirms the reading.</p>
+    <section class="nh-panel nh-hero" data-node-id="1118:27838"><h1 data-horoscope-title>Taurus daily horoscope</h1><h2 data-horoscope-range>Apr 20 - May 20</h2><div class="nh-zodiac" role="group" aria-label="Choose a zodiac sign"><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Aries" data-horoscope-zodiac="Aries"><img class="nh-zodiac__icon nh-zodiac__icon--aries" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector.svg" alt="" aria-hidden="true">Aries</button><button type="button" class="is-selected" tabindex="0" aria-pressed="true" aria-label="Taurus" data-horoscope-zodiac="Taurus"><img class="nh-zodiac__icon nh-zodiac__icon--taurus" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-1.svg" alt="" aria-hidden="true">Taurus</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Gemini" data-horoscope-zodiac="Gemini"><img class="nh-zodiac__icon nh-zodiac__icon--gemini" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-2.svg" alt="" aria-hidden="true">Gemini</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Cancer" data-horoscope-zodiac="Cancer"><img class="nh-zodiac__icon nh-zodiac__icon--cancer" src="../yii2/modules/nebulaAccount/resources/images/horoscope/group.svg" alt="" aria-hidden="true">Cancer</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Leo" data-horoscope-zodiac="Leo"><img class="nh-zodiac__icon nh-zodiac__icon--leo" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-3.svg" alt="" aria-hidden="true">Leo</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Virgo" data-horoscope-zodiac="Virgo"><img class="nh-zodiac__icon nh-zodiac__icon--virgo" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-4.svg" alt="" aria-hidden="true">Virgo</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Libra" data-horoscope-zodiac="Libra"><img class="nh-zodiac__icon nh-zodiac__icon--libra" src="../yii2/modules/nebulaAccount/resources/images/horoscope/group-1.svg" alt="" aria-hidden="true">Libra</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Scorpio" data-horoscope-zodiac="Scorpio"><img class="nh-zodiac__icon nh-zodiac__icon--scorpio" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-5.svg" alt="" aria-hidden="true">Scorpio</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Sagittarius" data-horoscope-zodiac="Sagittarius"><img class="nh-zodiac__icon nh-zodiac__icon--sagittarius" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-6.svg" alt="" aria-hidden="true">Sagittarius</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Capricorn" data-horoscope-zodiac="Capricorn"><img class="nh-zodiac__icon nh-zodiac__icon--capricorn" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-7.svg" alt="" aria-hidden="true">Capricorn</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Aquarius" data-horoscope-zodiac="Aquarius"><img class="nh-zodiac__icon nh-zodiac__icon--aquarius" src="../yii2/modules/nebulaAccount/resources/images/horoscope/group-2.svg" alt="" aria-hidden="true">Aquarius</button><button type="button" class="" tabindex="-1" aria-pressed="false" aria-label="Pisces" data-horoscope-zodiac="Pisces"><img class="nh-zodiac__icon nh-zodiac__icon--pisces" src="../yii2/modules/nebulaAccount/resources/images/horoscope/vector-8.svg" alt="" aria-hidden="true">Pisces</button></div><div class="nh-today"><div class="nh-taurus" data-horoscope-art-shell aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/taurus-c76.png" alt="" data-horoscope-art-image="" data-horoscope-taurus-src="../yii2/modules/nebulaAccount/resources/images/horoscope/taurus-c76.png"></div><div class="nh-copy"><div class="nh-periods" role="tablist" aria-label="Horoscope period"><button type="button" role="tab" aria-selected="true" aria-label="Today horoscope" data-horoscope-period="today">Today</button><button type="button" role="tab" aria-selected="false" aria-label="Tomorrow horoscope" data-horoscope-period="tomorrow">Tomorrow</button><button type="button" role="tab" aria-selected="false" aria-label="Week horoscope" data-horoscope-period="week">Week</button><button type="button" role="tab" aria-selected="false" aria-label="Month horoscope" data-horoscope-period="month">Month</button><button type="button" role="tab" aria-selected="false" aria-label="Year horoscope" data-horoscope-period="year">Year</button></div><h3 data-horoscope-date>April 17, 2026</h3><p data-horoscope-copy>Today, Taurus, the fiery energy of the Aries moon ignites your passion and determination. You may feel a surge of motivation, pushing you to take bold steps toward your goals. Embrace this dynamic energy and let it fuel your ambitions. This day is ideal for initiating new projects or tackling challenges you’ve been postponing. With Aries’ assertive influence, you have the courage to pursue what you want. Use this momentum to take charge of your life and make impactful decisions. However, be mindful of impulsiveness. While the urge to act quickly is strong, taking a moment to pause and reflect before diving in can help you avoid potential missteps. Balance your enthusiasm with patience for the best outcomes.</p></div></div></section>
+    <section class="nh-banner nh-banner--explore"><div><b>EXPLORE THE UNIVERSE<br>OF YOUR RELATIONSHIP</b><small>Start off with free minutes of chat with our expert advisors</small></div><a href="chatroom.html" data-horoscope-start>START MY FREE CONSULTATION</a></section>
+    <section class="nh-panel nh-focus"><h2>Focus of the day: <span data-focus-heading>Career</span></h2><div class="nh-focus-grid"><div data-focus-area-card="career"><b>Career</b><span class="nh-ring nh-ring--gold" style="--nh-ring-progress: 80"><span class="nh-ring__value">80%</span></span><a href="psychics.html?focus=career" data-horoscope-focus="career">Find psychic&nbsp; →</a></div><div data-focus-area-card="love"><b>Love</b><span class="nh-ring nh-ring--pink" style="--nh-ring-progress: 70"><span class="nh-ring__value">70%</span></span><a href="psychics.html?focus=love" data-horoscope-focus="love">Find psychic&nbsp; →</a></div><div data-focus-area-card="health"><b>Health</b><span class="nh-ring nh-ring--blue" style="--nh-ring-progress: 50"><span class="nh-ring__value">50%</span></span><a href="psychics.html?focus=health" data-horoscope-focus="health">Find psychic&nbsp; →</a></div><div data-focus-area-card="family"><b>Family</b><span class="nh-ring nh-ring--purple" style="--nh-ring-progress: 60"><span class="nh-ring__value">60%</span></span><a href="psychics.html?focus=family" data-horoscope-focus="family">Find psychic&nbsp; →</a></div></div></section>
+    <!-- Source: existing Neuro video embed contract in _unzipped/home.html; host may replace the URL for production media. -->
+    <section class="nh-video" data-horoscope-video data-video-url="https://www.youtube.com/embed/PdD_SdUB8GU?autoplay=1" data-video-provider="youtube" data-video-contract-version="horoscope-video/v1" data-video-state="poster" data-static-projection="true" data-live-mount="0" data-backend-capability="media_contract_unbound" aria-label="Neuro horoscope video">
+      <button type="button" class="nh-play" data-horoscope-video-trigger aria-controls="nh-horoscope-video-player" aria-pressed="false" aria-label="Play video"><span aria-hidden="true">▶</span></button>
+      <small data-horoscope-video-label>Play video</small>
+      <div id="nh-horoscope-video-player" class="nh-video__player" data-horoscope-video-player role="region" aria-label="Horoscope video player" hidden></div>
+    </section>
+    <section class="nh-panel nh-biorhythm" aria-labelledby="nh-bio-title" data-biorhythm>
+      <header class="nh-bio-heading"><h2 id="nh-bio-title">Biorhythm</h2><p>Three traditional curves for reflection on energy, emotions and focus.</p></header>
+      <details class="nh-bio-help"><summary>How to read this chart</summary><div>
+        <p>The curves follow repeating 23-day physical, 28-day emotional and 33-day intellectual cycles counted from a birth date.</p>
+        <p><strong>+100% to −100%</strong> shows position in a mathematical cycle, not a measurement of your abilities. Above and below zero do not mean a good or bad day. Rising and falling describe the line, not how you will feel.</p>
+        <p>For reflection and entertainment only. Not a health assessment or a scientifically validated prediction.</p>
+      </div></details>
+      <div class="nh-bio-basis"><span data-bio-basis>Sample chart · birth date May 7, 1992</span><button type="button" data-bio-edit-birth aria-expanded="false" aria-controls="nh-bio-birth-form">Change birth date</button></div>
+      <form id="nh-bio-birth-form" class="nh-bio-birth-form" data-bio-birth-form hidden novalidate>
+        <label for="nh-bio-birth">Date of birth<input id="nh-bio-birth" type="date" min="1900-01-01" data-bio-birth-input required aria-describedby="nh-bio-birth-note nh-bio-birth-error"></label>
+        <p id="nh-bio-birth-note">Used only on this page. Your profile is not changed; reloading restores the sample.</p>
+        <p id="nh-bio-birth-error" class="nh-bio-error" data-bio-birth-error role="status"></p>
+        <div class="nh-bio-form-actions"><button type="submit">Apply date</button><button type="button" data-bio-cancel-birth>Cancel</button><button type="button" data-bio-reset-birth>Use sample</button></div>
+      </form>
+      <div class="nh-bio-toolbar">
+        <div class="nh-bio-week"><button type="button" data-bio-shift="-7" aria-label="Previous week">‹</button><strong data-bio-week-label></strong><button type="button" data-bio-shift="7" aria-label="Next week">›</button></div>
+        <div class="nh-bio-jump"><label for="nh-bio-jump-date">Go to date<input id="nh-bio-jump-date" type="date" data-bio-jump-date aria-describedby="nh-bio-date-error"></label><button type="button" data-bio-today>Today</button></div>
+      </div>
+      <p class="nh-bio-error" id="nh-bio-date-error" data-bio-date-error role="status"></p>
+      <div class="nh-bio-main">
+        <div class="nh-bio-explorer">
+          <div class="nh-bio-day-heading"><h3 data-bio-selected-date></h3><span data-bio-today-badge hidden>Today</span></div>
+          <div class="nh-legend" role="group" aria-label="Visible curves and selected-day values">
+                        <button type="button" class="is-active" data-bio-series="physical" aria-pressed="true"><span class="nh-bio-series-name">Physical</span><strong data-bio-value="physical">—</strong><span class="nh-bio-trend" data-bio-trend="physical">—</span></button>
+                        <button type="button" class="is-active" data-bio-series="emotional" aria-pressed="true"><span class="nh-bio-series-name">Emotional</span><strong data-bio-value="emotional">—</strong><span class="nh-bio-trend" data-bio-trend="emotional">—</span></button>
+                        <button type="button" class="is-active" data-bio-series="intellectual" aria-pressed="true"><span class="nh-bio-series-name">Intellectual</span><strong data-bio-value="intellectual">—</strong><span class="nh-bio-trend" data-bio-trend="intellectual">—</span></button>
+                      </div>
+          <div class="nh-chart" tabindex="0" role="group" aria-label="Explore biorhythm by date" aria-describedby="nh-bio-chart-help">
+            <svg viewBox="0 0 620 260" role="img" aria-labelledby="nh-bio-svg-title nh-bio-svg-desc"><title id="nh-bio-svg-title">Biorhythm</title><desc id="nh-bio-svg-desc">Three mathematical cycles. Exact daily values are available below the chart.</desc>
+              <g class="nh-grid" aria-hidden="true"><path/></g><g data-bio-axis aria-hidden="true"></g>
+              <path class="nh-physical"/><path class="nh-emotional"/><path class="nh-intellectual"/>
+              <path class="nh-today-marker"/><g data-bio-points aria-hidden="true"></g><path class="nh-bio-hover-marker" hidden aria-hidden="true"/>
+            </svg>
+            <div class="nh-bio-inspector" data-bio-inspector role="group" aria-label="Values at chart date" hidden>
+              <header><strong data-bio-inspector-date></strong><button type="button" data-bio-inspector-close aria-label="Close chart values">×</button></header>
+              <dl><div><dt>Physical</dt><dd data-bio-inspector-value="physical"></dd></div><div><dt>Emotional</dt><dd data-bio-inspector-value="emotional"></dd></div><div><dt>Intellectual</dt><dd data-bio-inspector-value="intellectual"></dd></div></dl>
+              <small data-bio-inspector-hint></small>
+            </div>
+          </div>
+          <div class="nh-chart-dates" role="group" aria-label="Choose a day"><button type="button" data-bio-index="0" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="1" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="2" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="3" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="4" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="5" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button><button type="button" data-bio-index="6" data-bio-date aria-pressed="false"><span data-bio-weekday></span><strong data-bio-day></strong></button></div>
+          <p id="nh-bio-chart-help" class="nh-bio-chart-help">Select a day on the chart. Keyboard: ← → to move, Home / End for the week.</p>
+          <details class="nh-bio-table"><summary>View daily values</summary><table><caption data-bio-table-caption>Cycle values for the displayed week</caption><thead><tr><th scope="col">Date</th><th scope="col">Physical</th><th scope="col">Emotional</th><th scope="col">Intellectual</th></tr></thead><tbody data-bio-table-body></tbody></table></details>
+        </div>
+        <aside aria-labelledby="nh-bio-insight-title"><span class="nh-bio-eyebrow">A moment to reflect</span><h3 id="nh-bio-insight-title" data-bio-insight-title>Your day, in focus</h3><p data-bio-focus></p><p data-bio-insight></p><small class="nh-bio-disclaimer">A reflection prompt, not a prediction of your mood or health.</small><button type="button" data-horoscope-action="ask-advisor">Ask advisor</button></aside>
+      </div>
+      <p class="nh-bio-note">For reflection and entertainment — not medical advice.</p>
+      <div class="nh-banner nh-banner--reading"><div><b>WANT A PERSONAL READING FOR<br><span data-horoscope-reading-sign>TODAY’S TAURUS ENERGY?</span></b><small>Explore your questions with a psychic</small></div><a href="psychics.html?context=biorhythm" data-horoscope-find-psychic>FIND PSYCHIC</a></div>
+      <noscript><p>Enable JavaScript to explore the dates and calculate this reflection chart.</p></noscript>
+    </section>
+    <div class="nh-advisor-dialog" data-horoscope-advisor-dialog hidden><div class="nh-advisor-dialog__backdrop" data-horoscope-advisor-close></div><section class="nh-advisor-dialog__panel" role="dialog" aria-modal="true" aria-labelledby="nh-advisor-title"><button type="button" class="nh-advisor-dialog__close" data-horoscope-advisor-close aria-label="Close">×</button><h2 id="nh-advisor-title">Get a personal biorhythm reading</h2><p data-horoscope-advisor-context>Review the selected day with an expert. This reflection tool does not provide medical advice.</p><label for="nh-advisor-question">Your question</label><textarea id="nh-advisor-question" data-horoscope-advisor-input rows="3" placeholder="What would you like to explore about this day?"></textarea><button type="button" class="nh-advisor-dialog__submit" data-horoscope-advisor-submit>Include chart context</button><a class="nh-advisor-dialog__continue" href="psychics.html?context=biorhythm" data-horoscope-advisor-continue>Choose a psychic</a><p class="nh-advisor-dialog__feedback" data-horoscope-advisor-feedback role="status" aria-live="polite"></p></section></div>
+    <section class="nb-credit-topup"
+         data-nebula-credit-topup
+         data-static-projection="true"
+         data-live-mount="0"
+         data-demo-only="true"
+         hidden>
+    <div class="nb-credit-topup__scrim" data-credit-topup-scrim hidden>
+        <article class="nb-credit-topup__dialog"
+                 id="nebula-credit-topup-dialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="credit-topup-title"
+                 aria-describedby="credit-topup-description"
+                 tabindex="-1">
+            <header class="nb-credit-topup__header">
+                <div>
+                    <span class="nb-credit-topup__eyebrow">Balance</span>
+                    <h2 id="credit-topup-title">Top up credits</h2>
+                    <p id="credit-topup-description">Choose a package to continue your conversations.</p>
+                </div>
+                <button class="nb-credit-topup__close" type="button" data-credit-topup-action="close" aria-label="Close top up window">×</button>
+            </header>
+
+            <div class="nb-credit-topup__balance" aria-live="polite">
+                <span>Current balance</span>
+                <strong data-credit-topup-balance>120 credits</strong>
+            </div>
+
+            <div class="nb-credit-topup__step" data-credit-topup-step="packages">
+                <div class="nb-credit-topup__packages" role="radiogroup" aria-label="Credit package">
+                    <button class="nb-credit-topup__package is-selected" type="button" role="radio" aria-checked="true" tabindex="0" data-credit-package="fixture-120" data-credits="120" data-amount="$ 9.99">
+                        <span><strong>120 credits</strong><small>Starter package</small></span><b>$ 9.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-350" data-credits="350" data-amount="$ 24.99">
+                        <span><strong>350 credits</strong><small>+50 extra credits</small></span><b>$ 24.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-1800" data-credits="1800" data-amount="$ 99.99">
+                        <span><strong>1800 credits</strong><small>+600 extra credits</small></span><b>$ 99.99</b>
+                    </button>
+                </div>
+
+                <div class="nb-credit-topup__summary">
+                    <span data-credit-topup-summary>120 credits</span>
+                    <strong data-credit-topup-total>$ 9.99</strong>
+                </div>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="confirm">Top up balance</button>
+                <p class="nb-credit-topup__demo-note">Apple Pay test mode: credits are saved to this local demo account. No real charge.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--processing" data-credit-topup-step="processing" hidden>
+                <div class="nb-credit-topup__spinner" aria-hidden="true"></div>
+                <h3>Processing Apple Pay test payment</h3>
+                <p>Confirming your local order and updating credits. No real money is charged.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--success" data-credit-topup-step="success" hidden>
+                <div class="nb-credit-topup__success-mark" aria-hidden="true">✓</div>
+                <h3>Test payment successful</h3>
+                <p data-credit-topup-success-copy></p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="close">Return to page</button>
+            </div>
+            <div class="nb-credit-topup__step" data-credit-topup-step="error" hidden>
+                <h3>Test payment not confirmed yet</h3>
+                <p>The local receipt is unavailable. Retry to check the same order without adding credits twice.</p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="retry">Check test payment again</button>
+            </div>
+        </article>
+    </div>
+    <p class="nb-credit-topup__live" data-credit-topup-live aria-live="polite"></p>
 </section>
 </main>
-<script src="../yii2/modules/nebulaAccount/resources/js/horoscope.js"></script>
-<script src="fixture-bootstrap.js"></script>
-</body>
-</html>
+<script src="../assets/3fe51ac8/integration-sandbox.js?v=1788996389"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/expert-card-actions.js?v=1789456521"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/profile.js?v=1789456521"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/horoscope.js?v=1789456521"></script>
+<script src="../assets/431cad45/credit-topup.js?v=1788899884"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/account-header.js?v=1789456521"></script></body></html>

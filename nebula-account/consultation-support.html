@@ -1,30 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Consultation support</title>
-<link rel="stylesheet" href="../yii2/modules/nebulaAccount/resources/css/consultation-support.css">
-</head>
-<body>
-<main class="support-modal" data-static-projection="true" data-c76-state="consultation_support">
-<span data-origin-trigger tabindex="-1">
-</span>
-<section role="dialog" aria-modal="true" aria-labelledby="support-title">
-<button class="support-modal__close" type="button" aria-label="Close">
-<img src="../yii2/modules/nebulaAccount/resources/images/fast-batch-03/g36-close.svg" alt="">
-</button>
-<h1 id="support-title">Help with consultation</h1>
-<p>Select what happened. The chat history will be attached to the request.</p>
- <input readonly aria-readonly="true" aria-label="Reason for contacting" placeholder="Reason for contacting">
-<textarea readonly aria-label="Consultation details" placeholder="Describe in detail what happened">
-</textarea>
-<button class="support-modal__primary" type="button" data-intent="support">Send a request</button>
-<button class="support-modal__secondary" type="button" data-intent="complaint">Complain about an expert</button>
-</section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="mAXyYFQKC9utNiqujghIvjV7j9I9p24LajyfqVhRgqTdVJwFYkw9jpoOf-T4TyDmRSm3vnXuJ2YJW9ycOxPL-w==">
+    <title>Help with consultation — Neuro</title>
+    <meta name="nebula-integration-config" content="{&quot;baseUrl&quot;:&quot;/nebula-account/integration-sandbox/v1&quot;,&quot;mode&quot;:&quot;local-file-backed-v1&quot;}">
+<link href="../assets/26673cb2/integration-sandbox.css?v=1788121957" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/consultation-support.css?v=1789456520" rel="stylesheet"></head>
+<body class="c76-page-body">
+<main class="support-modal"
+      data-static-projection="true"
+      data-live-mount="0"
+      data-backend-capability="unbound"
+      data-c76-state="consultation_support">
+    <span data-origin-trigger tabindex="-1"></span>
+    <section role="dialog" aria-modal="true" aria-labelledby="support-title">
+        <button class="support-modal__close" type="button" aria-label="Close">
+            <img src="../yii2/modules/nebulaAccount/resources/images/fast-batch-03/g36-close.svg" alt="">        </button>
+        <h1 id="support-title">Help with consultation</h1>
+        <p>Select what happened. The chat history will be attached to the request.</p>
+         <input readonly aria-readonly="true" aria-label="Reason for contacting" placeholder="Reason for contacting">
+        <textarea readonly aria-label="Consultation details" placeholder="Describe in detail what happened"></textarea>
+        <button class="support-modal__primary" type="button" data-intent="support">Send a request</button>
+        <button class="support-modal__secondary" type="button" data-intent="complaint">Complain about an expert</button>
+    </section>
 </main>
-<script src="../yii2/modules/nebulaAccount/resources/js/consultation-support.js">
-</script>
-<script src="fixture-bootstrap.js"></script>
-</body>
+<script src="../assets/3fe51ac8/integration-sandbox.js?v=1788996389"></script>
+<script src="../yii2/modules/nebulaAccount/resources/js/consultation-support.js?v=1789456520"></script></body>
 </html>
