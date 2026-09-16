@@ -19,3 +19,6 @@
 - этот archive предназначен для source/code handoff, а не для доказательства backend, платежей, realtime, persistence, RBAC или production runtime.
 
 Для визуального просмотра используйте опубликованные страницы из `nebula-pages-public`, например `nebula-account/chatroom.html`, `profile.html` и `horoscope.html`.
+
+Отдельная сверка старого `MISSING-REPORT.md`: `MISSING-REPORT-RECONCILIATION-20260916.md`;
+машиночитаемая версия — `missing-report-reconciliation-20260916.json`.

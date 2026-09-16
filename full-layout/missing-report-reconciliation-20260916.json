@@ -1,0 +1,1732 @@
+{
+  "schema": "nebula.missing_report_reconciliation.v1",
+  "generatedAt": "2026-09-16T07:08:02.4984118Z",
+  "inputReport": {
+    "path": "PROOF/INPUT-MISSING-REPORT-20260916.md",
+    "sha256": "66DEFF41DAFD184888688DE0F84E1508F640EB5F0C316FA35E22BB6B85CA8407"
+  },
+  "canonicalSource": {
+    "path": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt",
+    "gitCommit": "01d98d78d40d177623dc0f2a55acd19db377f957"
+  },
+  "finalPackageRoot": "SOURCE/FULL-LAYOUT-SOURCE",
+  "summary": {
+    "missing_from_current_package": 5,
+    "present_as_current_new_variant": 10,
+    "present_exact": 172,
+    "present_under_html_base": 3
+  },
+  "entries": [
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-1200-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-320-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-576-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-768-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-992-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-texture-1.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-texture-1.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-texture-2.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-banner-texture-2.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-content-1200-node-621-8434.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-content-1200-node-621-8434.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-1200-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-1200-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-576-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-576-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-768-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-768-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-992-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-chart-table-992-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-air.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-air.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-earth.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-earth.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-fire.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-fire.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-water.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-element-water.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-320-node-990-23222-paint.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-320-node-990-23222-paint.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-576-node-988-24215-paint.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-576-node-988-24215-paint.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-768-node-986-33308-paint.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-768-node-986-33308-paint.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-992-node-983-26867-paint.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-bg-992-node-983-26867-paint.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-img-320-figma-cutout.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-compat-hero-img-320-figma-cutout.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-01-aries.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-01-aries.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-02-taurus.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-02-taurus.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-03-gemini.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-03-gemini.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-04-cancer.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-04-cancer.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-05-leo.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-05-leo.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-06-virgo.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-06-virgo.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-07-libra.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-07-libra.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-08-scorpio.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-08-scorpio.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-09-sagittarius.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-09-sagittarius.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-10-capricorn.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-10-capricorn.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-11-aquarius.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-11-aquarius.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-12-pisces.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/img/zodiac-sign-12-pisces.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/login.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/menu-new.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/menu-open-new.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/signup-step-1.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "_unzipped/signup-step-2.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "/_unzipped/img/cheap-psychic-theme-917-17383.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "/_unzipped/img/cheap-psychic-theme-917-17383.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "about-us.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "about-us-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "advisor-chat.html",
+      "status": "missing_from_current_package",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "No exact/base/known current -new source was found; requires source export or scope decision."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/hero-ellipse-1200.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/hero-taurus-1200.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/person.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/sex-compatibility.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/sign-card-bg-320.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/taurus-man-compatibility.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/taurus-woman-compatibility.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-bg.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-character.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-mobile-bg.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-mobile-character.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-mobile-play.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-section-bg.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "auth-fonts.css",
+      "status": "present_under_html_base",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": "_unzipped/auth-fonts.css",
+      "currentVariantPath": null,
+      "note": "The page uses <base href=\"_unzipped/\">; the report checked the wrong root."
+    },
+    {
+      "reportedPath": "auth-login.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "birth-chart.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "birth-chart-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "careers-join.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "careers-join-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "cheap-psychic-detail.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "cheap-psychic-responsive.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "cheap-psychic-source-locks.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "cheap-psychic.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "contact-us.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "contact-us-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "figma-auth.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "home-reverse-shell-owner.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "home-reverse-type-owner.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/best-reading_d.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/best-reading_m.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-cp01-figma-chat-587-7830.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-cp01-figma-star-81-511.svg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17390-avatar.jpeg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17390-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17391-avatar.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17391-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17392-avatar.jpeg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17392-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17394-avatar.jpeg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17394-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17395-avatar.jpeg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17395-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17396-avatar.jpeg",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-figma-expert-917-17396-avatar.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-08074b8199d65e702c64fbe2751aeb9fbaed5ced.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-08074b8199d65e702c64fbe2751aeb9fbaed5ced.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-0825c8379b08cc3e336c26c1c7df3b43112c2ea7.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-0825c8379b08cc3e336c26c1c7df3b43112c2ea7.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-15f11c19299add4a06ac5d51c825e1dd6fd588c9.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-15f11c19299add4a06ac5d51c825e1dd6fd588c9.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-2c8080a6dc885dd6e57e88b951d33f7fbd574b64.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-2c8080a6dc885dd6e57e88b951d33f7fbd574b64.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-497245a54adeb82fd007b2228c3f83e580d2e86f.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-497245a54adeb82fd007b2228c3f83e580d2e86f.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-5f29048819d5f90bcf19322317631591812ddd0c.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-5f29048819d5f90bcf19322317631591812ddd0c.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-7a6e7fc347bba22dfda3d597bdc1dad9ffb24246.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-7a6e7fc347bba22dfda3d597bdc1dad9ffb24246.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-7c7c0ef07d004c3a6f1392b6a2976fb23a246ddd.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-7c7c0ef07d004c3a6f1392b6a2976fb23a246ddd.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-a2a1c540d6d0aa22158c678d5165ba19adb4f8bc.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-a2a1c540d6d0aa22158c678d5165ba19adb4f8bc.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-ba117009198a6b9ea14f8a651efb1fe68c4f5f77.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-ba117009198a6b9ea14f8a651efb1fe68c4f5f77.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-d604d23c273591c9dbcca8480588e4f0ed7ccd92.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-d604d23c273591c9dbcca8480588e4f0ed7ccd92.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-e416fd5b4d6e5e23aae7bb4910e320946cfd2c7b.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-e416fd5b4d6e5e23aae7bb4910e320946cfd2c7b.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-e69cad437feaca40393e2cbc7737dc3a9574d520.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/cheap-source-e69cad437feaca40393e2cbc7737dc3a9574d520.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/clients-video-1.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/clients-video-2.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/clients-video-3.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/clients-video-4.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/hero-ex.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/hero-rel.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/hero-self.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/hero-soul.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/psy-4.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/psy-5.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/situation_d.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/situation_m.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-hero-art-1200-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-hero-art-1200-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-reach-art-1200-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-reach-art-1200-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-rely-art-1200-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/tarot-rely-art-1200-figma.webp",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-1.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-2.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-3.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-4.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-5.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topic-6.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topics-offer-1.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topics-offer-2.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/topics-offer-3.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "img/video-cover-figma.png",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "index.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "jquery.js",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "live-chat-rules.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "live-chat-rules-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "menu-new.css",
+      "status": "present_under_html_base",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": "_unzipped/menu-new.css",
+      "currentVariantPath": null,
+      "note": "The page uses <base href=\"_unzipped/\">; the report checked the wrong root."
+    },
+    {
+      "reportedPath": "menu-open-new.css",
+      "status": "present_under_html_base",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": "_unzipped/menu-open-new.css",
+      "currentVariantPath": null,
+      "note": "The page uses <base href=\"_unzipped/\">; the report checked the wrong root."
+    },
+    {
+      "reportedPath": "payment-terms.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "payment-terms-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "press.html",
+      "status": "missing_from_current_package",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "No exact/base/known current -new source was found; requires source export or scope decision."
+    },
+    {
+      "reportedPath": "refund-policy.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "refund-policy-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "reviews.html",
+      "status": "missing_from_current_package",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "No exact/base/known current -new source was found; requires source export or scope decision."
+    },
+    {
+      "reportedPath": "signup-step-1.html",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "support.html",
+      "status": "missing_from_current_package",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "No exact/base/known current -new source was found; requires source export or scope decision."
+    },
+    {
+      "reportedPath": "tarot-reading.js",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "tarot-reading.owner.00.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "tarot-reading.owner.01.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "tarot-reading.owner.02.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "tarot-reading.owner.03.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "terms-conditions.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "terms-conditions-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "topic.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "topic-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    },
+    {
+      "reportedPath": "trust.html",
+      "status": "missing_from_current_package",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "No exact/base/known current -new source was found; requires source export or scope decision."
+    },
+    {
+      "reportedPath": "zodiac-compatibility-new.owner.00.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "zodiac-compatibility-new.owner.01.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "zodiac-compatibility-new.owner.03.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "zodiac-compatibility-new.owner.04.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "zodiac-compatibility-new.owner.05.css",
+      "status": "present_exact",
+      "packageExact": true,
+      "sourceExact": true,
+      "baseResolvedPath": null,
+      "currentVariantPath": null,
+      "note": "Exact relative path is present in the final package."
+    },
+    {
+      "reportedPath": "zodiac-compatibility.html",
+      "status": "present_as_current_new_variant",
+      "packageExact": false,
+      "sourceExact": false,
+      "baseResolvedPath": null,
+      "currentVariantPath": "zodiac-compatibility-new.html",
+      "note": "Current source uses the explicit -new canonical page; no alias was invented."
+    }
+  ],
+  "claim": "The supplied report describes an older/root-relative package. The final snapshot contains the five auth/menu source HTML files and the reported landing resources; five navigation targets remain genuinely absent and are not fabricated."
+}

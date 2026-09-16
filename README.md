@@ -34,3 +34,8 @@ contracts for Codex/Yii2 integration. Its file inventory and SHA-256 values are 
 kept in the published static tree and in the full transfer package; this Git archive
 is the code handoff, not a backend or production-runtime claim. The delivery receipt
 is [codex-result-delivery-manifest.json](full-layout/codex-result-delivery-manifest.json).
+
+The separate [MISSING-REPORT reconciliation](full-layout/MISSING-REPORT-RECONCILIATION-20260916.md)
+contains the exact-vs-variant-vs-truly-missing resource review. The original input is
+preserved as [INPUT-MISSING-REPORT-20260916.md](full-layout/INPUT-MISSING-REPORT-20260916.md),
+with machine-readable details in [missing-report-reconciliation-20260916.json](full-layout/missing-report-reconciliation-20260916.json).
