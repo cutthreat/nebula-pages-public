@@ -1,0 +1,5364 @@
+{
+  "schema": "nebula.full_layout_code_manifest.v1",
+  "generatedAtUtc": "2026-09-16T13:18:52.7868290Z",
+  "sourceRoot": "SOURCE/FULL-LAYOUT-SOURCE",
+  "packageKind": "html-css-js-code-handoff",
+  "fileCount": 1051,
+  "totalBytes": 28916903.0,
+  "extensions": [
+    {
+      "extension": ".cjs",
+      "count": 14,
+      "bytes": 66125.0
+    },
+    {
+      "extension": ".css",
+      "count": 216,
+      "bytes": 7577898.0
+    },
+    {
+      "extension": ".gitattributes",
+      "count": 1,
+      "bytes": 86.0
+    },
+    {
+      "extension": ".gitignore",
+      "count": 2,
+      "bytes": 453.0
+    },
+    {
+      "extension": ".html",
+      "count": 338,
+      "bytes": 5502921.0
+    },
+    {
+      "extension": ".js",
+      "count": 43,
+      "bytes": 2314636.0
+    },
+    {
+      "extension": ".json",
+      "count": 250,
+      "bytes": 1575274.0
+    },
+    {
+      "extension": ".jsonl",
+      "count": 1,
+      "bytes": 20986.0
+    },
+    {
+      "extension": ".md",
+      "count": 75,
+      "bytes": 264705.0
+    },
+    {
+      "extension": ".mjs",
+      "count": 6,
+      "bytes": 34565.0
+    },
+    {
+      "extension": ".nojekyll",
+      "count": 1,
+      "bytes": 2.0
+    },
+    {
+      "extension": ".svg",
+      "count": 94,
+      "bytes": 10893687.0
+    },
+    {
+      "extension": ".ttf",
+      "count": 7,
+      "bytes": 665496.0
+    },
+    {
+      "extension": ".txt",
+      "count": 3,
+      "bytes": 69.0
+    }
+  ],
+  "included": [
+    "html",
+    "css",
+    "js",
+    "cjs",
+    "mjs",
+    "json",
+    "jsonl",
+    "md",
+    "svg",
+    "ttf",
+    "ico",
+    "woff",
+    "woff2",
+    "otf",
+    "txt",
+    "gitattributes",
+    "gitignore",
+    "nojekyll"
+  ],
+  "excluded": [
+    "png",
+    "webp",
+    "jpg",
+    "jpeg",
+    "backend runtime/cache/database files"
+  ],
+  "files": [
+    {
+      "path": "_unzipped/__shadow-home.html",
+      "bytes": 102315,
+      "sha256": "FD59E1B28E21342C931285D319B66F45200A874C8614B02AEAF055BD3B51D8EE"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.00.css",
+      "bytes": 39092,
+      "sha256": "E45BB72745690ABEA42A9F93A61C4979C99081A814DADDCBEBC9EB1E2A71B1BF"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.01.css",
+      "bytes": 42368,
+      "sha256": "4DF7B1E50378890C69E29E4F1D3D1DB0C5221F2102DA09FE9CE94F24509FFA22"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.02.css",
+      "bytes": 41583,
+      "sha256": "019477F8E263D4022D354E12B8C12B9846ADBE56BFDE88F42F4A2AA97C3AD1A9"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.03.css",
+      "bytes": 35980,
+      "sha256": "450B16A2F301DA056EA70EC1B014D7600B424B7CCF51A6D0C718C4F4E9E51553"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.04.css",
+      "bytes": 39485,
+      "sha256": "FE527C27F5FE8B0CC93FD26336E9E51A31E81990ABB2CF299479888D0CB973B0"
+    },
+    {
+      "path": "_unzipped/__shadow-home.owner.05.css",
+      "bytes": 27913,
+      "sha256": "B75AC12BB806F3FA81C2F160362849B21DDD7604553E703B834702DE0F8566DC"
+    },
+    {
+      "path": "_unzipped/._codex-rollback-aura-browse-u1-20260809-162904/aura-reading.owner.00.css",
+      "bytes": 28582,
+      "sha256": "83EF16C544653D6913F35A6D3D2D5525A813903B8C7EB5E34CF3AE317532BF58"
+    },
+    {
+      "path": "_unzipped/._codex-rollback-aura-discover-u2-20260809-171644/aura-reading.owner.01.css",
+      "bytes": 59062,
+      "sha256": "4B1251FAAC45FE3A52DE9E2539E2E871709B57BDBBDB746ABAFD5F2A782BEAF4"
+    },
+    {
+      "path": "_unzipped/._codex-rollback-aura-discover-u2-r1-20260809-173243/aura-reading.owner.01.css",
+      "bytes": 59251,
+      "sha256": "12D4CE33C88C8818C322FBFE67101BDE40C06B70A1DAEA41CD71B6437A9AF65E"
+    },
+    {
+      "path": "_unzipped/._codex-rollback-aura-signs-u3-20260809-175001/aura-reading.owner.01.css",
+      "bytes": 59250,
+      "sha256": "9CC026824A445610E3227AB5647DDD40CE9474C8DF12D65051460CF2D44F8C78"
+    },
+    {
+      "path": "_unzipped/._codex-rollback-aura-signs-u3-r2-20260809-182749/aura-reading.owner.01.css",
+      "bytes": 59257,
+      "sha256": "B0EC414018A1DA1A6F667C80BAA7495D772AAB00C092446D1C176C0CCF2A25D3"
+    },
+    {
+      "path": "_unzipped/.gitignore",
+      "bytes": 246,
+      "sha256": "020220056977A73EBE20740821FAAD2390D9AEDF729D8A4EA918DD259DDE6E1E"
+    },
+    {
+      "path": "_unzipped/404-new.css",
+      "bytes": 1029,
+      "sha256": "87CDEE5D14CF028991C0644C18750448CD320B234EDA58F9336A57A3E3BE9851"
+    },
+    {
+      "path": "_unzipped/404-new.html",
+      "bytes": 11431,
+      "sha256": "BFAA5BAD80FEA2DDB157130871C2024540164E7D7FA1D05169B692423C8F9F52"
+    },
+    {
+      "path": "_unzipped/about-us-new.html",
+      "bytes": 10720,
+      "sha256": "F26573CB74B6C5BF20CA0DF070B4CBB39A0BE3977BAD7F55D9FCA8EE5691022F"
+    },
+    {
+      "path": "_unzipped/account-pages.css",
+      "bytes": 9321,
+      "sha256": "958020281C731DF7A2DE06826FB230EAD85BCA67001BFF0688A7558803E30317"
+    },
+    {
+      "path": "_unzipped/action-button-gallery.html",
+      "bytes": 3666,
+      "sha256": "33051ED42F476C20B60D268BDD0A50AC29E2CADB20C10177051E9E826D075417"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.01.css",
+      "bytes": 47810,
+      "sha256": "7C914F7F8F1279104C9ABBADD7E95C854971B63BECAB04B8B9DD016F8BC67E04"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.02.css",
+      "bytes": 44409,
+      "sha256": "6DF54A23D6C432B2434CD8194617433E8E95A634693860A22C5AAD9B4261FF98"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.03.css",
+      "bytes": 47861,
+      "sha256": "CFF0B9DC160922AD4705A5ABAB8A8288CC5A092825D6045C50CE667C1C4AF009"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.04.css",
+      "bytes": 46444,
+      "sha256": "575BFFD19381EE1A49FC74079C078C76335144481CFDB7BE591DD158B885074C"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.05.css",
+      "bytes": 47969,
+      "sha256": "DE2213A1CA69291B71398B546AC38AA1764F336432F1A3DA27E7B6C456DF7454"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.06.css",
+      "bytes": 44484,
+      "sha256": "006861B6F64A888B9640A28B8DE02E437405FE92CB85EB4373FAC878F549D3A3"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.07.css",
+      "bytes": 40172,
+      "sha256": "468798F6796511211EC547523FC73EEA2028C00DC7C02934A0845C1552572667"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.08.css",
+      "bytes": 14069,
+      "sha256": "772784D59A275A3F895FCEC6C379AF98283F7F33F9A78E8C2BAA463A255386AE"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.css",
+      "bytes": 359347,
+      "sha256": "453E50A984451F0855F7F6DA9B174A5200D77B1E3E565E7312698BEC19CAA565"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.html",
+      "bytes": 90423,
+      "sha256": "10659FAA1CC7FC13962D177544C8554D5225C8A63CA1C5BBA40041C4B4839906"
+    },
+    {
+      "path": "_unzipped/all-psychic-new.js",
+      "bytes": 7382,
+      "sha256": "6E1EAE460283BA29BD53A5B3366CDA21829807F07EC635AB9C31950BA51CF46C"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.00.css",
+      "bytes": 37973,
+      "sha256": "FE713DA200496248E9F97E25AF1EB3B2DDC9627144EA8F322879441E84C183DC"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.01.css",
+      "bytes": 36027,
+      "sha256": "7C8997D223C221924FCC713EFC37F818D12FB71D8D8B58C79A6433F7AFDA3408"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.02.css",
+      "bytes": 37775,
+      "sha256": "1F63B3A8A7548CB786DB48F34054CF7DF3655C261B4999C6A90FDC4AA497408B"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.03.css",
+      "bytes": 36268,
+      "sha256": "570351715FD4E840CF9D85B43E8BADDB3F822D31360EDD8C4F4B11FAF7A06469"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.04.css",
+      "bytes": 37901,
+      "sha256": "CEE380E8F2B677B41A87BC0BB91912EA30C47DF753364CB1374EEDC6C5E20743"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.05.css",
+      "bytes": 37430,
+      "sha256": "7348EB0FFF899B150242F13561438395EEE4F6567092268DEB38633E011A94AB"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.06.css",
+      "bytes": 33344,
+      "sha256": "07B2FC02FB29E530A247BE8E99568E5F6CD75F46A407653564E0EC2A56D825E1"
+    },
+    {
+      "path": "_unzipped/all-psychic.owner.07.css",
+      "bytes": 23993,
+      "sha256": "AA97A2CFE282CFED3BB66C003FDF7D2176D698E31C398C08AC04005F3CDFF08C"
+    },
+    {
+      "path": "_unzipped/angel-numbers-meaning-new.html",
+      "bytes": 11578,
+      "sha256": "A27FE9DAF225F5AB1849524FE5855B0FED828F7FC4774F153E7F58EC7C3F2F57"
+    },
+    {
+      "path": "_unzipped/artifacts/u4-reviews-20260809/baseline/geometry.json",
+      "bytes": 39683,
+      "sha256": "A20101578CC88FC273DFC1B29CF6DD23334FEB7AA505A952AE7AE530378760AA"
+    },
+    {
+      "path": "_unzipped/ask-psychic-new.html",
+      "bytes": 9799,
+      "sha256": "72C0FFB130CE58FA4DDA874FB50AB91B2862126EDC02368A2B5B0F8B1374E567"
+    },
+    {
+      "path": "_unzipped/asked-6-new.css",
+      "bytes": 1352,
+      "sha256": "33945EB514E53B5E4C994D78D7DCFCC9201D3DF552C15D526413F3CF1DF45778"
+    },
+    {
+      "path": "_unzipped/asked-6-new.html",
+      "bytes": 1131,
+      "sha256": "671BF68D41BEF3FC4ED3EB424FE4E81C5C3028A55D611CFFC772BA42F68EE95E"
+    },
+    {
+      "path": "_unzipped/astrology-reading-new.html",
+      "bytes": 9818,
+      "sha256": "1CAAFEEA1DBC372A872628A5710F03B117DE7513D93E116701CF3497E3B8AA09"
+    },
+    {
+      "path": "_unzipped/aura-colors-meaning-new.html",
+      "bytes": 10738,
+      "sha256": "37613802E6C2150F91FC8F2C146134426A3893DC3CE08AD42E0720C92DCC7590"
+    },
+    {
+      "path": "_unzipped/aura-reading-new.html",
+      "bytes": 48631,
+      "sha256": "CD81E8E7A3D6169E0C229F808C8D3A718D3E5A3F0E86E2CC8E924A708FB79D00"
+    },
+    {
+      "path": "_unzipped/aura-reading.css",
+      "bytes": 46621,
+      "sha256": "9619E11474590228C9E4BD28E32F3559F5A3DD95B1F76702962B7FDC9AA12660"
+    },
+    {
+      "path": "_unzipped/aura-reading.js",
+      "bytes": 1588,
+      "sha256": "940F869AC378B0BA9EE021A05F881E5F57930330FE337E8E5D325B5BACD3D84A"
+    },
+    {
+      "path": "_unzipped/aura-reading.owner.00.css",
+      "bytes": 28717,
+      "sha256": "44CDCD01F28F8C9814690B56B4FA29F341A685B6F75A0899DD9D74FF311AC599"
+    },
+    {
+      "path": "_unzipped/aura-reading.owner.01.css",
+      "bytes": 60372,
+      "sha256": "7F3506DF8FEED6D820896C418AD021C5732EF33A99115867C6A3AC97B75B8A38"
+    },
+    {
+      "path": "_unzipped/auth-compare-board.html",
+      "bytes": 17566,
+      "sha256": "B5A717FC6B21BA4985A6E831210E643EA189C2D0168C2D6926D37856C100C2F2"
+    },
+    {
+      "path": "_unzipped/auth-create-new.html",
+      "bytes": 512,
+      "sha256": "A55459D90405059BE561EA5880DEB112D6F126FFF86A58D8BE2221CA9ECD0429"
+    },
+    {
+      "path": "_unzipped/auth-fonts.css",
+      "bytes": 1177,
+      "sha256": "5C6D7232A5C9736AF11A8FA5015A8800EF042EEA865E867B2725B062705B4139"
+    },
+    {
+      "path": "_unzipped/auth-forgot-new.html",
+      "bytes": 3268,
+      "sha256": "1866ADD545811AE7D975007249B7C7D920836E9AC8F033ED6E0D0BC152EC3D26"
+    },
+    {
+      "path": "_unzipped/auth-forgot.css",
+      "bytes": 21281,
+      "sha256": "A313B553F1D037EB8BE80A1CA312D7B53B4360DDDDFEA553AA9ED728DB40D811"
+    },
+    {
+      "path": "_unzipped/auth-form-states.css",
+      "bytes": 1270,
+      "sha256": "4D240A3BEE7F314BF09F0C7509AE51CD1F549EDA956B04D1C84A66BCC57F32F3"
+    },
+    {
+      "path": "_unzipped/auth-forms.js",
+      "bytes": 8497,
+      "sha256": "9D4A60086951EDFCD85FFDA82CC75071A3565047BCE1195E8B92A7449A9D4162"
+    },
+    {
+      "path": "_unzipped/auth-login-state-new.html",
+      "bytes": 4533,
+      "sha256": "1F8DD07C25A1508DB4BA2B0F6F56CFFB6C55355B00E009D7AFC841D73CC1CF3D"
+    },
+    {
+      "path": "_unzipped/auth-login.css",
+      "bytes": 20327,
+      "sha256": "3D6A6F08FB7C1E7D36B620D4F450A98A275F70B9258ED88AED5BA0887A0BB70E"
+    },
+    {
+      "path": "_unzipped/auth-screen-contract.json",
+      "bytes": 11214,
+      "sha256": "5CBED6CE2ACB6B2587DF4C7BD040DA4D9ABFCEF9A5B1C48149BE990C6C83BD4B"
+    },
+    {
+      "path": "_unzipped/auth-slice-control-board.html",
+      "bytes": 10202,
+      "sha256": "1570C6FE3B2C09DBBB28E3BE3E786258B5987BE4AA308003A1EEE90C978C50E1"
+    },
+    {
+      "path": "_unzipped/auth-source-lineage.json",
+      "bytes": 3407,
+      "sha256": "0DF92419B6D3353DBCF1535A2FAB627046B5EA1E56FEF3B8A50DF807EF6ADDA9"
+    },
+    {
+      "path": "_unzipped/auth-step2-new.html",
+      "bytes": 510,
+      "sha256": "1B2819A31F92E28E6D1C5AF11BC04C2608EBB1FC172AA76D84974717A02E878A"
+    },
+    {
+      "path": "_unzipped/auth-surface-signals.json",
+      "bytes": 10711,
+      "sha256": "9EC6A9058978BDB99A8E7B0A09CBE8E60C713F54C466DF234029CB7F22F11178"
+    },
+    {
+      "path": "_unzipped/birth-chart-new.html",
+      "bytes": 11413,
+      "sha256": "2183ACCEEEAD62CC15EB88E1A2AB846BC7977703483734865119C6380FD471CF"
+    },
+    {
+      "path": "_unzipped/blog-input-new.css",
+      "bytes": 23581,
+      "sha256": "D0BE44D5A6CBB75F59CAF6ADE867C1DA0F2B2764BD35C36F8B41EBFF583AE00A"
+    },
+    {
+      "path": "_unzipped/blog-input-new.html",
+      "bytes": 24805,
+      "sha256": "B713D89D79EA092D8DA044E020A62FDA76DC3F9A1ED7F6CA93CDF7EC2AEB1334"
+    },
+    {
+      "path": "_unzipped/blog-new.01.css",
+      "bytes": 37783,
+      "sha256": "1B340601384423C16C82901F1E5A4CE3B736C7814A7E34AFCB02F2420B0B2728"
+    },
+    {
+      "path": "_unzipped/blog-new.02.css",
+      "bytes": 38114,
+      "sha256": "4A3F49CFE589E38F37BC18BE432F145984EE716D8DC6128427F512FC041995BC"
+    },
+    {
+      "path": "_unzipped/blog-new.css",
+      "bytes": 20466,
+      "sha256": "9C166DFC1388C2E98C7B2CD8E1681393A5628324BCC40E539930D9740E39FDF5"
+    },
+    {
+      "path": "_unzipped/blog-new.html",
+      "bytes": 24579,
+      "sha256": "72340398A1F5621669CB58A518CF874C39D481A01CE9CA04C7644697238B5889"
+    },
+    {
+      "path": "_unzipped/bootstrap.css",
+      "bytes": 224339,
+      "sha256": "636AB30F548435E861C8A25A8F5B125255CC3C6BF884357A6B17574ED0FA49C6"
+    },
+    {
+      "path": "_unzipped/bootstrap.js",
+      "bytes": 137296,
+      "sha256": "73C25E89443FF7138C5872E43B95FDEAA922211810060AE899D778622A169D4A"
+    },
+    {
+      "path": "_unzipped/bunner-offer-new.css",
+      "bytes": 3290,
+      "sha256": "C55CB7164216E8088F90289B4823A602E60B26909642DC16B88F93CE41908842"
+    },
+    {
+      "path": "_unzipped/bunner-offer-new.html",
+      "bytes": 2770,
+      "sha256": "A4977D931D7714BF9C5540CA446D7DBCD423D64F06728BD49693379B5943E6F7"
+    },
+    {
+      "path": "_unzipped/button-get-started-new.css",
+      "bytes": 580,
+      "sha256": "18FAF4A1827CFF6F0E279D49878B90283FA8C1531BEA6B20B77E7E5E5FF087E1"
+    },
+    {
+      "path": "_unzipped/button-get-started-new.html",
+      "bytes": 639,
+      "sha256": "5574604D82A6A4A5E06CBD7AA791AEC603E9BA44F6EBA770B48C212331ED0547"
+    },
+    {
+      "path": "_unzipped/button-reg-new.css",
+      "bytes": 543,
+      "sha256": "3AF4C60CB8FEC86934EFD3030E717C2AC23495A458F3C5CDAB145C9E6E29A895"
+    },
+    {
+      "path": "_unzipped/button-reg-new.html",
+      "bytes": 612,
+      "sha256": "43E5BBC958B4DDCDBBEDD3149910B11191783A3B2D5BFA62877B06E2036B08D1"
+    },
+    {
+      "path": "_unzipped/button-state-gallery.html",
+      "bytes": 3534,
+      "sha256": "EBDC31BCB394DF41B491C6365922972E615FF81FA83AB8A55CAE37CF6CF0E746"
+    },
+    {
+      "path": "_unzipped/captcha-new.html",
+      "bytes": 12383,
+      "sha256": "16D0B5C517F6C1EEE14D6F3B7A147AB69E25B8B7C3A18282527BB0FBE0CE2980"
+    },
+    {
+      "path": "_unzipped/capture-auth-frame.html",
+      "bytes": 2463,
+      "sha256": "E0AA4964A3A102949FF24ED1C0F9E378E71BC167CEE2755B8356A99CB3ACBD32"
+    },
+    {
+      "path": "_unzipped/card-1-new.css",
+      "bytes": 970,
+      "sha256": "0F23E596FE9A8F074FC06BC1E1E7B41C7A288534AD93BD0D91E9BC41DD852C6A"
+    },
+    {
+      "path": "_unzipped/card-1-new.html",
+      "bytes": 1042,
+      "sha256": "7948BA1EF8FABAFEE8BBA33F0373EF84AFC88DB9F995861D8DCC5C6D85A14A87"
+    },
+    {
+      "path": "_unzipped/card-state-gallery.html",
+      "bytes": 5632,
+      "sha256": "6C50A829601D495DF36FC1C253D41720F56DF6C81FAF195B86DF6497E7AB1AF7"
+    },
+    {
+      "path": "_unzipped/career-reading-new.html",
+      "bytes": 9792,
+      "sha256": "F239BD75BFFB1573FFECE1AB337AEAEA6C01D23F7E5E90CC63D3B9EF9DEE01D4"
+    },
+    {
+      "path": "_unzipped/careers-join-new.html",
+      "bytes": 9400,
+      "sha256": "CF87C09893E7A0AC2A2478770BF7D7F26276F8E6C8113F4F39F3C8F870741FE3"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "A313BB606534D9E1671196CC11231404DDB7703A4E797B3FF94C955CE04BFAF0"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "97BF5070866A82C9F0CEB36067EE44AD1039896236D077548A3113B0D13AD157"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-320-review-board.html",
+      "bytes": 4804,
+      "sha256": "0BC8B8AD977772A047C7B714CE8B24275852347075D64C20795EDD0ADC7577FF"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-320-review-manifest.json",
+      "bytes": 712,
+      "sha256": "E22DAC4DEBE13D885F96FFD53DDF0B75FD139E0A88DB06D9EB29A3D918ED0166"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "275889D46E6ABD2121523A55C801CBB36E282C3636BB20786825F6E1E738A29C"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "021DD8323121BB3F88714795F5467E521586212D083CC375A638E3C21F23F4E0"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "4005C8DB2DC9A0E974EB1D7A045123B5E3514D1F6CC15CCCEC42E1AB4384DC38"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "AED67B0080F6CF241869DD9AE3631E6CB7F0D44E17E969A75F05393372FB0B7E"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "6B6BE74B592EC6B2EC8F44EB016C86015D70A3ACAF375C9DAF1DE901C7F42E61"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "B69BE7E232CB61512F5A6522FDCD7FE03788E4DFF76DA46E499FE401B359A6FE"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-detail.css",
+      "bytes": 39816,
+      "sha256": "F0A981BABDB3EFD1BE279661CC6C8EFADE0AF3541F31808A14E3F8087FA60D10"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-new.html",
+      "bytes": 41549,
+      "sha256": "DA1D2C539EE5755F681C9C24CD3B142DB85371F855327676433A2486368EE380"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-responsive.css",
+      "bytes": 50833,
+      "sha256": "1EC788DEE500CDF532C82BB74C6CF9B85AA8508814498FCAAD653D2756A56554"
+    },
+    {
+      "path": "_unzipped/cheap-psychic-source-locks.css",
+      "bytes": 36311,
+      "sha256": "87EB3A7847EE1B60B2D6F7D2BB746040EAFCEE5837BACC3990D44DB55D6181F2"
+    },
+    {
+      "path": "_unzipped/cheap-psychic.css",
+      "bytes": 40035,
+      "sha256": "7C2ED2862E4EC6FB3A7992A582963450A09D405C5A6128D168BC22D6B3A033A5"
+    },
+    {
+      "path": "_unzipped/cheap-review-board.html",
+      "bytes": 4742,
+      "sha256": "7E9D2981ED3AAAE2970C11897A5BDF5854D8E1EC4C6B8620E9027F9F07B12542"
+    },
+    {
+      "path": "_unzipped/cheap-review-debug.html",
+      "bytes": 5424,
+      "sha256": "FA84C9532661AEDE45B4A38401CE99E21691739356E40C639EE342BC394A763C"
+    },
+    {
+      "path": "_unzipped/cheap-review-manifest.json",
+      "bytes": 679,
+      "sha256": "DFD599EAF7CC0DDE309F8D5D042322A57EA64FD1A0F387E164540876A4F048A1"
+    },
+    {
+      "path": "_unzipped/component-gallery.html",
+      "bytes": 4984,
+      "sha256": "F974965D5DB8FFD620D959859A7BA1A177A9C23365CFAF645175B861B4191F3D"
+    },
+    {
+      "path": "_unzipped/confideline-components.css",
+      "bytes": 3349,
+      "sha256": "6DC418D5FDF9E65F3D99218D0708E8A68F960E87050367A3B3AC058DCC307DAF"
+    },
+    {
+      "path": "_unzipped/confideline-runtime.asset-manifest.json",
+      "bytes": 1127,
+      "sha256": "77D21F888E77F48EA81484726C4C7B014D5CC8CFD15089D473691AEA094E67BA"
+    },
+    {
+      "path": "_unzipped/confideline-runtime.css",
+      "bytes": 987,
+      "sha256": "AF37799924E5743BE8DC4D02840CA83B3D35304AACBC0BC70AA52BF3A62FFD58"
+    },
+    {
+      "path": "_unzipped/contact-us-new.html",
+      "bytes": 9619,
+      "sha256": "49FD57FCDA33A1F9BCA294D6F58E8F2CCFB5996C11E6B78756CEF9FB4093A2AE"
+    },
+    {
+      "path": "_unzipped/content-pages.css",
+      "bytes": 8268,
+      "sha256": "8C520B232875904EBEF4DF7EF30366A81732CF556429E019C8C92B817CF440EE"
+    },
+    {
+      "path": "_unzipped/cookie-policy-new.html",
+      "bytes": 8186,
+      "sha256": "668CA2FC5476CE0144BF327D1166495EB0D33A98A603D3AECEBE60D19A4A8F03"
+    },
+    {
+      "path": "_unzipped/cookies-new.css",
+      "bytes": 2307,
+      "sha256": "358C5229B2032CBCA7F960BD6B424B9B50430F948182A45B492AADFAF1AED222"
+    },
+    {
+      "path": "_unzipped/cookies-new.html",
+      "bytes": 2451,
+      "sha256": "BEA228B7673BDC0232A7615BF1F32488B971C0A0716DBC15C20AB89C414E6F07"
+    },
+    {
+      "path": "_unzipped/crystal-and-stone-meanings-new.html",
+      "bytes": 11667,
+      "sha256": "A6389564D04C092E512DB827C637F42A2C7CAFF411F3F218BBA5D3C5F3AD1DFF"
+    },
+    {
+      "path": "_unzipped/daily-horoscope-new.html",
+      "bytes": 11497,
+      "sha256": "7F46F92C840C2B5AA9FC06E3340290EB5487BDCE6D620534274A64049E0DDAB6"
+    },
+    {
+      "path": "_unzipped/details-map.css",
+      "bytes": 3295,
+      "sha256": "7BF0B6F4156875A74A054631B6779F9C6406DE9A36E0DA4EBB2D0A664867A451"
+    },
+    {
+      "path": "_unzipped/details-map.html",
+      "bytes": 11227,
+      "sha256": "D61B76D4D34293D6C04C5F35EECAD01D78EEEA9A464EC2AA30ABF9EB95BF1E69"
+    },
+    {
+      "path": "_unzipped/email-confirmation-new.html",
+      "bytes": 12476,
+      "sha256": "238BC9DDABDFA5A9DD9B829A355EE76D9387CC4C538BD3115CF5B51CD080909F"
+    },
+    {
+      "path": "_unzipped/email-psychic-reading-new.html",
+      "bytes": 9880,
+      "sha256": "71F0B8391103E24062EAB5F9B687699F9F2A983C0068BA13B00C707939D7333A"
+    },
+    {
+      "path": "_unzipped/expert-page-new.html",
+      "bytes": 7295,
+      "sha256": "517690473A75326CDCDEDBFD94273EFF9896AB760DE31C5ECCABCA86922B52CC"
+    },
+    {
+      "path": "_unzipped/faq-new.css",
+      "bytes": 16000,
+      "sha256": "D648D05EC76DFD1E950F22471C9377C94652BB9D7DDF5E97854CAB0720134E89"
+    },
+    {
+      "path": "_unzipped/faq-new.html",
+      "bytes": 14310,
+      "sha256": "E998C73189FC673BF191F4C4D02E5A69C7EDF45C767D180579045BB79DC37219"
+    },
+    {
+      "path": "_unzipped/faq-new.js",
+      "bytes": 743,
+      "sha256": "28C100CB8DA579E3F990478AD171DC27423FE9896FB883E51E0DDF1061A7CC7B"
+    },
+    {
+      "path": "_unzipped/fertility-reading-new.html",
+      "bytes": 9811,
+      "sha256": "579A63168C3547D861C0506A2D8B610EC129EDB244539195752C185C89829188"
+    },
+    {
+      "path": "_unzipped/figma-auth.css",
+      "bytes": 97553,
+      "sha256": "2F5439A4811151ED52C305B5FAB9420E17CDCC3F8D40A8EC2B54280DA5704B4F"
+    },
+    {
+      "path": "_unzipped/figma-auth.js",
+      "bytes": 1692,
+      "sha256": "E0062F9F26A60B706BEF3C95356C1926FF68A5DF3B45C21FFFA74342C2B25DF9"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-200.ttf",
+      "bytes": 94872,
+      "sha256": "30C051F0B547252670EF3A41213EC8134DB1373EDF621187D97ED546F9959605"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-300.ttf",
+      "bytes": 94880,
+      "sha256": "8ACF416C55AE37360161A6E84FD91489B3211FFE550BA17DF750E28D0685BB93"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-400.ttf",
+      "bytes": 94972,
+      "sha256": "A13D9B41B0A471CE58F0E46D377FA3CC76615E4632C3B15EB397CAADF7A13F0A"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-500.ttf",
+      "bytes": 95060,
+      "sha256": "F433E5D333BE1128D8EC8A28B8AADD0314D10E14E4105406076666BC830FC15D"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-600.ttf",
+      "bytes": 95096,
+      "sha256": "6BAD1A774228464CC88B8B0271555B266F7A3C64A7BEDF15E165FDAB4F6AC0CE"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-700.ttf",
+      "bytes": 94928,
+      "sha256": "B9584E099E0E7F1E1E914C3037AABB9010C50346A3CE8DF5EEEEECC0563044D8"
+    },
+    {
+      "path": "_unzipped/fonts/manrope/Manrope-800.ttf",
+      "bytes": 95688,
+      "sha256": "B8F802F05B322A7345805F5B89F8BB976604CC719A91530918D5CE3C47160950"
+    },
+    {
+      "path": "_unzipped/forgot-debug-mobile.html",
+      "bytes": 3695,
+      "sha256": "224D7A7087930851C0CA2F361A1F5460AF278484516348E5B02490CEAC0C6C45"
+    },
+    {
+      "path": "_unzipped/forgot-review-board.html",
+      "bytes": 5387,
+      "sha256": "BE12D425EA9E0C2A5940EA0213C94F8AFD11EE7C657D41E8D8CD58105C199807"
+    },
+    {
+      "path": "_unzipped/forgot-review-debug.html",
+      "bytes": 6282,
+      "sha256": "CB24EFBB28D7BBC78942FAD14B08B84B78738E894DEA249D6879701F7F7EDA21"
+    },
+    {
+      "path": "_unzipped/forgot-review-manifest.json",
+      "bytes": 1139,
+      "sha256": "351E669370475F4C6A263792DA971013ECC8AC138BED84C16737DCE2D9666A15"
+    },
+    {
+      "path": "_unzipped/fortune-reading-new.html",
+      "bytes": 9807,
+      "sha256": "56F334ACF94A58A041A742AFCB4349ED295EE4D2FFBE9816DF47A98B506723EE"
+    },
+    {
+      "path": "_unzipped/free-psychic-reading-new.html",
+      "bytes": 9858,
+      "sha256": "495C4BE3BCD20434FA0BAA4F0342D68A628949FFA321617CD9B16B0088705E38"
+    },
+    {
+      "path": "_unzipped/home-frame-diag.html",
+      "bytes": 1937,
+      "sha256": "989518928807DA9F78DC5E2984FA6BC65D7DD7296B275C9B212C7C017D59D195"
+    },
+    {
+      "path": "_unzipped/home-popup-open.20260407-012944.bak.html",
+      "bytes": 87695,
+      "sha256": "951D03A166A27E11195882D95137634819DC24201F5FC07F2B480C527B39E7C7"
+    },
+    {
+      "path": "_unzipped/home-popup-open.html",
+      "bytes": 91750,
+      "sha256": "46E2D75FD52611515708C4D38CEF3F5C286AE6D7DA29ECB1A05A3F710D690CF7"
+    },
+    {
+      "path": "_unzipped/home-reverse-shell-owner.css",
+      "bytes": 10580,
+      "sha256": "2D8A36B01514BDD73A349A5E245E8978969BB732426717C0E4F9BDC3BABDFA54"
+    },
+    {
+      "path": "_unzipped/home-reverse-type-owner.css",
+      "bytes": 50047,
+      "sha256": "CB5DCE7FD66E8C9877258178793850FC3221AD7DE75BE65E43FF4B583018918D"
+    },
+    {
+      "path": "_unzipped/home.20260407-012944.bak.html",
+      "bytes": 84962,
+      "sha256": "D7CB4C607AFE63000CC69E50D56390F669FB72527D815BB675F8F93F585B46A8"
+    },
+    {
+      "path": "_unzipped/home.css",
+      "bytes": 147270,
+      "sha256": "9DF3A23BBCA85A5BFE80381916417AEE12D7259AD01656E691F3CC4AE9CF495D"
+    },
+    {
+      "path": "_unzipped/home.html",
+      "bytes": 103107,
+      "sha256": "87A44402E77DE3D26FF9E29F4103757B0C49A454F899572AD839FADE93BC14A7"
+    },
+    {
+      "path": "_unzipped/home.js",
+      "bytes": 21405,
+      "sha256": "0D9B3DDFA9CE0D827BFDE7E65BFD1BB6A2124F972D1A67A2B2D2C450F2B50E3F"
+    },
+    {
+      "path": "_unzipped/home.owner.00.css",
+      "bytes": 40646,
+      "sha256": "A97835F0A7BD10292229EF89CF35FB6441AA5994F0EB89F8DB20711846314C31"
+    },
+    {
+      "path": "_unzipped/home.owner.01.css",
+      "bytes": 42371,
+      "sha256": "34EA5D39CDF531FCD60277D01D9F8131692C707BC72326BE34525141D933061A"
+    },
+    {
+      "path": "_unzipped/home.owner.02.css",
+      "bytes": 42971,
+      "sha256": "808B574E2BB1AAFB4ADAAFD10811A40D89C98DE5D6480515641C9CDD2AD7ABED"
+    },
+    {
+      "path": "_unzipped/home.owner.03.css",
+      "bytes": 39870,
+      "sha256": "3BCFB5D38E2006E9EC508DE4EDA431E52B3568937D17E554B83C3DA27897C01B"
+    },
+    {
+      "path": "_unzipped/home.owner.04.css",
+      "bytes": 39485,
+      "sha256": "FE527C27F5FE8B0CC93FD26336E9E51A31E81990ABB2CF299479888D0CB973B0"
+    },
+    {
+      "path": "_unzipped/home.owner.05.css",
+      "bytes": 28042,
+      "sha256": "2376290C832B726165727ED1FBD7005AB069AA90AE45DD8DD7ED2F1BD1A5E929"
+    },
+    {
+      "path": "_unzipped/horoscope-detail-new.html",
+      "bytes": 6797,
+      "sha256": "02310AF08B38878156D5086E984216DEA80DE2B9DD467BAA05B977C84836A099"
+    },
+    {
+      "path": "_unzipped/img/all-psychic-chat-icon-figma.svg",
+      "bytes": 655,
+      "sha256": "1F123D3F57D7A573886DE6FAA9E2C965BB1426C84FB238404C045717F2384445"
+    },
+    {
+      "path": "_unzipped/img/all-psychic-rating-star-figma.svg",
+      "bytes": 972,
+      "sha256": "E8139A19DBF077A90A3D048C824683CB513330E31FED66D3A17FFAADE0449C80"
+    },
+    {
+      "path": "_unzipped/img/all-psychic-rating-star-purple-figma.svg",
+      "bytes": 972,
+      "sha256": "F6E0ADEF35A56605E742972549A7D821D14807D56BC45A6F1416F31A71F95128"
+    },
+    {
+      "path": "_unzipped/img/all-psychic-reason-card-decoration-figma.svg",
+      "bytes": 1632,
+      "sha256": "7417776AA66B8AEC505EA6B61154CF7DBF274B4BD574F0FC89F4C1AE17B38A86"
+    },
+    {
+      "path": "_unzipped/img/all-psychic-video-play-button-figma.svg",
+      "bytes": 2077,
+      "sha256": "03D769D2E72194A22220C3AC717A1189D04C275724990C176CAC97F5B6B00BDA"
+    },
+    {
+      "path": "_unzipped/img/aura-best-star-c76.svg",
+      "bytes": 613,
+      "sha256": "B9924F928AA20E745D54017DA194C4AA44B18E79403B67BCF983C611EBED2BEB"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/cheap-psychic-reference-map.json",
+      "bytes": 1580,
+      "sha256": "F3B391A2DD718FB516494B7C4C118D6CF556597A8BABCF999001580A0DDDE0F6"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/home-reference-map.json",
+      "bytes": 1515,
+      "sha256": "EE704BA04836D7DDEFF26F0F03FDA4784768C62B68D39FD22EE96BD73F3D4F1A"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/love-reading-reference-map.json",
+      "bytes": 2614,
+      "sha256": "883831F5F583299EA5ED501DE2BCC4DD9E4D3C9B2BA4755013C071AAC5E5E5BA"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/palm-reading-reference-map.json",
+      "bytes": 1564,
+      "sha256": "6C0500FE74A1D499F326C3A73F34D9E7921A2752DD97BFC5D45963270B6EBAA1"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/phone-psychic-reference-map.json",
+      "bytes": 1580,
+      "sha256": "4BE3A44698C6E73BB9BA590108CAD79C9EA748415D99D70076DACD0111A68798"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/psychic-reading-reference-map.json",
+      "bytes": 1608,
+      "sha256": "A95ECD4729AA94F7486477E22BC6AEC36B065748538576337144A311EC9BD6F6"
+    },
+    {
+      "path": "_unzipped/img/breakpoints/tarot-reading-reference-map.json",
+      "bytes": 1580,
+      "sha256": "61664B1E0E39A49110383E8A13EB6E6D788EE6F0528E443E8BF657F69AE3B5F1"
+    },
+    {
+      "path": "_unzipped/img/cheap-cp01-figma-chat-587-7830.svg",
+      "bytes": 789,
+      "sha256": "8390B45B69CD6A1661B85E967AB26E10757A98C4E32843E4ADED1B2B8BD7201F"
+    },
+    {
+      "path": "_unzipped/img/cheap-cp01-figma-star-81-511.svg",
+      "bytes": 1059,
+      "sha256": "F63173BAFE694E417B3B1CB195F45A804F254966C504BC71B328450778F54097"
+    },
+    {
+      "path": "_unzipped/img/cheap-need-star-917-17433.svg",
+      "bytes": 613,
+      "sha256": "B9924F928AA20E745D54017DA194C4AA44B18E79403B67BCF983C611EBED2BEB"
+    },
+    {
+      "path": "_unzipped/img/cheap-need-star-917-18394.svg",
+      "bytes": 615,
+      "sha256": "5F61DB402AEDE2DCE223EFEF8ACA4D7FD490CBE950A9EFC79B2ED1D83F44A5AB"
+    },
+    {
+      "path": "_unzipped/img/figma-source/cut13/cut13-source-crops.manifest.json",
+      "bytes": 6098,
+      "sha256": "50A73DB0D722C28F912013A7A4B0D3D3B77FF289C2E18CC60A63B40701C321F8"
+    },
+    {
+      "path": "_unzipped/img/forgot-export-source.svg",
+      "bytes": 5392367,
+      "sha256": "EA2576635DD68B962F9F51A8917741DE06F77A3D7D828EFFBD417C8F3511FAE7"
+    },
+    {
+      "path": "_unzipped/img/icons/dark-theme.svg",
+      "bytes": 396,
+      "sha256": "778CCC96BA5DA4B25D2A0D3033FC96D2107141DAA50BC1D44DCF285A2A174857"
+    },
+    {
+      "path": "_unzipped/img/icons/light-theme.svg",
+      "bytes": 905,
+      "sha256": "D29F8B9E4A20100E1FEB02565B14997F389E4C01E736A24F2024F7C04ACB5BE3"
+    },
+    {
+      "path": "_unzipped/img/login-decor-figma.svg",
+      "bytes": 1639,
+      "sha256": "AF2579025C84F7E0BC5B936D6843CFD1078BFA985FAD2ABF2DF56CA458B50C69"
+    },
+    {
+      "path": "_unzipped/img/login-toggle-icon.svg",
+      "bytes": 1203,
+      "sha256": "62DB02901CC6FDA287D6402D1D13288304C1EB529A39033953C4DE6E91646B3B"
+    },
+    {
+      "path": "_unzipped/img/love-reading-best-online/1200/917-20863-best-online-ellipse-background.svg",
+      "bytes": 446,
+      "sha256": "146526A5965E62A55970A0C3195D9FAB1F5CC8F077BAD2A3B839D0D734DC1D3E"
+    },
+    {
+      "path": "_unzipped/img/love-reading-best-online/320/917-21813-best-online-ellipse-background.svg",
+      "bytes": 446,
+      "sha256": "5EDC73F0468F8F6703953858B9EDF67A252A43A3306FEC9022B51A8B88FB5B6E"
+    },
+    {
+      "path": "_unzipped/img/love-reading-best-online/576/917-21579-best-online-ellipse-background.svg",
+      "bytes": 446,
+      "sha256": "9CD5351309AE1347746D2FAC9421A565356681FF6A8BF16B8D7881DBF443F15D"
+    },
+    {
+      "path": "_unzipped/img/love-reading-best-online/768/917-21343-best-online-ellipse-background.svg",
+      "bytes": 446,
+      "sha256": "B286549B095D4616578FC98F2253BB9598892959769B84F7D68B809433286B5D"
+    },
+    {
+      "path": "_unzipped/img/love-reading-best-online/992/917-21100-best-online-ellipse-background.svg",
+      "bytes": 446,
+      "sha256": "146526A5965E62A55970A0C3195D9FAB1F5CC8F077BAD2A3B839D0D734DC1D3E"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/best-online-ellipse-1200.svg",
+      "bytes": 446,
+      "sha256": "146526A5965E62A55970A0C3195D9FAB1F5CC8F077BAD2A3B839D0D734DC1D3E"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/best-online-star.svg",
+      "bytes": 251,
+      "sha256": "438BC0B1D58E00869EC30C46A951A1F0A30AA7A16AEF39B040B7206D1710D6F7"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-ellipse-1200.svg",
+      "bytes": 188,
+      "sha256": "F0A30B64729487A26B7EB98843E3511B3B7F20F9916CF9655D47141879CE883F"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-ellipse-576.svg",
+      "bytes": 357,
+      "sha256": "BADE157956B44A0FB5C3C8F5274F276779B267D07F44368CD28BFB1C97604EFC"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-ellipse-768.svg",
+      "bytes": 351,
+      "sha256": "EE22F292B793C2C34A7914142C7CBDD2FBDDD0E3C7A5D3BD6547277E5FE39953"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-ellipse-992.svg",
+      "bytes": 393,
+      "sha256": "57578B0928C925C0F21A183319EDE4917B5031E84AA14B83D4330C989145343E"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-frame-320.svg",
+      "bytes": 1516,
+      "sha256": "E322E221AE89FFED79FAD5D9DD47566971A6EE7E0E8EA36A8183646B785C2E6B"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-star-576.svg",
+      "bytes": 1014,
+      "sha256": "697A220BE7B8F3148BBB6F06485BDF91CF890AC966C0CA0A120E06D485CED6F4"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-star-768.svg",
+      "bytes": 1047,
+      "sha256": "781521FC4D51BDEFDF8627284A7FA43A975BF2BDF056CBCAC9EF3042BDF809E2"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/clients-love-star-992.svg",
+      "bytes": 1063,
+      "sha256": "FF816BD69C6E21B8471AB67B092CB31C91E736D5B0EFD28AEBDF63D41FEC60DD"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/rating-stars-c76-576.svg",
+      "bytes": 4778,
+      "sha256": "D74FC66D0046F466A96DE87F9F14CA5DDA66154A60DC849084BDFC14EAED2100"
+    },
+    {
+      "path": "_unzipped/img/love-reading-source/review-star-c76-576.svg",
+      "bytes": 1110,
+      "sha256": "FB91ADDEE5642CA7F959CD020372C7CA23F88BEC2AE66215B48E87A73B578C9D"
+    },
+    {
+      "path": "_unzipped/img/prn-star6-figma.svg",
+      "bytes": 332,
+      "sha256": "A9BB72F865F50CD3704D3122E31B874F823F0A3D06129E156E15DF9132CAE509"
+    },
+    {
+      "path": "_unzipped/img/prn-star7-figma.svg",
+      "bytes": 461,
+      "sha256": "A8FD7F6EC28AEF78CDC28768F0D0F163912614C99124415AB85399BB31CD175A"
+    },
+    {
+      "path": "_unzipped/img/prn-trust-star-favorite-source.svg",
+      "bytes": 999,
+      "sha256": "1C23222DEEAB155291157D36600C4AEA5419C8F950E8005384E78C9C42986D8A"
+    },
+    {
+      "path": "_unzipped/img/sprite.svg",
+      "bytes": 12099,
+      "sha256": "3FBED6C000B30C4778E58B5B25814406C5C682EB9812A3B357435C0B1927480C"
+    },
+    {
+      "path": "_unzipped/img/taurus-intimacy-symbol.svg",
+      "bytes": 1497,
+      "sha256": "2AD4269D3D3C5E387905ED63B4100635DDF9D0AA8197C9B45148FE099F154BF2"
+    },
+    {
+      "path": "_unzipped/img/topic-1.svg",
+      "bytes": 582,
+      "sha256": "C7E9C5815D2B76BB94C18EB181AF88CB9112DC298D48B29E2D905E70F14EBA68"
+    },
+    {
+      "path": "_unzipped/img/topic-2.svg",
+      "bytes": 744,
+      "sha256": "E290ACBC05F583E169F0F37364ADB5638AC5ED6EF540740B37EECBEFAAD2EAC6"
+    },
+    {
+      "path": "_unzipped/img/topic-3.svg",
+      "bytes": 800,
+      "sha256": "D456712C8EA48323338E32587D7DB20EC778A5CE21A339A0E9642A86065E2EC7"
+    },
+    {
+      "path": "_unzipped/img/topic-4.svg",
+      "bytes": 849,
+      "sha256": "40B36F5E74730B1303EFBC1CE5FB1F332CFF94ACC9C52C6EB5818D2DBEB4A466"
+    },
+    {
+      "path": "_unzipped/index.html",
+      "bytes": 56,
+      "sha256": "D1AE8C76C9AB785E4DF10CCA28212687D4AD37C9ABD216EB203DC45DB418B9EC"
+    },
+    {
+      "path": "_unzipped/jquery.js",
+      "bytes": 342794,
+      "sha256": "D2D35982EEBAAF530C6812557C8750E6096D3EF248F30C40FFB97C93158EF915"
+    },
+    {
+      "path": "_unzipped/language-toggle-gallery.html",
+      "bytes": 3420,
+      "sha256": "7E031DC9466737B4D9992DEA7AF38BD978EEA8FEEB4F86BAB6B57ED3C3258BED"
+    },
+    {
+      "path": "_unzipped/life-path-calculator-new.html",
+      "bytes": 11553,
+      "sha256": "A3B2C14D077AEBF8DA33402A8C45C42E4C305266C641916EE4828DA2BDB848F8"
+    },
+    {
+      "path": "_unzipped/live-chat-rules-new.html",
+      "bytes": 8295,
+      "sha256": "D2F56F1CBD2A3D98BC0D5CDCFEFED60B2B64C54E2995FE710FDA9D05B447138A"
+    },
+    {
+      "path": "_unzipped/lk-chatroom-concept-proposal.css",
+      "bytes": 12609,
+      "sha256": "7EB828CD125824DDDFFD4F642E0D7947DB8BC049DE7FF82DC2A06A85FF72735D"
+    },
+    {
+      "path": "_unzipped/lk-chatroom-concept-proposal.html",
+      "bytes": 17188,
+      "sha256": "1627E5A14989F6A30FC3B1FF06549899C4DE683BB244273DEF5421FDC8C7251D"
+    },
+    {
+      "path": "_unzipped/lk-concept-new.html",
+      "bytes": 6047,
+      "sha256": "49354553B84BA0C4D7EFF6D0FD6B63A75CEF0A16D195A11A4D932177B0682C93"
+    },
+    {
+      "path": "_unzipped/lk-psychics-dashboard-proposal.css",
+      "bytes": 13875,
+      "sha256": "974D494B839445159207CE8B0F22E90614F1060C363B176B53023B5AC7F3F5A8"
+    },
+    {
+      "path": "_unzipped/lk-psychics-dashboard-proposal.html",
+      "bytes": 15230,
+      "sha256": "CA30A777D0AD709C8ED4349FE0CFDEF9AF3A9FEEEA06A9F6F45CCFD82E13F0B5"
+    },
+    {
+      "path": "_unzipped/login-debug-mobile.html",
+      "bytes": 4393,
+      "sha256": "B151E8D846BCCF62F5F78AC87DBD368FAE916C0C0CFF24F62F07584060C0CE09"
+    },
+    {
+      "path": "_unzipped/login-quad-view.css",
+      "bytes": 8092,
+      "sha256": "2ABE5F8231DC50C48FF351BD67BA8A55165D8BF81D079B940C21D1BF092EA0F8"
+    },
+    {
+      "path": "_unzipped/login-quad-view.html",
+      "bytes": 5420,
+      "sha256": "16498B48B8D78935EE778F46EC23115964B860A0591986F9A80C42E64A11D2E4"
+    },
+    {
+      "path": "_unzipped/login-review-board.html",
+      "bytes": 5586,
+      "sha256": "E92C0709F5153B2BF50BD3E96A0B02733DA5602872B77B066FE97B564778CD01"
+    },
+    {
+      "path": "_unzipped/login-review-debug.html",
+      "bytes": 6374,
+      "sha256": "96FAE5A7D4AE6C1FEAB4C3604367C7C7E3BD890F3B176502D500AD46663F40E9"
+    },
+    {
+      "path": "_unzipped/login-review-manifest.json",
+      "bytes": 621,
+      "sha256": "97FA60D6D0E6E1AA72C34AB7B1F20EC386B499A95D21D867A04B2E3F866B4F60"
+    },
+    {
+      "path": "_unzipped/login-slice-lens.css",
+      "bytes": 4423,
+      "sha256": "7129F293F8B476C69485F6A8DFBEEC19561D08CAD0DD4D6D8CC06DC97E18413A"
+    },
+    {
+      "path": "_unzipped/login-slice-lens.html",
+      "bytes": 4174,
+      "sha256": "00462C2BF4C13FB0E8791CFD31D79643882F6FE15411BC2CA4BD88855D8E7126"
+    },
+    {
+      "path": "_unzipped/login.html",
+      "bytes": 4495,
+      "sha256": "8872C676D741BB9F287487C5874162CA2734D6BB9CAADBBBB918431F908C2689"
+    },
+    {
+      "path": "_unzipped/lost-objects-reading-new.html",
+      "bytes": 9845,
+      "sha256": "348C83441D1E5FE9B36D8E7F9ECC3A0C7BC59F8375A32F9DDD232B4D7B55275F"
+    },
+    {
+      "path": "_unzipped/love-reading-new.html",
+      "bytes": 39489,
+      "sha256": "874FBC649842DE04B0EE6DFE1226EDD539557C9BEE347E94BFEC92AEFD4ED0FF"
+    },
+    {
+      "path": "_unzipped/love-reading.01-core.css",
+      "bytes": 36978,
+      "sha256": "6265C8F4331E4D47AB6F09BF273793D95A9C1693AEFC8F39C10C15A6F1E9E877"
+    },
+    {
+      "path": "_unzipped/love-reading.02-responsive.css",
+      "bytes": 31750,
+      "sha256": "EC2014F5F2B43C09D74655234426606135F4F6253F95077794A34E9D922B72F5"
+    },
+    {
+      "path": "_unzipped/love-reading.css",
+      "bytes": 77600,
+      "sha256": "80F0C74CC3D7DF626490DA285CF7A14E11E29BB2D52ECB0D22E6C5C0DD00E46A"
+    },
+    {
+      "path": "_unzipped/love-reading.owner.00.css",
+      "bytes": 44611,
+      "sha256": "DAFF3B5BD477260D1F385F26CF31A2EDF9BA6ABAF44C6EB1D1CA3FFDDC90BB5B"
+    },
+    {
+      "path": "_unzipped/love-reading.owner.01.css",
+      "bytes": 34806,
+      "sha256": "32A3B6CC6FAE6DB4DFEF4FF8E18EC941B57D04D9DD6FD2C024EC4DE45436CC25"
+    },
+    {
+      "path": "_unzipped/man-zodiac-sign-traits-new.html",
+      "bytes": 11451,
+      "sha256": "F7FA87A526598898358B1C40DAC3CEC8A9922FE1A81508DB724650861BD77B92"
+    },
+    {
+      "path": "_unzipped/menu-new.css",
+      "bytes": 4424,
+      "sha256": "415227A7729BF77B9112013F0EAD43B9BEC82988512DF651E065C27A9BC4678F"
+    },
+    {
+      "path": "_unzipped/menu-new.html",
+      "bytes": 3723,
+      "sha256": "18322AAED4AE85A1FF13685B0C8219B9BC3C6AB46559F59B5B541B496E1556CA"
+    },
+    {
+      "path": "_unzipped/menu-open-new.css",
+      "bytes": 3580,
+      "sha256": "13E565EAB48A1E60BEEAD546AA40A0039237C49BD073EF4F65CCB3507CEAA560"
+    },
+    {
+      "path": "_unzipped/menu-open-new.html",
+      "bytes": 3705,
+      "sha256": "7A6C3CA14C2D72FDE5EE608C784E249065BBE0BFF9A4232596D4185E74716A09"
+    },
+    {
+      "path": "_unzipped/micro-components-lab.css",
+      "bytes": 2262,
+      "sha256": "2C6FA04C21C7FD58C7B3DBAE1A061A5CA2ABE2E0D3C2FA9C0BD64BC23B264255"
+    },
+    {
+      "path": "_unzipped/micro-components-lab.html",
+      "bytes": 3289,
+      "sha256": "DFFD604794D4048B235644B61B2428CA7C43C06788E761BA02E41FD764FAFC7B"
+    },
+    {
+      "path": "_unzipped/nebula-index.css",
+      "bytes": 4138,
+      "sha256": "F79877BD48FBEEA139E894D13CAE3B4ACC73FB05E11DA0BA50277E3D703459C2"
+    },
+    {
+      "path": "_unzipped/nebula-index.html",
+      "bytes": 3631,
+      "sha256": "67D7C4C2D577CA4FE630114F4AEF8E6841E843139786184C3ABEA1367358D30F"
+    },
+    {
+      "path": "_unzipped/nebula-lk-paid-funnel-desktop-mockups.html",
+      "bytes": 37641,
+      "sha256": "81DC21884028EDBFF7BC0077B92BA6267DD2C093FB9AB70E7217567EA4E3BAFD"
+    },
+    {
+      "path": "_unzipped/nebula-screen-compare-board.html",
+      "bytes": 34677,
+      "sha256": "343FF53800C948AFEE5DD8C42E2AE3F2334E66ED1A274886F7BE8169BC835257"
+    },
+    {
+      "path": "_unzipped/nebula-source-truth-board-v2.html",
+      "bytes": 17499,
+      "sha256": "43A3A121B955756CD1808C00C6DCF7A07E8FC855E441E2BC32464C11B4096DBD"
+    },
+    {
+      "path": "_unzipped/nebula-source-truth-registry.v2.json",
+      "bytes": 9914,
+      "sha256": "BDEF9FDFC4E5FBD663289DA6C9E31DB31CDA29A0C639389D78662215F8085D87"
+    },
+    {
+      "path": "_unzipped/newsletter-capture-new.html",
+      "bytes": 11909,
+      "sha256": "B1465D2893DFE01886D0B42F6BD2BCBD67D6585C10A7F2E0F600DAD9867BB849"
+    },
+    {
+      "path": "_unzipped/numerology-reading-new.html",
+      "bytes": 9833,
+      "sha256": "0A1711BF94AB12B8427C150C38F0704F122C148FB45AA3C0326EB246BE6EEBF1"
+    },
+    {
+      "path": "_unzipped/oracle-nebula-chat-designer-minimum-20260530.html",
+      "bytes": 13621,
+      "sha256": "8F3AFC4346C5DE510A77B384352851AE257777C55D5FFBCA26B40CE636244FE4"
+    },
+    {
+      "path": "_unzipped/oracle-nebula-designer-gap-brief.html",
+      "bytes": 14536,
+      "sha256": "04D5C654BF70DC59AC73834EF072C7CFDA2C2CF05BCE4400F7BA2A8BBEB571AF"
+    },
+    {
+      "path": "_unzipped/oracle-nebula-lk-coverage-register.html",
+      "bytes": 7054,
+      "sha256": "331AB833D0E89FEE1C76096A2366F3EDF171101290D912AB526D2B5AA6DB4465"
+    },
+    {
+      "path": "_unzipped/oracle-nebula-project-map.html",
+      "bytes": 9380,
+      "sha256": "557372825259680CF84B7C1EA31B4BCBB178AE6518295045CB3A7A113B3DD8D3"
+    },
+    {
+      "path": "_unzipped/oracle-shared-shell.00.css",
+      "bytes": 39272,
+      "sha256": "919182DC80E0F258EA0C231271460E47C6BD7BAADFD54F5C41C8B5D5750E136F"
+    },
+    {
+      "path": "_unzipped/oracle-shared-shell.01.css",
+      "bytes": 25186,
+      "sha256": "4644F571D8A38A604B7E42807E60FD2BC85F41F0E9016A825B9F0FA3F2DF4140"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/aura-reading.css",
+      "bytes": 3167,
+      "sha256": "0EE90A1B06932DA880AE384E94E960287114FBB8F746ACFD00B969C980911784"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/blog-input.css",
+      "bytes": 9171,
+      "sha256": "EA3672DE760E2C6BF32F5C7D8978BBB4DB5B0F910E11EEFED3BCC26D7A334C06"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/blog.css",
+      "bytes": 15737,
+      "sha256": "67FC3217DEB8BCFC5562862AC06FF656B0E9BD52F39E6C4C911F18650BD21246"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/love-reading.css",
+      "bytes": 17103,
+      "sha256": "9B9BBF2481C7CCE9EC4DEDBD0CEB3B0F523C294BDC44A88045A75FA006B37308"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/palm-reading.css",
+      "bytes": 2273,
+      "sha256": "6495F97E3B879DEF398381EFCCC667D769DA4496EA38854925CA8259808AB199"
+    },
+    {
+      "path": "_unzipped/oracle-shell-locks/phone-psychic.css",
+      "bytes": 18932,
+      "sha256": "AC917D13BF273E1A3D51399B28B09AF057BFC3A9F0B794664071C0F85B8B0DA5"
+    },
+    {
+      "path": "_unzipped/palm-reading-1200-review-board.html",
+      "bytes": 4805,
+      "sha256": "9B91C6DFE248C3CD2A87256BE8CE5EC7D908183F2E4D64F047FB3F154C99D015"
+    },
+    {
+      "path": "_unzipped/palm-reading-1200-review-manifest.json",
+      "bytes": 709,
+      "sha256": "469804C9E534834D7C3328E597EB08157721459191C3350E4AD11186F6B2D52D"
+    },
+    {
+      "path": "_unzipped/palm-reading-320-review-board.html",
+      "bytes": 4798,
+      "sha256": "1183209E0F4D1B533D968BDAC0F0DFE1D8C184906A822613D417186910689807"
+    },
+    {
+      "path": "_unzipped/palm-reading-320-review-manifest.json",
+      "bytes": 706,
+      "sha256": "2AFF40E65A20B1EB4AEBEB6F5C67CCDB8F4CBB9C0FDEB0DBC9423B889B4F4154"
+    },
+    {
+      "path": "_unzipped/palm-reading-576-review-board.html",
+      "bytes": 4798,
+      "sha256": "9DF8C4A281AE9A28BC9533BD4C0AABE3E209FBF96120A1679E64DBBF821A6B25"
+    },
+    {
+      "path": "_unzipped/palm-reading-576-review-manifest.json",
+      "bytes": 706,
+      "sha256": "BD8A07D30F42A33E7F2AD4B8A1A758ECEB9145E7BBBDE5D505A6EE6D2E1E5A19"
+    },
+    {
+      "path": "_unzipped/palm-reading-768-review-board.html",
+      "bytes": 4798,
+      "sha256": "BF1B91FA8FEF5CF52E7E1DE317A29CAF33CEC044224652710E5D0FFEBC0FF259"
+    },
+    {
+      "path": "_unzipped/palm-reading-768-review-manifest.json",
+      "bytes": 706,
+      "sha256": "BCBABCEC23D69FE07A7D654DD9A66C47D0C220957CC8C24E3AB5396B8763FDA4"
+    },
+    {
+      "path": "_unzipped/palm-reading-992-review-board.html",
+      "bytes": 4798,
+      "sha256": "C6A174555E081B72FEEB39AC03A24E223F385707D40CE5446F1FF49135DB09C1"
+    },
+    {
+      "path": "_unzipped/palm-reading-992-review-manifest.json",
+      "bytes": 706,
+      "sha256": "CDE363E6D83F65F548C0B9A29A08844A61D2FED641FBDCA32AFC0CC83E11FC8B"
+    },
+    {
+      "path": "_unzipped/palm-reading-new.html",
+      "bytes": 19062,
+      "sha256": "B55709E370F48042061EDF87C1B9573FE97187FF8AF32F21A3E949C5F797377D"
+    },
+    {
+      "path": "_unzipped/palm-reading-scanner-new.html",
+      "bytes": 9855,
+      "sha256": "9954B71D5F71E47A9D7FBFBA9C8BC6589FA1E3B443E18BD6D8FDD4ABD14065BB"
+    },
+    {
+      "path": "_unzipped/palm-reading.css",
+      "bytes": 27923,
+      "sha256": "47E71A11313027D35640840CC0A9193CC3D0B4C9A5D4F4E9417F57269B968FEB"
+    },
+    {
+      "path": "_unzipped/palm-reading.js",
+      "bytes": 1871,
+      "sha256": "FD9E85EC877A3E6AB1E4F8B451A880A54C47B28450368027FC887F61C19BB2EF"
+    },
+    {
+      "path": "_unzipped/palm-reading.owner.00.css",
+      "bytes": 29242,
+      "sha256": "14F8519CBC74056443DBDB5587DA3B320F30D35DBDCE726C3890AFE27499ED1F"
+    },
+    {
+      "path": "_unzipped/palm-review-board.html",
+      "bytes": 5610,
+      "sha256": "38585E388BD44D3B0FFD9272EF16D1E0B753D7DC46F5B9B72754FFA893B3603D"
+    },
+    {
+      "path": "_unzipped/palm-review-debug.html",
+      "bytes": 6370,
+      "sha256": "CD7AF3D1AE7825CD95010C4C58B46562587D21C04CEF364886791436A49BCB2E"
+    },
+    {
+      "path": "_unzipped/palm-review-manifest.json",
+      "bytes": 665,
+      "sha256": "61A314D85169CDEBCF9B3D4B5A19D2567E0E13D9298C04CCE3A348F854002E17"
+    },
+    {
+      "path": "_unzipped/past-life-reading-new.html",
+      "bytes": 9857,
+      "sha256": "3C6D124DD0FA341B2A433926A5C135983C3884581239E157F31C68724B1FD21D"
+    },
+    {
+      "path": "_unzipped/payment-modal-new.html",
+      "bytes": 13732,
+      "sha256": "BE035BCAE5ABDEC54F8A0A0323E02B019AFD06BAF161BCBAAC7BA97BF93A9ACA"
+    },
+    {
+      "path": "_unzipped/payment-terms-new.html",
+      "bytes": 8427,
+      "sha256": "58C45F275B4928A95FF08EF18DEC017E5950D7FDF6705B0C02225D1160BF817D"
+    },
+    {
+      "path": "_unzipped/phone-confirmation-new.html",
+      "bytes": 12496,
+      "sha256": "D06946012DF1A9BA5A08E664D8AAEB57B3257376B607404D65114654205F6393"
+    },
+    {
+      "path": "_unzipped/phone-psychic-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "21B4EC16BE759361816DCC6245DD1CF1844A7EF0C5AF0A1370FEE8AE184A6FCD"
+    },
+    {
+      "path": "_unzipped/phone-psychic-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "0D183BB5A7AB97B0487A2505D85D8F8ECE93E79A51A521C0422A835BF68D0181"
+    },
+    {
+      "path": "_unzipped/phone-psychic-320-review-board.html",
+      "bytes": 4804,
+      "sha256": "27A7690CCA7C56C4ABA6D341C06D11716FE7EF492268E9DA311DA9A93787740F"
+    },
+    {
+      "path": "_unzipped/phone-psychic-320-review-manifest.json",
+      "bytes": 712,
+      "sha256": "3621B562F1D79644DF2178E0E334939B23FE98D39CC0E828C5C8992E2219A824"
+    },
+    {
+      "path": "_unzipped/phone-psychic-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "27A12E385B344FAE63585ACF8F57738754F22B5158B84C5C8107C67259633508"
+    },
+    {
+      "path": "_unzipped/phone-psychic-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "A8A342A633BB5BC11CC84C045893E500CE496CFB8C04EDF8FA6A6F0832248FD9"
+    },
+    {
+      "path": "_unzipped/phone-psychic-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "2AE851BD9C0A6FDA9DA221A411777E314A952B98558FA0E929084BDD4FF7E319"
+    },
+    {
+      "path": "_unzipped/phone-psychic-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "C74856BA828EBB4A5290A12FD69F3D6103182AF0C22F8DE3F583EE202F2CDBF5"
+    },
+    {
+      "path": "_unzipped/phone-psychic-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "09DC0C21004C0DD683B401C56EE14299D5947FD910D5456EA5E5B08310F97A10"
+    },
+    {
+      "path": "_unzipped/phone-psychic-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "670AD02DD127E2D67BB12E3EEFCC94FE73AFF4BEBB21EBDEFB362B70B956030C"
+    },
+    {
+      "path": "_unzipped/phone-psychic-new.html",
+      "bytes": 42525,
+      "sha256": "490150FDAB755F0B652F16250AF26570DD76A095FD7090BB7952489EF8039D3F"
+    },
+    {
+      "path": "_unzipped/phone-psychic.01.css",
+      "bytes": 35748,
+      "sha256": "DBF62FC9F9DD1CEA54B10DE985B817CC74B60AE8FBA2E2D52EB38C15715F7AF9"
+    },
+    {
+      "path": "_unzipped/phone-psychic.02.css",
+      "bytes": 34578,
+      "sha256": "C93D3C37C29EEEABA6392FC4277ECAF385F7642EC9EE2DDCE60BCA0C966DEA47"
+    },
+    {
+      "path": "_unzipped/phone-psychic.03.css",
+      "bytes": 33722,
+      "sha256": "5EC75C6641D67C8B704378C2E847E4C70D7BD658577F0090CB9E2C370BD0C549"
+    },
+    {
+      "path": "_unzipped/phone-psychic.css",
+      "bytes": 31864,
+      "sha256": "E25D512F5BB658654F1ABF24B91CDB22F9C8C74D1BC2B287F9061B06ED96623A"
+    },
+    {
+      "path": "_unzipped/phone-psychic.js",
+      "bytes": 1908,
+      "sha256": "A407EF1457E1CF474862B38AAD6916C18042A52065294AD82A55F1AF89848EB2"
+    },
+    {
+      "path": "_unzipped/phone-review-board.html",
+      "bytes": 4742,
+      "sha256": "66E6B7978B1F99D5D466DC05C588848773654B258896B60DAAE8F02708171E51"
+    },
+    {
+      "path": "_unzipped/phone-review-debug.html",
+      "bytes": 5407,
+      "sha256": "1368710D5700B6D9C7B07905BC8E3483D630FFF2BA517BA1C6765C295C68F0E0"
+    },
+    {
+      "path": "_unzipped/phone-review-manifest.json",
+      "bytes": 679,
+      "sha256": "D1C3838FF9420F0029E9812B459F3E39CF11D95CFBF71A1DE240FFE479CF2F0D"
+    },
+    {
+      "path": "_unzipped/play-button-new.css",
+      "bytes": 689,
+      "sha256": "5513AFFEB72DE4C8CC7AC9C527C871C1188F5EE776B0C43E44C9A4192F852559"
+    },
+    {
+      "path": "_unzipped/play-button-new.html",
+      "bytes": 693,
+      "sha256": "15A982F87B1A1FFE5220719726DD8947533371CF83473AB2B30879DE633C3E51"
+    },
+    {
+      "path": "_unzipped/privacy-policy-new.css",
+      "bytes": 22755,
+      "sha256": "7A25BCDFEA3DE2B2EC21A609C4EA298FFA0B07A65198948E7DC21E90271A5405"
+    },
+    {
+      "path": "_unzipped/privacy-policy-new.html",
+      "bytes": 46683,
+      "sha256": "578BED1C01ECA24F36CAD95833FFAF31DDBA8220945D5881789332811C3D091E"
+    },
+    {
+      "path": "_unzipped/product-breakpoint-matrix.css",
+      "bytes": 3501,
+      "sha256": "E6CF6DED6760DA7D13C02F9CE5C83FC7F0E7CE9B4435781B0531F12BCE4CBC91"
+    },
+    {
+      "path": "_unzipped/product-breakpoint-matrix.html",
+      "bytes": 3093,
+      "sha256": "CE0EB1C8B06F7FCE4D2FEA3FE7E5980AB71C872FAF86808007FC16E30AED8402"
+    },
+    {
+      "path": "_unzipped/product-breakpoint-matrix.json",
+      "bytes": 6562,
+      "sha256": "CBE129893C98F6A63C0341A8A7EA54C36859173833935AED3D69A17EC9E435F5"
+    },
+    {
+      "path": "_unzipped/profile-user-new.html",
+      "bytes": 5617,
+      "sha256": "D9D6F9ACC4E88452052FA0FC7E8AA886A721D5B7E71C1B600F682EECFC99D6B6"
+    },
+    {
+      "path": "_unzipped/psychic-chat-new.html",
+      "bytes": 9811,
+      "sha256": "726A29F863F85E2BE2DC845862B073370F1D79B0132A1AFEBD13D977E7EA6B25"
+    },
+    {
+      "path": "_unzipped/psychic-near-me-new.html",
+      "bytes": 9805,
+      "sha256": "5DB48CDD7C7E9DF2BCD035889E65DEB8AB1EA807C485BF260B9BA71B22E7E760"
+    },
+    {
+      "path": "_unzipped/psychic-reading-1200-review-board.html",
+      "bytes": 4816,
+      "sha256": "8C4B444E489B8E455DF4E62E628F7F9F95CFF1DF9C0A3B0FA8685B1D25963DD3"
+    },
+    {
+      "path": "_unzipped/psychic-reading-1200-review-manifest.json",
+      "bytes": 722,
+      "sha256": "FFB55E50419C672BD17C1BBEB3A2008E9A90F2E576B4C2299B233D61CCEFD9A5"
+    },
+    {
+      "path": "_unzipped/psychic-reading-320-review-board.html",
+      "bytes": 4810,
+      "sha256": "9D11D4A0D861061A3A77F759D3946F0A8330343C28484ACEDAE4EE0014299E17"
+    },
+    {
+      "path": "_unzipped/psychic-reading-320-review-manifest.json",
+      "bytes": 721,
+      "sha256": "E1D5EE1C8051FA9EAA840440F2B53ED62AAAA5FB82D4A041E7F953F7AC288D91"
+    },
+    {
+      "path": "_unzipped/psychic-reading-576-review-board.html",
+      "bytes": 4810,
+      "sha256": "7245BBCDE3B532261DFCFE93AC2B9C189267B9DA0CA4E5A97968B14984639551"
+    },
+    {
+      "path": "_unzipped/psychic-reading-576-review-manifest.json",
+      "bytes": 721,
+      "sha256": "E6D30EE6B5D699971D8B929E6C93D4AF7509D79AF8938F240F9C752F88D90A10"
+    },
+    {
+      "path": "_unzipped/psychic-reading-768-review-board.html",
+      "bytes": 4810,
+      "sha256": "02454520D866A8C171BDAA7A97A0AC4A52C3BEBC390F441854B6520CD27CAD1A"
+    },
+    {
+      "path": "_unzipped/psychic-reading-768-review-manifest.json",
+      "bytes": 721,
+      "sha256": "CF44102B98716AA1BBC45CE44780519C75798D7609C18DB7077919BFC17E4395"
+    },
+    {
+      "path": "_unzipped/psychic-reading-992-review-board.html",
+      "bytes": 4809,
+      "sha256": "B1CDF38B00E59390F7F1FD6432EEFE59D6130204EBFD8AF564168B6215C25512"
+    },
+    {
+      "path": "_unzipped/psychic-reading-992-review-manifest.json",
+      "bytes": 719,
+      "sha256": "7DCAFB4B009066BD9919BAE1A1579E0D480FCFD9E57BB52C53D218969FD938E0"
+    },
+    {
+      "path": "_unzipped/psychic-reading-content.css",
+      "bytes": 42502,
+      "sha256": "2B8C232D445263962645CC9A59969C6DF24EC2FC3D88AA415FB3C5A2F94FA3E3"
+    },
+    {
+      "path": "_unzipped/psychic-reading-new.css",
+      "bytes": 41400,
+      "sha256": "2510B82CEA90089F0FB8A9B4F85DD561256F46C1BAD0513CCF8EFE129D80BF6B"
+    },
+    {
+      "path": "_unzipped/psychic-reading-new.html",
+      "bytes": 45530,
+      "sha256": "BB7CA64F85AD72D78E9F3C8881F8F8F7E0E437C922E2B917E8901EC129D421DC"
+    },
+    {
+      "path": "_unzipped/psychic-reading-new.js",
+      "bytes": 23,
+      "sha256": "CADC98F0056B98D5DFB9BD02CEC33D53BEA6F390006314E9F7F9E5C1B729E9F6"
+    },
+    {
+      "path": "_unzipped/psychic-reading-responsive.css",
+      "bytes": 41154,
+      "sha256": "01BCF781D1C9AA18F944F6BBBEA13FD1945B85FE875236F3ACD8A22AB124E569"
+    },
+    {
+      "path": "_unzipped/psychic-reading-source-locks.css",
+      "bytes": 40475,
+      "sha256": "50CC6A9AC30E73D550C54FF7C292EC73903A15A962D821D416B66BBFD2BF6C9B"
+    },
+    {
+      "path": "_unzipped/psychic-review-board.html",
+      "bytes": 4750,
+      "sha256": "6D1F5A96AFC2F0D9B5333425C82159E118293C7044ABBD8A81EF344C99410499"
+    },
+    {
+      "path": "_unzipped/psychic-review-debug.html",
+      "bytes": 5424,
+      "sha256": "B3937919F4A4AFEE4DB373509B44142D7FC14E608B74B661DD5F9552D70EF3E6"
+    },
+    {
+      "path": "_unzipped/psychic-review-manifest.json",
+      "bytes": 687,
+      "sha256": "B46E119E11396B126C33B36CA153EF9A3C746A0D0490AA3693870DC5996684D0"
+    },
+    {
+      "path": "_unzipped/psychic-transform-diag.html",
+      "bytes": 2298,
+      "sha256": "085F2A7CB88A2E7A902B6BEB6905D879F4AFD324CC43BACDAAAEE40BCECC51EC"
+    },
+    {
+      "path": "_unzipped/public-offcanvas.css",
+      "bytes": 8404,
+      "sha256": "0EDFE9FC3DDA8A25E628DB11FDE328D9B23ECD5851C71CD623487B1B8D7CF387"
+    },
+    {
+      "path": "_unzipped/referral-program-new.html",
+      "bytes": 9771,
+      "sha256": "16D4FDA44682508D5DCCEE422C987C5AB960F453C07669CD79CAADF984126238"
+    },
+    {
+      "path": "_unzipped/refund-policy-new.html",
+      "bytes": 8381,
+      "sha256": "23E411602743809A8582FC240F808DE35694633D7F2C2C2843EEB8809FF091F4"
+    },
+    {
+      "path": "_unzipped/responsive-state-gallery.html",
+      "bytes": 6400,
+      "sha256": "059295626A4FB0E0CEA7AC8B05024A4A6393CA0AE813D212BD2D7C052C5E24F3"
+    },
+    {
+      "path": "_unzipped/review-card-new.css",
+      "bytes": 840,
+      "sha256": "F4237DD558686E969C55766050506861FE1E5C58B53BD4FDEDA64A9E763E4606"
+    },
+    {
+      "path": "_unzipped/review-card-new.html",
+      "bytes": 884,
+      "sha256": "A76EF12A41FC3F17CD8A6E9F44BB1E111F6B01F105A1979174CBC0C1CAD43CB9"
+    },
+    {
+      "path": "_unzipped/review-state-gallery.html",
+      "bytes": 3572,
+      "sha256": "E352891537FA49BF4B433AE44BDACF7488E8A4FDFFAE514FA597B75427701D86"
+    },
+    {
+      "path": "_unzipped/rollback/aura-reading.owner.01.css.pre-u3-r2-992-20260809T1540.css",
+      "bytes": 59780,
+      "sha256": "84E3983646A3CC02A6EB27349DC5307D4AE7042A767D37F61FCA726DD13CAFC2"
+    },
+    {
+      "path": "_unzipped/settings-personal-new.html",
+      "bytes": 5523,
+      "sha256": "749EFFA23BFA4DD1B9E706C4D5DF036F48620FDF8B5ABF05F610F36A33EAB15E"
+    },
+    {
+      "path": "_unzipped/signup-review-board.html",
+      "bytes": 13566,
+      "sha256": "78321D23555FC43DA429BD1AF961121D0142B02B000B9B4083DEA3E14921ED87"
+    },
+    {
+      "path": "_unzipped/signup-step-1-review-manifest.json",
+      "bytes": 999,
+      "sha256": "48A425D2E6F666D5BF01115353BDC6126AE5AF177F1D17B20907E8C6029D769D"
+    },
+    {
+      "path": "_unzipped/signup-step-1.html",
+      "bytes": 5950,
+      "sha256": "3D299D3C9310FC670B082207C4F3D23BC2ADB1019E6B4EEBD5BEAA405B02B2A2"
+    },
+    {
+      "path": "_unzipped/signup-step-2-review-manifest.json",
+      "bytes": 999,
+      "sha256": "37F2B59A4471C8D444EE3FC7E6E34902F175C8F4BC8ADA0E5BB03289053EC52E"
+    },
+    {
+      "path": "_unzipped/signup-step-2.html",
+      "bytes": 4870,
+      "sha256": "470A8E4E8C3763C229EB515B419A6508FB723D40FD8FE6082416C239C18AFBB0"
+    },
+    {
+      "path": "_unzipped/site-map.css",
+      "bytes": 3524,
+      "sha256": "CB077E10712E4EB98C21184BAF4279E7FD093F679E378CC55612AC4656E06E4E"
+    },
+    {
+      "path": "_unzipped/site-map.html",
+      "bytes": 6828,
+      "sha256": "F8889393620BDB1CE350D431F1B50D9D70AE5B33E24F62B7038739C55763E863"
+    },
+    {
+      "path": "_unzipped/soulmate-reading-new.html",
+      "bytes": 9813,
+      "sha256": "B1DBE728D75D61EB00AE6B5E12A1E5AD8C598DE201A874ACA38BAAFBB0EFEBDB"
+    },
+    {
+      "path": "_unzipped/spiritual-meanings-new.html",
+      "bytes": 11573,
+      "sha256": "95ADA50A291960C461972684DB86E15D14DF6B724837836C3FC0AC36A42F608D"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only-zodiac-compatibility-new.01-core-layout.css",
+      "bytes": 52317,
+      "sha256": "C6E3D365732813D5C795DE59022B489ABA6854F0D10D58CFD8F4E3B67927AD11"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only-zodiac-compatibility-new.02-content-responsive.css",
+      "bytes": 50759,
+      "sha256": "83D6F78EEBE2B281F4CD315E661845FAECCC66D06B93181D24DE4B0220AA8072"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only-zodiac-compatibility-new.03-hero-figma-locks.css",
+      "bytes": 7443,
+      "sha256": "63A62E6841312C833BD0A6892100C6B7747A3F3F65E2787FD66D0048A9C1B878"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only-zodiac-compatibility-new.04-faq-seo-overrides.css",
+      "bytes": 23046,
+      "sha256": "95FDE663231AFFFDE96FECB8C6967A5BFDABC221D47DC7647CAE781C24CF06C7"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only-zodiac-compatibility-new.05-mobile-drawer-expert.css",
+      "bytes": 20501,
+      "sha256": "7D1967951CFB5F25EA55CDC57B86441A20C9D2650A679BFDB36F00E50A880268"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-faq_only.html",
+      "bytes": 71527,
+      "sha256": "596793E8C8C5A79D0B84D42A30C0638313473B7CA7414C43AFD3035B06C6018E"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-fork-zodiac-compatibility-new.01-core-layout.css",
+      "bytes": 52157,
+      "sha256": "BF57780E8366AD98C5BB10DE664C9492C5887916911215B1AD9A6693481EA12B"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-fork-zodiac-compatibility-new.02-content-responsive.css",
+      "bytes": 50711,
+      "sha256": "8B8C477F2E7FAD10FA4E080171E7444E2DB80260684C9283D60C54D3550E41B8"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-fork-zodiac-compatibility-new.03-hero-figma-locks.css",
+      "bytes": 7307,
+      "sha256": "A77F2A162A0D963F0CB991F14EF40250F03C0C413D806CA9236212B07DA4DF21"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-fork-zodiac-compatibility-new.04-faq-seo-overrides.css",
+      "bytes": 23006,
+      "sha256": "19FFE40237980B06530241449FD5BF2203238048729CD9C164B3D2B98D17C0D5"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-fork-zodiac-compatibility-new.05-mobile-drawer-expert.css",
+      "bytes": 20501,
+      "sha256": "7D1967951CFB5F25EA55CDC57B86441A20C9D2650A679BFDB36F00E50A880268"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_backfill-zodiac-compatibility-new.01-core-layout.css",
+      "bytes": 52157,
+      "sha256": "BF57780E8366AD98C5BB10DE664C9492C5887916911215B1AD9A6693481EA12B"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_backfill-zodiac-compatibility-new.02-content-responsive.css",
+      "bytes": 50711,
+      "sha256": "8B8C477F2E7FAD10FA4E080171E7444E2DB80260684C9283D60C54D3550E41B8"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_backfill-zodiac-compatibility-new.03-hero-figma-locks.css",
+      "bytes": 8105,
+      "sha256": "7E1985899A8D3E398761FA478FADE19739B4FA7BF0202599A725BB4AD05653C2"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_backfill-zodiac-compatibility-new.04-faq-seo-overrides.css",
+      "bytes": 23006,
+      "sha256": "19FFE40237980B06530241449FD5BF2203238048729CD9C164B3D2B98D17C0D5"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_backfill-zodiac-compatibility-new.05-mobile-drawer-expert.css",
+      "bytes": 20631,
+      "sha256": "05FF5C034CAC6FD2098E95D097C98311DE2BC45D72888454CC068964B9B45DB3"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only-zodiac-compatibility-new.01-core-layout.css",
+      "bytes": 52157,
+      "sha256": "BF57780E8366AD98C5BB10DE664C9492C5887916911215B1AD9A6693481EA12B"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only-zodiac-compatibility-new.02-content-responsive.css",
+      "bytes": 50711,
+      "sha256": "8B8C477F2E7FAD10FA4E080171E7444E2DB80260684C9283D60C54D3550E41B8"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only-zodiac-compatibility-new.03-hero-figma-locks.css",
+      "bytes": 7307,
+      "sha256": "A77F2A162A0D963F0CB991F14EF40250F03C0C413D806CA9236212B07DA4DF21"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only-zodiac-compatibility-new.04-faq-seo-overrides.css",
+      "bytes": 23006,
+      "sha256": "19FFE40237980B06530241449FD5BF2203238048729CD9C164B3D2B98D17C0D5"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only-zodiac-compatibility-new.05-mobile-drawer-expert.css",
+      "bytes": 20501,
+      "sha256": "7D1967951CFB5F25EA55CDC57B86441A20C9D2650A679BFDB36F00E50A880268"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero_only.html",
+      "bytes": 71506,
+      "sha256": "AE3235A55EE10485254147E349E09D843C671CF318696E7BA0D6C42916038B75"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-hero-backfill.html",
+      "bytes": 71526,
+      "sha256": "FA1EE6311BF7158F07BE2FEF46A5785F59E7BF5C17D495630C7A78807660FF28"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-no-psychic.html",
+      "bytes": 71366,
+      "sha256": "515DEB4DCD8031AC8F95BA489A08BC3FB4AAA0453DC9FCBC4C9864BFD79FD0D2"
+    },
+    {
+      "path": "_unzipped/stage13-candidate-zcn-hero-faq-fork.html",
+      "bytes": 71450,
+      "sha256": "9A1C29727E6712FD878C7D66D5727403B35FAACDB6AC2750E47D35AA713E496A"
+    },
+    {
+      "path": "_unzipped/stage13-page-css-only-analyzer-input.html",
+      "bytes": 115,
+      "sha256": "7F777EA215A370DE6E7448B4B951BBE7CE1267601F2E396A2D06BF62C2CB5E65"
+    },
+    {
+      "path": "_unzipped/stage13-page-css-split-analyzer-input.html",
+      "bytes": 498,
+      "sha256": "3A264B8E0343B423E243FAE7CB31BA255727C8DAFDE4638BE9E0777943FEA490"
+    },
+    {
+      "path": "_unzipped/tabs-new.css",
+      "bytes": 768,
+      "sha256": "8096FCB09F8D36FCC5A665B7ACCEBAB325E485A215F4DE495BB10AD8CA4E5C3C"
+    },
+    {
+      "path": "_unzipped/tabs-new.html",
+      "bytes": 836,
+      "sha256": "87BF2B1487A8DE1F26C98123C90B407FABAE09F00C05E9F93FCB8D6665B97DBB"
+    },
+    {
+      "path": "_unzipped/tarot-cards-meaning-new.html",
+      "bytes": 11616,
+      "sha256": "8E06E461F0CBCB2E4ED52E24992AF79DD80BBE95ADAEEE2DE81BEA47E4855DF9"
+    },
+    {
+      "path": "_unzipped/tarot-reading-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "886392DFD71EA5A1917695C37AEA71939BF3A98D16747E3E840F6FFD498CD3D8"
+    },
+    {
+      "path": "_unzipped/tarot-reading-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "7C494AE9514DE3E53508AE9FDA8A6F79857DA35C29C714967F9C908C82D3E0ED"
+    },
+    {
+      "path": "_unzipped/tarot-reading-320-review-board.html",
+      "bytes": 4802,
+      "sha256": "DE70CB06C338B5D05ECE192AD8567D5400489F1A4740FB99B918553F9A84073D"
+    },
+    {
+      "path": "_unzipped/tarot-reading-320-review-manifest.json",
+      "bytes": 711,
+      "sha256": "F8938B76EE612935F34891DA6F6449CC7C59322EF067D78034778980B8F39733"
+    },
+    {
+      "path": "_unzipped/tarot-reading-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "2F3D35FC1538A770E2AA0B16B5473616352EB854D5FFF72A3497451609CE41D3"
+    },
+    {
+      "path": "_unzipped/tarot-reading-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "54A848E94C5EFA1813F96272AA6AC2859BA0DA5491FC99DDB654762717DD89C2"
+    },
+    {
+      "path": "_unzipped/tarot-reading-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "52353DB62AF045ED66A69AA82FEFC6AF660AD39551A75E3CC7D8245A36718703"
+    },
+    {
+      "path": "_unzipped/tarot-reading-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "2CFEEA9805648AC63B647595D6D374D609126F059996BBED42F564BD57D749A7"
+    },
+    {
+      "path": "_unzipped/tarot-reading-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "3A25F1F49AD81DD74C8AD741DEC01B8AA601470C3447DBBC726F107646905CDF"
+    },
+    {
+      "path": "_unzipped/tarot-reading-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "BBAC0749EAD2DB32B34B5A3073C66FD91B787FDBCA78D140E80A16A1156003EC"
+    },
+    {
+      "path": "_unzipped/tarot-reading-new.html",
+      "bytes": 53722,
+      "sha256": "DB948A014997E5D4111996A72B61136CED8375FF6F1A6AD1717D660B712394ED"
+    },
+    {
+      "path": "_unzipped/tarot-reading.01-core.css",
+      "bytes": 41272,
+      "sha256": "0431549B7DCE4351ABEE250F3A6B80B1B9C8E68C6D5D2B543CF87940FCB2D92E"
+    },
+    {
+      "path": "_unzipped/tarot-reading.02-sections.css",
+      "bytes": 41718,
+      "sha256": "934C754A6F2814E2DFC9BB04C4C2845EAEE701F7029DAD27151DFAABB01514A7"
+    },
+    {
+      "path": "_unzipped/tarot-reading.03-responsive.css",
+      "bytes": 55754,
+      "sha256": "7CBFD8AE1F241228139804294EA518894986A83C5090C1DC41590CDA394865A7"
+    },
+    {
+      "path": "_unzipped/tarot-reading.css",
+      "bytes": 146569,
+      "sha256": "08701DB50D3C45E21C1BD7B969CB80B21E54F075BE8DB964277D4A421EB6224B"
+    },
+    {
+      "path": "_unzipped/tarot-reading.js",
+      "bytes": 6115,
+      "sha256": "9E0DA89C43B56763125AE2BA054C2B1AA12B1064470A721314FFC9EDC07FD3FB"
+    },
+    {
+      "path": "_unzipped/tarot-reading.owner.00.css",
+      "bytes": 35338,
+      "sha256": "54647823E5DB7733F2731AD70B06A97CB53AFF20EB5F8CC8D333092C1A760674"
+    },
+    {
+      "path": "_unzipped/tarot-reading.owner.01.css",
+      "bytes": 37941,
+      "sha256": "06F85F12C6D5A9F9594531DC7AEEAF8ED7B08805FFCEA1C8E2AB86CD0D2CFD37"
+    },
+    {
+      "path": "_unzipped/tarot-reading.owner.02.css",
+      "bytes": 37798,
+      "sha256": "A6DA4A131D8DC7B143C83EC220851A112B190650B4C011A38A67CBBCEE8ECA6A"
+    },
+    {
+      "path": "_unzipped/tarot-reading.owner.03.css",
+      "bytes": 24901,
+      "sha256": "1DC78DFF040F3713A10589C075B3187095BD84D95B6C76EB0FF04629F53BD1DC"
+    },
+    {
+      "path": "_unzipped/tarot-review-board.html",
+      "bytes": 4744,
+      "sha256": "CC1E840E86ADA749BC550F60D6D513D2F99EE152F6863A6907B3D3955EB0D247"
+    },
+    {
+      "path": "_unzipped/tarot-review-debug.html",
+      "bytes": 5489,
+      "sha256": "B70A33BFA7E4AEA12A32D40D2DBBBD5559730A12DF2B9B3882764ABE5E161346"
+    },
+    {
+      "path": "_unzipped/tarot-review-manifest.json",
+      "bytes": 681,
+      "sha256": "990C485C85FB2889D3818042569B3C62738C89B95E3FE8A5119EC4B0DCB6A443"
+    },
+    {
+      "path": "_unzipped/taurus-compatibility-new.css",
+      "bytes": 38551,
+      "sha256": "FC3B0878A6F1F8DF45CEE6200942FA6C3CEDFC095954E7B88C946EDDBD79D501"
+    },
+    {
+      "path": "_unzipped/taurus-compatibility-new.html",
+      "bytes": 39178,
+      "sha256": "177411971E5920FD1B351CDB19A4F02CD2F2B61910CE8F1BF41E5F595489C57D"
+    },
+    {
+      "path": "_unzipped/taurus-compatibility-priority.css",
+      "bytes": 38406,
+      "sha256": "4CBABA9A1A08DAB47FA9CBAE03033AACF97D7A4CD017EDE14B231646C08D46E7"
+    },
+    {
+      "path": "_unzipped/template-pages.css",
+      "bytes": 32234,
+      "sha256": "90F594D2164B60801CBDB67440890A6F07BBA2DFF04C2A574B89C65CDD088209"
+    },
+    {
+      "path": "_unzipped/terms-conditions-new.html",
+      "bytes": 8436,
+      "sha256": "8688CCF209666C79925BB37BCC51CE4AF3E6E706BB8B7633CDDFE109812B4DB6"
+    },
+    {
+      "path": "_unzipped/topic-new.css",
+      "bytes": 249,
+      "sha256": "C1DC10E0DA52C37D3D11BAE28D73206A9EEFC3C78083B856DA98A63668E02F17"
+    },
+    {
+      "path": "_unzipped/topic-new.html",
+      "bytes": 15576,
+      "sha256": "3F13AB6D1C16846E5475BE11BC755D7362F90813D619D23AEE03139CA960636A"
+    },
+    {
+      "path": "_unzipped/ui-states-lab.css",
+      "bytes": 8548,
+      "sha256": "E379922FC1F2B59DAA9B6B2D9C8F2F8A8538E9C8E7C72A1F263671DF5A95D53C"
+    },
+    {
+      "path": "_unzipped/ui-states-lab.html",
+      "bytes": 9718,
+      "sha256": "6DB1265253AB77D881FA44FB0698C37D24C95F4E39898CBD97BA29865D3BBEB3"
+    },
+    {
+      "path": "_unzipped/utility-controls-gallery.html",
+      "bytes": 4364,
+      "sha256": "2DDB57E79D498E9B1060AD75BCB3F702601A7FBBEBA03F12C439C317C25AD5AF"
+    },
+    {
+      "path": "_unzipped/visual-review/20260325-125704/index.html",
+      "bytes": 3092,
+      "sha256": "CE368026D2EAD165B989B1405872395C1BC11A7EB40C660722B51D14EC8D1094"
+    },
+    {
+      "path": "_unzipped/visual-review/20260325-125809/index.html",
+      "bytes": 3100,
+      "sha256": "1CE53A488210B2DDC8B3F073A2D94EC29BA35D95F8C8ABCE89DC24B60E824283"
+    },
+    {
+      "path": "_unzipped/visual-review/20260325-210120/index.html",
+      "bytes": 3090,
+      "sha256": "F9C4344B8DEA9831DF40CF21128EA8ED1FAC34A41F365F2F043E19193ECB420A"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-094746/index.html",
+      "bytes": 3064,
+      "sha256": "83A60096B8E9B9E859D5262DA80D6BA7988AB33E9A7157000CE828BF59902F1C"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095346/index.html",
+      "bytes": 3076,
+      "sha256": "EA13F94C3B7EA99E235EB8E23192DC10FA1F51EE4C262809A090B492C5D0D4AB"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095405/index.html",
+      "bytes": 3078,
+      "sha256": "6276FB64B274D6CFEC432BD20CFB6ACB8F9730680F1873A75229E8B290A89288"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095406/index.html",
+      "bytes": 3074,
+      "sha256": "1056E0185EA4420396F3AB385F91082F6646394556E33F555701442A77717A94"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095520/index.html",
+      "bytes": 3074,
+      "sha256": "60A79FD100261225FDDD3FD558017C660B967F73307C9083B27E032242BB9DCE"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095521/index.html",
+      "bytes": 3076,
+      "sha256": "DE94BDDE75F4F9B33BA88BF3C729F120035503504F1D04A1B0563D93305BD08C"
+    },
+    {
+      "path": "_unzipped/visual-review/20260403-095815/index.html",
+      "bytes": 3094,
+      "sha256": "20A9853513754BE976772DD00C98397C71C87E62ECDD3A179949DC793E1ED89A"
+    },
+    {
+      "path": "_unzipped/visual-review/aura-reviews-u4-reconcile-20260809-1918/proof.json",
+      "bytes": 50772,
+      "sha256": "E0BB7E8F7F194E3F2FCAF4A3950AA947797349D5261A5F9A97FE2FF75E45E648"
+    },
+    {
+      "path": "_unzipped/visual-review/aura-reviews-u4-reconcile-20260809-1918/runtime-console-clean.json",
+      "bytes": 32362,
+      "sha256": "6687069785DCEADE7509C0DEA29DDECAE71F08031E396F10F53118528C7CC87A"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-login-forgot-page-human-ready-20260506.json",
+      "bytes": 2489,
+      "sha256": "B8BBAC6B346FDEA696819496EA8C758349E0C80B83811DE76970EA6F358CBB77"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-responsive-smoke-20260913/auth-responsive-smoke-report.json",
+      "bytes": 9942,
+      "sha256": "E97680123C418BFB1D97248CBDA0E8A16E473109DFF215C0DF43C5AB42BA0965"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-responsive-smoke-20260913/captures.input.json",
+      "bytes": 10345,
+      "sha256": "F879D7E2C53D66EAD4C0D8F6ABAE7495E6DD91F0DC4BCF9FB59B4AB03145E3C8"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-1280-human-ready-20260505.json",
+      "bytes": 1899,
+      "sha256": "8C71B0D6D28567A8AE9D0994CAA6DB62FBF41C675B0720AAB83B871FADAD1E8A"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-320-human-ready-20260505.json",
+      "bytes": 4061,
+      "sha256": "28D758E87B1ABDCEB4672AC2E74384970AED09CDBD4644341C91D16EE1DC183E"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-480-human-ready-20260505.json",
+      "bytes": 3183,
+      "sha256": "8E20A209C7068766C2C8C42DAE7A177A9FFE3C64237C594E018F537B36765CC3"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-640-human-ready-20260505.json",
+      "bytes": 2951,
+      "sha256": "EAC941D459B21D4646A872C43FD19E3512E2CE0BA5B4AB1E653B0ADACF2F4926"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-960-human-ready-20260505.json",
+      "bytes": 1898,
+      "sha256": "3AA249B6A5828101B49183640413C204C3C8EA0734B9D52FA710B36B01DF5AB3"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step1-page-human-ready-20260505.json",
+      "bytes": 1770,
+      "sha256": "5E5E75825229387F0AE2EE045D7201C54F50B5E935E1A2B4A7B0954EDC148B07"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-signup-step2-page-human-ready-20260505.json",
+      "bytes": 1625,
+      "sha256": "9710E7E7C4CB8E17FAFBEDBF961D7BE49CE07BBA61425C85B05F1253FD3B3922"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-source-lineage-report.json",
+      "bytes": 114,
+      "sha256": "4EAB16E8F75BDDC6F6FE918E0E52854C7579658FD35F87A56E8735D22666D6D6"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-1280/auth-surface-parity-report.json",
+      "bytes": 59247,
+      "sha256": "8EF6D965AF7FFD58E1A032906917C0F3E3A7B370CC2723C619AA68EC4B9C5B68"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-1280/captures.input.json",
+      "bytes": 2464,
+      "sha256": "038F81415A03D95049DAE0431EED9AD09B75446F940297D6C84959BA828AE931"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-234425/auth-surface-parity-report.json",
+      "bytes": 57685,
+      "sha256": "DF1F2077E282AECE4E1594220256E69B8C82FE229D057181599DE85CE76D5220"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-234425/captures.input.json",
+      "bytes": 1880,
+      "sha256": "3CA18BF6E3405F8E0F3E3B7B1D022863C558F64790C0EF2CEE0BDA8FFBDA6DF6"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-current/auth-surface-parity-report.json",
+      "bytes": 43273,
+      "sha256": "3084C5D827F1A041369FC5F82E94E56B8E195D8817FB4700310426CD765EAC34"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-current/captures.input.json",
+      "bytes": 2488,
+      "sha256": "F7D86020603B12DADA0E550F101A334AFCA9BD7EDB75FBAA93BC9CC5C1C7D06C"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-default/auth-surface-parity-report.json",
+      "bytes": 43273,
+      "sha256": "AAD3C554521C0950F61DAE685367D2C740505E5B7D2A0B1C5095373E3D507A10"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-default/captures.input.json",
+      "bytes": 2488,
+      "sha256": "684CDB9E0E3B5C8C5399F7411549FCBF06A22593E41A6E6007CAA87749931A1A"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-exact/auth-surface-parity-report.json",
+      "bytes": 45080,
+      "sha256": "730D4530B1BB2CAC9A0341411CB6F576805051F688019C7A09D62FE9DF47783F"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913-exact/captures.input.json",
+      "bytes": 2472,
+      "sha256": "86AE0ADB00B71F6E49FE9DF84F1DC661EFD453D4F11193EAA2597D35BACB3F18"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913/auth-surface-parity-report.json",
+      "bytes": 59195,
+      "sha256": "9A016D3078FBADBF20CA53AE2C50B6733F5FD1CCF7172EC15DD25CF83761C087"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-surface-parity-20260913/captures.input.json",
+      "bytes": 2424,
+      "sha256": "C8990C748C2ADCCD3F58FC42061F871DE0541F6C61ED8E0418CEB545E47FCFA7"
+    },
+    {
+      "path": "_unzipped/visual-review/auth-topnav-board-login-dom.html",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/1200/summary-1200.json",
+      "bytes": 1866,
+      "sha256": "98E3E66AAB1683CF35CDC48AC65075CC319ED183CC39CA19CAB47CC66402B057"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/320/summary-320.json",
+      "bytes": 1832,
+      "sha256": "450760E92DB0EF37B5B41FE19E4E7292257A7295D64A3ABBC509CEA81F06FA9B"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/576/summary-576.json",
+      "bytes": 1825,
+      "sha256": "6B062E828EECD8D29B590A641BBCAC672404138240F4BB9BF3F248A9FA442531"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/768/summary-768.json",
+      "bytes": 1854,
+      "sha256": "2D7A84D5C3427AA51D1F871E391CE027F51A8D8ADC630546F1658527F802922A"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/992/summary-992.json",
+      "bytes": 1846,
+      "sha256": "E1913C3CB37B7F78D3AB2A9C060FC9EBC1BFC08F645AAB45CD3F3BFE7E07D485"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/after-cta-repair-summary.json",
+      "bytes": 10800,
+      "sha256": "827D64F17102C800027A85DD3C7803BF69D300A6FCCD42A67D14C370B0ED4850"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-after-cta-repair/closeout-accepted-after-cta-repair.json",
+      "bytes": 3151,
+      "sha256": "9C38FE31DA67416DA23C2F0E2BE49FAAAC094560DECFF37D3E0FD778F88908EC"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/1200/diff-contact-index-1200.json",
+      "bytes": 2496,
+      "sha256": "366849D8AAC374105F1E2EAED8118A46A24619F1209832E8F3DECDAAEA7E1695"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/1200/summary-1200.json",
+      "bytes": 22942,
+      "sha256": "382854F179FF48CBB8178A941FDBBC49CE814E3B491C8583A70C47A27DC67B9C"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/320/diff-contact-index-320.json",
+      "bytes": 3287,
+      "sha256": "E5FF87A23700971FC5F37766E17AE51A312F94EB0AAB19C14328AE7D9258AA34"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/320/summary-320.json",
+      "bytes": 22917,
+      "sha256": "CB8A4C4A239A682DE9B3C2D89BAC74648DCEDB802A781C81641DB661EBECC059"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/576/diff-contact-index-576.json",
+      "bytes": 2476,
+      "sha256": "13807020D9F0157A10E12E161564A7D6496019DFCDDC061138B0BEFC9D117693"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/576/summary-576.json",
+      "bytes": 22916,
+      "sha256": "2FCB6C58C72F8FE30CA5FE4986F1D25B13F0860E14031BA393EE0B6E5893FD1F"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/768/diff-contact-index-768.json",
+      "bytes": 2477,
+      "sha256": "E3A9D7C2D9AD473AB5E051F5FD248870DFC95E87D22B578DE083A8585E9D9848"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/768/summary-768.json",
+      "bytes": 22916,
+      "sha256": "6BC20C94F1D992DBF545F8121F3F67E405A37B653E3D82FBD7A7F241CE9C2043"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/992/diff-contact-index-992.json",
+      "bytes": 2477,
+      "sha256": "F5A648C150C076BA963890FD7069BF1F8B4770581E63F8F8B5896BB20EB7F548"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/992/summary-992.json",
+      "bytes": 22916,
+      "sha256": "06A369A00D9EFD9FFF0CFFB48E4C4A137054B66B453A879C5976D2D27009B5AF"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/closeout-accepted.json",
+      "bytes": 2803,
+      "sha256": "35C9FDF5CF557A422C8CFD31004B89DC5EAC651504E265FDCD58AAEA176D5E16"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/diff-contact-index.json",
+      "bytes": 15133,
+      "sha256": "89654310E96BA09897BB443C31458E6944E680066E09A861B6078321F575B8BE"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/readiness-matrix.json",
+      "bytes": 7563,
+      "sha256": "83BE8E664F1734704A9535A8FBBE566C37E73DAAF638730C0B53CE01FD537B70"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/reviewer-contact-diff-summary.json",
+      "bytes": 3862,
+      "sha256": "3A513D10ECEA686B44A1105BEDA83A3185972C3E3A38955FB0BF0D68F95A6C82"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/status-blocked-runtime-capture.json",
+      "bytes": 699,
+      "sha256": "7A7B583EF03A15F096CCECA6B217C9538E9EB1706E96AEC49516E804B3079C87"
+    },
+    {
+      "path": "_unzipped/visual-review/blog-input-20260617-fresh-board/visual-review-direct-repair-not-accepted.json",
+      "bytes": 3771,
+      "sha256": "E00B9EF1A1D078BB7CC872F4772237AB70278952819CA221F7FB7D0A4E817518"
+    },
+    {
+      "path": "_unzipped/visual-review/compare-board-auth-login-1200-contract-fix-20260506/auth-login-1200-compare-lens-proof.json",
+      "bytes": 3284,
+      "sha256": "E9BE8178071E5CB6794962060AA5388B599FE3B13673EE9AB651EE5CD0E8BCA0"
+    },
+    {
+      "path": "_unzipped/visual-review/privacy-policy-20260617-route-discovery/status-blocked-route.json",
+      "bytes": 2004,
+      "sha256": "53A4B816F731BB4E50ACF7DF42CE5E849A39F4EFA876861BDF51BCDB2B47C5BF"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/nebula-topnav-compare-board-1200.json",
+      "bytes": 1417,
+      "sha256": "9F8A83787AD2E2BD3B45E8A0CAB237B04C0C4BAA361FB7D42761C414DD8292BB"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/summary.json",
+      "bytes": 2437,
+      "sha256": "E4C011B421D69393033A58D7CCA0102BA0E1ADA80223B78963DFDDA4F6A529ED"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-1200.json",
+      "bytes": 4368,
+      "sha256": "6B03A1A435F49A3A897B2F1DD52F5F2A9A7F8D083B0AAF77C973165105A19688"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-320.json",
+      "bytes": 4346,
+      "sha256": "C3D5F3BDB6CD023786876FA889E50FB6C69DB52BDFC6D0EE4B5DDBACE9D38B86"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-390.json",
+      "bytes": 4346,
+      "sha256": "C1AA69EBDD4B54CC67590EE574693EF5E2A08C368E3FBDED10D1E5FDBA1F7268"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-576.json",
+      "bytes": 4351,
+      "sha256": "DC5D4623CD9E0BC899953E321B26821716E19F618F210FA6BDA040DB4A21408B"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-768.json",
+      "bytes": 4349,
+      "sha256": "2F9FC5C1B3786B6DEFFB6491F2E21409302ED095F669C9BA97F22DF933739028"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/cdp-proof/topic-new-992.json",
+      "bytes": 4348,
+      "sha256": "30CFA19D93B1E94FC2EAA1B3DB13E23643F0D59FBBBC1341A14F9997826E3226"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/local-goal-and-source-audit.md",
+      "bytes": 5223,
+      "sha256": "AEBC6EF89D4C2A6336F936F4DB6361C9D61FB5E74E5C309796D98F114F904B8F"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/topic-new-proof-runner.html",
+      "bytes": 4087,
+      "sha256": "9301860C642F1DB191B1EC8B35549531CE05E362BCBD66C95ACE18F081DB88E1"
+    },
+    {
+      "path": "_unzipped/visual-review/topic-new/topic-new.runtime-proof.json",
+      "bytes": 1853,
+      "sha256": "9EE3AA1800AAB909A3EF51C2C1CA7745DA5D085F9603B3933A41B8B0EA22666E"
+    },
+    {
+      "path": "_unzipped/visual-review/topnav-script-1.js",
+      "bytes": 314817,
+      "sha256": "9D7CD84EB81D4E949385473153AB84E43DD21A3285075E482E6CEA899E9B4E43"
+    },
+    {
+      "path": "_unzipped/visual-review/topnav-script-check.js",
+      "bytes": 316652,
+      "sha256": "8D261FFFB4F7FED09AE78A95FDCDD199A1CCEC75C132FE076973DE8F4F80E286"
+    },
+    {
+      "path": "_unzipped/woman-zodiac-sign-traits-new.html",
+      "bytes": 11504,
+      "sha256": "2FB110C859868417DF2939F7E2D0960AAD6FBD437FDF7154634D13B174C221EA"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.00-heritage-psychic-bundle.css",
+      "bytes": 22624,
+      "sha256": "972225DCABA9FFEE39DBFD6F1F95177BAAB54A0B7FB809C031DACD88D509A70F"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.00-shell-home-bundle.css",
+      "bytes": 21077,
+      "sha256": "40A5E975931EC7C9707DED4A00C76174847F38592BD24A7F423701052618B185"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.01-core-layout.css",
+      "bytes": 51885,
+      "sha256": "D40866B1145A3CF831AC21DC9690008F0733E2443AD451A97B8E145BC9D12913"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.02-content-responsive.css",
+      "bytes": 50305,
+      "sha256": "045846BC99009AA335A334FAE72B8A8286EC7DE11E65257DFBE47AA73C47A936"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.03-hero-figma-locks.css",
+      "bytes": 7381,
+      "sha256": "45671BB4F6A0F884DF614375B62EFCEEE6B40EB33C1FEEB0A1F3487521C5D7E8"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.04-faq-seo-overrides.css",
+      "bytes": 22700,
+      "sha256": "666BF35D258AC534816FB5F7AB8C69544123A1432C3EA659251619E588327B4C"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.05-mobile-drawer-expert.css",
+      "bytes": 20277,
+      "sha256": "4D75A522DEE428BE2AC72AED2758967C4BBABFD1789EE361B8DE6C63EF70E342"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.css",
+      "bytes": 152473,
+      "sha256": "61E55FFBC29D9253CCEE3A1DB030D70727E305B1FC5705C36262D32AE1836A4C"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.html",
+      "bytes": 71424,
+      "sha256": "6DF96FAB47CD106C97953DAA9581F7672235BD27C520E178D8BAA1F894C82767"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.js",
+      "bytes": 931,
+      "sha256": "AB80024AC83FB6CED4AF6D71CABDAFDF0E0A1575694FAA8B4ACB762961283DC6"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.00.css",
+      "bytes": 38631,
+      "sha256": "3BB6AFF3007EFA024EC0DB6BA7032B17CBE004C1C413B1EF18C88C05017297F7"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.01.css",
+      "bytes": 26546,
+      "sha256": "C3E686F20AC4C940E604427BB5A8746358F5D751D6A5154E1A234E7D36D051F7"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.02.css",
+      "bytes": 37955,
+      "sha256": "7D7CD7A8EFA53D1B8F5A415B0E44C722E714E5568EBDBCFF727D842F1DD2CD31"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.03.css",
+      "bytes": 37860,
+      "sha256": "A7DDBABF4C5C0F8D2136EC880ADBEE9300D5EB323083E1C3C940A9FB89CE0F12"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.04.css",
+      "bytes": 38247,
+      "sha256": "478490B9B6B5DEAD2D30C69A689C8A8498BFFEFFC582732B016F14DB58861013"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-new.owner.05.css",
+      "bytes": 21266,
+      "sha256": "6879516163114F38EAB1F6E0D2B1DA90B94134085B6161C66541B48CFE73D55E"
+    },
+    {
+      "path": "_unzipped/zodiac-compatibility-start.html",
+      "bytes": 5578,
+      "sha256": "E447BA5AC7E44E832CB3795A0EB763E4870E2E85A8212742118389AD12EDD961"
+    },
+    {
+      "path": "_unzipped/zodiac-sign-traits-new.html",
+      "bytes": 11470,
+      "sha256": "79C6D3864F082F84BD8D58EC955ACA8AEB78D5F684BB912324F83213F11B29AD"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 86,
+      "sha256": "47C40383612986258E1F5D0695375E590559586E635BB4B2F83D45FC31544858"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 207,
+      "sha256": "57C05345471DD9B8C98A2B552071F5F89DED71967E2FD6427BC691D4071A5960"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 2,
+      "sha256": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+    },
+    {
+      "path": "404-new.html",
+      "bytes": 2881,
+      "sha256": "4587385B205A77792B834F6809EDCD9E7FF6326DE9DC8344B075D36C81C41BD3"
+    },
+    {
+      "path": "about-us-new.html",
+      "bytes": 3891,
+      "sha256": "E9A348C31B82D8439B6AAA032EC753837AA59981DEB0CFDBB9D1ABE67BC9EF62"
+    },
+    {
+      "path": "account-pages.css",
+      "bytes": 8670,
+      "sha256": "46E15BE3C6E965A079B7AAE2C5898130D085930DA48F194A270768BC52248C1E"
+    },
+    {
+      "path": "action-button-gallery.html",
+      "bytes": 3730,
+      "sha256": "BE84935CC2CF1567C8019CB334C7CD1D2DA1FDA0D09AF7CA9CDD273C853E6AC8"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4890,
+      "sha256": "B4CFDD38DDD467F2E778A792FB55D10162D4CECC8BC6EE3D26407E11261D5BC4"
+    },
+    {
+      "path": "all-psychic-new.html",
+      "bytes": 289335,
+      "sha256": "658553BCAFB801050ADB8E80371FE1A7AFD76AB21AB989E37518F1BCCE5D2B3B"
+    },
+    {
+      "path": "all-psychic-new.js",
+      "bytes": 7382,
+      "sha256": "6E1EAE460283BA29BD53A5B3366CDA21829807F07EC635AB9C31950BA51CF46C"
+    },
+    {
+      "path": "all-psychic.owner.00.css",
+      "bytes": 37867,
+      "sha256": "4FBC1AEDA5BA867765EF3CBC273FC85D28CCB200EB2FF279C4780B1830407064"
+    },
+    {
+      "path": "all-psychic.owner.01.css",
+      "bytes": 36027,
+      "sha256": "7C8997D223C221924FCC713EFC37F818D12FB71D8D8B58C79A6433F7AFDA3408"
+    },
+    {
+      "path": "all-psychic.owner.02.css",
+      "bytes": 37775,
+      "sha256": "1F63B3A8A7548CB786DB48F34054CF7DF3655C261B4999C6A90FDC4AA497408B"
+    },
+    {
+      "path": "all-psychic.owner.03.css",
+      "bytes": 36268,
+      "sha256": "570351715FD4E840CF9D85B43E8BADDB3F822D31360EDD8C4F4B11FAF7A06469"
+    },
+    {
+      "path": "all-psychic.owner.04.css",
+      "bytes": 37901,
+      "sha256": "CEE380E8F2B677B41A87BC0BB91912EA30C47DF753364CB1374EEDC6C5E20743"
+    },
+    {
+      "path": "all-psychic.owner.05.css",
+      "bytes": 37430,
+      "sha256": "7348EB0FFF899B150242F13561438395EEE4F6567092268DEB38633E011A94AB"
+    },
+    {
+      "path": "all-psychic.owner.06.css",
+      "bytes": 33344,
+      "sha256": "07B2FC02FB29E530A247BE8E99568E5F6CD75F46A407653564E0EC2A56D825E1"
+    },
+    {
+      "path": "all-psychic.owner.07.css",
+      "bytes": 23993,
+      "sha256": "AA97A2CFE282CFED3BB66C003FDF7D2176D698E31C398C08AC04005F3CDFF08C"
+    },
+    {
+      "path": "angel-numbers-meaning-new.html",
+      "bytes": 5179,
+      "sha256": "7F2BDE5D9166546323CD6E8C7AA22C72F62E8B86A88638DD594971FA1F5E83E3"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/capture-five-width.js",
+      "bytes": 4462,
+      "sha256": "2F713D5FC31A2C166F3E05AB8AE6E3E94D68EB108930138F82623AB3F161AEC4"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/CLOSEOUT.md",
+      "bytes": 2549,
+      "sha256": "E37B173A1760460983A16183C33539B261C73191CE491C458909F6D9AFB44E3F"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/NEXT-SOURCE-GAP.md",
+      "bytes": 1314,
+      "sha256": "1D9976E5973D14E7CA751CB97439A7CA647B1FAA45F1B27C21ADB408BD6A8BB9"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/postimage/five-width-runtime.json",
+      "bytes": 12398,
+      "sha256": "F4BA9184BC51991DB3CCF5BFE0D05514CCF968AE1A0E303C9878FD64BB2075B7"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/yii2-hardening/404-yii2-package-proof-20260811.json",
+      "bytes": 4654,
+      "sha256": "A8F0948070D1F0266BA2F6EC69031AF9FA552E704DFB981614B123C653BB380E"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/yii2-hardening/INTEGRITY-MANIFEST.json",
+      "bytes": 2733,
+      "sha256": "5821F7AD456FCC299276F5E95A5CCFEA5FE40C4D2F0F8F5FA8FF8B2E66FAB8F2"
+    },
+    {
+      "path": "artifacts/nebula-easy-404-source-rebase/yii2-hardening/PROMOTION-PACKET.md",
+      "bytes": 2188,
+      "sha256": "1E1D9D44AE3CE7DBA00B1B865C1AA795ADCBEB71D423E84F4060B8B30B60821D"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/ANTON-REVIEW.md",
+      "bytes": 1390,
+      "sha256": "C4B3600017B529764B10A372A448663A9673A486CB48FDD793BA945FCFD40F9E"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/ASSET-PROVENANCE.md",
+      "bytes": 498,
+      "sha256": "587115C2A035C76A38A4971ACD4416B40F77B8B18125E0567695283EABFDE283"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/capture-five-width.js",
+      "bytes": 5467,
+      "sha256": "FE14345D7F8D823DFD9F2BC5A8FEA67B90FDE41495F4FC92E0AFB74FBFA820C0"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/CASTER-REVIEW.md",
+      "bytes": 2789,
+      "sha256": "59EDFED1AB869450345B2250B56704F42B6593C669CC899E4CAF588C5E5DC560"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/CLOSEOUT.json",
+      "bytes": 2405,
+      "sha256": "361F12BCD943DE5360A05C121CE90B45E1BC9DFB0B24E2B8DC1ACA26184CB2A7"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/FINAL-FIVE-WIDTH-PROOF.md",
+      "bytes": 2117,
+      "sha256": "280517B1F43A714C03F4916E1ECAC0BF1963A12D7C78C4C40E4661A547C06CD8"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/live/five-width-runtime-pre576-retry.json",
+      "bytes": 14915,
+      "sha256": "27441FC6C769DEDCBA6860D398CEA21009613787EE41BB16D4519DDDD3A69D4C"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/live/five-width-runtime.json",
+      "bytes": 4172,
+      "sha256": "28492C29C536620BCEE32C31AA925F06EA0931A1312CFDF6019DC194B4A16CC2"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/c76-rebind-20260811/SOURCE-SUBTREE-MAP.md",
+      "bytes": 2323,
+      "sha256": "CF52A7BBE9307C3D835524A8083E1E1714C5A65262EFAAB2B498214F060012CD"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 1587,
+      "sha256": "77742B19EABBA1BC9C8A23EEFA3061B3FA4D4705E0EC26DBA2EABDA7159267DC"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/static-pass-20260810/caster-anton-classification.json",
+      "bytes": 3550,
+      "sha256": "AD1E60C0D057DC4CA2E54CDC97E56ED22D905DE88208EA3ED20AC5DFB9A4687F"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/static-pass-20260810/final-five-width-runtime-and-interaction-proof.json",
+      "bytes": 2294,
+      "sha256": "879DDA3CB69E1AFDD2A8D7EF427EB0BF5B47426CB91DB9CC3A6775CEF22D76AA"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/static-pass-20260810/final-source-live-pixel-comparison.json",
+      "bytes": 1216,
+      "sha256": "83F697803566E62E8B92DCF2C59575B615680BA219A2B8FB7BE6888598C814CE"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/static-pass-20260810/initial-five-width-runtime-and-interaction-proof.json",
+      "bytes": 1537,
+      "sha256": "4492DDD5FB446BD9657800853737F582051EED728B787DA98A6682FB8EE15F72"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/static-pass-20260810/initial-source-live-pixel-comparison.json",
+      "bytes": 1337,
+      "sha256": "1CA0AEEE1BE0BC8F452C0213DFE1AEE46C0A338A2B572F6DE3F1A45D1FF40FEF"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/yii2-package-20260810/all-psychics-package-proof.json",
+      "bytes": 908,
+      "sha256": "079FAEADA6B57FD99713D37CFE5A6EE8372F53595105D39674CA29D8F60B40D8"
+    },
+    {
+      "path": "artifacts/nebula-easy-all-psychic-source-rebase/yii2-package-20260810/module-regression-proof.json",
+      "bytes": 24829,
+      "sha256": "3902B198CE503F523E7C50C63E37E95E292CBE9204ADC545D4A5A1DCC6DC057B"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 912,
+      "sha256": "D6FCCF5FF0DCAD87D1DA50C7E6CC954D58B0EFF90932DA4220F88CEF62479430"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/SOURCE-SUBTREE-MAP-20260811.md",
+      "bytes": 2921,
+      "sha256": "9C0C09B4DCD715E875FDFE25663F12279044770F53446B997E37EFB60EEA31A2"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260810/CASTER-ANTON-CLASSIFICATION.md",
+      "bytes": 4364,
+      "sha256": "5DCA297578EF114A69CB1EBCF1DA113FB618BBBB79F5245015982AC3785238B4"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260810/five-width-postimage-and-interaction-proof.json",
+      "bytes": 1325,
+      "sha256": "0F4D09B513ABE1DD1A5240A8E19AE89A5A32F8C2A87CFDFCA250F506EE23B477"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260810/five-width-runtime-proof.json",
+      "bytes": 1160,
+      "sha256": "7F1EF336A64B0F0F8DC739E5BFF216B5223EE18C0DE8978E92FA56BC21153E64"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260810/source-live-pixel-comparison.json",
+      "bytes": 1325,
+      "sha256": "36B23315AEBC215067D58988F9E1FC9F5F6143748F9CF621AACC3F54689E7D77"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/CAPTURE-CHANNEL-RECOVERY-CHECKPOINT.md",
+      "bytes": 3047,
+      "sha256": "A9EF99C64B55F53626CAC552C00B42D8854293A9ECF9C0BEEC51AE72EBBBCA96"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/capture-fresh-context-per-width.mjs",
+      "bytes": 10575,
+      "sha256": "DEACADBBE7286B5CF5F763CD0DF2A883B6331E5DC219EBD127BD307CAD86D646"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/FINAL-REPAIR-CLOSEOUT.md",
+      "bytes": 3616,
+      "sha256": "347B9D2B2FDB04C24941CB98420F3EA30049213C869C071AFD3BF0E688EBE281"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/fresh-context-captures/FRESH-CONTEXT-LENS-PROVENANCE.json",
+      "bytes": 17313,
+      "sha256": "33541198522525ED8764A80B75A571C0633740D1A30939FCFAC7125016B88674"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/fresh-context-captures/INTERACTION-RUNTIME.json",
+      "bytes": 10808,
+      "sha256": "61C2865D8A81BD59A7B392FEDF7A43D2AA53507D2ABEFFFF4D7D6008FB483299"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/postimages/five-width-dom-runtime.json",
+      "bytes": 2737,
+      "sha256": "74AD3CC44BC8DAC21D4C6ED870D879243118A8925CB0BD0A6B5220CA0D6E8A24"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/static-pass-20260811/verify-interactions-fresh-context.mjs",
+      "bytes": 4300,
+      "sha256": "A1B4175C98C263B1C6DC94C2C68DB503A166F589A7F03E9256FC38382869ED24"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/audit-owner-matrix.mjs",
+      "bytes": 5504,
+      "sha256": "FF4749934D4FB17ECF29731AD1589D8EAEC48635F3A78EB31375193EAB781DB3"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/CASTER-ANTON-SOL-VERDICT.md",
+      "bytes": 8252,
+      "sha256": "EC530865E933EAA023504B8C0C0A930C2A8E0C05900B5B79BA2DCD8971D1A638"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/css-bloat-baseline.json",
+      "bytes": 571,
+      "sha256": "F6B8915B65E86005CBD71EB1832DBBEF96794D0293BF5594564E51153C3EDC79"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/CSS-BLOAT-GUARD.json",
+      "bytes": 2161,
+      "sha256": "D6B3CA0E1EFA79994FBF8780C7D6269F2FDB469BF54E672A828E769B7771B3DB"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/CSS-OWNER-REPLACEMENT-JUSTIFICATION.md",
+      "bytes": 1083,
+      "sha256": "3C15DE7A6D2F54B4959287235BBF9D41C7ED744923CF42F21A15D85BD78C08D8"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/INHERITED-OWNER-MATRIX.json",
+      "bytes": 192030,
+      "sha256": "2176EDC0E08244BB6878EA7EF6BFBE19CC4F1A53D511691ADCAA23CB81B14012"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/INHERITED-OWNER-MATRIX.md",
+      "bytes": 2562,
+      "sha256": "2F7E476D25C250D4DE47F6F52E81FE020863B5377A3CCEAA2FF00E03470E82E9"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/pre-structural-nebula-easy-blog-input.css",
+      "bytes": 1641,
+      "sha256": "942CE3A9CCEE0D5A66EFB23187BCD2AE52202044E3BD8D0C88FA339091FEBEFF"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-input-source-rebase/structural-rebind-20260811/STRUCTURAL-REBIND-CLOSEOUT.json",
+      "bytes": 4395,
+      "sha256": "54079E7200070A7BCABF889D877096210080C81D1980ECED50245AA3240FE4BE"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/capture-advisor-five-width.cjs",
+      "bytes": 7304,
+      "sha256": "E62623DACCC6C652CBDAB4BF1E5F5A16FA4CC6C762898C7B7D808FD655401FDA"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/CASTER-ANTON-ADVISOR-ACCEPTANCE.md",
+      "bytes": 1962,
+      "sha256": "283542097B8B3AEC9D22EEFC8EBBE2763F449B8ECE74B57561220966BF790F14"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/css-bloat-baseline.json",
+      "bytes": 560,
+      "sha256": "007D1048F70D06FEBEC2E7D1E651080E8FC3EC7C3F11AB49FD9E922C16A644BF"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/CSS-BLOAT-GUARD.json",
+      "bytes": 1947,
+      "sha256": "A8C32C7DCECBCB1D627F00FB321AE6A0A351D6E049F4129D9B687EF348182A2F"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/CSS-OWNER-REPLACEMENT-JUSTIFICATION.md",
+      "bytes": 914,
+      "sha256": "4DECDD9EB804AABC7FD46CF39053B3BBE43A847CF7C981EB732CA1DDA764A40C"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/figma-advisor-subtree-map.json",
+      "bytes": 1829,
+      "sha256": "47B3DEC2D9CF9EFA4ADA2F1B7AA429AC15E0FF55D700A263BA7A275939D89715"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/FIGMA-ADVISOR-SUBTREE-MAP.md",
+      "bytes": 2260,
+      "sha256": "E0DAE32AD263097A2E8EFB56F3087AA55B637D88C52D101E7FF7097358C2244F"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/five-width-runtime-proof.json",
+      "bytes": 6910,
+      "sha256": "BA7C21CB12D595DE5CF4BAD3376CDD5467DF3DAD91F3503F9778C722ADD8B0AA"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/format-css.cjs",
+      "bytes": 292,
+      "sha256": "9D87D438121450FE12E3745A7ACAF01D96DD9347FE74178AA4493CFC0DCE2E5B"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/source-arrow-next.svg",
+      "bytes": 732,
+      "sha256": "036E1E35570278551E301D3C7D7E60F1A5E7409CBC01A686335BDA4DBBDBA216"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/source-arrow-previous.svg",
+      "bytes": 732,
+      "sha256": "EF9E1D79809DC4CA6EFB0455E546F1C88C6F7598F511672AAC14E14CA1656C51"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/advisor-carousel-rebind-20260811/TERMINAL-CLOSEOUT.json",
+      "bytes": 3434,
+      "sha256": "7D27AFA88C0CE34FCA0E702DFCABC1352E4F68D8BCF967D82895DD8289769DED"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/ROOT-CAUSE-AND-RESIDUAL-LEDGER.md",
+      "bytes": 5188,
+      "sha256": "1F7256C432A76AE7E1D41AAF9D4CA2DA221EBF23BC5CC24AA4BD6CF1CF8F50C7"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 1396,
+      "sha256": "29B52EB44D9694471D0C074ADDC7A3EDC1CA7E42C6DA79C73A48D1C9E899201A"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/static-pass-20260810/capture-rebound-five-width.cjs",
+      "bytes": 3441,
+      "sha256": "AB28A92E49252B589571BE9D463B2B12B71E4219D73426677CC9FD90B44459E9"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/static-pass-20260810/five-width-runtime-proof.json",
+      "bytes": 2270,
+      "sha256": "C7AE4C3C06B16AB99F188240D480124EDA0413455A61AB085047D83DCE226DA0"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/static-pass-20260810/interaction-proof.json",
+      "bytes": 775,
+      "sha256": "6399B0263B06A53F1D85CA60A2B04B47C90B0BD6C90C4AE2317BE7DD92EEA33D"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/static-pass-20260810/rebound-five-width-runtime-proof.json",
+      "bytes": 1718,
+      "sha256": "9C72C5B39B20870A6529DEDAD832FE7839999C7B811AC098D966D89C92CCA5F1"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/static-pass-20260810/visual-comparison.json",
+      "bytes": 672,
+      "sha256": "37363D9C41EFAAE8804EA19C691AE02276FA93F9BC3B4597C2D84F674ECE9AFB"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/structural-rebind-20260811/capture-five-width.cjs",
+      "bytes": 4567,
+      "sha256": "4E7D957A728380A6048DFF338134B5DD0969671B2B20422322F08B788F10334E"
+    },
+    {
+      "path": "artifacts/nebula-easy-blog-source-rebase/structural-rebind-20260811/five-width-runtime-proof.json",
+      "bytes": 3316,
+      "sha256": "9CC5B02C5A50CA08BF7C1833987F29833DD8596636895FA7C8AA0F61B1B5C3EE"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/fast-batch-20260811/final-five-width-runtime-proof.json",
+      "bytes": 1607,
+      "sha256": "D4C4BA2B7F93A3424ABF86862527627A39551CDB0953EC5C9B7EF019F88B51FE"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/fast-batch-20260811/five-width-runtime-proof.json",
+      "bytes": 2491,
+      "sha256": "7BB864DF6A45C8BD3863880DFE6E7579E826D1B392FCE857BBF39DE9705D1D7E"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/fast-batch-20260811/post-repair-five-width-runtime-proof.json",
+      "bytes": 3353,
+      "sha256": "53EE4446D9F6D7C521D635AD208EA10BF01C18D8F96A2532907F016DD1AA8837"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 2140,
+      "sha256": "BAC1EEEF787F36CB0B19E339805CE46F98913CE4E99B6860E09656E94DD6A0DB"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/static-pass-20260810/caster-anton-verdict.md",
+      "bytes": 2270,
+      "sha256": "98CACFF6204A78C4F8FC55B71BCCD09CA73B8351BF0FEA3E4B80E0685A080FFE"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/static-pass-20260810/five-width-runtime-proof.json",
+      "bytes": 12214,
+      "sha256": "8F9B21B8855E85B141ADB7F21B7546475F7A14469C48A4B3395D408724489F9E"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/static-pass-20260810/interaction-proof.json",
+      "bytes": 1541,
+      "sha256": "F85A449F0158BF4F2A341C9791E87690B10541E167986E363FC3437C448B7493"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/static-pass-20260810/visual-comparison.json",
+      "bytes": 1153,
+      "sha256": "B4BB28695F289D202C21FE926384CAB9B675B02F8D9359346A2E3BC1B008CBFA"
+    },
+    {
+      "path": "artifacts/nebula-easy-cheap-psychic-source-rebase/yii2-hardening/PACKAGE-CONTRACT.md",
+      "bytes": 617,
+      "sha256": "0435381D98AD58BF24E6E148A2A4FCA52A3D0A71FC641B51B4D887AEEF9986CE"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/final-repair-20260810/caster-anton-classification.json",
+      "bytes": 3585,
+      "sha256": "6890534FD0CB81AFA9B452A4D261C30C5855804F2618A7D3C6E257815DAD2DBD"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/final-repair-20260810/module-regression-proof.json",
+      "bytes": 26132,
+      "sha256": "E5C742BE02D2CBDFC536C2C06DADBCB22B9F8DDC0A92D81498CFEF31D1397997"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/final-repair-20260810/yii2-package-proof.json",
+      "bytes": 1003,
+      "sha256": "787103261131F3AADE84A632AD7F8EFC1F544EA1AA3C65165F8F4F430829CF7D"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 2395,
+      "sha256": "2630A9B2853D2A5C123FAD54D3F191A2523C022F760D4594FD5F6DA427A82574"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/static-pass-20260810/capture-five-width.cjs",
+      "bytes": 5709,
+      "sha256": "11383F663CDD234A1F8E17BFD03404520EED1A6D66BC4CD77F29B3560E45A142"
+    },
+    {
+      "path": "artifacts/nebula-easy-faq-source-rebase/static-pass-20260810/runtime-interaction-proof.json",
+      "bytes": 4016,
+      "sha256": "FFCA2D7A84F48A79546A119CBF019A7FDE91769EEDAADB5799A42C32A2939A2A"
+    },
+    {
+      "path": "artifacts/nebula-easy-home-selection-blocker-20260809/NEBULA-EASY-HOME-SELECTION-CLOSEOUT.md",
+      "bytes": 6708,
+      "sha256": "1634C210B1F6CFCD5C484072BB4A39513DF2FEF2F0E775D746C6A3CDEE60276D"
+    },
+    {
+      "path": "artifacts/nebula-easy-home-selection-blocker-20260809/SELECTION-BLOCKER.json",
+      "bytes": 7658,
+      "sha256": "52A2A1AB93B5B00838485D4D318CB6C827E0A2A1D0B3F80B361AB8E2F1141E5E"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/heritage/provisional-reference-packet-20260809.json",
+      "bytes": 3829,
+      "sha256": "6230F1BC740EC6770262BF181D9A7D5BF9520381420792DACE9708BFDCBABF28"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/heritage/terminal-static-freeze-receipt-20260811.json",
+      "bytes": 4947,
+      "sha256": "DA3861FBE75606456559C95E6A1F0D4F70E243D9CB780938CE0C582B96AF0D65"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/love-reading-source-rebase-intake-20260809.md",
+      "bytes": 1797,
+      "sha256": "80F1FE9D8E16265DACA9408A066313099718431043B3DB538A07DC20D4787B64"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/love-repair-writer-handoff-20260809.md",
+      "bytes": 2750,
+      "sha256": "48ED1E2DE845CFF14D324FEA438EF601C0500ED01AE17DC54BFA3A9C2F08E1AF"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/NEBULA-EASY-CLOSEOUT.md",
+      "bytes": 6236,
+      "sha256": "E7F35508399EB294190DD675F4262F21D176BAABC54BA66C348E0A5394D611BC"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/proof/love-reading-repair-browser-proof-20260809.json",
+      "bytes": 5191,
+      "sha256": "17D69175D3FCA475116210E2B8867A89A56CFF8B434109B6C60DC2E3881EC488"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/proof/static-verification.json",
+      "bytes": 8353,
+      "sha256": "94B2D33B91025E237DFD246476BD17CC685B56F3A46EBF4DCAEAACE674385616"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/source-rebase/acceptance-20260809.json",
+      "bytes": 3159,
+      "sha256": "89BE85093B4821161831EA365125434DD0C1C5F6E9A8FD614EA6737390A0CB79"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/source-rebase/interactions.json",
+      "bytes": 1549,
+      "sha256": "C529E0CDDB0D7C6B2A0C0AB4388F2DB51A10062F8BC32540B2D87400A8521EC9"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/source-rebase/metrics.json",
+      "bytes": 2026,
+      "sha256": "7975D4A8C2533E846B05E864B2BD794A69560B33813CB396C6B67EB1053D3AC9"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/source-rebase/static-readback-interactions.json",
+      "bytes": 744,
+      "sha256": "D9DD1D0AC98251ACB4846AA281C758CB8D394CA54743AFDFA45066C88CEDA1F9"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/source-rebase/static-readback-metrics.json",
+      "bytes": 1418,
+      "sha256": "0362CD5208CBC3F6A8CEF8CAB164D1DB6633D5D9B10998D71627F4E384034E0F"
+    },
+    {
+      "path": "artifacts/nebula-easy-love-reading/yii2-hardening/yii2-package-proof-20260809.json",
+      "bytes": 10706,
+      "sha256": "198DD1DED6CEE876D617F8B2668DF4184C00F05C967B6F473D3F7BAF5DB57AD7"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/baseline-20260810/five-width-baseline.json",
+      "bytes": 2626,
+      "sha256": "AF1DC5F3C10EFE1540E724945EE5447EB18ABB1DD078FCD491D3F5C593009622"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/baseline-20260810/SOURCE-RECEIPT.md",
+      "bytes": 1518,
+      "sha256": "D7F2C9854454556D4BD0D4AF55D5F51E7D985403D009E4CEBEC5AC2E0FF16E94"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/CASTER-ANTON-CLASSIFICATION.md",
+      "bytes": 6483,
+      "sha256": "F2680614FE7E6EDBC61A6F619091C724C500772BD0C4F01EA36C9868A3C0A642"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/CLOSEOUT.md",
+      "bytes": 2360,
+      "sha256": "44A152A971C6AD2B5D5A011E60E0F2EBE0737E650F6BB5A63DE6DC4F75397B74"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/compare-hero-source-live.cjs",
+      "bytes": 2531,
+      "sha256": "B9C8ACCF3F53814C9CC71C8F07FAD7ABC1C6DB6A640571A354566CE994C1C408"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/compare.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/compare.stdout.json",
+      "bytes": 1463,
+      "sha256": "85A90981A6D9393714D4D3F8419AFCC76CBC7DD9EFB48EEAA4918D2D476D0B25"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/five-width-runtime-proof.json",
+      "bytes": 34906,
+      "sha256": "03CA6417A3FF6BDC9E138DE160F304A80C548A085DC429FDA11A676EC68D6A9C"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/hero-source-live-split.json",
+      "bytes": 1462,
+      "sha256": "C05A05A98E06C4CF16AC4096FE384BF0C6DCA611ED3C0951791F6B1086BF6F77"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/run-palm-proof.cjs",
+      "bytes": 7314,
+      "sha256": "474B4A93C4FF45E45F88DA03647FE013A3AC7CD023E7DBE36F39B29F079326D4"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/runner.stderr.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/runner.stdout.json",
+      "bytes": 34906,
+      "sha256": "03CA6417A3FF6BDC9E138DE160F304A80C548A085DC429FDA11A676EC68D6A9C"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/c76-pass-20260811/SOURCE-SUBTREE-MAP.md",
+      "bytes": 3093,
+      "sha256": "60DA7F6F072B5CCC78D8DE8B203597B648CC629E04BDDB34B9D944A609EFB030"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/candidate-20260810/caster-anton-classification.json",
+      "bytes": 2535,
+      "sha256": "B15D0151E941FAACCAAA89D13C4B84D39DCE1CFF6FDF7DE142190255FA773F80"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/candidate-20260810/five-width-candidate-proof.json",
+      "bytes": 3341,
+      "sha256": "E4A070AECF66FC43855FD019108A1B66E9B968018A7A4FA2D13714A0EE31EDDA"
+    },
+    {
+      "path": "artifacts/nebula-easy-palm-reading-source-rebase/candidate-20260810/post-rebind-runtime.json",
+      "bytes": 1571,
+      "sha256": "B77C993829B229CD40A83CE10F3A965AFA831B75E5703B5007608B1F79201406"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/five-width-runtime-and-interaction-proof.cjs",
+      "bytes": 7420,
+      "sha256": "1C98370652FEB868E791683D40C4E49FBBDF3E10F7E3B3232BBD74AB5F3EBEE0"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/five-width-runtime-and-interaction-proof.json",
+      "bytes": 9536,
+      "sha256": "2440D587B2238FCD621AC07F352E94441A7D17C8E1671031CE99AE409689EF67"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/focused-faq-proof.cjs",
+      "bytes": 5195,
+      "sha256": "F7565F654892AC015802367D4923D39B8FF0FB18F42117D1E8857572647421EA"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/focused-faq-proof.json",
+      "bytes": 681,
+      "sha256": "CE0581D5761303AF58FA119340DBA1C58C6577432EEF0F33BD96E0BE7FA53C64"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/inapp-faq-proof-20260811.json",
+      "bytes": 4051,
+      "sha256": "B96AF844D23D894399025643669667487003311C6F6CF338CC17560CD69A675B"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/preflight-runtime-census.cjs",
+      "bytes": 3032,
+      "sha256": "1C5F88A2312E3D16FF300E85573FF631F0A16F1725468CACE1DABF8B3CA5E459"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/preflight-runtime-census.json",
+      "bytes": 7523,
+      "sha256": "5923BB6AF450180FC02168DA4432893981A9F420C7B1493D461DAC63B8C9D84B"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/SOURCE-OWNERSHIP-CENSUS.md",
+      "bytes": 5183,
+      "sha256": "0BA8640529E0C571DF9D46C12F39C47BAD07FCDB489B1AB3E3971975F60D8321"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/c76-rebind-20260811/TERMINAL-CLOSEOUT.md",
+      "bytes": 2535,
+      "sha256": "BB48D440D32803F24359A245254EC871634F1E44C3DF5342FF8530F48C1368A1"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/candidate-20260810/five-width-candidate-proof.json",
+      "bytes": 2508,
+      "sha256": "9E7B55053F11C01B54213C3FD5FC03190BED926EE600EFD02BAEDB7937102D61"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/repair-20260810/caster-anton-verdict.md",
+      "bytes": 2108,
+      "sha256": "90A12D38E9B563BCB8984F2F9EB667BDD5FF8B4C6B4CEC939C56A14109345244"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/repair-20260810/five-width-runtime-proof.json",
+      "bytes": 8504,
+      "sha256": "3B831B956433665E5C639F395F19922FD2382568F3E2CDC994F968FA27F5B8F8"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/repair-20260810/interaction-proof.json",
+      "bytes": 1677,
+      "sha256": "5832CD1A3DC9C9F66A1855E8413B2F6A10A2E50488C36A9090F669BBED5ED6FC"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/repair-20260810/visual-comparison.json",
+      "bytes": 1158,
+      "sha256": "6DC916072F055E8404E125F37D4CBD894DBEDCA6D8A12606315D7346F43ED1D5"
+    },
+    {
+      "path": "artifacts/nebula-easy-phone-psychic-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 1352,
+      "sha256": "2DCCDA9F44D8D13C6FD97DFAF1B006687C4542025883DD9A7F2699728B816602"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 1483,
+      "sha256": "8C12295338DE4E14063A59A7B1CFF11975BBF763C9B7E4869170F9A1E5058AA5"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/static-pass-20260810/c76-320-chromium-decode-proof.json",
+      "bytes": 69,
+      "sha256": "C2ADDD50B0C25BD6BC4418694E67C8E69942942F2082ECF7F1EAF8733CFDD430"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/static-pass-20260810/CASTER-ANTON-CLASSIFICATION.md",
+      "bytes": 4626,
+      "sha256": "2C2508FEB3D19DBE3375948B8E7703220FC535C7F3684EEA6ECFEAC83624307E"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/static-pass-20260810/five-width-runtime-and-postimage-proof.json",
+      "bytes": 1242,
+      "sha256": "EB57BAE2472444AD10FD24890F126027168DCFAAF1FB9485F9385D60BE4FF5C2"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/static-pass-20260810/source-live-pixel-comparison.json",
+      "bytes": 1427,
+      "sha256": "FE6A5A9C555F58E65103057E31D7599BC22AB5092E01B99C7536F4218E3D0041"
+    },
+    {
+      "path": "artifacts/nebula-easy-privacy-policy-source-rebase/yii2-package-20260810/package-proof.json",
+      "bytes": 12213,
+      "sha256": "726920D81703C0DEC8D902B0AA313C00942668112239E9B88E432EF319B11BC9"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/closeout-20260809.json",
+      "bytes": 4036,
+      "sha256": "278522B3C808B365C137BC54662E88D73D3038690A4E7FD16A2755382EED305F"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/compare-panel.html",
+      "bytes": 2828,
+      "sha256": "666B39920CA77B0603C8B987E462E3A5DA361795CD84454BB31448476F362E8C"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/five-width-runtime-proof.json",
+      "bytes": 6079,
+      "sha256": "7C85C47C8B4C18784FD533EC47137A4776522159DE55C6E5040B8EEC6C1737C0"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/five-width-visual-metrics.json",
+      "bytes": 2487,
+      "sha256": "864393ABF544B8444944CA75F32620145533560030418BE84394ED9916433EB9"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/bootstrap.css",
+      "bytes": 224339,
+      "sha256": "636AB30F548435E861C8A25A8F5B125255CC3C6BF884357A6B17574ED0FA49C6"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/home.css",
+      "bytes": 147234,
+      "sha256": "3484081DBD7A52C590BACA7958A37F7F715ABC9AC06B663589401F6E3C6A2A44"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/img/icons/dark-theme.svg",
+      "bytes": 396,
+      "sha256": "778CCC96BA5DA4B25D2A0D3033FC96D2107141DAA50BC1D44DCF285A2A174857"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/img/icons/light-theme.svg",
+      "bytes": 905,
+      "sha256": "D29F8B9E4A20100E1FEB02565B14997F389E4C01E736A24F2024F7C04ACB5BE3"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/img/prn-star7-figma.svg",
+      "bytes": 461,
+      "sha256": "A8FD7F6EC28AEF78CDC28768F0D0F163912614C99124415AB85399BB31CD175A"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/img/prn-trust-star-favorite-source.svg",
+      "bytes": 999,
+      "sha256": "1C23222DEEAB155291157D36600C4AEA5419C8F950E8005384E78C9C42986D8A"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-1.css",
+      "bytes": 40552,
+      "sha256": "BB685BF9C7425EC6F3993A76BAA3326D4223DBDC1E9A1908C02F8204EEF939B4"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-2.css",
+      "bytes": 42421,
+      "sha256": "FCDBAF11BD52471356484B1BBBA6ABA49BB1591C0292F0B996C2F9876E95CCAC"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-3.css",
+      "bytes": 41154,
+      "sha256": "01BCF781D1C9AA18F944F6BBBEA13FD1945B85FE875236F3ACD8A22AB124E569"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/static-assets/psychic-reading-4.css",
+      "bytes": 40475,
+      "sha256": "E934AB5B8FB4F70E6913E7D4CA5488AE2FBFDC23CCC676EEF8C9BB0BDEFD7B9F"
+    },
+    {
+      "path": "artifacts/nebula-easy-psychic-reading/tools/capture.cjs",
+      "bytes": 6430,
+      "sha256": "9632B98140F86D3F94D69D57BE72847E009C61720938B87FE0C7F97B78875E32"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/capture-five-width.cjs",
+      "bytes": 3454,
+      "sha256": "AA31178B52BDEED2A1B52678D0D41C2F75A58A0F5A8F49ED30F81FE62539CA76"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/fast-batch-20260811/BATCH-CASTER-ANTON-VERDICT.md",
+      "bytes": 1680,
+      "sha256": "9F7D5184DE4120B93FFCCE462721F049AF10BF34ED136755CBCC71EE823D207D"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/fast-batch-20260811/five-width-runtime-proof.json",
+      "bytes": 2614,
+      "sha256": "70475D1C5DB88A3F9D1ABF146D6628D9A15C127B0D26CD97BD8744BD8B8D2555"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/post-runtime-proof.json",
+      "bytes": 1647,
+      "sha256": "80B310F184863FF43A98D2BB8EA5A327B3B60C207AF0A0B63D8E26CA5E154206"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/pre-runtime-proof.json",
+      "bytes": 444,
+      "sha256": "4E31580E3246D7E81FFF383D5151B8531F4981E6EF81990E7A484DFDBA38E769"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/SOURCE-RECEIPT.md",
+      "bytes": 1900,
+      "sha256": "8F209C7CBABBE57D5773A929829B03214426AC950497FDE3B45840FE9233C468"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/TERMINAL-CLOSEOUT.md",
+      "bytes": 1658,
+      "sha256": "96DCB7B65C5B436D8A1A15744F642A3CD4D8DDD54235A0839B2848E34C05819F"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/visual-comparison.json",
+      "bytes": 717,
+      "sha256": "00196BB0419D9614EC38E810EF7EB028267D99E640F7D806B7517D62E6ED4C09"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading-source-rebase/yii2-hardening/PACKAGE-CONTRACT.md",
+      "bytes": 716,
+      "sha256": "0B4F206C0860279D5D96DF0D1734E7EC18CD6A8363BBE3D293F9E0DF600C5702"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading/source-intake-20260810/capture.cjs",
+      "bytes": 3519,
+      "sha256": "BB445BBBE16601497573DFE2B21C1254A61E18FD26672352482AE6BD79ADCDEC"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading/source-intake-20260810/five-width-static-proof.json",
+      "bytes": 2689,
+      "sha256": "3C5FDF45A2335D1BC50B4A825E2F7E75E1B1689C1B56C0AFDFD0D1D9A929E9F1"
+    },
+    {
+      "path": "artifacts/nebula-easy-tarot-reading/source-intake-20260810/SOURCE-RECEIPT.md",
+      "bytes": 1322,
+      "sha256": "750C9668C126AF676B4B545078F686A900297807F87D0FD4A2ACFE4240B98885"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/acceptance-20260810/acceptance-classification.json",
+      "bytes": 1278,
+      "sha256": "9E03CCAB150E8D29471C71D274AF5E53A5EC10F544B22E237619037C22A66485"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/acceptance-20260810/TERMINAL-RESIDUAL-LEDGER.md",
+      "bytes": 4300,
+      "sha256": "5411F505FA14FD1A9077A3D5DB59D04D23D1B67D7706A83466672F17DCD46FCF"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/acceptance-20260811/acceptance-classification.json",
+      "bytes": 3314,
+      "sha256": "B643EC09034773D3170040BA9F1FB7385E7C9F5A7346254858343768FACE47E5"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/build-visual-proof.mjs",
+      "bytes": 2967,
+      "sha256": "774A4211854EB750AB1BF293AEC09E32F9829BC65DBBA26E2F5B74855C12C51C"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/CLOSEOUT.md",
+      "bytes": 5225,
+      "sha256": "869EC6DEDF7FBEFB0969F47D016F5FE7DCE0ADB44644A16ECC692F1533AE7A85"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/cross-page-recovery-20260811/closeout.json",
+      "bytes": 2478,
+      "sha256": "870DF3CFEC39E27A654519621B25DAB989DEB12BC0EC8C7FF470FB265B2799FA"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/cross-page-recovery-20260811/video-source-gap.json",
+      "bytes": 2083,
+      "sha256": "ED0FB965F97CB39D0F2D291EF8CC9508B8372BDB75E42DE42B0060CEDBD68B37"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/capture-five-width.js",
+      "bytes": 4106,
+      "sha256": "7A3022973401984C10AA8D9C322E5894CABBD6722F4F801BE9AA2BBDD35217A0"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/CASTER-ANTON-VERDICT.md",
+      "bytes": 2023,
+      "sha256": "B60CE97DF5A3502FD2CE14CFAEEB570A28B2CA1AF0857764C5459F29D8679CC5"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/five-width-runtime-proof.json",
+      "bytes": 6449,
+      "sha256": "C516E9B8A5178833DDEF5F0BF48CB855C06A1C9DD0915B75E9388A75ADAC7BAD"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/POST-FONT-STATIC-VERIFICATION.json",
+      "bytes": 1452,
+      "sha256": "A3692B7B92A7B8125AE73FFA28A31926E40ED7CA9BEFBC2C1F10FE6CBE4B655D"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/source-live-split-proof.json",
+      "bytes": 2816,
+      "sha256": "03D0BD76C7634181D1E4C06EBD804CD1F48940DBD1F7F06C8E1CDFC5AAC3EE75"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/fast-batch-02-20260811/TERMINAL-CLOSEOUT.md",
+      "bytes": 3032,
+      "sha256": "72FD549DD6F95A76B22164D17428834539645ABD3084BD7AC4DD9C2789A58E3D"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/observer-1200.json",
+      "bytes": 2704,
+      "sha256": "85B66295B99F5D0EDC82124987DB245E75D18BE3897F30535A5B0C9056410A52"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/observer-320.json",
+      "bytes": 3109,
+      "sha256": "025460A3D00D2863CBC94C338FF4511279D423BC0651A64C4609479216D4F885"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/perception-1200.json",
+      "bytes": 8282,
+      "sha256": "5B713FF5AA4CF92AED2195852FFC2A44DEC80248C78DE92FEAD0B0E44040CC9E"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/perception-320.json",
+      "bytes": 7166,
+      "sha256": "6E1B5F8C3ED52D55F61AFD543E1ACFD72A20BD4EDE802A33CAAADC90A14A60DA"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/persona-target.json",
+      "bytes": 651,
+      "sha256": "82EFF972F6001D9A8765563EC580850BE8B933C894C3E3B724DBA5C89E07DCC2"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/retina-1200.json",
+      "bytes": 215,
+      "sha256": "F4849B00CF17FA3987061ACC67C3B14FB2016F38CCE126EE96DEAFB46074F513"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/human-qa/retina-320.json",
+      "bytes": 268,
+      "sha256": "056122E79670B60E9A133C17FB83491575310F0F18BB28FB3F530D7E679BCBA3"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/run-five-width.mjs",
+      "bytes": 9920,
+      "sha256": "02514C5CD7212593F1CF4D63DB7E833558E9273558AEA2383AC33E36ECA14DED"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/runtime-proof.json",
+      "bytes": 29172,
+      "sha256": "0FCB62E8342EB29896EFEA22AA35AEF7691F9C02E0CE52A80008673942760C4C"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/source-assets/hero-ellipse-1200.svg",
+      "bytes": 653,
+      "sha256": "306461D9F2FCA35A9C0D259BA05C0C42409874FE63CEABED56801DB4D604716A"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/source-assets/person.svg",
+      "bytes": 905,
+      "sha256": "7E00D3FBFC72C65E4EA890339720FCF5C9C6169B66591F37FC6C3F357644FD97"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/source-assets/sign-card-bg-320.svg",
+      "bytes": 381,
+      "sha256": "278785AB0366137BCE10D0155E380705026ACD21C4EC799F46C0539B62471B1D"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-mobile-play.svg",
+      "bytes": 2054,
+      "sha256": "4CF23FE5F0156FC148EB56B60EDBAB2DDB48C18DFEAA98710072F1253486981C"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/source-assets/video-play.svg",
+      "bytes": 1120,
+      "sha256": "C322C482F3FE958ED53BA4DC3BB82F8727DB467378A8D49AA7F9FB2BF361F650"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/visual-proof.json",
+      "bytes": 3507,
+      "sha256": "85A6BB8DCA5DE118D6C62DA2F8977CD61E9912D8508B1A2FCBD9F77B8080FBBC"
+    },
+    {
+      "path": "artifacts/nebula-easy-taurus-compatibility/yii2-hardening/PACKAGE-CONTRACT.md",
+      "bytes": 969,
+      "sha256": "FA2EF2619955FCC56C13BAD39A8F331A1E5E63D25638CA2FA7F355946A36B703"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/capture-five-width.cjs",
+      "bytes": 5917,
+      "sha256": "338E474F21B74487CFDA2AB05FB371CDFF972CC3BCF6F369BF1C8D8DF23D52AD"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/css-bloat-guard.json",
+      "bytes": 2214,
+      "sha256": "4F8D0594D921AE4929616AF6B82C089CFD16872B2F6F0A28731023BE63D45790"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/fast-batch-20260811/five-width-runtime-proof.json",
+      "bytes": 2541,
+      "sha256": "5ED62888011559E63A47757C5DBC6D31D5D1C4407D04E6F233BF5522CD4C4C5B"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/fast-batch-20260811/post-repair-five-width-runtime-proof.json",
+      "bytes": 4408,
+      "sha256": "8063C82737565595FACFF384E47FA84E9506D6AF372932C32F092089B1BEDA4E"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/post-runtime-proof.json",
+      "bytes": 4042,
+      "sha256": "A5F3FEDEBD7C53CC5DF52733230FB2F896EB555C6F3DE361BE89CABEE98A2B05"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/terminal-residual-ledger.json",
+      "bytes": 3096,
+      "sha256": "E73674ED4715B5083037D515D1F283AC86269738D8DA7925300406C7A0A10788"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/visual-repair-20260814.json",
+      "bytes": 2482,
+      "sha256": "B12C22CF0DF5AEAB40416E30FC014D54356E056BBBFFCBCBC7BCA0D34A14B021"
+    },
+    {
+      "path": "artifacts/nebula-easy-zodiac-compatibility-source-rebase/yii2-hardening/PACKAGE-CONTRACT.md",
+      "bytes": 704,
+      "sha256": "4736FA4F4AA668A1CCF39ACA23B962914F8AF89F3DF5E837062148543EA231DF"
+    },
+    {
+      "path": "ask-psychic-new.html",
+      "bytes": 5111,
+      "sha256": "C5FC4856B04F40235123ABADD0E246F99F29B5A577714729CCE5D4FF8FA814CF"
+    },
+    {
+      "path": "asked-6-new.html",
+      "bytes": 2490,
+      "sha256": "1741B4EE0B9A2771FE77E6FB06DC3EECA2F1A32024A1339B717449937B85CFAB"
+    },
+    {
+      "path": "assets/lk-chatroom-c76-paid-active/manifest.json",
+      "bytes": 1869,
+      "sha256": "5F17D4108DB5B534B784449B148F615452A749CB3603F24236D1D1A52B42D0EB"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/composer-action-group.svg",
+      "bytes": 4767,
+      "sha256": "1F587E70B30E108AE8E1BA9B3321256C492C72E1CC9635D2F12AD2B85D3E882E"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/composer-attach-1200.svg",
+      "bytes": 799,
+      "sha256": "D56E1E35BD6137B022B589B9BB8553DE83197EEF7B1E7F1C043A6DD2727B664B"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/composer-attach-768.svg",
+      "bytes": 799,
+      "sha256": "7CE4BC80076B08715049E5766003A2A512D536A87D9D8C2D969F4E57B91D31B4"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/credit-coin.svg",
+      "bytes": 1439,
+      "sha256": "104193B4DF40B50CF97419EEAB2F2D5FF7E3F79785CCCFC3D1B706D7592C5562"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/menu-icon.svg",
+      "bytes": 572,
+      "sha256": "0531A24E7DBE3249495DB510AD45C7FE462EF24DFAF3261772BCF30C43068EC7"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/ready-card-star.svg",
+      "bytes": 707,
+      "sha256": "ACC543E2161A7C4FD919E6FA3E4E21F37E0EFCFE1233FB5F14F0D57D5B6B055E"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-attach-margo.svg",
+      "bytes": 1056,
+      "sha256": "007A3468D507C66DF3735E2DDB2221ACF535079BB590A5EFFD3D30A6C35F32BD"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-attach-miss.svg",
+      "bytes": 1056,
+      "sha256": "E66A1D264A9BF1FE0E04D5D8A215A26B85A3415429887781A721F9723465B1EF"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-busy-isolda.svg",
+      "bytes": 293,
+      "sha256": "AFCCEEA7BC820ADD6F00123B67E5E71C9E3D2C6A2EDACB2396DA4B6AFB44A8F1"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-busy-margo.svg",
+      "bytes": 293,
+      "sha256": "AFCCEEA7BC820ADD6F00123B67E5E71C9E3D2C6A2EDACB2396DA4B6AFB44A8F1"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-favorite-celesta.svg",
+      "bytes": 1115,
+      "sha256": "CC4FF0901D5917DA049B9857AB80FA0A83501F6F3906513081FB7321A6D7449F"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-favorite-miss.svg",
+      "bytes": 1115,
+      "sha256": "CC4FF0901D5917DA049B9857AB80FA0A83501F6F3906513081FB7321A6D7449F"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-favorite-odesa.svg",
+      "bytes": 1115,
+      "sha256": "CC4FF0901D5917DA049B9857AB80FA0A83501F6F3906513081FB7321A6D7449F"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-mute-margo.svg",
+      "bytes": 3101,
+      "sha256": "A2847977AEFA1B40153F2C79BE8EC0E31488BC5A2F801D1B30061387C1F222C8"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-online-averi.svg",
+      "bytes": 295,
+      "sha256": "D965DE6695ED31D3386D37DED3ED809B5178680D42577AC2D92227D86B8FC76F"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-online-esoteric.svg",
+      "bytes": 295,
+      "sha256": "D965DE6695ED31D3386D37DED3ED809B5178680D42577AC2D92227D86B8FC76F"
+    },
+    {
+      "path": "assets/lk-chatroom-c76/row-online-miss.svg",
+      "bytes": 295,
+      "sha256": "D965DE6695ED31D3386D37DED3ED809B5178680D42577AC2D92227D86B8FC76F"
+    },
+    {
+      "path": "astrology-reading-new.html",
+      "bytes": 5152,
+      "sha256": "5F37535C7868F231CEFF5341590563D8E423273566384CD1C271D2864796102D"
+    },
+    {
+      "path": "aura-colors-meaning-new.html",
+      "bytes": 3816,
+      "sha256": "32C8C3588036188273B7D2800B6744F0F183C835409615A1B9C2F15BC1533E90"
+    },
+    {
+      "path": "aura-reading-new.html",
+      "bytes": 3467,
+      "sha256": "6FE7B84D06E890EF77776D5D8E73EE60C79FC46ED0AC5A5EFA8DC9FF35A479EE"
+    },
+    {
+      "path": "AUTH_BREAKPOINT_FRAME_CONTRACT.md",
+      "bytes": 9042,
+      "sha256": "87229E643C95B33255D6E4BD25CCACF049F629A89832FD39CC8CDD0A5078577B"
+    },
+    {
+      "path": "AUTH_SLICE_EXECUTION_CONTRACT.md",
+      "bytes": 8298,
+      "sha256": "50F3CFB39C4AE0B6B7FB3A3C8B4B6BA291501A67839D22E0D9612B3E0478DAB5"
+    },
+    {
+      "path": "auth-create-new.html",
+      "bytes": 2913,
+      "sha256": "2C854D5C8F10F537CF917DC759CC97E5788870492393CB2D4AA66D6DC4902798"
+    },
+    {
+      "path": "auth-forgot-new.html",
+      "bytes": 2467,
+      "sha256": "8E1E983DB1EFED6BC9A8C712B67DF28C0B137BF6A10F139B85D77B69A88E8C3A"
+    },
+    {
+      "path": "auth-forgot.css",
+      "bytes": 8004,
+      "sha256": "60AFAE1D307AAA81B7CA98C32CE9F2150A15CC91692383CDAA596ED7BA330ADA"
+    },
+    {
+      "path": "auth-login-state-new.html",
+      "bytes": 1996,
+      "sha256": "734D6D5F6C6D09C67909013716767E358E245AF419529BE1A81EAD5A3BCCEC03"
+    },
+    {
+      "path": "auth-login.css",
+      "bytes": 9427,
+      "sha256": "0A322E443664A9C3D79D907699DAAFCD8BD60F907EEC3F65CF03C16EDCCDDF6C"
+    },
+    {
+      "path": "auth-step2-new.html",
+      "bytes": 2113,
+      "sha256": "FE49EFA6F75AF602247ECE53BEAAF685EAA492364656B45BD91819AD4B14AAC1"
+    },
+    {
+      "path": "birth-chart-new.html",
+      "bytes": 6759,
+      "sha256": "3EC1440D97622B90A4BE2CAA78668D5397D160D87E1AB9BC2EE2E6E92A8E9EB9"
+    },
+    {
+      "path": "blog-input-new.css",
+      "bytes": 23581,
+      "sha256": "D0BE44D5A6CBB75F59CAF6ADE867C1DA0F2B2764BD35C36F8B41EBFF583AE00A"
+    },
+    {
+      "path": "blog-input-new.html",
+      "bytes": 4404,
+      "sha256": "CB36FFBF4B95B33E67805F0B9C4AAA595B9820545E0B023194F344A98FC0E09C"
+    },
+    {
+      "path": "blog-new.html",
+      "bytes": 25197,
+      "sha256": "3E5F074E3730C883AE1AC035FF332D6AB63588EEFDD87BF594435D1B35D7B6BE"
+    },
+    {
+      "path": "bootstrap.css",
+      "bytes": 224339,
+      "sha256": "636AB30F548435E861C8A25A8F5B125255CC3C6BF884357A6B17574ED0FA49C6"
+    },
+    {
+      "path": "bootstrap.js",
+      "bytes": 137296,
+      "sha256": "73C25E89443FF7138C5872E43B95FDEAA922211810060AE899D778622A169D4A"
+    },
+    {
+      "path": "bunner-offer-new.html",
+      "bytes": 3538,
+      "sha256": "BD11F2E13BD6287D30C4E126290278077A4BC75C701B43AE07BCF9A70E454B1D"
+    },
+    {
+      "path": "button-get-started-new.html",
+      "bytes": 1152,
+      "sha256": "7493C3D4302B76FCB57FC2A4D95CD0D456B6B8D1D831C47E4EA552A589281F11"
+    },
+    {
+      "path": "button-reg-new.html",
+      "bytes": 1112,
+      "sha256": "3F76569A71E0C6FB9B3E3A999AE4501F50235EE912237CD76F118B0C51C8684C"
+    },
+    {
+      "path": "button-state-gallery.html",
+      "bytes": 3598,
+      "sha256": "93888545F2D7BADA338DF2135224981B0ED8A17D2E785E5EFB130611293F1573"
+    },
+    {
+      "path": "captcha-new.html",
+      "bytes": 5486,
+      "sha256": "CCB02DC4342DFA370422CB8605F879268E1B7F2E45655244E8067F1656334419"
+    },
+    {
+      "path": "card-1-new.html",
+      "bytes": 1920,
+      "sha256": "5F84C6FE731CB0245FE74054C788F3725E9C8B292B8B1C12BA5EBABDDBD3873B"
+    },
+    {
+      "path": "card-state-gallery.html",
+      "bytes": 5121,
+      "sha256": "8D2766DCDDC3A2FEEC589381B3642D249D4EB6286102DFF94075E9515BE43B02"
+    },
+    {
+      "path": "career-reading-new.html",
+      "bytes": 5125,
+      "sha256": "CC228A7AF029A4DA94F18329161B76A15921E76AB39BF75FF6EABC1582113E9F"
+    },
+    {
+      "path": "careers-join-new.html",
+      "bytes": 4070,
+      "sha256": "74F40C99BCE5E024A4A5B4194BC332C5B4059D44EE39404539E483752C6AA316"
+    },
+    {
+      "path": "cheap-psychic-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "A313BB606534D9E1671196CC11231404DDB7703A4E797B3FF94C955CE04BFAF0"
+    },
+    {
+      "path": "cheap-psychic-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "97BF5070866A82C9F0CEB36067EE44AD1039896236D077548A3113B0D13AD157"
+    },
+    {
+      "path": "cheap-psychic-320-review-board.html",
+      "bytes": 4804,
+      "sha256": "0BC8B8AD977772A047C7B714CE8B24275852347075D64C20795EDD0ADC7577FF"
+    },
+    {
+      "path": "cheap-psychic-320-review-manifest.json",
+      "bytes": 712,
+      "sha256": "E22DAC4DEBE13D885F96FFD53DDF0B75FD139E0A88DB06D9EB29A3D918ED0166"
+    },
+    {
+      "path": "cheap-psychic-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "275889D46E6ABD2121523A55C801CBB36E282C3636BB20786825F6E1E738A29C"
+    },
+    {
+      "path": "cheap-psychic-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "021DD8323121BB3F88714795F5467E521586212D083CC375A638E3C21F23F4E0"
+    },
+    {
+      "path": "cheap-psychic-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "4005C8DB2DC9A0E974EB1D7A045123B5E3514D1F6CC15CCCEC42E1AB4384DC38"
+    },
+    {
+      "path": "cheap-psychic-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "AED67B0080F6CF241869DD9AE3631E6CB7F0D44E17E969A75F05393372FB0B7E"
+    },
+    {
+      "path": "cheap-psychic-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "6B6BE74B592EC6B2EC8F44EB016C86015D70A3ACAF375C9DAF1DE901C7F42E61"
+    },
+    {
+      "path": "cheap-psychic-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "B69BE7E232CB61512F5A6522FDCD7FE03788E4DFF76DA46E499FE401B359A6FE"
+    },
+    {
+      "path": "cheap-psychic-detail.css",
+      "bytes": 39816,
+      "sha256": "F0A981BABDB3EFD1BE279661CC6C8EFADE0AF3541F31808A14E3F8087FA60D10"
+    },
+    {
+      "path": "cheap-psychic-new.html",
+      "bytes": 25696,
+      "sha256": "103CA1C61AD11F2F04A4B3815BB7B19EC16A54B06190ED5001FC381158FC4286"
+    },
+    {
+      "path": "cheap-psychic-responsive.css",
+      "bytes": 48858,
+      "sha256": "6D9B3E9EDFD04ACA16F356715CF8E2F753DD9C3357D29A5B2B373BED001E77C7"
+    },
+    {
+      "path": "cheap-psychic-source-locks.css",
+      "bytes": 36311,
+      "sha256": "87EB3A7847EE1B60B2D6F7D2BB746040EAFCEE5837BACC3990D44DB55D6181F2"
+    },
+    {
+      "path": "cheap-psychic.css",
+      "bytes": 18905,
+      "sha256": "592DBCC59E658A8D3CAC78F2B5B485E0ADDB44A6ECED37D615EF5B67807C9572"
+    },
+    {
+      "path": "cheap-review-board.html",
+      "bytes": 4788,
+      "sha256": "96885E0BFAFA9C505A79EDA8F65843BAC599757A817F39AFEF96510F27FAB9C9"
+    },
+    {
+      "path": "cheap-review-debug.html",
+      "bytes": 5471,
+      "sha256": "A1171E9C67D229EA262ED899285ED9437772CF1CC8F856737C3753AF43D44B11"
+    },
+    {
+      "path": "cheap-review-manifest.json",
+      "bytes": 705,
+      "sha256": "0AF829F3BAD5C2A05B338440385676C6B4ECD7D545AFF82071B6E2ACE46B1599"
+    },
+    {
+      "path": "component-gallery.html",
+      "bytes": 4569,
+      "sha256": "586DF9A8D4DC3A7E89BB58873E6F7516507846612192613C131A257C4E9DFB6E"
+    },
+    {
+      "path": "contact-us-new.html",
+      "bytes": 4275,
+      "sha256": "0A7BA9863E638679904447AAD906F28556F571A131DEEC84ED66B2F8AF54D22D"
+    },
+    {
+      "path": "content-pages.css",
+      "bytes": 7420,
+      "sha256": "8DDF577D16B4986FB2755DDD1450861E9460F92205E140D47DB9DC4EDCDE97F0"
+    },
+    {
+      "path": "cookie-policy-new.html",
+      "bytes": 2755,
+      "sha256": "BDD0B7758083FB5E17ED5748C845BE0A9775676825A0D253098B02692CC17394"
+    },
+    {
+      "path": "cookies-new.html",
+      "bytes": 2601,
+      "sha256": "F3CC063F733B74DDF5AF2D4E19B03AF28F26A7B3F61403F530EAC9AD8E12BFB9"
+    },
+    {
+      "path": "crystal-and-stone-meanings-new.html",
+      "bytes": 5214,
+      "sha256": "61D64F624A6A3AA1FE4C3CB1D0B7FB4B4AF43EC4A670758785C7294EBE0542FC"
+    },
+    {
+      "path": "daily-horoscope-new.html",
+      "bytes": 5136,
+      "sha256": "2D20AED9D3A0684299EC3CE16310052935C676E409494CE16A461C1785B2A9E8"
+    },
+    {
+      "path": "details-map.html",
+      "bytes": 11294,
+      "sha256": "9A56FDF8AFF15435EFCA86A7F3E9D4A2B82284208CE5CAE73EAA2661862D2680"
+    },
+    {
+      "path": "email-confirmation-new.html",
+      "bytes": 5507,
+      "sha256": "61C818A787985C01B67FDFD5D848CCFA127CA695B99216F918E35B892F7AE61C"
+    },
+    {
+      "path": "email-psychic-reading-new.html",
+      "bytes": 5202,
+      "sha256": "254A4A4D685F3A7015C976377527C63D1132B3DC5F1D22BADFA088E41C9BD253"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "bytes": 715,
+      "sha256": "F8ADAD1E07558B4B82F3262282DDCDACFE9FE2B4D7E15788413F7D10C6AAEB03"
+    },
+    {
+      "path": "expert-page-new.html",
+      "bytes": 5576,
+      "sha256": "1AA73E8482245E0972057254F41BF4E31B674BA682E074CF57331A2DF243249B"
+    },
+    {
+      "path": "faq-new.html",
+      "bytes": 17141,
+      "sha256": "CE322AD1B5307702844D2DEDD5944023ACBF7E0FC027C9179BE0BE8E438952AE"
+    },
+    {
+      "path": "fertility-reading-new.html",
+      "bytes": 5151,
+      "sha256": "E4D6239FB2048E876CF763E60149C5A9FCFEAF7342223DEC0E5424BC20F1AA90"
+    },
+    {
+      "path": "FIGMA_AUTONOMY_PROTOCOL.md",
+      "bytes": 6720,
+      "sha256": "11B526FCB15DBCBC0D03013E3C5E7FE888E56AA883847925319A1ED48BA766A5"
+    },
+    {
+      "path": "FIGMA_HANDOFF_CHECKLIST.md",
+      "bytes": 1846,
+      "sha256": "B1B4E9636CD699A4A2D263BABE4D71539B8D976489DF0D68B81DEC59F83AFE82"
+    },
+    {
+      "path": "FIGMA_HANDOFF_CONTRACT.md",
+      "bytes": 4161,
+      "sha256": "ADED08E45D8D5BD2A30A785F7DE08FE75B50239252566DB1EB7422FB90901158"
+    },
+    {
+      "path": "FIGMA_HANDOFF_HYPOTHESES.md",
+      "bytes": 2502,
+      "sha256": "2720C5CD924177254FFF292BD329FF8E9CFD29071C5275FC96A97623BD2A063D"
+    },
+    {
+      "path": "FIGMA_LESSONS.jsonl",
+      "bytes": 20986,
+      "sha256": "8B39EE945DFC324B1D0067ED62B4E99323566C0278248635E7D5B558E05FC96F"
+    },
+    {
+      "path": "FIGMA_LLM_CONTOUR_BENCHMARK.md",
+      "bytes": 4058,
+      "sha256": "8CE26446246E51E5F1F04CAB26B2B484469A793D029A8A97FDD615286E44248E"
+    },
+    {
+      "path": "FIGMA_PATTERN_LIBRARY.md",
+      "bytes": 4449,
+      "sha256": "729896FCEDE44A7688733D4A99B28B211318BC663508DD8203AE866D34A3BCDA"
+    },
+    {
+      "path": "FIGMA_SCALPER_CONTROL_PLANE.md",
+      "bytes": 3176,
+      "sha256": "818B09B2A2D292C4A01C23FF7A84BB69CBDD2CC7BB7917BD0F86EB2A8D8005C1"
+    },
+    {
+      "path": "FIGMA_SCREEN_SPEC_TEMPLATE.md",
+      "bytes": 1133,
+      "sha256": "B32550519D7B6E6F4E59CE2E229E0CD467DE00717DCA13F79ECB99EECB822B50"
+    },
+    {
+      "path": "FIGMA_VERSTKA_SPRINT_PLAN.md",
+      "bytes": 2977,
+      "sha256": "95F605E247E5A4057C78B4B67975477D29CCF10A0C20FA34F7498C352C3B83A5"
+    },
+    {
+      "path": "figma-auth.css",
+      "bytes": 18887,
+      "sha256": "8B0E1FDAEDD8214D89CCD712DCF306D3FF4A1593920F2F788FCFFB567B892C30"
+    },
+    {
+      "path": "figma-auth.js",
+      "bytes": 1692,
+      "sha256": "E0062F9F26A60B706BEF3C95356C1926FF68A5DF3B45C21FFFA74342C2B25DF9"
+    },
+    {
+      "path": "forgot-review-board.html",
+      "bytes": 5529,
+      "sha256": "8A3D290C9C2CBF7B8AB299EC96930A1BF7653A2999AD52D706836DDE4A61A382"
+    },
+    {
+      "path": "forgot-review-debug.html",
+      "bytes": 6448,
+      "sha256": "8F8EA6509D7E2A68915D26DEEE18395F0338EC20A9E619D63CBBFB23E8652F74"
+    },
+    {
+      "path": "forgot-review-manifest.json",
+      "bytes": 1181,
+      "sha256": "C1D19BBABCFDFEE66CF507F3ED15CDB78AA984137BBFF7C17C17B99BD8EA838D"
+    },
+    {
+      "path": "fortune-reading-new.html",
+      "bytes": 5133,
+      "sha256": "AA235DCCB0721A33E7E934B19E66FEF475B4B9CF8C6B0DDDE8F0CB76EA6322EC"
+    },
+    {
+      "path": "FREE_LEARNING_POLYGON.md",
+      "bytes": 2364,
+      "sha256": "E2ED688EB9C8CD4988DA24994DC180D8949A70E2DBA149A505036382513B414B"
+    },
+    {
+      "path": "free-psychic-reading-new.html",
+      "bytes": 5255,
+      "sha256": "886B0769572168A5037D585B283BF64D8E864544563F1C053F36611DB3575D3D"
+    },
+    {
+      "path": "HOME_BASELINE_TRANSFER_STANDARD.md",
+      "bytes": 3131,
+      "sha256": "8C35703C0D7ED71D6B9E6054B14716CDCBF1F6FEF0E97DDE2B7400B725C7D1CF"
+    },
+    {
+      "path": "home-popup-open.html",
+      "bytes": 87799,
+      "sha256": "C86CF0D4557A5C30C77247C0DAFD0900920F8B3B88246FB13F2C77E62B7DEB80"
+    },
+    {
+      "path": "home-reverse-shell-owner.css",
+      "bytes": 10791,
+      "sha256": "F2B57BDF0870F0C3B4C4CC7048ACA07FEF7E133D79B6BEE8BFBDEFB19067C799"
+    },
+    {
+      "path": "home-reverse-type-owner.css",
+      "bytes": 48633,
+      "sha256": "C8107D4E5680F056B84AF518BC5E9D9593A15251D59FF9C737EF6E2325AC2E8F"
+    },
+    {
+      "path": "home.css",
+      "bytes": 94009,
+      "sha256": "9435621F843C2172388A0A5FF21E0180DA29354FFE4E0C37CDD08A7477884823"
+    },
+    {
+      "path": "home.html",
+      "bytes": 88529,
+      "sha256": "7837BFA9BCF93E622AC28AC8E8B692D1DEDC91BB9D3E9C3D2DAE50AA2EAC7FA5"
+    },
+    {
+      "path": "home.js",
+      "bytes": 11572,
+      "sha256": "5270A993A3B015005DDFC04967111D889A8C522FA65D677E8AD3C9EE81C46B34"
+    },
+    {
+      "path": "horoscope-detail-new.html",
+      "bytes": 5182,
+      "sha256": "02CFAE6825E60804DB88ED5DABA8B44B3B974F010D2E9291E247E70023E61C88"
+    },
+    {
+      "path": "img/all-psychic-chat-icon-figma.svg",
+      "bytes": 655,
+      "sha256": "1F123D3F57D7A573886DE6FAA9E2C965BB1426C84FB238404C045717F2384445"
+    },
+    {
+      "path": "img/all-psychic-rating-star-figma.svg",
+      "bytes": 972,
+      "sha256": "E8139A19DBF077A90A3D048C824683CB513330E31FED66D3A17FFAADE0449C80"
+    },
+    {
+      "path": "img/all-psychic-rating-star-purple-figma.svg",
+      "bytes": 972,
+      "sha256": "F6E0ADEF35A56605E742972549A7D821D14807D56BC45A6F1416F31A71F95128"
+    },
+    {
+      "path": "img/all-psychic-reason-card-decoration-figma.svg",
+      "bytes": 1632,
+      "sha256": "7417776AA66B8AEC505EA6B61154CF7DBF274B4BD574F0FC89F4C1AE17B38A86"
+    },
+    {
+      "path": "img/all-psychic-video-play-button-figma.svg",
+      "bytes": 2077,
+      "sha256": "03D769D2E72194A22220C3AC717A1189D04C275724990C176CAC97F5B6B00BDA"
+    },
+    {
+      "path": "img/aura-best-star-c76.svg",
+      "bytes": 613,
+      "sha256": "B9924F928AA20E745D54017DA194C4AA44B18E79403B67BCF983C611EBED2BEB"
+    },
+    {
+      "path": "img/cheap-cp01-figma-chat-587-7830.svg",
+      "bytes": 789,
+      "sha256": "8390B45B69CD6A1661B85E967AB26E10757A98C4E32843E4ADED1B2B8BD7201F"
+    },
+    {
+      "path": "img/cheap-cp01-figma-star-81-511.svg",
+      "bytes": 1059,
+      "sha256": "F63173BAFE694E417B3B1CB195F45A804F254966C504BC71B328450778F54097"
+    },
+    {
+      "path": "img/cheap-need-star-917-17433.svg",
+      "bytes": 613,
+      "sha256": "B9924F928AA20E745D54017DA194C4AA44B18E79403B67BCF983C611EBED2BEB"
+    },
+    {
+      "path": "img/cheap-need-star-917-18394.svg",
+      "bytes": 615,
+      "sha256": "5F61DB402AEDE2DCE223EFEF8ACA4D7FD490CBE950A9EFC79B2ED1D83F44A5AB"
+    },
+    {
+      "path": "img/forgot-export-source.svg",
+      "bytes": 5392461,
+      "sha256": "4426F61D50D9F62BE837ECB108BEC4520791E988A16CA99251C92E4291AC5D7E"
+    },
+    {
+      "path": "img/icons/dark-theme.svg",
+      "bytes": 396,
+      "sha256": "778CCC96BA5DA4B25D2A0D3033FC96D2107141DAA50BC1D44DCF285A2A174857"
+    },
+    {
+      "path": "img/icons/light-theme.svg",
+      "bytes": 905,
+      "sha256": "D29F8B9E4A20100E1FEB02565B14997F389E4C01E736A24F2024F7C04ACB5BE3"
+    },
+    {
+      "path": "img/login-decor-figma.svg",
+      "bytes": 1657,
+      "sha256": "F47072051131E17A1C34663FC44E5C3A312FA1C98ED0B83EFF3F000327017810"
+    },
+    {
+      "path": "img/login-toggle-icon.svg",
+      "bytes": 1203,
+      "sha256": "62DB02901CC6FDA287D6402D1D13288304C1EB529A39033953C4DE6E91646B3B"
+    },
+    {
+      "path": "img/prn-star6-figma.svg",
+      "bytes": 332,
+      "sha256": "A9BB72F865F50CD3704D3122E31B874F823F0A3D06129E156E15DF9132CAE509"
+    },
+    {
+      "path": "img/prn-star7-figma.svg",
+      "bytes": 461,
+      "sha256": "A8FD7F6EC28AEF78CDC28768F0D0F163912614C99124415AB85399BB31CD175A"
+    },
+    {
+      "path": "img/prn-trust-star-favorite-source.svg",
+      "bytes": 999,
+      "sha256": "1C23222DEEAB155291157D36600C4AEA5419C8F950E8005384E78C9C42986D8A"
+    },
+    {
+      "path": "img/sprite.svg",
+      "bytes": 12099,
+      "sha256": "3FBED6C000B30C4778E58B5B25814406C5C682EB9812A3B357435C0B1927480C"
+    },
+    {
+      "path": "img/taurus-intimacy-symbol.svg",
+      "bytes": 1497,
+      "sha256": "2AD4269D3D3C5E387905ED63B4100635DDF9D0AA8197C9B45148FE099F154BF2"
+    },
+    {
+      "path": "img/topic-1.svg",
+      "bytes": 582,
+      "sha256": "C7E9C5815D2B76BB94C18EB181AF88CB9112DC298D48B29E2D905E70F14EBA68"
+    },
+    {
+      "path": "img/topic-2.svg",
+      "bytes": 744,
+      "sha256": "E290ACBC05F583E169F0F37364ADB5638AC5ED6EF540740B37EECBEFAAD2EAC6"
+    },
+    {
+      "path": "img/topic-3.svg",
+      "bytes": 800,
+      "sha256": "D456712C8EA48323338E32587D7DB20EC778A5CE21A339A0E9642A86065E2EC7"
+    },
+    {
+      "path": "img/topic-4.svg",
+      "bytes": 849,
+      "sha256": "40B36F5E74730B1303EFBC1CE5FB1F332CFF94ACC9C52C6EB5818D2DBEB4A466"
+    },
+    {
+      "path": "index.html",
+      "bytes": 103038,
+      "sha256": "23BF5380FC0BD4EE447FDB019F17FD6453053BCE5ED74C8B00BCDB79FA42E42E"
+    },
+    {
+      "path": "jquery.js",
+      "bytes": 342794,
+      "sha256": "D2D35982EEBAAF530C6812557C8750E6096D3EF248F30C40FFB97C93158EF915"
+    },
+    {
+      "path": "language-toggle-gallery.html",
+      "bytes": 3476,
+      "sha256": "DFF38DB93A4DB5303F5A9071532F1023F8F4550A2936BF5FEC44BFBEE22D95FC"
+    },
+    {
+      "path": "life-path-calculator-new.html",
+      "bytes": 5179,
+      "sha256": "91DF7F5BCC1B58E02E871B5C4523527CFEDEA4F29F03CCC2BA398282FAD6C801"
+    },
+    {
+      "path": "live-chat-rules-new.html",
+      "bytes": 2938,
+      "sha256": "1156BD245F99ED78C23CDFA7FAA345C4D46F8D5DD67992AF9A5CF1D0580693F8"
+    },
+    {
+      "path": "lk-chatroom-c76-paid-active.css",
+      "bytes": 10398,
+      "sha256": "472E4A49700DA055C637C855613F97C8F1C87BDB8C5C093879F2BDC75FF2B391"
+    },
+    {
+      "path": "lk-chatroom-c76-paid-active.html",
+      "bytes": 25586,
+      "sha256": "F4CC4FF5DD5A1EA725A4CA91FE668788856900547F9E82FD3F81F9F90E0724D9"
+    },
+    {
+      "path": "lk-chatroom-c76-paid-active.js",
+      "bytes": 6935,
+      "sha256": "5A188A5E6EAC07B713B83562B5AE2DD26381502CEFA23D65E1411EDBB1E6950E"
+    },
+    {
+      "path": "lk-chatroom-c76.css",
+      "bytes": 23808,
+      "sha256": "3B907954FCE16247CD2D96CA0608C9FD514EBF3F5AC8732D15C2960B22A24379"
+    },
+    {
+      "path": "lk-chatroom-c76.html",
+      "bytes": 22508,
+      "sha256": "11A2D209FB631A84BA6064BC819180E762F4F4BF7468745601B01C3C51A7DE7E"
+    },
+    {
+      "path": "lk-chatroom-c76.js",
+      "bytes": 12729,
+      "sha256": "C2D7B608A23F68C9EC2B27F36892E1EFF76AB2071CA2BBAFAA9B20749E767384"
+    },
+    {
+      "path": "lk-concept-new.html",
+      "bytes": 5771,
+      "sha256": "0F583D0CD44D4AD8D30D27E7274CEC66CC3F6EDC0EC6C1FC7BBCA887ED07BC64"
+    },
+    {
+      "path": "lk-psychics-dashboard-proposal.css",
+      "bytes": 13875,
+      "sha256": "974D494B839445159207CE8B0F22E90614F1060C363B176B53023B5AC7F3F5A8"
+    },
+    {
+      "path": "lk-psychics-dashboard-proposal.html",
+      "bytes": 15230,
+      "sha256": "CA30A777D0AD709C8ED4349FE0CFDEF9AF3A9FEEEA06A9F6F45CCFD82E13F0B5"
+    },
+    {
+      "path": "login-quad-view.html",
+      "bytes": 13004,
+      "sha256": "EBB5E3081873576E26B81C5C662B04B0342CF64C7E22DA4FE9E9DF2416D95B4D"
+    },
+    {
+      "path": "login-review-board.html",
+      "bytes": 5731,
+      "sha256": "2BAFE119DE581CC02D4E4565FA6D89973625281DD75A769D3392124D2F879680"
+    },
+    {
+      "path": "login-review-debug.html",
+      "bytes": 6540,
+      "sha256": "BD0E3D12CAFD1321B00CD1AFEBAB4ABC01C09273C420F94F22256EBC83F87FA5"
+    },
+    {
+      "path": "login-review-manifest.json",
+      "bytes": 647,
+      "sha256": "CE05B9CF2ADF90B736368B22ADFB8F22743E59D7D4427F228B984FD1C5F0F458"
+    },
+    {
+      "path": "login-slice-lens.html",
+      "bytes": 9246,
+      "sha256": "FCE1470A2B7DD7D05B61F8B4C8834B6C3270EFE7AB62A5285906EBB151C3F4C0"
+    },
+    {
+      "path": "login.html",
+      "bytes": 3272,
+      "sha256": "50C063C76A75BB29DDC50E1D4286D25D3F8E9FBC11036B342A038E8F9B630DC8"
+    },
+    {
+      "path": "lost-objects-reading-new.html",
+      "bytes": 5177,
+      "sha256": "E96FB8EF064E158E932B9DB5C1209569DFB8EBE674DD2C3E6D4E195B7BCE7A9A"
+    },
+    {
+      "path": "love-reading-new.html",
+      "bytes": 24875,
+      "sha256": "6AFAE6EB83EBB3836CA8ADDE1D795A74343223920143DCC7FC826BE27E0D7542"
+    },
+    {
+      "path": "love-reading.css",
+      "bytes": 77600,
+      "sha256": "80F0C74CC3D7DF626490DA285CF7A14E11E29BB2D52ECB0D22E6C5C0DD00E46A"
+    },
+    {
+      "path": "man-zodiac-sign-traits-new.html",
+      "bytes": 5235,
+      "sha256": "9A0C2B42B97A563C466F0BFFD754BA1D38A82397C855EB7F2F20BA1B5DA51BF6"
+    },
+    {
+      "path": "menu-new.html",
+      "bytes": 5374,
+      "sha256": "FC28ADBE77A911F94F1D49EE825E4C405D413068300D635EE26A02F7092939DC"
+    },
+    {
+      "path": "menu-open-new.html",
+      "bytes": 4471,
+      "sha256": "002E5467B63E4A9FFC1E34D508A70C21470AB9E8CB23655A46033D01F380F31B"
+    },
+    {
+      "path": "micro-components-lab.html",
+      "bytes": 5438,
+      "sha256": "73C1A2885C1B71A23B74BA657038275570B66A5CDC2FF8DC0E0306874044D2CB"
+    },
+    {
+      "path": "nebula-compare-board-page-catalog.js",
+      "bytes": 138333,
+      "sha256": "EAECABC83ADA72268E0D220FE03DF7D473F15ACDC04DD753196FF88160061341"
+    },
+    {
+      "path": "nebula-compare-board-page-export-manifest.js",
+      "bytes": 47116,
+      "sha256": "F6BCDDBC89CAAD10398AF524A169B290F1E89B615AA071A212C8DFA444AD1572"
+    },
+    {
+      "path": "nebula-compare-board-screen-export-manifest.js",
+      "bytes": 3464,
+      "sha256": "8AD323418AB0962EAC2F79A3A6594051CF5DB6B51DE4B9DDAA6494ED0628017C"
+    },
+    {
+      "path": "nebula-compare-board-source-coverage.js",
+      "bytes": 389525,
+      "sha256": "D135025A409D0B8A4F9AA1032DA84C95DE6021291303FFC56369AC9BD55D19F6"
+    },
+    {
+      "path": "nebula-easy-404.css",
+      "bytes": 14895,
+      "sha256": "B0C86EB84BAE8797628876480021B42A25E8EEA0619351E56779AE5B85D49690"
+    },
+    {
+      "path": "nebula-easy-404.html",
+      "bytes": 6098,
+      "sha256": "07E7EFDC21F3DD9E307BEF7CE36049D36B462287F783689EBA0908659FF4CA56"
+    },
+    {
+      "path": "nebula-easy-404.js",
+      "bytes": 900,
+      "sha256": "5A5E5C2385B0D74BF23866BF7EADC573B834BA1E60FB0DE5B887F7DEDD257402"
+    },
+    {
+      "path": "nebula-easy-all-psychic.css",
+      "bytes": 7139,
+      "sha256": "5CC80AA3C01B5AE835E99C806762C149DD02F2711845E6CAECF03BC4A85FB59A"
+    },
+    {
+      "path": "nebula-easy-all-psychic.html",
+      "bytes": 90739,
+      "sha256": "1742056D524EBBFECCEC055BBA974248349521745057DFCF9D9D4BA85A9FD52C"
+    },
+    {
+      "path": "nebula-easy-all-psychic.js",
+      "bytes": 5755,
+      "sha256": "15AE3714B19D9DFB24FFD9475BF2A9BB20B2D6D68C36F970AFB5C80A2C7D435F"
+    },
+    {
+      "path": "nebula-easy-blog-input.css",
+      "bytes": 32847,
+      "sha256": "05464A147F4FEDA314949CBCB4E0FF77072C8906AC03680AE9598838C9651B86"
+    },
+    {
+      "path": "nebula-easy-blog-input.html",
+      "bytes": 29107,
+      "sha256": "BF495E37458D9DF9D77A0771DB16776DAFBE138FB8BBE53CCDAF73D58FE6C581"
+    },
+    {
+      "path": "nebula-easy-blog-input.js",
+      "bytes": 1099,
+      "sha256": "2CAC0C622558C7E28D2F72857A9167C1E6A7CC17436913A18A7EA02454F8E0AD"
+    },
+    {
+      "path": "nebula-easy-blog.css",
+      "bytes": 28605,
+      "sha256": "2CB6D5276E2A78857809DCE25055892E1CFEDBAA34F863AEF67BAB272ED2B4A2"
+    },
+    {
+      "path": "nebula-easy-blog.html",
+      "bytes": 24644,
+      "sha256": "FFB2FA6A168573AE6E785C06EFD9D3EAC7C47B07AA0E150F34BB7F1A4E936DC6"
+    },
+    {
+      "path": "nebula-easy-blog.js",
+      "bytes": 2405,
+      "sha256": "FA12589215EC082D72AB34694264EEAF1B671D7DB6334B6CD9CBC9A423F7FA15"
+    },
+    {
+      "path": "nebula-easy-chat-bubble.svg",
+      "bytes": 641,
+      "sha256": "F78A28360841C620EB8B22DC196A61BAA78768166B4FB49C3980C797151E89A2"
+    },
+    {
+      "path": "nebula-easy-cheap-psychic.css",
+      "bytes": 4291,
+      "sha256": "E1ADE5B91E661C451DF57330DA215877314F3C8618130258711A51C7514BB9C2"
+    },
+    {
+      "path": "nebula-easy-cheap-psychic.html",
+      "bytes": 44741,
+      "sha256": "7955AB213D63C172EEB4DEBB988AB235CC882B5519DFC2C8D9BBD15DA70F2973"
+    },
+    {
+      "path": "nebula-easy-cheap-psychic.js",
+      "bytes": 1129,
+      "sha256": "D6E233D2A0B44E0389C2025FE5FEB69C1518A1073B1952617C91FDD24500A570"
+    },
+    {
+      "path": "nebula-easy-faq.css",
+      "bytes": 33950,
+      "sha256": "F8A660A27EE459BA663D4A4244E3D53D27B77BCF9B263893DD6F97E975A9DD07"
+    },
+    {
+      "path": "nebula-easy-faq.html",
+      "bytes": 15548,
+      "sha256": "3B48439A26D250812B8A292AC1B660CF95E85F87DBB0E2F667EC493F102B0A60"
+    },
+    {
+      "path": "nebula-easy-faq.js",
+      "bytes": 743,
+      "sha256": "28C100CB8DA579E3F990478AD171DC27423FE9896FB883E51E0DDF1061A7CC7B"
+    },
+    {
+      "path": "nebula-easy-love-reading.css",
+      "bytes": 342,
+      "sha256": "A7B2A6928816D2A96F1F95652BA8FDAE215DAEE7386A7C59C90DDF56DB89D256"
+    },
+    {
+      "path": "nebula-easy-love-reading.html",
+      "bytes": 39927,
+      "sha256": "C623CED39F975C7C72DB92F40FE5164AE2BD3633F4254C976BEC11583E786AB7"
+    },
+    {
+      "path": "nebula-easy-love-reading.js",
+      "bytes": 6785,
+      "sha256": "19E38CDA0F2F7381DBD5C9C94E44245E0A2B5E30C4FC912E5FBEBD4E16F23FEF"
+    },
+    {
+      "path": "nebula-easy-palm-reading.css",
+      "bytes": 342,
+      "sha256": "563283BAAD9D688B9B2EA417FD1084C3E771A840CE3BE307004BACE201CC6CE1"
+    },
+    {
+      "path": "nebula-easy-palm-reading.html",
+      "bytes": 18675,
+      "sha256": "D2D426C2A126BA4FAD518ED33968A37B062625D09F5B0A7ABA096FD59C825231"
+    },
+    {
+      "path": "nebula-easy-palm-reading.js",
+      "bytes": 1058,
+      "sha256": "94C4AF94A2BB7C633001484F960B15EAE38F8F0E98AAB50BE579E6856EA6DBAA"
+    },
+    {
+      "path": "nebula-easy-phone-psychic.css",
+      "bytes": 11374,
+      "sha256": "8CEBD2F12B62F0BD028517A76BD0266BD9E026B933A07BAFA447874662643615"
+    },
+    {
+      "path": "nebula-easy-phone-psychic.html",
+      "bytes": 41442,
+      "sha256": "F6179ED48A309E5EC003B671F7B4D81C2032747216E0351E725CA7C819130CEC"
+    },
+    {
+      "path": "nebula-easy-phone-psychic.js",
+      "bytes": 1663,
+      "sha256": "51034F47C904B02672CB8D65D72064A273D3F770675D6F1460B8C02D26924202"
+    },
+    {
+      "path": "nebula-easy-privacy-policy.html",
+      "bytes": 46461,
+      "sha256": "34213D3D69E113F04279E32C3DDA7F26BDD12B42D1069A1295899458040D76D7"
+    },
+    {
+      "path": "nebula-easy-psychic-reading.css",
+      "bytes": 14145,
+      "sha256": "EEE8772FB70F09A851D6D63130E24DDC3695A2C7EB2D1DEBE15F32D002451FE8"
+    },
+    {
+      "path": "nebula-easy-psychic-reading.html",
+      "bytes": 45694,
+      "sha256": "19E995E3B70E9F57F23DD49757C3A504958975B657103AE1ADD79C84EB09C67D"
+    },
+    {
+      "path": "nebula-easy-psychic-reading.js",
+      "bytes": 5917,
+      "sha256": "E5AF5EEE83A48FEA4C1A310B6EB1E982AF480E467A965A191997F74F6BBF9B3A"
+    },
+    {
+      "path": "nebula-easy-tarot-reading.css",
+      "bytes": 8608,
+      "sha256": "0FD97DC4995FD1E4B776CDBC0A5A9DFC3C60AD65FADAC9A16A2B47D6F736BDDD"
+    },
+    {
+      "path": "nebula-easy-tarot-reading.html",
+      "bytes": 53138,
+      "sha256": "147586F030A8829A2EA5996AF04E5549FF7C3AAE50538917280431614541E2A8"
+    },
+    {
+      "path": "nebula-easy-tarot-reading.js",
+      "bytes": 587,
+      "sha256": "6C8026A4A87A32B5A1397B6348905702129BC8B19EF9000FDFAB138E1B925E39"
+    },
+    {
+      "path": "nebula-easy-taurus-compatibility.css",
+      "bytes": 43683,
+      "sha256": "82932C31C6D5CDAAF70FE48258F19435B8F70158F78942610737828357767814"
+    },
+    {
+      "path": "nebula-easy-taurus-compatibility.html",
+      "bytes": 37354,
+      "sha256": "95A6359B6110E8C9453BF4B808FD1FC61C49EB607E7880B32321904C13E00F00"
+    },
+    {
+      "path": "nebula-easy-taurus-compatibility.js",
+      "bytes": 2877,
+      "sha256": "A9481C89B51A66043DD4C2057D69863449CDD83AEE75BA795FFF57E909B9EE73"
+    },
+    {
+      "path": "nebula-easy-zodiac-compatibility.css",
+      "bytes": 39766,
+      "sha256": "45A1E9FB1AAB1F8AA029C09121B6D384A902BB514C61F20BAF7126DD2C071AEB"
+    },
+    {
+      "path": "nebula-easy-zodiac-compatibility.html",
+      "bytes": 81818,
+      "sha256": "62F186E5FF74796C1EB2ADA5F2C77DB6F680B48A7DE3BB011A5FD15FF601A280"
+    },
+    {
+      "path": "nebula-easy-zodiac-compatibility.js",
+      "bytes": 1016,
+      "sha256": "F4CBD9A6E7297A58265610DBC9DDFDA1A7BAA8086260D554132ACBA6FEE8EAB1"
+    },
+    {
+      "path": "nebula-page-export-integrity-audit-20260820.json",
+      "bytes": 2836,
+      "sha256": "2FAE7FDF9758AFB79D6B80027CEBFE42FB508D251835682C77572526C273890D"
+    },
+    {
+      "path": "nebula-screen-reference-coverage-20260820.json",
+      "bytes": 2269,
+      "sha256": "15A790162171601E7032C77ABEBB893650A72B69771ECB9958A7633AB008C19C"
+    },
+    {
+      "path": "nebula-screen-reference-verifier-20260820.json",
+      "bytes": 2036,
+      "sha256": "C4BBFC3307EABED2939B20482649CB2AE1BC5856484406960050BAAAACCCFEC5"
+    },
+    {
+      "path": "nebula-topnav-compare-board.html",
+      "bytes": 829509,
+      "sha256": "3538A73F3609B37E2754D7A33FE9BFB09B5E67A3FC28E78760F7C46CC9E3EFF6"
+    },
+    {
+      "path": "nebula-unified-compare.html",
+      "bytes": 18559,
+      "sha256": "045064135ABFDA54CEDEB317408C7636774E560EFE48AA0223A5C16C102A5F54"
+    },
+    {
+      "path": "NEBULA-YII2-FRONTEND-HANDOFF-STATUS-20260915.md",
+      "bytes": 24353,
+      "sha256": "A7369F34DC3E2CC8AE91369936A7382CD8FC2FEC948B1342C8386AC91D144358"
+    },
+    {
+      "path": "NEURO_VERSTKA_PREP.md",
+      "bytes": 6119,
+      "sha256": "6BBA09795EAC87791E55DE049B1CDBD66E5361A752005DACB9FCF18A1B4DDA8C"
+    },
+    {
+      "path": "newsletter-capture-new.html",
+      "bytes": 5034,
+      "sha256": "A5064C7B635DB79201491A505ECC703C6818FF62078609F24C50E0C0598DD886"
+    },
+    {
+      "path": "numerology-reading-new.html",
+      "bytes": 5161,
+      "sha256": "092FE7ECF5EBED47D11527793DEC8D68D33FE2EEE8DF34162362B791E5B1C4E8"
+    },
+    {
+      "path": "oracle-nebula-visual-methodology-log.html",
+      "bytes": 37605,
+      "sha256": "EE22837ACCCFBE669F113861EC120FC464C1277111AA6473B81311A022817929"
+    },
+    {
+      "path": "oracle-nebula-visual-methodology-log.json",
+      "bytes": 56634,
+      "sha256": "4C8950F24D6EF194B3714B517C49DE3B4A1F76A3D7754FD09B8D89DBA23A8C5A"
+    },
+    {
+      "path": "oracle-shared-shell.00.css",
+      "bytes": 39272,
+      "sha256": "919182DC80E0F258EA0C231271460E47C6BD7BAADFD54F5C41C8B5D5750E136F"
+    },
+    {
+      "path": "oracle-shared-shell.01.css",
+      "bytes": 25186,
+      "sha256": "4644F571D8A38A604B7E42807E60FD2BC85F41F0E9016A825B9F0FA3F2DF4140"
+    },
+    {
+      "path": "palm-reading-1200-review-board.html",
+      "bytes": 4805,
+      "sha256": "9B91C6DFE248C3CD2A87256BE8CE5EC7D908183F2E4D64F047FB3F154C99D015"
+    },
+    {
+      "path": "palm-reading-1200-review-manifest.json",
+      "bytes": 709,
+      "sha256": "469804C9E534834D7C3328E597EB08157721459191C3350E4AD11186F6B2D52D"
+    },
+    {
+      "path": "palm-reading-320-review-board.html",
+      "bytes": 4798,
+      "sha256": "1183209E0F4D1B533D968BDAC0F0DFE1D8C184906A822613D417186910689807"
+    },
+    {
+      "path": "palm-reading-320-review-manifest.json",
+      "bytes": 706,
+      "sha256": "2AFF40E65A20B1EB4AEBEB6F5C67CCDB8F4CBB9C0FDEB0DBC9423B889B4F4154"
+    },
+    {
+      "path": "palm-reading-576-review-board.html",
+      "bytes": 4798,
+      "sha256": "9DF8C4A281AE9A28BC9533BD4C0AABE3E209FBF96120A1679E64DBBF821A6B25"
+    },
+    {
+      "path": "palm-reading-576-review-manifest.json",
+      "bytes": 706,
+      "sha256": "BD8A07D30F42A33E7F2AD4B8A1A758ECEB9145E7BBBDE5D505A6EE6D2E1E5A19"
+    },
+    {
+      "path": "palm-reading-768-review-board.html",
+      "bytes": 4798,
+      "sha256": "BF1B91FA8FEF5CF52E7E1DE317A29CAF33CEC044224652710E5D0FFEBC0FF259"
+    },
+    {
+      "path": "palm-reading-768-review-manifest.json",
+      "bytes": 706,
+      "sha256": "BCBABCEC23D69FE07A7D654DD9A66C47D0C220957CC8C24E3AB5396B8763FDA4"
+    },
+    {
+      "path": "palm-reading-992-review-board.html",
+      "bytes": 4798,
+      "sha256": "C6A174555E081B72FEEB39AC03A24E223F385707D40CE5446F1FF49135DB09C1"
+    },
+    {
+      "path": "palm-reading-992-review-manifest.json",
+      "bytes": 706,
+      "sha256": "CDE363E6D83F65F548C0B9A29A08844A61D2FED641FBDCA32AFC0CC83E11FC8B"
+    },
+    {
+      "path": "palm-reading-new.html",
+      "bytes": 13676,
+      "sha256": "162F7FB257B77BD610B6A4283391A362ED251EB5CE0976E781D661F80A5439B9"
+    },
+    {
+      "path": "palm-reading-scanner-new.html",
+      "bytes": 5184,
+      "sha256": "81A60F05F0F7650CCEF473468FE27A0CB0A329DD5511CFB32FEFD844E4419A48"
+    },
+    {
+      "path": "palm-reading.css",
+      "bytes": 16725,
+      "sha256": "94C1E95EA853449DB501F9BEC11FE7B98B1DEBA345DE58B0A918A71A70DE4CE2"
+    },
+    {
+      "path": "palm-review-board.html",
+      "bytes": 5755,
+      "sha256": "7395AF4C237DB40587651A2A4EED2A4D68BB96AC2D33E92387D8624D63DDCE25"
+    },
+    {
+      "path": "palm-review-debug.html",
+      "bytes": 6534,
+      "sha256": "283EAC05A40C7BF86133744ABE3E05C5232D931BAFC6D36AB6248459A7B7DFAB"
+    },
+    {
+      "path": "palm-review-manifest.json",
+      "bytes": 691,
+      "sha256": "0C64974315282620AA658C1EE4BEF3E58DD0358D327AA1DEE63A167F2E453FE0"
+    },
+    {
+      "path": "past-life-reading-new.html",
+      "bytes": 5170,
+      "sha256": "CE3192E026D1DC4514E9C5064640162927F64DBF98C77B7CDEE4336FF53E4445"
+    },
+    {
+      "path": "payment-modal-new.html",
+      "bytes": 5486,
+      "sha256": "625DB842ACB71A9EA2112028E4E51C8CC2940214C053BD11B841F29C114897CA"
+    },
+    {
+      "path": "payment-terms-new.html",
+      "bytes": 3002,
+      "sha256": "FF4FCD5F1E4B12642390D0E850576D7AC460D0F3CE71EFDE9EE47F85BF0746E6"
+    },
+    {
+      "path": "phone-confirmation-new.html",
+      "bytes": 5512,
+      "sha256": "1F8D18C789A8B59A1E133A6980898F9F35E24EEDA55B3D527CEB24A69B4389BE"
+    },
+    {
+      "path": "phone-psychic-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "21B4EC16BE759361816DCC6245DD1CF1844A7EF0C5AF0A1370FEE8AE184A6FCD"
+    },
+    {
+      "path": "phone-psychic-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "0D183BB5A7AB97B0487A2505D85D8F8ECE93E79A51A521C0422A835BF68D0181"
+    },
+    {
+      "path": "phone-psychic-320-review-board.html",
+      "bytes": 4804,
+      "sha256": "27A7690CCA7C56C4ABA6D341C06D11716FE7EF492268E9DA311DA9A93787740F"
+    },
+    {
+      "path": "phone-psychic-320-review-manifest.json",
+      "bytes": 712,
+      "sha256": "3621B562F1D79644DF2178E0E334939B23FE98D39CC0E828C5C8992E2219A824"
+    },
+    {
+      "path": "phone-psychic-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "27A12E385B344FAE63585ACF8F57738754F22B5158B84C5C8107C67259633508"
+    },
+    {
+      "path": "phone-psychic-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "A8A342A633BB5BC11CC84C045893E500CE496CFB8C04EDF8FA6A6F0832248FD9"
+    },
+    {
+      "path": "phone-psychic-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "2AE851BD9C0A6FDA9DA221A411777E314A952B98558FA0E929084BDD4FF7E319"
+    },
+    {
+      "path": "phone-psychic-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "C74856BA828EBB4A5290A12FD69F3D6103182AF0C22F8DE3F583EE202F2CDBF5"
+    },
+    {
+      "path": "phone-psychic-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "09DC0C21004C0DD683B401C56EE14299D5947FD910D5456EA5E5B08310F97A10"
+    },
+    {
+      "path": "phone-psychic-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "670AD02DD127E2D67BB12E3EEFCC94FE73AFF4BEBB21EBDEFB362B70B956030C"
+    },
+    {
+      "path": "phone-psychic-new.html",
+      "bytes": 22673,
+      "sha256": "5E08A249B43374E242C9C4DA8ECE945105DEB2DD90275A9796123860CBF67983"
+    },
+    {
+      "path": "phone-psychic.css",
+      "bytes": 14396,
+      "sha256": "C32D6D797A8EDF4CACF46FE0333DBA506718003DF15CC372B8B25DA38B8B24F5"
+    },
+    {
+      "path": "phone-review-board.html",
+      "bytes": 4788,
+      "sha256": "48F1CA4FC27051E422669D0B02B996E0E7DC4E6B6F6A8F45F3770D67BEFFC43E"
+    },
+    {
+      "path": "phone-review-debug.html",
+      "bytes": 5454,
+      "sha256": "4508F2E9FF2FABB244304C518B64E349498BE9B3A8E20C6E71F30DBCE6A9F938"
+    },
+    {
+      "path": "phone-review-manifest.json",
+      "bytes": 705,
+      "sha256": "1FC17395631D7A36D12C3DBF38870F6FFA53EB4A808F0ABD53371D8586DE88F0"
+    },
+    {
+      "path": "play-button-new.html",
+      "bytes": 1351,
+      "sha256": "1324F0DAE8EE3DFDAACFFCB9CD00B26C901B4C434A63DAAD9715DAFB6146DB77"
+    },
+    {
+      "path": "privacy-policy-new.css",
+      "bytes": 14659,
+      "sha256": "60530C39079DC2A5E7F458E53409656CA09628943E7F3C5B36554A5849AABF8B"
+    },
+    {
+      "path": "privacy-policy-new.html",
+      "bytes": 4216,
+      "sha256": "C5B5B25A0CB4B88A9D95AB07859DA0B4AA63674CA4C97565CF541EEEAFEA0C01"
+    },
+    {
+      "path": "profile-user-new.html",
+      "bytes": 5680,
+      "sha256": "82165688E510D8DB2A440DD8F765EC814ABECC9AC94B1F6A55DC4AB366B81C04"
+    },
+    {
+      "path": "PROJECT.md",
+      "bytes": 2084,
+      "sha256": "39D68980690A331A1073077162DEE39EBF7549B8DABF4FB80EEDBF55EB0B865B"
+    },
+    {
+      "path": "psychic-chat-new.html",
+      "bytes": 5190,
+      "sha256": "C4804748B24570E2AD212F4D4B489811C7B9CECE2E4C2505C462A0820196F4B6"
+    },
+    {
+      "path": "psychic-near-me-new.html",
+      "bytes": 5134,
+      "sha256": "FAC65169D2F900E3F5D670218D8EF7C937EABD6899E1805A040A01BB6514FA9B"
+    },
+    {
+      "path": "psychic-reading-1200-review-board.html",
+      "bytes": 4816,
+      "sha256": "8C4B444E489B8E455DF4E62E628F7F9F95CFF1DF9C0A3B0FA8685B1D25963DD3"
+    },
+    {
+      "path": "psychic-reading-1200-review-manifest.json",
+      "bytes": 722,
+      "sha256": "FFB55E50419C672BD17C1BBEB3A2008E9A90F2E576B4C2299B233D61CCEFD9A5"
+    },
+    {
+      "path": "psychic-reading-320-review-board.html",
+      "bytes": 4810,
+      "sha256": "9D11D4A0D861061A3A77F759D3946F0A8330343C28484ACEDAE4EE0014299E17"
+    },
+    {
+      "path": "psychic-reading-320-review-manifest.json",
+      "bytes": 721,
+      "sha256": "E1D5EE1C8051FA9EAA840440F2B53ED62AAAA5FB82D4A041E7F953F7AC288D91"
+    },
+    {
+      "path": "psychic-reading-576-review-board.html",
+      "bytes": 4810,
+      "sha256": "7245BBCDE3B532261DFCFE93AC2B9C189267B9DA0CA4E5A97968B14984639551"
+    },
+    {
+      "path": "psychic-reading-576-review-manifest.json",
+      "bytes": 721,
+      "sha256": "E6D30EE6B5D699971D8B929E6C93D4AF7509D79AF8938F240F9C752F88D90A10"
+    },
+    {
+      "path": "psychic-reading-768-review-board.html",
+      "bytes": 4810,
+      "sha256": "02454520D866A8C171BDAA7A97A0AC4A52C3BEBC390F441854B6520CD27CAD1A"
+    },
+    {
+      "path": "psychic-reading-768-review-manifest.json",
+      "bytes": 721,
+      "sha256": "CF44102B98716AA1BBC45CE44780519C75798D7609C18DB7077919BFC17E4395"
+    },
+    {
+      "path": "psychic-reading-992-review-board.html",
+      "bytes": 4809,
+      "sha256": "B1CDF38B00E59390F7F1FD6432EEFE59D6130204EBFD8AF564168B6215C25512"
+    },
+    {
+      "path": "psychic-reading-992-review-manifest.json",
+      "bytes": 719,
+      "sha256": "7DCAFB4B009066BD9919BAE1A1579E0D480FCFD9E57BB52C53D218969FD938E0"
+    },
+    {
+      "path": "psychic-reading-new.css",
+      "bytes": 39531,
+      "sha256": "DF95DF6693AA32699DE989B6E503B278F66CD61705892E0902ACA5F753FBC097"
+    },
+    {
+      "path": "psychic-reading-new.html",
+      "bytes": 38829,
+      "sha256": "BCE4EFA60F20CFC9EA31C54BD871AD7362B86A4FEEBE0283C53B49DB09053912"
+    },
+    {
+      "path": "psychic-review-board.html",
+      "bytes": 4796,
+      "sha256": "328EF65B8903691535041927FFC279BAC474E05942E88C05BD195DEA69A007B7"
+    },
+    {
+      "path": "psychic-review-debug.html",
+      "bytes": 5471,
+      "sha256": "7F1F210916342910298792169BF14513897A88F317CBBE5FA267EC23088AAFF8"
+    },
+    {
+      "path": "psychic-review-manifest.json",
+      "bytes": 713,
+      "sha256": "C2DA7362A41EF7BEFEDBDFC3F704A98053A4F47C39F112C678F7CD33DCE9DBAF"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1851,
+      "sha256": "CE470FC622C0EF4761E98CA679E73E1DC2D389B5A888FD24023A8B4D3205458B"
+    },
+    {
+      "path": "referral-program-new.html",
+      "bytes": 5020,
+      "sha256": "C6AA6AFB190A5AB7E13F02D700549BFB668481F741ECBC738969188154BED748"
+    },
+    {
+      "path": "refund-policy-new.html",
+      "bytes": 3027,
+      "sha256": "8E88F7D8FD162C0380862A8E55A303348CF73DE878462638FFEA5CF6886C3383"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 69,
+      "sha256": "75AD11474ECB43DF915653CBB3E62FC546587723BA3F8C0BFBDEA6661D0E0D97"
+    },
+    {
+      "path": "responsive-state-gallery.html",
+      "bytes": 5984,
+      "sha256": "CFF0B6DD1B2E72C63042FE8A35E2F9168293FA2A7C21E01DE7EA04F417CB4D5A"
+    },
+    {
+      "path": "review-card-new.html",
+      "bytes": 1446,
+      "sha256": "124107515774E562C77BA3B702C56BBD4EE19116C18916B327BE53834FFAA31D"
+    },
+    {
+      "path": "review-state-gallery.html",
+      "bytes": 3028,
+      "sha256": "98C3A3784B2BA82BEA601697FCE200CF98DA898C5F711F87FF66897BB9E2850D"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "bytes": 15701,
+      "sha256": "060CF9A28DC594B8811107E1AFDB4E069FE7E585ED2FDBBB9F6428CB9696E3FC"
+    },
+    {
+      "path": "settings-personal-new.html",
+      "bytes": 5580,
+      "sha256": "BDBD9EC105968A1B9BAE82AF38BF27B11C63EC399ABC9B90F41397DED59A1C40"
+    },
+    {
+      "path": "signup-review-board.html",
+      "bytes": 13864,
+      "sha256": "BE373C96F2C8C159C30847FC7DD1E61080BD66126C3AE1AA2900369B4EAA0918"
+    },
+    {
+      "path": "signup-step-1.html",
+      "bytes": 4878,
+      "sha256": "297BA5A5EBC571D17B6D4C60422437F4A27277BA2FF4BC026F96BC7B3AE50B0B"
+    },
+    {
+      "path": "signup-step-2.html",
+      "bytes": 2423,
+      "sha256": "41B95CE8172167C1E97AEB9420D2783D46A7E78C442A868E51F54310FBDD8D71"
+    },
+    {
+      "path": "site-map.html",
+      "bytes": 10153,
+      "sha256": "C104CEADCDCE2D6E4EA39F909D0C88F43D168E00517E5735F2FC39F017E21A15"
+    },
+    {
+      "path": "site-src/components/shared/footer-connector.html",
+      "bytes": 7494,
+      "sha256": "07DE29BF9E8DFC4D7C343A0FA5149470E0F8FB37175C03B227E22797C0CB51FD"
+    },
+    {
+      "path": "site-src/components/shared/page-shell-header.html",
+      "bytes": 3752,
+      "sha256": "CDA92F486F0C9EB818229644C625F6E88CE47478EF1EDA365005DDBB16F6DE33"
+    },
+    {
+      "path": "site-src/components/zodiac-compatibility/faq-accordion-c76.html",
+      "bytes": 5627,
+      "sha256": "A4D7B5963770D5D9111962EC59414FBD55029FA960C06DAC069922E155D52C43"
+    },
+    {
+      "path": "site-src/components/zodiac-compatibility/hero-c76.html",
+      "bytes": 3281,
+      "sha256": "0B804731B1662AB8B5CF86313C8DF15E5231BC0F7D82603FD7D202A50FCB76D8"
+    },
+    {
+      "path": "site-src/pages/zodiac-compatibility-new.page.json",
+      "bytes": 4723,
+      "sha256": "01D434C9AF97A2549727EE982B86BCCFE1D35D5BF39B475899B8B6F606FBA9A4"
+    },
+    {
+      "path": "site-src/pages/zodiac-compatibility-new.template.html",
+      "bytes": 51512,
+      "sha256": "64BF4E69C46EA77DB8D5FA967B105702C421682E274B58C5D1DFDC3329001472"
+    },
+    {
+      "path": "soulmate-reading-new.html",
+      "bytes": 5214,
+      "sha256": "4E826380FA50D62ED6D36046E7E27C671EFCFBE846F0EFB8186FDF431F892BF1"
+    },
+    {
+      "path": "spiritual-meanings-new.html",
+      "bytes": 5168,
+      "sha256": "A71CFD0F134D1A41C242FDB7B748E4523564703D4B7AA65003AA4516278E2B49"
+    },
+    {
+      "path": "tabs-new.html",
+      "bytes": 1600,
+      "sha256": "551C9081EDE3AF00C2A8CA57E2B16C6183BF32A336C379958EEA5CDD991333DF"
+    },
+    {
+      "path": "tarot-cards-meaning-new.html",
+      "bytes": 5169,
+      "sha256": "747DD54598525F85AF2CEDD2F16F6AF43AA797258ECBB90ECB388D69ED37302E"
+    },
+    {
+      "path": "tarot-reading-1200-review-board.html",
+      "bytes": 4809,
+      "sha256": "886392DFD71EA5A1917695C37AEA71939BF3A98D16747E3E840F6FFD498CD3D8"
+    },
+    {
+      "path": "tarot-reading-1200-review-manifest.json",
+      "bytes": 714,
+      "sha256": "7C494AE9514DE3E53508AE9FDA8A6F79857DA35C29C714967F9C908C82D3E0ED"
+    },
+    {
+      "path": "tarot-reading-320-review-board.html",
+      "bytes": 4802,
+      "sha256": "DE70CB06C338B5D05ECE192AD8567D5400489F1A4740FB99B918553F9A84073D"
+    },
+    {
+      "path": "tarot-reading-320-review-manifest.json",
+      "bytes": 711,
+      "sha256": "F8938B76EE612935F34891DA6F6449CC7C59322EF067D78034778980B8F39733"
+    },
+    {
+      "path": "tarot-reading-576-review-board.html",
+      "bytes": 4802,
+      "sha256": "2F3D35FC1538A770E2AA0B16B5473616352EB854D5FFF72A3497451609CE41D3"
+    },
+    {
+      "path": "tarot-reading-576-review-manifest.json",
+      "bytes": 711,
+      "sha256": "54A848E94C5EFA1813F96272AA6AC2859BA0DA5491FC99DDB654762717DD89C2"
+    },
+    {
+      "path": "tarot-reading-768-review-board.html",
+      "bytes": 4802,
+      "sha256": "52353DB62AF045ED66A69AA82FEFC6AF660AD39551A75E3CC7D8245A36718703"
+    },
+    {
+      "path": "tarot-reading-768-review-manifest.json",
+      "bytes": 711,
+      "sha256": "2CFEEA9805648AC63B647595D6D374D609126F059996BBED42F564BD57D749A7"
+    },
+    {
+      "path": "tarot-reading-992-review-board.html",
+      "bytes": 4802,
+      "sha256": "3A25F1F49AD81DD74C8AD741DEC01B8AA601470C3447DBBC726F107646905CDF"
+    },
+    {
+      "path": "tarot-reading-992-review-manifest.json",
+      "bytes": 711,
+      "sha256": "BBAC0749EAD2DB32B34B5A3073C66FD91B787FDBCA78D140E80A16A1156003EC"
+    },
+    {
+      "path": "tarot-reading-new.html",
+      "bytes": 23977,
+      "sha256": "4F030095827F088369BF3B06C2481645679B63F1B10C361979778ABB8118B14B"
+    },
+    {
+      "path": "tarot-reading.css",
+      "bytes": 19524,
+      "sha256": "8225EC90EE5D048E8B9F5BA2CC3E9ED44E64B90F1A833EA6FB759073832055B1"
+    },
+    {
+      "path": "tarot-reading.js",
+      "bytes": 6115,
+      "sha256": "9E0DA89C43B56763125AE2BA054C2B1AA12B1064470A721314FFC9EDC07FD3FB"
+    },
+    {
+      "path": "tarot-reading.owner.00.css",
+      "bytes": 35338,
+      "sha256": "54647823E5DB7733F2731AD70B06A97CB53AFF20EB5F8CC8D333092C1A760674"
+    },
+    {
+      "path": "tarot-reading.owner.01.css",
+      "bytes": 37941,
+      "sha256": "06F85F12C6D5A9F9594531DC7AEEAF8ED7B08805FFCEA1C8E2AB86CD0D2CFD37"
+    },
+    {
+      "path": "tarot-reading.owner.02.css",
+      "bytes": 37798,
+      "sha256": "A6DA4A131D8DC7B143C83EC220851A112B190650B4C011A38A67CBBCEE8ECA6A"
+    },
+    {
+      "path": "tarot-reading.owner.03.css",
+      "bytes": 24901,
+      "sha256": "1DC78DFF040F3713A10589C075B3187095BD84D95B6C76EB0FF04629F53BD1DC"
+    },
+    {
+      "path": "tarot-review-board.html",
+      "bytes": 4790,
+      "sha256": "F31E20433DA30A20473A4D771F2C66745DB52B9CAF48AA4BC019CEA5AB997512"
+    },
+    {
+      "path": "tarot-review-debug.html",
+      "bytes": 5536,
+      "sha256": "E56967BA75C024BFC3E345FCC3F9E4229EFF766AA71552DE027589518B2D7DFB"
+    },
+    {
+      "path": "tarot-review-manifest.json",
+      "bytes": 707,
+      "sha256": "4CED450BB920ADD9241D1B1B743631E08499D6A7D8F03194A4DB9C69F9D19A0A"
+    },
+    {
+      "path": "taurus-compatibility-new.html",
+      "bytes": 3938,
+      "sha256": "10B6FF0305BC9FABD458FDE4555D6ECE0A4D2E6A3BA470B56BCB1B8AFD48BDC6"
+    },
+    {
+      "path": "TELEGRAM_BRIDGE.md",
+      "bytes": 1446,
+      "sha256": "8393DBE1D777B16D0CB993F0BD2AF84EF59FC67D25026D3419EE132B749E33BE"
+    },
+    {
+      "path": "template-pages.css",
+      "bytes": 7805,
+      "sha256": "54D08D218EB88F4040C68C3229EBE90A7427E8F9F1E76DE1491799EE2E824A0D"
+    },
+    {
+      "path": "terms-conditions-new.html",
+      "bytes": 3079,
+      "sha256": "239604FDE9D341F0D861AD502F90E2DDDC9D52A32A9677A52C0E98BEE6B6C7F9"
+    },
+    {
+      "path": "tmpchat-geometry.mjs",
+      "bytes": 1299,
+      "sha256": "681D4A2E5BAA315D9FBE99285489A8D1C96C89EFD277B0C719C6B9B3847B3C8B"
+    },
+    {
+      "path": "topic-new.html",
+      "bytes": 13040,
+      "sha256": "52D80A036143E279019EFDB9D97C6FB6882C083A3C56A80C6D14B9C84F669A86"
+    },
+    {
+      "path": "ui-states-lab.html",
+      "bytes": 17421,
+      "sha256": "CA6AE859A4185B9900B76CF152883F5777971216D4EA8D38D8D1FAB2C10F5E6D"
+    },
+    {
+      "path": "utility-controls-gallery.html",
+      "bytes": 4428,
+      "sha256": "E819B09ACBEE8C17A739518AB2907442EFF48FADFB075EA5B88181FAAE6F2A38"
+    },
+    {
+      "path": "VERSTKA_STANDARD.md",
+      "bytes": 12824,
+      "sha256": "4231993B1B47860E1ECD3D01C537829FDED549C6EDDB6A1B5CEFEFFE9985A026"
+    },
+    {
+      "path": "VIDEO_RUNTIME_PROOF_CONTRACT.md",
+      "bytes": 1227,
+      "sha256": "958424C9765222DE627E6B7035D541A8FBEC732FC0865B9493FCBFA8EC35F02B"
+    },
+    {
+      "path": "woman-zodiac-sign-traits-new.html",
+      "bytes": 5250,
+      "sha256": "86A0A9F22F5F42F535AEEA0E679516D12EA158598FB846128A77C2409ED31A09"
+    },
+    {
+      "path": "zodiac-compatibility-new.html",
+      "bytes": 48621,
+      "sha256": "BF6A0472F982C3705474D0D30B86BFDB047C2281892DA5CE17573EE840BE950C"
+    },
+    {
+      "path": "zodiac-compatibility-new.owner.00.css",
+      "bytes": 38631,
+      "sha256": "3BB6AFF3007EFA024EC0DB6BA7032B17CBE004C1C413B1EF18C88C05017297F7"
+    },
+    {
+      "path": "zodiac-compatibility-new.owner.01.css",
+      "bytes": 26546,
+      "sha256": "C3E686F20AC4C940E604427BB5A8746358F5D751D6A5154E1A234E7D36D051F7"
+    },
+    {
+      "path": "zodiac-compatibility-new.owner.03.css",
+      "bytes": 37860,
+      "sha256": "A7DDBABF4C5C0F8D2136EC880ADBEE9300D5EB323083E1C3C940A9FB89CE0F12"
+    },
+    {
+      "path": "zodiac-compatibility-new.owner.04.css",
+      "bytes": 38247,
+      "sha256": "478490B9B6B5DEAD2D30C69A689C8A8498BFFEFFC582732B016F14DB58861013"
+    },
+    {
+      "path": "zodiac-compatibility-new.owner.05.css",
+      "bytes": 22126,
+      "sha256": "484561F5E3C26B1A7191FB64C8D9DD903F0DE0584C6216425F7DC2AF5C6DAA90"
+    },
+    {
+      "path": "zodiac-compatibility-start.html",
+      "bytes": 5578,
+      "sha256": "E447BA5AC7E44E832CB3795A0EB763E4870E2E85A8212742118389AD12EDD961"
+    },
+    {
+      "path": "zodiac-sign-traits-new.html",
+      "bytes": 5203,
+      "sha256": "0238438A90F767CEB2634EE1E7957CD139CCEE7A4CF500499CB51D86C6E099A3"
+    }
+  ]
+}

@@ -24,3 +24,12 @@ version, and replaces local CSRF tokens with `static-preview-csrf-token`.
 
 See [QA-REPORT-2026-09-15.md](QA-REPORT-2026-09-15.md) for the evidence-bound QA scope,
 the confirmed JavaScript repair and the remaining NOT PROVEN backend claims.
+
+## Full HTML/CSS/JS handoff
+
+The separate [full-layout code archive](full-layout/nebula-full-layout-code-20260916.zip)
+contains the complete HTML/CSS/JS source snapshot plus route manifests and handoff
+contracts for Codex/Yii2 integration. Its file inventory and SHA-256 values are in
+[FULL-LAYOUT-CONTENTS.json](full-layout/FULL-LAYOUT-CONTENTS.json). Raster media are
+kept in the published static tree and in the full transfer package; this Git archive
+is the code handoff, not a backend or production-runtime claim.
