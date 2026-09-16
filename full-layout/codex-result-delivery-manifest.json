@@ -1,0 +1,33 @@
+{
+  "schema": "codex_result_delivery_manifest.v1",
+  "status": "verified_with_limits",
+  "delivery_class": "full_layout_code_archive",
+  "verified_at_utc": "2026-09-16T13:20:00Z",
+  "git_commit": "d068ff2",
+  "deliverables": [
+    {
+      "id": "nebula-full-layout-code-20260916",
+      "kind": "web_url",
+      "target": "https://cutthreat.github.io/nebula-pages-public/full-layout/nebula-full-layout-code-20260916.zip",
+      "claim": "Полный code-handoff с HTML, CSS, JS/CJS/MJS, route manifests, контрактами, SVG и шрифтами.",
+      "verification_status": "verified",
+      "verification_method": "public-http-get-content-length-sha256",
+      "observed_http_status": 200,
+      "content_length": 11550620,
+      "sha256": "58E65ABF217D38518F89AEA12D34C26BE6BBFF83A5B3B3A41D24B9FD244C1DD6"
+    },
+    {
+      "id": "nebula-full-layout-inventory",
+      "kind": "web_url",
+      "target": "https://cutthreat.github.io/nebula-pages-public/full-layout/FULL-LAYOUT-CONTENTS.json",
+      "claim": "Инвентарь файлов и SHA-256 исходных элементов архива.",
+      "verification_status": "verified",
+      "verification_method": "public-http-get",
+      "observed_http_status": 200
+    }
+  ],
+  "limits": [
+    "Растровые media намеренно не дублируются в code-архиве; они находятся в static release и полном transfer-пакете.",
+    "Архив доказывает code/source handoff, но не backend, payment, persistence, realtime, RBAC или production runtime."
+  ]
+}

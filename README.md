@@ -32,4 +32,5 @@ contains the complete HTML/CSS/JS source snapshot plus route manifests and hando
 contracts for Codex/Yii2 integration. Its file inventory and SHA-256 values are in
 [FULL-LAYOUT-CONTENTS.json](full-layout/FULL-LAYOUT-CONTENTS.json). Raster media are
 kept in the published static tree and in the full transfer package; this Git archive
-is the code handoff, not a backend or production-runtime claim.
+is the code handoff, not a backend or production-runtime claim. The delivery receipt
+is [codex-result-delivery-manifest.json](full-layout/codex-result-delivery-manifest.json).
