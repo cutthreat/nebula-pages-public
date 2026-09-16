@@ -1,0 +1,92 @@
+{
+  "schema": "nebula.missing-report-reconciliation.v1",
+  "generatedAt": "2026-09-16T14:29:52.476Z",
+  "input": "proof/INPUT-MISSING-REPORT-20260916.md",
+  "inputSha256": "66DEFF41DAFD184888688DE0F84E1508F640EB5F0C316FA35E22BB6B85CA8407",
+  "summary": {
+    "presentExact": 172,
+    "presentUnderHtmlBase": 3,
+    "presentAsCurrentNewVariant": 10,
+    "missingFromCurrentPackage": 5
+  },
+  "missing": [
+    {
+      "file": "advisor-chat.html",
+      "status": "source_blocked",
+      "packageAction": "excluded; no artificial copy or placeholder"
+    },
+    {
+      "file": "press.html",
+      "status": "source_blocked",
+      "packageAction": "excluded; no artificial copy or placeholder"
+    },
+    {
+      "file": "reviews.html",
+      "status": "source_blocked",
+      "packageAction": "excluded; no artificial copy or placeholder"
+    },
+    {
+      "file": "support.html",
+      "status": "source_blocked",
+      "packageAction": "excluded; no artificial copy or placeholder"
+    },
+    {
+      "file": "trust.html",
+      "status": "source_blocked",
+      "packageAction": "excluded; no artificial copy or placeholder"
+    }
+  ],
+  "currentNewVariants": [
+    {
+      "oldName": "about-us.html",
+      "currentSourceName": "about-us-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "birth-chart.html",
+      "currentSourceName": "birth-chart-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "careers-join.html",
+      "currentSourceName": "careers-join-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "contact-us.html",
+      "currentSourceName": "contact-us-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "live-chat-rules.html",
+      "currentSourceName": "live-chat-rules-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "payment-terms.html",
+      "currentSourceName": "payment-terms-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "refund-policy.html",
+      "currentSourceName": "refund-policy-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "terms-conditions.html",
+      "currentSourceName": "terms-conditions-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "topic.html",
+      "currentSourceName": "topic-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    },
+    {
+      "oldName": "zodiac-compatibility.html",
+      "currentSourceName": "zodiac-compatibility-new.html",
+      "routePolicy": "no-copy; backend/route decision required"
+    }
+  ],
+  "packageDecision": "The package contains only current selected landing routes and the exact 32 route-backed account routes. Missing and alias cases remain explicit policy entries."
+}

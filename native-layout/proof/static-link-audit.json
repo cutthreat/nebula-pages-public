@@ -1,0 +1,340 @@
+{
+  "schema": "nebula.native-layout-static-link-audit.v1",
+  "generatedAt": "2026-09-16T14:38:09.474Z",
+  "packageRoot": "C:\\Users\\alexe\\Documents\\Codex\\2026-09-16\\nebula-native-layout\\outputs\\nebula-native-layout-20260916-v1",
+  "counts": {
+    "servedFiles": 888,
+    "servedBytes": 170948858,
+    "localReferences": 4344,
+    "brokenReferences": 0,
+    "externalReferences": 61,
+    "forbiddenFindings": 0,
+    "jsFiles": 41,
+    "jsSyntaxFailures": 0,
+    "routeEntries": 66,
+    "missingRouteFiles": 0,
+    "duplicateRouteFiles": 0
+  },
+  "brokenReferences": [],
+  "externalReferences": [
+    {
+      "file": "site/aura-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/aura-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/birth-chart/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/birth-chart-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/blog/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/blog-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/blog/input/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/blog-input-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/cheap-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/daily-horoscope/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/daily-horoscope-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/expert/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/expert-page-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/forgot-password/index.html",
+      "raw": "https://24hours.support-nebula.com/hc/en-us",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/horoscope-detail/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/horoscope-detail-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/index.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/login/index.html",
+      "raw": "https://asknebula.com/app/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/login/index.html",
+      "raw": "https://asknebula.com/app/privacy",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/love-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section3",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section5",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section1",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section1",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section2",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section3",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section4",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section5",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section6",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section7",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section8",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section9",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section10",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section11",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section12",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section13",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section3",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://www.edpb.europa.eu/about-edpb/about-edpb/members_en",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/model-contracts-transfer-personal-data-third-countries_en",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.81.5",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section2",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section3",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section4",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section5",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://www.virginia.gov/agencies/office-of-the-attorney-general/#vagov",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/palm-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/palm-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/phone-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/psychic-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/all-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "raw": "https://asknebula.com/app/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "raw": "https://asknebula.com/app/privacy",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/tarot-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/topic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/topic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/zodiac-compatibility/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/zodiac-compatibility-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "file": "site/zodiac-compatibility/taurus/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/taurus-compatibility-new.html",
+      "kind": "html-attribute"
+    }
+  ],
+  "forbiddenFindings": [],
+  "routeCoverage": {
+    "widths": [
+      1200,
+      992,
+      768,
+      576,
+      320
+    ],
+    "missingRouteFiles": [],
+    "duplicateRouteFiles": [],
+    "entries": 66
+  },
+  "claimCeiling": "static filesystem/link/resource closure only; no backend readiness claim"
+}

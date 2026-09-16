@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" href="../favicon.ico"><link rel="shortcut icon" href="../favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="static-preview-csrf-token">
+    <title>Settings — Neuro</title>
+    <link href="../yii2/modules/nebulaAccount/resources/css/profile.css?v=20260915" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/settings.css?v=20260915" rel="stylesheet">
+<link href="../assets/46a5959a/notification-indicator.css?v=20260915" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/account-header.css?v=20260915" rel="stylesheet">
+<link href="../yii2/modules/nebulaAccount/resources/css/credit-topup.css?v=20260915" rel="stylesheet"></head>
+<body class="nb-account-body">
+<main class="nb-account-page nb-settings-page" data-nebula-settings data-static-projection="true" data-live-mount="0" data-balance-fixture="120" data-source-balance-conflict-1200="normalized-to-fixture">
+    <header class="nb-topbar nb-topbar--settings" data-account-shell data-notification-shell data-node-id="1134:32219">
+    <a class="nb-logo" href="profile.html" aria-label="Neuro profile"><picture><source srcset="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.webp" type="image/webp"><img src="../yii2/modules/nebulaAccount/resources/images/profile/raw-768-14.png" alt="Neuro"></picture></a>
+    <div class="nb-topbar__right">
+        <nav class="nb-topnav" aria-label="Primary navigation">
+            <a class="" href="psychics.html">Psychic</a>
+            <a class="" href="favorites.html">Favorite</a>
+            <a class="" href="chatroom.html">Chatroom</a>
+            <a class="" href="horoscope.html">Horoscope</a>
+        </nav>
+        <!-- Account status cluster: notification, balance and account menu share one spacing rhythm. -->
+        <div class="nb-account-summary" aria-label="Account summary">
+            <a class="nb-notifications-pill" href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notifications-link="" data-notification-indicator="count" data-notification-unread-source="preview-fixture"><span class="nb-notifications-pill__icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"></span><b class="nb-notifications-pill__badge" data-notification-unread-count="" aria-hidden="true" data-topbar-notification-unread-count="">2</b></a>            <a class="nb-credit-pill" href="billing.html" data-credit-topup-trigger aria-label="Open credit top up. Credits balance 120"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt=""><span>120</span></a>
+            <button class="nb-menu-pill" id="profile-menu-trigger" data-common-account-menu-trigger type="button" aria-label="Account menu" aria-haspopup="menu" aria-controls="nb-account-menu" aria-expanded="false"><picture class="nb-menu-source"><source media="(max-width:575.98px)" srcset="../yii2/modules/nebulaAccount/resources/images/account-shell/menu-mobile-c76.svg"><img src="../yii2/modules/nebulaAccount/resources/images/horoscope/menu-icon.svg" alt=""></picture><span>VI</span></button>
+        </div>
+    </div>
+    <div class="nb-account-menu" id="nb-account-menu" role="menu" aria-label="Account navigation" hidden>
+        <!-- Shared account-menu owner mirrors the accepted Chatroom menu: identity first, then account destinations. -->
+        <div class="nb-account-menu__identity"><span class="nb-account-avatar">VI</span><div><b>Victoriya</b><small>Account navigation</small></div></div>
+        <a role="menuitem" href="profile.html"><span aria-hidden="true">◉</span>Profile</a>
+        <a role="menuitem" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-setting.svg" alt="" aria-hidden="true">Settings</a>
+        <a href="notifications.html" aria-label="Notifications, 2 unread notifications" data-notification-menu-link="" role="menuitem"><span class="nb-account-menu__notification-icon" aria-hidden="true"><img src="../yii2/modules/nebulaAccount/resources/images/chatroom-notify/notify-bell.svg" alt="" aria-hidden="true"><b class="nb-account-menu__notification-badge" data-notification-unread-count="" aria-hidden="true">2</b></span>Notifications</a>        <a role="menuitem" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/profile/sidebar-coin.svg" alt="" aria-hidden="true">Billing &amp; credits</a>
+        <a role="menuitem" href="support.html"><span aria-hidden="true">?</span>Customer support</a>
+    </div>
+    <button class="nb-account-menu-scrim" type="button" data-common-account-menu-scrim aria-label="Close account menu" hidden></button>
+</header>
+    <div class="nb-account-layout nb-settings-layout">
+        <aside class="nb-account-sidebar nb-settings-sidebar" aria-label="Account navigation">
+    <div class="nb-sidebar-profile"><div class="nb-sidebar-photo"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-raw-03.jpeg" alt="Victoriya"></div><strong>Victoriya</strong></div>
+    <nav class="nb-sidebar-nav">
+        <a href="profile.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-01.svg" alt="">Profile</a>
+        <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-06.svg" alt="">Psychics</span>
+        <a href="chatroom.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-07.svg" alt="">Chatroom <b>3</b></a>
+        <span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-09.svg" alt="">Favorite</span><a href="horoscope.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-04.svg" alt="">Horoscope</a><a class="is-current" aria-current="page" href="settings.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-11.svg" alt="">Setting</a>
+    </nav>
+    <div class="nb-sidebar-balance"><strong>Balance: <span>120 credits</span></strong><a class="nb-refill-visual nb-refill-link" href="billing.html"><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-03.svg" alt="">Refill credits</a></div>
+</aside>
+        <section class="nb-settings-content" aria-label="Settings">
+            <nav class="nb-settings-menu" aria-label="Settings sections">
+                                    <a href="astrology.html"><span>Astrology profile</span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-16.svg" alt=""></a>
+                                    <a href="account-information.html"><span>Account information</span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-16.svg" alt=""></a>
+                                    <a href="notifications.html"><span>Notification</span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-16.svg" alt=""></a>
+                                    <a href="support.html"><span>Customer Support</span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-16.svg" alt=""></a>
+                                    <a href="legal.html"><span>Legal &amp; Privacy</span><img src="../yii2/modules/nebulaAccount/resources/images/account-shell/settings-vector-16.svg" alt=""></a>
+                            </nav>
+        </section>
+    </div>
+</main>
+<section class="nb-credit-topup"
+         data-nebula-credit-topup
+         data-static-projection="true"
+         data-live-mount="0"
+         data-demo-only="true"
+         hidden>
+    <div class="nb-credit-topup__scrim" data-credit-topup-scrim hidden>
+        <article class="nb-credit-topup__dialog"
+                 id="nebula-credit-topup-dialog"
+                 role="dialog"
+                 aria-modal="true"
+                 aria-labelledby="credit-topup-title"
+                 aria-describedby="credit-topup-description"
+                 tabindex="-1">
+            <header class="nb-credit-topup__header">
+                <div>
+                    <span class="nb-credit-topup__eyebrow">Balance</span>
+                    <h2 id="credit-topup-title">Top up credits</h2>
+                    <p id="credit-topup-description">Choose a package to continue your conversations.</p>
+                </div>
+                <button class="nb-credit-topup__close" type="button" data-credit-topup-action="close" aria-label="Close top up window">×</button>
+            </header>
+
+            <div class="nb-credit-topup__balance" aria-live="polite">
+                <span>Current balance</span>
+                <strong data-credit-topup-balance>120 credits</strong>
+            </div>
+
+            <div class="nb-credit-topup__step" data-credit-topup-step="packages">
+                <div class="nb-credit-topup__packages" role="radiogroup" aria-label="Credit package">
+                    <button class="nb-credit-topup__package is-selected" type="button" role="radio" aria-checked="true" tabindex="0" data-credit-package="fixture-120" data-credits="120" data-amount="$ 9.99">
+                        <span><strong>120 credits</strong><small>Starter package</small></span><b>$ 9.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-350" data-credits="350" data-amount="$ 24.99">
+                        <span><strong>350 credits</strong><small>+50 extra credits</small></span><b>$ 24.99</b>
+                    </button>
+                    <button class="nb-credit-topup__package" type="button" role="radio" aria-checked="false" tabindex="-1" data-credit-package="fixture-1800" data-credits="1800" data-amount="$ 99.99">
+                        <span><strong>1800 credits</strong><small>+600 extra credits</small></span><b>$ 99.99</b>
+                    </button>
+                </div>
+
+                <div class="nb-credit-topup__summary">
+                    <span data-credit-topup-summary>120 credits</span>
+                    <strong data-credit-topup-total>$ 9.99</strong>
+                </div>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="confirm">Top up balance</button>
+                <p class="nb-credit-topup__demo-note">Apple Pay test mode: credits are saved to this local demo account. No real charge.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--processing" data-credit-topup-step="processing" hidden>
+                <div class="nb-credit-topup__spinner" aria-hidden="true"></div>
+                <h3>Processing Apple Pay test payment</h3>
+                <p>Confirming your local order and updating credits. No real money is charged.</p>
+            </div>
+
+            <div class="nb-credit-topup__step nb-credit-topup__step--success" data-credit-topup-step="success" hidden>
+                <div class="nb-credit-topup__success-mark" aria-hidden="true">✓</div>
+                <h3>Test payment successful</h3>
+                <p data-credit-topup-success-copy></p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="close">Return to page</button>
+            </div>
+            <div class="nb-credit-topup__step" data-credit-topup-step="error" hidden>
+                <h3>Test payment not confirmed yet</h3>
+                <p>The local receipt is unavailable. Retry to check the same order without adding credits twice.</p>
+                <button class="nb-credit-topup__confirm" type="button" data-credit-topup-action="retry">Check test payment again</button>
+            </div>
+        </article>
+    </div>
+    <p class="nb-credit-topup__live" data-credit-topup-live aria-live="polite"></p>
+</section>
+<script src="../yii2/modules/nebulaAccount/resources/js/account-header.js?v=20260915"></script>
+<script src="../assets/431cad45/credit-topup.js?v=20260915"></script></body>
+</html>

@@ -1,0 +1,1139 @@
+{
+  "schema": "nebula.native-layout-static-closure-audit.v1",
+  "generatedAt": "2026-09-16T14:29:52.476Z",
+  "missingReferences": [],
+  "omittedReferences": [
+    {
+      "file": "site/psychic-reading/index.html",
+      "raw": "../_unzipped/oracle-shell-locks/psychic-reading.css?v=20260622-owner-reviews-strip-repair",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\_unzipped\\oracle-shell-locks\\psychic-reading.css",
+      "reason": "source-blocked stylesheet omitted; no replacement invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/992/I917-21093-695-8586-ellipse-decoration.svg",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\992\\I917-21093-695-8586-ellipse-decoration.svg",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/992/I917-21093-695-8587-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\992\\I917-21093-695-8587-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/992/I917-21093-695-8587-help-card-star.webp",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\992\\I917-21093-695-8587-help-card-star.webp",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/992/I917-21093-695-8587-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\992\\I917-21093-695-8587-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/768/I917-21336-878-12307-ellipse-decoration.svg",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\768\\I917-21336-878-12307-ellipse-decoration.svg",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/768/I917-21336-878-12308-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\768\\I917-21336-878-12308-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/768/I917-21336-878-12308-help-card-star.webp",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\768\\I917-21336-878-12308-help-card-star.webp",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/768/I917-21336-878-12308-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\768\\I917-21336-878-12308-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/576/I917-21573-882-13849-ellipse-decoration.svg",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\576\\I917-21573-882-13849-ellipse-decoration.svg",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/576/I917-21573-882-13850-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\576\\I917-21573-882-13850-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/576/I917-21573-882-13850-help-card-star.webp",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\576\\I917-21573-882-13850-help-card-star.webp",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/576/I917-21573-882-13850-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\576\\I917-21573-882-13850-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/320/I917-21807-917-20585-ellipse-decoration.svg",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\320\\I917-21807-917-20585-ellipse-decoration.svg",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/320/I917-21807-917-20586-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\320\\I917-21807-917-20586-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/320/I917-21807-917-20586-help-card-star.webp",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\320\\I917-21807-917-20586-help-card-star.webp",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    },
+    {
+      "file": "site/_unzipped/love-reading.css",
+      "raw": "../figma-export/api/20260414-232048-ayfBFNukkQC05XmCVsJB6f/figma-assets/love-reading-clients-love/320/I917-21807-917-20586-help-card-star.png",
+      "sourceTarget": "F:\\CodexProjects\\confideline-nebula\\implementation\\nebula-gpt\\figma-export\\api\\20260414-232048-ayfBFNukkQC05XmCVsJB6f\\figma-assets\\love-reading-clients-love\\320\\I917-21807-917-20586-help-card-star.png",
+      "reason": "source-blocked CSS asset replaced with none; no placeholder invented"
+    }
+  ],
+  "sourceConflicts": [],
+  "externalRefs": [
+    {
+      "from": "site/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/index.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/aura-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/aura-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/birth-chart/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/birth-chart-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/blog/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/blog-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/blog/input/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/blog-input-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/cheap-psychic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/cheap-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/daily-horoscope/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/daily-horoscope-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/expert/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/expert-page-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/forgot-password/index.html",
+      "raw": "https://24hours.support-nebula.com/hc/en-us",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/horoscope-detail/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/horoscope-detail-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/login/index.html",
+      "raw": "https://asknebula.com/app/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/login/index.html",
+      "raw": "https://asknebula.com/app/privacy",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/love-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/love-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/palm-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/palm-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/phone-psychic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/phone-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/psychic-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/psychic-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/psychics/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/all-psychic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/tarot-reading/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/tarot-reading-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/topic/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/topic-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/zodiac-compatibility/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/zodiac-compatibility-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/zodiac-compatibility/taurus/index.html",
+      "raw": "https://cutthreat.github.io/nebula-pages-public/taurus-compatibility-new.html",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section3",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section5",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section1",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://legal.asknebula.com/request",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section2",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section4",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section6",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section7",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section8",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section9",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section10",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section11",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section12",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/app/privacy#section13",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://www.edpb.europa.eu/about-edpb/about-edpb/members_en",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://asknebula.com/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/model-contracts-transfer-personal-data-third-countries_en",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.81.5",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/nebula-account/privacy-policy.html",
+      "raw": "https://www.virginia.gov/agencies/office-of-the-attorney-general/#vagov",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/signup/step-2/index.html",
+      "raw": "https://asknebula.com/app/terms",
+      "kind": "html-attribute"
+    },
+    {
+      "from": "site/signup/step-2/index.html",
+      "raw": "https://asknebula.com/app/privacy",
+      "kind": "html-attribute"
+    }
+  ],
+  "transformedReferences": [
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "file": "site/index.html",
+      "reason": "route normalization"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/index.html",
+      "from": "signup-step-1.html",
+      "to": "signup/index.html",
+      "reason": "map legacy signup-step-1 link to selected signup route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/aura-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/blog/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/blog/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/cheap-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/forgot-password/index.html",
+      "from": "login.html",
+      "to": "../login/index.html",
+      "reason": "normalize auth form action to selected package route"
+    },
+    {
+      "file": "site/forgot-password/index.html",
+      "reason": "remove browser default body margin from full-viewport auth frame"
+    },
+    {
+      "from": "home.html",
+      "to": "index.html",
+      "file": "site/login/index.html",
+      "reason": "canonical package home is site/index.html"
+    },
+    {
+      "file": "site/login/index.html",
+      "reason": "route normalization"
+    },
+    {
+      "file": "site/login/index.html",
+      "reason": "remove browser default body margin from full-viewport auth frame"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/love-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/phone-psychic/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "\"img/prn-tailored-art-figma-631.png\"",
+      "to": "\"../_unzipped/img/prn-tailored-art-figma-631.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "\"img/prn-tailored-art-figma-631.png\"",
+      "to": "\"../_unzipped/img/prn-tailored-art-figma-631.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "\"img/prn-tailored-art-figma-631.png\"",
+      "to": "\"../_unzipped/img/prn-tailored-art-figma-631.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "\"img/prn-tailored-art-figma-631.png\"",
+      "to": "\"../_unzipped/img/prn-tailored-art-figma-631.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychic-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/psychics/index.html",
+      "from": "../expert/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/signup/index.html",
+      "from": "\"img/auth-bg-abstract-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-abstract-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/index.html",
+      "from": "\"img/auth-bg-silhouette-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-silhouette-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/index.html",
+      "from": "\"img/auth-bg-abstract-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-abstract-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/index.html",
+      "from": "signup-step-2.html",
+      "to": "step-2/index.html",
+      "reason": "normalize auth form action to selected package route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-1.png\"",
+      "to": "\"../_unzipped/img/avatar-1.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-2.png\"",
+      "to": "\"../_unzipped/img/avatar-2.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-3.png\"",
+      "to": "\"../_unzipped/img/avatar-3.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-1.png\"",
+      "to": "\"../_unzipped/img/avatar-1.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-1.png\"",
+      "to": "\"../_unzipped/img/avatar-1.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "\"img/avatar-1.png\"",
+      "to": "\"../_unzipped/img/avatar-1.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/tarot-reading/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/zodiac-compatibility/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/zodiac-compatibility/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/zodiac-compatibility/index.html",
+      "from": "../signup/",
+      "to": "../nebula-account/chatroom.html",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/zodiac-compatibility/taurus/index.html",
+      "from": "url(../../_unzipped/#tcnSexGradientLeft)",
+      "to": "url(#tcnSexGradientLeft)",
+      "reason": "repair inline SVG fragment to local defs"
+    },
+    {
+      "file": "site/zodiac-compatibility/taurus/index.html",
+      "from": "url(../../_unzipped/#tcnSexGradientRight)",
+      "to": "url(#tcnSexGradientRight)",
+      "reason": "repair inline SVG fragment to local defs"
+    },
+    {
+      "file": "site/nebula-account/profile.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=profile",
+      "to": "chatroom.html?expert=veronika&amp;entry=profile",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/profile.html",
+      "from": "chatroom.html?expert=marina&amp;entry=profile",
+      "to": "chatroom.html?expert=marina&amp;entry=profile",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/profile.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=profile",
+      "to": "chatroom.html?expert=nickel&amp;entry=profile",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/profile.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=profile",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=profile",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "to": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "to": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "to": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "to": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "to": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "to": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "to": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "to": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "to": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "to": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "to": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "to": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "to": "chatroom.html?expert=veronika&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "to": "chatroom.html?expert=marina&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "to": "chatroom.html?expert=nickel&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychics.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=catalogue",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/psychic-margo-lover.html",
+      "from": "chatroom.html?expert=margo-lover&amp;entry=detail",
+      "to": "chatroom.html?expert=margo-lover&amp;entry=detail",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/nebula-account/favorites.html",
+      "from": "chatroom.html?expert=karilla-huckes&amp;entry=favorites",
+      "to": "chatroom.html?expert=karilla-huckes&amp;entry=favorites",
+      "reason": "map Start chat/paid chat CTA to static chatroom route"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "from": "\"img/auth-bg-abstract-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-abstract-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "from": "\"img/auth-bg-silhouette-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-silhouette-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "from": "\"img/auth-bg-abstract-figma.png\"",
+      "to": "\"../_unzipped/img/auth-bg-abstract-figma.png\"",
+      "reason": "repair source-relative image ref to existing canonical _unzipped asset"
+    },
+    {
+      "file": "site/signup/step-2/index.html",
+      "from": "login.html",
+      "to": "../../login/index.html",
+      "reason": "normalize auth form action to selected package route"
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/chatroom.js",
+      "reason": "static package route normalization"
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/chatroom-notify.js",
+      "reason": "static package route normalization"
+    }
+  ]
+}

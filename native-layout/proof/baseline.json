@@ -1,0 +1,35 @@
+{
+  "schema": "nebula.native-layout-baseline.v1",
+  "generatedAt": "2026-09-16T14:29:52.476Z",
+  "source": {
+    "root": "F:/CodexProjects/confideline-nebula/implementation/nebula-gpt",
+    "branch": "codex/kimi3-nebula-layouts-20260818",
+    "commit": "01d98d78d40d177623dc0f2a55acd19db377f957",
+    "porcelainEntries": 906
+  },
+  "release": {
+    "root": "F:/CodexProjects/confideline-nebula/release/nebula-pages-20260914-final",
+    "branch": "main",
+    "commit": "9ac10fb446fe66c985b769ad2f26e70fbece1d18",
+    "porcelainEntries": 0
+  },
+  "localYii2Reference": {
+    "url": "http://127.0.0.1:8173",
+    "checkedBy": "builder",
+    "status": "deferred_to_qa_runner"
+  },
+  "counts": {
+    "landingPages": 34,
+    "accountRouteBackedPages": 32,
+    "widths": [
+      1200,
+      992,
+      768,
+      576,
+      320
+    ],
+    "routeWidthCases": 330
+  },
+  "oldSourcePackageNotCopied": true,
+  "note": "The canonical implementation checkout was already dirty at intake; this package builder performed read-only source access and writes only under the generated outputs package."
+}

@@ -1,0 +1,544 @@
+{
+  "schema": "nebula.native-layout-interaction-qa.v2",
+  "generatedAt": "2026-09-16T14:33:15.429Z",
+  "baseUrl": "http://127.0.0.1:4188",
+  "widths": [
+    576,
+    320
+  ],
+  "targetRoutes": [
+    "/",
+    "/psychics/",
+    "/nebula-account/psychics",
+    "/nebula-account/psychics/mia-jacomo",
+    "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
+    "/nebula-account/settings",
+    "/nebula-account/settings/notifications",
+    "/nebula-account/settings/support",
+    "/nebula-account/settings/legal"
+  ],
+  "counts": {
+    "cases": 18,
+    "pass": 18,
+    "warn": 0,
+    "fail": 0,
+    "mobileMenuPasses": 4,
+    "touchPasses": 18,
+    "keyboardPasses": 18
+  },
+  "checks": [
+    {
+      "route": "/",
+      "output": "site/index.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/index.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "pass",
+          "before": "false",
+          "after": "true",
+          "shown": 1
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "output": "site/index.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/index.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "pass",
+          "before": "false",
+          "after": "true",
+          "shown": 1
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/psychics/",
+      "output": "site/psychics/index.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/psychics/index.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "pass",
+          "before": "false",
+          "after": "true",
+          "shown": 1
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "button"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/psychics/",
+      "output": "site/psychics/index.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/psychics/index.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "pass",
+          "before": "false",
+          "after": "true",
+          "shown": 1
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "button"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/psychics",
+      "output": "site/nebula-account/psychics.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/psychics.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/psychics",
+      "output": "site/nebula-account/psychics.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/psychics.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/psychics/mia-jacomo",
+      "output": "site/nebula-account/psychic-mia-jacomo.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/psychic-mia-jacomo.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/psychics/mia-jacomo",
+      "output": "site/nebula-account/psychic-mia-jacomo.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/psychic-mia-jacomo.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
+      "output": "site/nebula-account/chatroom.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/chatroom.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
+      "output": "site/nebula-account/chatroom.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/chatroom.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings",
+      "output": "site/nebula-account/settings.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/settings.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings",
+      "output": "site/nebula-account/settings.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/settings.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/notifications",
+      "output": "site/nebula-account/notifications.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/notifications.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/notifications",
+      "output": "site/nebula-account/notifications.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/notifications.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/support",
+      "output": "site/nebula-account/support.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/support.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/support",
+      "output": "site/nebula-account/support.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/support.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/legal",
+      "output": "site/nebula-account/legal.html",
+      "width": 576,
+      "url": "http://127.0.0.1:4188/nebula-account/legal.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "route": "/nebula-account/settings/legal",
+      "output": "site/nebula-account/legal.html",
+      "width": 320,
+      "url": "http://127.0.0.1:4188/nebula-account/legal.html",
+      "status": "pass",
+      "checks": [
+        {
+          "name": "pointer_mobile_menu",
+          "status": "not_applicable",
+          "reason": "no .navbar-toggler on this route"
+        },
+        {
+          "name": "touch_target",
+          "status": "pass",
+          "tag": "a"
+        },
+        {
+          "name": "keyboard_focus",
+          "status": "pass"
+        },
+        {
+          "name": "back_cancel_close_inventory",
+          "status": "pass"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "claimCeiling": "static UI event smoke-check only; backend mutations and persistence are unbound"
+}

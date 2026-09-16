@@ -1,0 +1,1101 @@
+{
+  "schema": "nebula.native-layout-route-matrix.v1",
+  "generatedAt": "2026-09-16T14:29:52.476Z",
+  "package": "nebula-native-layout-20260916-v1",
+  "widths": [
+    1200,
+    992,
+    768,
+    576,
+    320
+  ],
+  "entrypoints": {
+    "home": "site/index.html",
+    "accountIndex": "site/nebula-account/index.html"
+  },
+  "landingPublic": [
+    {
+      "class": "landing_public",
+      "route": "/",
+      "title": "Home",
+      "source": "index.html",
+      "output": "site/index.html",
+      "entrypoint": "site/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/about-us/",
+      "title": "About Us",
+      "source": "about-us/index.html",
+      "output": "site/about-us/index.html",
+      "entrypoint": "site/about-us/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/aura-reading/",
+      "title": "Aura Reading",
+      "source": "aura-reading/index.html",
+      "output": "site/aura-reading/index.html",
+      "entrypoint": "site/aura-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/birth-chart/",
+      "title": "Birth Chart",
+      "source": "birth-chart/index.html",
+      "output": "site/birth-chart/index.html",
+      "entrypoint": "site/birth-chart/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/blog/",
+      "title": "Blog",
+      "source": "blog/index.html",
+      "output": "site/blog/index.html",
+      "entrypoint": "site/blog/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/blog/input/",
+      "title": "Blog Input",
+      "source": "blog/input/index.html",
+      "output": "site/blog/input/index.html",
+      "entrypoint": "site/blog/input/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/careers/join/",
+      "title": "Careers Join",
+      "source": "careers/join/index.html",
+      "output": "site/careers/join/index.html",
+      "entrypoint": "site/careers/join/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/cheap-psychic/",
+      "title": "Cheap Psychic",
+      "source": "cheap-psychic/index.html",
+      "output": "site/cheap-psychic/index.html",
+      "entrypoint": "site/cheap-psychic/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/contact-us/",
+      "title": "Contact Us",
+      "source": "contact-us/index.html",
+      "output": "site/contact-us/index.html",
+      "entrypoint": "site/contact-us/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/cookie-policy/",
+      "title": "Cookie Policy",
+      "source": "cookie-policy/index.html",
+      "output": "site/cookie-policy/index.html",
+      "entrypoint": "site/cookie-policy/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/daily-horoscope/",
+      "title": "Daily Horoscope",
+      "source": "daily-horoscope/index.html",
+      "output": "site/daily-horoscope/index.html",
+      "entrypoint": "site/daily-horoscope/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/expert/",
+      "title": "Expert",
+      "source": "expert/index.html",
+      "output": "site/expert/index.html",
+      "entrypoint": "site/expert/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/faq/",
+      "title": "FAQ",
+      "source": "faq/index.html",
+      "output": "site/faq/index.html",
+      "entrypoint": "site/faq/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/forgot-password/",
+      "title": "Forgot Password",
+      "source": "forgot-password/index.html",
+      "output": "site/forgot-password/index.html",
+      "entrypoint": "site/forgot-password/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/free-psychic-reading/",
+      "title": "Free Psychic Reading",
+      "source": "free-psychic-reading/index.html",
+      "output": "site/free-psychic-reading/index.html",
+      "entrypoint": "site/free-psychic-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/horoscope-detail/",
+      "title": "Horoscope Detail",
+      "source": "horoscope-detail/index.html",
+      "output": "site/horoscope-detail/index.html",
+      "entrypoint": "site/horoscope-detail/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/live-chat-rules/",
+      "title": "Live Chat Rules",
+      "source": "live-chat-rules/index.html",
+      "output": "site/live-chat-rules/index.html",
+      "entrypoint": "site/live-chat-rules/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/login/",
+      "title": "Login",
+      "source": "login/index.html",
+      "output": "site/login/index.html",
+      "entrypoint": "site/login/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/love-reading/",
+      "title": "Love Reading",
+      "source": "love-reading/index.html",
+      "output": "site/love-reading/index.html",
+      "entrypoint": "site/love-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/palm-reading/",
+      "title": "Palm Reading",
+      "source": "palm-reading/index.html",
+      "output": "site/palm-reading/index.html",
+      "entrypoint": "site/palm-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/payment-terms/",
+      "title": "Payment Terms",
+      "source": "payment-terms/index.html",
+      "output": "site/payment-terms/index.html",
+      "entrypoint": "site/payment-terms/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/phone-psychic/",
+      "title": "Phone Psychic",
+      "source": "phone-psychic/index.html",
+      "output": "site/phone-psychic/index.html",
+      "entrypoint": "site/phone-psychic/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/privacy-policy/",
+      "title": "Privacy Policy",
+      "source": "privacy-policy/index.html",
+      "output": "site/privacy-policy/index.html",
+      "entrypoint": "site/privacy-policy/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/psychic-chat/",
+      "title": "Psychic Chat",
+      "source": "psychic-chat/index.html",
+      "output": "site/psychic-chat/index.html",
+      "entrypoint": "site/psychic-chat/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/psychic-reading/",
+      "title": "Psychic Reading",
+      "source": "psychic-reading/index.html",
+      "output": "site/psychic-reading/index.html",
+      "entrypoint": "site/psychic-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/psychics/",
+      "title": "Psychics",
+      "source": "psychics/index.html",
+      "output": "site/psychics/index.html",
+      "entrypoint": "site/psychics/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/refund-policy/",
+      "title": "Refund Policy",
+      "source": "refund-policy/index.html",
+      "output": "site/refund-policy/index.html",
+      "entrypoint": "site/refund-policy/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/signup/",
+      "title": "Signup",
+      "source": "signup/index.html",
+      "output": "site/signup/index.html",
+      "entrypoint": "site/signup/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/soulmate-reading/",
+      "title": "Soulmate Reading",
+      "source": "soulmate-reading/index.html",
+      "output": "site/soulmate-reading/index.html",
+      "entrypoint": "site/soulmate-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/tarot-reading/",
+      "title": "Tarot Reading",
+      "source": "tarot-reading/index.html",
+      "output": "site/tarot-reading/index.html",
+      "entrypoint": "site/tarot-reading/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/terms-conditions/",
+      "title": "Terms & Conditions",
+      "source": "terms-conditions/index.html",
+      "output": "site/terms-conditions/index.html",
+      "entrypoint": "site/terms-conditions/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/topic/",
+      "title": "Topic",
+      "source": "topic/index.html",
+      "output": "site/topic/index.html",
+      "entrypoint": "site/topic/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/zodiac-compatibility/",
+      "title": "Zodiac Compatibility",
+      "source": "zodiac-compatibility/index.html",
+      "output": "site/zodiac-compatibility/index.html",
+      "entrypoint": "site/zodiac-compatibility/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "landing_public",
+      "route": "/zodiac-compatibility/taurus/",
+      "title": "Zodiac Compatibility Taurus",
+      "source": "zodiac-compatibility/taurus/index.html",
+      "output": "site/zodiac-compatibility/taurus/index.html",
+      "entrypoint": "site/zodiac-compatibility/taurus/index.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    }
+  ],
+  "accountCabinetChat": [
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/profile",
+      "title": "Profile — Neuro",
+      "source": "nebula-account/profile.html",
+      "output": "site/nebula-account/profile.html",
+      "entrypoint": "site/nebula-account/profile.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/psychics",
+      "title": "Psychics — Neuro",
+      "source": "nebula-account/psychics.html",
+      "output": "site/nebula-account/psychics.html",
+      "entrypoint": "site/nebula-account/psychics.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/psychics/margo-lover",
+      "title": "Margo Lover — Neuro",
+      "source": "nebula-account/psychic-margo-lover.html",
+      "output": "site/nebula-account/psychic-margo-lover.html",
+      "entrypoint": "site/nebula-account/psychic-margo-lover.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/psychics/mia-jacomo",
+      "title": "Mia Jacomo — Neuro",
+      "source": "nebula-account/psychic-mia-jacomo.html",
+      "output": "site/nebula-account/psychic-mia-jacomo.html",
+      "entrypoint": "site/nebula-account/psychic-mia-jacomo.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/favorites",
+      "title": "Favorite — Neuro",
+      "source": "nebula-account/favorites.html",
+      "output": "site/nebula-account/favorites.html",
+      "entrypoint": "site/nebula-account/favorites.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/chatroom?expert=mia-jacomo&entry=catalogue",
+      "title": "Chatroom — Neuro",
+      "source": "nebula-account/chatroom.html",
+      "output": "site/nebula-account/chatroom.html",
+      "entrypoint": "site/nebula-account/chatroom.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/chatroom/notify",
+      "title": "Chatroom Notify — Neuro",
+      "source": "nebula-account/chatroom-notify.html",
+      "output": "site/nebula-account/chatroom-notify.html",
+      "entrypoint": "site/nebula-account/chatroom-notify.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/chatroom/expert-offline",
+      "title": "Expert offline — Neuro",
+      "source": "nebula-account/expert-offline.html",
+      "output": "site/nebula-account/expert-offline.html",
+      "entrypoint": "site/nebula-account/expert-offline.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/chatroom/consultation-support",
+      "title": "Help with consultation — Neuro",
+      "source": "nebula-account/consultation-support.html",
+      "output": "site/nebula-account/consultation-support.html",
+      "entrypoint": "site/nebula-account/consultation-support.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/static/question-topics",
+      "title": "Question topics — Neuro",
+      "source": "nebula-account/question-topics.html",
+      "output": "site/nebula-account/question-topics.html",
+      "entrypoint": "site/nebula-account/question-topics.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/static/astrological-details",
+      "title": "Astrological details — Neuro",
+      "source": "nebula-account/astrological-details.html",
+      "output": "site/nebula-account/astrological-details.html",
+      "entrypoint": "site/nebula-account/astrological-details.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/static/video-preview",
+      "title": "Video preview — Neuro",
+      "source": "nebula-account/video-preview-static.html",
+      "output": "site/nebula-account/video-preview-static.html",
+      "entrypoint": "site/nebula-account/video-preview-static.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/horoscope",
+      "title": "Horoscope — Neuro",
+      "source": "nebula-account/horoscope.html",
+      "output": "site/nebula-account/horoscope.html",
+      "entrypoint": "site/nebula-account/horoscope.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings",
+      "title": "Settings — Neuro",
+      "source": "nebula-account/settings.html",
+      "output": "site/nebula-account/settings.html",
+      "entrypoint": "site/nebula-account/settings.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support",
+      "title": "Customer Support — Neuro",
+      "source": "nebula-account/support.html",
+      "output": "site/nebula-account/support.html",
+      "entrypoint": "site/nebula-account/support.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/notifications",
+      "title": "Notifications — Neuro",
+      "source": "nebula-account/notifications.html",
+      "output": "site/nebula-account/notifications.html",
+      "entrypoint": "site/nebula-account/notifications.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support/billing",
+      "title": "Billing — Neuro",
+      "source": "nebula-account/billing.html",
+      "output": "site/nebula-account/billing.html",
+      "entrypoint": "site/nebula-account/billing.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support/plans",
+      "title": "Plans — Neuro",
+      "source": "nebula-account/plans.html",
+      "output": "site/nebula-account/plans.html",
+      "entrypoint": "site/nebula-account/plans.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support/help",
+      "title": "Help — Neuro",
+      "source": "nebula-account/support-help.html",
+      "output": "site/nebula-account/support-help.html",
+      "entrypoint": "site/nebula-account/support-help.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support/helper",
+      "title": "Helper Bot — Neuro",
+      "source": "nebula-account/helper-bot.html",
+      "output": "site/nebula-account/helper-bot.html",
+      "entrypoint": "site/nebula-account/helper-bot.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/support/faq",
+      "title": "FAQ — Neuro",
+      "source": "nebula-account/faq.html",
+      "output": "site/nebula-account/faq.html",
+      "entrypoint": "site/nebula-account/faq.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/astrology",
+      "title": "Astrology profile — Neuro",
+      "source": "nebula-account/astrology.html",
+      "output": "site/nebula-account/astrology.html",
+      "entrypoint": "site/nebula-account/astrology.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/notifications/daily-horoscope",
+      "title": "Daily horoscope notifications — Neuro",
+      "source": "nebula-account/daily-horoscope.html",
+      "output": "site/nebula-account/daily-horoscope.html",
+      "entrypoint": "site/nebula-account/daily-horoscope.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/account",
+      "title": "Account information — Neuro",
+      "source": "nebula-account/account-information.html",
+      "output": "site/nebula-account/account-information.html",
+      "entrypoint": "site/nebula-account/account-information.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/legal",
+      "title": "Legal &amp; Privacy — Neuro",
+      "source": "nebula-account/legal.html",
+      "output": "site/nebula-account/legal.html",
+      "entrypoint": "site/nebula-account/legal.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/legal/privacy-policy",
+      "title": "Privacy Policy — Neuro",
+      "source": "nebula-account/privacy-policy.html",
+      "output": "site/nebula-account/privacy-policy.html",
+      "entrypoint": "site/nebula-account/privacy-policy.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/legal/personal-data",
+      "title": "Manage Personal Data — Neuro",
+      "source": "nebula-account/personal-data.html",
+      "output": "site/nebula-account/personal-data.html",
+      "entrypoint": "site/nebula-account/personal-data.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/legal/center",
+      "title": "Legal Center — Neuro",
+      "source": "nebula-account/legal-center.html",
+      "output": "site/nebula-account/legal-center.html",
+      "entrypoint": "site/nebula-account/legal-center.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/legal/consent",
+      "title": "Privacy Preference Center — Neuro",
+      "source": "nebula-account/consent-settings.html",
+      "output": "site/nebula-account/consent-settings.html",
+      "entrypoint": "site/nebula-account/consent-settings.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/notifications/messages",
+      "title": "Messages from psychics — Neuro",
+      "source": "nebula-account/messages-from-psychics.html",
+      "output": "site/nebula-account/messages-from-psychics.html",
+      "entrypoint": "site/nebula-account/messages-from-psychics.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/notifications/offers",
+      "title": "Special offers — Neuro",
+      "source": "nebula-account/special-offers.html",
+      "output": "site/nebula-account/special-offers.html",
+      "entrypoint": "site/nebula-account/special-offers.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    },
+    {
+      "class": "cabinet_chat",
+      "route": "/nebula-account/settings/notifications/system",
+      "title": "System messages — Neuro",
+      "source": "nebula-account/system-messages.html",
+      "output": "site/nebula-account/system-messages.html",
+      "entrypoint": "site/nebula-account/system-messages.html",
+      "viewports": [
+        1200,
+        992,
+        768,
+        576,
+        320
+      ]
+    }
+  ],
+  "routeCoverage": {
+    "landing": 34,
+    "accountRouteBacked": 32,
+    "total": 66
+  },
+  "crossRouteContracts": [
+    {
+      "contract": "catalogue/card -> corresponding card",
+      "status": "static links audited",
+      "scope": "selected landing/account HTML"
+    },
+    {
+      "contract": "Start chat/paid chat -> chatroom",
+      "status": "selected landing and account CTA links map to same-directory/static chatroom.html; Sign up remains signup/index.html",
+      "scope": "selected static projection"
+    },
+    {
+      "contract": "header/footer/menu/settings/breadcrumbs",
+      "status": "static link audit + runtime QA",
+      "scope": "selected pages"
+    },
+    {
+      "contract": "notifications/favorites/horoscope/support/legal/auth",
+      "status": "all named account route-backed pages included in 32-route matrix",
+      "scope": "nebula-account"
+    },
+    {
+      "contract": "back/cancel/close/mobile menu",
+      "status": "interaction QA receipt; controls are classified as static fixture actions where backend is unbound",
+      "scope": "runtime check"
+    }
+  ],
+  "legacyPolicy": [
+    {
+      "old": "about-us.html",
+      "current": "about-us-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "birth-chart.html",
+      "current": "birth-chart-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "careers-join.html",
+      "current": "careers-join-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "contact-us.html",
+      "current": "contact-us-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "live-chat-rules.html",
+      "current": "live-chat-rules-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "payment-terms.html",
+      "current": "payment-terms-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "refund-policy.html",
+      "current": "refund-policy-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "terms-conditions.html",
+      "current": "terms-conditions-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "topic.html",
+      "current": "topic-new.html",
+      "policy": "no-copy; backend/route decision required"
+    },
+    {
+      "old": "zodiac-compatibility.html",
+      "current": "zodiac-compatibility-new.html",
+      "policy": "no-copy; backend/route decision required"
+    }
+  ],
+  "missingReportRoutes": [
+    "advisor-chat.html",
+    "press.html",
+    "reviews.html",
+    "support.html",
+    "trust.html"
+  ]
+}

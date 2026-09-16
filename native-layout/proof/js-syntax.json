@@ -1,0 +1,256 @@
+{
+  "schema": "nebula.native-layout-js-syntax.v1",
+  "generatedAt": "2026-09-16T14:38:09.474Z",
+  "counts": {
+    "files": 41,
+    "failures": 0
+  },
+  "files": [
+    {
+      "file": "site/assets/1fcb51d/menu.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/431cad45/credit-topup.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/6531e1a1/js/favorites.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/9c3604ba/js/psychics.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/c18bc218/credit-topup-flow.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/f2ce81c5/js/booking-session.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/assets/fece512a/js/psychics.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/account-header.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/account-information.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/astrological-details.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/astrology.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/billing.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/card-payment-error.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/chat-overlays.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/chatroom-notify.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/chatroom.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/checkout-card-details.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/checkout-order-review.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/connecting-expert.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/consent-settings.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/consultation-support.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/daily-horoscope.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/expert-card-actions.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/expert-offline.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/expert-picker-trial.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/faq.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/helper-bot.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/horoscope.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/messages-from-psychics.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/notifications-center.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/payment-order-error.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/personal-data.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/plans.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/profile.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/question-before-start.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/question-topics.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/special-offers.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/yii2/modules/nebulaAccount/resources/js/system-messages.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/_unzipped/bootstrap.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/_unzipped/home.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "file": "site/_unzipped/jquery.js",
+      "status": "pass",
+      "exitCode": 0,
+      "stderr": ""
+    }
+  ]
+}

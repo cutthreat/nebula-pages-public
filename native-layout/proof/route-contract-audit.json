@@ -1,0 +1,73 @@
+{
+  "schema": "nebula.native-layout-route-contract-audit.v1",
+  "generatedAt": "2026-09-16T14:33:15.613Z",
+  "counts": {
+    "matrixEntries": 66,
+    "localAnchors": 1514,
+    "chatCtas": 97,
+    "chatCtaViolations": 0,
+    "catalogueCards": 2,
+    "profilePages": 2,
+    "requiredRoutePrefixes": 8
+  },
+  "contracts": {
+    "catalogueToCard": {
+      "status": "pass",
+      "catalogue": "site/nebula-account/psychics.html",
+      "targets": [
+        {
+          "name": "psychic-margo-lover.html",
+          "count": 13
+        },
+        {
+          "name": "psychic-mia-jacomo.html",
+          "count": 8
+        }
+      ]
+    },
+    "cardToChatroom": {
+      "status": "pass",
+      "profiles": [
+        {
+          "file": "psychic-margo-lover.html",
+          "chatroomLinks": 4
+        },
+        {
+          "file": "psychic-mia-jacomo.html",
+          "chatroomLinks": 3
+        }
+      ]
+    },
+    "startChatToChatroom": {
+      "status": "pass",
+      "violations": []
+    },
+    "namedAccountFamilies": {
+      "status": "pass",
+      "requiredRoutePrefixes": [
+        "/nebula-account/profile",
+        "/nebula-account/psychics",
+        "/nebula-account/favorites",
+        "/nebula-account/chatroom",
+        "/nebula-account/horoscope",
+        "/nebula-account/settings/notifications",
+        "/nebula-account/settings/support",
+        "/nebula-account/settings/legal"
+      ],
+      "missingRequiredRoutes": []
+    },
+    "interactionSmoke": {
+      "status": "pass",
+      "counts": {
+        "cases": 18,
+        "pass": 18,
+        "warn": 0,
+        "fail": 0,
+        "mobileMenuPasses": 4,
+        "touchPasses": 18,
+        "keyboardPasses": 18
+      }
+    }
+  },
+  "claimCeiling": "static route/link contracts and UI smoke only; no backend capability claim"
+}

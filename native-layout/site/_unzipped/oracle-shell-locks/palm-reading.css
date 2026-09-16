@@ -1,0 +1,61 @@
+/*
+  Source-backed section heights for Palm Reading.
+  The shared rule replaces the generated per-section declaration expansion.
+*/
+
+.palm-page .palm-hero,
+.palm-page .palm-story,
+.palm-page .palm-questions,
+.palm-page .palm-seo,
+.palm-page .site-footer {
+  box-sizing: border-box;
+  position: relative;
+  top: auto;
+  width: 100%;
+  max-width: none;
+  height: var(--palm-section-height) !important;
+  min-height: var(--palm-section-height) !important;
+  max-height: var(--palm-section-height) !important;
+  margin: 0;
+  transform: none;
+}
+
+@media (min-width: 1200px) {
+  .palm-page .palm-hero { --palm-section-height: 855px; }
+  .palm-page .palm-story { --palm-section-height: 1180px; }
+  .palm-page .palm-questions { --palm-section-height: 885px; }
+  .palm-page .palm-seo { --palm-section-height: 1052px; }
+  .palm-page .site-footer { --palm-section-height: 420px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .palm-page .palm-hero { --palm-section-height: 700px; }
+  .palm-page .palm-story { --palm-section-height: 1180px; }
+  .palm-page .palm-questions { --palm-section-height: 800px; }
+  .palm-page .palm-seo { --palm-section-height: 1047px; }
+  .palm-page .site-footer { --palm-section-height: 570px; }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .palm-page .palm-hero { --palm-section-height: 580px; }
+  .palm-page .palm-story { --palm-section-height: 1210px; }
+  .palm-page .palm-questions { --palm-section-height: 850px; }
+  .palm-page .palm-seo { --palm-section-height: 1005px; }
+  .palm-page .site-footer { --palm-section-height: 700px; }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .palm-page .palm-hero { --palm-section-height: 740px; }
+  .palm-page .palm-story { --palm-section-height: 1100px; }
+  .palm-page .palm-questions { --palm-section-height: 850px; }
+  .palm-page .palm-seo { --palm-section-height: 902px; }
+  .palm-page .site-footer { --palm-section-height: 680px; }
+}
+
+@media (max-width: 575.98px) {
+  .palm-page .palm-hero { --palm-section-height: 870px; }
+  .palm-page .palm-story { --palm-section-height: 1740px; }
+  .palm-page .palm-questions { --palm-section-height: 907px; }
+  .palm-page .palm-seo { --palm-section-height: 1334px; }
+  .palm-page .site-footer { --palm-section-height: 1035px; }
+}

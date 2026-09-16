@@ -1,0 +1,235 @@
+/* source: accepted Home MENU donor, home.owner.01.css and home.owner.03.css
+   (992–1199 recovery). Keep donor paint, dimensions and assets; only scope and
+   activation differ. Closed header geometry remains in each page owner. */
+@media (max-width: 1199.98px) {
+  .zcn-page .site-header__nav > .navbar-toggler {
+    display: none;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-expand-lg .navbar-collapse {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background: rgba(43, 36, 61, 0.8);
+    z-index: 100;
+    transition: 1ms linear;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-expand-lg .navbar-collapse.collapse:not(.show) {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-expand-lg .navbar-collapse.collapse.show,
+  :is(.zcn-page, .content-page) .site-header .navbar-expand-lg .navbar-collapse.collapsing {
+    display: block !important;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-collapse:not(.show) .site-header__offcanvas {
+    transform: translateX(-100%);
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-collapse.show .site-header__offcanvas {
+    transform: translateX(0);
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-expand-lg .site-header__offcanvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 30px 50px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #211838;
+    transition: transform 300ms linear;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .site-header__offcanvas-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-nav .nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .navbar-nav .nav-item a {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  /* source: existing Zodiac owner.05 / Home MENU chevron, unchanged asset. */
+  :is(.zcn-page, .content-page) .site-header .navbar-nav .nav-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 11px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.322187 1.89663C-0.107396 1.46271 -0.107395 0.759361 0.322187 0.325439C0.751771 -0.10848 1.4481 -0.10848 1.87768 0.325439L10.6778 9.2144C11.1074 9.64832 11.1074 10.3517 10.6778 10.7856L1.87768 19.6746C1.4481 20.1085 0.751771 20.1085 0.322187 19.6746C-0.107396 19.2406 -0.107396 18.5373 0.322187 18.1034L8.34457 10L0.322187 1.89663Z' fill='white'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .site-header__offcanvas-close {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    background: transparent url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.4065 28.9915L28.9923 30.4058L9.19327 10.6068L10.6075 9.19255L30.4065 28.9915Z' fill='white'/%3E%3Cpath d='M28.9921 9.19254L30.4063 10.6068L10.6073 30.4057L9.19312 28.9915L28.9921 9.19254Z' fill='white'/%3E%3C/svg%3E") center / contain no-repeat;
+    cursor: pointer;
+  }
+
+  :is(.zcn-page, .content-page) .site-header .site-header__offcanvas-close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
+}
+
+/* source: shared Home shell breakpoint contract. The export keeps the
+   mobile owner visible through 992px; Bootstrap's lg row starts at 993px in
+   this project so the trigger and fixed drawer cannot disagree at 992. */
+@media (max-width: 992.98px) {
+  /* source: accepted Home MENU donor, home.owner.01.css and canonical
+     Phone/Psychic Reading exports. The shared overlay owns the fixed drawer
+     surface as well as its backdrop; without this block the collapse can be
+     open while the offcanvas remains transparent in those isolated bundles. */
+  :is(.home, .phone-page) .site-header .site-header__offcanvas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 30px 50px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #211838;
+    transition: transform 300ms linear;
+  }
+
+  .home .site-header .navbar-expand-lg > .navbar-toggler {
+    display: inline-flex;
+  }
+
+  .home .site-header .navbar-expand-lg .navbar-collapse {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background: rgba(43, 36, 61, 0.8);
+    z-index: 100;
+    transition: 1ms linear;
+  }
+
+  .home .site-header .navbar-expand-lg .navbar-collapse.collapse:not(.show) {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .home .site-header .navbar-expand-lg .navbar-collapse.collapse.show,
+  .home .site-header .navbar-expand-lg .navbar-collapse.collapsing {
+    display: block !important;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .home .site-header .navbar-collapse:not(.show) .site-header__offcanvas {
+    transform: translateX(-100%);
+  }
+
+  .home .site-header .navbar-collapse.show .site-header__offcanvas {
+    transform: translateX(0);
+  }
+
+  .home .site-header .site-header__offcanvas-top {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .home .site-header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .home .site-header .navbar-nav .nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home .site-header .navbar-nav .nav-item a {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  /* source: existing Zodiac/Home MENU chevron and close control. Keep the
+     canonical isolated exports on the same affordance contract as aliases. */
+  :is(.home, .phone-page) .site-header .navbar-nav .nav-item::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 11px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='20' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.322187 1.89663C-0.107396 1.46271 -0.107395 0.759361 0.322187 0.325439C0.751771 -0.10848 1.4481 -0.10848 1.87768 0.325439L10.6778 9.2144C11.1074 9.64832 11.1074 10.3517 10.6778 10.7856L1.87768 19.6746C1.4481 20.1085 0.751771 20.1085 0.322187 19.6746C-0.107396 19.2406 -0.107396 18.5373 0.322187 18.1034L8.34457 10L0.322187 1.89663Z' fill='white'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  :is(.home, .phone-page) .site-header .site-header__offcanvas-close {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    background: transparent url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.4065 28.9915L28.9923 30.4058L9.19327 10.6068L10.6075 9.19255L30.4065 28.9915Z' fill='white'/%3E%3Cpath d='M28.9921 9.19254L30.4063 10.6068L10.6073 30.4057L9.19312 28.9915L28.9921 9.19254Z' fill='white'/%3E%3C/svg%3E") center / contain no-repeat;
+    cursor: pointer;
+  }
+
+  :is(.home, .phone-page) .site-header .site-header__offcanvas-close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
+}
+
+/* source: home.css .home-page .site-header .navbar-nav desktop gap. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* source: Home MENU activation continues past Bootstrap's lg breakpoint. */
+  .content-page .site-header .navbar-expand-lg > .navbar-toggler {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-page .site-header .navbar-nav {
+    display: flex;
+    gap: 30px;
+  }
+}
